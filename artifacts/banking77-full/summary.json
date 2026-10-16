@@ -1,0 +1,336 @@
+{
+  "protocol_id": "banking77-full-test-2026-10-08",
+  "n": 3080,
+  "systems": {
+    "ettin-encoder-log_loss": {
+      "temperature": 0.6871853702254552,
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.9006493506493507,
+        "brier": 0.14816383179500126,
+        "log_loss": 0.364611853422058,
+        "ece": 0.021826807679255884,
+        "top_bin_mass": 0.7535714285714286,
+        "coverage_at_5pct_error": 0.8967532467532467,
+        "selective_selected_n": 2762,
+        "selective_confidence_threshold": 0.6955189744295107,
+        "aurc": 0.015325187711466612,
+        "macro_f1": 0.9003308579078324,
+        "accuracy_ci": [
+          0.889926948051948,
+          0.9110389610389611
+        ],
+        "brier_ci": [
+          0.1340126511260189,
+          0.16255932216212654
+        ]
+      }
+    },
+    "ettin-encoder-brier": {
+      "temperature": 0.7931387583417494,
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.8616883116883117,
+        "brier": 0.19224266616800856,
+        "log_loss": 0.6625101080711743,
+        "ece": 0.017099674391913726,
+        "top_bin_mass": 0.675,
+        "coverage_at_5pct_error": 0.8555194805194806,
+        "selective_selected_n": 2635,
+        "selective_confidence_threshold": 0.5964515498536238,
+        "aurc": 0.021132162648689383,
+        "macro_f1": 0.8393955314106505,
+        "accuracy_ci": [
+          0.8493425324675324,
+          0.8733847402597402
+        ],
+        "brier_ci": [
+          0.17754811117549954,
+          0.20740199434165266
+        ]
+      }
+    },
+    "ettin-decoder-log_loss": {
+      "temperature": 2.0205845245669427,
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.9311688311688312,
+        "brier": 0.1023146817575584,
+        "log_loss": 0.2520513702935083,
+        "ece": 0.01146949642742523,
+        "top_bin_mass": 0.8204545454545454,
+        "coverage_at_5pct_error": 0.9659090909090909,
+        "selective_selected_n": 2975,
+        "selective_confidence_threshold": 0.5031053581346786,
+        "aurc": 0.008706603154995784,
+        "macro_f1": 0.9311500867353569,
+        "accuracy_ci": [
+          0.922077922077922,
+          0.939935064935065
+        ],
+        "brier_ci": [
+          0.09054939810181396,
+          0.11414643261810492
+        ]
+      }
+    },
+    "ettin-decoder-brier": {
+      "temperature": 1.3616720472611232,
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.9224025974025974,
+        "brier": 0.1173081608361911,
+        "log_loss": 0.3107790605376448,
+        "ece": 0.014308932067454306,
+        "top_bin_mass": 0.8006493506493506,
+        "coverage_at_5pct_error": 0.95,
+        "selective_selected_n": 2926,
+        "selective_confidence_threshold": 0.546233958859786,
+        "aurc": 0.010869162884137175,
+        "macro_f1": 0.922241843570049,
+        "accuracy_ci": [
+          0.9126623376623376,
+          0.9318181818181818
+        ],
+        "brier_ci": [
+          0.10461628531904536,
+          0.1307321077926335
+        ]
+      }
+    },
+    "deberta-v3-large-zeroshot-v2.0-c": {
+      "temperature": 0.7974539911861563,
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.4902597402597403,
+        "brier": 0.6706460608514736,
+        "log_loss": 2.3028083076768886,
+        "ece": 0.07267798879571502,
+        "top_bin_mass": 0.007467532467532467,
+        "coverage_at_5pct_error": 0.05616883116883117,
+        "selective_selected_n": 173,
+        "selective_confidence_threshold": 0.8276677630044496,
+        "aurc": 0.282454552481698,
+        "macro_f1": 0.49551054853428883,
+        "accuracy_ci": [
+          0.47305194805194806,
+          0.509090909090909
+        ],
+        "brier_ci": [
+          0.655705624525408,
+          0.685952862201337
+        ]
+      }
+    },
+    "gliclass-base-v3.0": {
+      "temperature": 1.4780510493043906,
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.5155844155844156,
+        "brier": 0.6941322688743898,
+        "log_loss": 2.2688191949147494,
+        "ece": 0.12313161135637027,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.002922077922077922,
+        "selective_selected_n": 9,
+        "selective_confidence_threshold": 0.7740812466930277,
+        "aurc": 0.3292046837583361,
+        "macro_f1": 0.5041993248209915,
+        "accuracy_ci": [
+          0.49902597402597404,
+          0.5334415584415585
+        ],
+        "brier_ci": [
+          0.6804709160419401,
+          0.707312916827897
+        ]
+      }
+    },
+    "jev": {
+      "temperature": 3.7369833988970873,
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.7931818181818182,
+        "brier": 0.33722111261361026,
+        "log_loss": 0.9556838162307827,
+        "ece": 0.10850223123914991,
+        "top_bin_mass": 0.386038961038961,
+        "coverage_at_5pct_error": 0.5980519480519481,
+        "selective_selected_n": 1842,
+        "selective_confidence_threshold": 0.612690728384738,
+        "aurc": 0.06652679765549036,
+        "macro_f1": 0.784039171333322,
+        "accuracy_ci": [
+          0.7792207792207793,
+          0.8074675324675324
+        ],
+        "brier_ci": [
+          0.3235130785350553,
+          0.35134818842479126
+        ]
+      },
+      "as_delivered": {
+        "n": 3080,
+        "accuracy": 0.7931818181818182,
+        "brier": 0.3168358771518356,
+        "log_loss": 1.9780318119800244,
+        "ece": 0.0929887838771082,
+        "top_bin_mass": 0.6282467532467533,
+        "coverage_at_5pct_error": 0.6009740259740259,
+        "selective_selected_n": 1851,
+        "selective_confidence_threshold": 0.9499999999287493,
+        "aurc": 0.06659595021218107,
+        "macro_f1": 0.784039171333322,
+        "accuracy_ci": [
+          0.7792207792207793,
+          0.8074675324675324
+        ],
+        "brier_ci": [
+          0.2966727390183666,
+          0.33682945985524254
+        ]
+      }
+    }
+  },
+  "cascade": {
+    "gate": "ettin-encoder-log_loss",
+    "strong": "ettin-decoder-log_loss",
+    "rates": [
+      {
+        "rate": 0.0,
+        "strong_call_fraction": 0.0,
+        "accuracy": 0.9006493506493507,
+        "brier": 0.14816383179500126,
+        "random": {
+          "draws": 2000,
+          "brier_mean": 0.14816383179500123,
+          "brier_lo": 0.14816383179500126,
+          "brier_hi": 0.14816383179500126,
+          "accuracy_mean": 0.9006493506493508
+        },
+        "random_draws_at_or_below_observed": 1.0,
+        "oracle": {
+          "brier": 0.14816383179500126,
+          "accuracy": 0.9006493506493507
+        }
+      },
+      {
+        "rate": 0.05,
+        "strong_call_fraction": 0.05422077922077922,
+        "accuracy": 0.9142857142857143,
+        "brier": 0.13351447828696594,
+        "random": {
+          "draws": 2000,
+          "brier_mean": 0.14566851108002793,
+          "brier_lo": 0.143265081092563,
+          "brier_hi": 0.14795581746554018,
+          "accuracy_mean": 0.9023048701298702
+        },
+        "random_draws_at_or_below_observed": 0.0,
+        "oracle": {
+          "brier": 0.09225488464565619,
+          "accuracy": 0.9451298701298702
+        }
+      },
+      {
+        "rate": 0.1,
+        "strong_call_fraction": 0.08798701298701299,
+        "accuracy": 0.9207792207792208,
+        "brier": 0.12497962737102439,
+        "random": {
+          "draws": 2000,
+          "brier_mean": 0.14415172201342466,
+          "brier_lo": 0.1410800184307013,
+          "brier_hi": 0.1470618668028274,
+          "accuracy_mean": 0.9033214285714284
+        },
+        "random_draws_at_or_below_observed": 0.0,
+        "oracle": {
+          "brier": 0.08057442876315334,
+          "accuracy": 0.9477272727272728
+        }
+      },
+      {
+        "rate": 0.25,
+        "strong_call_fraction": 0.261038961038961,
+        "accuracy": 0.9298701298701298,
+        "brier": 0.10685631574116498,
+        "random": {
+          "draws": 2000,
+          "brier_mean": 0.13607084224427732,
+          "brier_lo": 0.13143148418771547,
+          "brier_hi": 0.1406818531229188,
+          "accuracy_mean": 0.9087090909090907
+        },
+        "random_draws_at_or_below_observed": 0.0,
+        "oracle": {
+          "brier": 0.07484508416981137,
+          "accuracy": 0.9477272727272728
+        }
+      },
+      {
+        "rate": 0.5,
+        "strong_call_fraction": 0.5444805194805195,
+        "accuracy": 0.9311688311688312,
+        "brier": 0.10210348223523358,
+        "random": {
+          "draws": 2000,
+          "brier_mean": 0.12314516949360652,
+          "brier_lo": 0.11774306048162649,
+          "brier_hi": 0.1287485300125957,
+          "accuracy_mean": 0.9173399350649349
+        },
+        "random_draws_at_or_below_observed": 0.0,
+        "oracle": {
+          "brier": 0.07480925088956339,
+          "accuracy": 0.9477272727272728
+        }
+      },
+      {
+        "rate": 0.75,
+        "strong_call_fraction": 0.7775974025974026,
+        "accuracy": 0.9311688311688312,
+        "brier": 0.10229677802860944,
+        "random": {
+          "draws": 2000,
+          "brier_mean": 0.11252765694017342,
+          "brier_lo": 0.10794602337008928,
+          "brier_hi": 0.11700678585758602,
+          "accuracy_mean": 0.924374025974026
+        },
+        "random_draws_at_or_below_observed": 0.0,
+        "oracle": {
+          "brier": 0.07481329567934038,
+          "accuracy": 0.9477272727272728
+        }
+      },
+      {
+        "rate": 1.0,
+        "strong_call_fraction": 1.0,
+        "accuracy": 0.9311688311688312,
+        "brier": 0.1023146817575584,
+        "random": {
+          "draws": 2000,
+          "brier_mean": 0.10231468175755842,
+          "brier_lo": 0.1023146817575584,
+          "brier_hi": 0.1023146817575584,
+          "accuracy_mean": 0.9311688311688313
+        },
+        "random_draws_at_or_below_observed": 1.0,
+        "oracle": {
+          "brier": 0.1023146817575584,
+          "accuracy": 0.9311688311688312
+        }
+      }
+    ]
+  },
+  "encoder_vs_decoder": {
+    "brier_difference_encoder_minus_decoder": 0.04584915003744285,
+    "ci": [
+      0.03524865777087948,
+      0.0566613911993745
+    ],
+    "encoder_only_right": 51,
+    "decoder_only_right": 145
+  }
+}

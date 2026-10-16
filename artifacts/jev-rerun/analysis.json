@@ -1,0 +1,414 @@
+{
+  "protocol_id": "jev-rerun-2026-10-16",
+  "J1": {
+    "banking77_oos": {
+      "arms": {
+        "zero_shot": {
+          "held_out_rejected": 0.7069219440353461,
+          "in_scope_right": 0.7185929648241206,
+          "in_scope_kept": 0.8869346733668342,
+          "auroc_scope_prob": 0.8881780034191576,
+          "mean_scope_prob_in_scope": 0.8140452261306533,
+          "mean_scope_prob_held_out": 0.37823269513991165,
+          "failed": 0,
+          "input_tokens_mean": 982.7372330547818
+        },
+        "retrieval": {
+          "held_out_rejected": 0.2533136966126657,
+          "in_scope_right": 0.8793969849246231,
+          "in_scope_kept": 0.9824120603015075,
+          "auroc_scope_prob": 0.8912918791305571,
+          "mean_scope_prob_in_scope": 0.9485427135678391,
+          "mean_scope_prob_held_out": 0.6666568483063329,
+          "failed": 0,
+          "input_tokens_mean": 1354.5645311049211
+        },
+        "instruction": {
+          "held_out_rejected": 0.2547864506627393,
+          "in_scope_right": 0.8869346733668342,
+          "in_scope_kept": 0.9874371859296482,
+          "auroc_scope_prob": 0.8848698573870827,
+          "mean_scope_prob_in_scope": 0.9449497487437186,
+          "mean_scope_prob_held_out": 0.6646097201767305,
+          "failed": 0,
+          "input_tokens_mean": 1382.5645311049211
+        }
+      },
+      "tests": {
+        "HJ1 zero-shot minus retrieval rejection": {
+          "difference_points": 45.36082474226804,
+          "ci95": [
+            35.631846635367765,
+            55.29754467074847
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 27,
+          "holm_p": 0.00019998000199980003
+        },
+        "HJ2 retrieval minus zero-shot": {
+          "auroc_change": 0.0031138757113994275,
+          "auroc_change_ci95": [
+            -0.03174161989020757,
+            0.03952988984090035
+          ],
+          "mean_prob_change_held_out": 0.2884241531664212,
+          "mean_prob_change_held_out_ci95": [
+            0.2316190404897361,
+            0.34608625772923146
+          ],
+          "mean_prob_change_in_scope": 0.13449748743718581,
+          "mean_prob_change_in_scope_ci95": [
+            0.10130896038181597,
+            0.17015784355517663
+          ],
+          "readout": "operating-point shift"
+        },
+        "secondary: instruction minus retrieval rejection": {
+          "difference_points": 0.14727540500736377,
+          "ci95": [
+            -0.6015037593984962,
+            0.8942546096115158
+          ],
+          "p": 0.5032496750324967,
+          "clusters": 27
+        },
+        "secondary: instruction minus retrieval in-scope right": {
+          "difference_points": 0.7537688442211055,
+          "ci95": [
+            0.0,
+            1.6713091922005572
+          ],
+          "p": 0.2526747325267473,
+          "clusters": 45
+        }
+      }
+    },
+    "clinc_single_domain": {
+      "arms": {
+        "zero_shot": {
+          "held_out_rejected": 0.5542857142857143,
+          "in_scope_right": 0.901,
+          "in_scope_kept": 0.92,
+          "auroc_scope_prob": 0.8726785714285714,
+          "mean_scope_prob_in_scope": 0.86684,
+          "mean_scope_prob_held_out": 0.4840571428571428,
+          "failed": 0,
+          "input_tokens_mean": 429.0594117647059
+        },
+        "retrieval": {
+          "held_out_rejected": 0.5685714285714286,
+          "in_scope_right": 0.979,
+          "in_scope_kept": 0.989,
+          "auroc_scope_prob": 0.9801042857142858,
+          "mean_scope_prob_in_scope": 0.9604900000000002,
+          "mean_scope_prob_held_out": 0.43720000000000003,
+          "failed": 0,
+          "input_tokens_mean": 721.8882352941176
+        },
+        "instruction": {
+          "held_out_rejected": 0.6171428571428571,
+          "in_scope_right": 0.979,
+          "in_scope_kept": 0.989,
+          "auroc_scope_prob": 0.980085,
+          "mean_scope_prob_in_scope": 0.95645,
+          "mean_scope_prob_held_out": 0.41632857142857144,
+          "failed": 0,
+          "input_tokens_mean": 749.8882352941176
+        }
+      },
+      "tests": {
+        "HJ1 zero-shot minus retrieval rejection": {
+          "difference_points": -1.4285714285714286,
+          "ci95": [
+            -14.285714285714286,
+            12.289285714285695
+          ],
+          "p": 0.591940805919408,
+          "clusters": 10,
+          "holm_p": 0.591940805919408
+        },
+        "HJ2 retrieval minus zero-shot": {
+          "auroc_change": 0.10742571428571435,
+          "auroc_change_ci95": [
+            0.034561196428571514,
+            0.20376198214285707
+          ],
+          "mean_prob_change_held_out": -0.046857142857142764,
+          "mean_prob_change_held_out_ci95": [
+            -0.1559675000000001,
+            0.0604678571428571
+          ],
+          "mean_prob_change_in_scope": 0.09365000000000012,
+          "mean_prob_change_in_scope_ci95": [
+            0.054078500000000126,
+            0.14606575000000005
+          ],
+          "readout": "discrimination change"
+        },
+        "secondary: instruction minus retrieval rejection": {
+          "difference_points": 4.857142857142857,
+          "ci95": [
+            1.4285714285714286,
+            8.428571428571429
+          ],
+          "p": 0.014898510148985102,
+          "clusters": 10
+        },
+        "secondary: instruction minus retrieval in-scope right": {
+          "difference_points": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0,
+          "clusters": 20
+        }
+      }
+    }
+  },
+  "J2": {
+    "banking77": {
+      "systems": {
+        "specialist": {
+          "weighted": 0.9269190308320744
+        },
+        "gemma-4-31b": {
+          "weighted": 0.9411171730736949
+        },
+        "jev zero_shot": {
+          "weighted": 0.7922603659560181,
+          "turn_correct": 0.7741717376605814,
+          "scope_accuracy": 0.9296822177146721,
+          "in_scope_kept": 0.922007722007722,
+          "out_of_scope_caught": 0.9836956521739131,
+          "intent_on_in_scope": 0.78996138996139,
+          "auroc_scope_prob": 0.9948925633708242,
+          "failed": 0,
+          "input_tokens_mean": 1324.820148749155,
+          "latency_note": "Jev latency is not recorded by this client"
+        },
+        "jev gate zero_shot + specialist intent": {
+          "weighted": 0.88389485759051
+        },
+        "jev retrieval": {
+          "weighted": 0.9408200436461307,
+          "turn_correct": 0.9377958079783637,
+          "scope_accuracy": 0.9918864097363083,
+          "in_scope_kept": 0.9945945945945946,
+          "out_of_scope_caught": 0.9728260869565217,
+          "intent_on_in_scope": 0.9366795366795366,
+          "auroc_scope_prob": 0.9880036091992613,
+          "failed": 0,
+          "input_tokens_mean": 1661.6037863421232,
+          "latency_note": "Jev latency is not recorded by this client"
+        },
+        "jev gate retrieval + specialist intent": {
+          "weighted": 0.9379371607632478
+        }
+      },
+      "tests": {
+        "secondary: jev alone (retrieval) vs specialist": {
+          "difference_points": 1.3901012814056295,
+          "ci95": [
+            0.21617939975577438,
+            2.62947955488066
+          ],
+          "ci90": [
+            0.40018763987606415,
+            2.404457841917299
+          ],
+          "p": 0.024397560243975602,
+          "clusters": 261
+        },
+        "secondary: jev alone (retrieval) vs gemma-4-31b": {
+          "difference_points": -0.02971294275642103,
+          "ci95": [
+            -1.0086274559018775,
+            0.9791290032686999
+          ],
+          "ci90": [
+            -0.8773952101690945,
+            0.8008481481600135
+          ],
+          "p": 0.9602039796020398,
+          "clusters": 261
+        },
+        "secondary: jev gate (retrieval) vs specialist": {
+          "difference_points": 1.101812993117341,
+          "ci95": [
+            0.4946051160584258,
+            1.7740220582860784
+          ],
+          "ci90": [
+            0.5746474601914204,
+            1.6603063999675007
+          ],
+          "p": 0.0004999500049995,
+          "clusters": 261
+        }
+      }
+    },
+    "massive": {
+      "systems": {
+        "specialist": {
+          "weighted": 0.7826255397798164
+        },
+        "gemma-4-31b": {
+          "weighted": 0.7383824157605132
+        },
+        "jev zero_shot": {
+          "weighted": 0.6340620625192968,
+          "turn_correct": 0.634046052631579,
+          "scope_accuracy": 0.7713815789473685,
+          "in_scope_kept": 0.7862281603288798,
+          "out_of_scope_caught": 0.7119341563786008,
+          "intent_on_in_scope": 0.6916752312435765,
+          "auroc_scope_prob": 0.8602387930925102,
+          "failed": 0,
+          "input_tokens_mean": 781.6702302631579,
+          "latency_note": "Jev latency is not recorded by this client"
+        },
+        "jev gate zero_shot + specialist intent": {
+          "weighted": 0.7253261940711981
+        },
+        "jev retrieval": {
+          "weighted": 0.7778911262524373,
+          "turn_correct": 0.7779605263157895,
+          "scope_accuracy": 0.8601973684210527,
+          "in_scope_kept": 0.9650565262076053,
+          "out_of_scope_caught": 0.4403292181069959,
+          "intent_on_in_scope": 0.881808838643371,
+          "auroc_scope_prob": 0.9123198795460986,
+          "failed": 0,
+          "input_tokens_mean": 1023.5526315789474,
+          "latency_note": "Jev latency is not recorded by this client"
+        },
+        "jev gate retrieval + specialist intent": {
+          "weighted": 0.7754245281023859
+        }
+      },
+      "tests": {
+        "secondary: jev alone (retrieval) vs specialist": {
+          "difference_points": -0.473441352737914,
+          "ci95": [
+            -4.760412650915745,
+            5.405409962341534
+          ],
+          "ci90": [
+            -4.3689038684781805,
+            4.337712753258369
+          ],
+          "p": 0.9565043495650435,
+          "clusters": 264
+        },
+        "secondary: jev alone (retrieval) vs gemma-4-31b": {
+          "difference_points": 3.9508710491923926,
+          "ci95": [
+            1.7940963825804457,
+            6.338170511775433
+          ],
+          "ci90": [
+            2.091373144819246,
+            5.8535477496848465
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 264
+        },
+        "secondary: jev gate (retrieval) vs specialist": {
+          "difference_points": -0.7201011677430501,
+          "ci95": [
+            -5.362205261956792,
+            5.449404409313394
+          ],
+          "ci90": [
+            -4.89066518610484,
+            4.4262576393638104
+          ],
+          "p": 0.9462053794620537,
+          "clusters": 264
+        }
+      }
+    },
+    "clinc150": {
+      "systems": {
+        "specialist": {
+          "weighted": 0.9313713713713714
+        },
+        "gemma-4-31b": {
+          "weighted": 0.9502702702702703
+        },
+        "jev zero_shot": {
+          "weighted": 0.8733933933933935,
+          "turn_correct": 0.8697297297297297,
+          "scope_accuracy": 0.9308108108108109,
+          "in_scope_kept": 0.933933933933934,
+          "out_of_scope_caught": 0.9027027027027027,
+          "intent_on_in_scope": 0.918918918918919,
+          "auroc_scope_prob": 0.9560181803425046,
+          "failed": 0,
+          "input_tokens_mean": 1848.9178378378379,
+          "latency_note": "Jev latency is not recorded by this client"
+        },
+        "jev gate zero_shot + specialist intent": {
+          "weighted": 0.9067067067067068
+        },
+        "jev retrieval": {
+          "weighted": 0.9500300300300301,
+          "turn_correct": 0.9627027027027028,
+          "scope_accuracy": 0.9767567567567568,
+          "in_scope_kept": 0.990990990990991,
+          "out_of_scope_caught": 0.8486486486486486,
+          "intent_on_in_scope": 0.9819819819819819,
+          "auroc_scope_prob": 0.9866293320347375,
+          "failed": 0,
+          "input_tokens_mean": 2113.5178378378378,
+          "latency_note": "Jev latency is not recorded by this client"
+        },
+        "jev gate retrieval + specialist intent": {
+          "weighted": 0.9401001001001001
+        }
+      },
+      "tests": {
+        "secondary: jev alone (retrieval) vs specialist": {
+          "difference_points": 1.865865865865866,
+          "ci95": [
+            0.6327302616596016,
+            3.0233664532335265
+          ],
+          "ci90": [
+            0.8510143900278638,
+            2.8579711991101555
+          ],
+          "p": 0.0029997000299970002,
+          "clusters": 335
+        },
+        "secondary: jev alone (retrieval) vs gemma-4-31b": {
+          "difference_points": -0.02402402402402397,
+          "ci95": [
+            -0.8533633725387174,
+            0.8287621880476262
+          ],
+          "ci90": [
+            -0.728080838326657,
+            0.7060547771357335
+          ],
+          "p": 0.9876012398760124,
+          "clusters": 335
+        },
+        "secondary: jev gate (retrieval) vs specialist": {
+          "difference_points": 0.8728728728728732,
+          "ci95": [
+            -0.1938360984917113,
+            1.9344881457956196
+          ],
+          "ci90": [
+            -0.016553646801312043,
+            1.770096582801641
+          ],
+          "p": 0.12068793120687932,
+          "clusters": 335
+        }
+      }
+    }
+  }
+}

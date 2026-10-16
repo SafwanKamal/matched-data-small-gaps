@@ -1,0 +1,50 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/134 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 58/134 [00:00<00:00, 575.83it/s]Loading weights: 100%|██████████| 134/134 [00:00<00:00, 733.86it/s]
+[transformers] [1mModernBertModel LOAD REPORT[0m from: jhu-clsp/ettin-encoder-150m
+Key               | Status     |  | 
+------------------+------------+--+-
+decoder.bias      | UNEXPECTED |  | 
+head.norm.weight  | UNEXPECTED |  | 
+head.dense.weight | UNEXPECTED |  | 
+decoder.weight    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+encoder epoch 1 mean_loss 3.8724
+encoder epoch 2 mean_loss 3.2285
+encoder epoch 3 mean_loss 3.0127
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.28it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.27it/s]
+encoder test acc 0.3262 brier 0.8146
+Loading weights:   0%|          | 0/182 [00:00<?, ?it/s]Loading weights:   1%|          | 2/182 [00:00<00:09, 18.27it/s]Loading weights:  15%|█▍        | 27/182 [00:00<00:01, 136.38it/s]Loading weights:  61%|██████    | 111/182 [00:00<00:00, 433.88it/s]Loading weights: 100%|██████████| 182/182 [00:00<00:00, 439.58it/s]
+decoder score drift 0.000000
+decoder epoch 1 step 100 loss 4.2906
+decoder epoch 1 step 200 loss 1.5633
+decoder epoch 1 step 300 loss 2.0161
+decoder epoch 1 step 400 loss 1.2782
+decoder epoch 1 step 500 loss 1.3648
+decoder epoch 1 step 600 loss 1.0470
+decoder epoch 1 step 700 loss 0.9246
+decoder epoch 1 step 800 loss 1.0888
+decoder epoch 1 step 900 loss 0.7364
+decoder epoch 1 step 1000 loss 0.7176
+decoder epoch 1 step 1100 loss 1.3752
+decoder epoch 1 step 1200 loss 0.4046
+[W1007 11:36:57.982702068 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 6120538112, total: 12820480000).
+[W1007 11:36:58.327566018 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 2097152 bytes (free: 6038749184, total: 12820480000).
+decoder epoch 1 step 1300 loss 3.2960
+decoder epoch 1 step 1400 loss 0.7172
+decoder epoch 1 mean_loss 1.7428
+decoder epoch 2 step 100 loss 0.8081
+decoder epoch 2 step 200 loss 1.5477
+decoder epoch 2 step 300 loss 1.1714
+decoder epoch 2 step 400 loss 0.6316
+decoder epoch 2 step 500 loss 1.2503
+decoder epoch 2 step 600 loss 0.8882
+decoder epoch 2 step 700 loss 2.3810
+decoder epoch 2 step 800 loss 1.9582
+decoder epoch 2 step 900 loss 0.5485
+decoder epoch 2 step 1000 loss 0.2510
+decoder epoch 2 step 1100 loss 0.3655
+decoder epoch 2 step 1200 loss 2.1963
+decoder epoch 2 step 1300 loss 0.7275
+decoder epoch 2 step 1400 loss 1.0748

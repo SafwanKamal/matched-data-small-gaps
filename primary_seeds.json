@@ -1,0 +1,8 @@
+{
+  "protocol_id": "program-primary-suite-seeds-2026-10-10",
+  "base": "primary_protocol.json, unchanged, for the Ettin encoder and decoder finetunes on MASSIVE English",
+  "extra_seeds": [20261008, 20261009],
+  "what_a_seed_sets": "the torch seed before the model is built (the encoder's head initialisation) and the batch order",
+  "outputs": "artifacts/primary/seed-<n>/",
+  "note": "Added after the seed-20261007 MASSIVE results. The frozen finetune window in primary_protocol.json has passed, so the window check is bypassed for these runs; nothing else in the recipe changes. The decoder loop releases the allocator cache every 50 steps, as the Program 2 decoder now does, which changes no computed value."
+}

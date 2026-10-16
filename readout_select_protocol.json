@@ -1,0 +1,17 @@
+{
+  "protocol_id": "readout-dev-selection-2026-10-11",
+  "role": "a fairer local zero-shot baseline: choose each local Qwen3.5 model's readout per dataset on dev",
+  "claim": "Two readouts exist for the local Qwen3.5 models: the prefilled index readout with a dev prior (suite_protocol.json) and the generated-code top-k tree readout under the hosted prompt (readout_lfl_protocol.json). Neither is better everywhere. This rule picks one per system and dataset from dev scores alone. Disclosure: it was written after the test results of both readouts had been seen, so the rule itself is what protects against selection, and it is the same rule readout_protocol.json used on 2026-10-08.",
+  "systems": {
+    "qwen3.5-4b": {"index": "artifacts/suite/qwen3.5-4b-index_prior", "generated": "artifacts/readout-lfl/qwen3.5-4b-hosted_prompt"},
+    "qwen3.5-9b-4bit": {"index": "artifacts/suite/qwen3.5-9b-4bit-index_prior", "generated": "artifacts/readout-lfl/qwen3.5-9b-4bit-hosted_prompt"}
+  },
+  "datasets": ["boolq", "anli_r3", "emotion", "yahoo", "massive_en", "banking77_full", "clinc150"],
+  "clinc150": "Only the 4B has an index result on CLINC150. Its generated-code readout is scored on the CLINC150 dev split for this selection, and on the test and out-of-scope splits only if it is selected. The 9B is not scored on CLINC150.",
+  "rule": {
+    "quantity": "mean dev NLL after one temperature fit on that same dev split by the Program 1 rule",
+    "choice": "the readout with the lower value; a tie goes to index",
+    "index_scores": "the index score minus its per-option dev mean, as in the suite"
+  },
+  "reported": "for each system and dataset: both dev values, the choice, and the chosen readout's test metrics with the dev temperature; the unchosen readout's test accuracy is shown beside it so the effect of the rule is visible"
+}

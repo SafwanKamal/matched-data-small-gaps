@@ -1,0 +1,10 @@
+{"error": null, "latency_ms": 1933.2674000179395, "text": "scope: yes\nintent: 25", "provider": "Alibaba", "prompt_tokens": 661, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000142935, "id": "massive-s0-t0"}
+{"error": null, "latency_ms": 1365.4558000271209, "text": "scope: yes\nintent: 28", "provider": "Alibaba", "prompt_tokens": 685, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000147615, "id": "massive-s0-t1"}
+{"error": null, "latency_ms": 1409.1214999789372, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 654, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00014157, "id": "massive-s0-t2"}
+{"error": null, "latency_ms": 1978.8315999903716, "text": "scope: yes\nintent: 10", "provider": "Alibaba", "prompt_tokens": 789, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000167895, "id": "massive-s0-t3"}
+{"error": null, "latency_ms": 2034.1223999857903, "text": "scope: yes\nintent: 01", "provider": "Alibaba", "prompt_tokens": 654, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00014157, "id": "massive-s0-t4"}
+{"error": null, "latency_ms": 1418.7256000004709, "text": "scope: yes\nintent: 22", "provider": "Alibaba", "prompt_tokens": 621, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000135135, "id": "massive-s1-t0"}
+{"error": null, "latency_ms": 1978.4550999756902, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 693, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000149175, "id": "massive-s1-t2"}
+{"error": null, "latency_ms": 2037.3648999957368, "text": "scope: yes\nintent: 23", "provider": "Alibaba", "prompt_tokens": 664, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00014352, "id": "massive-s2-t0"}
+{"error": null, "latency_ms": 1063.0557000113185, "text": "scope: yes\nintent: 24", "provider": "Alibaba", "prompt_tokens": 684, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00014742, "id": "massive-s3-t3"}
+{"error": null, "latency_ms": 1067.29509998695, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 641, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000139035, "id": "massive-s4-t2"}

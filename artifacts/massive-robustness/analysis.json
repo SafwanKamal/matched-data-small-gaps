@@ -1,0 +1,1086 @@
+{
+  "protocol_id": "massive-robustness-2026-10-16",
+  "status": "sensitivity analysis",
+  "draws": {
+    "draw_1": {
+      "systems": {
+        "specialist": {
+          "weighted": 0.8312,
+          "held_out_rejected": 0.8,
+          "in_scope_kept": 0.921
+        },
+        "gemma-4-31b no_rows": {
+          "weighted": 0.8408000000000001,
+          "held_out_rejected": 0.68,
+          "in_scope_kept": 0.976,
+          "d_prime": 2.4450672272964553,
+          "criterion": 0.7548348145337194
+        },
+        "gemma-4-31b same_source_rows": {
+          "weighted": 0.8968,
+          "held_out_rejected": 0.948,
+          "in_scope_kept": 0.972,
+          "d_prime": 3.5367990337823523,
+          "criterion": 0.14263613065794178
+        },
+        "gemma-4-31b cross_source_rows": {
+          "weighted": 0.8608,
+          "held_out_rejected": 0.768,
+          "in_scope_kept": 0.974,
+          "d_prime": 2.675409955828166,
+          "criterion": 0.6054287731909835
+        },
+        "gemma-4-31b instruction": {
+          "weighted": 0.8552,
+          "held_out_rejected": 0.824,
+          "in_scope_kept": 0.937,
+          "d_prime": 2.460784537042168,
+          "criterion": 0.29967531961674476
+        },
+        "qwen3.5-27b no_rows": {
+          "weighted": 0.8648,
+          "held_out_rejected": 0.828,
+          "in_scope_kept": 0.953,
+          "d_prime": 2.6209562469859016,
+          "criterion": 0.3641867655313749
+        },
+        "qwen3.5-27b same_source_rows": {
+          "weighted": 0.888,
+          "held_out_rejected": 0.964,
+          "in_scope_kept": 0.948,
+          "d_prime": 3.4248814930712013,
+          "criterion": -0.08667736030236628
+        },
+        "qwen3.5-27b cross_source_rows": {
+          "weighted": 0.8680000000000001,
+          "held_out_rejected": 0.86,
+          "in_scope_kept": 0.949,
+          "d_prime": 2.715553356203606,
+          "criterion": 0.2774573372868472
+        },
+        "qwen3.5-27b instruction": {
+          "weighted": 0.8584,
+          "held_out_rejected": 0.884,
+          "in_scope_kept": 0.919,
+          "d_prime": 2.5935994022349225,
+          "criterion": 0.10157691968003424
+        },
+        "jev-1.13.0 no_rows": {
+          "weighted": 0.8456000000000001,
+          "held_out_rejected": 0.704,
+          "in_scope_kept": 0.97,
+          "d_prime": 2.4167336347987414,
+          "criterion": 0.6724267907518804
+        },
+        "jev-1.13.0 same_source_rows": {
+          "weighted": 0.8872000000000001,
+          "held_out_rejected": 0.932,
+          "in_scope_kept": 0.967,
+          "d_prime": 3.329277024494438,
+          "criterion": 0.17378515700055797
+        },
+        "jev-1.13.0 cross_source_rows": {
+          "weighted": 0.856,
+          "held_out_rejected": 0.772,
+          "in_scope_kept": 0.966,
+          "d_prime": 2.5704563693271925,
+          "criterion": 0.539778636482807
+        },
+        "jev-1.13.0 instruction": {
+          "weighted": 0.8528000000000001,
+          "held_out_rejected": 0.744,
+          "in_scope_kept": 0.963,
+          "d_prime": 2.442340044291724,
+          "criterion": 0.5654433433476082
+        }
+      },
+      "rejected_by_domain": {
+        "specialist": {
+          "alarm": 0.3939393939393939,
+          "play": 0.9534883720930233,
+          "social": 0.5111111111111111
+        },
+        "gemma-4-31b no_rows": {
+          "alarm": 0.06060606060606061,
+          "play": 0.7616279069767442,
+          "social": 0.8222222222222222
+        },
+        "gemma-4-31b same_source_rows": {
+          "alarm": 0.8484848484848485,
+          "play": 0.9709302325581395,
+          "social": 0.9333333333333333
+        },
+        "gemma-4-31b cross_source_rows": {
+          "alarm": 0.30303030303030304,
+          "play": 0.8313953488372093,
+          "social": 0.8666666666666667
+        },
+        "gemma-4-31b instruction": {
+          "alarm": 0.36363636363636365,
+          "play": 0.8837209302325582,
+          "social": 0.9333333333333333
+        },
+        "qwen3.5-27b no_rows": {
+          "alarm": 0.48484848484848486,
+          "play": 0.877906976744186,
+          "social": 0.8888888888888888
+        },
+        "qwen3.5-27b same_source_rows": {
+          "alarm": 0.9090909090909091,
+          "play": 0.9767441860465116,
+          "social": 0.9555555555555556
+        },
+        "qwen3.5-27b cross_source_rows": {
+          "alarm": 0.5757575757575758,
+          "play": 0.9069767441860465,
+          "social": 0.8888888888888888
+        },
+        "qwen3.5-27b instruction": {
+          "alarm": 0.6060606060606061,
+          "play": 0.9244186046511628,
+          "social": 0.9333333333333333
+        },
+        "jev-1.13.0 no_rows": {
+          "alarm": 0.30303030303030304,
+          "play": 0.7558139534883721,
+          "social": 0.8
+        },
+        "jev-1.13.0 same_source_rows": {
+          "alarm": 0.8787878787878788,
+          "play": 0.936046511627907,
+          "social": 0.9555555555555556
+        },
+        "jev-1.13.0 cross_source_rows": {
+          "alarm": 0.36363636363636365,
+          "play": 0.8372093023255814,
+          "social": 0.8222222222222222
+        },
+        "jev-1.13.0 instruction": {
+          "alarm": 0.3333333333333333,
+          "play": 0.8023255813953488,
+          "social": 0.8222222222222222
+        }
+      },
+      "tests": {
+        "M1 specialist vs gemma-4-31b no_rows": {
+          "difference_points": -0.9600000000000006,
+          "ci95": [
+            -3.2882668140429114,
+            1.142522568069942
+          ],
+          "ci90": [
+            -2.874376508059773,
+            0.762967484620667
+          ],
+          "p": 0.39336066393360664,
+          "clusters": 288
+        },
+        "M1 specialist vs qwen3.5-27b no_rows": {
+          "difference_points": -3.3600000000000003,
+          "ci95": [
+            -5.930979948506762,
+            -1.1990259904555172
+          ],
+          "ci90": [
+            -5.490995909749902,
+            -1.554819699662377
+          ],
+          "p": 0.001999800019998,
+          "clusters": 288
+        },
+        "M1 specialist vs jev-1.13.0 no_rows": {
+          "difference_points": -1.440000000000001,
+          "ci95": [
+            -3.5896808750903393,
+            0.4385412918817359
+          ],
+          "ci90": [
+            -3.3117563837129063,
+            0.15998739726617525
+          ],
+          "p": 0.20757924207579243,
+          "clusters": 288
+        },
+        "M3 gemma-4-31b same_source_rows vs no_rows": {
+          "difference_points": 5.6000000000000005,
+          "ci95": [
+            4.481984453428141,
+            6.7761977738429975
+          ],
+          "ci90": [
+            4.699167735535483,
+            6.575352140106843
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 288,
+          "p_one_sided": 4.999500049995001e-05,
+          "holm_p_one_sided": 0.00029997000299970003
+        },
+        "M4 gemma-4-31b cross_source_rows vs no_rows": {
+          "difference_points": 2.0000000000000004,
+          "ci95": [
+            1.1469226701371118,
+            2.9380817445661616
+          ],
+          "ci90": [
+            1.285140562248996,
+            2.795285492938861
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 288,
+          "p_one_sided": 4.999500049995001e-05,
+          "holm_p_one_sided": 0.00029997000299970003
+        },
+        "M5 gemma-4-31b instruction vs no_rows": {
+          "difference_points": 1.4400000000000004,
+          "ci95": [
+            0.20201724775796198,
+            2.6467454619129924
+          ],
+          "ci90": [
+            0.4193725601880625,
+            2.4884385037056016
+          ],
+          "p": 0.07779222077792221,
+          "clusters": 288,
+          "p_one_sided": 0.038896110388961104,
+          "holm_p_one_sided": 0.2722727727227277
+        },
+        "M3 qwen3.5-27b same_source_rows vs no_rows": {
+          "difference_points": 2.3200000000000003,
+          "ci95": [
+            1.337717476263257,
+            3.277310673052894
+          ],
+          "ci90": [
+            1.513619728940678,
+            3.104963339394219
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 288,
+          "p_one_sided": 4.999500049995001e-05,
+          "holm_p_one_sided": 0.00029997000299970003
+        },
+        "M4 qwen3.5-27b cross_source_rows vs no_rows": {
+          "difference_points": 0.32000000000000006,
+          "ci95": [
+            -0.3257875322412536,
+            0.9826625265329711
+          ],
+          "ci90": [
+            -0.2139224849163611,
+            0.872439887475974
+          ],
+          "p": 0.48965103489651035,
+          "clusters": 288,
+          "p_one_sided": 0.24482551744825518,
+          "holm_p_one_sided": 0.9793020697930207
+        },
+        "M5 qwen3.5-27b instruction vs no_rows": {
+          "difference_points": -0.6400000000000001,
+          "ci95": [
+            -2.388681743609936,
+            0.7957525152392727
+          ],
+          "ci90": [
+            -2.1162403510877104,
+            0.6252011232544018
+          ],
+          "p": 0.6717328267173283,
+          "clusters": 288,
+          "p_one_sided": 0.6641335866413358,
+          "holm_p_one_sided": 1.0
+        },
+        "M3 jev-1.13.0 same_source_rows vs no_rows": {
+          "difference_points": 4.16,
+          "ci95": [
+            3.049716166215104,
+            5.254399708036072
+          ],
+          "ci90": [
+            3.2177482506015984,
+            5.058396259438726
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 288,
+          "p_one_sided": 4.999500049995001e-05
+        },
+        "M4 jev-1.13.0 cross_source_rows vs no_rows": {
+          "difference_points": 1.04,
+          "ci95": [
+            0.3403750389044506,
+            1.801854795972443
+          ],
+          "ci90": [
+            0.44642410308582153,
+            1.6544714878375708
+          ],
+          "p": 0.014998500149985002,
+          "clusters": 288,
+          "p_one_sided": 0.007499250074992501
+        },
+        "M5 jev-1.13.0 instruction vs no_rows": {
+          "difference_points": 0.7200000000000001,
+          "ci95": [
+            0.16165433205080204,
+            1.3492725154958862
+          ],
+          "ci90": [
+            0.2524536971453384,
+            1.2491590277943552
+          ],
+          "p": 0.0347965203479652,
+          "clusters": 288,
+          "p_one_sided": 0.0173982601739826
+        }
+      }
+    },
+    "draw_2": {
+      "systems": {
+        "specialist": {
+          "weighted": 0.8306666666666667,
+          "held_out_rejected": 0.728,
+          "in_scope_kept": 0.903
+        },
+        "gemma-4-31b no_rows": {
+          "weighted": 0.8472000000000001,
+          "held_out_rejected": 0.628,
+          "in_scope_kept": 0.963,
+          "d_prime": 2.1131742929058426,
+          "criterion": 0.7300262190405487
+        },
+        "gemma-4-31b same_source_rows": {
+          "weighted": 0.8984000000000001,
+          "held_out_rejected": 0.904,
+          "in_scope_kept": 0.957,
+          "d_prime": 3.0215714036598307,
+          "criterion": 0.2061003166011255
+        },
+        "gemma-4-31b cross_source_rows": {
+          "weighted": 0.8552,
+          "held_out_rejected": 0.688,
+          "in_scope_kept": 0.956,
+          "d_prime": 2.196232628604171,
+          "criterion": 0.6079270825868763
+        },
+        "gemma-4-31b instruction": {
+          "weighted": 0.8576000000000001,
+          "held_out_rejected": 0.784,
+          "in_scope_kept": 0.928,
+          "d_prime": 2.2468301007113904,
+          "criterion": 0.3376412188312112
+        },
+        "qwen3.5-27b no_rows": {
+          "weighted": 0.8528,
+          "held_out_rejected": 0.728,
+          "in_scope_kept": 0.938,
+          "d_prime": 2.1449742220983294,
+          "criterion": 0.46571174753489963
+        },
+        "qwen3.5-27b same_source_rows": {
+          "weighted": 0.8928,
+          "held_out_rejected": 0.952,
+          "in_scope_kept": 0.932,
+          "d_prime": 3.155416216449382,
+          "criterion": -0.08685475297803014
+        },
+        "qwen3.5-27b cross_source_rows": {
+          "weighted": 0.8560000000000001,
+          "held_out_rejected": 0.784,
+          "in_scope_kept": 0.924,
+          "d_prime": 2.2182765523502956,
+          "criterion": 0.3233644446506638
+        },
+        "qwen3.5-27b instruction": {
+          "weighted": 0.852,
+          "held_out_rejected": 0.812,
+          "in_scope_kept": 0.912,
+          "d_prime": 2.2384646033776447,
+          "criterion": 0.23394185285918057
+        },
+        "jev-1.13.0 no_rows": {
+          "weighted": 0.8392000000000001,
+          "held_out_rejected": 0.564,
+          "in_scope_kept": 0.973,
+          "d_prime": 2.0879551617746563,
+          "criterion": 0.8828589923765828
+        },
+        "jev-1.13.0 same_source_rows": {
+          "weighted": 0.8912000000000001,
+          "held_out_rejected": 0.852,
+          "in_scope_kept": 0.965,
+          "d_prime": 2.856960372610987,
+          "criterion": 0.38343048664710433
+        },
+        "jev-1.13.0 cross_source_rows": {
+          "weighted": 0.8392000000000001,
+          "held_out_rejected": 0.6,
+          "in_scope_kept": 0.962,
+          "d_prime": 2.0277290134807573,
+          "criterion": 0.7605174036045789
+        },
+        "jev-1.13.0 instruction": {
+          "weighted": 0.8384,
+          "held_out_rejected": 0.596,
+          "in_scope_kept": 0.965,
+          "d_prime": 2.05491764036258,
+          "criterion": 0.7844518527713078
+        }
+      },
+      "rejected_by_domain": {
+        "specialist": {
+          "calendar": 0.6481481481481481,
+          "iot": 0.6666666666666666,
+          "play": 0.8571428571428571
+        },
+        "gemma-4-31b no_rows": {
+          "calendar": 0.37962962962962965,
+          "iot": 0.9803921568627451,
+          "play": 0.7252747252747253
+        },
+        "gemma-4-31b same_source_rows": {
+          "calendar": 0.8240740740740741,
+          "iot": 1.0,
+          "play": 0.945054945054945
+        },
+        "gemma-4-31b cross_source_rows": {
+          "calendar": 0.4351851851851852,
+          "iot": 0.9803921568627451,
+          "play": 0.8241758241758241
+        },
+        "gemma-4-31b instruction": {
+          "calendar": 0.6203703703703703,
+          "iot": 1.0,
+          "play": 0.8571428571428571
+        },
+        "qwen3.5-27b no_rows": {
+          "calendar": 0.46296296296296297,
+          "iot": 0.9803921568627451,
+          "play": 0.9010989010989011
+        },
+        "qwen3.5-27b same_source_rows": {
+          "calendar": 0.9074074074074074,
+          "iot": 1.0,
+          "play": 0.978021978021978
+        },
+        "qwen3.5-27b cross_source_rows": {
+          "calendar": 0.5462962962962963,
+          "iot": 0.9803921568627451,
+          "play": 0.9560439560439561
+        },
+        "qwen3.5-27b instruction": {
+          "calendar": 0.6296296296296297,
+          "iot": 1.0,
+          "play": 0.9230769230769231
+        },
+        "jev-1.13.0 no_rows": {
+          "calendar": 0.3333333333333333,
+          "iot": 0.803921568627451,
+          "play": 0.7032967032967034
+        },
+        "jev-1.13.0 same_source_rows": {
+          "calendar": 0.7407407407407407,
+          "iot": 0.9803921568627451,
+          "play": 0.9120879120879121
+        },
+        "jev-1.13.0 cross_source_rows": {
+          "calendar": 0.3055555555555556,
+          "iot": 0.8627450980392157,
+          "play": 0.8021978021978022
+        },
+        "jev-1.13.0 instruction": {
+          "calendar": 0.3425925925925926,
+          "iot": 0.8627450980392157,
+          "play": 0.7472527472527473
+        }
+      },
+      "tests": {
+        "M1 specialist vs gemma-4-31b no_rows": {
+          "difference_points": -1.653333333333335,
+          "ci95": [
+            -3.7813701802261153,
+            0.3207901324440187
+          ],
+          "ci90": [
+            -3.45852756251319,
+            0.07994059325772702
+          ],
+          "p": 0.2410758924107589,
+          "clusters": 284
+        },
+        "M1 specialist vs qwen3.5-27b no_rows": {
+          "difference_points": -2.213333333333334,
+          "ci95": [
+            -4.8828480186727585,
+            0.32664170307190626
+          ],
+          "ci90": [
+            -4.4265254224796955,
+            -0.16527721332353365
+          ],
+          "p": 0.1060893910608939,
+          "clusters": 284
+        },
+        "M1 specialist vs jev-1.13.0 no_rows": {
+          "difference_points": -0.853333333333333,
+          "ci95": [
+            -3.4223807260657213,
+            1.6368161820383127
+          ],
+          "ci90": [
+            -2.956330687325734,
+            1.2936660472960158
+          ],
+          "p": 0.6653334666533347,
+          "clusters": 284
+        },
+        "M3 gemma-4-31b same_source_rows vs no_rows": {
+          "difference_points": 5.120000000000001,
+          "ci95": [
+            3.9401394066684747,
+            6.295697798002551
+          ],
+          "ci90": [
+            4.118031762119867,
+            6.151164535933801
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 284,
+          "p_one_sided": 4.999500049995001e-05,
+          "holm_p_one_sided": 0.00029997000299970003
+        },
+        "M4 gemma-4-31b cross_source_rows vs no_rows": {
+          "difference_points": 0.8,
+          "ci95": [
+            -0.1254296081932947,
+            1.6962215612313694
+          ],
+          "ci90": [
+            0.0397507402230477,
+            1.5756840696142977
+          ],
+          "p": 0.14158584141585842,
+          "clusters": 284,
+          "p_one_sided": 0.07079292070792921,
+          "holm_p_one_sided": 0.35396460353964604
+        },
+        "M5 gemma-4-31b instruction vs no_rows": {
+          "difference_points": 1.0399999999999998,
+          "ci95": [
+            -0.6199705574891586,
+            2.5404043028275796
+          ],
+          "ci90": [
+            -0.3594309249335851,
+            2.3804954366191033
+          ],
+          "p": 0.3952604739526047,
+          "clusters": 284,
+          "p_one_sided": 0.19763023697630236,
+          "holm_p_one_sided": 0.9881511848815118
+        },
+        "M3 qwen3.5-27b same_source_rows vs no_rows": {
+          "difference_points": 4.0,
+          "ci95": [
+            2.90633343037184,
+            5.109514623969728
+          ],
+          "ci90": [
+            3.0800451345321296,
+            4.9318657443439236
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 284,
+          "p_one_sided": 4.999500049995001e-05,
+          "holm_p_one_sided": 0.00029997000299970003
+        },
+        "M4 qwen3.5-27b cross_source_rows vs no_rows": {
+          "difference_points": 0.31999999999999995,
+          "ci95": [
+            -0.9324984805215591,
+            1.3818369042621348
+          ],
+          "ci90": [
+            -0.7066207161568332,
+            1.2399691710317275
+          ],
+          "p": 0.8209179082091791,
+          "clusters": 284,
+          "p_one_sided": 0.41045895410458955,
+          "holm_p_one_sided": 0.9793020697930207
+        },
+        "M5 qwen3.5-27b instruction vs no_rows": {
+          "difference_points": -0.08000000000000021,
+          "ci95": [
+            -1.1850391798491628,
+            1.0237218310282605
+          ],
+          "ci90": [
+            -1.0166579746265063,
+            0.8993614094184926
+          ],
+          "p": 1.0,
+          "clusters": 284,
+          "p_one_sided": 0.5,
+          "holm_p_one_sided": 1.0
+        },
+        "M3 jev-1.13.0 same_source_rows vs no_rows": {
+          "difference_points": 5.2,
+          "ci95": [
+            3.715700855291217,
+            6.6612908268749
+          ],
+          "ci90": [
+            3.9826387000770205,
+            6.482964347862481
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 284,
+          "p_one_sided": 4.999500049995001e-05
+        },
+        "M4 jev-1.13.0 cross_source_rows vs no_rows": {
+          "difference_points": -1.734723475976807e-16,
+          "ci95": [
+            -1.6310973159515512,
+            1.4064826673497255
+          ],
+          "ci90": [
+            -1.3087408826844174,
+            1.2207869427657532
+          ],
+          "p": 1.0,
+          "clusters": 284,
+          "p_one_sided": 0.5
+        },
+        "M5 jev-1.13.0 instruction vs no_rows": {
+          "difference_points": -0.08000000000000013,
+          "ci95": [
+            -1.0134417151833601,
+            0.7710960921008281
+          ],
+          "ci90": [
+            -0.8543027472129442,
+            0.6559908408418134
+          ],
+          "p": 1.0,
+          "clusters": 284,
+          "p_one_sided": 0.5
+        }
+      }
+    },
+    "draw_3": {
+      "systems": {
+        "specialist": {
+          "weighted": 0.8226666666666667,
+          "held_out_rejected": 0.908,
+          "in_scope_kept": 0.885
+        },
+        "gemma-4-31b no_rows": {
+          "weighted": 0.8200000000000001,
+          "held_out_rejected": 0.612,
+          "in_scope_kept": 0.966,
+          "d_prime": 2.109542363818025,
+          "criterion": 0.7702356392373909
+        },
+        "gemma-4-31b same_source_rows": {
+          "weighted": 0.8848,
+          "held_out_rejected": 0.956,
+          "in_scope_kept": 0.962,
+          "d_prime": 3.4804253072339186,
+          "criterion": 0.034169256727997976
+        },
+        "gemma-4-31b cross_source_rows": {
+          "weighted": 0.8232,
+          "held_out_rejected": 0.664,
+          "in_scope_kept": 0.957,
+          "d_prime": 2.1402907408252236,
+          "criterion": 0.646740648018429
+        },
+        "gemma-4-31b instruction": {
+          "weighted": 0.8400000000000001,
+          "held_out_rejected": 0.808,
+          "in_scope_kept": 0.926,
+          "d_prime": 2.317181897354633,
+          "criterion": 0.2880411184816621
+        },
+        "qwen3.5-27b no_rows": {
+          "weighted": 0.8416,
+          "held_out_rejected": 0.816,
+          "in_scope_kept": 0.937,
+          "d_prime": 2.430293573839262,
+          "criterion": 0.31492080121819777
+        },
+        "qwen3.5-27b same_source_rows": {
+          "weighted": 0.8744000000000001,
+          "held_out_rejected": 0.988,
+          "in_scope_kept": 0.925,
+          "d_prime": 3.6966607154246813,
+          "criterion": -0.4087988867738843
+        },
+        "qwen3.5-27b cross_source_rows": {
+          "weighted": 0.8432000000000001,
+          "held_out_rejected": 0.84,
+          "in_scope_kept": 0.927,
+          "d_prime": 2.448264242150328,
+          "criterion": 0.22967423786541086
+        },
+        "qwen3.5-27b instruction": {
+          "weighted": 0.8424,
+          "held_out_rejected": 0.884,
+          "in_scope_kept": 0.904,
+          "d_prime": 2.4999081666662164,
+          "criterion": 0.054731301895681206
+        },
+        "jev-1.13.0 no_rows": {
+          "weighted": 0.7847999999999999,
+          "held_out_rejected": 0.476,
+          "in_scope_kept": 0.961,
+          "d_prime": 1.702214886133433,
+          "criterion": 0.9113028547956732
+        },
+        "jev-1.13.0 same_source_rows": {
+          "weighted": 0.8744000000000001,
+          "held_out_rejected": 0.936,
+          "in_scope_kept": 0.956,
+          "d_prime": 3.2280796386248185,
+          "criterion": 0.09200357757655264
+        },
+        "jev-1.13.0 cross_source_rows": {
+          "weighted": 0.7912,
+          "held_out_rejected": 0.524,
+          "in_scope_kept": 0.958,
+          "d_prime": 1.7881297341173754,
+          "criterion": 0.833869455329731
+        },
+        "jev-1.13.0 instruction": {
+          "weighted": 0.7936000000000001,
+          "held_out_rejected": 0.536,
+          "in_scope_kept": 0.953,
+          "d_prime": 1.7650263261535843,
+          "criterion": 0.7921517259475335
+        }
+      },
+      "rejected_by_domain": {
+        "specialist": {
+          "audio": 0.8947368421052632,
+          "takeaway": 0.9411764705882353,
+          "weather": 0.9014084507042254
+        },
+        "gemma-4-31b no_rows": {
+          "audio": 0.42105263157894735,
+          "takeaway": 0.6078431372549019,
+          "weather": 0.6901408450704225
+        },
+        "gemma-4-31b same_source_rows": {
+          "audio": 0.9649122807017544,
+          "takeaway": 0.8823529411764706,
+          "weather": 0.9788732394366197
+        },
+        "gemma-4-31b cross_source_rows": {
+          "audio": 0.5964912280701754,
+          "takeaway": 0.6274509803921569,
+          "weather": 0.704225352112676
+        },
+        "gemma-4-31b instruction": {
+          "audio": 0.5964912280701754,
+          "takeaway": 0.9411764705882353,
+          "weather": 0.8450704225352113
+        },
+        "qwen3.5-27b no_rows": {
+          "audio": 0.5789473684210527,
+          "takeaway": 0.8235294117647058,
+          "weather": 0.9084507042253521
+        },
+        "qwen3.5-27b same_source_rows": {
+          "audio": 1.0,
+          "takeaway": 0.9803921568627451,
+          "weather": 0.9859154929577465
+        },
+        "qwen3.5-27b cross_source_rows": {
+          "audio": 0.7017543859649122,
+          "takeaway": 0.803921568627451,
+          "weather": 0.9084507042253521
+        },
+        "qwen3.5-27b instruction": {
+          "audio": 0.6491228070175439,
+          "takeaway": 0.9411764705882353,
+          "weather": 0.9577464788732394
+        },
+        "jev-1.13.0 no_rows": {
+          "audio": 0.5263157894736842,
+          "takeaway": 0.45098039215686275,
+          "weather": 0.4647887323943662
+        },
+        "jev-1.13.0 same_source_rows": {
+          "audio": 0.9649122807017544,
+          "takeaway": 0.8431372549019608,
+          "weather": 0.9577464788732394
+        },
+        "jev-1.13.0 cross_source_rows": {
+          "audio": 0.5087719298245614,
+          "takeaway": 0.5098039215686274,
+          "weather": 0.5352112676056338
+        },
+        "jev-1.13.0 instruction": {
+          "audio": 0.543859649122807,
+          "takeaway": 0.5294117647058824,
+          "weather": 0.5352112676056338
+        }
+      },
+      "tests": {
+        "M1 specialist vs gemma-4-31b no_rows": {
+          "difference_points": 0.2666666666666657,
+          "ci95": [
+            -1.6746167018756817,
+            2.207912508912323
+          ],
+          "ci90": [
+            -1.361432636245727,
+            1.8634536284207524
+          ],
+          "p": 0.8666133386661334,
+          "clusters": 287
+        },
+        "M1 specialist vs qwen3.5-27b no_rows": {
+          "difference_points": -1.8933333333333344,
+          "ci95": [
+            -3.7301173450170224,
+            -0.28357615903404265
+          ],
+          "ci90": [
+            -3.3911697533138776,
+            -0.5378674599689098
+          ],
+          "p": 0.049295070492950704,
+          "clusters": 287
+        },
+        "M1 specialist vs jev-1.13.0 no_rows": {
+          "difference_points": 3.7866666666666666,
+          "ci95": [
+            1.2654015074780087,
+            6.263505325181112
+          ],
+          "ci90": [
+            1.648967472295935,
+            5.819913538629349
+          ],
+          "p": 0.0117988201179882,
+          "clusters": 287
+        },
+        "M3 gemma-4-31b same_source_rows vs no_rows": {
+          "difference_points": 6.4799999999999995,
+          "ci95": [
+            5.262251766924664,
+            7.8286017973267485
+          ],
+          "ci90": [
+            5.442605507068866,
+            7.608139176035267
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 287,
+          "p_one_sided": 4.999500049995001e-05,
+          "holm_p_one_sided": 0.00029997000299970003
+        },
+        "M4 gemma-4-31b cross_source_rows vs no_rows": {
+          "difference_points": 0.32,
+          "ci95": [
+            -0.46721638141141986,
+            1.1115693582478807
+          ],
+          "ci90": [
+            -0.3625085609678788,
+            0.975002935083034
+          ],
+          "p": 0.6097390260973903,
+          "clusters": 287,
+          "p_one_sided": 0.30486951304869514,
+          "holm_p_one_sided": 0.9793020697930207
+        },
+        "M5 gemma-4-31b instruction vs no_rows": {
+          "difference_points": 2.0000000000000004,
+          "ci95": [
+            0.5191169771359555,
+            3.3995660699243273
+          ],
+          "ci90": [
+            0.7727708068117123,
+            3.2079813475635346
+          ],
+          "p": 0.027797220277972202,
+          "clusters": 287,
+          "p_one_sided": 0.013898610138986101,
+          "holm_p_one_sided": 0.11118888111188881
+        },
+        "M3 qwen3.5-27b same_source_rows vs no_rows": {
+          "difference_points": 3.2800000000000002,
+          "ci95": [
+            2.253039548740256,
+            4.3567009849973495
+          ],
+          "ci90": [
+            2.4282848431361237,
+            4.194898988995293
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 287,
+          "p_one_sided": 4.999500049995001e-05,
+          "holm_p_one_sided": 0.00029997000299970003
+        },
+        "M4 qwen3.5-27b cross_source_rows vs no_rows": {
+          "difference_points": 0.16,
+          "ci95": [
+            -0.5912195121951219,
+            0.8667248836173865
+          ],
+          "ci90": [
+            -0.4842837202677681,
+            0.7795588961869332
+          ],
+          "p": 0.8316168383161684,
+          "clusters": 287,
+          "p_one_sided": 0.4158084191580842,
+          "holm_p_one_sided": 0.9793020697930207
+        },
+        "M5 qwen3.5-27b instruction vs no_rows": {
+          "difference_points": 0.07999999999999986,
+          "ci95": [
+            -0.9752541610436348,
+            1.1734897616851585
+          ],
+          "ci90": [
+            -0.8235099600253134,
+            0.9994561643558258
+          ],
+          "p": 1.0,
+          "clusters": 287,
+          "p_one_sided": 0.5,
+          "holm_p_one_sided": 1.0
+        },
+        "M3 jev-1.13.0 same_source_rows vs no_rows": {
+          "difference_points": 8.959999999999999,
+          "ci95": [
+            7.593304458828679,
+            10.270623592702618
+          ],
+          "ci90": [
+            7.8444501709610766,
+            10.044878484541563
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 287,
+          "p_one_sided": 4.999500049995001e-05
+        },
+        "M4 jev-1.13.0 cross_source_rows vs no_rows": {
+          "difference_points": 0.6400000000000001,
+          "ci95": [
+            -0.2867058140108463,
+            1.56958737819063
+          ],
+          "ci90": [
+            -0.1261968040865297,
+            1.4173596438142149
+          ],
+          "p": 0.2465753424657534,
+          "clusters": 287,
+          "p_one_sided": 0.1232876712328767
+        },
+        "M5 jev-1.13.0 instruction vs no_rows": {
+          "difference_points": 0.88,
+          "ci95": [
+            0.02488470107226607,
+            1.772842064630404
+          ],
+          "ci90": [
+            0.17580205851265757,
+            1.649486833237964
+          ],
+          "p": 0.0918908109189081,
+          "clusters": 287,
+          "p_one_sided": 0.04594540545945405
+        }
+      }
+    },
+    "original": {
+      "systems": {
+        "gemma-4-31b instruction": {
+          "weighted": 0.7532217612153664,
+          "held_out_rejected": 0.42386831275720166,
+          "in_scope_kept": 0.9229188078108942,
+          "d_prime": 1.2329749455719445,
+          "criterion": 0.8084945962689966
+        },
+        "qwen3.5-27b instruction": {
+          "weighted": 0.8190789167607713,
+          "held_out_rejected": 0.8189300411522634,
+          "in_scope_kept": 0.8900308324768756,
+          "d_prime": 2.1379871887342183,
+          "criterion": 0.15769851367648907
+        },
+        "jev-1.13.0 instruction": {
+          "weighted": 0.7795389085556952,
+          "held_out_rejected": 0.4567901234567901,
+          "in_scope_kept": 0.9568345323741008,
+          "d_prime": 1.606554212473362,
+          "criterion": 0.9118008500349504
+        }
+      },
+      "rejected_by_domain": {},
+      "tests": {
+        "M5 gemma-4-31b instruction vs no_rows": {
+          "difference_points": 1.4839345454853052,
+          "ci95": [
+            -0.7082208622393074,
+            3.4875817822842867
+          ],
+          "ci90": [
+            -0.33076925605923174,
+            3.2141674146414205
+          ],
+          "p": 0.3233676632336766,
+          "clusters": 264,
+          "p_one_sided": 0.1616838316168383,
+          "holm_p_one_sided": 0.9701029897010298
+        },
+        "M5 qwen3.5-27b instruction vs no_rows": {
+          "difference_points": 1.071650616015125,
+          "ci95": [
+            -1.079405990611635,
+            2.821581058696774
+          ],
+          "ci90": [
+            -0.6883157020262874,
+            2.6280464409948032
+          ],
+          "p": 0.44945505449455053,
+          "clusters": 264,
+          "p_one_sided": 0.22472752724727527,
+          "holm_p_one_sided": 0.9881511848815118
+        },
+        "M5 jev-1.13.0 instruction vs no_rows": {
+          "difference_points": 0.16477823032579228,
+          "ci95": [
+            -0.5115612119464483,
+            0.8733264406580076
+          ],
+          "ci90": [
+            -0.40058544776702903,
+            0.7613833398167718
+          ],
+          "p": 0.5575442455754425,
+          "clusters": 264,
+          "p_one_sided": 0.27877212278772123
+        }
+      }
+    }
+  },
+  "tests": {},
+  "M1_sign_count": {
+    "positive": 1,
+    "values": [
+      -0.9600000000000006,
+      -1.653333333333335,
+      0.2666666666666657
+    ]
+  }
+}

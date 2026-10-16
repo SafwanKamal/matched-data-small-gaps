@@ -1,0 +1,33 @@
+{
+  "protocol_id": "workflow-near-domain-oos-2026-10-14",
+  "role": "do the scope results hold when out-of-scope means a held-out intent of the same domain?",
+  "claim": "Every workflow so far used out-of-scope turns that are topically unrelated to the in-scope intents (CLINC150 general queries for a bank; bank questions for a voice assistant; CLINC150's own out-of-scope set). Zhang et al. (2022, 'Are Pretrained Transformers Robust in Intent Classification?') separate this out-of-domain case from in-domain out-of-scope, where the query belongs to the same domain but to an intent the system does not support, and report that confidence thresholds handle the first well and the second badly. Our scope findings (sections 3.21, 3.30) may therefore depend on the easy case. This protocol builds the same workflow on their BANKING77-OOS benchmark twice, with identical in-scope turns: once with in-domain out-of-scope turns (held-out Banking77 intents) and once with out-of-domain ones. Written before any model was trained on or queried with this data.",
+  "data": {
+    "source": "github.com/jianguoz/Few-Shot-Intent-Detection, Datasets/BANKING77-OOS, downloaded 2026-10-14 into data/banking77-oos (sha256 of train/seq.in 5ba97261..., test/seq.in dc38952e..., id-oos/test/seq.in faeeb6fa...)",
+    "licence": "the repository states no licence; Banking77 is CC BY 4.0. Results only, no redistribution of the data.",
+    "in_scope": "50 Banking77 intents: 5,905 training, 1,506 validation, 2,000 test utterances",
+    "id_oos": "utterances of the 27 held-out Banking77 intents: 530 validation, 1,080 test",
+    "ood_oos": "out-of-domain queries: 200 validation, 1,000 test"
+  },
+  "sessions": "400 five-turn sessions by the workflow v1 rule with seed 20261014, built twice from the same random stream so that the in-scope turns are identical and only the out-of-scope turns differ: 'id' draws them from id-oos test, 'ood' from ood-oos test. Both pools are cut to their first 1,000 utterances so that the generator consumes the same random stream.",
+  "specialist": {
+    "model": "150M Ettin encoder, Program 2 recipe at learning rate 1e-4, trained on the 5,905 in-scope training utterances; no out-of-scope training data",
+    "dev": "400 in-scope validation utterances (seeded sample) and 100 validation out-of-scope utterances of the same type as the sessions; temperature from the in-scope part",
+    "scope_rules": "softmax threshold, energy, Mahalanobis and 10th-nearest-neighbour detectors as in oos_detectors_protocol.json, each thresholded on dev; and the dev-selected one"
+  },
+  "hosted": {
+    "model": "gemma-4-31b on its workflow v4 host",
+    "conditions": {"zero_shot": "the system prompt below with the 50 options", "retrieval": "the same prompt with the 20 nearest training utterances by BM25 in the user message, from the 5,905 in-scope training rows only; no out-of-scope examples, since a deployment cannot have examples of intents it does not know"},
+    "system_prompt": "You are the decision step of a retail bank's customer-support desk. The desk handles only the request types listed below; anything else, including other banking questions, must be passed on.\nDecide:\n1. scope: is the current message a request that one of the options listed below covers? yes or no.\n2. intent: the code of the option that best describes the current message. Use 00 when scope is no.\n\nOptions:\n{options}\n\nReply with exactly these lines and nothing else:\nscope: <yes or no>\nintent: <two-digit code>",
+    "run_cap_usd": 1.5
+  },
+  "rows": [
+    "for each session set: the specialist alone with each scope rule; Gemma zero-shot alone; Gemma with retrieval alone; Gemma's scope decision with the specialist's intent; the specialist first with its least confident 25 and 40 percent of turns sent to Gemma with retrieval",
+    "scope accuracy, in-scope turns kept, out-of-scope turns caught, AUROC of each detector, session success with intervals"
+  ],
+  "readout_stated_in_advance": [
+    "if the specialist's best detector loses much more scope accuracy on 'id' than on 'ood', our section 3.30 result is a property of easy out-of-scope",
+    "if the general model's scope advantage, which shrank to 0 to 3 points with a distance detector on off-topic out-of-scope, reopens on 'id', the general model's role as scope judge is real for the hard case"
+  ],
+  "limits": "One domain, one seed, one hosted model, synthetic sessions."
+}

@@ -1,0 +1,5 @@
+{"error": null, "latency_ms": 25414.93420000188, "text": "number for my order?", "provider": "Novita", "prompt_tokens": 52, "cached_tokens": 0, "completion_tokens": 6, "cost": 9.68e-06, "id": "banking77-3"}
+{"error": null, "latency_ms": 25382.855700008804, "text": "please help me activate it?", "provider": "Novita", "prompt_tokens": 52, "cached_tokens": 0, "completion_tokens": 7, "cost": 1.008e-05, "id": "banking77-29"}
+{"error": null, "latency_ms": 16092.251699999906, "text": "my account to my credit card?", "provider": "Novita", "prompt_tokens": 51, "cached_tokens": 0, "completion_tokens": 8, "cost": 1.034e-05, "id": "banking77-39"}
+{"error": null, "latency_ms": 38709.88330000546, "text": "status of my order?", "provider": "Novita", "prompt_tokens": 49, "cached_tokens": 0, "completion_tokens": 6, "cost": 9.26e-06, "id": "banking77-40"}
+{"error": null, "latency_ms": 24749.154599994654, "text": "my order status.", "provider": "Novita", "prompt_tokens": 50, "cached_tokens": 0, "completion_tokens": 5, "cost": 9e-06, "id": "banking77-48"}

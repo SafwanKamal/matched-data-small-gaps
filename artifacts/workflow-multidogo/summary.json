@@ -1,0 +1,162 @@
+{
+  "protocol_id": "workflow-multidogo-real-conversations-2026-10-14",
+  "joined_label_turns_test": 3,
+  "systems": {
+    "encoder": {
+      "label_accuracy": 0.9452908587257618,
+      "task_turn_accuracy": 0.9078260869565218,
+      "repeat_accuracy": 0.684931506849315,
+      "out_of_domain_recall": 0.788,
+      "out_of_domain_precision": 0.8073770491803278,
+      "conversation_success": 0.6200417536534447,
+      "conversation_success_ci": [
+        0.5782881002087683,
+        0.6638830897703549
+      ],
+      "usd_per_1000_conversations": 0.0
+    },
+    "encoder_with_previous": {
+      "label_accuracy": 0.9464450600184672,
+      "task_turn_accuracy": 0.9095652173913044,
+      "repeat_accuracy": 0.6917808219178082,
+      "out_of_domain_recall": 0.784,
+      "out_of_domain_precision": 0.8132780082987552,
+      "conversation_success": 0.6263048016701461,
+      "conversation_success_ci": [
+        0.5824634655532359,
+        0.6680584551148225
+      ],
+      "usd_per_1000_conversations": 0.0
+    },
+    "gemma_retrieval_current": {
+      "label_accuracy": 0.9349030470914127,
+      "task_turn_accuracy": 0.9304347826086956,
+      "repeat_accuracy": 0.7602739726027398,
+      "out_of_domain_recall": 0.664,
+      "out_of_domain_precision": 0.7757009345794392,
+      "conversation_success": 0.5824634655532359,
+      "conversation_success_ci": [
+        0.5365344467640919,
+        0.6263048016701461
+      ],
+      "usd_per_1000_conversations": 0.6071621294363257
+    },
+    "gemma_retrieval_history": {
+      "label_accuracy": 0.9289012003693444,
+      "task_turn_accuracy": 0.9408695652173913,
+      "repeat_accuracy": 0.7945205479452054,
+      "out_of_domain_recall": 0.624,
+      "out_of_domain_precision": 0.78,
+      "conversation_success": 0.5448851774530271,
+      "conversation_success_ci": [
+        0.5009916492693111,
+        0.5908141962421712
+      ],
+      "usd_per_1000_conversations": 0.7679653027139876
+    },
+    "gemma_retrieval_history__stated_repeat": {
+      "label_accuracy": 0.9289012003693444,
+      "task_turn_accuracy": 0.9408695652173913,
+      "repeat_accuracy": 0.7808219178082192,
+      "out_of_domain_recall": 0.624,
+      "out_of_domain_precision": 0.78,
+      "conversation_success": 0.5427974947807933,
+      "conversation_success_ci": [
+        0.5010438413361169,
+        0.5866388308977035
+      ],
+      "usd_per_1000_conversations": 0.7679653027139876
+    },
+    "gemma_zero_current": {
+      "label_accuracy": 0.8746537396121884,
+      "task_turn_accuracy": 0.9426086956521739,
+      "repeat_accuracy": 0.8082191780821918,
+      "out_of_domain_recall": 0.368,
+      "out_of_domain_precision": 0.6301369863013698,
+      "conversation_success": 0.2985386221294363,
+      "conversation_success_ci": [
+        0.2588726513569937,
+        0.33820459290187893
+      ],
+      "usd_per_1000_conversations": 0.33682154488517746
+    },
+    "gemma_zero_history": {
+      "label_accuracy": 0.8672668513388735,
+      "task_turn_accuracy": 0.9426086956521739,
+      "repeat_accuracy": 0.8082191780821918,
+      "out_of_domain_recall": 0.404,
+      "out_of_domain_precision": 0.6273291925465838,
+      "conversation_success": 0.2839248434237996,
+      "conversation_success_ci": [
+        0.24217118997912318,
+        0.325678496868476
+      ],
+      "usd_per_1000_conversations": 0.49762471816283926
+    },
+    "gemma_zero_history__stated_repeat": {
+      "label_accuracy": 0.8672668513388735,
+      "task_turn_accuracy": 0.9426086956521739,
+      "repeat_accuracy": 0.7876712328767124,
+      "out_of_domain_recall": 0.404,
+      "out_of_domain_precision": 0.6273291925465838,
+      "conversation_success": 0.2818371607515658,
+      "conversation_success_ci": [
+        0.24425887265135698,
+        0.3235908141962422
+      ],
+      "usd_per_1000_conversations": 0.49762471816283926
+    },
+    "qwen9b_retrieval_current": {
+      "label_accuracy": 0.9277469990766389,
+      "task_turn_accuracy": 0.888695652173913,
+      "repeat_accuracy": 0.6575342465753424,
+      "out_of_domain_recall": 0.736,
+      "out_of_domain_precision": 0.7104247104247104,
+      "conversation_success": 0.5427974947807933,
+      "conversation_success_ci": [
+        0.4989561586638831,
+        0.5866388308977035
+      ],
+      "usd_per_1000_conversations": 0.42097974947807937
+    },
+    "qwen9b_zero_current": {
+      "label_accuracy": 0.5676361957525392,
+      "task_turn_accuracy": 0.9408695652173913,
+      "repeat_accuracy": 0.7123287671232876,
+      "out_of_domain_recall": 0.252,
+      "out_of_domain_precision": 0.5294117647058824,
+      "conversation_success": 0.010438413361169102,
+      "conversation_success_ci": [
+        0.0020876826722338203,
+        0.018789144050104383
+      ],
+      "usd_per_1000_conversations": 0.22694154488517745
+    },
+    "encoder_then_gemma_retrieval_0.25": {
+      "label_accuracy": 0.9413665743305633,
+      "task_turn_accuracy": 0.928695652173913,
+      "repeat_accuracy": 0.7534246575342466,
+      "out_of_domain_recall": 0.684,
+      "out_of_domain_precision": 0.8260869565217391,
+      "conversation_success": 0.6116910229645094,
+      "conversation_success_ci": [
+        0.5678496868475992,
+        0.6555323590814196
+      ],
+      "usd_per_1000_conversations": 0.1440412108559499
+    },
+    "encoder_then_gemma_retrieval_0.4": {
+      "label_accuracy": 0.9392890120036934,
+      "task_turn_accuracy": 0.9304347826086956,
+      "repeat_accuracy": 0.7602739726027398,
+      "out_of_domain_recall": 0.668,
+      "out_of_domain_precision": 0.8226600985221675,
+      "conversation_success": 0.6075156576200418,
+      "conversation_success_ci": [
+        0.5636743215031316,
+        0.651356993736952
+      ],
+      "usd_per_1000_conversations": 0.22730288100208768
+    }
+  }
+}

@@ -1,0 +1,4855 @@
+{
+ "status": "POST HOC (round 3 review, R2 N1). Text matched to legacy-datasets/banking77 after lower-casing and stripping.",
+ "source_identical_to_upstream": "data/banking77-oos/train is byte-identical to github.com/jianguoz/Few-Shot-Intent-Detection commit fa955331 (sha256 of train/seq.in 5ba97261..., train/label b4cfaddc...)",
+ "pool_rows": 5905,
+ "pool_matched": 5903,
+ "pool_mislabelled": 366,
+ "pool_leaked_held_out": 145,
+ "held_out_intents_leaking": [
+  "atm_support",
+  "card_acceptance",
+  "card_not_working",
+  "card_swallowed",
+  "get_disposable_virtual_card",
+  "get_physical_card",
+  "passcode_forgotten",
+  "receiving_money",
+  "top_up_by_bank_transfer_charge",
+  "top_up_by_card_charge",
+  "top_up_by_cash_or_cheque",
+  "top_up_limits",
+  "topping_up_by_card",
+  "transfer_into_account",
+  "verify_my_identity",
+  "verify_source_of_funds",
+  "virtual_card_not_working"
+ ],
+ "in_scope_items_wrong_gold": 32,
+ "held_out_items_true_in_scope": 36,
+ "leaked_rows": [
+  813,
+  814,
+  815,
+  816,
+  907,
+  908,
+  909,
+  910,
+  911,
+  912,
+  1151,
+  1152,
+  1153,
+  1154,
+  1155,
+  1156,
+  1683,
+  1684,
+  1685,
+  1686,
+  1687,
+  1688,
+  1689,
+  2269,
+  2270,
+  2271,
+  2272,
+  2273,
+  2274,
+  2275,
+  2377,
+  2378,
+  2379,
+  2380,
+  2381,
+  2382,
+  2383,
+  2473,
+  2474,
+  2475,
+  2476,
+  2477,
+  2478,
+  2479,
+  2480,
+  2618,
+  2619,
+  2620,
+  2621,
+  2622,
+  2623,
+  2624,
+  2625,
+  3589,
+  3590,
+  3591,
+  3592,
+  3593,
+  3594,
+  3595,
+  3596,
+  3729,
+  3730,
+  3731,
+  3732,
+  3733,
+  3734,
+  3735,
+  3736,
+  4317,
+  4318,
+  4319,
+  4320,
+  4321,
+  4322,
+  4323,
+  4324,
+  4325,
+  4326,
+  4426,
+  4427,
+  4428,
+  4429,
+  4430,
+  4431,
+  4432,
+  4433,
+  4434,
+  4435,
+  4436,
+  4629,
+  4630,
+  4631,
+  4632,
+  4633,
+  4634,
+  4635,
+  4636,
+  4637,
+  4638,
+  4639,
+  4725,
+  4726,
+  4727,
+  4728,
+  4729,
+  4730,
+  4731,
+  4732,
+  4733,
+  4734,
+  4735,
+  4855,
+  4856,
+  4857,
+  4858,
+  4859,
+  4860,
+  4861,
+  4862,
+  4863,
+  4864,
+  4865,
+  5331,
+  5332,
+  5333,
+  5334,
+  5335,
+  5336,
+  5337,
+  5338,
+  5339,
+  5340,
+  5341,
+  5802,
+  5803,
+  5804,
+  5805,
+  5806,
+  5807,
+  5808,
+  5809,
+  5810,
+  5811,
+  5812
+ ],
+ "mislabelled_rows": [
+  813,
+  814,
+  815,
+  816,
+  907,
+  908,
+  909,
+  910,
+  911,
+  912,
+  1026,
+  1027,
+  1028,
+  1029,
+  1030,
+  1031,
+  1151,
+  1152,
+  1153,
+  1154,
+  1155,
+  1156,
+  1295,
+  1296,
+  1297,
+  1298,
+  1299,
+  1300,
+  1444,
+  1445,
+  1446,
+  1447,
+  1448,
+  1449,
+  1580,
+  1581,
+  1582,
+  1583,
+  1584,
+  1585,
+  1683,
+  1684,
+  1685,
+  1686,
+  1687,
+  1688,
+  1689,
+  1799,
+  1800,
+  1801,
+  1802,
+  1803,
+  1804,
+  1805,
+  1943,
+  1944,
+  1945,
+  1946,
+  1947,
+  1948,
+  1949,
+  2077,
+  2078,
+  2079,
+  2080,
+  2081,
+  2082,
+  2083,
+  2173,
+  2174,
+  2175,
+  2176,
+  2177,
+  2178,
+  2179,
+  2269,
+  2270,
+  2271,
+  2272,
+  2273,
+  2274,
+  2275,
+  2377,
+  2378,
+  2379,
+  2380,
+  2381,
+  2382,
+  2383,
+  2473,
+  2474,
+  2475,
+  2476,
+  2477,
+  2478,
+  2479,
+  2480,
+  2618,
+  2619,
+  2620,
+  2621,
+  2622,
+  2623,
+  2624,
+  2625,
+  2756,
+  2757,
+  2758,
+  2759,
+  2760,
+  2761,
+  2762,
+  2763,
+  2883,
+  2884,
+  2885,
+  2886,
+  2887,
+  2888,
+  2889,
+  2890,
+  2979,
+  2980,
+  2981,
+  2982,
+  2983,
+  2984,
+  2985,
+  2986,
+  3114,
+  3115,
+  3116,
+  3117,
+  3118,
+  3119,
+  3120,
+  3121,
+  3220,
+  3221,
+  3222,
+  3223,
+  3224,
+  3225,
+  3226,
+  3227,
+  3349,
+  3350,
+  3351,
+  3352,
+  3353,
+  3354,
+  3355,
+  3356,
+  3471,
+  3472,
+  3473,
+  3474,
+  3475,
+  3476,
+  3477,
+  3478,
+  3589,
+  3590,
+  3591,
+  3592,
+  3593,
+  3594,
+  3595,
+  3596,
+  3729,
+  3730,
+  3731,
+  3732,
+  3733,
+  3734,
+  3735,
+  3736,
+  3831,
+  3832,
+  3833,
+  3834,
+  3835,
+  3836,
+  3837,
+  3838,
+  3959,
+  3960,
+  3961,
+  3962,
+  3963,
+  3964,
+  3965,
+  3966,
+  4056,
+  4057,
+  4058,
+  4059,
+  4060,
+  4061,
+  4062,
+  4063,
+  4064,
+  4065,
+  4180,
+  4181,
+  4182,
+  4183,
+  4184,
+  4185,
+  4186,
+  4187,
+  4188,
+  4189,
+  4317,
+  4318,
+  4319,
+  4320,
+  4321,
+  4322,
+  4323,
+  4324,
+  4325,
+  4326,
+  4426,
+  4427,
+  4428,
+  4429,
+  4430,
+  4431,
+  4432,
+  4433,
+  4434,
+  4435,
+  4436,
+  4526,
+  4527,
+  4528,
+  4529,
+  4530,
+  4531,
+  4532,
+  4533,
+  4534,
+  4535,
+  4536,
+  4629,
+  4630,
+  4631,
+  4632,
+  4633,
+  4634,
+  4635,
+  4636,
+  4637,
+  4638,
+  4639,
+  4725,
+  4726,
+  4727,
+  4728,
+  4729,
+  4730,
+  4731,
+  4732,
+  4733,
+  4734,
+  4735,
+  4855,
+  4856,
+  4857,
+  4858,
+  4859,
+  4860,
+  4861,
+  4862,
+  4863,
+  4864,
+  4865,
+  4971,
+  4972,
+  4973,
+  4974,
+  4975,
+  4976,
+  4977,
+  4978,
+  4979,
+  4980,
+  4981,
+  5107,
+  5108,
+  5109,
+  5110,
+  5111,
+  5112,
+  5113,
+  5114,
+  5115,
+  5116,
+  5117,
+  5235,
+  5236,
+  5237,
+  5238,
+  5239,
+  5240,
+  5241,
+  5242,
+  5243,
+  5244,
+  5245,
+  5331,
+  5332,
+  5333,
+  5334,
+  5335,
+  5336,
+  5337,
+  5338,
+  5339,
+  5340,
+  5341,
+  5458,
+  5459,
+  5460,
+  5461,
+  5462,
+  5463,
+  5464,
+  5465,
+  5466,
+  5467,
+  5468,
+  5599,
+  5600,
+  5601,
+  5602,
+  5603,
+  5604,
+  5605,
+  5606,
+  5607,
+  5608,
+  5609,
+  5702,
+  5703,
+  5704,
+  5705,
+  5706,
+  5707,
+  5708,
+  5709,
+  5710,
+  5711,
+  5712,
+  5802,
+  5803,
+  5804,
+  5805,
+  5806,
+  5807,
+  5808,
+  5809,
+  5810,
+  5811,
+  5812
+ ],
+ "items": {
+  "b77oos-in-2": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-3": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-4": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-7": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-8": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-9": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-11": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-14": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-16": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-21": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-28": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-29": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-32": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-35": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-36": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-43": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-50": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-56": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-59": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-62": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-66": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-70": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-75": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-79": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-85": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-87": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-88": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-92": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-95": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-96": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-117": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-120": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-122": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-124": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-126": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-127": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-129": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-131": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-132": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-134": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-136": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-137": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-138": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-139": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-143": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-144": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-145": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-148": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-154": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-156": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-160": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-163": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-164": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-168": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-169": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-172": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-176": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-182": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-187": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-198": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-217": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-254": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-270": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-280": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-281": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-282": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-283": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-286": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-287": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-289": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-293": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-294": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-295": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-297": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-298": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-301": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-303": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-307": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-309": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-313": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-315": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-320": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-325": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-327": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-328": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-329": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-330": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-333": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-334": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-335": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-342": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-343": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-344": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-345": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-347": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-349": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-350": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-353": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-357": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-364": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-370": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-377": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-378": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-379": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-384": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-387": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-395": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-399": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-400": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-401": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-406": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-407": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-408": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-409": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-411": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-416": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-417": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-419": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-420": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-421": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-438": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-445": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-446": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-448": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-455": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-458": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-473": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-475": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-478": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-491": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-492": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-497": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-508": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-509": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-512": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-514": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-517": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-518": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-528": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-533": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-542": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-543": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-544": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-548": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-552": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-558": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-562": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-563": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-568": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-570": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-574": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-575": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-577": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-579": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-585": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-586": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-587": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-592": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-593": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-599": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-604": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-613": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-615": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-619": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-621": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-624": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-630": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-639": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-647": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-669": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-682": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-683": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-685": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-687": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-691": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-693": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-696": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-697": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-702": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-705": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-706": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-707": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-711": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-713": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-714": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-721": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-722": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-724": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-725": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-727": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-731": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-735": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-739": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-740": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-741": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-744": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-747": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-749": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-752": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-753": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-757": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-759": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-762": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-763": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-769": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-770": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-771": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-774": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-778": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-782": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-791": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-795": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-817": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-827": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-830": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-842": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-878": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-885": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-889": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-891": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-896": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-898": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-899": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-900": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-910": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-912": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-913": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-922": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-931": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-934": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-952": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-962": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-963": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-966": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-973": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-975": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-977": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-981": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-983": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-984": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-988": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-989": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-990": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-995": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1000": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1006": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1011": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1021": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1022": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1028": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1031": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1033": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1036": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1037": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1038": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1039": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1080": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1081": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1093": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1094": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1106": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1110": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1111": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1115": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1116": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1122": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1125": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1128": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1132": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1137": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1142": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1151": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1163": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1164": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1165": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1171": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1175": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1176": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1178": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1179": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1184": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1192": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1196": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1198": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1227": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1248": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1259": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1264": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1272": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1320": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1321": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1322": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1325": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1326": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1331": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1337": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1342": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1343": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1344": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1348": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1351": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1353": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1354": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1355": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1359": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1362": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1363": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1365": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1374": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1381": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1382": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1387": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1390": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1394": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1400": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1402": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1405": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1417": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1422": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1428": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1429": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1430": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1435": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1436": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1437": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1438": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1441": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-1457": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1495": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1501": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1560": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-1562": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-1565": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1568": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1569": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1585": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1588": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1592": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1598": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1599": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1634": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1642": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-1643": {
+   "wrong_gold": true,
+   "true_is_held_out": true
+  },
+  "b77oos-in-1644": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1646": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1652": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1658": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1659": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1668": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1669": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1672": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1676": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1725": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1727": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1729": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1736": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1740": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1744": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1746": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1748": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1750": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1762": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1767": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1768": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1776": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1777": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1780": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1785": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1787": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1788": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1792": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1798": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1808": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1812": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1820": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1827": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1829": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1833": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1837": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1840": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1841": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1843": {
+   "wrong_gold": true,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1847": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1848": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1849": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1856": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1860": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1870": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1873": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1925": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1930": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1931": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1932": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1937": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1948": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1954": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1977": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-in-1996": {
+   "wrong_gold": false,
+   "true_is_held_out": false
+  },
+  "b77oos-out-0": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-1": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-2": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-4": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-5": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-7": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-8": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-9": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-10": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-13": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-14": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-15": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-16": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-18": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-25": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-26": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-28": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-29": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-33": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-37": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-38": {
+   "true_is_in_scope": false,
+   "true": "exchange_rate"
+  },
+  "b77oos-out-40": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-41": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-42": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-43": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-44": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-47": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-48": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-49": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-50": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-52": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-53": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-54": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-55": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-57": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-58": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-61": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-62": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-66": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-69": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-70": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-71": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-72": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-76": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-79": {
+   "true_is_in_scope": false,
+   "true": "card_delivery_estimate"
+  },
+  "b77oos-out-80": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-81": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-82": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-83": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-85": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-88": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-92": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-93": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-94": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-96": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-97": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-98": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-99": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-100": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-103": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-104": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-105": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-106": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-107": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-108": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-110": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-111": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-115": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-116": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-117": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-119": {
+   "true_is_in_scope": false,
+   "true": "card_not_working"
+  },
+  "b77oos-out-124": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-125": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-126": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-127": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-129": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-130": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-132": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-133": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-134": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-135": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-137": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-138": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-139": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-141": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-142": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-143": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-144": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-146": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-150": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-152": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-154": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-157": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-159": {
+   "true_is_in_scope": false,
+   "true": "lost_or_stolen_card"
+  },
+  "b77oos-out-160": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-161": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-162": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-163": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-164": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-165": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-166": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-167": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-169": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-170": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-171": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-172": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-173": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-174": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-176": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-177": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-178": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-179": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-183": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-184": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-187": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-189": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-191": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-192": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-194": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-195": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-197": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-199": {
+   "true_is_in_scope": false,
+   "true": "age_limit"
+  },
+  "b77oos-out-200": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-201": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-204": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-205": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-207": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-208": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-209": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-210": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-211": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-213": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-214": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-215": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-216": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-217": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-219": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-220": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-222": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-223": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-225": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-228": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-230": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-231": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-233": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-234": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-236": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-238": {
+   "true_is_in_scope": false,
+   "true": "pin_blocked"
+  },
+  "b77oos-out-241": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-243": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-246": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-247": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-248": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-250": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-251": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-252": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-253": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-255": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-256": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-257": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-258": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-259": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-260": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-263": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-264": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-266": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-268": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-269": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-270": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-271": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-272": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-273": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-275": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-276": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-277": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-278": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-279": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-280": {
+   "true_is_in_scope": false,
+   "true": "contactless_not_working"
+  },
+  "b77oos-out-281": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-282": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-284": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-289": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-291": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-296": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-300": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-301": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-304": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-305": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-306": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-307": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-309": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-311": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-313": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-314": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-316": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-318": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_bank_transfer_charge"
+  },
+  "b77oos-out-320": {
+   "true_is_in_scope": true,
+   "true": "cancel_transfer"
+  },
+  "b77oos-out-321": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-322": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-323": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-325": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-326": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-327": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-328": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-331": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-332": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-333": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-334": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-335": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-336": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-337": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-339": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-342": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-343": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-344": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-345": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-346": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-347": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-350": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-352": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-358": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-359": {
+   "true_is_in_scope": false,
+   "true": "top_up_limits"
+  },
+  "b77oos-out-360": {
+   "true_is_in_scope": true,
+   "true": "supported_cards_and_currencies"
+  },
+  "b77oos-out-361": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-362": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-363": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-365": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-366": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-369": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-371": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-372": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-379": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-382": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-384": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-385": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-386": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-387": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-388": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-389": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-391": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-392": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-393": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-395": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-396": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-397": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-398": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-399": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-400": {
+   "true_is_in_scope": false,
+   "true": "getting_virtual_card"
+  },
+  "b77oos-out-403": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-404": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-406": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-408": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-409": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-411": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-412": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-413": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-415": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-416": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-419": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-420": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-421": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-422": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-423": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-424": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-426": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-428": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-429": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-430": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-432": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-433": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-434": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-437": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-439": {
+   "true_is_in_scope": false,
+   "true": "card_acceptance"
+  },
+  "b77oos-out-440": {
+   "true_is_in_scope": true,
+   "true": "why_verify_identity"
+  },
+  "b77oos-out-441": {
+   "true_is_in_scope": true,
+   "true": "why_verify_identity"
+  },
+  "b77oos-out-442": {
+   "true_is_in_scope": true,
+   "true": "why_verify_identity"
+  },
+  "b77oos-out-443": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-445": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-446": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-448": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-450": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-451": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-452": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-453": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-455": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-456": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-459": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-460": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-461": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-463": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-464": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-466": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-471": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-472": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-473": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-475": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-479": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-480": {
+   "true_is_in_scope": false,
+   "true": "unable_to_verify_identity"
+  },
+  "b77oos-out-483": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-485": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-486": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-487": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-488": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-490": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-491": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-493": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-494": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-497": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-498": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-499": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-501": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-502": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-503": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-507": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-509": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-511": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-512": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-513": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-517": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-518": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-519": {
+   "true_is_in_scope": false,
+   "true": "get_physical_card"
+  },
+  "b77oos-out-520": {
+   "true_is_in_scope": true,
+   "true": "visa_or_mastercard"
+  },
+  "b77oos-out-526": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-527": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-530": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-531": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-532": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-533": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-534": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-535": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-539": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-540": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-541": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-542": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-544": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-546": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-547": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-548": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-549": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-550": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-552": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-553": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-554": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-556": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-557": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-559": {
+   "true_is_in_scope": false,
+   "true": "topping_up_by_card"
+  },
+  "b77oos-out-560": {
+   "true_is_in_scope": true,
+   "true": "disposable_card_limits"
+  },
+  "b77oos-out-562": {
+   "true_is_in_scope": true,
+   "true": "disposable_card_limits"
+  },
+  "b77oos-out-563": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-564": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-568": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-570": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-571": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-572": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-573": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-574": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-575": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-577": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-578": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-580": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-581": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-585": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-586": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-587": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-588": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-589": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-590": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-594": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-595": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-596": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-598": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-600": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-601": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-602": {
+   "true_is_in_scope": false,
+   "true": "compromised_card"
+  },
+  "b77oos-out-603": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-605": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-608": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-609": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-610": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-612": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-613": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-614": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-616": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-620": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-621": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-623": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-627": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-628": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-630": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-634": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-639": {
+   "true_is_in_scope": false,
+   "true": "atm_support"
+  },
+  "b77oos-out-640": {
+   "true_is_in_scope": true,
+   "true": "direct_debit_payment_not_recognised"
+  },
+  "b77oos-out-641": {
+   "true_is_in_scope": true,
+   "true": "direct_debit_payment_not_recognised"
+  },
+  "b77oos-out-642": {
+   "true_is_in_scope": true,
+   "true": "direct_debit_payment_not_recognised"
+  },
+  "b77oos-out-643": {
+   "true_is_in_scope": true,
+   "true": "direct_debit_payment_not_recognised"
+  },
+  "b77oos-out-644": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-645": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-646": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-647": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-648": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-649": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-650": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-652": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-654": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-657": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-658": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-661": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-662": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-664": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-666": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-668": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-670": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-673": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-674": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-676": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-677": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-678": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-679": {
+   "true_is_in_scope": false,
+   "true": "passcode_forgotten"
+  },
+  "b77oos-out-680": {
+   "true_is_in_scope": true,
+   "true": "pending_transfer"
+  },
+  "b77oos-out-681": {
+   "true_is_in_scope": true,
+   "true": "pending_transfer"
+  },
+  "b77oos-out-683": {
+   "true_is_in_scope": true,
+   "true": "pending_transfer"
+  },
+  "b77oos-out-686": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-687": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-688": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-689": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-691": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-692": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-695": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-696": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-698": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-701": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-702": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-703": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-706": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-707": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-708": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-709": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-711": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-712": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-713": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-714": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-717": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-721": {
+   "true_is_in_scope": false,
+   "true": "terminate_account"
+  },
+  "b77oos-out-724": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-725": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-726": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-727": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-729": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-731": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-732": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-733": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-734": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-735": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-736": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-737": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-739": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-741": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-742": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-744": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-745": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-746": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-747": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-750": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-751": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-752": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-753": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-754": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-755": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-757": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-758": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-759": {
+   "true_is_in_scope": false,
+   "true": "card_swallowed"
+  },
+  "b77oos-out-761": {
+   "true_is_in_scope": true,
+   "true": "transaction_charged_twice"
+  },
+  "b77oos-out-762": {
+   "true_is_in_scope": true,
+   "true": "transaction_charged_twice"
+  },
+  "b77oos-out-765": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-766": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-767": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-770": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-771": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-772": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-773": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-775": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-781": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-782": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-784": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-785": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-786": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-787": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-789": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-790": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-791": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-792": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-793": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-794": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-797": {
+   "true_is_in_scope": false,
+   "true": "verify_source_of_funds"
+  },
+  "b77oos-out-800": {
+   "true_is_in_scope": true,
+   "true": "transfer_fee_charged"
+  },
+  "b77oos-out-801": {
+   "true_is_in_scope": true,
+   "true": "transfer_fee_charged"
+  },
+  "b77oos-out-802": {
+   "true_is_in_scope": true,
+   "true": "transfer_fee_charged"
+  },
+  "b77oos-out-803": {
+   "true_is_in_scope": true,
+   "true": "transfer_fee_charged"
+  },
+  "b77oos-out-806": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-807": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-811": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-815": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-816": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-817": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-822": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-823": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-826": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-829": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-830": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-833": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-835": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-837": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-838": {
+   "true_is_in_scope": false,
+   "true": "receiving_money"
+  },
+  "b77oos-out-840": {
+   "true_is_in_scope": true,
+   "true": "failed_transfer"
+  },
+  "b77oos-out-843": {
+   "true_is_in_scope": true,
+   "true": "failed_transfer"
+  },
+  "b77oos-out-846": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-849": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-850": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-851": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-853": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-856": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-857": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-859": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-860": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-864": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-865": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-866": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-868": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-870": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-871": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-873": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-874": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-875": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-876": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-877": {
+   "true_is_in_scope": false,
+   "true": "transfer_into_account"
+  },
+  "b77oos-out-884": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-886": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-887": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-888": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-891": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-898": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-902": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-904": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-907": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-908": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-909": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-910": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-911": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-912": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-913": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-915": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-916": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-917": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-919": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_cash_or_cheque"
+  },
+  "b77oos-out-920": {
+   "true_is_in_scope": true,
+   "true": "order_physical_card"
+  },
+  "b77oos-out-922": {
+   "true_is_in_scope": true,
+   "true": "order_physical_card"
+  },
+  "b77oos-out-923": {
+   "true_is_in_scope": true,
+   "true": "order_physical_card"
+  },
+  "b77oos-out-925": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-926": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-927": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-928": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-932": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-934": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-935": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-936": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-938": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-940": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-941": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-944": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-945": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-947": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-948": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-951": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-952": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-953": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-957": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-958": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-959": {
+   "true_is_in_scope": false,
+   "true": "virtual_card_not_working"
+  },
+  "b77oos-out-960": {
+   "true_is_in_scope": true,
+   "true": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  "b77oos-out-962": {
+   "true_is_in_scope": true,
+   "true": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  "b77oos-out-964": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-967": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-968": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-971": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-975": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-976": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-977": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-978": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-979": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-983": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-984": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-985": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-987": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-992": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-993": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-994": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-996": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-997": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-998": {
+   "true_is_in_scope": false,
+   "true": "get_disposable_virtual_card"
+  },
+  "b77oos-out-1000": {
+   "true_is_in_scope": true,
+   "true": "exchange_charge"
+  },
+  "b77oos-out-1001": {
+   "true_is_in_scope": true,
+   "true": "exchange_charge"
+  },
+  "b77oos-out-1002": {
+   "true_is_in_scope": true,
+   "true": "exchange_charge"
+  },
+  "b77oos-out-1003": {
+   "true_is_in_scope": true,
+   "true": "exchange_charge"
+  },
+  "b77oos-out-1004": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1005": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1006": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1007": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1008": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1009": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1010": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1011": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1012": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1013": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1014": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1015": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1016": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1017": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1018": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1019": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1020": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1021": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1022": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1023": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1024": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1025": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1026": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1027": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1028": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1029": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1030": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1031": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1032": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1033": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1034": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1035": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1036": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1037": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1038": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1039": {
+   "true_is_in_scope": false,
+   "true": "top_up_by_card_charge"
+  },
+  "b77oos-out-1040": {
+   "true_is_in_scope": true,
+   "true": "apple_pay_or_google_pay"
+  },
+  "b77oos-out-1041": {
+   "true_is_in_scope": true,
+   "true": "apple_pay_or_google_pay"
+  },
+  "b77oos-out-1042": {
+   "true_is_in_scope": true,
+   "true": "apple_pay_or_google_pay"
+  },
+  "b77oos-out-1043": {
+   "true_is_in_scope": true,
+   "true": "apple_pay_or_google_pay"
+  },
+  "b77oos-out-1044": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1045": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1046": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1047": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1048": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1049": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1050": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1051": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1052": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1053": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1054": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1055": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1056": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1057": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1058": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1059": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1060": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1061": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1062": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1063": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1064": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1065": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1066": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1067": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1068": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1069": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1070": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1071": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1072": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1073": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1074": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1075": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1076": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1077": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1078": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  },
+  "b77oos-out-1079": {
+   "true_is_in_scope": false,
+   "true": "verify_my_identity"
+  }
+ },
+ "leaked_rows_sha256": "a071c6efcf2e49ccfa0bcdd5c43a581c2c8008ad3cac7e1d3cf7f7f391c901ec"
+}

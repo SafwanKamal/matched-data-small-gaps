@@ -1,0 +1,234 @@
+{
+  "protocol_id": "program-1-choice-2026-10-07",
+  "seed": 20261007,
+  "seed_spawn_order": [
+    "sst2_dev",
+    "ag_news_dev",
+    "banking77_dev",
+    "ag_news_test",
+    "banking77_test"
+  ],
+  "choice": {
+    "distribution": "simplex",
+    "multi_label": false,
+    "rationale": false,
+    "generated_tokens": 0,
+    "decision": "argmax_lowest_index_on_ties"
+  },
+  "temperature": {
+    "objective": "mean_nll_on_dev",
+    "bounds": [
+      0.05,
+      20.0
+    ],
+    "xatol": 0.0001,
+    "primary_test_metrics": "scaled",
+    "also_report": "unscaled"
+  },
+  "ece": {
+    "bins": 15,
+    "equal_width": true,
+    "range": [
+      0,
+      1
+    ],
+    "last_bin_closed": true,
+    "empty_bins": "omit",
+    "score": "top_label"
+  },
+  "selective": {
+    "max_error": 0.05,
+    "rank": "confidence_descending_stable"
+  },
+  "brier": "mean_over_items_of_sum_over_classes_of_squared_error",
+  "log_loss": {
+    "base": "e",
+    "floor": 1e-12
+  },
+  "schema": {
+    "sum_tol": 0.0001,
+    "neg_tol": 1e-06
+  },
+  "latency": {
+    "batch_size_texts": 1,
+    "warmup": 20,
+    "warmup_split": "dev",
+    "sync": "cuda",
+    "percentiles": [
+      50,
+      95
+    ],
+    "percentile_method": "linear"
+  },
+  "datasets": {
+    "sst2": {
+      "hf_id": "nyu-mll/glue",
+      "subset": "sst2",
+      "revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+      "dev_hf_split": "train",
+      "test_hf_split": "validation",
+      "dev_n": 400,
+      "test_n": 872,
+      "test_is_full_split": true,
+      "text_field": "sentence",
+      "id_prefix": {
+        "dev": "sst2-train-",
+        "test": "sst2-validation-"
+      },
+      "labels": [
+        "negative",
+        "positive"
+      ]
+    },
+    "ag_news": {
+      "hf_id": "fancyzhx/ag_news",
+      "revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+      "dev_hf_split": "train",
+      "test_hf_split": "test",
+      "dev_n": 400,
+      "test_n": 1000,
+      "text_field": "text",
+      "id_prefix": {
+        "dev": "ag_news-train-",
+        "test": "ag_news-test-"
+      },
+      "labels": [
+        "World",
+        "Sports",
+        "Business",
+        "Sci/Tech"
+      ]
+    },
+    "banking77": {
+      "hf_id": "legacy-datasets/banking77",
+      "revision": "f54121560de48f2852f90be299010d1d6dc612ec",
+      "dev_hf_split": "train",
+      "test_hf_split": "test",
+      "dev_n": 400,
+      "test_n": 500,
+      "text_field": "text",
+      "label_transform": "replace underscore with space",
+      "id_prefix": {
+        "dev": "banking77-train-",
+        "test": "banking77-test-"
+      },
+      "labels": [
+        "activate my card",
+        "age limit",
+        "apple pay or google pay",
+        "atm support",
+        "automatic top up",
+        "balance not updated after bank transfer",
+        "balance not updated after cheque or cash deposit",
+        "beneficiary not allowed",
+        "cancel transfer",
+        "card about to expire",
+        "card acceptance",
+        "card arrival",
+        "card delivery estimate",
+        "card linking",
+        "card not working",
+        "card payment fee charged",
+        "card payment not recognised",
+        "card payment wrong exchange rate",
+        "card swallowed",
+        "cash withdrawal charge",
+        "cash withdrawal not recognised",
+        "change pin",
+        "compromised card",
+        "contactless not working",
+        "country support",
+        "declined card payment",
+        "declined cash withdrawal",
+        "declined transfer",
+        "direct debit payment not recognised",
+        "disposable card limits",
+        "edit personal details",
+        "exchange charge",
+        "exchange rate",
+        "exchange via app",
+        "extra charge on statement",
+        "failed transfer",
+        "fiat currency support",
+        "get disposable virtual card",
+        "get physical card",
+        "getting spare card",
+        "getting virtual card",
+        "lost or stolen card",
+        "lost or stolen phone",
+        "order physical card",
+        "passcode forgotten",
+        "pending card payment",
+        "pending cash withdrawal",
+        "pending top up",
+        "pending transfer",
+        "pin blocked",
+        "receiving money",
+        "Refund not showing up",
+        "request refund",
+        "reverted card payment?",
+        "supported cards and currencies",
+        "terminate account",
+        "top up by bank transfer charge",
+        "top up by card charge",
+        "top up by cash or cheque",
+        "top up failed",
+        "top up limits",
+        "top up reverted",
+        "topping up by card",
+        "transaction charged twice",
+        "transfer fee charged",
+        "transfer into account",
+        "transfer not received by recipient",
+        "transfer timing",
+        "unable to verify identity",
+        "verify my identity",
+        "verify source of funds",
+        "verify top up",
+        "virtual card not working",
+        "visa or mastercard",
+        "why verify identity",
+        "wrong amount of cash received",
+        "wrong exchange rate for cash withdrawal"
+      ]
+    }
+  },
+  "systems": {
+    "deberta-v3-large-zeroshot-v2.0-c": {
+      "hf_id": "MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c",
+      "revision": "b2730f16019076bb0009481121efbe4705e0e378",
+      "multi_label": false,
+      "hypothesis_template": "This example is {}.",
+      "entailment_rule": "label2id key startswith entail",
+      "truncation": "only_first",
+      "max_length": 512,
+      "dtype": "bfloat16",
+      "score": "entailment_logit"
+    },
+    "gliclass-base-v3.0": {
+      "hf_id": "knowledgator/gliclass-base-v3.0",
+      "revision": "77a70e6cd52e602ed18184ef37d18bdd3741e3d5",
+      "classification": "single-label",
+      "library": "gliclass==0.1.20",
+      "prompt": null,
+      "examples": null,
+      "max_length": 512,
+      "max_labels_per_forward": 25,
+      "chunk_rule": "contiguous chunks in label order, concatenate logits, one softmax",
+      "dtype": "float32"
+    },
+    "qwen3-0.6b": {
+      "hf_id": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "enable_thinking": false,
+      "generate": false,
+      "nonthinking_suffix": "<think>\n\n</think>\n\n",
+      "length_normalization": "mean_token_logprob",
+      "continuation": "label string appended to the prompt with no extra space",
+      "add_special_tokens": false,
+      "context_limit": 40960,
+      "dtype": "bfloat16",
+      "label_batch_size": 4
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "protocol_id": "qwen4b-readout-check-2026-10-09",
+  "complete": true,
+  "selection_scores": {
+    "padded": 0.6332562160183659,
+    "padded_prior": 0.6324911380698867,
+    "bracket": 0.6345700659300465,
+    "bracket_prior": 0.6306689977141128
+  },
+  "selected": "bracket_prior",
+  "datasets": {
+    "banking77_full": {
+      "n_options": 77,
+      "n": 400,
+      "variants": {
+        "padded": {
+          "temperature": 4.697811498456174,
+          "dev_accuracy": 0.455,
+          "dev_accuracy_unscaled_argmax": 0.455,
+          "dev_nll_over_ln_k": 0.5978945320008278,
+          "dev_brier": 0.7370516395857514
+        },
+        "padded_prior": {
+          "temperature": 4.562279284159313,
+          "dev_accuracy": 0.45,
+          "dev_accuracy_unscaled_argmax": 0.45,
+          "dev_nll_over_ln_k": 0.5896837949990973,
+          "dev_brier": 0.7353469469960249
+        },
+        "bracket": {
+          "temperature": 4.665084049997812,
+          "dev_accuracy": 0.4625,
+          "dev_accuracy_unscaled_argmax": 0.4625,
+          "dev_nll_over_ln_k": 0.5688485176948026,
+          "dev_brier": 0.7028674373721654
+        },
+        "bracket_prior": {
+          "temperature": 4.646062168240848,
+          "dev_accuracy": 0.46,
+          "dev_accuracy_unscaled_argmax": 0.46,
+          "dev_nll_over_ln_k": 0.570783645111848,
+          "dev_brier": 0.702310363920185
+        }
+      }
+    },
+    "massive_en": {
+      "n_options": 60,
+      "n": 400,
+      "variants": {
+        "padded": {
+          "temperature": 4.242173961902815,
+          "dev_accuracy": 0.7,
+          "dev_accuracy_unscaled_argmax": 0.7,
+          "dev_nll_over_ln_k": 0.31522211183676613,
+          "dev_brier": 0.4470944295120375
+        },
+        "padded_prior": {
+          "temperature": 3.952156118051925,
+          "dev_accuracy": 0.6925,
+          "dev_accuracy_unscaled_argmax": 0.6925,
+          "dev_nll_over_ln_k": 0.33018246236654386,
+          "dev_brier": 0.4592190746487866
+        },
+        "bracket": {
+          "temperature": 4.194923251171037,
+          "dev_accuracy": 0.7325,
+          "dev_accuracy_unscaled_argmax": 0.7325,
+          "dev_nll_over_ln_k": 0.3024501677974553,
+          "dev_brier": 0.41732407343415745
+        },
+        "bracket_prior": {
+          "temperature": 3.697166950261439,
+          "dev_accuracy": 0.7375,
+          "dev_accuracy_unscaled_argmax": 0.7375,
+          "dev_nll_over_ln_k": 0.30485072590479473,
+          "dev_brier": 0.4227088192927668
+        }
+      }
+    },
+    "clinc150": {
+      "n_options": 150,
+      "n": 400,
+      "variants": {
+        "padded": {
+          "temperature": 4.139176712408671,
+          "dev_accuracy": 0.4725,
+          "dev_accuracy_unscaled_argmax": 0.4725,
+          "dev_nll_over_ln_k": 0.5450757516919024,
+          "dev_brier": 0.6950964346016119
+        },
+        "padded_prior": {
+          "temperature": 3.868028661785319,
+          "dev_accuracy": 0.4925,
+          "dev_accuracy_unscaled_argmax": 0.4925,
+          "dev_nll_over_ln_k": 0.5155537999183162,
+          "dev_brier": 0.6764511839780564
+        },
+        "bracket": {
+          "temperature": 4.057551938971373,
+          "dev_accuracy": 0.41,
+          "dev_accuracy_unscaled_argmax": 0.41,
+          "dev_nll_over_ln_k": 0.5958781027596999,
+          "dev_brier": 0.7654028426874803
+        },
+        "bracket_prior": {
+          "temperature": 3.976134910696688,
+          "dev_accuracy": 0.4025,
+          "dev_accuracy_unscaled_argmax": 0.4025,
+          "dev_nll_over_ln_k": 0.5805451155755558,
+          "dev_brier": 0.7568765074662673
+        }
+      }
+    },
+    "emotion": {
+      "n_options": 6,
+      "n": 400,
+      "variants": {
+        "padded": {
+          "temperature": 9.75953550388041,
+          "dev_accuracy": 0.5425,
+          "dev_accuracy_unscaled_argmax": 0.5425,
+          "dev_nll_over_ln_k": 0.7334667629970789,
+          "dev_brier": 0.6226780139875612
+        },
+        "padded_prior": {
+          "temperature": 9.831592227602549,
+          "dev_accuracy": 0.51,
+          "dev_accuracy_unscaled_argmax": 0.51,
+          "dev_nll_over_ln_k": 0.8108582195066041,
+          "dev_brier": 0.6675426386281968
+        },
+        "bracket": {
+          "temperature": 9.75953550388041,
+          "dev_accuracy": 0.5425,
+          "dev_accuracy_unscaled_argmax": 0.5425,
+          "dev_nll_over_ln_k": 0.7334667629970789,
+          "dev_brier": 0.6226780139875612
+        },
+        "bracket_prior": {
+          "temperature": 9.831592227609967,
+          "dev_accuracy": 0.51,
+          "dev_accuracy_unscaled_argmax": 0.51,
+          "dev_nll_over_ln_k": 0.8108582195066041,
+          "dev_brier": 0.6675426386282223
+        }
+      }
+    },
+    "yahoo": {
+      "n_options": 10,
+      "n": 400,
+      "variants": {
+        "padded": {
+          "temperature": 9.76450056590131,
+          "dev_accuracy": 0.385,
+          "dev_accuracy_unscaled_argmax": 0.385,
+          "dev_nll_over_ln_k": 0.8311760235385923,
+          "dev_brier": 0.7736279682402235
+        },
+        "padded_prior": {
+          "temperature": 7.712780489652299,
+          "dev_accuracy": 0.4225,
+          "dev_accuracy_unscaled_argmax": 0.4225,
+          "dev_nll_over_ln_k": 0.7870683325605956,
+          "dev_brier": 0.7357683593143023
+        },
+        "bracket": {
+          "temperature": 9.768285114100905,
+          "dev_accuracy": 0.395,
+          "dev_accuracy_unscaled_argmax": 0.395,
+          "dev_nll_over_ln_k": 0.831388580197895,
+          "dev_brier": 0.7666198999552799
+        },
+        "bracket_prior": {
+          "temperature": 6.778797436393832,
+          "dev_accuracy": 0.4575,
+          "dev_accuracy_unscaled_argmax": 0.4575,
+          "dev_nll_over_ln_k": 0.753553920761938,
+          "dev_brier": 0.7066173542244765
+        }
+      }
+    },
+    "anli_r3": {
+      "n_options": 3,
+      "n": 400,
+      "variants": {
+        "padded": {
+          "temperature": 15.045802976552546,
+          "dev_accuracy": 0.5125,
+          "dev_accuracy_unscaled_argmax": 0.5125,
+          "dev_nll_over_ln_k": 0.8951721185849852,
+          "dev_brier": 0.5937191852807812
+        },
+        "padded_prior": {
+          "temperature": 14.740456838539574,
+          "dev_accuracy": 0.515,
+          "dev_accuracy_unscaled_argmax": 0.515,
+          "dev_nll_over_ln_k": 0.8895627409635806,
+          "dev_brier": 0.5886869571098479
+        },
+        "bracket": {
+          "temperature": 15.045802976552546,
+          "dev_accuracy": 0.5125,
+          "dev_accuracy_unscaled_argmax": 0.5125,
+          "dev_nll_over_ln_k": 0.8951721185849852,
+          "dev_brier": 0.5937191852807812
+        },
+        "bracket_prior": {
+          "temperature": 14.740456838539574,
+          "dev_accuracy": 0.515,
+          "dev_accuracy_unscaled_argmax": 0.515,
+          "dev_nll_over_ln_k": 0.8895627409635806,
+          "dev_brier": 0.5886869571098479
+        }
+      }
+    },
+    "boolq": {
+      "n_options": 2,
+      "n": 400,
+      "variants": {
+        "padded": {
+          "temperature": 4.862236802983039,
+          "dev_accuracy": 0.835,
+          "dev_accuracy_unscaled_argmax": 0.835,
+          "dev_nll_over_ln_k": 0.5147862114784088,
+          "dev_brier": 0.2250374978897854
+        },
+        "padded_prior": {
+          "temperature": 3.844234591849312,
+          "dev_accuracy": 0.8575,
+          "dev_accuracy_unscaled_argmax": 0.8575,
+          "dev_nll_over_ln_k": 0.5045286161744684,
+          "dev_brier": 0.21319618249063482
+        },
+        "bracket": {
+          "temperature": 4.862236802983039,
+          "dev_accuracy": 0.835,
+          "dev_accuracy_unscaled_argmax": 0.835,
+          "dev_nll_over_ln_k": 0.5147862114784088,
+          "dev_brier": 0.2250374978897854
+        },
+        "bracket_prior": {
+          "temperature": 3.844234591849312,
+          "dev_accuracy": 0.8575,
+          "dev_accuracy_unscaled_argmax": 0.8575,
+          "dev_nll_over_ln_k": 0.5045286161744684,
+          "dev_brier": 0.21319618249063482
+        }
+      }
+    }
+  }
+}

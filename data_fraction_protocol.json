@@ -1,0 +1,22 @@
+{
+  "protocol_id": "specialist-data-and-size-vs-ladder-2026-10-12",
+  "role": "exploratory: with how little training data, or how small a specialist, does a hosted general model become the better choice, alone or as the escalation target?",
+  "claim": "Workflow v4 part A found no hosted model up to 122B that beats the fully trained 150M specialist on the Banking77 workflow, so the point where a general model takes over was not reached. This protocol moves the specialist instead: it is trained on fractions of the Banking77 training data, and the smaller Ettin encoders from the size sweep are used as specialists, and each is joined to the saved part A answers. No new API call. Written after part A was scored and before any model in this file was trained or scored on a session turn.",
+  "seed": 20261012,
+  "fractions": {"encoder": [0.01, 0.02, 0.05, 0.1, 0.2, 0.5], "decoder": [0.01, 0.05, 0.2]},
+  "subsample": "per label, a random max(1, round(fraction x count)) of that label's training rows (Program 1 dev rows already excluded), seed 20261012",
+  "recipes": {
+    "encoder": "program2.json with learning rate 1e-4 (the rate the size sweep selected on dev for the 150M encoder on Banking77) and log loss",
+    "decoder": "program2_decoder.json unchanged (2e-5, batch 4, chunk 4), log loss",
+    "epochs": "3, or as many as give at least 300 optimizer steps, whichever is more, so a small subsample is not also undertrained",
+    "full_data_rows": "encoder: the size sweep's 150M Banking77 model at 1e-4. decoder: the Program 2 seed-20261007 model already used in workflows v1 to v4."
+  },
+  "size_specialists": "the size sweep's 17M, 32M and 68M Banking77 encoders at 1e-4, full data",
+  "thresholds": "as in workflow v1: temperature fit on the 400 Program 1 Banking77 dev items, scope threshold from those and the 100 CLINC150 out-of-scope validation queries. Using 400 dev items beside a 96-example training set is generous to the low-data specialist and is stated as such.",
+  "join": {
+    "sessions": "the 400 workflow v1 sessions and the saved workflow v4 part A answers of all eight hosted models",
+    "rows": "each specialist alone; each hosted model alone; specialist first with its least confident 10, 25, 40 and 60 percent of turns sent to the model",
+    "readout": "for each hosted model, the largest training fraction at which the model alone is at least as good as the specialist alone, and at which it is at least as good as the best hybrid; session success with intervals"
+  },
+  "limits": "One seed per fraction. One task. The hosted models are zero-shot."
+}

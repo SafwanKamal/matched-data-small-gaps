@@ -1,0 +1,599 @@
+{
+  "protocol_id": "api-baselines-verbalized-and-pilot-2026-10-10",
+  "system": "claude-haiku-5.5",
+  "readout": "stated probabilities",
+  "datasets": {
+    "banking77_full": {
+      "n_options": 77,
+      "dev_n": 150,
+      "test_n": 500,
+      "temperature": {
+        "temperature": 1.572116684666048,
+        "dev_nll": 1.907149935970619,
+        "dev_nll_at_1": 2.004796953922946,
+        "n": 150,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 500,
+        "accuracy": 0.684,
+        "brier": 0.563475489613064,
+        "log_loss": 1.6731488412690565,
+        "ece": 0.30371324920965326,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.216,
+        "selective_selected_n": 108,
+        "selective_confidence_threshold": 0.49099236865328116,
+        "aurc": 0.14265082885496266,
+        "macro_f1": 0.6543047159725425,
+        "accuracy_ci": [
+          0.64,
+          0.726
+        ],
+        "brier_ci": [
+          0.5388799371329638,
+          0.5896434619828044
+        ]
+      },
+      "unscaled": {
+        "n": 500,
+        "accuracy": 0.684,
+        "brier": 0.46072790923632395,
+        "log_loss": 1.6324729481922444,
+        "ece": 0.16118247842183164,
+        "top_bin_mass": 0.002,
+        "coverage_at_5pct_error": 0.336,
+        "selective_selected_n": 168,
+        "selective_confidence_threshold": 0.5999999586000031,
+        "aurc": 0.12222733570332475,
+        "macro_f1": 0.6543047159725425,
+        "accuracy_ci": [
+          0.64,
+          0.726
+        ],
+        "brier_ci": [
+          0.4272820924969377,
+          0.4977072620269315
+        ]
+      },
+      "readout": "stated probabilities",
+      "details": {
+        "dev": {
+          "n": 150,
+          "request_errors": 0,
+          "unscorable": 3,
+          "mean_options_listed": 9.965986394557824,
+          "mean_stated_sum": 1.0114285714285716,
+          "mean_completion_tokens": 87.74666666666667,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        },
+        "test": {
+          "n": 500,
+          "request_errors": 0,
+          "unscorable": 17,
+          "mean_options_listed": 9.863354037267081,
+          "mean_stated_sum": 1.0070807453416148,
+          "mean_completion_tokens": 92.3,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        }
+      }
+    },
+    "massive_en": {
+      "n_options": 60,
+      "dev_n": 150,
+      "test_n": 500,
+      "temperature": {
+        "temperature": 1.2473172821701557,
+        "dev_nll": 1.3035310197787777,
+        "dev_nll_at_1": 1.334570839356382,
+        "n": 150,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 500,
+        "accuracy": 0.732,
+        "brier": 0.370936133549966,
+        "log_loss": 1.2849721912539827,
+        "ece": 0.09075504981432884,
+        "top_bin_mass": 0.018,
+        "coverage_at_5pct_error": 0.458,
+        "selective_selected_n": 229,
+        "selective_confidence_threshold": 0.7433944451306781,
+        "aurc": 0.09435188205225906,
+        "macro_f1": 0.6467211677186101,
+        "accuracy_ci": [
+          0.694,
+          0.768
+        ],
+        "brier_ci": [
+          0.33150010682585396,
+          0.4116615068006004
+        ]
+      },
+      "unscaled": {
+        "n": 500,
+        "accuracy": 0.732,
+        "brier": 0.35974462521135137,
+        "log_loss": 1.3392064280797478,
+        "ece": 0.07201306973496584,
+        "top_bin_mass": 0.058,
+        "coverage_at_5pct_error": 0.456,
+        "selective_selected_n": 228,
+        "selective_confidence_threshold": 0.8499999541000018,
+        "aurc": 0.08728111697110891,
+        "macro_f1": 0.6467211677186101,
+        "accuracy_ci": [
+          0.694,
+          0.768
+        ],
+        "brier_ci": [
+          0.3140422077975089,
+          0.4064911907353089
+        ]
+      },
+      "readout": "stated probabilities",
+      "details": {
+        "dev": {
+          "n": 150,
+          "request_errors": 0,
+          "unscorable": 5,
+          "mean_options_listed": 8.10344827586207,
+          "mean_stated_sum": 1.0032413793103447,
+          "mean_completion_tokens": 76.34666666666666,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        },
+        "test": {
+          "n": 500,
+          "request_errors": 0,
+          "unscorable": 18,
+          "mean_options_listed": 7.1970954356846475,
+          "mean_stated_sum": 0.999948132780083,
+          "mean_completion_tokens": 70.87,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        }
+      }
+    },
+    "clinc150": {
+      "n_options": 150,
+      "dev_n": 150,
+      "test_n": 500,
+      "temperature": {
+        "temperature": 1.0720371776325084,
+        "dev_nll": 1.3225976564687691,
+        "dev_nll_at_1": 1.3261049912961504,
+        "n": 150,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 500,
+        "accuracy": 0.712,
+        "brier": 0.4069983278172634,
+        "log_loss": 1.561636899397521,
+        "ece": 0.11205818997027998,
+        "top_bin_mass": 0.022,
+        "coverage_at_5pct_error": 0.004,
+        "selective_selected_n": 2,
+        "selective_confidence_threshold": 0.9596384738109407,
+        "aurc": 0.13878112772195028,
+        "macro_f1": 0.6653682983682984,
+        "accuracy_ci": [
+          0.672,
+          0.752
+        ],
+        "brier_ci": [
+          0.3703713530144734,
+          0.4458924358816479
+        ]
+      },
+      "unscaled": {
+        "n": 500,
+        "accuracy": 0.712,
+        "brier": 0.3985331179310936,
+        "log_loss": 1.5696153660662184,
+        "ece": 0.0905193254374645,
+        "top_bin_mass": 0.022,
+        "coverage_at_5pct_error": 0.068,
+        "selective_selected_n": 34,
+        "selective_confidence_threshold": 0.9299998651500196,
+        "aurc": 0.12129923322219824,
+        "macro_f1": 0.6653682983682984,
+        "accuracy_ci": [
+          0.672,
+          0.752
+        ],
+        "brier_ci": [
+          0.3604311127160602,
+          0.4388764442454958
+        ]
+      },
+      "readout": "stated probabilities",
+      "details": {
+        "dev": {
+          "n": 150,
+          "request_errors": 0,
+          "unscorable": 5,
+          "mean_options_listed": 10.03448275862069,
+          "mean_stated_sum": 0.999551724137931,
+          "mean_completion_tokens": 95.73333333333333,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        },
+        "test": {
+          "n": 500,
+          "request_errors": 0,
+          "unscorable": 38,
+          "mean_options_listed": 10.207792207792208,
+          "mean_stated_sum": 1.0021601731601733,
+          "mean_completion_tokens": 105.294,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        }
+      }
+    },
+    "emotion": {
+      "n_options": 6,
+      "dev_n": 150,
+      "test_n": 500,
+      "temperature": {
+        "temperature": 1.5478579486715105,
+        "dev_nll": 1.4050915166168054,
+        "dev_nll_at_1": 1.4773236532934002,
+        "n": 150,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 500,
+        "accuracy": 0.568,
+        "brier": 0.6076035973056921,
+        "log_loss": 1.335050185305732,
+        "ece": 0.1097911037347443,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.058,
+        "selective_selected_n": 29,
+        "selective_confidence_threshold": 0.6570722977402563,
+        "aurc": 0.3016527500903148,
+        "macro_f1": 0.5143995807140621,
+        "accuracy_ci": [
+          0.52395,
+          0.612
+        ],
+        "brier_ci": [
+          0.5778332681234716,
+          0.6372893415374142
+        ]
+      },
+      "unscaled": {
+        "n": 500,
+        "accuracy": 0.568,
+        "brier": 0.5941531377674806,
+        "log_loss": 1.3727650942857021,
+        "ece": 0.07381688553579614,
+        "top_bin_mass": 0.002,
+        "coverage_at_5pct_error": 0.042,
+        "selective_selected_n": 21,
+        "selective_confidence_threshold": 0.85,
+        "aurc": 0.2989088883132661,
+        "macro_f1": 0.5143995807140621,
+        "accuracy_ci": [
+          0.52395,
+          0.612
+        ],
+        "brier_ci": [
+          0.5516249221185877,
+          0.6362267237210112
+        ]
+      },
+      "readout": "stated probabilities",
+      "details": {
+        "dev": {
+          "n": 150,
+          "request_errors": 0,
+          "unscorable": 0,
+          "mean_options_listed": 5.693333333333333,
+          "mean_stated_sum": 0.9856666666666666,
+          "mean_completion_tokens": 48.653333333333336,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        },
+        "test": {
+          "n": 500,
+          "request_errors": 0,
+          "unscorable": 0,
+          "mean_options_listed": 5.758,
+          "mean_stated_sum": 0.98266,
+          "mean_completion_tokens": 49.538,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        }
+      }
+    },
+    "yahoo": {
+      "n_options": 10,
+      "dev_n": 150,
+      "test_n": 500,
+      "temperature": {
+        "temperature": 1.6950362268833041,
+        "dev_nll": 1.3371322275117568,
+        "dev_nll_at_1": 1.475690985817878,
+        "n": 150,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 500,
+        "accuracy": 0.704,
+        "brier": 0.45166212981733544,
+        "log_loss": 1.1337680579371245,
+        "ece": 0.176159727700177,
+        "top_bin_mass": 0.018,
+        "coverage_at_5pct_error": 0.214,
+        "selective_selected_n": 107,
+        "selective_confidence_threshold": 0.7069260791706072,
+        "aurc": 0.1251531031300668,
+        "macro_f1": 0.69009598896916,
+        "accuracy_ci": [
+          0.666,
+          0.744
+        ],
+        "brier_ci": [
+          0.41924004086270833,
+          0.4851457284387321
+        ]
+      },
+      "unscaled": {
+        "n": 500,
+        "accuracy": 0.704,
+        "brier": 0.40842985772433943,
+        "log_loss": 1.1760228279344265,
+        "ece": 0.05912956813938694,
+        "top_bin_mass": 0.098,
+        "coverage_at_5pct_error": 0.3,
+        "selective_selected_n": 150,
+        "selective_confidence_threshold": 0.8999999936999998,
+        "aurc": 0.12037625459082385,
+        "macro_f1": 0.69009598896916,
+        "accuracy_ci": [
+          0.666,
+          0.744
+        ],
+        "brier_ci": [
+          0.36582876371844875,
+          0.4533563107009608
+        ]
+      },
+      "readout": "stated probabilities",
+      "details": {
+        "dev": {
+          "n": 150,
+          "request_errors": 0,
+          "unscorable": 0,
+          "mean_options_listed": 6.626666666666667,
+          "mean_stated_sum": 0.9995066666666665,
+          "mean_completion_tokens": 56.06666666666667,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        },
+        "test": {
+          "n": 500,
+          "request_errors": 0,
+          "unscorable": 1,
+          "mean_options_listed": 5.967935871743487,
+          "mean_stated_sum": 0.9967152304609219,
+          "mean_completion_tokens": 50.888,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        }
+      }
+    },
+    "anli_r3": {
+      "n_options": 3,
+      "dev_n": 150,
+      "test_n": 500,
+      "temperature": {
+        "temperature": 2.436814433287435,
+        "dev_nll": 0.9325854265002924,
+        "dev_nll_at_1": 1.1360801033183563,
+        "n": 150,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 500,
+        "accuracy": 0.62,
+        "brier": 0.5271757353098043,
+        "log_loss": 0.9331708788909656,
+        "ece": 0.05374326074483223,
+        "top_bin_mass": 0.016,
+        "coverage_at_5pct_error": 0.004,
+        "selective_selected_n": 2,
+        "selective_confidence_threshold": 0.9995949509915039,
+        "aurc": 0.3097814271980298,
+        "macro_f1": 0.6205171503488994,
+        "accuracy_ci": [
+          0.578,
+          0.662
+        ],
+        "brier_ci": [
+          0.49477991674695826,
+          0.559890803383946
+        ]
+      },
+      "unscaled": {
+        "n": 500,
+        "accuracy": 0.62,
+        "brier": 0.5793499999521128,
+        "log_loss": 1.1500995330985273,
+        "ece": 0.1961399999660601,
+        "top_bin_mass": 0.096,
+        "coverage_at_5pct_error": 0.004,
+        "selective_selected_n": 2,
+        "selective_confidence_threshold": 0.9999999980000001,
+        "aurc": 0.3159257504818781,
+        "macro_f1": 0.6205171503488994,
+        "accuracy_ci": [
+          0.578,
+          0.662
+        ],
+        "brier_ci": [
+          0.5201836499764156,
+          0.6400191199407128
+        ]
+      },
+      "readout": "stated probabilities",
+      "details": {
+        "dev": {
+          "n": 150,
+          "request_errors": 0,
+          "unscorable": 0,
+          "mean_options_listed": 2.966666666666667,
+          "mean_stated_sum": 1.0,
+          "mean_completion_tokens": 26.733333333333334,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        },
+        "test": {
+          "n": 500,
+          "request_errors": 0,
+          "unscorable": 0,
+          "mean_options_listed": 2.97,
+          "mean_stated_sum": 1.0,
+          "mean_completion_tokens": 28.05,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        }
+      }
+    },
+    "boolq": {
+      "n_options": 2,
+      "dev_n": 150,
+      "test_n": 500,
+      "temperature": {
+        "temperature": 1.0598157255796574,
+        "dev_nll": 0.24436309353003413,
+        "dev_nll_at_1": 0.2449651446603422,
+        "n": 150,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 500,
+        "accuracy": 0.896,
+        "brier": 0.17004346997916295,
+        "log_loss": 0.29621690444379534,
+        "ece": 0.023137469783694402,
+        "top_bin_mass": 0.56,
+        "coverage_at_5pct_error": 0.616,
+        "selective_selected_n": 308,
+        "selective_confidence_threshold": 0.9198784928240061,
+        "aurc": 0.037838145064630714,
+        "macro_f1": 0.8905060305909305,
+        "accuracy_ci": [
+          0.868,
+          0.922
+        ],
+        "brier_ci": [
+          0.1329461807823739,
+          0.209445334908078
+        ]
+      },
+      "unscaled": {
+        "n": 500,
+        "accuracy": 0.896,
+        "brier": 0.1705944,
+        "log_loss": 0.29863876756371543,
+        "ece": 0.027679999978000074,
+        "top_bin_mass": 0.56,
+        "coverage_at_5pct_error": 0.616,
+        "selective_selected_n": 308,
+        "selective_confidence_threshold": 0.93,
+        "aurc": 0.037838145064630714,
+        "macro_f1": 0.8905060305909305,
+        "accuracy_ci": [
+          0.868,
+          0.922
+        ],
+        "brier_ci": [
+          0.13235428,
+          0.21079595999999995
+        ]
+      },
+      "readout": "stated probabilities",
+      "details": {
+        "dev": {
+          "n": 150,
+          "request_errors": 0,
+          "unscorable": 0,
+          "mean_options_listed": 2.0,
+          "mean_stated_sum": 1.0,
+          "mean_completion_tokens": 19.0,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        },
+        "test": {
+          "n": 500,
+          "request_errors": 0,
+          "unscorable": 0,
+          "mean_options_listed": 2.0,
+          "mean_stated_sum": 1.0,
+          "mean_completion_tokens": 19.0,
+          "providers": [
+            "Claude Platform on AWS"
+          ]
+        }
+      }
+    }
+  },
+  "spend_usd": {
+    "this_run": 0.35456960000000076,
+    "project_total": 3.887960092000097
+  }
+}

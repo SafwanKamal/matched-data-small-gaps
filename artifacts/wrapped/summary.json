@@ -1,0 +1,132 @@
+{
+  "protocol_id": "wrapped-finetune-pilot-2026-10-09",
+  "models": {
+    "bare_512": {
+      "temperature": 0.6871853591194336,
+      "conditions": {
+        "clean": {
+          "n": 500,
+          "accuracy": 0.896,
+          "brier": 0.16257208361420905,
+          "ece": 0.03613892194905737,
+          "mean_top_probability": 0.9168389309022736,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "n": 500,
+          "accuracy": 0.156,
+          "brier": 0.9814119128857518,
+          "ece": 0.21448231201388337,
+          "mean_top_probability": 0.36934388668329193,
+          "broken": 0.828125,
+          "repaired": 0.019230769230769232,
+          "share_over_cap": 0.0
+        },
+        "related_prior": {
+          "n": 500,
+          "accuracy": 0.322,
+          "brier": 1.0298716585860348,
+          "ece": 0.3911381995101322,
+          "mean_top_probability": 0.7131381995101321,
+          "broken": 0.6473214285714286,
+          "repaired": 0.057692307692307696,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "n": 500,
+          "accuracy": 0.184,
+          "brier": 1.074744031932275,
+          "ece": 0.3345589084597088,
+          "mean_top_probability": 0.5185589084597089,
+          "broken": 0.8035714285714286,
+          "repaired": 0.07692307692307693,
+          "share_over_cap": 0.0
+        },
+        "long_history": {
+          "n": 500,
+          "accuracy": 0.04,
+          "brier": 1.2211105724612326,
+          "ece": 0.3919219942570818,
+          "mean_top_probability": 0.4319219942570818,
+          "broken": 0.9575892857142857,
+          "repaired": 0.019230769230769232,
+          "share_over_cap": 0.0
+        },
+        "long_history_target_first": {
+          "n": 500,
+          "accuracy": 0.064,
+          "brier": 1.1992762149358192,
+          "ece": 0.37791917791223173,
+          "mean_top_probability": 0.4419191779122317,
+          "broken": 0.9308035714285714,
+          "repaired": 0.019230769230769232,
+          "share_over_cap": 0.0
+        }
+      }
+    },
+    "wrapped_512": {
+      "temperature": 0.643234759261115,
+      "conditions": {
+        "clean": {
+          "n": 500,
+          "accuracy": 0.878,
+          "brier": 0.1751645945271945,
+          "ece": 0.03758003760319621,
+          "mean_top_probability": 0.9003385778975227,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "n": 500,
+          "accuracy": 0.868,
+          "brier": 0.19643684432488562,
+          "ece": 0.054188496464816216,
+          "mean_top_probability": 0.8998679932747884,
+          "broken": 0.029612756264236904,
+          "repaired": 0.13114754098360656,
+          "share_over_cap": 0.0
+        },
+        "related_prior": {
+          "n": 500,
+          "accuracy": 0.884,
+          "brier": 0.18000949240333952,
+          "ece": 0.049071312394191574,
+          "mean_top_probability": 0.9222169298336489,
+          "broken": 0.01366742596810934,
+          "repaired": 0.14754098360655737,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "n": 500,
+          "accuracy": 0.878,
+          "brier": 0.17831449133976393,
+          "ece": 0.0470577462490767,
+          "mean_top_probability": 0.9196511696632256,
+          "broken": 0.018223234624145785,
+          "repaired": 0.13114754098360656,
+          "share_over_cap": 0.0
+        },
+        "long_history": {
+          "n": 500,
+          "accuracy": 0.88,
+          "brier": 0.18564460377417386,
+          "ece": 0.047635866840380424,
+          "mean_top_probability": 0.9182684091657436,
+          "broken": 0.018223234624145785,
+          "repaired": 0.14754098360655737,
+          "share_over_cap": 0.0
+        },
+        "long_history_target_first": {
+          "n": 500,
+          "accuracy": 0.006,
+          "brier": 1.785156326443033,
+          "ece": 0.8518594654706664,
+          "mean_top_probability": 0.8578594654706665,
+          "broken": 0.9931662870159453,
+          "repaired": 0.0,
+          "share_over_cap": 0.0
+        }
+      },
+      "mean_train_loss": 1.3969383127451076
+    }
+  }
+}

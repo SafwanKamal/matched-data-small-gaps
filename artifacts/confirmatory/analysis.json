@@ -1,0 +1,2253 @@
+{
+  "protocol_id": "confirmatory-2026-10-15",
+  "sets": {
+    "banking77": {
+      "n_turns": 1479,
+      "n_in": 1295,
+      "n_out": 184,
+      "n_sessions": 296,
+      "out_of_scope_share": 0.12440838404327248,
+      "systems": {
+        "prior_0.2": {
+          "specialist": {
+            "weighted": 0.9269190308320744,
+            "turn_correct": 0.9272030651340996,
+            "scope_accuracy": 0.9812936668920441,
+            "in_scope_kept": 0.9894465894465894,
+            "out_of_scope_caught": 0.9239130434782608,
+            "intent_on_in_scope": 0.9333333333333332,
+            "session_success": 0.7027027027027026,
+            "detectors": [
+              "mahalanobis",
+              "mahalanobis",
+              "knn"
+            ]
+          },
+          "gemma-4-31b": {
+            "weighted": 0.9411171730736949,
+            "turn_correct": 0.9391480730223124,
+            "scope_accuracy": 0.9952670723461798,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9619565217391305,
+            "intent_on_in_scope": 0.9359073359073359,
+            "session_success": 0.7364864864864865,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "gemma-4-31b: combination": {
+            "weighted": 0.9468829388394607,
+            "turn_correct": 0.9454586432274059,
+            "scope_accuracy": 0.9952670723461798,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9619565217391305,
+            "intent_on_in_scope": 0.9431145431145431,
+            "session_success": 0.7623873873873874
+          },
+          "gemma-4-31b: cascade_0.4": {
+            "weighted": 0.9429130994348386,
+            "turn_correct": 0.9416272256028848,
+            "scope_accuracy": 0.9945909398242055,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9565217391304349,
+            "intent_on_in_scope": 0.9395109395109396,
+            "session_success": 0.7432432432432433
+          },
+          "gemma-4-31b: model scope + specialist intent": {
+            "weighted": 0.9390579710144928,
+            "turn_correct": 0.9368942979490646,
+            "scope_accuracy": 0.9952670723461798,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9619565217391305,
+            "intent_on_in_scope": 0.9333333333333332,
+            "session_success": 0.7342342342342342
+          },
+          "qwen3.5-27b": {
+            "weighted": 0.9395845224106094,
+            "turn_correct": 0.9364435429344151,
+            "scope_accuracy": 0.9878296146044625,
+            "in_scope_kept": 0.9899613899613899,
+            "out_of_scope_caught": 0.9728260869565217,
+            "intent_on_in_scope": 0.9312741312741313,
+            "session_success": 0.722972972972973,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "qwen3.5-27b: combination": {
+            "weighted": 0.9445266073526944,
+            "turn_correct": 0.9418526031102096,
+            "scope_accuracy": 0.9878296146044625,
+            "in_scope_kept": 0.9899613899613899,
+            "out_of_scope_caught": 0.9728260869565218,
+            "intent_on_in_scope": 0.9431145431145431,
+            "session_success": 0.7533783783783784
+          },
+          "qwen3.5-27b: cascade_0.4": {
+            "weighted": 0.9430278104191148,
+            "turn_correct": 0.9407257155735858,
+            "scope_accuracy": 0.9907595221996844,
+            "in_scope_kept": 0.9940797940797941,
+            "out_of_scope_caught": 0.967391304347826,
+            "intent_on_in_scope": 0.9369369369369368,
+            "session_success": 0.7376126126126126
+          },
+          "qwen3.5-27b: model scope + specialist intent": {
+            "weighted": 0.9346424374685246,
+            "turn_correct": 0.9310344827586207,
+            "scope_accuracy": 0.9878296146044625,
+            "in_scope_kept": 0.9899613899613899,
+            "out_of_scope_caught": 0.9728260869565218,
+            "intent_on_in_scope": 0.9333333333333332,
+            "session_success": 0.7162162162162162
+          },
+          "gemma-4-31b with rows": {
+            "weighted": 0.9428218902131945,
+            "turn_correct": 0.940500338066261,
+            "scope_accuracy": 0.9959432048681541,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.967391304347826,
+            "intent_on_in_scope": 0.9366795366795366,
+            "session_success": 0.7398648648648649,
+            "failed_requests": 0
+          },
+          "specialist with rows": {
+            "weighted": 0.9269190308320744,
+            "turn_correct": 0.9272030651340996,
+            "rules": [
+              "detector",
+              "detector",
+              "detector"
+            ]
+          },
+          "specialist original case (seed 1)": {
+            "weighted": 0.9289105254322646,
+            "turn_correct": 0.9263015551048005,
+            "scope_accuracy": 0.9716024340770791,
+            "in_scope_kept": 0.9737451737451738,
+            "out_of_scope_caught": 0.9565217391304348,
+            "intent_on_in_scope": 0.9359073359073359
+          }
+        },
+        "prior_0.1": {
+          "specialist": {
+            "weighted": 0.9233375300766605,
+            "turn_correct": 0.9258508000901511,
+            "scope_accuracy": 0.9812936668920441,
+            "in_scope_kept": 0.9933075933075933,
+            "out_of_scope_caught": 0.8967391304347826,
+            "intent_on_in_scope": 0.9333333333333332,
+            "session_success": 0.695945945945946,
+            "detectors": [
+              "mahalanobis",
+              "mahalanobis",
+              "energy"
+            ]
+          },
+          "gemma-4-31b": {
+            "weighted": 0.9411171730736949,
+            "turn_correct": 0.9391480730223124,
+            "scope_accuracy": 0.9952670723461798,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9619565217391305,
+            "intent_on_in_scope": 0.9359073359073359,
+            "session_success": 0.7364864864864865,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "gemma-4-31b: combination": {
+            "weighted": 0.9468829388394607,
+            "turn_correct": 0.9454586432274059,
+            "scope_accuracy": 0.9952670723461798,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9619565217391305,
+            "intent_on_in_scope": 0.9431145431145431,
+            "session_success": 0.7623873873873874
+          },
+          "gemma-4-31b: cascade_0.4": {
+            "weighted": 0.9429130994348386,
+            "turn_correct": 0.9416272256028848,
+            "scope_accuracy": 0.9945909398242055,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9565217391304349,
+            "intent_on_in_scope": 0.9395109395109396,
+            "session_success": 0.7432432432432433
+          },
+          "gemma-4-31b: model scope + specialist intent": {
+            "weighted": 0.9390579710144928,
+            "turn_correct": 0.9368942979490646,
+            "scope_accuracy": 0.9952670723461798,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9619565217391305,
+            "intent_on_in_scope": 0.9333333333333332,
+            "session_success": 0.7342342342342342
+          },
+          "qwen3.5-27b": {
+            "weighted": 0.9395845224106094,
+            "turn_correct": 0.9364435429344151,
+            "scope_accuracy": 0.9878296146044625,
+            "in_scope_kept": 0.9899613899613899,
+            "out_of_scope_caught": 0.9728260869565217,
+            "intent_on_in_scope": 0.9312741312741313,
+            "session_success": 0.722972972972973,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "qwen3.5-27b: combination": {
+            "weighted": 0.9445266073526944,
+            "turn_correct": 0.9418526031102096,
+            "scope_accuracy": 0.9878296146044625,
+            "in_scope_kept": 0.9899613899613899,
+            "out_of_scope_caught": 0.9728260869565218,
+            "intent_on_in_scope": 0.9431145431145431,
+            "session_success": 0.7533783783783784
+          },
+          "qwen3.5-27b: cascade_0.4": {
+            "weighted": 0.9430278104191148,
+            "turn_correct": 0.9407257155735858,
+            "scope_accuracy": 0.9907595221996844,
+            "in_scope_kept": 0.9940797940797941,
+            "out_of_scope_caught": 0.967391304347826,
+            "intent_on_in_scope": 0.9369369369369368,
+            "session_success": 0.7376126126126126
+          },
+          "qwen3.5-27b: model scope + specialist intent": {
+            "weighted": 0.9346424374685246,
+            "turn_correct": 0.9310344827586207,
+            "scope_accuracy": 0.9878296146044625,
+            "in_scope_kept": 0.9899613899613899,
+            "out_of_scope_caught": 0.9728260869565218,
+            "intent_on_in_scope": 0.9333333333333332,
+            "session_success": 0.7162162162162162
+          }
+        },
+        "prior_0.3": {
+          "specialist": {
+            "weighted": 0.9285820603211908,
+            "turn_correct": 0.9276538201487492,
+            "scope_accuracy": 0.9810682893847193,
+            "in_scope_kept": 0.9871299871299871,
+            "out_of_scope_caught": 0.9384057971014492,
+            "intent_on_in_scope": 0.9333333333333332,
+            "session_success": 0.7038288288288288,
+            "detectors": [
+              "mahalanobis",
+              "mahalanobis",
+              "knn"
+            ]
+          },
+          "gemma-4-31b": {
+            "weighted": 0.9411171730736949,
+            "turn_correct": 0.9391480730223124,
+            "scope_accuracy": 0.9952670723461798,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9619565217391305,
+            "intent_on_in_scope": 0.9359073359073359,
+            "session_success": 0.7364864864864865,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "gemma-4-31b: combination": {
+            "weighted": 0.9468829388394607,
+            "turn_correct": 0.9454586432274059,
+            "scope_accuracy": 0.9952670723461798,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9619565217391305,
+            "intent_on_in_scope": 0.9431145431145431,
+            "session_success": 0.7623873873873874
+          },
+          "gemma-4-31b: cascade_0.4": {
+            "weighted": 0.9429130994348386,
+            "turn_correct": 0.9416272256028848,
+            "scope_accuracy": 0.9945909398242055,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9565217391304349,
+            "intent_on_in_scope": 0.9395109395109396,
+            "session_success": 0.7432432432432433
+          },
+          "gemma-4-31b: model scope + specialist intent": {
+            "weighted": 0.9390579710144928,
+            "turn_correct": 0.9368942979490646,
+            "scope_accuracy": 0.9952670723461798,
+            "in_scope_kept": 1.0,
+            "out_of_scope_caught": 0.9619565217391305,
+            "intent_on_in_scope": 0.9333333333333332,
+            "session_success": 0.7342342342342342
+          },
+          "qwen3.5-27b": {
+            "weighted": 0.9395845224106094,
+            "turn_correct": 0.9364435429344151,
+            "scope_accuracy": 0.9878296146044625,
+            "in_scope_kept": 0.9899613899613899,
+            "out_of_scope_caught": 0.9728260869565217,
+            "intent_on_in_scope": 0.9312741312741313,
+            "session_success": 0.722972972972973,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "qwen3.5-27b: combination": {
+            "weighted": 0.9445266073526944,
+            "turn_correct": 0.9418526031102096,
+            "scope_accuracy": 0.9878296146044625,
+            "in_scope_kept": 0.9899613899613899,
+            "out_of_scope_caught": 0.9728260869565218,
+            "intent_on_in_scope": 0.9431145431145431,
+            "session_success": 0.7533783783783784
+          },
+          "qwen3.5-27b: cascade_0.4": {
+            "weighted": 0.9430278104191148,
+            "turn_correct": 0.9407257155735858,
+            "scope_accuracy": 0.9907595221996844,
+            "in_scope_kept": 0.9940797940797941,
+            "out_of_scope_caught": 0.967391304347826,
+            "intent_on_in_scope": 0.9369369369369368,
+            "session_success": 0.7376126126126126
+          },
+          "qwen3.5-27b: model scope + specialist intent": {
+            "weighted": 0.9346424374685246,
+            "turn_correct": 0.9310344827586207,
+            "scope_accuracy": 0.9878296146044625,
+            "in_scope_kept": 0.9899613899613899,
+            "out_of_scope_caught": 0.9728260869565218,
+            "intent_on_in_scope": 0.9333333333333332,
+            "session_success": 0.7162162162162162
+          }
+        }
+      },
+      "tests": {
+        "specialist vs gemma-4-31b": {
+          "difference_points": -1.4198142241620506,
+          "ci95": [
+            -2.6863471265627266,
+            -0.13682049139465075
+          ],
+          "ci90": [
+            -2.5277191459928137,
+            -0.345697185697186
+          ],
+          "p": 0.0370962903709629,
+          "clusters": 261,
+          "holm_p": 0.18548145185481452,
+          "equivalent_within_2.5": false
+        },
+        "combination vs gemma-4-31b": {
+          "difference_points": 0.5765765765765766,
+          "ci95": [
+            -0.056011096924701714,
+            1.207651255704248
+          ],
+          "ci90": [
+            0.02463443313720573,
+            1.1007643652281738
+          ],
+          "p": 0.09909009099090091,
+          "clusters": 261,
+          "holm_p": 0.39636036396360363
+        },
+        "cascade_0.4 vs specialist (gemma-4-31b)": {
+          "difference_points": 1.599406860276426,
+          "ci95": [
+            0.39898237446904933,
+            2.812244788119898
+          ],
+          "ci90": [
+            0.591590110389515,
+            2.600148093562364
+          ],
+          "p": 0.010698930106989302,
+          "clusters": 261
+        },
+        "cascade_0.4 vs gemma-4-31b": {
+          "difference_points": 0.17959263611437526,
+          "ci95": [
+            -0.1466000375602292,
+            0.46429624717871393
+          ],
+          "ci90": [
+            -0.08488656361509496,
+            0.42407746893542964
+          ],
+          "p": 0.31716828317168283,
+          "clusters": 261
+        },
+        "decomposition vs gemma-4-31b": {
+          "scope_part_points": -1.2138940182418456,
+          "intent_part_points": -0.205920205920207
+        },
+        "specialist vs qwen3.5-27b": {
+          "difference_points": -1.2665491578535062,
+          "ci95": [
+            -2.634465703359713,
+            0.113753642692766
+          ],
+          "ci90": [
+            -2.4210112175814062,
+            -0.132793136126032
+          ],
+          "p": 0.07729227077292271,
+          "clusters": 261
+        },
+        "combination vs qwen3.5-27b": {
+          "difference_points": 0.4942084942084942,
+          "ci95": [
+            -0.07467031413754688,
+            1.055783194220815
+          ],
+          "ci90": [
+            0.01960068699012449,
+            0.963499835465665
+          ],
+          "p": 0.10418958104189581,
+          "clusters": 261
+        },
+        "cascade_0.4 vs specialist (qwen3.5-27b)": {
+          "difference_points": 1.6108779587040463,
+          "ci95": [
+            0.46473007998523214,
+            2.8223146833045987
+          ],
+          "ci90": [
+            0.6482474936393663,
+            2.621395327164107
+          ],
+          "p": 0.007499250074992501,
+          "clusters": 261
+        },
+        "cascade_0.4 vs qwen3.5-27b": {
+          "difference_points": 0.34432880085054,
+          "ci95": [
+            -0.14743222674273854,
+            1.0752331724560265
+          ],
+          "ci90": [
+            -0.09322444207569903,
+            0.926538425702403
+          ],
+          "p": 0.43965603439656037,
+          "clusters": 261
+        },
+        "decomposition vs qwen3.5-27b": {
+          "scope_part_points": -0.7723406636450103,
+          "intent_part_points": -0.49420849420849233
+        },
+        "prior_0.1 | specialist vs gemma-4-31b": {
+          "difference_points": -1.7779642997034304,
+          "ci95": [
+            -3.0778461438948397,
+            -0.49644946002895196
+          ],
+          "ci90": [
+            -2.8502797993993942,
+            -0.7059055453371965
+          ],
+          "p": 0.008099190080991902,
+          "clusters": 261
+        },
+        "prior_0.3 | specialist vs gemma-4-31b": {
+          "difference_points": -1.2535112752504058,
+          "ci95": [
+            -2.507232099295735,
+            0.019857517039951797
+          ],
+          "ci90": [
+            -2.3208265499905947,
+            -0.19802476316255418
+          ],
+          "p": 0.063993600639936,
+          "clusters": 261
+        },
+        "rows effect: gemma with rows vs without": {
+          "difference_points": 0.17047171394997482,
+          "ci95": [
+            0.0,
+            0.4519722192105084
+          ],
+          "ci90": [
+            0.0,
+            0.39856489172996523
+          ],
+          "p": 0.49935006499350065,
+          "clusters": 261
+        },
+        "rows effect: specialist with rows vs without": {
+          "difference_points": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "ci90": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0,
+          "clusters": 261
+        },
+        "with rows: specialist vs gemma": {
+          "difference_points": -1.5902859381120251,
+          "ci95": [
+            -2.92402728996566,
+            -0.3251129809288856
+          ],
+          "ci90": [
+            -2.6856219859278885,
+            -0.4930045440456624
+          ],
+          "p": 0.018998100189981004,
+          "clusters": 261
+        },
+        "original case vs normalised (seed 1)": {
+          "difference_points": -0.18062783280174582,
+          "ci95": [
+            -1.2386554915992278,
+            0.8994186025806911
+          ],
+          "ci90": [
+            -1.0714377647124989,
+            0.7534934188257616
+          ],
+          "p": 0.7644235576442355,
+          "clusters": 261
+        }
+      },
+      "costs": {
+        "gemma-4-31b": {
+          "calls": 1479,
+          "prompt_tokens_mean": 1022.0899256254226,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00014709258958755915,
+          "usd_per_1000_sessions": 0.7349660135135134,
+          "usd_per_correct_session": 0.0009979355045871558,
+          "latency_ms_p50": 1013.6714999971446,
+          "latency_ms_p95": 28895.721939994826,
+          "latency_ms_p99": 61681.69420199819,
+          "providers": {
+            "Novita": 1479
+          }
+        },
+        "gemma-4-31b: combination": {
+          "calls": 1479,
+          "prompt_tokens_mean": 1022.0899256254226,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00014709258958755915,
+          "usd_per_1000_sessions": 0.7349660135135134,
+          "usd_per_correct_session": 0.0009640322304283603,
+          "latency_ms_p50": 1013.6714999971446,
+          "latency_ms_p95": 28895.721939994826,
+          "latency_ms_p99": 61681.69420199819,
+          "providers": {
+            "Novita": 1479
+          }
+        },
+        "gemma-4-31b: cascade_0.4": {
+          "calls": 1479,
+          "prompt_tokens_mean": 1022.0899256254226,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 5.883703583502366e-05,
+          "usd_per_1000_sessions": 0.29398640540540544,
+          "usd_per_correct_session": 0.0003955453454545454,
+          "latency_ms_p50": 1013.6714999971446,
+          "latency_ms_p95": 28895.721939994826,
+          "latency_ms_p99": 61681.69420199819,
+          "providers": {
+            "Novita": 1479
+          }
+        },
+        "qwen3.5-27b": {
+          "calls": 1479,
+          "prompt_tokens_mean": 1015.4509803921569,
+          "completion_tokens_mean": 9.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00021205294117647062,
+          "usd_per_1000_sessions": 1.059548310810811,
+          "usd_per_correct_session": 0.0014655434579439255,
+          "latency_ms_p50": 3642.093299975386,
+          "latency_ms_p95": 12526.991879989506,
+          "latency_ms_p99": 13456.141616001263,
+          "providers": {
+            "Alibaba": 1479
+          }
+        },
+        "qwen3.5-27b: combination": {
+          "calls": 1479,
+          "prompt_tokens_mean": 1015.4509803921569,
+          "completion_tokens_mean": 9.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00021205294117647062,
+          "usd_per_1000_sessions": 1.059548310810811,
+          "usd_per_correct_session": 0.0014063959641255608,
+          "latency_ms_p50": 3642.093299975386,
+          "latency_ms_p95": 12526.991879989506,
+          "latency_ms_p99": 13456.141616001263,
+          "providers": {
+            "Alibaba": 1479
+          }
+        },
+        "qwen3.5-27b: cascade_0.4": {
+          "calls": 1479,
+          "prompt_tokens_mean": 1015.4509803921569,
+          "completion_tokens_mean": 9.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 8.482117647058826e-05,
+          "usd_per_1000_sessions": 0.42381932432432445,
+          "usd_per_correct_session": 0.0005745825343511453,
+          "latency_ms_p50": 3642.093299975386,
+          "latency_ms_p95": 12526.991879989506,
+          "latency_ms_p99": 13456.141616001263,
+          "providers": {
+            "Alibaba": 1479
+          }
+        },
+        "gemma-4-31b with rows": {
+          "calls": 1479,
+          "prompt_tokens_mean": 1020.8377281947262,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00014691728194726167,
+          "usd_per_1000_sessions": 0.7340900675675677,
+          "usd_per_correct_session": 0.0009921947945205482,
+          "latency_ms_p50": 1108.9874999888707,
+          "latency_ms_p95": 53534.52742001962,
+          "latency_ms_p99": 64130.59864399781,
+          "providers": {
+            "Novita": 1479
+          }
+        },
+        "kimi-k3": {
+          "calls": 500,
+          "prompt_tokens_mean": 914.024,
+          "completion_tokens_mean": 18.0,
+          "cached_share": 0.5511977803646294,
+          "usd_per_turn": 0.0016517904000000001,
+          "usd_per_1000_sessions": 8.253371627027027,
+          "usd_per_correct_session": 0.010189347687687686,
+          "latency_ms_p50": 2827.907100014272,
+          "latency_ms_p95": 6097.150159979345,
+          "latency_ms_p99": 7951.325261988092,
+          "providers": {
+            "Moonshot AI": 500
+          }
+        },
+        "gemma-4-31b (frontier subset)": {
+          "calls": 500,
+          "prompt_tokens_mean": 1016.094,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00014625315999999998,
+          "usd_per_1000_sessions": 0.7307717014864865,
+          "usd_per_correct_session": 0.0009368867967775468,
+          "latency_ms_p50": 6211.192749993643,
+          "latency_ms_p95": 57628.12473999068,
+          "latency_ms_p99": 63374.13852798694,
+          "providers": {
+            "Novita": 500
+          }
+        },
+        "claude-opus-5": {
+          "calls": 500,
+          "prompt_tokens_mean": 1233.452,
+          "completion_tokens_mean": 12.888,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.006489460000000001,
+          "usd_per_1000_sessions": 32.42537614864866,
+          "usd_per_correct_session": 0.04003132857857859,
+          "latency_ms_p50": 1164.3157500075176,
+          "latency_ms_p95": 2564.5348400154035,
+          "latency_ms_p99": 4427.975403986056,
+          "providers": {
+            "Anthropic": 500
+          }
+        }
+      },
+      "length_auroc": 0.5858611717307369,
+      "frontier": {
+        "n_turns": 500,
+        "n_sessions": 100,
+        "tests": {
+          "kimi-k3 vs specialist": {
+            "difference_points": 2.8835338278437557,
+            "ci95": [
+              0.9879362572910965,
+              4.753682761924171
+            ],
+            "ci90": [
+              1.2668353373161028,
+              4.469474756534401
+            ],
+            "p": 0.0027997200279972004,
+            "clusters": 136
+          },
+          "kimi-k3 vs gemma": {
+            "difference_points": 0.8832007379222876,
+            "ci95": [
+              -0.3479996143834956,
+              2.1282928229962117
+            ],
+            "ci90": [
+              -0.17469159985858024,
+              1.9501738022130817
+            ],
+            "p": 0.27077292270772924,
+            "clusters": 136
+          },
+          "claude-opus-5 vs specialist": {
+            "difference_points": 2.907362568379518,
+            "ci95": [
+              1.0997033533845681,
+              4.885094961958555
+            ],
+            "ci90": [
+              1.315180399452898,
+              4.580388174801016
+            ],
+            "p": 0.0035996400359964,
+            "clusters": 136
+          },
+          "claude-opus-5 vs gemma": {
+            "difference_points": 0.90702947845805,
+            "ci95": [
+              -0.5322100356051142,
+              2.610945729333638
+            ],
+            "ci90": [
+              -0.23283499446290143,
+              2.264687472055799
+            ],
+            "p": 0.39366063393660633,
+            "clusters": 136
+          }
+        },
+        "kimi-k3": {
+          "weighted": 0.958753218801645,
+          "turn_correct": 0.958,
+          "scope_accuracy": 0.994,
+          "in_scope_kept": 0.9977324263038548,
+          "out_of_scope_caught": 0.9661016949152542,
+          "intent_on_in_scope": 0.9569160997732427,
+          "session_success": 0.81,
+          "failed_requests": 0,
+          "parse_failed": 0
+        },
+        "specialist_same_turns": {
+          "weighted": 0.9299178805232076,
+          "turn_correct": 0.932,
+          "session_success": 0.7366666666666667
+        },
+        "gemma_same_turns": {
+          "weighted": 0.9499212114224221,
+          "turn_correct": 0.95,
+          "session_success": 0.78
+        },
+        "claude-opus-5": {
+          "weighted": 0.9589915062070026,
+          "turn_correct": 0.96,
+          "scope_accuracy": 0.994,
+          "in_scope_kept": 1.0,
+          "out_of_scope_caught": 0.9491525423728814,
+          "intent_on_in_scope": 0.9614512471655329,
+          "session_success": 0.81,
+          "failed_requests": 0,
+          "parse_failed": 0
+        }
+      }
+    },
+    "massive": {
+      "n_turns": 1216,
+      "n_in": 973,
+      "n_out": 243,
+      "n_sessions": 244,
+      "out_of_scope_share": 0.19983552631578946,
+      "systems": {
+        "prior_0.2": {
+          "specialist": {
+            "weighted": 0.7826255397798164,
+            "turn_correct": 0.7826206140350878,
+            "scope_accuracy": 0.8196271929824562,
+            "in_scope_kept": 0.8228845495032546,
+            "out_of_scope_caught": 0.8065843621399177,
+            "intent_on_in_scope": 0.8807810894141829,
+            "session_success": 0.28005464480874315,
+            "detectors": [
+              "mahalanobis",
+              "knn",
+              "mahalanobis"
+            ]
+          },
+          "gemma-4-31b": {
+            "weighted": 0.7383824157605132,
+            "turn_correct": 0.7384868421052632,
+            "scope_accuracy": 0.8223684210526315,
+            "in_scope_kept": 0.9701952723535457,
+            "out_of_scope_caught": 0.23045267489711935,
+            "intent_on_in_scope": 0.8653648509763617,
+            "session_success": 0.24180327868852458,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "gemma-4-31b: combination": {
+            "weighted": 0.7444118779050833,
+            "turn_correct": 0.7445175438596491,
+            "scope_accuracy": 0.8223684210526315,
+            "in_scope_kept": 0.9701952723535457,
+            "out_of_scope_caught": 0.23045267489711932,
+            "intent_on_in_scope": 0.8842069201781433,
+            "session_success": 0.24453551912568305
+          },
+          "gemma-4-31b: cascade_0.4": {
+            "weighted": 0.7348201156887542,
+            "turn_correct": 0.7349232456140351,
+            "scope_accuracy": 0.8127741228070176,
+            "in_scope_kept": 0.9575196985268928,
+            "out_of_scope_caught": 0.23319615912208502,
+            "intent_on_in_scope": 0.8780404248030148,
+            "session_success": 0.2390710382513661
+          },
+          "gemma-4-31b: model scope + specialist intent": {
+            "weighted": 0.7339973523826441,
+            "turn_correct": 0.7341008771929824,
+            "scope_accuracy": 0.8223684210526315,
+            "in_scope_kept": 0.9701952723535457,
+            "out_of_scope_caught": 0.23045267489711932,
+            "intent_on_in_scope": 0.8807810894141829,
+            "session_success": 0.21448087431693988
+          },
+          "qwen3.5-27b": {
+            "weighted": 0.8083624106006201,
+            "turn_correct": 0.8083881578947368,
+            "scope_accuracy": 0.8832236842105263,
+            "in_scope_kept": 0.9331963001027749,
+            "out_of_scope_caught": 0.6831275720164609,
+            "intent_on_in_scope": 0.8406988694758479,
+            "session_success": 0.38114754098360654,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "qwen3.5-27b: combination": {
+            "weighted": 0.8171325373563584,
+            "turn_correct": 0.8171600877192983,
+            "scope_accuracy": 0.8832236842105262,
+            "in_scope_kept": 0.9331963001027749,
+            "out_of_scope_caught": 0.683127572016461,
+            "intent_on_in_scope": 0.868790681740322,
+            "session_success": 0.39071038251366114
+          },
+          "qwen3.5-27b: cascade_0.4": {
+            "weighted": 0.8042480301473107,
+            "turn_correct": 0.8042763157894736,
+            "scope_accuracy": 0.8728070175438597,
+            "in_scope_kept": 0.9242891401164782,
+            "out_of_scope_caught": 0.6666666666666666,
+            "intent_on_in_scope": 0.8574854402192532,
+            "session_success": 0.37021857923497264
+          },
+          "qwen3.5-27b: model scope + specialist intent": {
+            "weighted": 0.8089105435228537,
+            "turn_correct": 0.8089364035087719,
+            "scope_accuracy": 0.8832236842105262,
+            "in_scope_kept": 0.9331963001027749,
+            "out_of_scope_caught": 0.683127572016461,
+            "intent_on_in_scope": 0.8807810894141829,
+            "session_success": 0.34972677595628415
+          },
+          "gemma-4-31b with rows": {
+            "weighted": 0.8717174408621251,
+            "turn_correct": 0.8717105263157895,
+            "scope_accuracy": 0.9547697368421053,
+            "in_scope_kept": 0.9671120246659815,
+            "out_of_scope_caught": 0.9053497942386831,
+            "intent_on_in_scope": 0.8633093525179856,
+            "session_success": 0.5245901639344263,
+            "failed_requests": 0
+          },
+          "specialist with rows": {
+            "weighted": 0.853597474753883,
+            "turn_correct": 0.8536184210526315,
+            "rules": [
+              "knn_vote",
+              "knn_vote",
+              "knn_vote"
+            ]
+          },
+          "specialist original case (seed 1)": {
+            "weighted": 0.7796065792868352,
+            "turn_correct": 0.7796052631578947,
+            "scope_accuracy": 0.8166118421052632,
+            "in_scope_kept": 0.8242548818088387,
+            "out_of_scope_caught": 0.7860082304526749,
+            "intent_on_in_scope": 0.8776978417266187
+          }
+        },
+        "prior_0.1": {
+          "specialist": {
+            "weighted": 0.7633543253580557,
+            "turn_correct": 0.7634320175438596,
+            "scope_accuracy": 0.8322368421052633,
+            "in_scope_kept": 0.9438163754710517,
+            "out_of_scope_caught": 0.38545953360768176,
+            "intent_on_in_scope": 0.8807810894141829,
+            "session_success": 0.2472677595628415,
+            "detectors": [
+              "knn",
+              "msp",
+              "mahalanobis"
+            ]
+          },
+          "gemma-4-31b": {
+            "weighted": 0.7383824157605132,
+            "turn_correct": 0.7384868421052632,
+            "scope_accuracy": 0.8223684210526315,
+            "in_scope_kept": 0.9701952723535457,
+            "out_of_scope_caught": 0.23045267489711935,
+            "intent_on_in_scope": 0.8653648509763617,
+            "session_success": 0.24180327868852458,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "gemma-4-31b: combination": {
+            "weighted": 0.7444118779050833,
+            "turn_correct": 0.7445175438596491,
+            "scope_accuracy": 0.8223684210526315,
+            "in_scope_kept": 0.9701952723535457,
+            "out_of_scope_caught": 0.23045267489711932,
+            "intent_on_in_scope": 0.8842069201781433,
+            "session_success": 0.24453551912568305
+          },
+          "gemma-4-31b: cascade_0.4": {
+            "weighted": 0.7466027178257395,
+            "turn_correct": 0.7467105263157894,
+            "scope_accuracy": 0.8259320175438596,
+            "in_scope_kept": 0.9767043508050702,
+            "out_of_scope_caught": 0.2222222222222222,
+            "intent_on_in_scope": 0.8780404248030148,
+            "session_success": 0.2527322404371584
+          },
+          "gemma-4-31b: model scope + specialist intent": {
+            "weighted": 0.7339973523826441,
+            "turn_correct": 0.7341008771929824,
+            "scope_accuracy": 0.8223684210526315,
+            "in_scope_kept": 0.9701952723535457,
+            "out_of_scope_caught": 0.23045267489711932,
+            "intent_on_in_scope": 0.8807810894141829,
+            "session_success": 0.21448087431693988
+          },
+          "qwen3.5-27b": {
+            "weighted": 0.8083624106006201,
+            "turn_correct": 0.8083881578947368,
+            "scope_accuracy": 0.8832236842105263,
+            "in_scope_kept": 0.9331963001027749,
+            "out_of_scope_caught": 0.6831275720164609,
+            "intent_on_in_scope": 0.8406988694758479,
+            "session_success": 0.38114754098360654,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "qwen3.5-27b: combination": {
+            "weighted": 0.8171325373563584,
+            "turn_correct": 0.8171600877192983,
+            "scope_accuracy": 0.8832236842105262,
+            "in_scope_kept": 0.9331963001027749,
+            "out_of_scope_caught": 0.683127572016461,
+            "intent_on_in_scope": 0.868790681740322,
+            "session_success": 0.39071038251366114
+          },
+          "qwen3.5-27b: cascade_0.4": {
+            "weighted": 0.8160306322842961,
+            "turn_correct": 0.8160635964912281,
+            "scope_accuracy": 0.8859649122807017,
+            "in_scope_kept": 0.9434737923946557,
+            "out_of_scope_caught": 0.6556927297668039,
+            "intent_on_in_scope": 0.8574854402192532,
+            "session_success": 0.3975409836065574
+          },
+          "qwen3.5-27b: model scope + specialist intent": {
+            "weighted": 0.8089105435228537,
+            "turn_correct": 0.8089364035087719,
+            "scope_accuracy": 0.8832236842105262,
+            "in_scope_kept": 0.9331963001027749,
+            "out_of_scope_caught": 0.683127572016461,
+            "intent_on_in_scope": 0.8807810894141829,
+            "session_success": 0.34972677595628415
+          }
+        },
+        "prior_0.3": {
+          "specialist": {
+            "weighted": 0.7766087658973352,
+            "turn_correct": 0.7765899122807017,
+            "scope_accuracy": 0.8083881578947368,
+            "in_scope_kept": 0.7934224049331963,
+            "out_of_scope_caught": 0.8683127572016461,
+            "intent_on_in_scope": 0.8807810894141829,
+            "session_success": 0.2745901639344262,
+            "detectors": [
+              "knn",
+              "mahalanobis",
+              "mahalanobis"
+            ]
+          },
+          "gemma-4-31b": {
+            "weighted": 0.7383824157605132,
+            "turn_correct": 0.7384868421052632,
+            "scope_accuracy": 0.8223684210526315,
+            "in_scope_kept": 0.9701952723535457,
+            "out_of_scope_caught": 0.23045267489711935,
+            "intent_on_in_scope": 0.8653648509763617,
+            "session_success": 0.24180327868852458,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "gemma-4-31b: combination": {
+            "weighted": 0.7444118779050833,
+            "turn_correct": 0.7445175438596491,
+            "scope_accuracy": 0.8223684210526315,
+            "in_scope_kept": 0.9701952723535457,
+            "out_of_scope_caught": 0.23045267489711932,
+            "intent_on_in_scope": 0.8842069201781433,
+            "session_success": 0.24453551912568305
+          },
+          "gemma-4-31b: cascade_0.4": {
+            "weighted": 0.7274203212386,
+            "turn_correct": 0.7275219298245613,
+            "scope_accuracy": 0.8045504385964911,
+            "in_scope_kept": 0.947242206235012,
+            "out_of_scope_caught": 0.23319615912208502,
+            "intent_on_in_scope": 0.8780404248030148,
+            "session_success": 0.22814207650273222
+          },
+          "gemma-4-31b: model scope + specialist intent": {
+            "weighted": 0.7339973523826441,
+            "turn_correct": 0.7341008771929824,
+            "scope_accuracy": 0.8223684210526315,
+            "in_scope_kept": 0.9701952723535457,
+            "out_of_scope_caught": 0.23045267489711932,
+            "intent_on_in_scope": 0.8807810894141829,
+            "session_success": 0.21448087431693988
+          },
+          "qwen3.5-27b": {
+            "weighted": 0.8083624106006201,
+            "turn_correct": 0.8083881578947368,
+            "scope_accuracy": 0.8832236842105263,
+            "in_scope_kept": 0.9331963001027749,
+            "out_of_scope_caught": 0.6831275720164609,
+            "intent_on_in_scope": 0.8406988694758479,
+            "session_success": 0.38114754098360654,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "qwen3.5-27b: combination": {
+            "weighted": 0.8171325373563584,
+            "turn_correct": 0.8171600877192983,
+            "scope_accuracy": 0.8832236842105262,
+            "in_scope_kept": 0.9331963001027749,
+            "out_of_scope_caught": 0.683127572016461,
+            "intent_on_in_scope": 0.868790681740322,
+            "session_success": 0.39071038251366114
+          },
+          "qwen3.5-27b: cascade_0.4": {
+            "weighted": 0.7968482356971566,
+            "turn_correct": 0.796875,
+            "scope_accuracy": 0.8645833333333334,
+            "in_scope_kept": 0.9140116478245974,
+            "out_of_scope_caught": 0.6666666666666666,
+            "intent_on_in_scope": 0.8574854402192532,
+            "session_success": 0.3551912568306011
+          },
+          "qwen3.5-27b: model scope + specialist intent": {
+            "weighted": 0.8089105435228537,
+            "turn_correct": 0.8089364035087719,
+            "scope_accuracy": 0.8832236842105262,
+            "in_scope_kept": 0.9331963001027749,
+            "out_of_scope_caught": 0.683127572016461,
+            "intent_on_in_scope": 0.8807810894141829,
+            "session_success": 0.34972677595628415
+          }
+        }
+      },
+      "tests": {
+        "specialist vs gemma-4-31b": {
+          "difference_points": 4.42431240193031,
+          "ci95": [
+            -0.03750924797367563,
+            8.100372017311129
+          ],
+          "ci90": [
+            0.751599585642267,
+            7.604487992556518
+          ],
+          "p": 0.1710828917108289,
+          "clusters": 264,
+          "holm_p": 0.5132486751324867
+        },
+        "combination vs gemma-4-31b": {
+          "difference_points": 0.6029462144570058,
+          "ci95": [
+            -0.14654717975751191,
+            1.1787071356971346
+          ],
+          "ci90": [
+            -0.06216549372408581,
+            1.098930402930403
+          ],
+          "p": 0.29647035296470353,
+          "clusters": 264,
+          "holm_p": 0.5929407059294071
+        },
+        "cascade_0.4 vs specialist (gemma-4-31b)": {
+          "difference_points": -4.780542409106225,
+          "ci95": [
+            -7.781500408795869,
+            -1.352067730192224
+          ],
+          "ci90": [
+            -7.385257882959584,
+            -1.8753883567706089
+          ],
+          "p": 0.07849215078492151,
+          "clusters": 264
+        },
+        "cascade_0.4 vs gemma-4-31b": {
+          "difference_points": -0.3562300071759173,
+          "ci95": [
+            -1.4358385009603665,
+            0.6218466200754521
+          ],
+          "ci90": [
+            -1.277441065638574,
+            0.4473541586899429
+          ],
+          "p": 0.5567443255674432,
+          "clusters": 264
+        },
+        "decomposition vs gemma-4-31b": {
+          "scope_part_points": 4.862818739717234,
+          "intent_part_points": -0.4385063377869147
+        },
+        "specialist vs qwen3.5-27b": {
+          "difference_points": -2.573687082080368,
+          "ci95": [
+            -5.75271551593916,
+            0.137860007789343
+          ],
+          "ci90": [
+            -5.244407424968222,
+            -0.28981577075792053
+          ],
+          "p": 0.2555744425557444,
+          "clusters": 264
+        },
+        "combination vs qwen3.5-27b": {
+          "difference_points": 0.8770126755738267,
+          "ci95": [
+            0.04897752905021497,
+            1.5112708081312143
+          ],
+          "ci90": [
+            0.1711266435924025,
+            1.4262919669824659
+          ],
+          "p": 0.12298770122987701,
+          "clusters": 264
+        },
+        "cascade_0.4 vs specialist (qwen3.5-27b)": {
+          "difference_points": 2.1622490367494365,
+          "ci95": [
+            -0.08696696800838484,
+            4.751276893497613
+          ],
+          "ci90": [
+            0.238204111565249,
+            4.332218537478849
+          ],
+          "p": 0.30196980301969806,
+          "clusters": 264
+        },
+        "cascade_0.4 vs qwen3.5-27b": {
+          "difference_points": -0.4114380453309312,
+          "ci95": [
+            -1.3155146046343182,
+            0.40339186524841414
+          ],
+          "ci90": [
+            -1.1383872105066881,
+            0.2886886606592527
+          ],
+          "p": 0.3394660533946605,
+          "clusters": 264
+        },
+        "decomposition vs qwen3.5-27b": {
+          "scope_part_points": -2.6285003743037216,
+          "intent_part_points": 0.054813292223354626
+        },
+        "prior_0.1 | specialist vs gemma-4-31b": {
+          "difference_points": 2.497190959754242,
+          "ci95": [
+            -0.4079054507494245,
+            5.229960296744941
+          ],
+          "ci90": [
+            0.0002751258135192799,
+            4.72442680776014
+          ],
+          "p": 0.0463953604639536,
+          "clusters": 264
+        },
+        "prior_0.3 | specialist vs gemma-4-31b": {
+          "difference_points": 3.822635013682178,
+          "ci95": [
+            -1.7457092592362247,
+            8.40865974071587
+          ],
+          "ci90": [
+            -0.8682063178043533,
+            7.890751112237883
+          ],
+          "p": 0.4173582641735826,
+          "clusters": 264
+        },
+        "rows effect: gemma with rows vs without": {
+          "difference_points": 13.333502510161185,
+          "ci95": [
+            12.106151585377999,
+            14.548582778818208
+          ],
+          "ci90": [
+            12.28202018427929,
+            14.35500235879611
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 264
+        },
+        "rows effect: specialist with rows vs without": {
+          "difference_points": 7.097193497406668,
+          "ci95": [
+            1.6412930735333746,
+            14.93029125857801
+          ],
+          "ci90": [
+            2.099510535248582,
+            13.413828718096594
+          ],
+          "p": 0.04689531046895311,
+          "clusters": 264
+        },
+        "with rows: specialist vs gemma": {
+          "difference_points": -1.8119966108242174,
+          "ci95": [
+            -5.394003880020991,
+            2.2554715403883394
+          ],
+          "ci90": [
+            -5.008128610895842,
+            1.5764275626659685
+          ],
+          "p": 0.5437456254374563,
+          "clusters": 264
+        },
+        "original case vs normalised (seed 1)": {
+          "difference_points": -1.7273800007612958,
+          "ci95": [
+            -3.2826109906723153,
+            -0.2551666998077824
+          ],
+          "ci90": [
+            -3.0143770013677758,
+            -0.4866980169881256
+          ],
+          "p": 0.030796920307969204,
+          "clusters": 264
+        }
+      },
+      "costs": {
+        "gemma-4-31b": {
+          "calls": 1216,
+          "prompt_tokens_mean": 644.3536184210526,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 9.420950657894736e-05,
+          "usd_per_1000_sessions": 0.46950311475409834,
+          "usd_per_correct_session": 0.0019416738983050847,
+          "latency_ms_p50": 875.0090499961516,
+          "latency_ms_p95": 1791.1877000005916,
+          "latency_ms_p99": 2804.6808549828706,
+          "providers": {
+            "Novita": 1216
+          }
+        },
+        "gemma-4-31b: combination": {
+          "calls": 1216,
+          "prompt_tokens_mean": 644.3536184210526,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 9.420950657894736e-05,
+          "usd_per_1000_sessions": 0.46950311475409834,
+          "usd_per_correct_session": 0.0019199792178770949,
+          "latency_ms_p50": 875.0090499961516,
+          "latency_ms_p95": 1791.1877000005916,
+          "latency_ms_p99": 2804.6808549828706,
+          "providers": {
+            "Novita": 1216
+          }
+        },
+        "gemma-4-31b: cascade_0.4": {
+          "calls": 1216,
+          "prompt_tokens_mean": 644.3536184210526,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 3.768380263157895e-05,
+          "usd_per_1000_sessions": 0.18780124590163938,
+          "usd_per_correct_session": 0.0007855457828571431,
+          "latency_ms_p50": 875.0090499961516,
+          "latency_ms_p95": 1791.1877000005916,
+          "latency_ms_p99": 2804.6808549828706,
+          "providers": {
+            "Novita": 1216
+          }
+        },
+        "qwen3.5-27b": {
+          "calls": 1216,
+          "prompt_tokens_mean": 642.1817434210526,
+          "completion_tokens_mean": 9.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00013926543996710527,
+          "usd_per_1000_sessions": 0.6940441598360657,
+          "usd_per_correct_session": 0.0018209330645161295,
+          "latency_ms_p50": 1330.1667500054464,
+          "latency_ms_p95": 10306.718625011854,
+          "latency_ms_p99": 12345.444160002808,
+          "providers": {
+            "Alibaba": 1216
+          }
+        },
+        "qwen3.5-27b: combination": {
+          "calls": 1216,
+          "prompt_tokens_mean": 642.1817434210526,
+          "completion_tokens_mean": 9.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00013926543996710527,
+          "usd_per_1000_sessions": 0.6940441598360657,
+          "usd_per_correct_session": 0.0017763647727272733,
+          "latency_ms_p50": 1330.1667500054464,
+          "latency_ms_p95": 10306.718625011854,
+          "latency_ms_p99": 12345.444160002808,
+          "providers": {
+            "Alibaba": 1216
+          }
+        },
+        "qwen3.5-27b: cascade_0.4": {
+          "calls": 1216,
+          "prompt_tokens_mean": 642.1817434210526,
+          "completion_tokens_mean": 9.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 5.570617598684211e-05,
+          "usd_per_1000_sessions": 0.2776176639344263,
+          "usd_per_correct_session": 0.0007498750184501847,
+          "latency_ms_p50": 1330.1667500054464,
+          "latency_ms_p95": 10306.718625011854,
+          "latency_ms_p99": 12345.444160002808,
+          "providers": {
+            "Alibaba": 1216
+          }
+        },
+        "gemma-4-31b with rows": {
+          "calls": 1216,
+          "prompt_tokens_mean": 642.7483552631579,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 9.39847697368421e-05,
+          "usd_per_1000_sessions": 0.46838311475409833,
+          "usd_per_correct_session": 0.0008928553124999999,
+          "latency_ms_p50": 831.8123000062769,
+          "latency_ms_p95": 1805.860449989268,
+          "latency_ms_p99": 3964.8767649909128,
+          "providers": {
+            "Novita": 1216
+          }
+        },
+        "kimi-k3": {
+          "calls": 500,
+          "prompt_tokens_mean": 578.168,
+          "completion_tokens_mean": 18.0,
+          "cached_share": 0.4365789874223409,
+          "usd_per_turn": 0.0013229808000000001,
+          "usd_per_1000_sessions": 6.593215790163935,
+          "usd_per_correct_session": 0.021268438032786885,
+          "latency_ms_p50": 2957.9283999919426,
+          "latency_ms_p95": 5277.8662899814635,
+          "latency_ms_p99": 6536.4377659955035,
+          "providers": {
+            "Moonshot AI": 500
+          }
+        },
+        "gemma-4-31b (frontier subset)": {
+          "calls": 500,
+          "prompt_tokens_mean": 639.878,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 9.358291999999998e-05,
+          "usd_per_1000_sessions": 0.46638045377049175,
+          "usd_per_correct_session": 0.001332515582201405,
+          "latency_ms_p50": 950.7104500080459,
+          "latency_ms_p95": 2087.7226050142776,
+          "latency_ms_p99": 2805.8670309800073,
+          "providers": {
+            "Novita": 500
+          }
+        },
+        "claude-opus-5": {
+          "calls": 500,
+          "prompt_tokens_mean": 746.31,
+          "completion_tokens_mean": 12.886,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.0040537,
+          "usd_per_1000_sessions": 20.202045901639345,
+          "usd_per_correct_session": 0.056116794171220404,
+          "latency_ms_p50": 1520.206950008287,
+          "latency_ms_p95": 1952.47226498759,
+          "latency_ms_p99": 2525.6257800233975,
+          "providers": {
+            "Anthropic": 500
+          }
+        }
+      },
+      "length_auroc": 0.5617876069514758,
+      "frontier": {
+        "n_turns": 500,
+        "n_sessions": 100,
+        "tests": {
+          "kimi-k3 vs specialist": {
+            "difference_points": -1.44733223322332,
+            "ci95": [
+              -5.896974866975889,
+              3.093629320716528
+            ],
+            "ci90": [
+              -5.295197491852863,
+              2.27786373419525
+            ],
+            "p": 0.675032496750325,
+            "clusters": 117
+          },
+          "kimi-k3 vs gemma": {
+            "difference_points": 0.4476072607260727,
+            "ci95": [
+              -1.521209513919284,
+              2.268407477538551
+            ],
+            "ci90": [
+              -1.196329165987826,
+              1.9994437939110075
+            ],
+            "p": 0.5466453354664533,
+            "clusters": 117
+          },
+          "claude-opus-5 vs specialist": {
+            "difference_points": -3.2398239823982387,
+            "ci95": [
+              -6.700571726192607,
+              0.4893188293836011
+            ],
+            "ci90": [
+              -6.210313071146975,
+              -0.1868086977716847
+            ],
+            "p": 0.21757824217578242,
+            "clusters": 117
+          },
+          "claude-opus-5 vs gemma": {
+            "difference_points": -1.3448844884488453,
+            "ci95": [
+              -5.20660686600108,
+              1.679300771692074
+            ],
+            "ci90": [
+              -4.457016482482321,
+              1.331994456718834
+            ],
+            "p": 0.7439256074392561,
+            "clusters": 117
+          }
+        },
+        "kimi-k3": {
+          "weighted": 0.7895420792079209,
+          "turn_correct": 0.794,
+          "scope_accuracy": 0.85,
+          "in_scope_kept": 0.9702970297029703,
+          "out_of_scope_caught": 0.34375,
+          "intent_on_in_scope": 0.900990099009901,
+          "session_success": 0.31,
+          "failed_requests": 0,
+          "parse_failed": 0
+        },
+        "specialist_same_turns": {
+          "weighted": 0.8040154015401539,
+          "turn_correct": 0.804,
+          "session_success": 0.31666666666666665
+        },
+        "gemma_same_turns": {
+          "weighted": 0.7850660066006602,
+          "turn_correct": 0.79,
+          "session_success": 0.35
+        },
+        "claude-opus-5": {
+          "weighted": 0.7716171617161717,
+          "turn_correct": 0.776,
+          "scope_accuracy": 0.822,
+          "in_scope_kept": 0.9381188118811881,
+          "out_of_scope_caught": 0.3333333333333333,
+          "intent_on_in_scope": 0.8836633663366337,
+          "session_success": 0.36,
+          "failed_requests": 0,
+          "parse_failed": 0
+        }
+      }
+    },
+    "clinc150": {
+      "n_turns": 1850,
+      "n_in": 1665,
+      "n_out": 185,
+      "n_sessions": 370,
+      "out_of_scope_share": 0.1,
+      "systems": {
+        "prior_0.2": {
+          "specialist": {
+            "weighted": 0.9313713713713714,
+            "turn_correct": 0.943963963963964,
+            "scope_accuracy": 0.9627027027027028,
+            "in_scope_kept": 0.9773773773773774,
+            "out_of_scope_caught": 0.8306306306306306,
+            "intent_on_in_scope": 0.9677677677677679,
+            "session_success": 0.7441441441441441,
+            "detectors": [
+              "mahalanobis",
+              "mahalanobis",
+              "knn"
+            ]
+          },
+          "gemma-4-31b": {
+            "weighted": 0.9502702702702703,
+            "turn_correct": 0.9643243243243244,
+            "scope_accuracy": 0.98,
+            "in_scope_kept": 0.9957957957957958,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9783783783783784,
+            "session_success": 0.8324324324324325,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "gemma-4-31b: combination": {
+            "weighted": 0.9512312312312313,
+            "turn_correct": 0.9654054054054054,
+            "scope_accuracy": 0.98,
+            "in_scope_kept": 0.9957957957957958,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9807807807807808,
+            "session_success": 0.8378378378378378
+          },
+          "gemma-4-31b: cascade_0.4": {
+            "weighted": 0.9510710710710711,
+            "turn_correct": 0.9652252252252252,
+            "scope_accuracy": 0.9805405405405404,
+            "in_scope_kept": 0.9963963963963964,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9793793793793794,
+            "session_success": 0.8342342342342343
+          },
+          "gemma-4-31b: model scope + specialist intent": {
+            "weighted": 0.9401801801801802,
+            "turn_correct": 0.9529729729729729,
+            "scope_accuracy": 0.98,
+            "in_scope_kept": 0.9957957957957958,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9677677677677679,
+            "session_success": 0.7792792792792792
+          },
+          "qwen3.5-27b": {
+            "weighted": 0.94990990990991,
+            "turn_correct": 0.9605405405405405,
+            "scope_accuracy": 0.9772972972972973,
+            "in_scope_kept": 0.9897897897897898,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.9711711711711711,
+            "session_success": 0.8135135135135135,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "qwen3.5-27b: combination": {
+            "weighted": 0.9513513513513514,
+            "turn_correct": 0.9621621621621622,
+            "scope_accuracy": 0.9772972972972974,
+            "in_scope_kept": 0.9897897897897897,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.976976976976977,
+            "session_success": 0.8198198198198199
+          },
+          "qwen3.5-27b: cascade_0.4": {
+            "weighted": 0.9511911911911913,
+            "turn_correct": 0.961981981981982,
+            "scope_accuracy": 0.9787387387387388,
+            "in_scope_kept": 0.9913913913913914,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.9727727727727729,
+            "session_success": 0.8207207207207207
+          },
+          "qwen3.5-27b: model scope + specialist intent": {
+            "weighted": 0.9417417417417419,
+            "turn_correct": 0.9513513513513514,
+            "scope_accuracy": 0.9772972972972974,
+            "in_scope_kept": 0.9897897897897897,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.9677677677677679,
+            "session_success": 0.7702702702702703
+          },
+          "gemma-4-31b with rows": {
+            "weighted": 0.9574774774774775,
+            "turn_correct": 0.967027027027027,
+            "scope_accuracy": 0.9832432432432432,
+            "in_scope_kept": 0.9945945945945946,
+            "out_of_scope_caught": 0.8810810810810811,
+            "intent_on_in_scope": 0.9765765765765766,
+            "session_success": 0.8405405405405405,
+            "failed_requests": 0
+          },
+          "specialist with rows": {
+            "weighted": 0.9313713713713714,
+            "turn_correct": 0.9439639639639639,
+            "rules": [
+              "detector",
+              "detector",
+              "detector"
+            ]
+          },
+          "specialist original case (seed 1)": {
+            "weighted": 0.9321321321321322,
+            "turn_correct": 0.9459459459459459,
+            "scope_accuracy": 0.9654054054054054,
+            "in_scope_kept": 0.9813813813813814,
+            "out_of_scope_caught": 0.8216216216216217,
+            "intent_on_in_scope": 0.9693693693693693
+          }
+        },
+        "prior_0.1": {
+          "specialist": {
+            "weighted": 0.9313713713713714,
+            "turn_correct": 0.943963963963964,
+            "scope_accuracy": 0.9627027027027028,
+            "in_scope_kept": 0.9773773773773774,
+            "out_of_scope_caught": 0.8306306306306306,
+            "intent_on_in_scope": 0.9677677677677679,
+            "session_success": 0.7441441441441441,
+            "detectors": [
+              "mahalanobis",
+              "mahalanobis",
+              "knn"
+            ]
+          },
+          "gemma-4-31b": {
+            "weighted": 0.9502702702702703,
+            "turn_correct": 0.9643243243243244,
+            "scope_accuracy": 0.98,
+            "in_scope_kept": 0.9957957957957958,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9783783783783784,
+            "session_success": 0.8324324324324325,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "gemma-4-31b: combination": {
+            "weighted": 0.9512312312312313,
+            "turn_correct": 0.9654054054054054,
+            "scope_accuracy": 0.98,
+            "in_scope_kept": 0.9957957957957958,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9807807807807808,
+            "session_success": 0.8378378378378378
+          },
+          "gemma-4-31b: cascade_0.4": {
+            "weighted": 0.9510710710710711,
+            "turn_correct": 0.9652252252252252,
+            "scope_accuracy": 0.9805405405405404,
+            "in_scope_kept": 0.9963963963963964,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9793793793793794,
+            "session_success": 0.8342342342342343
+          },
+          "gemma-4-31b: model scope + specialist intent": {
+            "weighted": 0.9401801801801802,
+            "turn_correct": 0.9529729729729729,
+            "scope_accuracy": 0.98,
+            "in_scope_kept": 0.9957957957957958,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9677677677677679,
+            "session_success": 0.7792792792792792
+          },
+          "qwen3.5-27b": {
+            "weighted": 0.94990990990991,
+            "turn_correct": 0.9605405405405405,
+            "scope_accuracy": 0.9772972972972973,
+            "in_scope_kept": 0.9897897897897898,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.9711711711711711,
+            "session_success": 0.8135135135135135,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "qwen3.5-27b: combination": {
+            "weighted": 0.9513513513513514,
+            "turn_correct": 0.9621621621621622,
+            "scope_accuracy": 0.9772972972972974,
+            "in_scope_kept": 0.9897897897897897,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.976976976976977,
+            "session_success": 0.8198198198198199
+          },
+          "qwen3.5-27b: cascade_0.4": {
+            "weighted": 0.9511911911911913,
+            "turn_correct": 0.961981981981982,
+            "scope_accuracy": 0.9787387387387388,
+            "in_scope_kept": 0.9913913913913914,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.9727727727727729,
+            "session_success": 0.8207207207207207
+          },
+          "qwen3.5-27b: model scope + specialist intent": {
+            "weighted": 0.9417417417417419,
+            "turn_correct": 0.9513513513513514,
+            "scope_accuracy": 0.9772972972972974,
+            "in_scope_kept": 0.9897897897897897,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.9677677677677679,
+            "session_success": 0.7702702702702703
+          }
+        },
+        "prior_0.3": {
+          "specialist": {
+            "weighted": 0.934014014014014,
+            "turn_correct": 0.941981981981982,
+            "scope_accuracy": 0.9571171171171171,
+            "in_scope_kept": 0.9667667667667668,
+            "out_of_scope_caught": 0.8702702702702704,
+            "intent_on_in_scope": 0.9677677677677679,
+            "session_success": 0.7324324324324324,
+            "detectors": [
+              "energy",
+              "mahalanobis",
+              "knn"
+            ]
+          },
+          "gemma-4-31b": {
+            "weighted": 0.9502702702702703,
+            "turn_correct": 0.9643243243243244,
+            "scope_accuracy": 0.98,
+            "in_scope_kept": 0.9957957957957958,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9783783783783784,
+            "session_success": 0.8324324324324325,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "gemma-4-31b: combination": {
+            "weighted": 0.9512312312312313,
+            "turn_correct": 0.9654054054054054,
+            "scope_accuracy": 0.98,
+            "in_scope_kept": 0.9957957957957958,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9807807807807808,
+            "session_success": 0.8378378378378378
+          },
+          "gemma-4-31b: cascade_0.4": {
+            "weighted": 0.9510710710710711,
+            "turn_correct": 0.9652252252252252,
+            "scope_accuracy": 0.9805405405405404,
+            "in_scope_kept": 0.9963963963963964,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9793793793793794,
+            "session_success": 0.8342342342342343
+          },
+          "gemma-4-31b: model scope + specialist intent": {
+            "weighted": 0.9401801801801802,
+            "turn_correct": 0.9529729729729729,
+            "scope_accuracy": 0.98,
+            "in_scope_kept": 0.9957957957957958,
+            "out_of_scope_caught": 0.8378378378378378,
+            "intent_on_in_scope": 0.9677677677677679,
+            "session_success": 0.7792792792792792
+          },
+          "qwen3.5-27b": {
+            "weighted": 0.94990990990991,
+            "turn_correct": 0.9605405405405405,
+            "scope_accuracy": 0.9772972972972973,
+            "in_scope_kept": 0.9897897897897898,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.9711711711711711,
+            "session_success": 0.8135135135135135,
+            "failed_requests": 0,
+            "parse_failed": 0
+          },
+          "qwen3.5-27b: combination": {
+            "weighted": 0.9513513513513514,
+            "turn_correct": 0.9621621621621622,
+            "scope_accuracy": 0.9772972972972974,
+            "in_scope_kept": 0.9897897897897897,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.976976976976977,
+            "session_success": 0.8198198198198199
+          },
+          "qwen3.5-27b: cascade_0.4": {
+            "weighted": 0.9511911911911913,
+            "turn_correct": 0.961981981981982,
+            "scope_accuracy": 0.9787387387387388,
+            "in_scope_kept": 0.9913913913913914,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.9727727727727729,
+            "session_success": 0.8207207207207207
+          },
+          "qwen3.5-27b: model scope + specialist intent": {
+            "weighted": 0.9417417417417419,
+            "turn_correct": 0.9513513513513514,
+            "scope_accuracy": 0.9772972972972974,
+            "in_scope_kept": 0.9897897897897897,
+            "out_of_scope_caught": 0.8648648648648649,
+            "intent_on_in_scope": 0.9677677677677679,
+            "session_success": 0.7702702702702703
+          }
+        }
+      },
+      "tests": {
+        "specialist vs gemma-4-31b": {
+          "difference_points": -1.8898898898898902,
+          "ci95": [
+            -2.986563228371378,
+            -0.7760831747732778
+          ],
+          "ci90": [
+            -2.8364773140634276,
+            -0.9350725322748026
+          ],
+          "p": 0.0011998800119988001,
+          "clusters": 335,
+          "holm_p": 0.007199280071992801
+        },
+        "combination vs gemma-4-31b": {
+          "difference_points": 0.09609609609609608,
+          "ci95": [
+            -0.11873278236914606,
+            0.35444161011374753
+          ],
+          "ci90": [
+            -0.09134935909531179,
+            0.3097535444723708
+          ],
+          "p": 0.5195480451954805,
+          "clusters": 335,
+          "holm_p": 0.5929407059294071
+        },
+        "cascade_0.4 vs specialist (gemma-4-31b)": {
+          "difference_points": 1.9699699699699702,
+          "ci95": [
+            0.8731766842817059,
+            3.0683794855902193
+          ],
+          "ci90": [
+            1.0370332300693348,
+            2.925910236058565
+          ],
+          "p": 0.0006999300069993001,
+          "clusters": 335
+        },
+        "cascade_0.4 vs gemma-4-31b": {
+          "difference_points": 0.08008008008008008,
+          "ci95": [
+            -0.015826385105491416,
+            0.2045722713864304
+          ],
+          "ci90": [
+            -5.367124262479836e-18,
+            0.187137029037677
+          ],
+          "p": 0.3123687631236876,
+          "clusters": 335
+        },
+        "decomposition vs gemma-4-31b": {
+          "scope_part_points": -0.8808808808808966,
+          "intent_part_points": -1.0090090090089987
+        },
+        "specialist vs qwen3.5-27b": {
+          "difference_points": -1.853853853853854,
+          "ci95": [
+            -3.069252222794065,
+            -0.5642988603603333
+          ],
+          "ci90": [
+            -2.8763900418350685,
+            -0.7447649864795073
+          ],
+          "p": 0.004199580041995801,
+          "clusters": 335
+        },
+        "combination vs qwen3.5-27b": {
+          "difference_points": 0.14414414414414414,
+          "ci95": [
+            -0.06166060500516862,
+            0.39504515747208857
+          ],
+          "ci90": [
+            -0.031635875889591616,
+            0.34542527427684355
+          ],
+          "p": 0.2765723427657234,
+          "clusters": 335
+        },
+        "cascade_0.4 vs specialist (qwen3.5-27b)": {
+          "difference_points": 1.9819819819819822,
+          "ci95": [
+            0.7280113060650428,
+            3.1898224810312605
+          ],
+          "ci90": [
+            0.9209966275387523,
+            2.996031507605192
+          ],
+          "p": 0.0018998100189981002,
+          "clusters": 335
+        },
+        "cascade_0.4 vs qwen3.5-27b": {
+          "difference_points": 0.12812812812812815,
+          "ci95": [
+            -0.018081251250788962,
+            0.4119624602711068
+          ],
+          "ci90": [
+            -0.015650371743451966,
+            0.35556633650023584
+          ],
+          "p": 0.49775022497750226,
+          "clusters": 335
+        },
+        "decomposition vs qwen3.5-27b": {
+          "scope_part_points": -1.0370370370370363,
+          "intent_part_points": -0.8168168168168233
+        },
+        "prior_0.1 | specialist vs gemma-4-31b": {
+          "difference_points": -1.8898898898898902,
+          "ci95": [
+            -2.986563228371378,
+            -0.7760831747732778
+          ],
+          "ci90": [
+            -2.8364773140634276,
+            -0.9350725322748026
+          ],
+          "p": 0.0011998800119988001,
+          "clusters": 335
+        },
+        "prior_0.3 | specialist vs gemma-4-31b": {
+          "difference_points": -1.6256256256256258,
+          "ci95": [
+            -2.773937288866128,
+            -0.4578912039372663
+          ],
+          "ci90": [
+            -2.6301924211888124,
+            -0.6561759456988978
+          ],
+          "p": 0.0105989401059894,
+          "clusters": 335
+        },
+        "rows effect: gemma with rows vs without": {
+          "difference_points": 0.7207207207207207,
+          "ci95": [
+            0.15613016990194345,
+            1.3705930723296222
+          ],
+          "ci90": [
+            0.25624219209754373,
+            1.2674287664153285
+          ],
+          "p": 0.015798420157984203,
+          "clusters": 335
+        },
+        "rows effect: specialist with rows vs without": {
+          "difference_points": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "ci90": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0,
+          "clusters": 335
+        },
+        "with rows: specialist vs gemma": {
+          "difference_points": -2.610610610610611,
+          "ci95": [
+            -3.7943234113486564,
+            -1.4097599367463167
+          ],
+          "ci90": [
+            -3.6219782920342896,
+            -1.619411133784497
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 335
+        },
+        "original case vs normalised (seed 1)": {
+          "difference_points": 0.5405405405405407,
+          "ci95": [
+            -0.33016094710059996,
+            1.4334635340190673
+          ],
+          "ci90": [
+            -0.21858806392741123,
+            1.305836292346587
+          ],
+          "p": 0.24687531246875313,
+          "clusters": 335
+        }
+      },
+      "costs": {
+        "gemma-4-31b": {
+          "calls": 1850,
+          "prompt_tokens_mean": 1484.771891891892,
+          "completion_tokens_mean": 11.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00021226806486486486,
+          "usd_per_1000_sessions": 1.0613403243243242,
+          "usd_per_correct_session": 0.001274986753246753,
+          "latency_ms_p50": 1006.0005499981344,
+          "latency_ms_p95": 2287.644219990761,
+          "latency_ms_p99": 5541.109863979217,
+          "providers": {
+            "Novita": 1850
+          }
+        },
+        "gemma-4-31b: combination": {
+          "calls": 1850,
+          "prompt_tokens_mean": 1484.771891891892,
+          "completion_tokens_mean": 11.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00021226806486486486,
+          "usd_per_1000_sessions": 1.0613403243243242,
+          "usd_per_correct_session": 0.0012667610322580644,
+          "latency_ms_p50": 1006.0005499981344,
+          "latency_ms_p95": 2287.644219990761,
+          "latency_ms_p99": 5541.109863979217,
+          "providers": {
+            "Novita": 1850
+          }
+        },
+        "gemma-4-31b: cascade_0.4": {
+          "calls": 1850,
+          "prompt_tokens_mean": 1484.771891891892,
+          "completion_tokens_mean": 11.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 8.490722594594595e-05,
+          "usd_per_1000_sessions": 0.42453612972972976,
+          "usd_per_correct_session": 0.0005088932008639309,
+          "latency_ms_p50": 1006.0005499981344,
+          "latency_ms_p95": 2287.644219990761,
+          "latency_ms_p99": 5541.109863979217,
+          "providers": {
+            "Novita": 1850
+          }
+        },
+        "qwen3.5-27b": {
+          "calls": 1850,
+          "prompt_tokens_mean": 1480.94,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.0003043833,
+          "usd_per_1000_sessions": 1.5219165000000001,
+          "usd_per_correct_session": 0.0018707943687707642,
+          "latency_ms_p50": 2250.660899997456,
+          "latency_ms_p95": 4828.844395010668,
+          "latency_ms_p99": 12761.33110299561,
+          "providers": {
+            "Alibaba": 1850
+          }
+        },
+        "qwen3.5-27b: combination": {
+          "calls": 1850,
+          "prompt_tokens_mean": 1480.94,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.0003043833,
+          "usd_per_1000_sessions": 1.5219165000000001,
+          "usd_per_correct_session": 0.0018564036428571427,
+          "latency_ms_p50": 2250.660899997456,
+          "latency_ms_p95": 4828.844395010668,
+          "latency_ms_p99": 12761.33110299561,
+          "providers": {
+            "Alibaba": 1850
+          }
+        },
+        "qwen3.5-27b: cascade_0.4": {
+          "calls": 1850,
+          "prompt_tokens_mean": 1480.94,
+          "completion_tokens_mean": 10.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00012175332000000002,
+          "usd_per_1000_sessions": 0.6087666000000002,
+          "usd_per_correct_session": 0.0007417463512623493,
+          "latency_ms_p50": 2250.660899997456,
+          "latency_ms_p95": 4828.844395010668,
+          "latency_ms_p99": 12761.33110299561,
+          "providers": {
+            "Alibaba": 1850
+          }
+        },
+        "gemma-4-31b with rows": {
+          "calls": 1850,
+          "prompt_tokens_mean": 1484.8362162162161,
+          "completion_tokens_mean": 11.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.0002122770702702703,
+          "usd_per_1000_sessions": 1.0613853513513514,
+          "usd_per_correct_session": 0.0012627414147909969,
+          "latency_ms_p50": 893.9564500033157,
+          "latency_ms_p95": 1561.5632100001676,
+          "latency_ms_p99": 3094.825515000556,
+          "providers": {
+            "Novita": 1850
+          }
+        },
+        "kimi-k3": {
+          "calls": 500,
+          "prompt_tokens_mean": 1141.94,
+          "completion_tokens_mean": 18.0,
+          "cached_share": 0.6617790777098622,
+          "usd_per_turn": 0.0016553975999999998,
+          "usd_per_1000_sessions": 8.276988,
+          "usd_per_correct_session": 0.010093887804878049,
+          "latency_ms_p50": 2810.191449985723,
+          "latency_ms_p95": 4791.023039992429,
+          "latency_ms_p99": 6830.726695001938,
+          "providers": {
+            "Moonshot AI": 500
+          }
+        },
+        "gemma-4-31b (frontier subset)": {
+          "calls": 500,
+          "prompt_tokens_mean": 1487.582,
+          "completion_tokens_mean": 11.0,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.00021266148,
+          "usd_per_1000_sessions": 1.0633074,
+          "usd_per_correct_session": 0.0012658421428571429,
+          "latency_ms_p50": 949.2198999942048,
+          "latency_ms_p95": 1953.5578350114504,
+          "latency_ms_p99": 5815.76977399352,
+          "providers": {
+            "Novita": 500
+          }
+        },
+        "claude-opus-5": {
+          "calls": 500,
+          "prompt_tokens_mean": 1469.686,
+          "completion_tokens_mean": 12.896,
+          "cached_share": 0.0,
+          "usd_per_turn": 0.007670830000000001,
+          "usd_per_1000_sessions": 38.354150000000004,
+          "usd_per_correct_session": 0.04358426136363637,
+          "latency_ms_p50": 1083.8448499998776,
+          "latency_ms_p95": 1582.0085299943457,
+          "latency_ms_p99": 1790.7025960081955,
+          "providers": {
+            "Anthropic": 500
+          }
+        }
+      },
+      "length_auroc": 0.566488109731353,
+      "frontier": {
+        "n_turns": 500,
+        "n_sessions": 100,
+        "tests": {
+          "kimi-k3 vs specialist": {
+            "difference_points": 1.8647102493558672,
+            "ci95": [
+              -0.5772731063395609,
+              4.359064785788925
+            ],
+            "ci90": [
+              -0.16666914183513762,
+              3.9729118707549804
+            ],
+            "p": 0.140985901409859,
+            "clusters": 186
+          },
+          "kimi-k3 vs gemma": {
+            "difference_points": -0.7843137254901961,
+            "ci95": [
+              -2.4707333162126033,
+              0.7547169811320755
+            ],
+            "ci90": [
+              -2.2191983892797817,
+              0.45598412680560274
+            ],
+            "p": 0.4988501149885011,
+            "clusters": 186
+          },
+          "claude-opus-5 vs specialist": {
+            "difference_points": 4.431634569195161,
+            "ci95": [
+              2.4408153762557316,
+              6.672364435712596
+            ],
+            "ci90": [
+              2.7634480720190426,
+              6.289850116995022
+            ],
+            "p": 9.999000099990002e-05,
+            "clusters": 186
+          },
+          "claude-opus-5 vs gemma": {
+            "difference_points": 1.7826105943490982,
+            "ci95": [
+              0.2970119196045663,
+              3.566432670629226
+            ],
+            "ci90": [
+              0.5031961358480807,
+              3.2533072577140376
+            ],
+            "p": 0.06529347065293471,
+            "clusters": 186
+          }
+        },
+        "kimi-k3": {
+          "weighted": 0.9508100790427529,
+          "turn_correct": 0.964,
+          "scope_accuracy": 0.98,
+          "in_scope_kept": 0.9955456570155902,
+          "out_of_scope_caught": 0.8431372549019608,
+          "intent_on_in_scope": 0.977728285077951,
+          "session_success": 0.82,
+          "failed_requests": 0,
+          "parse_failed": 0
+        },
+        "specialist_same_turns": {
+          "weighted": 0.9321629765491944,
+          "turn_correct": 0.9406666666666667,
+          "session_success": 0.7266666666666666
+        },
+        "gemma_same_turns": {
+          "weighted": 0.958653216297655,
+          "turn_correct": 0.968,
+          "session_success": 0.84
+        },
+        "claude-opus-5": {
+          "weighted": 0.9764793222411459,
+          "turn_correct": 0.976,
+          "scope_accuracy": 0.994,
+          "in_scope_kept": 0.9955456570155902,
+          "out_of_scope_caught": 0.9803921568627451,
+          "intent_on_in_scope": 0.9755011135857461,
+          "session_success": 0.88,
+          "failed_requests": 0,
+          "parse_failed": 0
+        }
+      }
+    }
+  }
+}

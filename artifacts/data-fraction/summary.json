@@ -1,0 +1,6397 @@
+{
+  "protocol_id": "specialist-data-and-size-vs-ladder-2026-10-12",
+  "models_alone": {
+    "qwen3.5-9b": {
+      "session_success": 0.2925,
+      "session_success_ci": [
+        0.2475,
+        0.3375
+      ],
+      "turn_success": 0.7195,
+      "node_accuracy": {
+        "scope": 0.98,
+        "intent": 0.6850344395742016,
+        "repeat": 0.860484544695071
+      }
+    },
+    "qwen3.5-27b": {
+      "session_success": 0.4075,
+      "session_success_ci": [
+        0.3625,
+        0.4575
+      ],
+      "turn_success": 0.7875,
+      "node_accuracy": {
+        "scope": 0.967,
+        "intent": 0.7658108954289292,
+        "repeat": 0.8705096073517126
+      }
+    },
+    "gemma-4-31b": {
+      "session_success": 0.4225,
+      "session_success_ci": [
+        0.375,
+        0.4700624999999996
+      ],
+      "turn_success": 0.7995,
+      "node_accuracy": {
+        "scope": 0.988,
+        "intent": 0.7802128991859737,
+        "repeat": 0.9030910609857978
+      }
+    },
+    "qwen3.5-35b-a3b": {
+      "session_success": 0.26,
+      "session_success_ci": [
+        0.22,
+        0.305
+      ],
+      "turn_success": 0.7085,
+      "node_accuracy": {
+        "scope": 0.9775,
+        "intent": 0.6687539135879774,
+        "repeat": 0.8596491228070176
+      }
+    },
+    "llama-3.3-70b": {
+      "session_success": 0.295,
+      "session_success_ci": [
+        0.25,
+        0.34
+      ],
+      "turn_success": 0.732,
+      "node_accuracy": {
+        "scope": 0.975,
+        "intent": 0.7006887914840325,
+        "repeat": 0.8646616541353384
+      }
+    },
+    "qwen3-next-80b-a3b": {
+      "session_success": 0.325,
+      "session_success_ci": [
+        0.2825,
+        0.3725
+      ],
+      "turn_success": 0.7455,
+      "node_accuracy": {
+        "scope": 0.9765,
+        "intent": 0.7138384470882906,
+        "repeat": 0.8738512949039264
+      }
+    },
+    "nemotron-3-super-120b": {
+      "session_success": 0.2625,
+      "session_success_ci": [
+        0.22,
+        0.305
+      ],
+      "turn_success": 0.722,
+      "node_accuracy": {
+        "scope": 0.9535,
+        "intent": 0.6862867877269881,
+        "repeat": 0.8345864661654135
+      }
+    },
+    "qwen3.5-122b-a10b": {
+      "session_success": 0.3925,
+      "session_success_ci": [
+        0.345,
+        0.4425
+      ],
+      "turn_success": 0.784,
+      "node_accuracy": {
+        "scope": 0.989,
+        "intent": 0.7658108954289292,
+        "repeat": 0.8872180451127819
+      }
+    }
+  },
+  "specialists": {
+    "encoder-150m@0.01": {
+      "alone": {
+        "session_success": 0.015,
+        "session_success_ci": [
+          0.005,
+          0.0275
+        ],
+        "turn_success": 0.321,
+        "node_accuracy": {
+          "scope": 0.734,
+          "intent": 0.2417031934877896,
+          "repeat": 0.543859649122807
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.02,
+            "session_success_ci": [
+              0.0075,
+              0.035
+            ],
+            "turn_success": 0.343,
+            "node_accuracy": {
+              "scope": 0.763,
+              "intent": 0.26925485284909206,
+              "repeat": 0.5756056808688388
+            }
+          },
+          "0.25": {
+            "session_success": 0.03,
+            "session_success_ci": [
+              0.015,
+              0.0475
+            ],
+            "turn_success": 0.3985,
+            "node_accuracy": {
+              "scope": 0.8525,
+              "intent": 0.3475266123982467,
+              "repeat": 0.6750208855472013
+            }
+          },
+          "0.4": {
+            "session_success": 0.04,
+            "session_success_ci": [
+              0.0225,
+              0.06
+            ],
+            "turn_success": 0.4785,
+            "node_accuracy": {
+              "scope": 0.9605,
+              "intent": 0.4427050720100188,
+              "repeat": 0.7919799498746867
+            }
+          },
+          "0.6": {
+            "session_success": 0.105,
+            "session_success_ci": [
+              0.075,
+              0.1375
+            ],
+            "turn_success": 0.58,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.5391358797745773,
+              "repeat": 0.8061821219715957
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.02,
+            "session_success_ci": [
+              0.0075,
+              0.035
+            ],
+            "turn_success": 0.3455,
+            "node_accuracy": {
+              "scope": 0.762,
+              "intent": 0.27301189730745146,
+              "repeat": 0.5739348370927319
+            }
+          },
+          "0.25": {
+            "session_success": 0.04,
+            "session_success_ci": [
+              0.0225,
+              0.06
+            ],
+            "turn_success": 0.408,
+            "node_accuracy": {
+              "scope": 0.849,
+              "intent": 0.3606762680025047,
+              "repeat": 0.672514619883041
+            }
+          },
+          "0.4": {
+            "session_success": 0.06,
+            "session_success_ci": [
+              0.0375,
+              0.085
+            ],
+            "turn_success": 0.498,
+            "node_accuracy": {
+              "scope": 0.95,
+              "intent": 0.46712586098935505,
+              "repeat": 0.7903091060985797
+            }
+          },
+          "0.6": {
+            "session_success": 0.14,
+            "session_success_ci": [
+              0.1075,
+              0.175
+            ],
+            "turn_success": 0.6135,
+            "node_accuracy": {
+              "scope": 0.9685,
+              "intent": 0.5817157169693175,
+              "repeat": 0.8036758563074352
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.02,
+            "session_success_ci": [
+              0.0075,
+              0.035
+            ],
+            "turn_success": 0.3455,
+            "node_accuracy": {
+              "scope": 0.763,
+              "intent": 0.2736380713838447,
+              "repeat": 0.5772765246449457
+            }
+          },
+          "0.25": {
+            "session_success": 0.0375,
+            "session_success_ci": [
+              0.02,
+              0.0575
+            ],
+            "turn_success": 0.4085,
+            "node_accuracy": {
+              "scope": 0.8525,
+              "intent": 0.3606762680025047,
+              "repeat": 0.681704260651629
+            }
+          },
+          "0.4": {
+            "session_success": 0.0575,
+            "session_success_ci": [
+              0.035,
+              0.0825
+            ],
+            "turn_success": 0.5015,
+            "node_accuracy": {
+              "scope": 0.959,
+              "intent": 0.47025673137132123,
+              "repeat": 0.8036758563074352
+            }
+          },
+          "0.6": {
+            "session_success": 0.145,
+            "session_success_ci": [
+              0.11243750000000001,
+              0.18
+            ],
+            "turn_success": 0.6215,
+            "node_accuracy": {
+              "scope": 0.982,
+              "intent": 0.5917345021916093,
+              "repeat": 0.8237259816207184
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.0175,
+            "session_success_ci": [
+              0.005,
+              0.0325
+            ],
+            "turn_success": 0.34,
+            "node_accuracy": {
+              "scope": 0.761,
+              "intent": 0.2667501565435191,
+              "repeat": 0.5722639933166249
+            }
+          },
+          "0.25": {
+            "session_success": 0.025,
+            "session_success_ci": [
+              0.01,
+              0.04
+            ],
+            "turn_success": 0.393,
+            "node_accuracy": {
+              "scope": 0.8485,
+              "intent": 0.3400125234815279,
+              "repeat": 0.6700083542188805
+            }
+          },
+          "0.4": {
+            "session_success": 0.0425,
+            "session_success_ci": [
+              0.025,
+              0.0625
+            ],
+            "turn_success": 0.4765,
+            "node_accuracy": {
+              "scope": 0.954,
+              "intent": 0.4364433312460864,
+              "repeat": 0.7861319966583125
+            }
+          },
+          "0.6": {
+            "session_success": 0.09,
+            "session_success_ci": [
+              0.0625,
+              0.12
+            ],
+            "turn_success": 0.577,
+            "node_accuracy": {
+              "scope": 0.975,
+              "intent": 0.5316217908578584,
+              "repeat": 0.8011695906432749
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.02,
+            "session_success_ci": [
+              0.0075,
+              0.035
+            ],
+            "turn_success": 0.342,
+            "node_accuracy": {
+              "scope": 0.761,
+              "intent": 0.26925485284909206,
+              "repeat": 0.5739348370927319
+            }
+          },
+          "0.25": {
+            "session_success": 0.03,
+            "session_success_ci": [
+              0.015,
+              0.0475
+            ],
+            "turn_success": 0.393,
+            "node_accuracy": {
+              "scope": 0.8465,
+              "intent": 0.3406386975579211,
+              "repeat": 0.6691729323308271
+            }
+          },
+          "0.4": {
+            "session_success": 0.0425,
+            "session_success_ci": [
+              0.025,
+              0.0625
+            ],
+            "turn_success": 0.4785,
+            "node_accuracy": {
+              "scope": 0.9515,
+              "intent": 0.44082654978083907,
+              "repeat": 0.7886382623224728
+            }
+          },
+          "0.6": {
+            "session_success": 0.125,
+            "session_success_ci": [
+              0.0925,
+              0.1575
+            ],
+            "turn_success": 0.587,
+            "node_accuracy": {
+              "scope": 0.971,
+              "intent": 0.5485284909204758,
+              "repeat": 0.8011695906432749
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.02,
+            "session_success_ci": [
+              0.0075,
+              0.035
+            ],
+            "turn_success": 0.3415,
+            "node_accuracy": {
+              "scope": 0.7615,
+              "intent": 0.2680025046963056,
+              "repeat": 0.5730994152046783
+            }
+          },
+          "0.25": {
+            "session_success": 0.0325,
+            "session_success_ci": [
+              0.0175,
+              0.05
+            ],
+            "turn_success": 0.3965,
+            "node_accuracy": {
+              "scope": 0.8475,
+              "intent": 0.34502191609267374,
+              "repeat": 0.6683375104427736
+            }
+          },
+          "0.4": {
+            "session_success": 0.0475,
+            "session_success_ci": [
+              0.0275,
+              0.07
+            ],
+            "turn_success": 0.4825,
+            "node_accuracy": {
+              "scope": 0.952,
+              "intent": 0.445835942391985,
+              "repeat": 0.7861319966583125
+            }
+          },
+          "0.6": {
+            "session_success": 0.1175,
+            "session_success_ci": [
+              0.0875,
+              0.15
+            ],
+            "turn_success": 0.593,
+            "node_accuracy": {
+              "scope": 0.973,
+              "intent": 0.5547902316844082,
+              "repeat": 0.8053467000835421
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.02,
+            "session_success_ci": [
+              0.0075,
+              0.035
+            ],
+            "turn_success": 0.341,
+            "node_accuracy": {
+              "scope": 0.7605,
+              "intent": 0.2680025046963056,
+              "repeat": 0.5722639933166249
+            }
+          },
+          "0.25": {
+            "session_success": 0.0225,
+            "session_success_ci": [
+              0.01,
+              0.0375
+            ],
+            "turn_success": 0.3935,
+            "node_accuracy": {
+              "scope": 0.8425,
+              "intent": 0.3425172197871008,
+              "repeat": 0.6616541353383458
+            }
+          },
+          "0.4": {
+            "session_success": 0.035,
+            "session_success_ci": [
+              0.0175,
+              0.05256249999999966
+            ],
+            "turn_success": 0.473,
+            "node_accuracy": {
+              "scope": 0.9435,
+              "intent": 0.43519098309329995,
+              "repeat": 0.772765246449457
+            }
+          },
+          "0.6": {
+            "session_success": 0.1075,
+            "session_success_ci": [
+              0.0775,
+              0.14
+            ],
+            "turn_success": 0.5815,
+            "node_accuracy": {
+              "scope": 0.958,
+              "intent": 0.5441452723857232,
+              "repeat": 0.7844611528822055
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.02,
+            "session_success_ci": [
+              0.0075,
+              0.035
+            ],
+            "turn_success": 0.3435,
+            "node_accuracy": {
+              "scope": 0.762,
+              "intent": 0.27113337507827173,
+              "repeat": 0.5756056808688388
+            }
+          },
+          "0.25": {
+            "session_success": 0.0325,
+            "session_success_ci": [
+              0.0175,
+              0.05
+            ],
+            "turn_success": 0.4035,
+            "node_accuracy": {
+              "scope": 0.8525,
+              "intent": 0.3544145272385723,
+              "repeat": 0.6775271512113618
+            }
+          },
+          "0.4": {
+            "session_success": 0.0475,
+            "session_success_ci": [
+              0.0275,
+              0.07
+            ],
+            "turn_success": 0.4915,
+            "node_accuracy": {
+              "scope": 0.9595,
+              "intent": 0.45898559799624294,
+              "repeat": 0.7953216374269005
+            }
+          },
+          "0.6": {
+            "session_success": 0.1225,
+            "session_success_ci": [
+              0.09,
+              0.155
+            ],
+            "turn_success": 0.61,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.577958672510958,
+              "repeat": 0.8195488721804511
+            }
+          }
+        }
+      }
+    },
+    "encoder-150m@0.02": {
+      "alone": {
+        "session_success": 0.01,
+        "session_success_ci": [
+          0.0025,
+          0.02
+        ],
+        "turn_success": 0.377,
+        "node_accuracy": {
+          "scope": 0.74,
+          "intent": 0.30619912335629307,
+          "repeat": 0.5580618212197159
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.015,
+            "session_success_ci": [
+              0.005,
+              0.0275
+            ],
+            "turn_success": 0.4005,
+            "node_accuracy": {
+              "scope": 0.773,
+              "intent": 0.33562930494677523,
+              "repeat": 0.5939849624060151
+            }
+          },
+          "0.25": {
+            "session_success": 0.03,
+            "session_success_ci": [
+              0.015,
+              0.0475
+            ],
+            "turn_success": 0.4605,
+            "node_accuracy": {
+              "scope": 0.864,
+              "intent": 0.4170319348778961,
+              "repeat": 0.6934001670843776
+            }
+          },
+          "0.4": {
+            "session_success": 0.0525,
+            "session_success_ci": [
+              0.0325,
+              0.075
+            ],
+            "turn_success": 0.5215,
+            "node_accuracy": {
+              "scope": 0.9555,
+              "intent": 0.4971822166562304,
+              "repeat": 0.7944862155388471
+            }
+          },
+          "0.6": {
+            "session_success": 0.165,
+            "session_success_ci": [
+              0.1275,
+              0.2
+            ],
+            "turn_success": 0.63,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.5873512836568566,
+              "repeat": 0.8262322472848789
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.0175,
+            "session_success_ci": [
+              0.0075,
+              0.0325
+            ],
+            "turn_success": 0.4065,
+            "node_accuracy": {
+              "scope": 0.774,
+              "intent": 0.3431433938634941,
+              "repeat": 0.5964912280701754
+            }
+          },
+          "0.25": {
+            "session_success": 0.035,
+            "session_success_ci": [
+              0.0175,
+              0.05506249999999966
+            ],
+            "turn_success": 0.473,
+            "node_accuracy": {
+              "scope": 0.8605,
+              "intent": 0.43331246086412023,
+              "repeat": 0.6917293233082706
+            }
+          },
+          "0.4": {
+            "session_success": 0.0625,
+            "session_success_ci": [
+              0.04,
+              0.0875
+            ],
+            "turn_success": 0.5455,
+            "node_accuracy": {
+              "scope": 0.9485,
+              "intent": 0.5272385723231058,
+              "repeat": 0.7953216374269005
+            }
+          },
+          "0.6": {
+            "session_success": 0.1925,
+            "session_success_ci": [
+              0.1525,
+              0.2325
+            ],
+            "turn_success": 0.666,
+            "node_accuracy": {
+              "scope": 0.973,
+              "intent": 0.6355666875391359,
+              "repeat": 0.8237259816207184
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.015,
+            "session_success_ci": [
+              0.005,
+              0.0275
+            ],
+            "turn_success": 0.405,
+            "node_accuracy": {
+              "scope": 0.774,
+              "intent": 0.34189104571070755,
+              "repeat": 0.5973266499582289
+            }
+          },
+          "0.25": {
+            "session_success": 0.0325,
+            "session_success_ci": [
+              0.0175,
+              0.0525
+            ],
+            "turn_success": 0.472,
+            "node_accuracy": {
+              "scope": 0.8645,
+              "intent": 0.43206011271133377,
+              "repeat": 0.697577276524645
+            }
+          },
+          "0.4": {
+            "session_success": 0.065,
+            "session_success_ci": [
+              0.0425,
+              0.09
+            ],
+            "turn_success": 0.547,
+            "node_accuracy": {
+              "scope": 0.9565,
+              "intent": 0.5316217908578584,
+              "repeat": 0.8020050125313283
+            }
+          },
+          "0.6": {
+            "session_success": 0.2125,
+            "session_success_ci": [
+              0.175,
+              0.2525
+            ],
+            "turn_success": 0.667,
+            "node_accuracy": {
+              "scope": 0.984,
+              "intent": 0.6380713838447089,
+              "repeat": 0.8412698412698413
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.015,
+            "session_success_ci": [
+              0.005,
+              0.0275
+            ],
+            "turn_success": 0.4,
+            "node_accuracy": {
+              "scope": 0.774,
+              "intent": 0.33500313087038197,
+              "repeat": 0.5948203842940685
+            }
+          },
+          "0.25": {
+            "session_success": 0.025,
+            "session_success_ci": [
+              0.0125,
+              0.0425
+            ],
+            "turn_success": 0.454,
+            "node_accuracy": {
+              "scope": 0.864,
+              "intent": 0.4082654978083907,
+              "repeat": 0.6900584795321637
+            }
+          },
+          "0.4": {
+            "session_success": 0.045,
+            "session_success_ci": [
+              0.0275,
+              0.0675
+            ],
+            "turn_success": 0.519,
+            "node_accuracy": {
+              "scope": 0.9545,
+              "intent": 0.49530369442705074,
+              "repeat": 0.7894736842105263
+            }
+          },
+          "0.6": {
+            "session_success": 0.1475,
+            "session_success_ci": [
+              0.115,
+              0.1825
+            ],
+            "turn_success": 0.6245,
+            "node_accuracy": {
+              "scope": 0.979,
+              "intent": 0.5823418910457107,
+              "repeat": 0.8137009189640768
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.0125,
+            "session_success_ci": [
+              0.0025,
+              0.025
+            ],
+            "turn_success": 0.402,
+            "node_accuracy": {
+              "scope": 0.773,
+              "intent": 0.3393863494051346,
+              "repeat": 0.5948203842940685
+            }
+          },
+          "0.25": {
+            "session_success": 0.025,
+            "session_success_ci": [
+              0.0125,
+              0.0425
+            ],
+            "turn_success": 0.457,
+            "node_accuracy": {
+              "scope": 0.862,
+              "intent": 0.4139010644959299,
+              "repeat": 0.6892230576441103
+            }
+          },
+          "0.4": {
+            "session_success": 0.0525,
+            "session_success_ci": [
+              0.03,
+              0.075
+            ],
+            "turn_success": 0.524,
+            "node_accuracy": {
+              "scope": 0.952,
+              "intent": 0.504070131496556,
+              "repeat": 0.7928153717627402
+            }
+          },
+          "0.6": {
+            "session_success": 0.15,
+            "session_success_ci": [
+              0.115,
+              0.185
+            ],
+            "turn_success": 0.63,
+            "node_accuracy": {
+              "scope": 0.9765,
+              "intent": 0.5923606762680025,
+              "repeat": 0.8195488721804511
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.0125,
+            "session_success_ci": [
+              0.0025,
+              0.025
+            ],
+            "turn_success": 0.4005,
+            "node_accuracy": {
+              "scope": 0.7725,
+              "intent": 0.33625547902316844,
+              "repeat": 0.5948203842940685
+            }
+          },
+          "0.25": {
+            "session_success": 0.025,
+            "session_success_ci": [
+              0.01,
+              0.0425
+            ],
+            "turn_success": 0.4575,
+            "node_accuracy": {
+              "scope": 0.8615,
+              "intent": 0.4145272385723231,
+              "repeat": 0.6892230576441103
+            }
+          },
+          "0.4": {
+            "session_success": 0.05,
+            "session_success_ci": [
+              0.03,
+              0.0725
+            ],
+            "turn_success": 0.5235,
+            "node_accuracy": {
+              "scope": 0.951,
+              "intent": 0.5034439574201628,
+              "repeat": 0.7869674185463659
+            }
+          },
+          "0.6": {
+            "session_success": 0.17,
+            "session_success_ci": [
+              0.135,
+              0.2075
+            ],
+            "turn_success": 0.6375,
+            "node_accuracy": {
+              "scope": 0.976,
+              "intent": 0.6005009392611146,
+              "repeat": 0.8170426065162907
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.0125,
+            "session_success_ci": [
+              0.0025,
+              0.025
+            ],
+            "turn_success": 0.4025,
+            "node_accuracy": {
+              "scope": 0.7725,
+              "intent": 0.33813400125234816,
+              "repeat": 0.5939849624060151
+            }
+          },
+          "0.25": {
+            "session_success": 0.03,
+            "session_success_ci": [
+              0.015,
+              0.05
+            ],
+            "turn_success": 0.46,
+            "node_accuracy": {
+              "scope": 0.8565,
+              "intent": 0.4164057608015028,
+              "repeat": 0.6842105263157895
+            }
+          },
+          "0.4": {
+            "session_success": 0.055,
+            "session_success_ci": [
+              0.0325,
+              0.08
+            ],
+            "turn_success": 0.5245,
+            "node_accuracy": {
+              "scope": 0.943,
+              "intent": 0.5028177833437696,
+              "repeat": 0.7827903091060986
+            }
+          },
+          "0.6": {
+            "session_success": 0.1575,
+            "session_success_ci": [
+              0.1225,
+              0.1925
+            ],
+            "turn_success": 0.634,
+            "node_accuracy": {
+              "scope": 0.964,
+              "intent": 0.5898559799624296,
+              "repeat": 0.8078529657477026
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.0125,
+            "session_success_ci": [
+              0.0025,
+              0.025
+            ],
+            "turn_success": 0.4015,
+            "node_accuracy": {
+              "scope": 0.7735,
+              "intent": 0.33813400125234816,
+              "repeat": 0.595655806182122
+            }
+          },
+          "0.25": {
+            "session_success": 0.0275,
+            "session_success_ci": [
+              0.0125,
+              0.045
+            ],
+            "turn_success": 0.4665,
+            "node_accuracy": {
+              "scope": 0.8655,
+              "intent": 0.4245460237946149,
+              "repeat": 0.697577276524645
+            }
+          },
+          "0.4": {
+            "session_success": 0.0525,
+            "session_success_ci": [
+              0.0325,
+              0.07506249999999966
+            ],
+            "turn_success": 0.5355,
+            "node_accuracy": {
+              "scope": 0.959,
+              "intent": 0.5184721352536005,
+              "repeat": 0.8011695906432749
+            }
+          },
+          "0.6": {
+            "session_success": 0.175,
+            "session_success_ci": [
+              0.1375,
+              0.21
+            ],
+            "turn_success": 0.654,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.6217908578584846,
+              "repeat": 0.8304093567251462
+            }
+          }
+        }
+      }
+    },
+    "encoder-150m@0.05": {
+      "alone": {
+        "session_success": 0.1875,
+        "session_success_ci": [
+          0.1525,
+          0.225
+        ],
+        "turn_success": 0.68,
+        "node_accuracy": {
+          "scope": 0.853,
+          "intent": 0.65184721352536,
+          "repeat": 0.7276524644945698
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.1925,
+            "session_success_ci": [
+              0.1575,
+              0.23
+            ],
+            "turn_success": 0.6835,
+            "node_accuracy": {
+              "scope": 0.8595,
+              "intent": 0.6581089542892924,
+              "repeat": 0.7360066833751044
+            }
+          },
+          "0.25": {
+            "session_success": 0.255,
+            "session_success_ci": [
+              0.2174375,
+              0.295
+            ],
+            "turn_success": 0.731,
+            "node_accuracy": {
+              "scope": 0.927,
+              "intent": 0.7138384470882906,
+              "repeat": 0.8212197159565581
+            }
+          },
+          "0.4": {
+            "session_success": 0.335,
+            "session_success_ci": [
+              0.2925,
+              0.3825
+            ],
+            "turn_success": 0.776,
+            "node_accuracy": {
+              "scope": 0.9865,
+              "intent": 0.765184721352536,
+              "repeat": 0.8813700918964077
+            }
+          },
+          "0.6": {
+            "session_success": 0.3875,
+            "session_success_ci": [
+              0.3375,
+              0.4325
+            ],
+            "turn_success": 0.787,
+            "node_accuracy": {
+              "scope": 0.988,
+              "intent": 0.7683155917345021,
+              "repeat": 0.885547201336675
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.1925,
+            "session_success_ci": [
+              0.1575,
+              0.23
+            ],
+            "turn_success": 0.685,
+            "node_accuracy": {
+              "scope": 0.8605,
+              "intent": 0.6587351283656857,
+              "repeat": 0.7360066833751044
+            }
+          },
+          "0.25": {
+            "session_success": 0.2725,
+            "session_success_ci": [
+              0.2325,
+              0.315
+            ],
+            "turn_success": 0.74,
+            "node_accuracy": {
+              "scope": 0.9245,
+              "intent": 0.7244834063869756,
+              "repeat": 0.8187134502923976
+            }
+          },
+          "0.4": {
+            "session_success": 0.39,
+            "session_success_ci": [
+              0.345,
+              0.4375
+            ],
+            "turn_success": 0.7995,
+            "node_accuracy": {
+              "scope": 0.981,
+              "intent": 0.7914840325610519,
+              "repeat": 0.8805346700083542
+            }
+          },
+          "0.6": {
+            "session_success": 0.47,
+            "session_success_ci": [
+              0.4225,
+              0.52
+            ],
+            "turn_success": 0.826,
+            "node_accuracy": {
+              "scope": 0.9785,
+              "intent": 0.8140262993112085,
+              "repeat": 0.8847117794486216
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.19,
+            "session_success_ci": [
+              0.155,
+              0.2275
+            ],
+            "turn_success": 0.6835,
+            "node_accuracy": {
+              "scope": 0.86,
+              "intent": 0.6574827802128992,
+              "repeat": 0.7351712614870509
+            }
+          },
+          "0.25": {
+            "session_success": 0.27,
+            "session_success_ci": [
+              0.23,
+              0.31
+            ],
+            "turn_success": 0.7395,
+            "node_accuracy": {
+              "scope": 0.927,
+              "intent": 0.7238572323105823,
+              "repeat": 0.8237259816207184
+            }
+          },
+          "0.4": {
+            "session_success": 0.38,
+            "session_success_ci": [
+              0.335,
+              0.43
+            ],
+            "turn_success": 0.796,
+            "node_accuracy": {
+              "scope": 0.988,
+              "intent": 0.7877269881026926,
+              "repeat": 0.8922305764411027
+            }
+          },
+          "0.6": {
+            "session_success": 0.47,
+            "session_success_ci": [
+              0.4225,
+              0.52
+            ],
+            "turn_success": 0.826,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.8146524733876017,
+              "repeat": 0.9047619047619048
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.195,
+            "session_success_ci": [
+              0.16,
+              0.2325
+            ],
+            "turn_success": 0.6845,
+            "node_accuracy": {
+              "scope": 0.86,
+              "intent": 0.6574827802128992,
+              "repeat": 0.7368421052631579
+            }
+          },
+          "0.25": {
+            "session_success": 0.2575,
+            "session_success_ci": [
+              0.2175,
+              0.2975
+            ],
+            "turn_success": 0.7315,
+            "node_accuracy": {
+              "scope": 0.925,
+              "intent": 0.7138384470882906,
+              "repeat": 0.8170426065162907
+            }
+          },
+          "0.4": {
+            "session_success": 0.3475,
+            "session_success_ci": [
+              0.3025,
+              0.395
+            ],
+            "turn_success": 0.778,
+            "node_accuracy": {
+              "scope": 0.9835,
+              "intent": 0.7658108954289292,
+              "repeat": 0.8788638262322472
+            }
+          },
+          "0.6": {
+            "session_success": 0.385,
+            "session_success_ci": [
+              0.34,
+              0.4325
+            ],
+            "turn_success": 0.7885,
+            "node_accuracy": {
+              "scope": 0.9835,
+              "intent": 0.7695679398872887,
+              "repeat": 0.8796992481203008
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.19,
+            "session_success_ci": [
+              0.155,
+              0.2275
+            ],
+            "turn_success": 0.683,
+            "node_accuracy": {
+              "scope": 0.8595,
+              "intent": 0.656856606136506,
+              "repeat": 0.7351712614870509
+            }
+          },
+          "0.25": {
+            "session_success": 0.2525,
+            "session_success_ci": [
+              0.215,
+              0.2925
+            ],
+            "turn_success": 0.731,
+            "node_accuracy": {
+              "scope": 0.9235,
+              "intent": 0.7132122730118973,
+              "repeat": 0.8170426065162907
+            }
+          },
+          "0.4": {
+            "session_success": 0.345,
+            "session_success_ci": [
+              0.3,
+              0.39256249999999965
+            ],
+            "turn_success": 0.782,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.7689417658108955,
+              "repeat": 0.8813700918964077
+            }
+          },
+          "0.6": {
+            "session_success": 0.3925,
+            "session_success_ci": [
+              0.345,
+              0.4425
+            ],
+            "turn_success": 0.7925,
+            "node_accuracy": {
+              "scope": 0.9835,
+              "intent": 0.7733249843456481,
+              "repeat": 0.883876357560568
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.19,
+            "session_success_ci": [
+              0.155,
+              0.2275
+            ],
+            "turn_success": 0.6835,
+            "node_accuracy": {
+              "scope": 0.859,
+              "intent": 0.6574827802128992,
+              "repeat": 0.733500417710944
+            }
+          },
+          "0.25": {
+            "session_success": 0.25,
+            "session_success_ci": [
+              0.2125,
+              0.2875
+            ],
+            "turn_success": 0.7315,
+            "node_accuracy": {
+              "scope": 0.9235,
+              "intent": 0.715090795241077,
+              "repeat": 0.8128654970760234
+            }
+          },
+          "0.4": {
+            "session_success": 0.3425,
+            "session_success_ci": [
+              0.29993749999999997,
+              0.39
+            ],
+            "turn_success": 0.787,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.7745773324984345,
+              "repeat": 0.883876357560568
+            }
+          },
+          "0.6": {
+            "session_success": 0.4225,
+            "session_success_ci": [
+              0.375,
+              0.4725
+            ],
+            "turn_success": 0.8075,
+            "node_accuracy": {
+              "scope": 0.982,
+              "intent": 0.7921102066374452,
+              "repeat": 0.8863826232247285
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.19,
+            "session_success_ci": [
+              0.155,
+              0.2275
+            ],
+            "turn_success": 0.683,
+            "node_accuracy": {
+              "scope": 0.858,
+              "intent": 0.656856606136506,
+              "repeat": 0.733500417710944
+            }
+          },
+          "0.25": {
+            "session_success": 0.24,
+            "session_success_ci": [
+              0.2025,
+              0.28
+            ],
+            "turn_success": 0.7255,
+            "node_accuracy": {
+              "scope": 0.918,
+              "intent": 0.7075767063243582,
+              "repeat": 0.8061821219715957
+            }
+          },
+          "0.4": {
+            "session_success": 0.3425,
+            "session_success_ci": [
+              0.2975,
+              0.39
+            ],
+            "turn_success": 0.777,
+            "node_accuracy": {
+              "scope": 0.9735,
+              "intent": 0.7639323731997495,
+              "repeat": 0.8680033416875522
+            }
+          },
+          "0.6": {
+            "session_success": 0.38,
+            "session_success_ci": [
+              0.335,
+              0.4275
+            ],
+            "turn_success": 0.7915,
+            "node_accuracy": {
+              "scope": 0.969,
+              "intent": 0.7720726361928616,
+              "repeat": 0.8680033416875522
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.1925,
+            "session_success_ci": [
+              0.1575,
+              0.23
+            ],
+            "turn_success": 0.684,
+            "node_accuracy": {
+              "scope": 0.8605,
+              "intent": 0.6574827802128992,
+              "repeat": 0.7360066833751044
+            }
+          },
+          "0.25": {
+            "session_success": 0.2575,
+            "session_success_ci": [
+              0.22,
+              0.2975
+            ],
+            "turn_success": 0.7355,
+            "node_accuracy": {
+              "scope": 0.9265,
+              "intent": 0.7194740137758296,
+              "repeat": 0.8203842940685045
+            }
+          },
+          "0.4": {
+            "session_success": 0.365,
+            "session_success_ci": [
+              0.32,
+              0.4100624999999996
+            ],
+            "turn_success": 0.793,
+            "node_accuracy": {
+              "scope": 0.9875,
+              "intent": 0.7833437695679399,
+              "repeat": 0.8888888888888888
+            }
+          },
+          "0.6": {
+            "session_success": 0.4525,
+            "session_success_ci": [
+              0.405,
+              0.5025
+            ],
+            "turn_success": 0.819,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.8065122103944896,
+              "repeat": 0.898078529657477
+            }
+          }
+        }
+      }
+    },
+    "encoder-150m@0.1": {
+      "alone": {
+        "session_success": 0.4425,
+        "session_success_ci": [
+          0.3925,
+          0.4925
+        ],
+        "turn_success": 0.8165,
+        "node_accuracy": {
+          "scope": 0.924,
+          "intent": 0.8246712586098935,
+          "repeat": 0.8596491228070176
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.445,
+            "session_success_ci": [
+              0.395,
+              0.495
+            ],
+            "turn_success": 0.8185,
+            "node_accuracy": {
+              "scope": 0.928,
+              "intent": 0.8271759549154665,
+              "repeat": 0.8654970760233918
+            }
+          },
+          "0.25": {
+            "session_success": 0.525,
+            "session_success_ci": [
+              0.475,
+              0.57
+            ],
+            "turn_success": 0.8495,
+            "node_accuracy": {
+              "scope": 0.9775,
+              "intent": 0.8597370068879149,
+              "repeat": 0.923141186299081
+            }
+          },
+          "0.4": {
+            "session_success": 0.535,
+            "session_success_ci": [
+              0.485,
+              0.585
+            ],
+            "turn_success": 0.8545,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.8465873512836568,
+              "repeat": 0.9147869674185464
+            }
+          },
+          "0.6": {
+            "session_success": 0.415,
+            "session_success_ci": [
+              0.365,
+              0.4625
+            ],
+            "turn_success": 0.7985,
+            "node_accuracy": {
+              "scope": 0.986,
+              "intent": 0.7789605510331872,
+              "repeat": 0.8880534670008354
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.4475,
+            "session_success_ci": [
+              0.3975,
+              0.4975
+            ],
+            "turn_success": 0.8185,
+            "node_accuracy": {
+              "scope": 0.927,
+              "intent": 0.8271759549154665,
+              "repeat": 0.8629908103592314
+            }
+          },
+          "0.25": {
+            "session_success": 0.535,
+            "session_success_ci": [
+              0.485,
+              0.5825
+            ],
+            "turn_success": 0.8545,
+            "node_accuracy": {
+              "scope": 0.9755,
+              "intent": 0.8647463994990607,
+              "repeat": 0.9214703425229741
+            }
+          },
+          "0.4": {
+            "session_success": 0.58,
+            "session_success_ci": [
+              0.5324375,
+              0.6275
+            ],
+            "turn_success": 0.873,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.8672510958046337,
+              "repeat": 0.9164578111946533
+            }
+          },
+          "0.6": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.465,
+              0.565
+            ],
+            "turn_success": 0.84,
+            "node_accuracy": {
+              "scope": 0.978,
+              "intent": 0.828428303068253,
+              "repeat": 0.8930659983291562
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.45,
+            "session_success_ci": [
+              0.4,
+              0.5
+            ],
+            "turn_success": 0.8205,
+            "node_accuracy": {
+              "scope": 0.928,
+              "intent": 0.828428303068253,
+              "repeat": 0.8671679197994987
+            }
+          },
+          "0.25": {
+            "session_success": 0.53,
+            "session_success_ci": [
+              0.4775,
+              0.5775
+            ],
+            "turn_success": 0.854,
+            "node_accuracy": {
+              "scope": 0.9775,
+              "intent": 0.8647463994990607,
+              "repeat": 0.9273182957393483
+            }
+          },
+          "0.4": {
+            "session_success": 0.58,
+            "session_success_ci": [
+              0.53,
+              0.6250624999999996
+            ],
+            "turn_success": 0.873,
+            "node_accuracy": {
+              "scope": 0.989,
+              "intent": 0.8653725735754539,
+              "repeat": 0.9298245614035088
+            }
+          },
+          "0.6": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.465,
+              0.565
+            ],
+            "turn_success": 0.844,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.8328115216030056,
+              "repeat": 0.9139515455304928
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.445,
+            "session_success_ci": [
+              0.395,
+              0.495
+            ],
+            "turn_success": 0.818,
+            "node_accuracy": {
+              "scope": 0.927,
+              "intent": 0.8265497808390733,
+              "repeat": 0.8629908103592314
+            }
+          },
+          "0.25": {
+            "session_success": 0.51,
+            "session_success_ci": [
+              0.4575,
+              0.555
+            ],
+            "turn_success": 0.849,
+            "node_accuracy": {
+              "scope": 0.9745,
+              "intent": 0.8584846587351284,
+              "repeat": 0.9189640768588136
+            }
+          },
+          "0.4": {
+            "session_success": 0.5175,
+            "session_success_ci": [
+              0.46993749999999995,
+              0.565
+            ],
+            "turn_success": 0.8525,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.8440826549780839,
+              "repeat": 0.9097744360902256
+            }
+          },
+          "0.6": {
+            "session_success": 0.405,
+            "session_success_ci": [
+              0.36,
+              0.4525
+            ],
+            "turn_success": 0.7955,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.7802128991859737,
+              "repeat": 0.8780284043441938
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.445,
+            "session_success_ci": [
+              0.395,
+              0.4925624999999996
+            ],
+            "turn_success": 0.8175,
+            "node_accuracy": {
+              "scope": 0.9275,
+              "intent": 0.8265497808390733,
+              "repeat": 0.8638262322472848
+            }
+          },
+          "0.25": {
+            "session_success": 0.51,
+            "session_success_ci": [
+              0.4575,
+              0.5575624999999996
+            ],
+            "turn_success": 0.8465,
+            "node_accuracy": {
+              "scope": 0.9755,
+              "intent": 0.8572323105823418,
+              "repeat": 0.9197994987468672
+            }
+          },
+          "0.4": {
+            "session_success": 0.53,
+            "session_success_ci": [
+              0.48,
+              0.5775
+            ],
+            "turn_success": 0.8565,
+            "node_accuracy": {
+              "scope": 0.988,
+              "intent": 0.8472135253600501,
+              "repeat": 0.9181286549707602
+            }
+          },
+          "0.6": {
+            "session_success": 0.4,
+            "session_success_ci": [
+              0.35,
+              0.44756249999999964
+            ],
+            "turn_success": 0.7955,
+            "node_accuracy": {
+              "scope": 0.9855,
+              "intent": 0.7764558547276142,
+              "repeat": 0.8897243107769424
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.445,
+            "session_success_ci": [
+              0.395,
+              0.495
+            ],
+            "turn_success": 0.819,
+            "node_accuracy": {
+              "scope": 0.927,
+              "intent": 0.8271759549154665,
+              "repeat": 0.8638262322472848
+            }
+          },
+          "0.25": {
+            "session_success": 0.53,
+            "session_success_ci": [
+              0.4775,
+              0.5775
+            ],
+            "turn_success": 0.8535,
+            "node_accuracy": {
+              "scope": 0.974,
+              "intent": 0.8634940513462742,
+              "repeat": 0.9206349206349206
+            }
+          },
+          "0.4": {
+            "session_success": 0.545,
+            "session_success_ci": [
+              0.495,
+              0.5925
+            ],
+            "turn_success": 0.864,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.8547276142767689,
+              "repeat": 0.9164578111946533
+            }
+          },
+          "0.6": {
+            "session_success": 0.445,
+            "session_success_ci": [
+              0.395,
+              0.4925
+            ],
+            "turn_success": 0.813,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.7964934251721979,
+              "repeat": 0.8888888888888888
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.445,
+            "session_success_ci": [
+              0.395,
+              0.495
+            ],
+            "turn_success": 0.819,
+            "node_accuracy": {
+              "scope": 0.927,
+              "intent": 0.8271759549154665,
+              "repeat": 0.8638262322472848
+            }
+          },
+          "0.25": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.4625,
+              0.5625
+            ],
+            "turn_success": 0.8465,
+            "node_accuracy": {
+              "scope": 0.972,
+              "intent": 0.8553537883531622,
+              "repeat": 0.9164578111946533
+            }
+          },
+          "0.4": {
+            "session_success": 0.51,
+            "session_success_ci": [
+              0.46,
+              0.5575
+            ],
+            "turn_success": 0.85,
+            "node_accuracy": {
+              "scope": 0.9775,
+              "intent": 0.8378209142141515,
+              "repeat": 0.9081035923141186
+            }
+          },
+          "0.6": {
+            "session_success": 0.365,
+            "session_success_ci": [
+              0.3175,
+              0.4125
+            ],
+            "turn_success": 0.7885,
+            "node_accuracy": {
+              "scope": 0.968,
+              "intent": 0.7683155917345021,
+              "repeat": 0.8638262322472848
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.4475,
+            "session_success_ci": [
+              0.3975,
+              0.4975
+            ],
+            "turn_success": 0.819,
+            "node_accuracy": {
+              "scope": 0.928,
+              "intent": 0.8278021289918598,
+              "repeat": 0.8663324979114453
+            }
+          },
+          "0.25": {
+            "session_success": 0.525,
+            "session_success_ci": [
+              0.4725,
+              0.5700624999999996
+            ],
+            "turn_success": 0.8535,
+            "node_accuracy": {
+              "scope": 0.977,
+              "intent": 0.8659987476518473,
+              "repeat": 0.9239766081871345
+            }
+          },
+          "0.4": {
+            "session_success": 0.5725,
+            "session_success_ci": [
+              0.525,
+              0.62
+            ],
+            "turn_success": 0.871,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.8672510958046337,
+              "repeat": 0.9214703425229741
+            }
+          },
+          "0.6": {
+            "session_success": 0.4975,
+            "session_success_ci": [
+              0.4499375,
+              0.5425624999999996
+            ],
+            "turn_success": 0.832,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.823418910457107,
+              "repeat": 0.8972431077694235
+            }
+          }
+        }
+      }
+    },
+    "encoder-150m@0.2": {
+      "alone": {
+        "session_success": 0.515,
+        "session_success_ci": [
+          0.465,
+          0.5625
+        ],
+        "turn_success": 0.8435,
+        "node_accuracy": {
+          "scope": 0.915,
+          "intent": 0.8515967438948028,
+          "repeat": 0.8563074352548037
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.465,
+              0.5625
+            ],
+            "turn_success": 0.844,
+            "node_accuracy": {
+              "scope": 0.9165,
+              "intent": 0.852222917971196,
+              "repeat": 0.858813700918964
+            }
+          },
+          "0.25": {
+            "session_success": 0.5875,
+            "session_success_ci": [
+              0.54,
+              0.6325
+            ],
+            "turn_success": 0.874,
+            "node_accuracy": {
+              "scope": 0.977,
+              "intent": 0.8872886662492173,
+              "repeat": 0.934001670843776
+            }
+          },
+          "0.4": {
+            "session_success": 0.55,
+            "session_success_ci": [
+              0.5,
+              0.5950624999999996
+            ],
+            "turn_success": 0.864,
+            "node_accuracy": {
+              "scope": 0.9875,
+              "intent": 0.8584846587351284,
+              "repeat": 0.9214703425229741
+            }
+          },
+          "0.6": {
+            "session_success": 0.4225,
+            "session_success_ci": [
+              0.375,
+              0.47
+            ],
+            "turn_success": 0.8105,
+            "node_accuracy": {
+              "scope": 0.987,
+              "intent": 0.793988728866625,
+              "repeat": 0.8905597326649958
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.465,
+              0.5625
+            ],
+            "turn_success": 0.844,
+            "node_accuracy": {
+              "scope": 0.916,
+              "intent": 0.852222917971196,
+              "repeat": 0.8579782790309106
+            }
+          },
+          "0.25": {
+            "session_success": 0.59,
+            "session_success_ci": [
+              0.5425,
+              0.635
+            ],
+            "turn_success": 0.8765,
+            "node_accuracy": {
+              "scope": 0.974,
+              "intent": 0.889167188478397,
+              "repeat": 0.9331662489557226
+            }
+          },
+          "0.4": {
+            "session_success": 0.5975,
+            "session_success_ci": [
+              0.5475,
+              0.645
+            ],
+            "turn_success": 0.8775,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.8741390106449592,
+              "repeat": 0.9164578111946533
+            }
+          },
+          "0.6": {
+            "session_success": 0.5225,
+            "session_success_ci": [
+              0.475,
+              0.57
+            ],
+            "turn_success": 0.8495,
+            "node_accuracy": {
+              "scope": 0.9785,
+              "intent": 0.8396994364433312,
+              "repeat": 0.8964076858813701
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.5125,
+            "session_success_ci": [
+              0.4625,
+              0.56
+            ],
+            "turn_success": 0.843,
+            "node_accuracy": {
+              "scope": 0.916,
+              "intent": 0.8515967438948028,
+              "repeat": 0.858813700918964
+            }
+          },
+          "0.25": {
+            "session_success": 0.6025,
+            "session_success_ci": [
+              0.555,
+              0.6475
+            ],
+            "turn_success": 0.881,
+            "node_accuracy": {
+              "scope": 0.9755,
+              "intent": 0.8941765810895429,
+              "repeat": 0.9406850459482038
+            }
+          },
+          "0.4": {
+            "session_success": 0.595,
+            "session_success_ci": [
+              0.545,
+              0.6425
+            ],
+            "turn_success": 0.881,
+            "node_accuracy": {
+              "scope": 0.9885,
+              "intent": 0.876017532874139,
+              "repeat": 0.9331662489557226
+            }
+          },
+          "0.6": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.4675,
+              0.5625
+            ],
+            "turn_success": 0.8485,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.839073262366938,
+              "repeat": 0.9147869674185464
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.465,
+              0.5625
+            ],
+            "turn_success": 0.844,
+            "node_accuracy": {
+              "scope": 0.916,
+              "intent": 0.852222917971196,
+              "repeat": 0.8579782790309106
+            }
+          },
+          "0.25": {
+            "session_success": 0.58,
+            "session_success_ci": [
+              0.5325,
+              0.6250624999999996
+            ],
+            "turn_success": 0.875,
+            "node_accuracy": {
+              "scope": 0.975,
+              "intent": 0.8872886662492173,
+              "repeat": 0.9323308270676691
+            }
+          },
+          "0.4": {
+            "session_success": 0.54,
+            "session_success_ci": [
+              0.49,
+              0.585
+            ],
+            "turn_success": 0.861,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.8528490920475892,
+              "repeat": 0.9114452798663325
+            }
+          },
+          "0.6": {
+            "session_success": 0.395,
+            "session_success_ci": [
+              0.35,
+              0.4425
+            ],
+            "turn_success": 0.8015,
+            "node_accuracy": {
+              "scope": 0.9815,
+              "intent": 0.7845961177207263,
+              "repeat": 0.8780284043441938
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.51,
+            "session_success_ci": [
+              0.46,
+              0.5575
+            ],
+            "turn_success": 0.843,
+            "node_accuracy": {
+              "scope": 0.9155,
+              "intent": 0.852222917971196,
+              "repeat": 0.858813700918964
+            }
+          },
+          "0.25": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.5375,
+              0.6300624999999996
+            ],
+            "turn_success": 0.877,
+            "node_accuracy": {
+              "scope": 0.975,
+              "intent": 0.8897933625547902,
+              "repeat": 0.9348370927318296
+            }
+          },
+          "0.4": {
+            "session_success": 0.52,
+            "session_success_ci": [
+              0.4725,
+              0.57
+            ],
+            "turn_success": 0.859,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.852222917971196,
+              "repeat": 0.9139515455304928
+            }
+          },
+          "0.6": {
+            "session_success": 0.395,
+            "session_success_ci": [
+              0.3475,
+              0.445
+            ],
+            "turn_success": 0.8025,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.7845961177207263,
+              "repeat": 0.8847117794486216
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.465,
+              0.5625
+            ],
+            "turn_success": 0.844,
+            "node_accuracy": {
+              "scope": 0.917,
+              "intent": 0.852222917971196,
+              "repeat": 0.858813700918964
+            }
+          },
+          "0.25": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.5375,
+              0.63
+            ],
+            "turn_success": 0.8755,
+            "node_accuracy": {
+              "scope": 0.974,
+              "intent": 0.8872886662492173,
+              "repeat": 0.9314954051796157
+            }
+          },
+          "0.4": {
+            "session_success": 0.555,
+            "session_success_ci": [
+              0.5075,
+              0.605
+            ],
+            "turn_success": 0.8665,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.8597370068879149,
+              "repeat": 0.9139515455304928
+            }
+          },
+          "0.6": {
+            "session_success": 0.4375,
+            "session_success_ci": [
+              0.39,
+              0.485
+            ],
+            "turn_success": 0.819,
+            "node_accuracy": {
+              "scope": 0.982,
+              "intent": 0.802128991859737,
+              "repeat": 0.8880534670008354
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.465,
+              0.5625
+            ],
+            "turn_success": 0.844,
+            "node_accuracy": {
+              "scope": 0.9165,
+              "intent": 0.852222917971196,
+              "repeat": 0.858813700918964
+            }
+          },
+          "0.25": {
+            "session_success": 0.5725,
+            "session_success_ci": [
+              0.5225,
+              0.62
+            ],
+            "turn_success": 0.8695,
+            "node_accuracy": {
+              "scope": 0.9685,
+              "intent": 0.8829054477144647,
+              "repeat": 0.9214703425229741
+            }
+          },
+          "0.4": {
+            "session_success": 0.525,
+            "session_success_ci": [
+              0.4775,
+              0.5725624999999996
+            ],
+            "turn_success": 0.859,
+            "node_accuracy": {
+              "scope": 0.9715,
+              "intent": 0.8503443957420163,
+              "repeat": 0.9005847953216374
+            }
+          },
+          "0.6": {
+            "session_success": 0.38,
+            "session_success_ci": [
+              0.3325,
+              0.4275
+            ],
+            "turn_success": 0.804,
+            "node_accuracy": {
+              "scope": 0.965,
+              "intent": 0.7845961177207263,
+              "repeat": 0.8654970760233918
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.465,
+              0.5625
+            ],
+            "turn_success": 0.8435,
+            "node_accuracy": {
+              "scope": 0.916,
+              "intent": 0.852222917971196,
+              "repeat": 0.858813700918964
+            }
+          },
+          "0.25": {
+            "session_success": 0.5975,
+            "session_success_ci": [
+              0.55,
+              0.645
+            ],
+            "turn_success": 0.8795,
+            "node_accuracy": {
+              "scope": 0.977,
+              "intent": 0.8922980588603632,
+              "repeat": 0.9398496240601504
+            }
+          },
+          "0.4": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.5374375,
+              0.63
+            ],
+            "turn_success": 0.876,
+            "node_accuracy": {
+              "scope": 0.989,
+              "intent": 0.8728866624921728,
+              "repeat": 0.9239766081871345
+            }
+          },
+          "0.6": {
+            "session_success": 0.4925,
+            "session_success_ci": [
+              0.4474375,
+              0.5400624999999997
+            ],
+            "turn_success": 0.839,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.828428303068253,
+              "repeat": 0.9055973266499582
+            }
+          }
+        }
+      }
+    },
+    "encoder-150m@0.5": {
+      "alone": {
+        "session_success": 0.59,
+        "session_success_ci": [
+          0.5425,
+          0.635
+        ],
+        "turn_success": 0.889,
+        "node_accuracy": {
+          "scope": 0.939,
+          "intent": 0.9079524107701941,
+          "repeat": 0.9206349206349206
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.5925,
+            "session_success_ci": [
+              0.545,
+              0.6375
+            ],
+            "turn_success": 0.8905,
+            "node_accuracy": {
+              "scope": 0.9405,
+              "intent": 0.9098309329993738,
+              "repeat": 0.9239766081871345
+            }
+          },
+          "0.25": {
+            "session_success": 0.6675,
+            "session_success_ci": [
+              0.62,
+              0.71
+            ],
+            "turn_success": 0.912,
+            "node_accuracy": {
+              "scope": 0.9835,
+              "intent": 0.9223544145272385,
+              "repeat": 0.9523809523809523
+            }
+          },
+          "0.4": {
+            "session_success": 0.5925,
+            "session_success_ci": [
+              0.5425,
+              0.6375
+            ],
+            "turn_success": 0.869,
+            "node_accuracy": {
+              "scope": 0.9885,
+              "intent": 0.8647463994990607,
+              "repeat": 0.9181286549707602
+            }
+          },
+          "0.6": {
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.3724375,
+              0.4675
+            ],
+            "turn_success": 0.8025,
+            "node_accuracy": {
+              "scope": 0.9855,
+              "intent": 0.7858484658735129,
+              "repeat": 0.8888888888888888
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.595,
+            "session_success_ci": [
+              0.5475,
+              0.64
+            ],
+            "turn_success": 0.891,
+            "node_accuracy": {
+              "scope": 0.9405,
+              "intent": 0.9098309329993738,
+              "repeat": 0.923141186299081
+            }
+          },
+          "0.25": {
+            "session_success": 0.6825,
+            "session_success_ci": [
+              0.635,
+              0.725
+            ],
+            "turn_success": 0.9165,
+            "node_accuracy": {
+              "scope": 0.9805,
+              "intent": 0.9267376330619912,
+              "repeat": 0.9515455304928989
+            }
+          },
+          "0.4": {
+            "session_success": 0.63,
+            "session_success_ci": [
+              0.5825,
+              0.675
+            ],
+            "turn_success": 0.8855,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.8822792736380713,
+              "repeat": 0.9197994987468672
+            }
+          },
+          "0.6": {
+            "session_success": 0.5125,
+            "session_success_ci": [
+              0.4625,
+              0.5625
+            ],
+            "turn_success": 0.841,
+            "node_accuracy": {
+              "scope": 0.979,
+              "intent": 0.8290544771446462,
+              "repeat": 0.8972431077694235
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.595,
+            "session_success_ci": [
+              0.5475,
+              0.64
+            ],
+            "turn_success": 0.891,
+            "node_accuracy": {
+              "scope": 0.9405,
+              "intent": 0.9098309329993738,
+              "repeat": 0.923141186299081
+            }
+          },
+          "0.25": {
+            "session_success": 0.68,
+            "session_success_ci": [
+              0.635,
+              0.7225
+            ],
+            "turn_success": 0.9165,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.9273638071383845,
+              "repeat": 0.9582289055973267
+            }
+          },
+          "0.4": {
+            "session_success": 0.63,
+            "session_success_ci": [
+              0.58,
+              0.675
+            ],
+            "turn_success": 0.8865,
+            "node_accuracy": {
+              "scope": 0.991,
+              "intent": 0.8841577958672511,
+              "repeat": 0.9323308270676691
+            }
+          },
+          "0.6": {
+            "session_success": 0.5275,
+            "session_success_ci": [
+              0.47993749999999996,
+              0.575
+            ],
+            "turn_success": 0.849,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.8384470882905448,
+              "repeat": 0.9189640768588136
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.595,
+            "session_success_ci": [
+              0.5475,
+              0.64
+            ],
+            "turn_success": 0.891,
+            "node_accuracy": {
+              "scope": 0.9405,
+              "intent": 0.9098309329993738,
+              "repeat": 0.923141186299081
+            }
+          },
+          "0.25": {
+            "session_success": 0.6675,
+            "session_success_ci": [
+              0.62,
+              0.7125
+            ],
+            "turn_success": 0.9135,
+            "node_accuracy": {
+              "scope": 0.981,
+              "intent": 0.9223544145272385,
+              "repeat": 0.9507101086048454
+            }
+          },
+          "0.4": {
+            "session_success": 0.5675,
+            "session_success_ci": [
+              0.5199375,
+              0.615
+            ],
+            "turn_success": 0.868,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.862867877269881,
+              "repeat": 0.9122807017543859
+            }
+          },
+          "0.6": {
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.37,
+              0.4675
+            ],
+            "turn_success": 0.803,
+            "node_accuracy": {
+              "scope": 0.981,
+              "intent": 0.7864746399499061,
+              "repeat": 0.8796992481203008
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.595,
+            "session_success_ci": [
+              0.5475,
+              0.64
+            ],
+            "turn_success": 0.891,
+            "node_accuracy": {
+              "scope": 0.9405,
+              "intent": 0.9098309329993738,
+              "repeat": 0.923141186299081
+            }
+          },
+          "0.25": {
+            "session_success": 0.665,
+            "session_success_ci": [
+              0.62,
+              0.71
+            ],
+            "turn_success": 0.912,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.9229805886036319,
+              "repeat": 0.9507101086048454
+            }
+          },
+          "0.4": {
+            "session_success": 0.5725,
+            "session_success_ci": [
+              0.5225,
+              0.62
+            ],
+            "turn_success": 0.868,
+            "node_accuracy": {
+              "scope": 0.9885,
+              "intent": 0.862867877269881,
+              "repeat": 0.9189640768588136
+            }
+          },
+          "0.6": {
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.3725,
+              0.4675
+            ],
+            "turn_success": 0.804,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.7852222917971196,
+              "repeat": 0.8897243107769424
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.595,
+            "session_success_ci": [
+              0.5475,
+              0.64
+            ],
+            "turn_success": 0.891,
+            "node_accuracy": {
+              "scope": 0.9405,
+              "intent": 0.9098309329993738,
+              "repeat": 0.923141186299081
+            }
+          },
+          "0.25": {
+            "session_success": 0.6725,
+            "session_success_ci": [
+              0.625,
+              0.7175
+            ],
+            "turn_success": 0.9105,
+            "node_accuracy": {
+              "scope": 0.9815,
+              "intent": 0.9211020663744521,
+              "repeat": 0.9490392648287385
+            }
+          },
+          "0.4": {
+            "session_success": 0.5975,
+            "session_success_ci": [
+              0.55,
+              0.645
+            ],
+            "turn_success": 0.8715,
+            "node_accuracy": {
+              "scope": 0.9875,
+              "intent": 0.8672510958046337,
+              "repeat": 0.9147869674185464
+            }
+          },
+          "0.6": {
+            "session_success": 0.45,
+            "session_success_ci": [
+              0.4025,
+              0.49756249999999963
+            ],
+            "turn_success": 0.817,
+            "node_accuracy": {
+              "scope": 0.982,
+              "intent": 0.7989981214777708,
+              "repeat": 0.8930659983291562
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.595,
+            "session_success_ci": [
+              0.5475,
+              0.64
+            ],
+            "turn_success": 0.891,
+            "node_accuracy": {
+              "scope": 0.9405,
+              "intent": 0.9098309329993738,
+              "repeat": 0.923141186299081
+            }
+          },
+          "0.25": {
+            "session_success": 0.6625,
+            "session_success_ci": [
+              0.615,
+              0.7075
+            ],
+            "turn_success": 0.9115,
+            "node_accuracy": {
+              "scope": 0.9785,
+              "intent": 0.9211020663744521,
+              "repeat": 0.9456975772765246
+            }
+          },
+          "0.4": {
+            "session_success": 0.57,
+            "session_success_ci": [
+              0.52,
+              0.6175
+            ],
+            "turn_success": 0.8685,
+            "node_accuracy": {
+              "scope": 0.979,
+              "intent": 0.8622417031934878,
+              "repeat": 0.9064327485380117
+            }
+          },
+          "0.6": {
+            "session_success": 0.4025,
+            "session_success_ci": [
+              0.355,
+              0.45
+            ],
+            "turn_success": 0.804,
+            "node_accuracy": {
+              "scope": 0.9675,
+              "intent": 0.7852222917971196,
+              "repeat": 0.8688387635756056
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.5925,
+            "session_success_ci": [
+              0.545,
+              0.6375
+            ],
+            "turn_success": 0.8905,
+            "node_accuracy": {
+              "scope": 0.9405,
+              "intent": 0.9098309329993738,
+              "repeat": 0.9239766081871345
+            }
+          },
+          "0.25": {
+            "session_success": 0.69,
+            "session_success_ci": [
+              0.6425,
+              0.7325
+            ],
+            "turn_success": 0.9185,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.9286161552911709,
+              "repeat": 0.9582289055973267
+            }
+          },
+          "0.4": {
+            "session_success": 0.625,
+            "session_success_ci": [
+              0.58,
+              0.67
+            ],
+            "turn_success": 0.886,
+            "node_accuracy": {
+              "scope": 0.9905,
+              "intent": 0.8841577958672511,
+              "repeat": 0.9281537176274018
+            }
+          },
+          "0.6": {
+            "session_success": 0.5025,
+            "session_success_ci": [
+              0.4525,
+              0.55
+            ],
+            "turn_success": 0.8365,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.8252974326862867,
+              "repeat": 0.9072681704260651
+            }
+          }
+        }
+      }
+    },
+    "encoder-150m@1": {
+      "alone": {
+        "session_success": 0.66,
+        "session_success_ci": [
+          0.6125,
+          0.7025
+        ],
+        "turn_success": 0.907,
+        "node_accuracy": {
+          "scope": 0.942,
+          "intent": 0.9167188478396995,
+          "repeat": 0.9122807017543859
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.66,
+            "session_success_ci": [
+              0.6125,
+              0.7025
+            ],
+            "turn_success": 0.907,
+            "node_accuracy": {
+              "scope": 0.944,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9147869674185464
+            }
+          },
+          "0.25": {
+            "session_success": 0.71,
+            "session_success_ci": [
+              0.6625,
+              0.75
+            ],
+            "turn_success": 0.921,
+            "node_accuracy": {
+              "scope": 0.9865,
+              "intent": 0.9298685034439574,
+              "repeat": 0.9590643274853801
+            }
+          },
+          "0.4": {
+            "session_success": 0.575,
+            "session_success_ci": [
+              0.525,
+              0.6225
+            ],
+            "turn_success": 0.874,
+            "node_accuracy": {
+              "scope": 0.992,
+              "intent": 0.8691296180338134,
+              "repeat": 0.9289891395154553
+            }
+          },
+          "0.6": {
+            "session_success": 0.4275,
+            "session_success_ci": [
+              0.3775,
+              0.4750624999999996
+            ],
+            "turn_success": 0.802,
+            "node_accuracy": {
+              "scope": 0.987,
+              "intent": 0.7883531621790858,
+              "repeat": 0.885547201336675
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.66,
+            "session_success_ci": [
+              0.6125,
+              0.7025
+            ],
+            "turn_success": 0.907,
+            "node_accuracy": {
+              "scope": 0.943,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9131161236424394
+            }
+          },
+          "0.25": {
+            "session_success": 0.7125,
+            "session_success_ci": [
+              0.6675,
+              0.7525
+            ],
+            "turn_success": 0.9215,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.9298685034439574,
+              "repeat": 0.9532163742690059
+            }
+          },
+          "0.4": {
+            "session_success": 0.63,
+            "session_success_ci": [
+              0.58,
+              0.675
+            ],
+            "turn_success": 0.8925,
+            "node_accuracy": {
+              "scope": 0.986,
+              "intent": 0.889167188478397,
+              "repeat": 0.9289891395154553
+            }
+          },
+          "0.6": {
+            "session_success": 0.52,
+            "session_success_ci": [
+              0.47,
+              0.5675
+            ],
+            "turn_success": 0.844,
+            "node_accuracy": {
+              "scope": 0.9795,
+              "intent": 0.8346900438321854,
+              "repeat": 0.8964076858813701
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.66,
+            "session_success_ci": [
+              0.6125,
+              0.7025
+            ],
+            "turn_success": 0.9075,
+            "node_accuracy": {
+              "scope": 0.944,
+              "intent": 0.9173450219160927,
+              "repeat": 0.9147869674185464
+            }
+          },
+          "0.25": {
+            "session_success": 0.7225,
+            "session_success_ci": [
+              0.68,
+              0.7625
+            ],
+            "turn_success": 0.9245,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.9342517219787101,
+              "repeat": 0.960735171261487
+            }
+          },
+          "0.4": {
+            "session_success": 0.645,
+            "session_success_ci": [
+              0.5975,
+              0.69
+            ],
+            "turn_success": 0.898,
+            "node_accuracy": {
+              "scope": 0.9925,
+              "intent": 0.8954289292423294,
+              "repeat": 0.9415204678362573
+            }
+          },
+          "0.6": {
+            "session_success": 0.53,
+            "session_success_ci": [
+              0.4825,
+              0.5775
+            ],
+            "turn_success": 0.85,
+            "node_accuracy": {
+              "scope": 0.9905,
+              "intent": 0.841577958672511,
+              "repeat": 0.9139515455304928
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.66,
+            "session_success_ci": [
+              0.6125,
+              0.7025
+            ],
+            "turn_success": 0.907,
+            "node_accuracy": {
+              "scope": 0.943,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9131161236424394
+            }
+          },
+          "0.25": {
+            "session_success": 0.715,
+            "session_success_ci": [
+              0.6675,
+              0.7550624999999996
+            ],
+            "turn_success": 0.924,
+            "node_accuracy": {
+              "scope": 0.984,
+              "intent": 0.9304946775203506,
+              "repeat": 0.9573934837092731
+            }
+          },
+          "0.4": {
+            "session_success": 0.5825,
+            "session_success_ci": [
+              0.535,
+              0.63
+            ],
+            "turn_success": 0.875,
+            "node_accuracy": {
+              "scope": 0.988,
+              "intent": 0.8697557921102066,
+              "repeat": 0.9197994987468672
+            }
+          },
+          "0.6": {
+            "session_success": 0.425,
+            "session_success_ci": [
+              0.3775,
+              0.4725
+            ],
+            "turn_success": 0.8035,
+            "node_accuracy": {
+              "scope": 0.984,
+              "intent": 0.7852222917971196,
+              "repeat": 0.8847117794486216
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.6575,
+            "session_success_ci": [
+              0.61,
+              0.7
+            ],
+            "turn_success": 0.9065,
+            "node_accuracy": {
+              "scope": 0.9435,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9147869674185464
+            }
+          },
+          "0.25": {
+            "session_success": 0.71,
+            "session_success_ci": [
+              0.665,
+              0.7525
+            ],
+            "turn_success": 0.92,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.9298685034439574,
+              "repeat": 0.9548872180451128
+            }
+          },
+          "0.4": {
+            "session_success": 0.575,
+            "session_success_ci": [
+              0.525,
+              0.6225624999999997
+            ],
+            "turn_success": 0.8735,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.8685034439574202,
+              "repeat": 0.9256474519632414
+            }
+          },
+          "0.6": {
+            "session_success": 0.4225,
+            "session_success_ci": [
+              0.3725,
+              0.47
+            ],
+            "turn_success": 0.809,
+            "node_accuracy": {
+              "scope": 0.986,
+              "intent": 0.7933625547902317,
+              "repeat": 0.8964076858813701
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.66,
+            "session_success_ci": [
+              0.6125,
+              0.7025
+            ],
+            "turn_success": 0.907,
+            "node_accuracy": {
+              "scope": 0.9435,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9139515455304928
+            }
+          },
+          "0.25": {
+            "session_success": 0.7125,
+            "session_success_ci": [
+              0.6675,
+              0.7525
+            ],
+            "turn_success": 0.921,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.9298685034439574,
+              "repeat": 0.9540517961570593
+            }
+          },
+          "0.4": {
+            "session_success": 0.5975,
+            "session_success_ci": [
+              0.55,
+              0.645
+            ],
+            "turn_success": 0.8815,
+            "node_accuracy": {
+              "scope": 0.988,
+              "intent": 0.8778960551033187,
+              "repeat": 0.9206349206349206
+            }
+          },
+          "0.6": {
+            "session_success": 0.4525,
+            "session_success_ci": [
+              0.405,
+              0.5025
+            ],
+            "turn_success": 0.8215,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.8083907326236693,
+              "repeat": 0.8897243107769424
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.66,
+            "session_success_ci": [
+              0.6125,
+              0.7025
+            ],
+            "turn_success": 0.907,
+            "node_accuracy": {
+              "scope": 0.9435,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9139515455304928
+            }
+          },
+          "0.25": {
+            "session_success": 0.71,
+            "session_success_ci": [
+              0.665,
+              0.7500624999999996
+            ],
+            "turn_success": 0.922,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.9273638071383845,
+              "repeat": 0.9573934837092731
+            }
+          },
+          "0.4": {
+            "session_success": 0.58,
+            "session_success_ci": [
+              0.5325,
+              0.6275
+            ],
+            "turn_success": 0.878,
+            "node_accuracy": {
+              "scope": 0.981,
+              "intent": 0.8710081402629931,
+              "repeat": 0.9147869674185464
+            }
+          },
+          "0.6": {
+            "session_success": 0.41,
+            "session_success_ci": [
+              0.3625,
+              0.4575
+            ],
+            "turn_success": 0.8105,
+            "node_accuracy": {
+              "scope": 0.971,
+              "intent": 0.7946149029430182,
+              "repeat": 0.87468671679198
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.66,
+            "session_success_ci": [
+              0.6125,
+              0.7025
+            ],
+            "turn_success": 0.9065,
+            "node_accuracy": {
+              "scope": 0.943,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9139515455304928
+            }
+          },
+          "0.25": {
+            "session_success": 0.71,
+            "session_success_ci": [
+              0.665,
+              0.75
+            ],
+            "turn_success": 0.92,
+            "node_accuracy": {
+              "scope": 0.986,
+              "intent": 0.9304946775203506,
+              "repeat": 0.9573934837092731
+            }
+          },
+          "0.4": {
+            "session_success": 0.6125,
+            "session_success_ci": [
+              0.565,
+              0.6575
+            ],
+            "turn_success": 0.889,
+            "node_accuracy": {
+              "scope": 0.992,
+              "intent": 0.886662492172824,
+              "repeat": 0.9306599832915622
+            }
+          },
+          "0.6": {
+            "session_success": 0.5,
+            "session_success_ci": [
+              0.45,
+              0.5475
+            ],
+            "turn_success": 0.834,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.8265497808390733,
+              "repeat": 0.899749373433584
+            }
+          }
+        }
+      }
+    },
+    "encoder-17m@1": {
+      "alone": {
+        "session_success": 0.495,
+        "session_success_ci": [
+          0.445,
+          0.5425
+        ],
+        "turn_success": 0.8465,
+        "node_accuracy": {
+          "scope": 0.9205,
+          "intent": 0.8766437069505323,
+          "repeat": 0.8830409356725146
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.5,
+            "session_success_ci": [
+              0.45,
+              0.5475624999999996
+            ],
+            "turn_success": 0.8485,
+            "node_accuracy": {
+              "scope": 0.9255,
+              "intent": 0.8791484032561052,
+              "repeat": 0.8888888888888888
+            }
+          },
+          "0.25": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.8795,
+            "node_accuracy": {
+              "scope": 0.9745,
+              "intent": 0.8985597996242956,
+              "repeat": 0.9381787802840434
+            }
+          },
+          "0.4": {
+            "session_success": 0.5575,
+            "session_success_ci": [
+              0.505,
+              0.6025
+            ],
+            "turn_success": 0.87,
+            "node_accuracy": {
+              "scope": 0.988,
+              "intent": 0.8659987476518473,
+              "repeat": 0.924812030075188
+            }
+          },
+          "0.6": {
+            "session_success": 0.4325,
+            "session_success_ci": [
+              0.3849375,
+              0.4825
+            ],
+            "turn_success": 0.807,
+            "node_accuracy": {
+              "scope": 0.988,
+              "intent": 0.7883531621790858,
+              "repeat": 0.898078529657477
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.4975,
+            "session_success_ci": [
+              0.4475,
+              0.545
+            ],
+            "turn_success": 0.8485,
+            "node_accuracy": {
+              "scope": 0.925,
+              "intent": 0.8791484032561052,
+              "repeat": 0.8888888888888888
+            }
+          },
+          "0.25": {
+            "session_success": 0.615,
+            "session_success_ci": [
+              0.5674375,
+              0.6625
+            ],
+            "turn_success": 0.889,
+            "node_accuracy": {
+              "scope": 0.973,
+              "intent": 0.9079524107701941,
+              "repeat": 0.9390142021720969
+            }
+          },
+          "0.4": {
+            "session_success": 0.605,
+            "session_success_ci": [
+              0.555,
+              0.65
+            ],
+            "turn_success": 0.886,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.8829054477144647,
+              "repeat": 0.9273182957393483
+            }
+          },
+          "0.6": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.465,
+              0.565
+            ],
+            "turn_success": 0.847,
+            "node_accuracy": {
+              "scope": 0.98,
+              "intent": 0.8340638697557922,
+              "repeat": 0.9055973266499582
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.4975,
+            "session_success_ci": [
+              0.4475,
+              0.545
+            ],
+            "turn_success": 0.848,
+            "node_accuracy": {
+              "scope": 0.9255,
+              "intent": 0.878522229179712,
+              "repeat": 0.8897243107769424
+            }
+          },
+          "0.25": {
+            "session_success": 0.625,
+            "session_success_ci": [
+              0.5775,
+              0.6725
+            ],
+            "turn_success": 0.8905,
+            "node_accuracy": {
+              "scope": 0.9755,
+              "intent": 0.9110832811521603,
+              "repeat": 0.9431913116123642
+            }
+          },
+          "0.4": {
+            "session_success": 0.62,
+            "session_success_ci": [
+              0.57,
+              0.6675
+            ],
+            "turn_success": 0.8885,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.886662492172824,
+              "repeat": 0.9390142021720969
+            }
+          },
+          "0.6": {
+            "session_success": 0.5325,
+            "session_success_ci": [
+              0.4825,
+              0.58
+            ],
+            "turn_success": 0.853,
+            "node_accuracy": {
+              "scope": 0.9905,
+              "intent": 0.8396994364433312,
+              "repeat": 0.9264828738512949
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.5025,
+            "session_success_ci": [
+              0.4525,
+              0.55
+            ],
+            "turn_success": 0.8495,
+            "node_accuracy": {
+              "scope": 0.9265,
+              "intent": 0.8797745773324984,
+              "repeat": 0.8888888888888888
+            }
+          },
+          "0.25": {
+            "session_success": 0.6,
+            "session_success_ci": [
+              0.5524375,
+              0.6475
+            ],
+            "turn_success": 0.886,
+            "node_accuracy": {
+              "scope": 0.973,
+              "intent": 0.9048215403882279,
+              "repeat": 0.9365079365079365
+            }
+          },
+          "0.4": {
+            "session_success": 0.555,
+            "session_success_ci": [
+              0.505,
+              0.6
+            ],
+            "turn_success": 0.87,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.8634940513462742,
+              "repeat": 0.9206349206349206
+            }
+          },
+          "0.6": {
+            "session_success": 0.415,
+            "session_success_ci": [
+              0.365,
+              0.465
+            ],
+            "turn_success": 0.8085,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.7902316844082655,
+              "repeat": 0.8905597326649958
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.4975,
+            "session_success_ci": [
+              0.4475,
+              0.545
+            ],
+            "turn_success": 0.8475,
+            "node_accuracy": {
+              "scope": 0.9255,
+              "intent": 0.878522229179712,
+              "repeat": 0.8880534670008354
+            }
+          },
+          "0.25": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.879,
+            "node_accuracy": {
+              "scope": 0.9735,
+              "intent": 0.8985597996242956,
+              "repeat": 0.9323308270676691
+            }
+          },
+          "0.4": {
+            "session_success": 0.5525,
+            "session_success_ci": [
+              0.505,
+              0.6
+            ],
+            "turn_success": 0.867,
+            "node_accuracy": {
+              "scope": 0.988,
+              "intent": 0.8616155291170946,
+              "repeat": 0.9223057644110275
+            }
+          },
+          "0.6": {
+            "session_success": 0.4225,
+            "session_success_ci": [
+              0.375,
+              0.4725
+            ],
+            "turn_success": 0.807,
+            "node_accuracy": {
+              "scope": 0.9855,
+              "intent": 0.788979336255479,
+              "repeat": 0.8947368421052632
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.5,
+            "session_success_ci": [
+              0.45,
+              0.5475
+            ],
+            "turn_success": 0.8485,
+            "node_accuracy": {
+              "scope": 0.926,
+              "intent": 0.878522229179712,
+              "repeat": 0.8888888888888888
+            }
+          },
+          "0.25": {
+            "session_success": 0.595,
+            "session_success_ci": [
+              0.5475,
+              0.645
+            ],
+            "turn_success": 0.881,
+            "node_accuracy": {
+              "scope": 0.9725,
+              "intent": 0.9010644959298685,
+              "repeat": 0.9323308270676691
+            }
+          },
+          "0.4": {
+            "session_success": 0.575,
+            "session_success_ci": [
+              0.5275,
+              0.6225
+            ],
+            "turn_success": 0.871,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.8666249217282405,
+              "repeat": 0.9181286549707602
+            }
+          },
+          "0.6": {
+            "session_success": 0.4475,
+            "session_success_ci": [
+              0.4,
+              0.49506249999999963
+            ],
+            "turn_success": 0.82,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.799624295554164,
+              "repeat": 0.9022556390977443
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.4975,
+            "session_success_ci": [
+              0.4475,
+              0.545
+            ],
+            "turn_success": 0.848,
+            "node_accuracy": {
+              "scope": 0.925,
+              "intent": 0.878522229179712,
+              "repeat": 0.8880534670008354
+            }
+          },
+          "0.25": {
+            "session_success": 0.5875,
+            "session_success_ci": [
+              0.54,
+              0.6350624999999996
+            ],
+            "turn_success": 0.881,
+            "node_accuracy": {
+              "scope": 0.9705,
+              "intent": 0.8998121477770821,
+              "repeat": 0.9298245614035088
+            }
+          },
+          "0.4": {
+            "session_success": 0.5625,
+            "session_success_ci": [
+              0.515,
+              0.61
+            ],
+            "turn_success": 0.8735,
+            "node_accuracy": {
+              "scope": 0.9795,
+              "intent": 0.867877269881027,
+              "repeat": 0.9147869674185464
+            }
+          },
+          "0.6": {
+            "session_success": 0.4125,
+            "session_success_ci": [
+              0.365,
+              0.46
+            ],
+            "turn_success": 0.8105,
+            "node_accuracy": {
+              "scope": 0.971,
+              "intent": 0.7914840325610519,
+              "repeat": 0.8780284043441938
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.4975,
+            "session_success_ci": [
+              0.4475,
+              0.545
+            ],
+            "turn_success": 0.8485,
+            "node_accuracy": {
+              "scope": 0.9255,
+              "intent": 0.8791484032561052,
+              "repeat": 0.8888888888888888
+            }
+          },
+          "0.25": {
+            "session_success": 0.6075,
+            "session_success_ci": [
+              0.5575,
+              0.6550624999999997
+            ],
+            "turn_success": 0.889,
+            "node_accuracy": {
+              "scope": 0.9745,
+              "intent": 0.9092047589229806,
+              "repeat": 0.9415204678362573
+            }
+          },
+          "0.4": {
+            "session_success": 0.6025,
+            "session_success_ci": [
+              0.555,
+              0.6475
+            ],
+            "turn_success": 0.885,
+            "node_accuracy": {
+              "scope": 0.989,
+              "intent": 0.8822792736380713,
+              "repeat": 0.9289891395154553
+            }
+          },
+          "0.6": {
+            "session_success": 0.5025,
+            "session_success_ci": [
+              0.4525,
+              0.5475624999999996
+            ],
+            "turn_success": 0.8425,
+            "node_accuracy": {
+              "scope": 0.9905,
+              "intent": 0.8309329993738259,
+              "repeat": 0.9122807017543859
+            }
+          }
+        }
+      }
+    },
+    "encoder-32m@1": {
+      "alone": {
+        "session_success": 0.505,
+        "session_success_ci": [
+          0.455,
+          0.5525
+        ],
+        "turn_success": 0.854,
+        "node_accuracy": {
+          "scope": 0.888,
+          "intent": 0.8547276142767689,
+          "repeat": 0.8253968253968254
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.5025,
+            "session_success_ci": [
+              0.4525,
+              0.55
+            ],
+            "turn_success": 0.8545,
+            "node_accuracy": {
+              "scope": 0.89,
+              "intent": 0.8553537883531622,
+              "repeat": 0.8279030910609858
+            }
+          },
+          "0.25": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.8795,
+            "node_accuracy": {
+              "scope": 0.95,
+              "intent": 0.886662492172824,
+              "repeat": 0.9014202172096909
+            }
+          },
+          "0.4": {
+            "session_success": 0.565,
+            "session_success_ci": [
+              0.515,
+              0.61
+            ],
+            "turn_success": 0.873,
+            "node_accuracy": {
+              "scope": 0.9885,
+              "intent": 0.867877269881027,
+              "repeat": 0.9223057644110275
+            }
+          },
+          "0.6": {
+            "session_success": 0.445,
+            "session_success_ci": [
+              0.395,
+              0.4925
+            ],
+            "turn_success": 0.812,
+            "node_accuracy": {
+              "scope": 0.9875,
+              "intent": 0.7977457733249843,
+              "repeat": 0.8930659983291562
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.5075,
+            "session_success_ci": [
+              0.4575,
+              0.555
+            ],
+            "turn_success": 0.8555,
+            "node_accuracy": {
+              "scope": 0.8895,
+              "intent": 0.8559799624295554,
+              "repeat": 0.8270676691729323
+            }
+          },
+          "0.25": {
+            "session_success": 0.6,
+            "session_success_ci": [
+              0.55,
+              0.6475
+            ],
+            "turn_success": 0.884,
+            "node_accuracy": {
+              "scope": 0.9465,
+              "intent": 0.8922980588603632,
+              "repeat": 0.8989139515455304
+            }
+          },
+          "0.4": {
+            "session_success": 0.6125,
+            "session_success_ci": [
+              0.565,
+              0.66
+            ],
+            "turn_success": 0.8885,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.8841577958672511,
+              "repeat": 0.9223057644110275
+            }
+          },
+          "0.6": {
+            "session_success": 0.5275,
+            "session_success_ci": [
+              0.4775,
+              0.575
+            ],
+            "turn_success": 0.852,
+            "node_accuracy": {
+              "scope": 0.9795,
+              "intent": 0.841577958672511,
+              "repeat": 0.9014202172096909
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.505,
+            "session_success_ci": [
+              0.455,
+              0.5525
+            ],
+            "turn_success": 0.856,
+            "node_accuracy": {
+              "scope": 0.89,
+              "intent": 0.8566061365059486,
+              "repeat": 0.8287385129490392
+            }
+          },
+          "0.25": {
+            "session_success": 0.5975,
+            "session_success_ci": [
+              0.5475,
+              0.645
+            ],
+            "turn_success": 0.8835,
+            "node_accuracy": {
+              "scope": 0.9485,
+              "intent": 0.8929242329367564,
+              "repeat": 0.9064327485380117
+            }
+          },
+          "0.4": {
+            "session_success": 0.6125,
+            "session_success_ci": [
+              0.565,
+              0.6575
+            ],
+            "turn_success": 0.889,
+            "node_accuracy": {
+              "scope": 0.992,
+              "intent": 0.886662492172824,
+              "repeat": 0.9348370927318296
+            }
+          },
+          "0.6": {
+            "session_success": 0.54,
+            "session_success_ci": [
+              0.4925,
+              0.5875
+            ],
+            "turn_success": 0.858,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.8484658735128365,
+              "repeat": 0.9214703425229741
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.5025,
+            "session_success_ci": [
+              0.4525,
+              0.55
+            ],
+            "turn_success": 0.8555,
+            "node_accuracy": {
+              "scope": 0.889,
+              "intent": 0.8559799624295554,
+              "repeat": 0.8279030910609858
+            }
+          },
+          "0.25": {
+            "session_success": 0.5925,
+            "session_success_ci": [
+              0.545,
+              0.64
+            ],
+            "turn_success": 0.883,
+            "node_accuracy": {
+              "scope": 0.9475,
+              "intent": 0.889167188478397,
+              "repeat": 0.899749373433584
+            }
+          },
+          "0.4": {
+            "session_success": 0.535,
+            "session_success_ci": [
+              0.4875,
+              0.5825
+            ],
+            "turn_success": 0.867,
+            "node_accuracy": {
+              "scope": 0.986,
+              "intent": 0.8609893550407013,
+              "repeat": 0.9122807017543859
+            }
+          },
+          "0.6": {
+            "session_success": 0.4,
+            "session_success_ci": [
+              0.3525,
+              0.4475
+            ],
+            "turn_success": 0.807,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.7902316844082655,
+              "repeat": 0.8880534670008354
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.505,
+            "session_success_ci": [
+              0.455,
+              0.5525
+            ],
+            "turn_success": 0.856,
+            "node_accuracy": {
+              "scope": 0.8895,
+              "intent": 0.8566061365059486,
+              "repeat": 0.8287385129490392
+            }
+          },
+          "0.25": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.881,
+            "node_accuracy": {
+              "scope": 0.9485,
+              "intent": 0.8897933625547902,
+              "repeat": 0.9014202172096909
+            }
+          },
+          "0.4": {
+            "session_success": 0.5525,
+            "session_success_ci": [
+              0.505,
+              0.6
+            ],
+            "turn_success": 0.868,
+            "node_accuracy": {
+              "scope": 0.989,
+              "intent": 0.8634940513462742,
+              "repeat": 0.9181286549707602
+            }
+          },
+          "0.6": {
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.3725,
+              0.4675
+            ],
+            "turn_success": 0.813,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.7971195992485911,
+              "repeat": 0.8947368421052632
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.5025,
+            "session_success_ci": [
+              0.4525,
+              0.55
+            ],
+            "turn_success": 0.8555,
+            "node_accuracy": {
+              "scope": 0.89,
+              "intent": 0.8559799624295554,
+              "repeat": 0.8287385129490392
+            }
+          },
+          "0.25": {
+            "session_success": 0.5875,
+            "session_success_ci": [
+              0.54,
+              0.635
+            ],
+            "turn_success": 0.879,
+            "node_accuracy": {
+              "scope": 0.9465,
+              "intent": 0.8879148403256105,
+              "repeat": 0.8939014202172096
+            }
+          },
+          "0.4": {
+            "session_success": 0.555,
+            "session_success_ci": [
+              0.51,
+              0.6025
+            ],
+            "turn_success": 0.869,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.8653725735754539,
+              "repeat": 0.9072681704260651
+            }
+          },
+          "0.6": {
+            "session_success": 0.46,
+            "session_success_ci": [
+              0.4125,
+              0.5075
+            ],
+            "turn_success": 0.826,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.8121477770820288,
+              "repeat": 0.8905597326649958
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.5025,
+            "session_success_ci": [
+              0.4525,
+              0.55
+            ],
+            "turn_success": 0.8545,
+            "node_accuracy": {
+              "scope": 0.8895,
+              "intent": 0.8553537883531622,
+              "repeat": 0.8279030910609858
+            }
+          },
+          "0.25": {
+            "session_success": 0.595,
+            "session_success_ci": [
+              0.5475,
+              0.6425
+            ],
+            "turn_success": 0.883,
+            "node_accuracy": {
+              "scope": 0.9455,
+              "intent": 0.889167188478397,
+              "repeat": 0.899749373433584
+            }
+          },
+          "0.4": {
+            "session_success": 0.55,
+            "session_success_ci": [
+              0.5025,
+              0.5950624999999996
+            ],
+            "turn_success": 0.873,
+            "node_accuracy": {
+              "scope": 0.9795,
+              "intent": 0.8659987476518473,
+              "repeat": 0.9122807017543859
+            }
+          },
+          "0.6": {
+            "session_success": 0.4075,
+            "session_success_ci": [
+              0.36,
+              0.455
+            ],
+            "turn_success": 0.814,
+            "node_accuracy": {
+              "scope": 0.9675,
+              "intent": 0.7952410770194114,
+              "repeat": 0.8763575605680869
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.5025,
+            "session_success_ci": [
+              0.4525,
+              0.55
+            ],
+            "turn_success": 0.854,
+            "node_accuracy": {
+              "scope": 0.8895,
+              "intent": 0.8553537883531622,
+              "repeat": 0.8279030910609858
+            }
+          },
+          "0.25": {
+            "session_success": 0.6025,
+            "session_success_ci": [
+              0.5525,
+              0.6475
+            ],
+            "turn_success": 0.883,
+            "node_accuracy": {
+              "scope": 0.9485,
+              "intent": 0.8935504070131497,
+              "repeat": 0.9014202172096909
+            }
+          },
+          "0.4": {
+            "session_success": 0.5825,
+            "session_success_ci": [
+              0.535,
+              0.6275
+            ],
+            "turn_success": 0.881,
+            "node_accuracy": {
+              "scope": 0.9905,
+              "intent": 0.8797745773324984,
+              "repeat": 0.923141186299081
+            }
+          },
+          "0.6": {
+            "session_success": 0.515,
+            "session_success_ci": [
+              0.4675,
+              0.56
+            ],
+            "turn_success": 0.845,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.8359423919849718,
+              "repeat": 0.908939014202172
+            }
+          }
+        }
+      }
+    },
+    "encoder-68m@1": {
+      "alone": {
+        "session_success": 0.5975,
+        "session_success_ci": [
+          0.5475,
+          0.645
+        ],
+        "turn_success": 0.8865,
+        "node_accuracy": {
+          "scope": 0.921,
+          "intent": 0.8904195366311835,
+          "repeat": 0.8830409356725146
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.5975,
+            "session_success_ci": [
+              0.5474375,
+              0.6425
+            ],
+            "turn_success": 0.887,
+            "node_accuracy": {
+              "scope": 0.922,
+              "intent": 0.89167188478397,
+              "repeat": 0.8863826232247285
+            }
+          },
+          "0.25": {
+            "session_success": 0.675,
+            "session_success_ci": [
+              0.625,
+              0.7175
+            ],
+            "turn_success": 0.9085,
+            "node_accuracy": {
+              "scope": 0.9795,
+              "intent": 0.9185973700688791,
+              "repeat": 0.948203842940685
+            }
+          },
+          "0.4": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.878,
+            "node_accuracy": {
+              "scope": 0.9905,
+              "intent": 0.8728866624921728,
+              "repeat": 0.9264828738512949
+            }
+          },
+          "0.6": {
+            "session_success": 0.4425,
+            "session_success_ci": [
+              0.3925,
+              0.49
+            ],
+            "turn_success": 0.811,
+            "node_accuracy": {
+              "scope": 0.9875,
+              "intent": 0.7958672510958046,
+              "repeat": 0.898078529657477
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.6025,
+            "session_success_ci": [
+              0.5525,
+              0.6475
+            ],
+            "turn_success": 0.888,
+            "node_accuracy": {
+              "scope": 0.9225,
+              "intent": 0.89167188478397,
+              "repeat": 0.885547201336675
+            }
+          },
+          "0.25": {
+            "session_success": 0.685,
+            "session_success_ci": [
+              0.6375,
+              0.7275
+            ],
+            "turn_success": 0.9095,
+            "node_accuracy": {
+              "scope": 0.974,
+              "intent": 0.9192235441452724,
+              "repeat": 0.9390142021720969
+            }
+          },
+          "0.4": {
+            "session_success": 0.645,
+            "session_success_ci": [
+              0.5975,
+              0.69
+            ],
+            "turn_success": 0.895,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.8922980588603632,
+              "repeat": 0.9289891395154553
+            }
+          },
+          "0.6": {
+            "session_success": 0.5275,
+            "session_success_ci": [
+              0.475,
+              0.5775
+            ],
+            "turn_success": 0.8485,
+            "node_accuracy": {
+              "scope": 0.9785,
+              "intent": 0.839073262366938,
+              "repeat": 0.8989139515455304
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.6,
+            "session_success_ci": [
+              0.55,
+              0.645
+            ],
+            "turn_success": 0.8875,
+            "node_accuracy": {
+              "scope": 0.9225,
+              "intent": 0.89167188478397,
+              "repeat": 0.8863826232247285
+            }
+          },
+          "0.25": {
+            "session_success": 0.6875,
+            "session_success_ci": [
+              0.6425,
+              0.73
+            ],
+            "turn_success": 0.9145,
+            "node_accuracy": {
+              "scope": 0.9785,
+              "intent": 0.9254852849092048,
+              "repeat": 0.9523809523809523
+            }
+          },
+          "0.4": {
+            "session_success": 0.6325,
+            "session_success_ci": [
+              0.585,
+              0.6775
+            ],
+            "turn_success": 0.8965,
+            "node_accuracy": {
+              "scope": 0.9915,
+              "intent": 0.8941765810895429,
+              "repeat": 0.9398496240601504
+            }
+          },
+          "0.6": {
+            "session_success": 0.5375,
+            "session_success_ci": [
+              0.49,
+              0.585
+            ],
+            "turn_success": 0.854,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.8472135253600501,
+              "repeat": 0.9181286549707602
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.6,
+            "session_success_ci": [
+              0.55,
+              0.645
+            ],
+            "turn_success": 0.8875,
+            "node_accuracy": {
+              "scope": 0.922,
+              "intent": 0.89167188478397,
+              "repeat": 0.885547201336675
+            }
+          },
+          "0.25": {
+            "session_success": 0.67,
+            "session_success_ci": [
+              0.6225,
+              0.7125
+            ],
+            "turn_success": 0.909,
+            "node_accuracy": {
+              "scope": 0.976,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9440267335004177
+            }
+          },
+          "0.4": {
+            "session_success": 0.55,
+            "session_success_ci": [
+              0.5,
+              0.5975
+            ],
+            "turn_success": 0.872,
+            "node_accuracy": {
+              "scope": 0.986,
+              "intent": 0.8666249217282405,
+              "repeat": 0.9147869674185464
+            }
+          },
+          "0.6": {
+            "session_success": 0.425,
+            "session_success_ci": [
+              0.3775,
+              0.4725
+            ],
+            "turn_success": 0.8095,
+            "node_accuracy": {
+              "scope": 0.984,
+              "intent": 0.7952410770194114,
+              "repeat": 0.8880534670008354
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.6,
+            "session_success_ci": [
+              0.55,
+              0.645
+            ],
+            "turn_success": 0.8875,
+            "node_accuracy": {
+              "scope": 0.9225,
+              "intent": 0.89167188478397,
+              "repeat": 0.8863826232247285
+            }
+          },
+          "0.25": {
+            "session_success": 0.685,
+            "session_success_ci": [
+              0.64,
+              0.7275
+            ],
+            "turn_success": 0.911,
+            "node_accuracy": {
+              "scope": 0.978,
+              "intent": 0.9223544145272385,
+              "repeat": 0.9465329991645781
+            }
+          },
+          "0.4": {
+            "session_success": 0.565,
+            "session_success_ci": [
+              0.5174375,
+              0.6125
+            ],
+            "turn_success": 0.875,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.8728866624921728,
+              "repeat": 0.9197994987468672
+            }
+          },
+          "0.6": {
+            "session_success": 0.4275,
+            "session_success_ci": [
+              0.3775,
+              0.475
+            ],
+            "turn_success": 0.809,
+            "node_accuracy": {
+              "scope": 0.9845,
+              "intent": 0.7946149029430182,
+              "repeat": 0.8939014202172096
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.6,
+            "session_success_ci": [
+              0.55,
+              0.645
+            ],
+            "turn_success": 0.8875,
+            "node_accuracy": {
+              "scope": 0.9225,
+              "intent": 0.89167188478397,
+              "repeat": 0.8863826232247285
+            }
+          },
+          "0.25": {
+            "session_success": 0.68,
+            "session_success_ci": [
+              0.635,
+              0.7225
+            ],
+            "turn_success": 0.9095,
+            "node_accuracy": {
+              "scope": 0.9755,
+              "intent": 0.9192235441452724,
+              "repeat": 0.9423558897243107
+            }
+          },
+          "0.4": {
+            "session_success": 0.6025,
+            "session_success_ci": [
+              0.555,
+              0.6475
+            ],
+            "turn_success": 0.882,
+            "node_accuracy": {
+              "scope": 0.9865,
+              "intent": 0.878522229179712,
+              "repeat": 0.9181286549707602
+            }
+          },
+          "0.6": {
+            "session_success": 0.455,
+            "session_success_ci": [
+              0.4075,
+              0.5025
+            ],
+            "turn_success": 0.821,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.8077645585472761,
+              "repeat": 0.8905597326649958
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.6,
+            "session_success_ci": [
+              0.55,
+              0.645
+            ],
+            "turn_success": 0.8875,
+            "node_accuracy": {
+              "scope": 0.9225,
+              "intent": 0.89167188478397,
+              "repeat": 0.8863826232247285
+            }
+          },
+          "0.25": {
+            "session_success": 0.68,
+            "session_success_ci": [
+              0.635,
+              0.7225
+            ],
+            "turn_success": 0.91,
+            "node_accuracy": {
+              "scope": 0.9735,
+              "intent": 0.9173450219160927,
+              "repeat": 0.9423558897243107
+            }
+          },
+          "0.4": {
+            "session_success": 0.5825,
+            "session_success_ci": [
+              0.535,
+              0.63
+            ],
+            "turn_success": 0.883,
+            "node_accuracy": {
+              "scope": 0.981,
+              "intent": 0.8766437069505323,
+              "repeat": 0.9181286549707602
+            }
+          },
+          "0.6": {
+            "session_success": 0.41,
+            "session_success_ci": [
+              0.365,
+              0.46
+            ],
+            "turn_success": 0.8125,
+            "node_accuracy": {
+              "scope": 0.9685,
+              "intent": 0.7958672510958046,
+              "repeat": 0.8755221386800334
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.6,
+            "session_success_ci": [
+              0.55,
+              0.645
+            ],
+            "turn_success": 0.887,
+            "node_accuracy": {
+              "scope": 0.922,
+              "intent": 0.89167188478397,
+              "repeat": 0.8863826232247285
+            }
+          },
+          "0.25": {
+            "session_success": 0.6825,
+            "session_success_ci": [
+              0.6375,
+              0.725
+            ],
+            "turn_success": 0.9095,
+            "node_accuracy": {
+              "scope": 0.978,
+              "intent": 0.9211020663744521,
+              "repeat": 0.9456975772765246
+            }
+          },
+          "0.4": {
+            "session_success": 0.62,
+            "session_success_ci": [
+              0.5725,
+              0.6650624999999997
+            ],
+            "turn_success": 0.89,
+            "node_accuracy": {
+              "scope": 0.9915,
+              "intent": 0.8885410144020037,
+              "repeat": 0.9314954051796157
+            }
+          },
+          "0.6": {
+            "session_success": 0.51,
+            "session_success_ci": [
+              0.4575,
+              0.5575
+            ],
+            "turn_success": 0.8415,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.8346900438321854,
+              "repeat": 0.9081035923141186
+            }
+          }
+        }
+      }
+    },
+    "decoder-150m@0.01": {
+      "alone": {
+        "session_success": 0.12,
+        "session_success_ci": [
+          0.09,
+          0.1525
+        ],
+        "turn_success": 0.5875,
+        "node_accuracy": {
+          "scope": 0.8545,
+          "intent": 0.5660613650594866,
+          "repeat": 0.7218045112781954
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.1275,
+            "session_success_ci": [
+              0.095,
+              0.1625
+            ],
+            "turn_success": 0.5985,
+            "node_accuracy": {
+              "scope": 0.873,
+              "intent": 0.5798371947401377,
+              "repeat": 0.746031746031746
+            }
+          },
+          "0.25": {
+            "session_success": 0.145,
+            "session_success_ci": [
+              0.1125,
+              0.18
+            ],
+            "turn_success": 0.6325,
+            "node_accuracy": {
+              "scope": 0.9425,
+              "intent": 0.6249217282404509,
+              "repeat": 0.8212197159565581
+            }
+          },
+          "0.4": {
+            "session_success": 0.23,
+            "session_success_ci": [
+              0.19,
+              0.2725
+            ],
+            "turn_success": 0.6885,
+            "node_accuracy": {
+              "scope": 0.9795,
+              "intent": 0.6649968691296181,
+              "repeat": 0.847953216374269
+            }
+          },
+          "0.6": {
+            "session_success": 0.2975,
+            "session_success_ci": [
+              0.2525,
+              0.3425
+            ],
+            "turn_success": 0.7265,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.6963055729492799,
+              "repeat": 0.8596491228070176
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.13,
+            "session_success_ci": [
+              0.1,
+              0.165
+            ],
+            "turn_success": 0.6015,
+            "node_accuracy": {
+              "scope": 0.872,
+              "intent": 0.5835942391984972,
+              "repeat": 0.7443609022556391
+            }
+          },
+          "0.25": {
+            "session_success": 0.15,
+            "session_success_ci": [
+              0.1175,
+              0.18506249999999966
+            ],
+            "turn_success": 0.6395,
+            "node_accuracy": {
+              "scope": 0.939,
+              "intent": 0.6349405134627426,
+              "repeat": 0.8162071846282373
+            }
+          },
+          "0.4": {
+            "session_success": 0.2575,
+            "session_success_ci": [
+              0.215,
+              0.3
+            ],
+            "turn_success": 0.7105,
+            "node_accuracy": {
+              "scope": 0.973,
+              "intent": 0.6906700062617408,
+              "repeat": 0.8487886382623224
+            }
+          },
+          "0.6": {
+            "session_success": 0.3575,
+            "session_success_ci": [
+              0.31,
+              0.405
+            ],
+            "turn_success": 0.771,
+            "node_accuracy": {
+              "scope": 0.973,
+              "intent": 0.7489041953663118,
+              "repeat": 0.8671679197994987
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.13,
+            "session_success_ci": [
+              0.1,
+              0.16256249999999967
+            ],
+            "turn_success": 0.6005,
+            "node_accuracy": {
+              "scope": 0.8735,
+              "intent": 0.582968065122104,
+              "repeat": 0.7451963241436925
+            }
+          },
+          "0.25": {
+            "session_success": 0.1575,
+            "session_success_ci": [
+              0.125,
+              0.195
+            ],
+            "turn_success": 0.642,
+            "node_accuracy": {
+              "scope": 0.946,
+              "intent": 0.6380713838447089,
+              "repeat": 0.8253968253968254
+            }
+          },
+          "0.4": {
+            "session_success": 0.265,
+            "session_success_ci": [
+              0.2225,
+              0.3075
+            ],
+            "turn_success": 0.7135,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.6950532247964935,
+              "repeat": 0.8621553884711779
+            }
+          },
+          "0.6": {
+            "session_success": 0.37,
+            "session_success_ci": [
+              0.3225,
+              0.4175
+            ],
+            "turn_success": 0.7735,
+            "node_accuracy": {
+              "scope": 0.9885,
+              "intent": 0.7539135879774578,
+              "repeat": 0.8888888888888888
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.13,
+            "session_success_ci": [
+              0.1,
+              0.165
+            ],
+            "turn_success": 0.597,
+            "node_accuracy": {
+              "scope": 0.8715,
+              "intent": 0.5785848465873513,
+              "repeat": 0.7418546365914787
+            }
+          },
+          "0.25": {
+            "session_success": 0.15,
+            "session_success_ci": [
+              0.1175,
+              0.18506249999999966
+            ],
+            "turn_success": 0.633,
+            "node_accuracy": {
+              "scope": 0.94,
+              "intent": 0.6255479023168441,
+              "repeat": 0.8187134502923976
+            }
+          },
+          "0.4": {
+            "session_success": 0.2225,
+            "session_success_ci": [
+              0.1849375,
+              0.265
+            ],
+            "turn_success": 0.6895,
+            "node_accuracy": {
+              "scope": 0.9765,
+              "intent": 0.6637445209768316,
+              "repeat": 0.8412698412698413
+            }
+          },
+          "0.6": {
+            "session_success": 0.265,
+            "session_success_ci": [
+              0.2225,
+              0.31006249999999963
+            ],
+            "turn_success": 0.7265,
+            "node_accuracy": {
+              "scope": 0.981,
+              "intent": 0.6950532247964935,
+              "repeat": 0.8563074352548037
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.13,
+            "session_success_ci": [
+              0.1,
+              0.16256249999999967
+            ],
+            "turn_success": 0.599,
+            "node_accuracy": {
+              "scope": 0.873,
+              "intent": 0.5798371947401377,
+              "repeat": 0.7443609022556391
+            }
+          },
+          "0.25": {
+            "session_success": 0.145,
+            "session_success_ci": [
+              0.1125,
+              0.1825
+            ],
+            "turn_success": 0.6315,
+            "node_accuracy": {
+              "scope": 0.942,
+              "intent": 0.6249217282404509,
+              "repeat": 0.8162071846282373
+            }
+          },
+          "0.4": {
+            "session_success": 0.2275,
+            "session_success_ci": [
+              0.185,
+              0.27
+            ],
+            "turn_success": 0.6895,
+            "node_accuracy": {
+              "scope": 0.9785,
+              "intent": 0.6662492172824045,
+              "repeat": 0.8446115288220551
+            }
+          },
+          "0.6": {
+            "session_success": 0.2775,
+            "session_success_ci": [
+              0.235,
+              0.32
+            ],
+            "turn_success": 0.7315,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.704445835942392,
+              "repeat": 0.858813700918964
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.1275,
+            "session_success_ci": [
+              0.0975,
+              0.16006249999999966
+            ],
+            "turn_success": 0.5985,
+            "node_accuracy": {
+              "scope": 0.8715,
+              "intent": 0.580463368816531,
+              "repeat": 0.7426900584795322
+            }
+          },
+          "0.25": {
+            "session_success": 0.145,
+            "session_success_ci": [
+              0.1125,
+              0.18006249999999965
+            ],
+            "turn_success": 0.6325,
+            "node_accuracy": {
+              "scope": 0.9405,
+              "intent": 0.6261740763932373,
+              "repeat": 0.8162071846282373
+            }
+          },
+          "0.4": {
+            "session_success": 0.2275,
+            "session_success_ci": [
+              0.185,
+              0.27
+            ],
+            "turn_success": 0.6915,
+            "node_accuracy": {
+              "scope": 0.9765,
+              "intent": 0.6687539135879774,
+              "repeat": 0.8429406850459482
+            }
+          },
+          "0.6": {
+            "session_success": 0.3025,
+            "session_success_ci": [
+              0.26,
+              0.3475
+            ],
+            "turn_success": 0.7415,
+            "node_accuracy": {
+              "scope": 0.9815,
+              "intent": 0.715090795241077,
+              "repeat": 0.8663324979114453
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.125,
+            "session_success_ci": [
+              0.095,
+              0.16
+            ],
+            "turn_success": 0.595,
+            "node_accuracy": {
+              "scope": 0.8695,
+              "intent": 0.5748278021289919,
+              "repeat": 0.7410192147034252
+            }
+          },
+          "0.25": {
+            "session_success": 0.145,
+            "session_success_ci": [
+              0.1125,
+              0.18
+            ],
+            "turn_success": 0.6295,
+            "node_accuracy": {
+              "scope": 0.934,
+              "intent": 0.6205385097056982,
+              "repeat": 0.8095238095238095
+            }
+          },
+          "0.4": {
+            "session_success": 0.2225,
+            "session_success_ci": [
+              0.1825,
+              0.265
+            ],
+            "turn_success": 0.6855,
+            "node_accuracy": {
+              "scope": 0.9665,
+              "intent": 0.6574827802128992,
+              "repeat": 0.8304093567251462
+            }
+          },
+          "0.6": {
+            "session_success": 0.2725,
+            "session_success_ci": [
+              0.23,
+              0.3175
+            ],
+            "turn_success": 0.7225,
+            "node_accuracy": {
+              "scope": 0.9655,
+              "intent": 0.6881653099561679,
+              "repeat": 0.8421052631578947
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.1325,
+            "session_success_ci": [
+              0.1,
+              0.1675
+            ],
+            "turn_success": 0.6,
+            "node_accuracy": {
+              "scope": 0.873,
+              "intent": 0.5817157169693175,
+              "repeat": 0.7443609022556391
+            }
+          },
+          "0.25": {
+            "session_success": 0.1525,
+            "session_success_ci": [
+              0.12,
+              0.1875
+            ],
+            "turn_success": 0.6395,
+            "node_accuracy": {
+              "scope": 0.944,
+              "intent": 0.6343143393863494,
+              "repeat": 0.8237259816207184
+            }
+          },
+          "0.4": {
+            "session_success": 0.255,
+            "session_success_ci": [
+              0.2125,
+              0.3
+            ],
+            "turn_success": 0.706,
+            "node_accuracy": {
+              "scope": 0.9815,
+              "intent": 0.6856606136505948,
+              "repeat": 0.8546365914786967
+            }
+          },
+          "0.6": {
+            "session_success": 0.35,
+            "session_success_ci": [
+              0.305,
+              0.3975
+            ],
+            "turn_success": 0.7615,
+            "node_accuracy": {
+              "scope": 0.989,
+              "intent": 0.743894802755166,
+              "repeat": 0.87468671679198
+            }
+          }
+        }
+      }
+    },
+    "decoder-150m@0.05": {
+      "alone": {
+        "session_success": 0.2375,
+        "session_success_ci": [
+          0.195,
+          0.28
+        ],
+        "turn_success": 0.715,
+        "node_accuracy": {
+          "scope": 0.877,
+          "intent": 0.7163431433938635,
+          "repeat": 0.7969924812030075
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.24,
+            "session_success_ci": [
+              0.1975,
+              0.2825
+            ],
+            "turn_success": 0.7225,
+            "node_accuracy": {
+              "scope": 0.886,
+              "intent": 0.7244834063869756,
+              "repeat": 0.8095238095238095
+            }
+          },
+          "0.25": {
+            "session_success": 0.29,
+            "session_success_ci": [
+              0.245,
+              0.335
+            ],
+            "turn_success": 0.75,
+            "node_accuracy": {
+              "scope": 0.953,
+              "intent": 0.7589229805886036,
+              "repeat": 0.8863826232247285
+            }
+          },
+          "0.4": {
+            "session_success": 0.34,
+            "session_success_ci": [
+              0.2925,
+              0.3875
+            ],
+            "turn_success": 0.7625,
+            "node_accuracy": {
+              "scope": 0.9805,
+              "intent": 0.7489041953663118,
+              "repeat": 0.8822055137844611
+            }
+          },
+          "0.6": {
+            "session_success": 0.34,
+            "session_success_ci": [
+              0.295,
+              0.385
+            ],
+            "turn_success": 0.7535,
+            "node_accuracy": {
+              "scope": 0.9835,
+              "intent": 0.7244834063869756,
+              "repeat": 0.8830409356725146
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.2425,
+            "session_success_ci": [
+              0.2025,
+              0.285
+            ],
+            "turn_success": 0.724,
+            "node_accuracy": {
+              "scope": 0.886,
+              "intent": 0.725735754539762,
+              "repeat": 0.8095238095238095
+            }
+          },
+          "0.25": {
+            "session_success": 0.31,
+            "session_success_ci": [
+              0.2649375,
+              0.355
+            ],
+            "turn_success": 0.7625,
+            "node_accuracy": {
+              "scope": 0.952,
+              "intent": 0.7720726361928616,
+              "repeat": 0.8872180451127819
+            }
+          },
+          "0.4": {
+            "session_success": 0.3675,
+            "session_success_ci": [
+              0.32,
+              0.415
+            ],
+            "turn_success": 0.7895,
+            "node_accuracy": {
+              "scope": 0.973,
+              "intent": 0.778334376956794,
+              "repeat": 0.8830409356725146
+            }
+          },
+          "0.6": {
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.3725,
+              0.4675
+            ],
+            "turn_success": 0.8005,
+            "node_accuracy": {
+              "scope": 0.971,
+              "intent": 0.7814652473387602,
+              "repeat": 0.8822055137844611
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.2425,
+            "session_success_ci": [
+              0.2025,
+              0.285
+            ],
+            "turn_success": 0.724,
+            "node_accuracy": {
+              "scope": 0.8865,
+              "intent": 0.725735754539762,
+              "repeat": 0.810359231411863
+            }
+          },
+          "0.25": {
+            "session_success": 0.3075,
+            "session_success_ci": [
+              0.2625,
+              0.3525
+            ],
+            "turn_success": 0.7615,
+            "node_accuracy": {
+              "scope": 0.9545,
+              "intent": 0.7726988102692548,
+              "repeat": 0.8922305764411027
+            }
+          },
+          "0.4": {
+            "session_success": 0.3775,
+            "session_success_ci": [
+              0.33,
+              0.425
+            ],
+            "turn_success": 0.7875,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.778334376956794,
+              "repeat": 0.8972431077694235
+            }
+          },
+          "0.6": {
+            "session_success": 0.435,
+            "session_success_ci": [
+              0.3875,
+              0.485
+            ],
+            "turn_success": 0.8085,
+            "node_accuracy": {
+              "scope": 0.9875,
+              "intent": 0.7908578584846587,
+              "repeat": 0.9122807017543859
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.2375,
+            "session_success_ci": [
+              0.195,
+              0.28
+            ],
+            "turn_success": 0.7195,
+            "node_accuracy": {
+              "scope": 0.8855,
+              "intent": 0.7213525360050094,
+              "repeat": 0.8070175438596491
+            }
+          },
+          "0.25": {
+            "session_success": 0.2925,
+            "session_success_ci": [
+              0.2475,
+              0.3375
+            ],
+            "turn_success": 0.753,
+            "node_accuracy": {
+              "scope": 0.952,
+              "intent": 0.7620538509705698,
+              "repeat": 0.8813700918964077
+            }
+          },
+          "0.4": {
+            "session_success": 0.32,
+            "session_success_ci": [
+              0.2774375,
+              0.365
+            ],
+            "turn_success": 0.7625,
+            "node_accuracy": {
+              "scope": 0.977,
+              "intent": 0.7445209768315592,
+              "repeat": 0.8796992481203008
+            }
+          },
+          "0.6": {
+            "session_success": 0.3125,
+            "session_success_ci": [
+              0.2675,
+              0.36
+            ],
+            "turn_success": 0.7555,
+            "node_accuracy": {
+              "scope": 0.9795,
+              "intent": 0.7276142767689417,
+              "repeat": 0.873015873015873
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.2425,
+            "session_success_ci": [
+              0.2025,
+              0.285
+            ],
+            "turn_success": 0.722,
+            "node_accuracy": {
+              "scope": 0.885,
+              "intent": 0.7244834063869756,
+              "repeat": 0.808688387635756
+            }
+          },
+          "0.25": {
+            "session_success": 0.3,
+            "session_success_ci": [
+              0.255,
+              0.3475
+            ],
+            "turn_success": 0.753,
+            "node_accuracy": {
+              "scope": 0.9505,
+              "intent": 0.7633061991233563,
+              "repeat": 0.883876357560568
+            }
+          },
+          "0.4": {
+            "session_success": 0.3225,
+            "session_success_ci": [
+              0.2775,
+              0.3675
+            ],
+            "turn_success": 0.765,
+            "node_accuracy": {
+              "scope": 0.978,
+              "intent": 0.752035065748278,
+              "repeat": 0.8780284043441938
+            }
+          },
+          "0.6": {
+            "session_success": 0.325,
+            "session_success_ci": [
+              0.28,
+              0.37006249999999963
+            ],
+            "turn_success": 0.7635,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.73888541014402,
+              "repeat": 0.8830409356725146
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.2425,
+            "session_success_ci": [
+              0.2025,
+              0.285
+            ],
+            "turn_success": 0.722,
+            "node_accuracy": {
+              "scope": 0.8865,
+              "intent": 0.7238572323105823,
+              "repeat": 0.8095238095238095
+            }
+          },
+          "0.25": {
+            "session_success": 0.3025,
+            "session_success_ci": [
+              0.2575,
+              0.3475
+            ],
+            "turn_success": 0.754,
+            "node_accuracy": {
+              "scope": 0.953,
+              "intent": 0.7633061991233563,
+              "repeat": 0.885547201336675
+            }
+          },
+          "0.4": {
+            "session_success": 0.3525,
+            "session_success_ci": [
+              0.3075,
+              0.4
+            ],
+            "turn_success": 0.7725,
+            "node_accuracy": {
+              "scope": 0.9775,
+              "intent": 0.7582968065122104,
+              "repeat": 0.883876357560568
+            }
+          },
+          "0.6": {
+            "session_success": 0.365,
+            "session_success_ci": [
+              0.32,
+              0.4125
+            ],
+            "turn_success": 0.7765,
+            "node_accuracy": {
+              "scope": 0.9795,
+              "intent": 0.7482780212899186,
+              "repeat": 0.8913951545530493
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.24,
+            "session_success_ci": [
+              0.2,
+              0.2825
+            ],
+            "turn_success": 0.718,
+            "node_accuracy": {
+              "scope": 0.8845,
+              "intent": 0.7207263619286162,
+              "repeat": 0.8045112781954887
+            }
+          },
+          "0.25": {
+            "session_success": 0.2825,
+            "session_success_ci": [
+              0.2375,
+              0.3275
+            ],
+            "turn_success": 0.746,
+            "node_accuracy": {
+              "scope": 0.9465,
+              "intent": 0.7539135879774578,
+              "repeat": 0.8738512949039264
+            }
+          },
+          "0.4": {
+            "session_success": 0.3125,
+            "session_success_ci": [
+              0.27,
+              0.3575
+            ],
+            "turn_success": 0.754,
+            "node_accuracy": {
+              "scope": 0.9685,
+              "intent": 0.7382592360676268,
+              "repeat": 0.8646616541353384
+            }
+          },
+          "0.6": {
+            "session_success": 0.3075,
+            "session_success_ci": [
+              0.265,
+              0.3525
+            ],
+            "turn_success": 0.7535,
+            "node_accuracy": {
+              "scope": 0.9655,
+              "intent": 0.7226048841577959,
+              "repeat": 0.8663324979114453
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.24,
+            "session_success_ci": [
+              0.2,
+              0.2825
+            ],
+            "turn_success": 0.7215,
+            "node_accuracy": {
+              "scope": 0.885,
+              "intent": 0.7238572323105823,
+              "repeat": 0.8078529657477026
+            }
+          },
+          "0.25": {
+            "session_success": 0.3125,
+            "session_success_ci": [
+              0.2675,
+              0.3575
+            ],
+            "turn_success": 0.7585,
+            "node_accuracy": {
+              "scope": 0.9535,
+              "intent": 0.7720726361928616,
+              "repeat": 0.8863826232247285
+            }
+          },
+          "0.4": {
+            "session_success": 0.3775,
+            "session_success_ci": [
+              0.33,
+              0.425
+            ],
+            "turn_success": 0.783,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.7745773324984345,
+              "repeat": 0.8888888888888888
+            }
+          },
+          "0.6": {
+            "session_success": 0.415,
+            "session_success_ci": [
+              0.37,
+              0.465
+            ],
+            "turn_success": 0.7955,
+            "node_accuracy": {
+              "scope": 0.9875,
+              "intent": 0.7795867251095805,
+              "repeat": 0.8947368421052632
+            }
+          }
+        }
+      }
+    },
+    "decoder-150m@0.2": {
+      "alone": {
+        "session_success": 0.4125,
+        "session_success_ci": [
+          0.365,
+          0.46
+        ],
+        "turn_success": 0.817,
+        "node_accuracy": {
+          "scope": 0.877,
+          "intent": 0.8202880400751409,
+          "repeat": 0.8162071846282373
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.3725,
+              0.465
+            ],
+            "turn_success": 0.8205,
+            "node_accuracy": {
+              "scope": 0.8855,
+              "intent": 0.8240450845335003,
+              "repeat": 0.8262322472848789
+            }
+          },
+          "0.25": {
+            "session_success": 0.5025,
+            "session_success_ci": [
+              0.4525,
+              0.55
+            ],
+            "turn_success": 0.8515,
+            "node_accuracy": {
+              "scope": 0.949,
+              "intent": 0.8616155291170946,
+              "repeat": 0.8955722639933166
+            }
+          },
+          "0.4": {
+            "session_success": 0.5125,
+            "session_success_ci": [
+              0.4625,
+              0.5575
+            ],
+            "turn_success": 0.849,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.8434564809016907,
+              "repeat": 0.9064327485380117
+            }
+          },
+          "0.6": {
+            "session_success": 0.4,
+            "session_success_ci": [
+              0.3525,
+              0.4475
+            ],
+            "turn_success": 0.791,
+            "node_accuracy": {
+              "scope": 0.983,
+              "intent": 0.7745773324984345,
+              "repeat": 0.8863826232247285
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.4225,
+            "session_success_ci": [
+              0.375,
+              0.4675
+            ],
+            "turn_success": 0.82,
+            "node_accuracy": {
+              "scope": 0.8835,
+              "intent": 0.8240450845335003,
+              "repeat": 0.8237259816207184
+            }
+          },
+          "0.25": {
+            "session_success": 0.505,
+            "session_success_ci": [
+              0.455,
+              0.5525
+            ],
+            "turn_success": 0.856,
+            "node_accuracy": {
+              "scope": 0.9455,
+              "intent": 0.8659987476518473,
+              "repeat": 0.8930659983291562
+            }
+          },
+          "0.4": {
+            "session_success": 0.555,
+            "session_success_ci": [
+              0.505,
+              0.6
+            ],
+            "turn_success": 0.8665,
+            "node_accuracy": {
+              "scope": 0.9795,
+              "intent": 0.862867877269881,
+              "repeat": 0.9097744360902256
+            }
+          },
+          "0.6": {
+            "session_success": 0.47,
+            "session_success_ci": [
+              0.42,
+              0.5175
+            ],
+            "turn_success": 0.8295,
+            "node_accuracy": {
+              "scope": 0.9785,
+              "intent": 0.8196618659987477,
+              "repeat": 0.8939014202172096
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.4175,
+            "session_success_ci": [
+              0.37,
+              0.465
+            ],
+            "turn_success": 0.82,
+            "node_accuracy": {
+              "scope": 0.884,
+              "intent": 0.8240450845335003,
+              "repeat": 0.8262322472848789
+            }
+          },
+          "0.25": {
+            "session_success": 0.51,
+            "session_success_ci": [
+              0.46,
+              0.5575
+            ],
+            "turn_success": 0.8575,
+            "node_accuracy": {
+              "scope": 0.948,
+              "intent": 0.867877269881027,
+              "repeat": 0.899749373433584
+            }
+          },
+          "0.4": {
+            "session_success": 0.5725,
+            "session_success_ci": [
+              0.525,
+              0.62
+            ],
+            "turn_success": 0.8705,
+            "node_accuracy": {
+              "scope": 0.9855,
+              "intent": 0.8672510958046337,
+              "repeat": 0.924812030075188
+            }
+          },
+          "0.6": {
+            "session_success": 0.51,
+            "session_success_ci": [
+              0.46,
+              0.5575
+            ],
+            "turn_success": 0.8395,
+            "node_accuracy": {
+              "scope": 0.987,
+              "intent": 0.8321853475266124,
+              "repeat": 0.9147869674185464
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.3725,
+              0.46506249999999966
+            ],
+            "turn_success": 0.82,
+            "node_accuracy": {
+              "scope": 0.8845,
+              "intent": 0.8240450845335003,
+              "repeat": 0.8237259816207184
+            }
+          },
+          "0.25": {
+            "session_success": 0.49,
+            "session_success_ci": [
+              0.44,
+              0.5375
+            ],
+            "turn_success": 0.8515,
+            "node_accuracy": {
+              "scope": 0.947,
+              "intent": 0.8603631809643081,
+              "repeat": 0.8922305764411027
+            }
+          },
+          "0.4": {
+            "session_success": 0.5125,
+            "session_success_ci": [
+              0.4624375,
+              0.56
+            ],
+            "turn_success": 0.852,
+            "node_accuracy": {
+              "scope": 0.9805,
+              "intent": 0.8440826549780839,
+              "repeat": 0.9039264828738512
+            }
+          },
+          "0.6": {
+            "session_success": 0.3925,
+            "session_success_ci": [
+              0.3425,
+              0.44
+            ],
+            "turn_success": 0.795,
+            "node_accuracy": {
+              "scope": 0.98,
+              "intent": 0.7789605510331872,
+              "repeat": 0.8813700918964077
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.3725,
+              0.4675
+            ],
+            "turn_success": 0.819,
+            "node_accuracy": {
+              "scope": 0.8835,
+              "intent": 0.823418910457107,
+              "repeat": 0.8262322472848789
+            }
+          },
+          "0.25": {
+            "session_success": 0.4925,
+            "session_success_ci": [
+              0.4449375,
+              0.54
+            ],
+            "turn_success": 0.8485,
+            "node_accuracy": {
+              "scope": 0.948,
+              "intent": 0.8591108328115216,
+              "repeat": 0.8930659983291562
+            }
+          },
+          "0.4": {
+            "session_success": 0.49,
+            "session_success_ci": [
+              0.44,
+              0.54
+            ],
+            "turn_success": 0.8445,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.8396994364433312,
+              "repeat": 0.9014202172096909
+            }
+          },
+          "0.6": {
+            "session_success": 0.3925,
+            "session_success_ci": [
+              0.3425,
+              0.44
+            ],
+            "turn_success": 0.79,
+            "node_accuracy": {
+              "scope": 0.981,
+              "intent": 0.7739511584220413,
+              "repeat": 0.8830409356725146
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.4175,
+            "session_success_ci": [
+              0.37,
+              0.465
+            ],
+            "turn_success": 0.82,
+            "node_accuracy": {
+              "scope": 0.884,
+              "intent": 0.823418910457107,
+              "repeat": 0.8253968253968254
+            }
+          },
+          "0.25": {
+            "session_success": 0.495,
+            "session_success_ci": [
+              0.445,
+              0.5425
+            ],
+            "turn_success": 0.85,
+            "node_accuracy": {
+              "scope": 0.9475,
+              "intent": 0.8597370068879149,
+              "repeat": 0.8897243107769424
+            }
+          },
+          "0.4": {
+            "session_success": 0.54,
+            "session_success_ci": [
+              0.4925,
+              0.59
+            ],
+            "turn_success": 0.857,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.8503443957420163,
+              "repeat": 0.9122807017543859
+            }
+          },
+          "0.6": {
+            "session_success": 0.44,
+            "session_success_ci": [
+              0.3925,
+              0.4875
+            ],
+            "turn_success": 0.811,
+            "node_accuracy": {
+              "scope": 0.981,
+              "intent": 0.7952410770194114,
+              "repeat": 0.8930659983291562
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.415,
+            "session_success_ci": [
+              0.3675,
+              0.46006249999999965
+            ],
+            "turn_success": 0.8195,
+            "node_accuracy": {
+              "scope": 0.884,
+              "intent": 0.8227927363807138,
+              "repeat": 0.8253968253968254
+            }
+          },
+          "0.25": {
+            "session_success": 0.49,
+            "session_success_ci": [
+              0.44,
+              0.5375
+            ],
+            "turn_success": 0.8485,
+            "node_accuracy": {
+              "scope": 0.9445,
+              "intent": 0.8566061365059486,
+              "repeat": 0.8888888888888888
+            }
+          },
+          "0.4": {
+            "session_success": 0.5,
+            "session_success_ci": [
+              0.45,
+              0.5475
+            ],
+            "turn_success": 0.846,
+            "node_accuracy": {
+              "scope": 0.972,
+              "intent": 0.8365685660613651,
+              "repeat": 0.8972431077694235
+            }
+          },
+          "0.6": {
+            "session_success": 0.3575,
+            "session_success_ci": [
+              0.3075,
+              0.405
+            ],
+            "turn_success": 0.7875,
+            "node_accuracy": {
+              "scope": 0.964,
+              "intent": 0.7683155917345021,
+              "repeat": 0.8713450292397661
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.3725,
+              0.46506249999999966
+            ],
+            "turn_success": 0.82,
+            "node_accuracy": {
+              "scope": 0.8845,
+              "intent": 0.8240450845335003,
+              "repeat": 0.8262322472848789
+            }
+          },
+          "0.25": {
+            "session_success": 0.5125,
+            "session_success_ci": [
+              0.465,
+              0.56
+            ],
+            "turn_success": 0.859,
+            "node_accuracy": {
+              "scope": 0.9495,
+              "intent": 0.8685034439574202,
+              "repeat": 0.899749373433584
+            }
+          },
+          "0.4": {
+            "session_success": 0.5675,
+            "session_success_ci": [
+              0.5175,
+              0.6125
+            ],
+            "turn_success": 0.864,
+            "node_accuracy": {
+              "scope": 0.9865,
+              "intent": 0.8616155291170946,
+              "repeat": 0.9197994987468672
+            }
+          },
+          "0.6": {
+            "session_success": 0.49,
+            "session_success_ci": [
+              0.44,
+              0.5375
+            ],
+            "turn_success": 0.83,
+            "node_accuracy": {
+              "scope": 0.9875,
+              "intent": 0.8221665623043206,
+              "repeat": 0.9022556390977443
+            }
+          }
+        }
+      }
+    },
+    "decoder-150m@1": {
+      "alone": {
+        "session_success": 0.58,
+        "session_success_ci": [
+          0.53,
+          0.6275
+        ],
+        "turn_success": 0.8835,
+        "node_accuracy": {
+          "scope": 0.9145,
+          "intent": 0.8810269254852849,
+          "repeat": 0.8713450292397661
+        }
+      },
+      "hybrid": {
+        "qwen3.5-9b": {
+          "0.1": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.885,
+            "node_accuracy": {
+              "scope": 0.9185,
+              "intent": 0.8829054477144647,
+              "repeat": 0.8771929824561403
+            }
+          },
+          "0.25": {
+            "session_success": 0.67,
+            "session_success_ci": [
+              0.6225,
+              0.7125
+            ],
+            "turn_success": 0.911,
+            "node_accuracy": {
+              "scope": 0.9735,
+              "intent": 0.9142141515341264,
+              "repeat": 0.9440267335004177
+            }
+          },
+          "0.4": {
+            "session_success": 0.56,
+            "session_success_ci": [
+              0.51,
+              0.6075
+            ],
+            "turn_success": 0.869,
+            "node_accuracy": {
+              "scope": 0.989,
+              "intent": 0.8634940513462742,
+              "repeat": 0.9197994987468672
+            }
+          },
+          "0.6": {
+            "session_success": 0.415,
+            "session_success_ci": [
+              0.3674375,
+              0.465
+            ],
+            "turn_success": 0.7965,
+            "node_accuracy": {
+              "scope": 0.986,
+              "intent": 0.7802128991859737,
+              "repeat": 0.8905597326649958
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "0.1": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.8845,
+            "node_accuracy": {
+              "scope": 0.9165,
+              "intent": 0.8829054477144647,
+              "repeat": 0.8755221386800334
+            }
+          },
+          "0.25": {
+            "session_success": 0.685,
+            "session_success_ci": [
+              0.64,
+              0.7275
+            ],
+            "turn_success": 0.913,
+            "node_accuracy": {
+              "scope": 0.969,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9381787802840434
+            }
+          },
+          "0.4": {
+            "session_success": 0.6175,
+            "session_success_ci": [
+              0.57,
+              0.6625624999999996
+            ],
+            "turn_success": 0.889,
+            "node_accuracy": {
+              "scope": 0.984,
+              "intent": 0.8847839699436444,
+              "repeat": 0.9223057644110275
+            }
+          },
+          "0.6": {
+            "session_success": 0.49,
+            "session_success_ci": [
+              0.4424375,
+              0.5375
+            ],
+            "turn_success": 0.836,
+            "node_accuracy": {
+              "scope": 0.9775,
+              "intent": 0.8259236067626801,
+              "repeat": 0.898078529657477
+            }
+          }
+        },
+        "gemma-4-31b": {
+          "0.1": {
+            "session_success": 0.5825,
+            "session_success_ci": [
+              0.5325,
+              0.63
+            ],
+            "turn_success": 0.884,
+            "node_accuracy": {
+              "scope": 0.9165,
+              "intent": 0.8829054477144647,
+              "repeat": 0.8763575605680869
+            }
+          },
+          "0.25": {
+            "session_success": 0.6875,
+            "session_success_ci": [
+              0.6424375,
+              0.7325
+            ],
+            "turn_success": 0.9165,
+            "node_accuracy": {
+              "scope": 0.971,
+              "intent": 0.9217282404508453,
+              "repeat": 0.948203842940685
+            }
+          },
+          "0.4": {
+            "session_success": 0.6225,
+            "session_success_ci": [
+              0.575,
+              0.6675624999999996
+            ],
+            "turn_success": 0.8905,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.8872886662492173,
+              "repeat": 0.935672514619883
+            }
+          },
+          "0.6": {
+            "session_success": 0.5125,
+            "session_success_ci": [
+              0.4625,
+              0.5625
+            ],
+            "turn_success": 0.8435,
+            "node_accuracy": {
+              "scope": 0.989,
+              "intent": 0.8365685660613651,
+              "repeat": 0.9147869674185464
+            }
+          }
+        },
+        "qwen3.5-35b-a3b": {
+          "0.1": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.8855,
+            "node_accuracy": {
+              "scope": 0.9175,
+              "intent": 0.8835316217908579,
+              "repeat": 0.8755221386800334
+            }
+          },
+          "0.25": {
+            "session_success": 0.66,
+            "session_success_ci": [
+              0.6125,
+              0.7025
+            ],
+            "turn_success": 0.91,
+            "node_accuracy": {
+              "scope": 0.9705,
+              "intent": 0.9117094552285535,
+              "repeat": 0.9381787802840434
+            }
+          },
+          "0.4": {
+            "session_success": 0.55,
+            "session_success_ci": [
+              0.5,
+              0.5975
+            ],
+            "turn_success": 0.867,
+            "node_accuracy": {
+              "scope": 0.986,
+              "intent": 0.8616155291170946,
+              "repeat": 0.910609857978279
+            }
+          },
+          "0.6": {
+            "session_success": 0.41,
+            "session_success_ci": [
+              0.3625,
+              0.45756249999999965
+            ],
+            "turn_success": 0.802,
+            "node_accuracy": {
+              "scope": 0.984,
+              "intent": 0.7877269881026926,
+              "repeat": 0.8822055137844611
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "0.1": {
+            "session_success": 0.58,
+            "session_success_ci": [
+              0.53,
+              0.6275
+            ],
+            "turn_success": 0.884,
+            "node_accuracy": {
+              "scope": 0.9165,
+              "intent": 0.8829054477144647,
+              "repeat": 0.8763575605680869
+            }
+          },
+          "0.25": {
+            "session_success": 0.6525,
+            "session_success_ci": [
+              0.605,
+              0.6975
+            ],
+            "turn_success": 0.9095,
+            "node_accuracy": {
+              "scope": 0.9715,
+              "intent": 0.9135879774577332,
+              "repeat": 0.9415204678362573
+            }
+          },
+          "0.4": {
+            "session_success": 0.56,
+            "session_success_ci": [
+              0.51,
+              0.605
+            ],
+            "turn_success": 0.8675,
+            "node_accuracy": {
+              "scope": 0.987,
+              "intent": 0.8641202254226675,
+              "repeat": 0.9156223893065998
+            }
+          },
+          "0.6": {
+            "session_success": 0.405,
+            "session_success_ci": [
+              0.355,
+              0.4525
+            ],
+            "turn_success": 0.8005,
+            "node_accuracy": {
+              "scope": 0.985,
+              "intent": 0.7852222917971196,
+              "repeat": 0.8922305764411027
+            }
+          }
+        },
+        "qwen3-next-80b-a3b": {
+          "0.1": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.885,
+            "node_accuracy": {
+              "scope": 0.9175,
+              "intent": 0.8829054477144647,
+              "repeat": 0.8763575605680869
+            }
+          },
+          "0.25": {
+            "session_success": 0.665,
+            "session_success_ci": [
+              0.62,
+              0.7075
+            ],
+            "turn_success": 0.909,
+            "node_accuracy": {
+              "scope": 0.971,
+              "intent": 0.91296180338134,
+              "repeat": 0.9381787802840434
+            }
+          },
+          "0.4": {
+            "session_success": 0.5725,
+            "session_success_ci": [
+              0.525,
+              0.62
+            ],
+            "turn_success": 0.871,
+            "node_accuracy": {
+              "scope": 0.986,
+              "intent": 0.867877269881027,
+              "repeat": 0.910609857978279
+            }
+          },
+          "0.6": {
+            "session_success": 0.4375,
+            "session_success_ci": [
+              0.39,
+              0.485
+            ],
+            "turn_success": 0.8135,
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.7989981214777708,
+              "repeat": 0.8913951545530493
+            }
+          }
+        },
+        "nemotron-3-super-120b": {
+          "0.1": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.885,
+            "node_accuracy": {
+              "scope": 0.9175,
+              "intent": 0.8829054477144647,
+              "repeat": 0.8763575605680869
+            }
+          },
+          "0.25": {
+            "session_success": 0.6675,
+            "session_success_ci": [
+              0.62,
+              0.7125
+            ],
+            "turn_success": 0.91,
+            "node_accuracy": {
+              "scope": 0.968,
+              "intent": 0.9117094552285535,
+              "repeat": 0.9381787802840434
+            }
+          },
+          "0.4": {
+            "session_success": 0.5625,
+            "session_success_ci": [
+              0.515,
+              0.61
+            ],
+            "turn_success": 0.87,
+            "node_accuracy": {
+              "scope": 0.979,
+              "intent": 0.8647463994990607,
+              "repeat": 0.9081035923141186
+            }
+          },
+          "0.6": {
+            "session_success": 0.385,
+            "session_success_ci": [
+              0.3399375,
+              0.4325
+            ],
+            "turn_success": 0.799,
+            "node_accuracy": {
+              "scope": 0.97,
+              "intent": 0.7795867251095805,
+              "repeat": 0.8780284043441938
+            }
+          }
+        },
+        "qwen3.5-122b-a10b": {
+          "0.1": {
+            "session_success": 0.585,
+            "session_success_ci": [
+              0.535,
+              0.6325
+            ],
+            "turn_success": 0.8845,
+            "node_accuracy": {
+              "scope": 0.918,
+              "intent": 0.8829054477144647,
+              "repeat": 0.8771929824561403
+            }
+          },
+          "0.25": {
+            "session_success": 0.6775,
+            "session_success_ci": [
+              0.6324375,
+              0.7225
+            ],
+            "turn_success": 0.9125,
+            "node_accuracy": {
+              "scope": 0.9725,
+              "intent": 0.9167188478396995,
+              "repeat": 0.9440267335004177
+            }
+          },
+          "0.4": {
+            "session_success": 0.605,
+            "session_success_ci": [
+              0.5575,
+              0.65
+            ],
+            "turn_success": 0.883,
+            "node_accuracy": {
+              "scope": 0.99,
+              "intent": 0.8804007514088916,
+              "repeat": 0.9256474519632414
+            }
+          },
+          "0.6": {
+            "session_success": 0.4925,
+            "session_success_ci": [
+              0.4425,
+              0.54
+            ],
+            "turn_success": 0.833,
+            "node_accuracy": {
+              "scope": 0.9895,
+              "intent": 0.823418910457107,
+              "repeat": 0.9072681704260651
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "protocol_id": "workflow-v4-ladder-2026-10-11",
+  "role": "exploratory: how strong must the escalation target be, when is the strong model better used alone, can a strong model hand work down, and what does each way of carrying context cost",
+  "claim": "Workflows v1 to v3 escalated from the fine-tuned specialist to Jev, to the fine-tuned decoder or to a 9B model, and escalation added at most a few points. Those targets were not much stronger than the specialist on this task. This protocol uses hosted open-weight models from 9B to about 120B parameters as targets, in three parts on the workflow v1 sessions: (A) a size ladder, each model alone and as the escalation target at fixed rates, with measured cost; (B) de-escalation, where the larger model sees the turn first and decides whether the specialist can take it; (C) context carrying on longer conversations: raw history, typed state, and running notes written by the model itself or by a model of a different size. Written before any model in this file saw a session turn. Before this file was committed nothing was sent; the plumbing check described under 'check' uses dev items only.",
+  "endpoint_rules": "api_protocol.json: the OpenRouter endpoint, key, retry rule and the $20 project cap with spend read from each response",
+  "run_cap_usd": 6.5,
+  "models": {
+    "qwen3.5-9b": {"model": "qwen/qwen3.5-9b", "provider": "DeepInfra", "params_b": 9, "family": "qwen3.5", "reasoning_off": true},
+    "qwen3.5-27b": {"model": "qwen/qwen3.5-27b", "provider": "Alibaba", "params_b": 27, "family": "qwen3.5", "reasoning_off": true},
+    "gemma-4-31b": {"model": "google/gemma-4-31b-it", "provider": "Novita", "params_b": 31, "family": "other", "reasoning_off": true},
+    "qwen3.5-35b-a3b": {"model": "qwen/qwen3.5-35b-a3b", "provider": "Alibaba", "params_b": 35, "family": "qwen3.5", "reasoning_off": true, "note": "mixture of experts, about 3B active per token"},
+    "llama-3.3-70b": {"model": "meta-llama/llama-3.3-70b-instruct", "provider": "DeepInfra", "params_b": 70, "family": "other", "reasoning_off": false, "note": "released December 2024; the only dense model between 36B and 110B listed. Part A and the blind triage ran on Novita (bf16). On 2026-10-12 Novita stopped answering (read timeouts) before any informed-triage reply, so the informed triage runs on DeepInfra (fp8); each saved row records its host."},
+    "qwen3-next-80b-a3b": {"model": "qwen/qwen3-next-80b-a3b-instruct", "provider": "Parasail", "params_b": 80, "family": "other", "reasoning_off": false, "note": "mixture of experts, about 3B active"},
+    "nemotron-3-super-120b": {"model": "nvidia/nemotron-3-super-120b-a12b", "provider": "DekaLLM", "params_b": 120, "family": "other", "reasoning_off": true, "note": "mixture of experts, about 12B active. Host changed from DeepInfra to DekaLLM (fp8) on 2026-10-11 after the dev plumbing check: DeepInfra returned HTTP 429 on 3 of 10 requests. No session turn had been sent."},
+    "qwen3.5-122b-a10b": {"model": "qwen/qwen3.5-122b-a10b", "provider": "Alibaba", "params_b": 122, "family": "qwen3.5", "reasoning_off": true, "note": "mixture of experts, about 10B active"}
+  },
+  "model_note": "The user asked for 9B to 100B. Four Qwen3.5 sizes give a same-generation ladder; its largest member is 122B, just above the requested range, and is kept because nothing of that generation sits between 35B and 122B. The other four are different families and generations and are read as separate points, not as part of one curve. Each model is pinned to one host with fallbacks off. A model that fails the plumbing check on its pinned host is moved to the next listed host that passes, or dropped, and the change is recorded in the summary.",
+  "request": {
+    "temperature": 0,
+    "max_tokens": {"answer": 24, "with_notes": 120, "triage": 6},
+    "codes": "option position from 1 in frozen Banking77 label order, two digits",
+    "system_prompt": "You are the decision step of a retail bank's customer-support desk.{context_clause}\nDecide:\n1. scope: can a retail bank's customer support handle the current message? yes or no.\n2. intent: the code of the option that best describes the current message. Use 00 when scope is no.{repeat_item}\n\nOptions:\n{options}\n\nReply with exactly these lines and nothing else:\nscope: <yes or no>\nintent: <two-digit code>{repeat_line}{notes_line}",
+    "context_clause": {
+      "current_only": "",
+      "raw_history": " You see the earlier customer messages of the conversation and the current message.",
+      "notes": " You see notes on the conversation so far, written by an earlier step, and the current message."
+    },
+    "repeat_item": "\n3. repeat: is the current message about the same issue as the most recent earlier banking request in this conversation? yes or no; no when there is none.",
+    "repeat_line": "\nrepeat: <yes or no>",
+    "notes_line": "\nnotes: <updated notes on the conversation so far including the current message, at most 40 words; the next step sees only these notes and the next message>",
+    "user": {
+      "current_only": "Current message: {text}",
+      "raw_history": "the workflow v1 raw-history form: 'Previous messages in this conversation:' with the numbered earlier messages, then 'Current message: {text}'; on the first turn only the current message",
+      "notes": "Notes on the conversation so far:\n{notes}\n\nCurrent message: {text}",
+      "notes_first_turn": "Notes on the conversation so far:\n(none, this is the first message)\n\nCurrent message: {text}"
+    },
+    "parsing": "the first 'scope:' line containing yes or no, the first 'intent:' line containing a two-digit number, the first 'repeat:' line, and everything after 'notes:'. A missing or out-of-range intent on a turn the model calls in scope is scored wrong. A missing scope is taken from the intent code (00 means out of scope). A missing repeat is scored as no. Parse failures are counted per model and condition.",
+    "probabilities": "none. These are stated decisions, so this protocol reports success and cost only, not calibration."
+  },
+  "sessions": {
+    "short": "the 400 five-turn workflow v1 sessions, unchanged, so results are comparable with workflows v1 to v3",
+    "long": "100 twenty-turn conversations made by joining v1 sessions 4k to 4k+3 in order. The repeat gold is recomputed along the joined conversation by the v1 rule (same intent as the most recent earlier in-scope turn). Same 2000 turns."
+  },
+  "specialists": "the fine-tuned Ettin encoder and decoder answers, temperatures, scope thresholds and escalation thresholds saved by workflow v1; nothing is rerun",
+  "part_a_ladder": {
+    "calls": "every model answers every turn once in the current_only form",
+    "alone": "the model's scope and intent on every turn; repeat from typed state (its own intent decision for this turn against its decision for the most recent earlier turn it judged in scope)",
+    "escalation": "the specialist answers every turn; the k turns with its lowest top probability are replaced by the model's answer, for k equal to 0, 5, 10, 25, 40, 60, 80 and 100 percent of all turns. Controls at each rate: a random set of the same size (mean of 200 draws, seed 20261011) and an oracle set (turns where the specialist's turn decision is wrong and the model's is right, first). Also the v1 threshold rule (specialist top probability below its 25% dev quantile), for direct comparison with encoder_then_jev.",
+    "cost": "the sum of the cost field of the model's responses for the turns it handled, per 1000 sessions. The specialist's local cost is not priced; it is reported as zero API dollars with its measured GPU latency alongside.",
+    "plateau_readout": "for each model: the best session success over the escalation rates below 100% against the model alone, with intervals; and session success against parameter count and against cost for the alone and best-hybrid rows. Stated before the run: escalation is worth it at a given size only if some rate below 100% is at least as good as the model alone at lower cost."
+  },
+  "part_b_de_escalation": {
+    "models": ["qwen3.5-9b", "qwen3.5-27b", "llama-3.3-70b", "qwen3.5-122b-a10b"],
+    "calls": "a short triage request per turn that does not contain the option list, in two forms: blind (the message only) and informed (the message and the encoder's top three guesses with probabilities)",
+    "system_prompt": "You route messages for a retail bank's customer-support desk. A small, fast classifier is available at almost no cost. It was trained on about ten thousand labelled banking-support messages and picks one of 77 banking intents. On ordinary banking messages it is right about nine times in ten. It cannot tell when a message is not a banking request, and it is weaker on vague, unusual or mixed messages. Classifying a message yourself is slower and costs more.\nReply with exactly one word:\ndelegate - the small classifier will get this message right\nkeep - it is a banking request, but the classifier is likely to get it wrong, so you will classify it yourself\nout - it is not something a retail bank's customer support can handle",
+    "user": {"blind": "Customer message: {text}", "informed": "Customer message: {text}\n\nThe classifier's top guesses:\n{lines}"},
+    "policy": "delegate: the encoder's intent, in scope. out: out of scope. keep: the same model's part A answer for that turn. An unparsable reply counts as keep.",
+    "cost": "triage cost on every turn plus the part A cost on kept turns",
+    "comparisons": [
+      "the same model alone (part A)",
+      "escalation by encoder confidence at the same share of turns sent to the model, using for scope the encoder threshold on turns not sent",
+      "what was delegated: the encoder's accuracy on delegated in-scope turns against kept in-scope turns; share of out-of-scope turns caught and precision of 'out'"
+    ],
+    "note": "The 'nine times in ten' figure is the encoder's accuracy on the full Banking77 test set, which contains the session items; it is one aggregate number and no item-level information."
+  },
+  "part_c_context": {
+    "sessions": "the 100 long conversations",
+    "models": {"small": "qwen3.5-9b", "large": "qwen3.5-122b-a10b"},
+    "conditions": {
+      "typed_state": "no new calls: part A answers, repeat from typed state. Also computed for the encoder and decoder.",
+      "raw_history": "one call per turn with every earlier message; the model answers scope, intent and repeat",
+      "own_notes": "one call per turn with the model's own running notes from the previous turn; the model answers scope, intent and repeat and rewrites the notes (at most 40 words asked)",
+      "other_notes": "one call per turn with the notes the other model wrote after the previous turn in its own_notes run; the model answers scope, intent and repeat and writes no notes. Small reads large's notes, and large reads small's."
+    },
+    "metrics": [
+      "node accuracy, turn success and conversation success (all 20 turns) per condition, with intervals over conversations",
+      "the same by turn position: turns 1 to 5, 6 to 10, 11 to 20",
+      "intent accuracy under each context form against current_only for the same model on the same turns, to see whether added context interferes with the per-turn decision",
+      "prompt tokens and cost per turn by turn position, and the length of the notes in words"
+    ],
+    "limit_stated_in_advance": "The option list is about 600 tokens and a message about 15, so even 19 earlier messages add less than the fixed part of the prompt. This part measures what each form loses in decisions, and how prompt size grows, more than it measures savings; conversations long enough for compaction to pay would need a different construction."
+  },
+  "check": "Before any session turn is sent, each model answers 10 dev items (8 Banking77 dev utterances and 2 CLINC150 out-of-scope validation queries) in the current_only form to confirm the host answers, reasoning is off, the reply parses and the cost field is present. Dev items only; the numbers are not reported as results.",
+  "order": "check; part A cheapest model first; part B; part C. If the run cap is reached the parts finished so far are reported and the rest is listed as not run."
+}

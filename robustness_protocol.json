@@ -1,0 +1,28 @@
+{
+  "protocol_id": "headline-robustness-2026-10-14",
+  "role": "the two must-do items of docs/paper-outline.md that could still change a headline number: training-seed variance for the specialists, and a second hosted model for the retrieval results",
+  "claim": "The main comparison of the paper (outline table T3) sets the best-equipped specialist against the general model with retrieval on five label sets. Each specialist row is one training seed, and every retrieval row is one model, Gemma 4 31B, in one run. This protocol adds two training seeds per specialist, a second hosted model with retrieval on all five label sets, and a repeat of the Gemma retrieval run on the three synthetic domains to measure run-to-run variation of a hosted model at temperature 0. Written before any of these models was trained or any of these requests was sent.",
+  "part_1_seeds": {
+    "domains": ["banking77", "massive", "clinc150", "banking77_oos", "multidogo"],
+    "specialist": "the 150M Ettin encoder, Program 2 recipe at learning rate 1e-4, on each domain's training data exactly as in sections 3.29/3.30 (banking77, massive, clinc150), 3.35 (banking77_oos) and 3.34 (multidogo, current message only)",
+    "seeds": [20261015, 20261016],
+    "existing_seed": "the models already reported count as the first seed",
+    "rows": "for each seed: session success with the softmax threshold and with the dev-selected scope detector (synthetic domains; for bankingoos both the 'id' and 'ood' session sets), and conversation success and label accuracy (multidogo); the mean and range over the three seeds",
+    "detectors": "as oos_detectors_protocol.json, selected on dev"
+  },
+  "part_2_second_model": {
+    "model": "qwen3.5-27b on its workflow v4 host (Alibaba)",
+    "why_this_model": "a different family from Gemma 4 31B, of similar size, the second-best zero-shot model of the ladder on banking and CLINC150",
+    "runs": {
+      "banking77, massive, clinc150": "retrieval from the full training set, as section 3.29",
+      "banking77_oos": "zero-shot and retrieval on both session sets, as section 3.35",
+      "multidogo": "retrieval, current message, as section 3.34"
+    }
+  },
+  "part_3_repeat": {
+    "what": "the Gemma 4 31B full-training-set retrieval run of section 3.29 sent again, unchanged, on the three synthetic domains",
+    "rows": "session success of the repeat against the original, and the share of turns whose answer changed"
+  },
+  "run_cap_usd": 6.0,
+  "readout_stated_in_advance": "the headline comparison stands if, for each domain, the ordering of the best-equipped specialist and the retrieval-prompted general model is the same for both hosted models and holds across the three specialist seeds"
+}

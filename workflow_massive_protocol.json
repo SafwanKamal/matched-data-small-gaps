@@ -1,0 +1,46 @@
+{
+  "protocol_id": "workflow-massive-replication-2026-10-12",
+  "role": "exploratory: do the specialist-against-general-model results of workflows v4 and v5 hold on a second domain?",
+  "claim": "Sections 3.21 to 3.23 rest on one task, Banking77 sessions with CLINC150 out-of-scope turns. This protocol rebuilds the same workflow on MASSIVE English (60 voice-assistant intents) and repeats the size ladder, the escalation curve, the blind and informed de-escalation, and few-shot prompting. Stated before the run, the results to look for are the ones found on Banking77: (1) zero-shot hosted models below the fine-tuned specialist on intent and above it on scope; (2) specialist first with about a quarter of turns escalated better than either alone; (3) the target's size not mattering; (4) examples in the prompt closing most of the gap. Written before any MASSIVE session turn was sent or scored.",
+  "endpoint_rules": "api_protocol.json; the models, hosts and request rules of workflow_v4_protocol.json except the prompt text below",
+  "run_cap_usd": 4.5,
+  "seed": 20261013,
+  "sessions": {
+    "n": 400,
+    "turns": 5,
+    "construction": "the workflow v1 rule (each turn out of scope with probability 0.2; an in-scope turn repeats the previous in-scope intent with probability 0.3) with seed 20261013",
+    "in_scope_source": "the 2974 official MASSIVE en-US test utterances",
+    "out_of_scope_source": "official Banking77 test utterances, excluding the intents whose label mentions exchange, currency or fiat (MASSIVE has a currency intent)",
+    "scope_caveat": "stated in advance: MASSIVE has catch-all intents (general quirky, qa factoid), so 'out of scope' is less sharply defined than in the banking workflow, where CLINC150 supplies queries labelled out of scope. A hosted model may reasonably call a banking question a general question. Scope accuracy on this workflow is therefore reported with that caveat, and the scope question is asked relative to the listed skills."
+  },
+  "specialists": {
+    "encoder": "the 150M Ettin encoder fine-tuned on MASSIVE at learning rate 1e-4 (size sweep, selected on dev)",
+    "encoder_2e-5": "the 150M Ettin encoder fine-tuned at 2e-5 (primary protocol), for continuity with earlier sections",
+    "decoder": "the 150M Ettin decoder fine-tuned on MASSIVE at 2e-5 (primary protocol); scored when the GPU is free and added to the summary then",
+    "thresholds": "temperature fit on the first 400 MASSIVE dev utterances; scope threshold from those and 100 Banking77 Program 1 dev utterances (same exclusion) by the v1 balanced-accuracy rule"
+  },
+  "request": {
+    "temperature": 0,
+    "max_tokens": {"answer": 24, "with_notes": 120, "triage": 6},
+    "system_prompt": "You are the decision step of a voice assistant for home and personal tasks.{context_clause}\nDecide:\n1. scope: is the current message a request that one of the skills listed below covers? yes or no.\n2. intent: the code of the skill that best describes the current message. Use 00 when scope is no.{repeat_item}\n\nSkills:\n{options}\n\nReply with exactly these lines and nothing else:\nscope: <yes or no>\nintent: <two-digit code>{repeat_line}{notes_line}",
+    "context_clause": {"current_only": "", "raw_history": "", "notes": ""},
+    "repeat_item": "",
+    "repeat_line": "",
+    "notes_line": "",
+    "user": {"current_only": "Current message: {text}"}
+  },
+  "part_a_ladder": "all eight workflow v4 models answer every turn once, zero-shot; each alone and as the escalation target for each specialist at 0, 5, 10, 25, 40, 60, 80 and 100 percent of turns by ascending specialist confidence, with random and oracle controls, as in workflow v4 part A",
+  "part_b_de_escalation": {
+    "models": ["qwen3.5-9b", "qwen3.5-27b"],
+    "system_prompt": "You route messages for a voice assistant for home and personal tasks (alarms, calendar, music, weather, news, smart home, email, transport, food, lists, general knowledge). A small, fast classifier is available at almost no cost. It was trained on about eleven thousand labelled assistant requests and picks one of 60 skills. On ordinary requests it is right about nine times in ten. It cannot tell when a message is not something the assistant covers, and it is weaker on vague, unusual or mixed messages. Classifying a message yourself is slower and costs more.\nReply with exactly one word:\ndelegate - the small classifier will get this message right\nkeep - the assistant covers it, but the classifier is likely to get it wrong, so you will classify it yourself\nout - it is not something this assistant covers",
+    "user": {"blind": "Message: {text}", "informed": "Message: {text}\n\nThe classifier's top guesses:\n{lines}"},
+    "policy": "as workflow v4 part B"
+  },
+  "part_d_few_shot": {
+    "examples": "k MASSIVE training utterances per intent, the first k after a seeded shuffle (seed 20261013), and four out-of-scope Banking77 dev utterances with code 00, shuffled once and appended under 'Labelled examples (message => code):'",
+    "runs": {"gemma-4-31b": {"3": "all 400 sessions", "10": "sessions 0 to 149"}, "qwen3.5-9b": {"3": "all 400 sessions"}},
+    "rows": "each run alone and as the escalation target for the encoder at 10, 25, 40 and 60 percent of turns"
+  },
+  "not_in_this_protocol": "the training-data sweep on MASSIVE and the context parts; the first needs the GPU, which is finishing the size sweep",
+  "limits": "Synthetic sessions, one run per model, stated zero-shot or few-shot answers. Scope gold is weaker than on the banking workflow, as described above."
+}

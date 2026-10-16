@@ -1,0 +1,69 @@
+{
+  "protocol_id": "api-baselines-token-probability-2026-10-10",
+  "role": "hosted near-frontier models as zero-shot Choice baselines on the wider suite, read from returned token probabilities",
+  "claim": "Two hosted models that return token log-probabilities are scored on the suite_protocol.json items under the Program 1 metric definitions. Their distribution over options is reconstructed from the top-k alternatives the API returns, which is a coarser readout than a local model's full softmax and is labelled as such. Written before either model was scored on any test item. Twenty Banking77 dev items per model were used earlier to check cost, parsing and logprob support with a different prompt.",
+  "metrics_match": "program-1-choice-2026-10-07",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "key_env": "openrouter_key",
+  "budget": {
+    "project_cap_usd": 80.0,
+    "cap_history": "20.0 until 2026-10-12, when the project owner raised it to 30.0 with 18.06 spent; 30.0 was also the limit set on the key itself. Raised again by the project owner to 50.0 on 2026-10-13 with 28.56 spent. Raised by the project owner to 80.0 on 2026-10-15 with 45.90 spent, before any request of confirmatory_protocol.json",
+    "spent_before_this_protocol_usd": 0.14,
+    "this_run_cap_usd": 6.0,
+    "rule": "cost is read from the usage field of every response and added to artifacts/api/spend.json; no request is sent once this run's cap or the project cap would be passed"
+  },
+  "systems": {
+    "qwen3.7-flash": {
+      "model": "qwen/qwen3.7-flash",
+      "provider": "Alibaba",
+      "top_logprobs": 5,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "deepseek-v4.1-flash": {
+      "model": "deepseek/deepseek-v4.1-flash",
+      "provider": "Together",
+      "top_logprobs": 20,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "qwen3.5-9b-bf16": {
+      "model": "qwen/qwen3.5-9b",
+      "provider": "Parasail",
+      "top_logprobs": 20,
+      "reasoning": {
+        "enabled": false
+      },
+      "added": "2026-10-11, before it was scored on any item: the same weights as the local 4-bit Qwen3.5-9B, served at bfloat16 by a host that returns token log-probabilities. It is read with this protocol's prompt and top-k tree readout, which differ from the local index readout, so a difference from the local 4-bit row can come from precision, prompt or readout."
+    }
+  },
+  "request": {
+    "temperature": 0,
+    "max_tokens": 6,
+    "provider_routing": "the one named provider, fallbacks off, require_parameters on, so a host that cannot return logprobs fails the request",
+    "prompt": "Text:\n{text}\n\nOptions:\n{options}\n\nReply with only the code of the option that best describes the text.",
+    "option_line": "{code}: {label}",
+    "codes": "option position from 1 in frozen label order, zero-padded to the width of the option count"
+  },
+  "readout": {
+    "name": "top-k tree",
+    "steps": [
+      "Walk the generated tokens in order, ignoring tokens that are only whitespace. Keep the code prefix generated so far and the probability mass that reached it.",
+      "At each step, every returned alternative token that differs from the generated one sends its share of the mass to the options whose code starts with prefix + alternative, split equally among them. An alternative that matches no code sends its share nowhere.",
+      "Mass not covered by the returned alternatives at that step is split equally among the options that are consistent with the prefix and received nothing at that step.",
+      "The generated token extends the prefix. When the prefix is a full code, that option receives the remaining mass.",
+      "The result is renormalised over the options and floored at 1e-9 before the logarithm that gives the scores."
+    ],
+    "limits": "Alternatives are seen only along the generated path, and only the top 5 or top 20 at each step. For many options most of the distribution is an equal split of unobserved mass. Calibration and Brier from this readout are therefore not comparable in kind to a full softmax and are reported with that caveat."
+  },
+  "failures": {
+    "retry": "HTTP 408, 429 and 5xx and connection errors, up to 5 tries with backoff; rows still in error are requested again on up to 3 passes",
+    "unscorable": "a response with no logprobs, or whose generated text matches no code, is scored as the uniform distribution and counted",
+    "reported": "the count and share of unscorable rows per dataset and split"
+  },
+  "datasets": "every suite dataset, dev then test, and the CLINC150 out-of-scope split",
+  "temperature": "one scalar per system and dataset, fit on dev by the Program 1 rule",
+  "saved": "for every row: the generated tokens, the returned alternatives with log-probabilities, the provider that answered, token counts and cost"
+}

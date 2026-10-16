@@ -1,0 +1,10 @@
+{"error": null, "latency_ms": 605.2124999987427, "text": "scope: yes\nintent: 09", "provider": "DeepInfra", "prompt_tokens": 193, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.218e-05, "id": "chk-in-0"}
+{"error": null, "latency_ms": 1221.004199993331, "text": "scope: yes\nintent: 09", "provider": "DeepInfra", "prompt_tokens": 189, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.178e-05, "id": "chk-in-1"}
+{"error": null, "latency_ms": 1116.2940000067465, "text": "scope: yes\nintent: 10", "provider": "DeepInfra", "prompt_tokens": 185, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.138e-05, "id": "chk-in-2"}
+{"error": null, "latency_ms": 1690.3388999926392, "text": "scope: yes\nintent: 10", "provider": "DeepInfra", "prompt_tokens": 188, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.168e-05, "id": "chk-in-3"}
+{"error": null, "latency_ms": 1545.6807000155095, "text": "scope: yes\nintent: 10", "provider": "DeepInfra", "prompt_tokens": 189, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.178e-05, "id": "chk-in-4"}
+{"error": null, "latency_ms": 3123.317699995823, "text": "scope: no\nintent: 00", "provider": "DeepInfra", "prompt_tokens": 186, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.148e-05, "id": "chk-oos-0"}
+{"error": null, "latency_ms": 606.8066000007093, "text": "scope: no\nintent: 00", "provider": "DeepInfra", "prompt_tokens": 186, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.148e-05, "id": "chk-oos-1"}
+{"error": null, "latency_ms": 662.0066000032239, "text": "scope: no\nintent: 00", "provider": "DeepInfra", "prompt_tokens": 183, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.118e-05, "id": "chk-oos-2"}
+{"error": null, "latency_ms": 774.3098000064492, "text": "scope: no\nintent: 00", "provider": "DeepInfra", "prompt_tokens": 186, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.148e-05, "id": "chk-oos-3"}
+{"error": null, "latency_ms": 1766.8070000072476, "text": "scope: no\nintent: 00", "provider": "DeepInfra", "prompt_tokens": 187, "cached_tokens": 0, "completion_tokens": 9, "cost": 2.158e-05, "id": "chk-oos-4"}

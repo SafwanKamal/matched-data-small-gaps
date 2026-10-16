@@ -1,0 +1,1211 @@
+{
+  "protocol_id": "workflow-retrieval-few-shot-2026-10-13",
+  "domains": {
+    "banking77": {
+      "specialist_alone": {
+        "node_accuracy": {
+          "scope": 0.942,
+          "intent": 0.9167188478396995,
+          "repeat": 0.9122807017543859
+        },
+        "turn_success": 0.907,
+        "session_success": 0.66,
+        "session_success_ci": [
+          0.6125,
+          0.7025
+        ]
+      },
+      "pool_sizes": {
+        "three_per_intent": 235,
+        "full_train": 9853
+      },
+      "runs": {
+        "gemma-4-31b__three_per_intent": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.995,
+              "intent": 0.8453350031308704,
+              "repeat": 0.9273182957393483
+            },
+            "turn_success": 0.855,
+            "session_success": 0.5525,
+            "session_success_ci": [
+              0.505,
+              0.6
+            ]
+          },
+          "usd_per_1000_sessions": 0.78954815,
+          "prompt_tokens_mean": 1099.3545,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.988,
+                "intent": 0.7802128991859737,
+                "repeat": 0.9030910609857978
+              },
+              "turn_success": 0.7995,
+              "session_success": 0.4225,
+              "session_success_ci": [
+                0.375,
+                0.4700624999999996
+              ]
+            },
+            "fixed_three_per_intent": null
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.944,
+                "intent": 0.9173450219160927,
+                "repeat": 0.9147869674185464
+              },
+              "turn_success": 0.9075,
+              "session_success": 0.66,
+              "session_success_ci": [
+                0.6125,
+                0.7025
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.987,
+                "intent": 0.939261114589856,
+                "repeat": 0.9682539682539683
+              },
+              "turn_success": 0.9305,
+              "session_success": 0.7375,
+              "session_success_ci": [
+                0.6949375,
+                0.7775
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.9955,
+                "intent": 0.9079524107701941,
+                "repeat": 0.9515455304928989
+              },
+              "turn_success": 0.9095,
+              "session_success": 0.685,
+              "session_success_ci": [
+                0.6375,
+                0.73
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.996,
+                "intent": 0.8804007514088916,
+                "repeat": 0.9390142021720969
+              },
+              "turn_success": 0.885,
+              "session_success": 0.6225,
+              "session_success_ci": [
+                0.575,
+                0.6675
+              ]
+            }
+          }
+        },
+        "gemma-4-31b__full_train": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.998,
+              "intent": 0.939261114589856,
+              "repeat": 0.9707602339181286
+            },
+            "turn_success": 0.9415,
+            "session_success": 0.7875,
+            "session_success_ci": [
+              0.7475,
+              0.825
+            ]
+          },
+          "usd_per_1000_sessions": 0.7571066499999999,
+          "prompt_tokens_mean": 1053.0095,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.988,
+                "intent": 0.7802128991859737,
+                "repeat": 0.9030910609857978
+              },
+              "turn_success": 0.7995,
+              "session_success": 0.4225,
+              "session_success_ci": [
+                0.375,
+                0.4700624999999996
+              ]
+            },
+            "fixed_three_per_intent": null
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.944,
+                "intent": 0.9179711959924859,
+                "repeat": 0.9147869674185464
+              },
+              "turn_success": 0.9075,
+              "session_success": 0.66,
+              "session_success_ci": [
+                0.6125,
+                0.7025
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.9885,
+                "intent": 0.9524107701941139,
+                "repeat": 0.974937343358396
+              },
+              "turn_success": 0.9425,
+              "session_success": 0.7875,
+              "session_success_ci": [
+                0.7475,
+                0.825
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.9975,
+                "intent": 0.947401377582968,
+                "repeat": 0.9724310776942355
+              },
+              "turn_success": 0.948,
+              "session_success": 0.805,
+              "session_success_ci": [
+                0.765,
+                0.84
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.998,
+                "intent": 0.9423919849718222,
+                "repeat": 0.9715956558061821
+              },
+              "turn_success": 0.9445,
+              "session_success": 0.7975,
+              "session_success_ci": [
+                0.7575,
+                0.835
+              ]
+            }
+          }
+        },
+        "qwen3.5-9b__three_per_intent": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.9825,
+              "intent": 0.7921102066374452,
+              "repeat": 0.8863826232247285
+            },
+            "turn_success": 0.8095,
+            "session_success": 0.42,
+            "session_success_ci": [
+              0.375,
+              0.4675
+            ]
+          },
+          "usd_per_1000_sessions": 0.55263175,
+          "prompt_tokens_mean": 1090.2635,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.98,
+                "intent": 0.6850344395742016,
+                "repeat": 0.860484544695071
+              },
+              "turn_success": 0.7195,
+              "session_success": 0.2925,
+              "session_success_ci": [
+                0.2475,
+                0.3375
+              ]
+            },
+            "fixed_three_per_intent": null
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.943,
+                "intent": 0.9167188478396995,
+                "repeat": 0.9147869674185464
+              },
+              "turn_success": 0.906,
+              "session_success": 0.6575,
+              "session_success_ci": [
+                0.61,
+                0.7
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.9855,
+                "intent": 0.9355040701314965,
+                "repeat": 0.9632414369256475
+              },
+              "turn_success": 0.927,
+              "session_success": 0.7275,
+              "session_success_ci": [
+                0.6825,
+                0.7675
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.991,
+                "intent": 0.897307451471509,
+                "repeat": 0.9406850459482038
+              },
+              "turn_success": 0.9015,
+              "session_success": 0.6525,
+              "session_success_ci": [
+                0.6074375000000001,
+                0.6975
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.9875,
+                "intent": 0.8465873512836568,
+                "repeat": 0.9081035923141186
+              },
+              "turn_success": 0.855,
+              "session_success": 0.5425,
+              "session_success_ci": [
+                0.495,
+                0.59
+              ]
+            }
+          }
+        },
+        "qwen3.5-9b__full_train": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.9835,
+              "intent": 0.9092047589229806,
+              "repeat": 0.9415204678362573
+            },
+            "turn_success": 0.913,
+            "session_success": 0.6925,
+            "session_success_ci": [
+              0.6475,
+              0.7375
+            ]
+          },
+          "usd_per_1000_sessions": 0.530188,
+          "prompt_tokens_mean": 1045.376,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.98,
+                "intent": 0.6850344395742016,
+                "repeat": 0.860484544695071
+              },
+              "turn_success": 0.7195,
+              "session_success": 0.2925,
+              "session_success_ci": [
+                0.2475,
+                0.3375
+              ]
+            },
+            "fixed_three_per_intent": null
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.944,
+                "intent": 0.9179711959924859,
+                "repeat": 0.9147869674185464
+              },
+              "turn_success": 0.9075,
+              "session_success": 0.66,
+              "session_success_ci": [
+                0.6125,
+                0.7025
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.9875,
+                "intent": 0.9486537257357546,
+                "repeat": 0.9732664995822891
+              },
+              "turn_success": 0.9395,
+              "session_success": 0.775,
+              "session_success_ci": [
+                0.7325,
+                0.8125
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.994,
+                "intent": 0.9355040701314965,
+                "repeat": 0.9624060150375939
+              },
+              "turn_success": 0.9365,
+              "session_success": 0.77,
+              "session_success_ci": [
+                0.73,
+                0.81
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.9905,
+                "intent": 0.9223544145272385,
+                "repeat": 0.9507101086048454
+              },
+              "turn_success": 0.9245,
+              "session_success": 0.735,
+              "session_success_ci": [
+                0.69,
+                0.775
+              ]
+            }
+          }
+        }
+      }
+    },
+    "massive": {
+      "specialist_alone": {
+        "node_accuracy": {
+          "scope": 0.7045,
+          "intent": 0.6354556803995006,
+          "repeat": 0.5906821963394343
+        },
+        "turn_success": 0.6615,
+        "session_success": 0.19,
+        "session_success_ci": [
+          0.1525,
+          0.2275
+        ]
+      },
+      "pool_sizes": {
+        "three_per_intent": 184,
+        "full_train": 11789
+      },
+      "runs": {
+        "gemma-4-31b__three_per_intent": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.9485,
+              "intent": 0.8489388264669163,
+              "repeat": 0.8810316139767055
+            },
+            "turn_success": 0.852,
+            "session_success": 0.5225,
+            "session_success_ci": [
+              0.4725,
+              0.57
+            ]
+          },
+          "usd_per_1000_sessions": 0.5680167,
+          "prompt_tokens_mean": 782.881,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.9435,
+                "intent": 0.8489388264669163,
+                "repeat": 0.8735440931780366
+              },
+              "turn_success": 0.846,
+              "session_success": 0.505,
+              "session_success_ci": [
+                0.4549375,
+                0.555
+              ]
+            },
+            "fixed_three_per_intent": {
+              "node_accuracy": {
+                "scope": 0.9555,
+                "intent": 0.8451935081148564,
+                "repeat": 0.8835274542429284
+              },
+              "turn_success": 0.852,
+              "session_success": 0.515,
+              "session_success_ci": [
+                0.4674375,
+                0.565
+              ]
+            }
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.731,
+                "intent": 0.6554307116104869,
+                "repeat": 0.6206322795341098
+              },
+              "turn_success": 0.6755,
+              "session_success": 0.21,
+              "session_success_ci": [
+                0.17,
+                0.25
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.7975,
+                "intent": 0.7134831460674157,
+                "repeat": 0.7063227953410982
+              },
+              "turn_success": 0.7235,
+              "session_success": 0.28,
+              "session_success_ci": [
+                0.2375,
+                0.3275
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.883,
+                "intent": 0.8046192259675405,
+                "repeat": 0.8103161397670549
+              },
+              "turn_success": 0.8005,
+              "session_success": 0.3925,
+              "session_success_ci": [
+                0.345,
+                0.4425
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.9445,
+                "intent": 0.8558052434456929,
+                "repeat": 0.8818635607321131
+              },
+              "turn_success": 0.8525,
+              "session_success": 0.5275,
+              "session_success_ci": [
+                0.4775,
+                0.5775
+              ]
+            }
+          }
+        },
+        "gemma-4-31b__full_train": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.9765,
+              "intent": 0.9032459425717853,
+              "repeat": 0.9201331114808652
+            },
+            "turn_success": 0.902,
+            "session_success": 0.65,
+            "session_success_ci": [
+              0.6025,
+              0.7
+            ]
+          },
+          "usd_per_1000_sessions": 0.56268445,
+          "prompt_tokens_mean": 775.2635,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.9435,
+                "intent": 0.8489388264669163,
+                "repeat": 0.8735440931780366
+              },
+              "turn_success": 0.846,
+              "session_success": 0.505,
+              "session_success_ci": [
+                0.4549375,
+                0.555
+              ]
+            },
+            "fixed_three_per_intent": {
+              "node_accuracy": {
+                "scope": 0.9555,
+                "intent": 0.8451935081148564,
+                "repeat": 0.8835274542429284
+              },
+              "turn_success": 0.852,
+              "session_success": 0.515,
+              "session_success_ci": [
+                0.4674375,
+                0.565
+              ]
+            }
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.736,
+                "intent": 0.6591760299625468,
+                "repeat": 0.627287853577371
+              },
+              "turn_success": 0.681,
+              "session_success": 0.2075,
+              "session_success_ci": [
+                0.1675,
+                0.2475
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.8115,
+                "intent": 0.7278401997503121,
+                "repeat": 0.7196339434276207
+              },
+              "turn_success": 0.7375,
+              "session_success": 0.2925,
+              "session_success_ci": [
+                0.25,
+                0.34
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.905,
+                "intent": 0.8339575530586767,
+                "repeat": 0.8377703826955075
+              },
+              "turn_success": 0.8295,
+              "session_success": 0.4625,
+              "session_success_ci": [
+                0.415,
+                0.51
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.972,
+                "intent": 0.9044943820224719,
+                "repeat": 0.9209650582362728
+              },
+              "turn_success": 0.898,
+              "session_success": 0.6425,
+              "session_success_ci": [
+                0.595,
+                0.69
+              ]
+            }
+          }
+        },
+        "qwen3.5-9b__three_per_intent": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.87,
+              "intent": 0.7428214731585518,
+              "repeat": 0.7637271214642263
+            },
+            "turn_success": 0.76,
+            "session_success": 0.3075,
+            "session_success_ci": [
+              0.2625,
+              0.355
+            ]
+          },
+          "usd_per_1000_sessions": 0.402806,
+          "prompt_tokens_mean": 790.612,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.8735,
+                "intent": 0.7259675405742821,
+                "repeat": 0.7562396006655574
+              },
+              "turn_success": 0.742,
+              "session_success": 0.295,
+              "session_success_ci": [
+                0.25,
+                0.34
+              ]
+            },
+            "fixed_three_per_intent": {
+              "node_accuracy": {
+                "scope": 0.8775,
+                "intent": 0.7553058676654182,
+                "repeat": 0.7670549084858569
+              },
+              "turn_success": 0.7725,
+              "session_success": 0.3175,
+              "session_success_ci": [
+                0.2724375,
+                0.365
+              ]
+            }
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.724,
+                "intent": 0.6504369538077404,
+                "repeat": 0.6089850249584027
+              },
+              "turn_success": 0.6715,
+              "session_success": 0.195,
+              "session_success_ci": [
+                0.1575,
+                0.2325
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.774,
+                "intent": 0.6878901373283396,
+                "repeat": 0.6663893510815307
+              },
+              "turn_success": 0.701,
+              "session_success": 0.235,
+              "session_success_ci": [
+                0.195,
+                0.2775
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.846,
+                "intent": 0.7596754057428214,
+                "repeat": 0.7529118136439268
+              },
+              "turn_success": 0.761,
+              "session_success": 0.32,
+              "session_success_ci": [
+                0.2774375,
+                0.365
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.891,
+                "intent": 0.7890137328339576,
+                "repeat": 0.8019966722129783
+              },
+              "turn_success": 0.7935,
+              "session_success": 0.3775,
+              "session_success_ci": [
+                0.33,
+                0.425
+              ]
+            }
+          }
+        },
+        "qwen3.5-9b__full_train": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.9465,
+              "intent": 0.8533083645443196,
+              "repeat": 0.8635607321131448
+            },
+            "turn_success": 0.8565,
+            "session_success": 0.5325,
+            "session_success_ci": [
+              0.485,
+              0.5825
+            ]
+          },
+          "usd_per_1000_sessions": 0.39865175,
+          "prompt_tokens_mean": 782.3035,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.8735,
+                "intent": 0.7259675405742821,
+                "repeat": 0.7562396006655574
+              },
+              "turn_success": 0.742,
+              "session_success": 0.295,
+              "session_success_ci": [
+                0.25,
+                0.34
+              ]
+            },
+            "fixed_three_per_intent": {
+              "node_accuracy": {
+                "scope": 0.8775,
+                "intent": 0.7553058676654182,
+                "repeat": 0.7670549084858569
+              },
+              "turn_success": 0.7725,
+              "session_success": 0.3175,
+              "session_success_ci": [
+                0.2724375,
+                0.365
+              ]
+            }
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.732,
+                "intent": 0.6541822721598003,
+                "repeat": 0.6189683860232945
+              },
+              "turn_success": 0.676,
+              "session_success": 0.2025,
+              "session_success_ci": [
+                0.1625,
+                0.2425
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.7975,
+                "intent": 0.7097378277153558,
+                "repeat": 0.6946755407653911
+              },
+              "turn_success": 0.7215,
+              "session_success": 0.2675,
+              "session_success_ci": [
+                0.225,
+                0.31256249999999963
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.8815,
+                "intent": 0.8008739076154806,
+                "repeat": 0.8019966722129783
+              },
+              "turn_success": 0.8,
+              "session_success": 0.4025,
+              "session_success_ci": [
+                0.355,
+                0.4525
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.945,
+                "intent": 0.8583021223470662,
+                "repeat": 0.8685524126455907
+              },
+              "turn_success": 0.855,
+              "session_success": 0.5375,
+              "session_success_ci": [
+                0.49,
+                0.59
+              ]
+            }
+          }
+        }
+      }
+    },
+    "clinc150": {
+      "specialist_alone": {
+        "node_accuracy": {
+          "scope": 0.9125,
+          "intent": 0.9036069651741293,
+          "repeat": 0.890818858560794
+        },
+        "turn_success": 0.897,
+        "session_success": 0.6275,
+        "session_success_ci": [
+          0.58,
+          0.67
+        ]
+      },
+      "pool_sizes": {
+        "three_per_intent": 454,
+        "full_train": 15250
+      },
+      "runs": {
+        "gemma-4-31b__three_per_intent": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.96,
+              "intent": 0.9508706467661692,
+              "repeat": 0.9602977667493796
+            },
+            "turn_success": 0.9235,
+            "session_success": 0.7225,
+            "session_success_ci": [
+              0.6775,
+              0.7675
+            ]
+          },
+          "usd_per_1000_sessions": 1.0748567,
+          "prompt_tokens_mean": 1504.081,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.9545,
+                "intent": 0.9116915422885572,
+                "repeat": 0.9404466501240695
+              },
+              "turn_success": 0.896,
+              "session_success": 0.625,
+              "session_success_ci": [
+                0.575,
+                0.6725
+              ]
+            },
+            "fixed_three_per_intent": {
+              "node_accuracy": {
+                "scope": 0.974,
+                "intent": 0.9657960199004975,
+                "repeat": 0.967741935483871
+              },
+              "turn_success": 0.9485,
+              "session_success": 0.8,
+              "session_success_ci": [
+                0.7625,
+                0.8350624999999996
+              ]
+            }
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.9095,
+                "intent": 0.9073383084577115,
+                "repeat": 0.8957816377171216
+              },
+              "turn_success": 0.894,
+              "session_success": 0.625,
+              "session_success_ci": [
+                0.5799375,
+                0.67
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.959,
+                "intent": 0.9713930348258707,
+                "repeat": 0.9710504549214226
+              },
+              "turn_success": 0.9365,
+              "session_success": 0.7625,
+              "session_success_ci": [
+                0.7199375,
+                0.805
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.964,
+                "intent": 0.9689054726368159,
+                "repeat": 0.9743589743589743
+              },
+              "turn_success": 0.9395,
+              "session_success": 0.775,
+              "session_success_ci": [
+                0.7325,
+                0.8175
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.9615,
+                "intent": 0.9589552238805971,
+                "repeat": 0.9669148056244831
+              },
+              "turn_success": 0.9315,
+              "session_success": 0.7375,
+              "session_success_ci": [
+                0.6925,
+                0.7825
+              ]
+            }
+          }
+        },
+        "gemma-4-31b__full_train": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.9695,
+              "intent": 0.9794776119402985,
+              "repeat": 0.9793217535153019
+            },
+            "turn_success": 0.9505,
+            "session_success": 0.8075,
+            "session_success_ci": [
+              0.77,
+              0.845
+            ]
+          },
+          "usd_per_1000_sessions": 1.06445155,
+          "prompt_tokens_mean": 1489.2165,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.9545,
+                "intent": 0.9116915422885572,
+                "repeat": 0.9404466501240695
+              },
+              "turn_success": 0.896,
+              "session_success": 0.625,
+              "session_success_ci": [
+                0.575,
+                0.6725
+              ]
+            },
+            "fixed_three_per_intent": {
+              "node_accuracy": {
+                "scope": 0.974,
+                "intent": 0.9657960199004975,
+                "repeat": 0.967741935483871
+              },
+              "turn_success": 0.9485,
+              "session_success": 0.8,
+              "session_success_ci": [
+                0.7625,
+                0.8350624999999996
+              ]
+            }
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.9095,
+                "intent": 0.9073383084577115,
+                "repeat": 0.8957816377171216
+              },
+              "turn_success": 0.894,
+              "session_success": 0.6225,
+              "session_success_ci": [
+                0.575,
+                0.6675
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.9605,
+                "intent": 0.9776119402985075,
+                "repeat": 0.9743589743589743
+              },
+              "turn_success": 0.943,
+              "session_success": 0.78,
+              "session_success_ci": [
+                0.7375,
+                0.82
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.969,
+                "intent": 0.9813432835820896,
+                "repeat": 0.9818031430934657
+              },
+              "turn_success": 0.9515,
+              "session_success": 0.8075,
+              "session_success_ci": [
+                0.7725,
+                0.845
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.9695,
+                "intent": 0.9807213930348259,
+                "repeat": 0.9809760132340778
+              },
+              "turn_success": 0.9515,
+              "session_success": 0.8075,
+              "session_success_ci": [
+                0.77,
+                0.845
+              ]
+            }
+          }
+        },
+        "qwen3.5-9b__three_per_intent": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.895,
+              "intent": 0.8327114427860697,
+              "repeat": 0.8527708850289496
+            },
+            "turn_success": 0.8365,
+            "session_success": 0.4675,
+            "session_success_ci": [
+              0.4175,
+              0.5175
+            ]
+          },
+          "usd_per_1000_sessions": 0.7583420000000001,
+          "prompt_tokens_mean": 1500.184,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.856,
+                "intent": 0.7033582089552238,
+                "repeat": 0.7890818858560794
+              },
+              "turn_success": 0.724,
+              "session_success": 0.2375,
+              "session_success_ci": [
+                0.195,
+                0.28
+              ]
+            },
+            "fixed_three_per_intent": null
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.9125,
+                "intent": 0.9060945273631841,
+                "repeat": 0.8957816377171216
+              },
+              "turn_success": 0.896,
+              "session_success": 0.6325,
+              "session_success_ci": [
+                0.585,
+                0.675
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.954,
+                "intent": 0.9496268656716418,
+                "repeat": 0.9503722084367245
+              },
+              "turn_success": 0.928,
+              "session_success": 0.74,
+              "session_success_ci": [
+                0.6975,
+                0.7825
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.9435,
+                "intent": 0.9185323383084577,
+                "repeat": 0.9288668320926385
+              },
+              "turn_success": 0.9085,
+              "session_success": 0.665,
+              "session_success_ci": [
+                0.6175,
+                0.71
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.9215,
+                "intent": 0.8774875621890548,
+                "repeat": 0.8941273779983457
+              },
+              "turn_success": 0.874,
+              "session_success": 0.5575,
+              "session_success_ci": [
+                0.5075,
+                0.6025
+              ]
+            }
+          }
+        },
+        "qwen3.5-9b__full_train": {
+          "alone": {
+            "node_accuracy": {
+              "scope": 0.9485,
+              "intent": 0.9266169154228856,
+              "repeat": 0.9313482216708023
+            },
+            "turn_success": 0.9145,
+            "session_success": 0.68,
+            "session_success_ci": [
+              0.635,
+              0.725
+            ]
+          },
+          "usd_per_1000_sessions": 0.75081275,
+          "prompt_tokens_mean": 1485.1255,
+          "cached_share": 0.0,
+          "parse_failed": 0,
+          "reference_alone": {
+            "zero_shot": {
+              "node_accuracy": {
+                "scope": 0.856,
+                "intent": 0.7033582089552238,
+                "repeat": 0.7890818858560794
+              },
+              "turn_success": 0.724,
+              "session_success": 0.2375,
+              "session_success_ci": [
+                0.195,
+                0.28
+              ]
+            },
+            "fixed_three_per_intent": null
+          },
+          "hybrid": {
+            "0.1": {
+              "node_accuracy": {
+                "scope": 0.9105,
+                "intent": 0.9060945273631841,
+                "repeat": 0.8941273779983457
+              },
+              "turn_success": 0.895,
+              "session_success": 0.625,
+              "session_success_ci": [
+                0.5775,
+                0.6675
+              ]
+            },
+            "0.25": {
+              "node_accuracy": {
+                "scope": 0.9575,
+                "intent": 0.9614427860696517,
+                "repeat": 0.9619520264681555
+              },
+              "turn_success": 0.9375,
+              "session_success": 0.765,
+              "session_success_ci": [
+                0.725,
+                0.8075
+              ]
+            },
+            "0.4": {
+              "node_accuracy": {
+                "scope": 0.96,
+                "intent": 0.9496268656716418,
+                "repeat": 0.9561621174524401
+              },
+              "turn_success": 0.934,
+              "session_success": 0.735,
+              "session_success_ci": [
+                0.69,
+                0.7775
+              ]
+            },
+            "0.6": {
+              "node_accuracy": {
+                "scope": 0.953,
+                "intent": 0.9353233830845771,
+                "repeat": 0.9421009098428453
+              },
+              "turn_success": 0.9225,
+              "session_success": 0.6975,
+              "session_success_ci": [
+                0.655,
+                0.74
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "spend_usd": {
+    "project_total": 31.841478919497284
+  }
+}

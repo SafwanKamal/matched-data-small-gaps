@@ -1,0 +1,802 @@
+{
+  "protocol_id": "context-pilot-2026-10-09",
+  "systems": {
+    "jev-generic": {
+      "banking77": {
+        "temperature": 1.0,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.796,
+            "brier": 0.3131415484022517,
+            "ece": 0.09173737367360262,
+            "mean_top_probability": 0.8855474746813168
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.802,
+            "brier": 0.3056346566978604,
+            "ece": 0.08682949488566324,
+            "mean_top_probability": 0.885410504984297,
+            "broken": 0.02512562814070352,
+            "repaired": 0.12745098039215685
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.796,
+            "brier": 0.3023220099495981,
+            "ece": 0.07537515145150626,
+            "mean_top_probability": 0.8695888888242516,
+            "broken": 0.03768844221105527,
+            "repaired": 0.14705882352941177
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.804,
+            "brier": 0.3038059494637553,
+            "ece": 0.08769898983622895,
+            "mean_top_probability": 0.8902303029638968,
+            "broken": 0.02512562814070352,
+            "repaired": 0.13725490196078433
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.81,
+            "brier": 0.29726666004419766,
+            "ece": 0.09214545448617026,
+            "mean_top_probability": 0.8963333332663395,
+            "broken": 0.03015075376884422,
+            "repaired": 0.18627450980392157
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.8,
+            "brier": 0.30712317978754206,
+            "ece": 0.08768141407689593,
+            "mean_top_probability": 0.8850014140754108,
+            "broken": 0.032663316582914576,
+            "repaired": 0.14705882352941177
+          }
+        }
+      },
+      "clinc150": {
+        "temperature": 1.0,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.916,
+            "brier": 0.12867860842728374,
+            "ece": 0.03153373728810254,
+            "mean_top_probability": 0.9113781816832399
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.902,
+            "brier": 0.14043439514215447,
+            "ece": 0.03323939385148028,
+            "mean_top_probability": 0.9075060604718281,
+            "broken": 0.03275109170305677,
+            "repaired": 0.19047619047619047
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.896,
+            "brier": 0.13613205713649681,
+            "ece": 0.040344444353982475,
+            "mean_top_probability": 0.9088313129969884,
+            "broken": 0.03711790393013101,
+            "repaired": 0.16666666666666666
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.918,
+            "brier": 0.12384408672467688,
+            "ece": 0.03230626253946793,
+            "mean_top_probability": 0.9190501008739761,
+            "broken": 0.019650655021834062,
+            "repaired": 0.23809523809523808
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.922,
+            "brier": 0.11790885130041122,
+            "ece": 0.034210504961735055,
+            "mean_top_probability": 0.9220804039038053,
+            "broken": 0.019650655021834062,
+            "repaired": 0.2857142857142857
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.912,
+            "brier": 0.1273567117626841,
+            "ece": 0.029834747375699938,
+            "mean_top_probability": 0.9189608079448256,
+            "broken": 0.019650655021834062,
+            "repaired": 0.16666666666666666
+          }
+        }
+      }
+    },
+    "jev-current": {
+      "banking77": {
+        "temperature": 1.0,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.8,
+            "brier": 0.306696828721745,
+            "ece": 0.08270404034276967,
+            "mean_top_probability": 0.8797452524595722
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.806,
+            "brier": 0.3063511767677287,
+            "ece": 0.07709393932996456,
+            "mean_top_probability": 0.8811169696311567,
+            "broken": 0.0275,
+            "repaired": 0.14
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.808,
+            "brier": 0.29678040766380004,
+            "ece": 0.07694444438590069,
+            "mean_top_probability": 0.8762090908437737,
+            "broken": 0.03,
+            "repaired": 0.16
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.798,
+            "brier": 0.3090299020404791,
+            "ece": 0.09339373731076833,
+            "mean_top_probability": 0.8838737373078687,
+            "broken": 0.03,
+            "repaired": 0.11
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.812,
+            "brier": 0.29812474468868816,
+            "ece": 0.08524888882329694,
+            "mean_top_probability": 0.8950488888220179,
+            "broken": 0.035,
+            "repaired": 0.2
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.806,
+            "brier": 0.3076225246303269,
+            "ece": 0.07863111104858833,
+            "mean_top_probability": 0.8800238383181909,
+            "broken": 0.02,
+            "repaired": 0.11
+          }
+        }
+      },
+      "clinc150": {
+        "temperature": 1.0,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.912,
+            "brier": 0.12289203073029778,
+            "ece": 0.03840464636734059,
+            "mean_top_probability": 0.9193892927930741
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.924,
+            "brier": 0.12164695618634841,
+            "ece": 0.033125050396628004,
+            "mean_top_probability": 0.9247351513781126,
+            "broken": 0.013157894736842105,
+            "repaired": 0.2727272727272727
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.916,
+            "brier": 0.12948452480203954,
+            "ece": 0.027748888794862155,
+            "mean_top_probability": 0.9180668685509629,
+            "broken": 0.019736842105263157,
+            "repaired": 0.25
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.908,
+            "brier": 0.1243540304859564,
+            "ece": 0.03100363626383048,
+            "mean_top_probability": 0.9174703028943925,
+            "broken": 0.021929824561403508,
+            "repaired": 0.18181818181818182
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.922,
+            "brier": 0.11518773692467836,
+            "ece": 0.044603636273920576,
+            "mean_top_probability": 0.9220997978432032,
+            "broken": 0.015350877192982455,
+            "repaired": 0.2727272727272727
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.922,
+            "brier": 0.12329534684068309,
+            "ece": 0.029909292818775857,
+            "mean_top_probability": 0.922206262489669,
+            "broken": 0.010964912280701754,
+            "repaired": 0.22727272727272727
+          }
+        }
+      }
+    },
+    "ettin-encoder-log_loss": {
+      "banking77": {
+        "temperature": 0.6871853702254552,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.896,
+            "brier": 0.16200402763480065,
+            "ece": 0.03176906854265094,
+            "mean_top_probability": 0.9169978046105993,
+            "share_over_128_tokens": 0.0
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.154,
+            "brier": 0.9834611035743831,
+            "ece": 0.21963870537262578,
+            "mean_top_probability": 0.3722936268736276,
+            "broken": 0.8303571428571429,
+            "repaired": 0.019230769230769232,
+            "share_over_128_tokens": 0.002
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.322,
+            "brier": 1.0294375913772176,
+            "ece": 0.3908991050870343,
+            "mean_top_probability": 0.7128991050870342,
+            "broken": 0.6473214285714286,
+            "repaired": 0.057692307692307696,
+            "share_over_128_tokens": 0.0
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.184,
+            "brier": 1.0738208986803905,
+            "ece": 0.334079780990828,
+            "mean_top_probability": 0.518079780990828,
+            "broken": 0.8035714285714286,
+            "repaired": 0.07692307692307693,
+            "share_over_128_tokens": 0.0
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.022,
+            "brier": 1.2710722123248055,
+            "ece": 0.4226827208966452,
+            "mean_top_probability": 0.44468272089664523,
+            "broken": 0.9754464285714286,
+            "repaired": 0.0,
+            "share_over_128_tokens": 0.724
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.066,
+            "brier": 1.1909021515385911,
+            "ece": 0.38311946050579193,
+            "mean_top_probability": 0.44911946050579193,
+            "broken": 0.9285714285714286,
+            "repaired": 0.019230769230769232,
+            "share_over_128_tokens": 0.724
+          }
+        },
+        "cpu_vs_gpu_check": {
+          "max_abs_score_difference_vs_gpu": 0.1617436408996582,
+          "argmax_changes_vs_gpu": 0
+        }
+      }
+    },
+    "gliclass-base-v3.0": {
+      "banking77": {
+        "temperature": 1.4780510493043906,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.504,
+            "brier": 0.7068485071650974,
+            "ece": 0.1329583533075088,
+            "mean_top_probability": 0.3942480929572053
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.452,
+            "brier": 0.7318253931340871,
+            "ece": 0.0991272956484606,
+            "mean_top_probability": 0.41892361074541257,
+            "broken": 0.19444444444444445,
+            "repaired": 0.09274193548387097
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.354,
+            "brier": 0.8426395706930284,
+            "ece": 0.08131690642732185,
+            "mean_top_probability": 0.39092029862676037,
+            "broken": 0.36507936507936506,
+            "repaired": 0.06854838709677419
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.124,
+            "brier": 1.0020768823354091,
+            "ece": 0.19076087261063232,
+            "mean_top_probability": 0.3147608726106323,
+            "broken": 0.7579365079365079,
+            "repaired": 0.004032258064516129
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.14,
+            "brier": 0.9824359450096755,
+            "ece": 0.10159678984191585,
+            "mean_top_probability": 0.2403913551109681,
+            "broken": 0.7341269841269841,
+            "repaired": 0.012096774193548387
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.17,
+            "brier": 0.9618915214395768,
+            "ece": 0.06719835080753332,
+            "mean_top_probability": 0.2371983508075333,
+            "broken": 0.6706349206349206,
+            "repaired": 0.008064516129032258
+          }
+        }
+      },
+      "clinc150": {
+        "temperature": 0.916105027005903,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.658,
+            "brier": 0.5525700737298426,
+            "ece": 0.1741818270978858,
+            "mean_top_probability": 0.4963578796066287
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.516,
+            "brier": 0.7175188860910786,
+            "ece": 0.13348840147107216,
+            "mean_top_probability": 0.525485257922413,
+            "broken": 0.2917933130699088,
+            "repaired": 0.14619883040935672
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.39,
+            "brier": 0.7754676676017135,
+            "ece": 0.0722114370406692,
+            "mean_top_probability": 0.3969070910868492,
+            "broken": 0.4376899696048632,
+            "repaired": 0.05847953216374269
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.312,
+            "brier": 0.8617524295054664,
+            "ece": 0.05608512431014222,
+            "mean_top_probability": 0.30045162463480307,
+            "broken": 0.5501519756838906,
+            "repaired": 0.04678362573099415
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.122,
+            "brier": 0.960148055232189,
+            "ece": 0.08171185552109496,
+            "mean_top_probability": 0.20332081790331222,
+            "broken": 0.817629179331307,
+            "repaired": 0.005847953216374269
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.166,
+            "brier": 0.936904460022502,
+            "ece": 0.03526141949198112,
+            "mean_top_probability": 0.20009734603530954,
+            "broken": 0.7477203647416414,
+            "repaired": 0.0
+          }
+        }
+      }
+    },
+    "ettin-decoder-log_loss": {
+      "banking77": {
+        "temperature": 2.0205845245669427,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.92,
+            "brier": 0.11732455998506436,
+            "ece": 0.019837187970796,
+            "mean_top_probability": 0.9328839820970632,
+            "share_over_128_prompt_tokens": 0.0
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.692,
+            "brier": 0.42236211419473113,
+            "ece": 0.09042951065428341,
+            "mean_top_probability": 0.62594216133794,
+            "broken": 0.2608695652173913,
+            "repaired": 0.15,
+            "share_over_128_prompt_tokens": 0.002
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.29,
+            "brier": 1.128003523167467,
+            "ece": 0.487624235580713,
+            "mean_top_probability": 0.769771746392871,
+            "broken": 0.6869565217391305,
+            "repaired": 0.025,
+            "share_over_128_prompt_tokens": 0.0
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.238,
+            "brier": 1.1188814264417204,
+            "ece": 0.44827364084760096,
+            "mean_top_probability": 0.6833002298636522,
+            "broken": 0.741304347826087,
+            "repaired": 0.0,
+            "share_over_128_prompt_tokens": 0.0
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.16,
+            "brier": 1.1619840108627193,
+            "ece": 0.399205179583219,
+            "mean_top_probability": 0.5592051795832191,
+            "broken": 0.8282608695652174,
+            "repaired": 0.025,
+            "share_over_128_prompt_tokens": 0.682
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.228,
+            "brier": 1.0485111017687558,
+            "ece": 0.33926370148349255,
+            "mean_top_probability": 0.5672637014834926,
+            "broken": 0.758695652173913,
+            "repaired": 0.075,
+            "share_over_128_prompt_tokens": 0.682
+          }
+        }
+      }
+    },
+    "qwen3-4b-index_prior": {
+      "banking77": {
+        "temperature": 4.562279284159313,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.484,
+            "brier": 0.6859443502730569,
+            "ece": 0.06826943777443444,
+            "mean_top_probability": 0.4798452379031087
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.482,
+            "brier": 0.6917264892735071,
+            "ece": 0.07479098505042675,
+            "mean_top_probability": 0.4805323817221787,
+            "broken": 0.128099173553719,
+            "repaired": 0.11627906976744186
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.408,
+            "brier": 0.7527753808061961,
+            "ece": 0.07855661961620287,
+            "mean_top_probability": 0.37511602335493693,
+            "broken": 0.23553719008264462,
+            "repaired": 0.07364341085271318
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.458,
+            "brier": 0.7169126894169083,
+            "ece": 0.09712171213272112,
+            "mean_top_probability": 0.4370048886075643,
+            "broken": 0.1487603305785124,
+            "repaired": 0.08914728682170543
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.464,
+            "brier": 0.7006966892776955,
+            "ece": 0.08941369148986968,
+            "mean_top_probability": 0.4061637876520059,
+            "broken": 0.15702479338842976,
+            "repaired": 0.10852713178294573
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.434,
+            "brier": 0.7369800009820158,
+            "ece": 0.085377635899648,
+            "mean_top_probability": 0.348622364100352,
+            "broken": 0.1652892561983471,
+            "repaired": 0.05813953488372093
+          }
+        }
+      }
+    },
+    "qwen3.7-flash": {
+      "banking77": {
+        "temperature": 1.2607729783449062,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.75,
+            "brier": 0.4102588488566076,
+            "ece": 0.10361782049066477,
+            "mean_top_probability": 0.6571433485180855,
+            "unscorable": 0
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.746,
+            "brier": 0.39278910805380746,
+            "ece": 0.0286551069793442,
+            "mean_top_probability": 0.7398530342717468,
+            "broken": 0.056,
+            "repaired": 0.152,
+            "unscorable": 0
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.758,
+            "brier": 0.38366606533671566,
+            "ece": 0.053816076127241645,
+            "mean_top_probability": 0.7167128483333867,
+            "broken": 0.056,
+            "repaired": 0.2,
+            "unscorable": 0
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.758,
+            "brier": 0.3842117171091232,
+            "ece": 0.06084593456592943,
+            "mean_top_probability": 0.7431278412220513,
+            "broken": 0.048,
+            "repaired": 0.176,
+            "unscorable": 0
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.766,
+            "brier": 0.37207811408312763,
+            "ece": 0.05188415344027994,
+            "mean_top_probability": 0.800989675151296,
+            "broken": 0.058666666666666666,
+            "repaired": 0.24,
+            "unscorable": 0
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.732,
+            "brier": 0.41286503725002577,
+            "ece": 0.0444693773331381,
+            "mean_top_probability": 0.7577887986013684,
+            "broken": 0.072,
+            "repaired": 0.144,
+            "unscorable": 0
+          }
+        }
+      },
+      "clinc150": {
+        "temperature": 1.130092361207114,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.814,
+            "brier": 0.29582859402917466,
+            "ece": 0.047245837688770935,
+            "mean_top_probability": 0.7942954661180688,
+            "unscorable": 0
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.836,
+            "brier": 0.266158884390538,
+            "ece": 0.0799646712017608,
+            "mean_top_probability": 0.8146781568485028,
+            "broken": 0.056511056511056514,
+            "repaired": 0.3655913978494624,
+            "unscorable": 0
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.826,
+            "brier": 0.2761940229780761,
+            "ece": 0.05123727962226674,
+            "mean_top_probability": 0.8141267937594399,
+            "broken": 0.07862407862407862,
+            "repaired": 0.40860215053763443,
+            "unscorable": 0
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.848,
+            "brier": 0.25681768225702506,
+            "ece": 0.07381108801962029,
+            "mean_top_probability": 0.8159046118502956,
+            "broken": 0.05405405405405406,
+            "repaired": 0.41935483870967744,
+            "unscorable": 1
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.848,
+            "brier": 0.2398511699865218,
+            "ece": 0.0484188586967029,
+            "mean_top_probability": 0.8308714989560368,
+            "broken": 0.056511056511056514,
+            "repaired": 0.43010752688172044,
+            "unscorable": 0
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.858,
+            "brier": 0.2336317275360583,
+            "ece": 0.049101621425370855,
+            "mean_top_probability": 0.8383524858605113,
+            "broken": 0.051597051597051594,
+            "repaired": 0.46236559139784944,
+            "unscorable": 0
+          }
+        }
+      }
+    },
+    "deepseek-v4.1-flash": {
+      "banking77": {
+        "temperature": 2.138547078930959,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.752,
+            "brier": 0.3655895599296859,
+            "ece": 0.05525929963083233,
+            "mean_top_probability": 0.7722217665548351,
+            "unscorable": 0
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.742,
+            "brier": 0.37043786316117394,
+            "ece": 0.06960945357169768,
+            "mean_top_probability": 0.7914916785407192,
+            "broken": 0.05851063829787234,
+            "repaired": 0.13709677419354838,
+            "unscorable": 0
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.762,
+            "brier": 0.36529392210584344,
+            "ece": 0.06453920848327775,
+            "mean_top_probability": 0.7824594605989902,
+            "broken": 0.05053191489361702,
+            "repaired": 0.1935483870967742,
+            "unscorable": 0
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.76,
+            "brier": 0.35697811564079635,
+            "ece": 0.06216589028305206,
+            "mean_top_probability": 0.8040521716693384,
+            "broken": 0.04521276595744681,
+            "repaired": 0.1693548387096774,
+            "unscorable": 0
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.776,
+            "brier": 0.3493745493574094,
+            "ece": 0.07330903488689575,
+            "mean_top_probability": 0.8280848539741458,
+            "broken": 0.0425531914893617,
+            "repaired": 0.22580645161290322,
+            "unscorable": 0
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.754,
+            "brier": 0.36471324891746376,
+            "ece": 0.06328022647008726,
+            "mean_top_probability": 0.7963054331043641,
+            "broken": 0.06382978723404255,
+            "repaired": 0.20161290322580644,
+            "unscorable": 0
+          }
+        }
+      },
+      "clinc150": {
+        "temperature": 1.8337690198432919,
+        "conditions": {
+          "clean": {
+            "n": 500,
+            "accuracy": 0.798,
+            "brier": 0.29072235525854434,
+            "ece": 0.07092159014719226,
+            "mean_top_probability": 0.8609155007048237,
+            "unscorable": 0
+          },
+          "chatter": {
+            "n": 500,
+            "accuracy": 0.84,
+            "brier": 0.24194851448890034,
+            "ece": 0.056569830568581045,
+            "mean_top_probability": 0.8847355168606585,
+            "broken": 0.022556390977443608,
+            "repaired": 0.297029702970297,
+            "unscorable": 0
+          },
+          "related_prior": {
+            "n": 500,
+            "accuracy": 0.84,
+            "brier": 0.2361468719870034,
+            "ece": 0.050410215952598356,
+            "mean_top_probability": 0.8772465460573232,
+            "broken": 0.02756892230576441,
+            "repaired": 0.31683168316831684,
+            "unscorable": 0
+          },
+          "typed_summary": {
+            "n": 500,
+            "accuracy": 0.858,
+            "brier": 0.2103201466293557,
+            "ece": 0.04634577494157844,
+            "mean_top_probability": 0.8831627390541879,
+            "broken": 0.015037593984962405,
+            "repaired": 0.3564356435643564,
+            "unscorable": 0
+          },
+          "long_history": {
+            "n": 500,
+            "accuracy": 0.866,
+            "brier": 0.19755309771634455,
+            "ece": 0.040063023245268364,
+            "mean_top_probability": 0.8871852165208952,
+            "broken": 0.020050125313283207,
+            "repaired": 0.4158415841584158,
+            "unscorable": 0
+          },
+          "long_history_target_first": {
+            "n": 500,
+            "accuracy": 0.852,
+            "brier": 0.23154312128772012,
+            "ece": 0.05533682963485525,
+            "mean_top_probability": 0.8826776973524713,
+            "broken": 0.020050125313283207,
+            "repaired": 0.3465346534653465,
+            "unscorable": 0
+          }
+        }
+      }
+    }
+  }
+}

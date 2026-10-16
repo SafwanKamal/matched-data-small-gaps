@@ -1,0 +1,4235 @@
+{
+  "protocol_id": "context-handoff-2026-10-12",
+  "sets": {
+    "10_turns": {
+      "n_conversations": 100,
+      "raw_words_mean": 118.31,
+      "writers": {
+        "qwen3.5-9b@25": {
+          "words_mean": 18.01,
+          "share_cut": 0.0,
+          "usd_per_conversation": 2.7641e-05
+        },
+        "qwen3.5-9b@75": {
+          "words_mean": 52.91,
+          "share_cut": 0.0,
+          "usd_per_conversation": 3.3698e-05
+        },
+        "qwen3.5-9b@200": {
+          "words_mean": 120.15,
+          "share_cut": 0.0,
+          "usd_per_conversation": 4.53165e-05
+        },
+        "qwen3.5-27b@25": {
+          "words_mean": 19.53,
+          "share_cut": 0.05,
+          "usd_per_conversation": 9.274005000000001e-05
+        },
+        "qwen3.5-27b@75": {
+          "words_mean": 51.97,
+          "share_cut": 0.0,
+          "usd_per_conversation": 0.00017897684999999995
+        },
+        "qwen3.5-27b@200": {
+          "words_mean": 141.05,
+          "share_cut": 0.0,
+          "usd_per_conversation": 0.00036013184999999994
+        },
+        "gemma-4-31b@25": {
+          "words_mean": 21.37,
+          "share_cut": 0.05,
+          "usd_per_conversation": 4.822120000000001e-05
+        },
+        "gemma-4-31b@75": {
+          "words_mean": 50.0,
+          "share_cut": 0.0,
+          "usd_per_conversation": 6.274520000000001e-05
+        },
+        "gemma-4-31b@200": {
+          "words_mean": 75.96,
+          "share_cut": 0.0,
+          "usd_per_conversation": 7.900919999999999e-05
+        },
+        "qwen3.5-122b-a10b@25": {
+          "words_mean": 22.43,
+          "share_cut": 0.18,
+          "usd_per_conversation": 0.00012987260000000002
+        },
+        "qwen3.5-122b-a10b@75": {
+          "words_mean": 57.54,
+          "share_cut": 0.0,
+          "usd_per_conversation": 0.00023125180000000003
+        },
+        "qwen3.5-122b-a10b@200": {
+          "words_mean": 140.54,
+          "share_cut": 0.0,
+          "usd_per_conversation": 0.0004492046000000001
+        }
+      },
+      "raw": {
+        "qwen3.5-9b": {
+          "accuracy": 0.7536557930258717,
+          "ci": [
+            0.7234715052548454,
+            0.7837937089632004
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.8,
+            "last": 0.66,
+            "present": 0.795,
+            "absent": 0.875,
+            "order": 0.71,
+            "repeated": 0.5393258426966292,
+            "count_other": 0.49
+          },
+          "count_mean_abs_error": 0.56,
+          "unparsed": 0,
+          "usd_per_conversation": 6.74765e-05,
+          "prompt_tokens_mean": 612.59
+        },
+        "qwen3.5-27b": {
+          "accuracy": 0.8942632170978627,
+          "ci": [
+            0.8711836854906134,
+            0.9153593983818196
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.93,
+            "last": 0.92,
+            "present": 0.9,
+            "absent": 0.955,
+            "order": 0.855,
+            "repeated": 0.7640449438202247,
+            "count_other": 0.8
+          },
+          "count_mean_abs_error": 0.2,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00018255705,
+          "prompt_tokens_mean": 612.59
+        },
+        "gemma-4-31b": {
+          "accuracy": 0.9358830146231721,
+          "ci": [
+            0.9156307899505797,
+            0.9539325842696629
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.93,
+            "last": 0.98,
+            "present": 0.935,
+            "absent": 0.97,
+            "order": 0.94,
+            "repeated": 0.8089887640449438,
+            "count_other": 0.84
+          },
+          "count_mean_abs_error": 0.17,
+          "unparsed": 2,
+          "usd_per_conversation": 0.000103135,
+          "prompt_tokens_mean": 618.25
+        },
+        "qwen3.5-122b-a10b": {
+          "accuracy": 0.8492688413948256,
+          "ci": [
+            0.8243193729242208,
+            0.8734741339023551
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.74,
+            "present": 0.92,
+            "absent": 0.935,
+            "order": 0.79,
+            "repeated": 0.7415730337078652,
+            "count_other": 0.83
+          },
+          "count_mean_abs_error": 0.17,
+          "unparsed": 1,
+          "usd_per_conversation": 0.0002434094,
+          "prompt_tokens_mean": 612.59
+        },
+        "jev": {
+          "accuracy": 0.8841394825646794,
+          "ci": [
+            0.8564941804806772,
+            0.9102132435465768
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.93,
+            "last": 0.92,
+            "present": 0.855,
+            "absent": 0.9,
+            "order": 0.895,
+            "repeated": 0.797752808988764
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        }
+      },
+      "cells": {
+        "qwen3.5-9b@25->qwen3.5-9b": {
+          "accuracy": 0.6580427446569179,
+          "ci": [
+            0.6233114886487897,
+            0.6917061481384335
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.66,
+            "last": 0.39,
+            "present": 0.77,
+            "absent": 0.8,
+            "order": 0.665,
+            "repeated": 0.3707865168539326,
+            "count_other": 0.24
+          },
+          "count_mean_abs_error": 1.36,
+          "unparsed": 0,
+          "usd_per_conversation": 5.540549999999999e-05,
+          "prompt_tokens_mean": 491.88
+        },
+        "qwen3.5-9b@25->qwen3.5-27b": {
+          "accuracy": 0.688413948256468,
+          "ci": [
+            0.6505002502515154,
+            0.7232893821398736
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.73,
+            "last": 0.55,
+            "present": 0.815,
+            "absent": 0.765,
+            "order": 0.685,
+            "repeated": 0.34831460674157305,
+            "count_other": 0.24
+          },
+          "count_mean_abs_error": 1.4,
+          "unparsed": 1,
+          "usd_per_conversation": 0.00015906539999999996,
+          "prompt_tokens_mean": 491.88
+        },
+        "qwen3.5-9b@25->gemma-4-31b": {
+          "accuracy": 0.6996625421822272,
+          "ci": [
+            0.6591921945855423,
+            0.7376801820040693
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.77,
+            "last": 0.64,
+            "present": 0.815,
+            "absent": 0.72,
+            "order": 0.75,
+            "repeated": 0.2696629213483146,
+            "count_other": 0.3
+          },
+          "count_mean_abs_error": 1.303030303030303,
+          "unparsed": 45,
+          "usd_per_conversation": 8.612620000000001e-05,
+          "prompt_tokens_mean": 497.13
+        },
+        "qwen3.5-9b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.6231721034870641,
+          "ci": [
+            0.5869760501619404,
+            0.658802953234133
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.74,
+            "last": 0.38,
+            "present": 0.765,
+            "absent": 0.755,
+            "order": 0.56,
+            "repeated": 0.29213483146067415,
+            "count_other": 0.28
+          },
+          "count_mean_abs_error": 1.35,
+          "unparsed": 18,
+          "usd_per_conversation": 0.0002134184,
+          "prompt_tokens_mean": 491.88
+        },
+        "qwen3.5-9b@25->jev": {
+          "accuracy": 0.6749156355455568,
+          "ci": [
+            0.6309224721284151,
+            0.7155737787703685
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.76,
+            "last": 0.64,
+            "present": 0.695,
+            "absent": 0.645,
+            "order": 0.78,
+            "repeated": 0.4044943820224719
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-9b@75->qwen3.5-9b": {
+          "accuracy": 0.7277840269966255,
+          "ci": [
+            0.6976339686551053,
+            0.7604104856020514
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.73,
+            "last": 0.58,
+            "present": 0.84,
+            "absent": 0.885,
+            "order": 0.695,
+            "repeated": 0.3595505617977528,
+            "count_other": 0.58
+          },
+          "count_mean_abs_error": 0.55,
+          "unparsed": 0,
+          "usd_per_conversation": 5.9443499999999994e-05,
+          "prompt_tokens_mean": 532.26
+        },
+        "qwen3.5-9b@75->qwen3.5-27b": {
+          "accuracy": 0.8008998875140607,
+          "ci": [
+            0.7718972694604717,
+            0.8291910114214036
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.78,
+            "last": 0.76,
+            "present": 0.895,
+            "absent": 0.93,
+            "order": 0.785,
+            "repeated": 0.4044943820224719,
+            "count_other": 0.68
+          },
+          "count_mean_abs_error": 0.38,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0001668927,
+          "prompt_tokens_mean": 532.26
+        },
+        "qwen3.5-9b@75->gemma-4-31b": {
+          "accuracy": 0.8413948256467941,
+          "ci": [
+            0.8146067415730337,
+            0.8659965450144022
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.82,
+            "present": 0.91,
+            "absent": 0.95,
+            "order": 0.865,
+            "repeated": 0.3707865168539326,
+            "count_other": 0.67
+          },
+          "count_mean_abs_error": 0.39,
+          "unparsed": 19,
+          "usd_per_conversation": 9.1809e-05,
+          "prompt_tokens_mean": 537.35
+        },
+        "qwen3.5-9b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.7626546681664792,
+          "ci": [
+            0.7335799705785375,
+            0.7910276217228465
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.8,
+            "last": 0.58,
+            "present": 0.895,
+            "absent": 0.93,
+            "order": 0.725,
+            "repeated": 0.33707865168539325,
+            "count_other": 0.63
+          },
+          "count_mean_abs_error": 0.46,
+          "unparsed": 2,
+          "usd_per_conversation": 0.0002226484,
+          "prompt_tokens_mean": 532.26
+        },
+        "qwen3.5-9b@75->jev": {
+          "accuracy": 0.8008998875140607,
+          "ci": [
+            0.7692286036036037,
+            0.8322120828929488
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.83,
+            "last": 0.74,
+            "present": 0.855,
+            "absent": 0.89,
+            "order": 0.835,
+            "repeated": 0.43820224719101125
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-9b@200->qwen3.5-9b": {
+          "accuracy": 0.7750281214848144,
+          "ci": [
+            0.7451868629671574,
+            0.8070021712943749
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.77,
+            "last": 0.67,
+            "present": 0.86,
+            "absent": 0.88,
+            "order": 0.785,
+            "repeated": 0.449438202247191,
+            "count_other": 0.62
+          },
+          "count_mean_abs_error": 0.45,
+          "unparsed": 0,
+          "usd_per_conversation": 6.70445e-05,
+          "prompt_tokens_mean": 608.27
+        },
+        "qwen3.5-9b@200->qwen3.5-27b": {
+          "accuracy": 0.8515185601799775,
+          "ci": [
+            0.8251008207698396,
+            0.8752843982900163
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.85,
+            "present": 0.915,
+            "absent": 0.935,
+            "order": 0.845,
+            "repeated": 0.5280898876404494,
+            "count_other": 0.68
+          },
+          "count_mean_abs_error": 0.34,
+          "unparsed": 1,
+          "usd_per_conversation": 0.00018201104999999998,
+          "prompt_tokens_mean": 608.27
+        },
+        "qwen3.5-9b@200->gemma-4-31b": {
+          "accuracy": 0.8661417322834646,
+          "ci": [
+            0.8458921580333184,
+            0.8861452397569324
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.82,
+            "present": 0.925,
+            "absent": 0.965,
+            "order": 0.88,
+            "repeated": 0.48314606741573035,
+            "count_other": 0.73
+          },
+          "count_mean_abs_error": 0.29,
+          "unparsed": 11,
+          "usd_per_conversation": 0.00010239299999999998,
+          "prompt_tokens_mean": 612.95
+        },
+        "qwen3.5-9b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.7885264341957255,
+          "ci": [
+            0.7587373167981961,
+            0.8196166854565953
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.72,
+            "present": 0.895,
+            "absent": 0.935,
+            "order": 0.72,
+            "repeated": 0.39325842696629215,
+            "count_other": 0.69
+          },
+          "count_mean_abs_error": 0.36363636363636365,
+          "unparsed": 8,
+          "usd_per_conversation": 0.00024330539999999995,
+          "prompt_tokens_mean": 608.27
+        },
+        "qwen3.5-9b@200->jev": {
+          "accuracy": 0.8211473565804275,
+          "ci": [
+            0.7936865839909808,
+            0.848657302432457
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.8,
+            "present": 0.865,
+            "absent": 0.9,
+            "order": 0.83,
+            "repeated": 0.5056179775280899
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-27b@25->qwen3.5-9b": {
+          "accuracy": 0.7142857142857143,
+          "ci": [
+            0.6827340794648896,
+            0.747459010827957
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.7,
+            "last": 0.48,
+            "present": 0.855,
+            "absent": 0.905,
+            "order": 0.675,
+            "repeated": 0.33707865168539325,
+            "count_other": 0.29
+          },
+          "count_mean_abs_error": 1.37,
+          "unparsed": 0,
+          "usd_per_conversation": 5.580249999999999e-05,
+          "prompt_tokens_mean": 495.85
+        },
+        "qwen3.5-27b@25->qwen3.5-27b": {
+          "accuracy": 0.7806524184476941,
+          "ci": [
+            0.7516642081476367,
+            0.8065251070143382
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.81,
+            "last": 0.63,
+            "present": 0.91,
+            "absent": 0.9,
+            "order": 0.76,
+            "repeated": 0.4044943820224719,
+            "count_other": 0.32
+          },
+          "count_mean_abs_error": 1.37,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00015979275,
+          "prompt_tokens_mean": 495.85
+        },
+        "qwen3.5-27b@25->gemma-4-31b": {
+          "accuracy": 0.8301462317210349,
+          "ci": [
+            0.7993273542600897,
+            0.8573034025983941
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.94,
+            "last": 0.82,
+            "present": 0.9,
+            "absent": 0.9,
+            "order": 0.875,
+            "repeated": 0.30337078651685395,
+            "count_other": 0.42
+          },
+          "count_mean_abs_error": 1.1414141414141414,
+          "unparsed": 30,
+          "usd_per_conversation": 8.68448e-05,
+          "prompt_tokens_mean": 501.92
+        },
+        "qwen3.5-27b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.7041619797525309,
+          "ci": [
+            0.6760116798740965,
+            0.733719240937516
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.8,
+            "last": 0.46,
+            "present": 0.895,
+            "absent": 0.9,
+            "order": 0.565,
+            "repeated": 0.3146067415730337,
+            "count_other": 0.29
+          },
+          "count_mean_abs_error": 1.4,
+          "unparsed": 10,
+          "usd_per_conversation": 0.00021382659999999998,
+          "prompt_tokens_mean": 495.85
+        },
+        "qwen3.5-27b@25->jev": {
+          "accuracy": 0.7997750281214848,
+          "ci": [
+            0.7654255097794423,
+            0.8314701214289314
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.83,
+            "present": 0.85,
+            "absent": 0.8,
+            "order": 0.85,
+            "repeated": 0.4606741573033708
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-27b@75->qwen3.5-9b": {
+          "accuracy": 0.78177727784027,
+          "ci": [
+            0.7516784102829843,
+            0.8096318147654934
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.85,
+            "last": 0.66,
+            "present": 0.855,
+            "absent": 0.89,
+            "order": 0.75,
+            "repeated": 0.5056179775280899,
+            "count_other": 0.69
+          },
+          "count_mean_abs_error": 0.35,
+          "unparsed": 0,
+          "usd_per_conversation": 6.135549999999999e-05,
+          "prompt_tokens_mean": 551.38
+        },
+        "qwen3.5-27b@75->qwen3.5-27b": {
+          "accuracy": 0.859392575928009,
+          "ci": [
+            0.835012454865396,
+            0.883538633818589
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.83,
+            "present": 0.905,
+            "absent": 0.94,
+            "order": 0.825,
+            "repeated": 0.6292134831460674,
+            "count_other": 0.8
+          },
+          "count_mean_abs_error": 0.23,
+          "unparsed": 3,
+          "usd_per_conversation": 0.0001712451,
+          "prompt_tokens_mean": 551.38
+        },
+        "qwen3.5-27b@75->gemma-4-31b": {
+          "accuracy": 0.8998875140607424,
+          "ci": [
+            0.8776626812341098,
+            0.9217775371999816
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.94,
+            "last": 0.92,
+            "present": 0.925,
+            "absent": 0.955,
+            "order": 0.93,
+            "repeated": 0.5842696629213483,
+            "count_other": 0.82
+          },
+          "count_mean_abs_error": 0.19,
+          "unparsed": 15,
+          "usd_per_conversation": 9.457680000000001e-05,
+          "prompt_tokens_mean": 557.12
+        },
+        "qwen3.5-27b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.8087739032620922,
+          "ci": [
+            0.7806310001544926,
+            0.8353917024069799
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.69,
+            "present": 0.885,
+            "absent": 0.945,
+            "order": 0.75,
+            "repeated": 0.5168539325842697,
+            "count_other": 0.8
+          },
+          "count_mean_abs_error": 0.23,
+          "unparsed": 4,
+          "usd_per_conversation": 0.00022799400000000005,
+          "prompt_tokens_mean": 551.38
+        },
+        "qwen3.5-27b@75->jev": {
+          "accuracy": 0.859392575928009,
+          "ci": [
+            0.8310667659184607,
+            0.8855371642012002
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.95,
+            "last": 0.89,
+            "present": 0.855,
+            "absent": 0.9,
+            "order": 0.86,
+            "repeated": 0.6404494382022472
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-27b@200->qwen3.5-9b": {
+          "accuracy": 0.8222722159730034,
+          "ci": [
+            0.7914271425263534,
+            0.8503979032115367
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.86,
+            "present": 0.825,
+            "absent": 0.89,
+            "order": 0.81,
+            "repeated": 0.6292134831460674,
+            "count_other": 0.8
+          },
+          "count_mean_abs_error": 0.24,
+          "unparsed": 0,
+          "usd_per_conversation": 7.27955e-05,
+          "prompt_tokens_mean": 665.78
+        },
+        "qwen3.5-27b@200->qwen3.5-27b": {
+          "accuracy": 0.8875140607424072,
+          "ci": [
+            0.8603564246320728,
+            0.9127997481334201
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.93,
+            "present": 0.895,
+            "absent": 0.925,
+            "order": 0.88,
+            "repeated": 0.7303370786516854,
+            "count_other": 0.84
+          },
+          "count_mean_abs_error": 0.18181818181818182,
+          "unparsed": 8,
+          "usd_per_conversation": 0.0001938339,
+          "prompt_tokens_mean": 665.78
+        },
+        "qwen3.5-27b@200->gemma-4-31b": {
+          "accuracy": 0.9280089988751407,
+          "ci": [
+            0.9088863892013498,
+            0.9462571579456378
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.95,
+            "last": 0.96,
+            "present": 0.945,
+            "absent": 0.955,
+            "order": 0.945,
+            "repeated": 0.7303370786516854,
+            "count_other": 0.85
+          },
+          "count_mean_abs_error": 0.17,
+          "unparsed": 6,
+          "usd_per_conversation": 0.00011045139999999999,
+          "prompt_tokens_mean": 670.51
+        },
+        "qwen3.5-27b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.8571428571428571,
+          "ci": [
+            0.8329502569657883,
+            0.8811673142868738
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.87,
+            "present": 0.91,
+            "absent": 0.915,
+            "order": 0.845,
+            "repeated": 0.6067415730337079,
+            "count_other": 0.82
+          },
+          "count_mean_abs_error": 0.20202020202020202,
+          "unparsed": 6,
+          "usd_per_conversation": 0.00025909,
+          "prompt_tokens_mean": 665.78
+        },
+        "qwen3.5-27b@200->jev": {
+          "accuracy": 0.8886389201349831,
+          "ci": [
+            0.8645200028632126,
+            0.9119713097375243
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.96,
+            "present": 0.875,
+            "absent": 0.92,
+            "order": 0.9,
+            "repeated": 0.7303370786516854
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "gemma-4-31b@25->qwen3.5-9b": {
+          "accuracy": 0.7300337457817773,
+          "ci": [
+            0.7013284098715848,
+            0.7590225478287276
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.74,
+            "last": 0.61,
+            "present": 0.865,
+            "absent": 0.865,
+            "order": 0.68,
+            "repeated": 0.3595505617977528,
+            "count_other": 0.25
+          },
+          "count_mean_abs_error": 1.55,
+          "unparsed": 0,
+          "usd_per_conversation": 5.62105e-05,
+          "prompt_tokens_mean": 499.93
+        },
+        "gemma-4-31b@25->qwen3.5-27b": {
+          "accuracy": 0.7795275590551181,
+          "ci": [
+            0.7508347520145273,
+            0.8070075695337956
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.7,
+            "present": 0.89,
+            "absent": 0.895,
+            "order": 0.74,
+            "repeated": 0.3595505617977528,
+            "count_other": 0.3
+          },
+          "count_mean_abs_error": 1.58,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00016058835,
+          "prompt_tokens_mean": 499.93
+        },
+        "gemma-4-31b@25->gemma-4-31b": {
+          "accuracy": 0.8380202474690663,
+          "ci": [
+            0.8137625865523626,
+            0.863237610022194
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.88,
+            "present": 0.91,
+            "absent": 0.905,
+            "order": 0.905,
+            "repeated": 0.25842696629213485,
+            "count_other": 0.39
+          },
+          "count_mean_abs_error": 1.4343434343434343,
+          "unparsed": 41,
+          "usd_per_conversation": 8.745520000000001e-05,
+          "prompt_tokens_mean": 506.28
+        },
+        "gemma-4-31b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.7232845894263217,
+          "ci": [
+            0.6950634643155734,
+            0.7505714601617204
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.85,
+            "last": 0.61,
+            "present": 0.86,
+            "absent": 0.895,
+            "order": 0.6,
+            "repeated": 0.29213483146067415,
+            "count_other": 0.35
+          },
+          "count_mean_abs_error": 1.5,
+          "unparsed": 12,
+          "usd_per_conversation": 0.00021490820000000005,
+          "prompt_tokens_mean": 499.93
+        },
+        "gemma-4-31b@25->jev": {
+          "accuracy": 0.8065241844769404,
+          "ci": [
+            0.7751642936411473,
+            0.8374854949000449
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.89,
+            "last": 0.86,
+            "present": 0.825,
+            "absent": 0.82,
+            "order": 0.855,
+            "repeated": 0.47191011235955055
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "gemma-4-31b@75->qwen3.5-9b": {
+          "accuracy": 0.7806524184476941,
+          "ci": [
+            0.7499929218573046,
+            0.8096953765563316
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.77,
+            "present": 0.83,
+            "absent": 0.89,
+            "order": 0.72,
+            "repeated": 0.5056179775280899,
+            "count_other": 0.53
+          },
+          "count_mean_abs_error": 0.63,
+          "unparsed": 0,
+          "usd_per_conversation": 5.9931499999999994e-05,
+          "prompt_tokens_mean": 537.14
+        },
+        "gemma-4-31b@75->qwen3.5-27b": {
+          "accuracy": 0.8582677165354331,
+          "ci": [
+            0.8352141306218304,
+            0.8816234498308907
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.92,
+            "present": 0.905,
+            "absent": 0.94,
+            "order": 0.82,
+            "repeated": 0.5393258426966292,
+            "count_other": 0.68
+          },
+          "count_mean_abs_error": 0.51,
+          "unparsed": 1,
+          "usd_per_conversation": 0.0001678911,
+          "prompt_tokens_mean": 537.14
+        },
+        "gemma-4-31b@75->gemma-4-31b": {
+          "accuracy": 0.9032620922384702,
+          "ci": [
+            0.8811659192825112,
+            0.9247191011235955
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.96,
+            "last": 0.93,
+            "present": 0.92,
+            "absent": 0.965,
+            "order": 0.935,
+            "repeated": 0.5617977528089888,
+            "count_other": 0.69
+          },
+          "count_mean_abs_error": 0.57,
+          "unparsed": 18,
+          "usd_per_conversation": 9.257900000000001e-05,
+          "prompt_tokens_mean": 542.85
+        },
+        "gemma-4-31b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.8065241844769404,
+          "ci": [
+            0.7814234105061023,
+            0.8331466965285554
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.89,
+            "last": 0.74,
+            "present": 0.9,
+            "absent": 0.925,
+            "order": 0.755,
+            "repeated": 0.42696629213483145,
+            "count_other": 0.71
+          },
+          "count_mean_abs_error": 0.42,
+          "unparsed": 5,
+          "usd_per_conversation": 0.00022425,
+          "prompt_tokens_mean": 537.14
+        },
+        "gemma-4-31b@75->jev": {
+          "accuracy": 0.8571428571428571,
+          "ci": [
+            0.8286173677275684,
+            0.8844082063573588
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.92,
+            "last": 0.94,
+            "present": 0.86,
+            "absent": 0.885,
+            "order": 0.875,
+            "repeated": 0.5842696629213483
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "gemma-4-31b@200->qwen3.5-9b": {
+          "accuracy": 0.8245219347581553,
+          "ci": [
+            0.7918787679629934,
+            0.8537497691384246
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.89,
+            "present": 0.82,
+            "absent": 0.91,
+            "order": 0.795,
+            "repeated": 0.5842696629213483,
+            "count_other": 0.69
+          },
+          "count_mean_abs_error": 0.36,
+          "unparsed": 0,
+          "usd_per_conversation": 6.39515e-05,
+          "prompt_tokens_mean": 577.34
+        },
+        "gemma-4-31b@200->qwen3.5-27b": {
+          "accuracy": 0.8706411698537683,
+          "ci": [
+            0.8414482341745787,
+            0.8977528089887641
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.94,
+            "last": 0.93,
+            "present": 0.89,
+            "absent": 0.94,
+            "order": 0.835,
+            "repeated": 0.6067415730337079,
+            "count_other": 0.79
+          },
+          "count_mean_abs_error": 0.26262626262626265,
+          "unparsed": 7,
+          "usd_per_conversation": 0.00017646330000000004,
+          "prompt_tokens_mean": 577.34
+        },
+        "gemma-4-31b@200->gemma-4-31b": {
+          "accuracy": 0.9178852643419573,
+          "ci": [
+            0.9001094276094276,
+            0.9357402533593345
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.97,
+            "last": 0.98,
+            "present": 0.92,
+            "absent": 0.975,
+            "order": 0.945,
+            "repeated": 0.5955056179775281,
+            "count_other": 0.8
+          },
+          "count_mean_abs_error": 0.25,
+          "unparsed": 16,
+          "usd_per_conversation": 9.82028e-05,
+          "prompt_tokens_mean": 583.02
+        },
+        "gemma-4-31b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.8492688413948256,
+          "ci": [
+            0.82559456398641,
+            0.8713354549410726
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.94,
+            "last": 0.86,
+            "present": 0.885,
+            "absent": 0.935,
+            "order": 0.85,
+            "repeated": 0.4606741573033708,
+            "count_other": 0.77
+          },
+          "count_mean_abs_error": 0.2653061224489796,
+          "unparsed": 10,
+          "usd_per_conversation": 0.00023688599999999998,
+          "prompt_tokens_mean": 577.34
+        },
+        "gemma-4-31b@200->jev": {
+          "accuracy": 0.8773903262092239,
+          "ci": [
+            0.8485850025680535,
+            0.9036351803291149
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.93,
+            "last": 0.95,
+            "present": 0.86,
+            "absent": 0.9,
+            "order": 0.885,
+            "repeated": 0.7078651685393258
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-122b-a10b@25->qwen3.5-9b": {
+          "accuracy": 0.7232845894263217,
+          "ci": [
+            0.6971649377397351,
+            0.7528425234938183
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.75,
+            "last": 0.49,
+            "present": 0.84,
+            "absent": 0.87,
+            "order": 0.72,
+            "repeated": 0.3707865168539326,
+            "count_other": 0.39
+          },
+          "count_mean_abs_error": 1.08,
+          "unparsed": 0,
+          "usd_per_conversation": 5.60735e-05,
+          "prompt_tokens_mean": 498.56
+        },
+        "qwen3.5-122b-a10b@25->qwen3.5-27b": {
+          "accuracy": 0.7435320584926884,
+          "ci": [
+            0.7104377104377104,
+            0.7748904089194734
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.6,
+            "present": 0.875,
+            "absent": 0.835,
+            "order": 0.755,
+            "repeated": 0.2696629213483146,
+            "count_other": 0.39
+          },
+          "count_mean_abs_error": 1.09,
+          "unparsed": 1,
+          "usd_per_conversation": 0.000160368,
+          "prompt_tokens_mean": 498.56
+        },
+        "qwen3.5-122b-a10b@25->gemma-4-31b": {
+          "accuracy": 0.7952755905511811,
+          "ci": [
+            0.7660191401856018,
+            0.8221989345046479
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.89,
+            "last": 0.77,
+            "present": 0.885,
+            "absent": 0.85,
+            "order": 0.875,
+            "repeated": 0.21348314606741572,
+            "count_other": 0.51
+          },
+          "count_mean_abs_error": 0.87,
+          "unparsed": 41,
+          "usd_per_conversation": 8.71918e-05,
+          "prompt_tokens_mean": 504.37
+        },
+        "qwen3.5-122b-a10b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.7019122609673791,
+          "ci": [
+            0.6726649112994955,
+            0.7312518468166271
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.54,
+            "present": 0.845,
+            "absent": 0.865,
+            "order": 0.605,
+            "repeated": 0.25842696629213485,
+            "count_other": 0.41
+          },
+          "count_mean_abs_error": 1.0,
+          "unparsed": 10,
+          "usd_per_conversation": 0.00021438559999999998,
+          "prompt_tokens_mean": 498.56
+        },
+        "qwen3.5-122b-a10b@25->jev": {
+          "accuracy": 0.7761529808773904,
+          "ci": [
+            0.7440746487972334,
+            0.808775143915834
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.89,
+            "last": 0.78,
+            "present": 0.81,
+            "absent": 0.76,
+            "order": 0.85,
+            "repeated": 0.43820224719101125
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-122b-a10b@75->qwen3.5-9b": {
+          "accuracy": 0.7874015748031497,
+          "ci": [
+            0.7547247840726101,
+            0.8165397298391437
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.65,
+            "present": 0.86,
+            "absent": 0.895,
+            "order": 0.775,
+            "repeated": 0.5280898876404494,
+            "count_other": 0.65
+          },
+          "count_mean_abs_error": 0.39,
+          "unparsed": 0,
+          "usd_per_conversation": 6.10005e-05,
+          "prompt_tokens_mean": 547.83
+        },
+        "qwen3.5-122b-a10b@75->qwen3.5-27b": {
+          "accuracy": 0.8571428571428571,
+          "ci": [
+            0.8352051265027629,
+            0.8804960541149943
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.89,
+            "last": 0.83,
+            "present": 0.89,
+            "absent": 0.96,
+            "order": 0.835,
+            "repeated": 0.5955056179775281,
+            "count_other": 0.71
+          },
+          "count_mean_abs_error": 0.39,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00016992884999999998,
+          "prompt_tokens_mean": 547.83
+        },
+        "qwen3.5-122b-a10b@75->gemma-4-31b": {
+          "accuracy": 0.8920134983127109,
+          "ci": [
+            0.8675570856673219,
+            0.9163865401538049
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.89,
+            "present": 0.915,
+            "absent": 0.965,
+            "order": 0.925,
+            "repeated": 0.5842696629213483,
+            "count_other": 0.78
+          },
+          "count_mean_abs_error": 0.26,
+          "unparsed": 15,
+          "usd_per_conversation": 9.399440000000002e-05,
+          "prompt_tokens_mean": 552.96
+        },
+        "qwen3.5-122b-a10b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.7941507311586051,
+          "ci": [
+            0.7634514133568225,
+            0.8245942831375104
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.85,
+            "last": 0.66,
+            "present": 0.88,
+            "absent": 0.925,
+            "order": 0.76,
+            "repeated": 0.47191011235955055,
+            "count_other": 0.71
+          },
+          "count_mean_abs_error": 0.36,
+          "unparsed": 2,
+          "usd_per_conversation": 0.00022669660000000007,
+          "prompt_tokens_mean": 547.83
+        },
+        "qwen3.5-122b-a10b@75->jev": {
+          "accuracy": 0.8380202474690663,
+          "ci": [
+            0.8083361802922118,
+            0.8685452997102039
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.88,
+            "present": 0.85,
+            "absent": 0.87,
+            "order": 0.85,
+            "repeated": 0.6292134831460674
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-122b-a10b@200->qwen3.5-9b": {
+          "accuracy": 0.813273340832396,
+          "ci": [
+            0.7835362582356193,
+            0.8413554688478593
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.8,
+            "present": 0.82,
+            "absent": 0.89,
+            "order": 0.81,
+            "repeated": 0.5842696629213483,
+            "count_other": 0.72
+          },
+          "count_mean_abs_error": 0.32,
+          "unparsed": 0,
+          "usd_per_conversation": 7.122649999999999e-05,
+          "prompt_tokens_mean": 650.09
+        },
+        "qwen3.5-122b-a10b@200->qwen3.5-27b": {
+          "accuracy": 0.8717660292463442,
+          "ci": [
+            0.8455467869222097,
+            0.8950397703007749
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.89,
+            "present": 0.88,
+            "absent": 0.935,
+            "order": 0.86,
+            "repeated": 0.6741573033707865,
+            "count_other": 0.8
+          },
+          "count_mean_abs_error": 0.21212121212121213,
+          "unparsed": 7,
+          "usd_per_conversation": 0.00019063395000000003,
+          "prompt_tokens_mean": 650.09
+        },
+        "qwen3.5-122b-a10b@200->gemma-4-31b": {
+          "accuracy": 0.9178852643419573,
+          "ci": [
+            0.8949078437333738,
+            0.9383568632667021
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.94,
+            "last": 0.96,
+            "present": 0.915,
+            "absent": 0.965,
+            "order": 0.94,
+            "repeated": 0.6966292134831461,
+            "count_other": 0.82
+          },
+          "count_mean_abs_error": 0.19,
+          "unparsed": 8,
+          "usd_per_conversation": 0.0001082506,
+          "prompt_tokens_mean": 654.79
+        },
+        "qwen3.5-122b-a10b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.8582677165354331,
+          "ci": [
+            0.8359500345238843,
+            0.8806339874745387
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.89,
+            "last": 0.86,
+            "present": 0.91,
+            "absent": 0.935,
+            "order": 0.835,
+            "repeated": 0.5842696629213483,
+            "count_other": 0.77
+          },
+          "count_mean_abs_error": 0.26,
+          "unparsed": 4,
+          "usd_per_conversation": 0.00025394979999999995,
+          "prompt_tokens_mean": 650.09
+        },
+        "qwen3.5-122b-a10b@200->jev": {
+          "accuracy": 0.8740157480314961,
+          "ci": [
+            0.848643697950032,
+            0.8998903262092238
+          ],
+          "n_questions": 889,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.93,
+            "present": 0.86,
+            "absent": 0.915,
+            "order": 0.9,
+            "repeated": 0.6853932584269663
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        }
+      }
+    },
+    "20_turns": {
+      "n_conversations": 100,
+      "raw_words_mean": 235.14,
+      "writers": {
+        "qwen3.5-9b@25": {
+          "words_mean": 17.74,
+          "share_cut": 0.01,
+          "usd_per_conversation": 4.3651999999999995e-05
+        },
+        "qwen3.5-9b@75": {
+          "words_mean": 61.96,
+          "share_cut": 0.04,
+          "usd_per_conversation": 5.209099999999999e-05
+        },
+        "qwen3.5-9b@200": {
+          "words_mean": 149.26,
+          "share_cut": 0.0,
+          "usd_per_conversation": 6.71445e-05
+        },
+        "qwen3.5-27b@25": {
+          "words_mean": 24.59,
+          "share_cut": 0.37,
+          "usd_per_conversation": 0.00013982085000000002
+        },
+        "qwen3.5-27b@75": {
+          "words_mean": 56.17,
+          "share_cut": 0.03,
+          "usd_per_conversation": 0.00021783645
+        },
+        "qwen3.5-27b@200": {
+          "words_mean": 159.65,
+          "share_cut": 0.03,
+          "usd_per_conversation": 0.00047811465
+        },
+        "gemma-4-31b@25": {
+          "words_mean": 24.97,
+          "share_cut": 0.32,
+          "usd_per_conversation": 7.430119999999999e-05
+        },
+        "gemma-4-31b@75": {
+          "words_mean": 65.79,
+          "share_cut": 0.07,
+          "usd_per_conversation": 0.00010012519999999998
+        },
+        "gemma-4-31b@200": {
+          "words_mean": 119.81,
+          "share_cut": 0.0,
+          "usd_per_conversation": 0.0001359532
+        },
+        "qwen3.5-122b-a10b@25": {
+          "words_mean": 23.39,
+          "share_cut": 0.22,
+          "usd_per_conversation": 0.00017777500000000003
+        },
+        "qwen3.5-122b-a10b@75": {
+          "words_mean": 63.19,
+          "share_cut": 0.02,
+          "usd_per_conversation": 0.0003061734
+        },
+        "qwen3.5-122b-a10b@200": {
+          "words_mean": 161.32,
+          "share_cut": 0.03,
+          "usd_per_conversation": 0.000586339
+        }
+      },
+      "raw": {
+        "qwen3.5-9b": {
+          "accuracy": 0.696329254727475,
+          "ci": [
+            0.6622222222222223,
+            0.731924360400445
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.64,
+            "present": 0.745,
+            "absent": 0.745,
+            "order": 0.665,
+            "repeated": 0.4444444444444444,
+            "count_other": 0.31
+          },
+          "count_mean_abs_error": 0.89,
+          "unparsed": 0,
+          "usd_per_conversation": 8.4208e-05,
+          "prompt_tokens_mean": 779.14
+        },
+        "qwen3.5-27b": {
+          "accuracy": 0.8253615127919911,
+          "ci": [
+            0.7955555555555556,
+            0.8509454949944383
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.88,
+            "present": 0.845,
+            "absent": 0.82,
+            "order": 0.815,
+            "repeated": 0.6767676767676768,
+            "count_other": 0.4
+          },
+          "count_mean_abs_error": 0.71,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00021582990000000005,
+          "prompt_tokens_mean": 779.14
+        },
+        "gemma-4-31b": {
+          "accuracy": 0.8620689655172413,
+          "ci": [
+            0.8353726362625139,
+            0.8853038577880397
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.94,
+            "last": 0.94,
+            "present": 0.85,
+            "absent": 0.82,
+            "order": 0.895,
+            "repeated": 0.7474747474747475,
+            "count_other": 0.46
+          },
+          "count_mean_abs_error": 0.59,
+          "unparsed": 0,
+          "usd_per_conversation": 0.000126848,
+          "prompt_tokens_mean": 786.2
+        },
+        "qwen3.5-122b-a10b": {
+          "accuracy": 0.7919911012235817,
+          "ci": [
+            0.7588888888888888,
+            0.8203324652777778
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.76,
+            "present": 0.83,
+            "absent": 0.795,
+            "order": 0.815,
+            "repeated": 0.5858585858585859,
+            "count_other": 0.41
+          },
+          "count_mean_abs_error": 0.69,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0002877524,
+          "prompt_tokens_mean": 779.14
+        },
+        "jev": {
+          "accuracy": 0.8309232480533927,
+          "ci": [
+            0.8044444444444444,
+            0.8565072302558399
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.93,
+            "last": 0.94,
+            "present": 0.82,
+            "absent": 0.785,
+            "order": 0.84,
+            "repeated": 0.7171717171717171
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        }
+      },
+      "cells": {
+        "qwen3.5-9b@25->qwen3.5-9b": {
+          "accuracy": 0.4949944382647386,
+          "ci": [
+            0.46051167964404893,
+            0.5333351893095768
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.52,
+            "last": 0.34,
+            "present": 0.585,
+            "absent": 0.53,
+            "order": 0.58,
+            "repeated": 0.20202020202020202,
+            "count_other": 0.06
+          },
+          "count_mean_abs_error": 3.27,
+          "unparsed": 0,
+          "usd_per_conversation": 5.5885500000000006e-05,
+          "prompt_tokens_mean": 495.93
+        },
+        "qwen3.5-9b@25->qwen3.5-27b": {
+          "accuracy": 0.474972191323693,
+          "ci": [
+            0.4410955691509084,
+            0.5133333333333333
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.53,
+            "last": 0.28,
+            "present": 0.525,
+            "absent": 0.515,
+            "order": 0.545,
+            "repeated": 0.29292929292929293,
+            "count_other": 0.06
+          },
+          "count_mean_abs_error": 3.37,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00016058834999999996,
+          "prompt_tokens_mean": 495.93
+        },
+        "qwen3.5-9b@25->gemma-4-31b": {
+          "accuracy": 0.5150166852057843,
+          "ci": [
+            0.4827586206896552,
+            0.5477930107526882
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.67,
+            "last": 0.29,
+            "present": 0.595,
+            "absent": 0.5,
+            "order": 0.595,
+            "repeated": 0.29292929292929293,
+            "count_other": 0.08
+          },
+          "count_mean_abs_error": 3.35,
+          "unparsed": 1,
+          "usd_per_conversation": 8.71048e-05,
+          "prompt_tokens_mean": 500.92
+        },
+        "qwen3.5-9b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.4760845383759733,
+          "ci": [
+            0.4471605698391499,
+            0.5066807563959956
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.54,
+            "last": 0.3,
+            "present": 0.565,
+            "absent": 0.46,
+            "order": 0.535,
+            "repeated": 0.32323232323232326,
+            "count_other": 0.05
+          },
+          "count_mean_abs_error": 3.67,
+          "unparsed": 18,
+          "usd_per_conversation": 0.000214409,
+          "prompt_tokens_mean": 495.93
+        },
+        "qwen3.5-9b@25->jev": {
+          "accuracy": 0.45272525027808674,
+          "ci": [
+            0.42139734299516907,
+            0.48559615384615384
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.66,
+            "last": 0.3,
+            "present": 0.445,
+            "absent": 0.395,
+            "order": 0.55,
+            "repeated": 0.3333333333333333
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-9b@75->qwen3.5-9b": {
+          "accuracy": 0.6117908787541713,
+          "ci": [
+            0.5777777777777777,
+            0.6451711469534049
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.73,
+            "last": 0.52,
+            "present": 0.7,
+            "absent": 0.63,
+            "order": 0.655,
+            "repeated": 0.2828282828282828,
+            "count_other": 0.26
+          },
+          "count_mean_abs_error": 1.92,
+          "unparsed": 0,
+          "usd_per_conversation": 6.149650000000002e-05,
+          "prompt_tokens_mean": 552.04
+        },
+        "qwen3.5-9b@75->qwen3.5-27b": {
+          "accuracy": 0.64293659621802,
+          "ci": [
+            0.6122222222222222,
+            0.6740829344112507
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.76,
+            "last": 0.58,
+            "present": 0.735,
+            "absent": 0.665,
+            "order": 0.655,
+            "repeated": 0.3333333333333333,
+            "count_other": 0.23
+          },
+          "count_mean_abs_error": 1.99,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0001715454,
+          "prompt_tokens_mean": 552.04
+        },
+        "qwen3.5-9b@75->gemma-4-31b": {
+          "accuracy": 0.664071190211346,
+          "ci": [
+            0.6329254727474972,
+            0.694573690326329
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.81,
+            "last": 0.57,
+            "present": 0.73,
+            "absent": 0.7,
+            "order": 0.71,
+            "repeated": 0.31313131313131315,
+            "count_other": 0.26
+          },
+          "count_mean_abs_error": 1.84,
+          "unparsed": 10,
+          "usd_per_conversation": 9.473560000000001e-05,
+          "prompt_tokens_mean": 556.74
+        },
+        "qwen3.5-9b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.628476084538376,
+          "ci": [
+            0.5977665925101965,
+            0.6603563474387528
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.81,
+            "last": 0.51,
+            "present": 0.715,
+            "absent": 0.685,
+            "order": 0.6,
+            "repeated": 0.3333333333333333,
+            "count_other": 0.25
+          },
+          "count_mean_abs_error": 1.94,
+          "unparsed": 1,
+          "usd_per_conversation": 0.00022876880000000002,
+          "prompt_tokens_mean": 552.04
+        },
+        "qwen3.5-9b@75->jev": {
+          "accuracy": 0.6384872080088988,
+          "ci": [
+            0.6077668705969596,
+            0.6744541573867854
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.81,
+            "last": 0.59,
+            "present": 0.67,
+            "absent": 0.615,
+            "order": 0.715,
+            "repeated": 0.3434343434343434
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-9b@200->qwen3.5-9b": {
+          "accuracy": 0.681868743047831,
+          "ci": [
+            0.6433333333333333,
+            0.7155555555555555
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.81,
+            "last": 0.61,
+            "present": 0.765,
+            "absent": 0.77,
+            "order": 0.64,
+            "repeated": 0.36363636363636365,
+            "count_other": 0.33
+          },
+          "count_mean_abs_error": 1.0,
+          "unparsed": 0,
+          "usd_per_conversation": 7.1302e-05,
+          "prompt_tokens_mean": 650.08
+        },
+        "qwen3.5-9b@200->qwen3.5-27b": {
+          "accuracy": 0.7119021134593994,
+          "ci": [
+            0.6740823136818688,
+            0.743047830923248
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.83,
+            "last": 0.64,
+            "present": 0.81,
+            "absent": 0.77,
+            "order": 0.705,
+            "repeated": 0.36363636363636365,
+            "count_other": 0.33
+          },
+          "count_mean_abs_error": 0.93,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00019064759999999997,
+          "prompt_tokens_mean": 650.08
+        },
+        "qwen3.5-9b@200->gemma-4-31b": {
+          "accuracy": 0.743047830923248,
+          "ci": [
+            0.7119021134593994,
+            0.7731880819366852
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.67,
+            "present": 0.825,
+            "absent": 0.79,
+            "order": 0.735,
+            "repeated": 0.4444444444444444,
+            "count_other": 0.43
+          },
+          "count_mean_abs_error": 0.89,
+          "unparsed": 3,
+          "usd_per_conversation": 0.00010839880000000002,
+          "prompt_tokens_mean": 654.42
+        },
+        "qwen3.5-9b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.7130144605116796,
+          "ci": [
+            0.6811111111111111,
+            0.7433468819599108
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.85,
+            "last": 0.64,
+            "present": 0.795,
+            "absent": 0.765,
+            "order": 0.725,
+            "repeated": 0.35353535353535354,
+            "count_other": 0.31
+          },
+          "count_mean_abs_error": 1.05,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0002541968,
+          "prompt_tokens_mean": 650.08
+        },
+        "qwen3.5-9b@200->jev": {
+          "accuracy": 0.7163515016685206,
+          "ci": [
+            0.6796440489432704,
+            0.7486095661846496
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.69,
+            "present": 0.78,
+            "absent": 0.73,
+            "order": 0.725,
+            "repeated": 0.42424242424242425
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-27b@25->qwen3.5-9b": {
+          "accuracy": 0.5773081201334817,
+          "ci": [
+            0.5455555555555556,
+            0.6102449888641426
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.67,
+            "last": 0.35,
+            "present": 0.69,
+            "absent": 0.615,
+            "order": 0.655,
+            "repeated": 0.25252525252525254,
+            "count_other": 0.01
+          },
+          "count_mean_abs_error": 3.78,
+          "unparsed": 0,
+          "usd_per_conversation": 5.7026499999999993e-05,
+          "prompt_tokens_mean": 507.34
+        },
+        "qwen3.5-27b@25->qwen3.5-27b": {
+          "accuracy": 0.6028921023359288,
+          "ci": [
+            0.5667836550358822,
+            0.6411368450390189
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.66,
+            "last": 0.44,
+            "present": 0.665,
+            "absent": 0.67,
+            "order": 0.675,
+            "repeated": 0.30303030303030304,
+            "count_other": 0.03
+          },
+          "count_mean_abs_error": 3.77,
+          "unparsed": 1,
+          "usd_per_conversation": 0.00016286010000000003,
+          "prompt_tokens_mean": 507.34
+        },
+        "qwen3.5-27b@25->gemma-4-31b": {
+          "accuracy": 0.6562847608453838,
+          "ci": [
+            0.6184649610678532,
+            0.6956606468480682
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.55,
+            "present": 0.685,
+            "absent": 0.67,
+            "order": 0.75,
+            "repeated": 0.30303030303030304,
+            "count_other": 0.03
+          },
+          "count_mean_abs_error": 3.65,
+          "unparsed": 5,
+          "usd_per_conversation": 8.864060000000002e-05,
+          "prompt_tokens_mean": 513.29
+        },
+        "qwen3.5-27b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.5717463848720801,
+          "ci": [
+            0.5399872080088988,
+            0.6035744987625449
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.69,
+            "last": 0.31,
+            "present": 0.7,
+            "absent": 0.61,
+            "order": 0.63,
+            "repeated": 0.26262626262626265,
+            "count_other": 0.02
+          },
+          "count_mean_abs_error": 3.78,
+          "unparsed": 1,
+          "usd_per_conversation": 0.00021714679999999996,
+          "prompt_tokens_mean": 507.34
+        },
+        "qwen3.5-27b@25->jev": {
+          "accuracy": 0.625139043381535,
+          "ci": [
+            0.5857413387775303,
+            0.6651835372636262
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.81,
+            "last": 0.55,
+            "present": 0.66,
+            "absent": 0.6,
+            "order": 0.725,
+            "repeated": 0.29292929292929293
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-27b@75->qwen3.5-9b": {
+          "accuracy": 0.67853170189099,
+          "ci": [
+            0.646273637374861,
+            0.7089005196733482
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.85,
+            "last": 0.6,
+            "present": 0.735,
+            "absent": 0.765,
+            "order": 0.655,
+            "repeated": 0.3434343434343434,
+            "count_other": 0.4
+          },
+          "count_mean_abs_error": 1.17,
+          "unparsed": 0,
+          "usd_per_conversation": 6.23885e-05,
+          "prompt_tokens_mean": 560.9
+        },
+        "qwen3.5-27b@75->qwen3.5-27b": {
+          "accuracy": 0.7241379310344828,
+          "ci": [
+            0.6922969966629589,
+            0.7577921306607275
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.85,
+            "last": 0.72,
+            "present": 0.78,
+            "absent": 0.745,
+            "order": 0.75,
+            "repeated": 0.3939393939393939,
+            "count_other": 0.47
+          },
+          "count_mean_abs_error": 0.96,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00017328870000000003,
+          "prompt_tokens_mean": 560.9
+        },
+        "qwen3.5-27b@75->gemma-4-31b": {
+          "accuracy": 0.7764182424916574,
+          "ci": [
+            0.7483158252907697,
+            0.8020190587088589
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.83,
+            "present": 0.79,
+            "absent": 0.785,
+            "order": 0.825,
+            "repeated": 0.4444444444444444,
+            "count_other": 0.44
+          },
+          "count_mean_abs_error": 0.88,
+          "unparsed": 13,
+          "usd_per_conversation": 9.612220000000001e-05,
+          "prompt_tokens_mean": 566.73
+        },
+        "qwen3.5-27b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.7185761957730812,
+          "ci": [
+            0.6866666666666666,
+            0.7488888888888889
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.7,
+            "present": 0.775,
+            "absent": 0.745,
+            "order": 0.69,
+            "repeated": 0.46464646464646464,
+            "count_other": 0.44
+          },
+          "count_mean_abs_error": 1.02,
+          "unparsed": 1,
+          "usd_per_conversation": 0.0002311972,
+          "prompt_tokens_mean": 560.9
+        },
+        "qwen3.5-27b@75->jev": {
+          "accuracy": 0.7274749721913237,
+          "ci": [
+            0.6963208006421389,
+            0.7589033036377134
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.8,
+            "present": 0.76,
+            "absent": 0.71,
+            "order": 0.75,
+            "repeated": 0.40404040404040403
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-27b@200->qwen3.5-9b": {
+          "accuracy": 0.7508342602892102,
+          "ci": [
+            0.7188611111111112,
+            0.7814999515832284
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.8,
+            "present": 0.775,
+            "absent": 0.765,
+            "order": 0.75,
+            "repeated": 0.494949494949495,
+            "count_other": 0.54
+          },
+          "count_mean_abs_error": 0.68,
+          "unparsed": 0,
+          "usd_per_conversation": 7.892649999999999e-05,
+          "prompt_tokens_mean": 726.31
+        },
+        "qwen3.5-27b@200->qwen3.5-27b": {
+          "accuracy": 0.8253615127919911,
+          "ci": [
+            0.797772154245458,
+            0.8509496353973551
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.91,
+            "present": 0.865,
+            "absent": 0.825,
+            "order": 0.84,
+            "repeated": 0.5454545454545454,
+            "count_other": 0.65
+          },
+          "count_mean_abs_error": 0.4387755102040816,
+          "unparsed": 5,
+          "usd_per_conversation": 0.00020704125000000002,
+          "prompt_tokens_mean": 726.31
+        },
+        "qwen3.5-27b@200->gemma-4-31b": {
+          "accuracy": 0.8520578420467185,
+          "ci": [
+            0.8297878506983067,
+            0.8762576256415222
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.92,
+            "last": 0.93,
+            "present": 0.855,
+            "absent": 0.82,
+            "order": 0.92,
+            "repeated": 0.6262626262626263,
+            "count_other": 0.62
+          },
+          "count_mean_abs_error": 0.45,
+          "unparsed": 3,
+          "usd_per_conversation": 0.00011913260000000003,
+          "prompt_tokens_mean": 731.09
+        },
+        "qwen3.5-27b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.8075639599555061,
+          "ci": [
+            0.7811111111111111,
+            0.8342835147193987
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.89,
+            "present": 0.855,
+            "absent": 0.775,
+            "order": 0.82,
+            "repeated": 0.5757575757575758,
+            "count_other": 0.65
+          },
+          "count_mean_abs_error": 0.46464646464646464,
+          "unparsed": 4,
+          "usd_per_conversation": 0.00027516060000000003,
+          "prompt_tokens_mean": 726.31
+        },
+        "qwen3.5-27b@200->jev": {
+          "accuracy": 0.8231368186874305,
+          "ci": [
+            0.7906238929173965,
+            0.8520578420467185
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.96,
+            "present": 0.815,
+            "absent": 0.775,
+            "order": 0.86,
+            "repeated": 0.6363636363636364
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "gemma-4-31b@25->qwen3.5-9b": {
+          "accuracy": 0.6195773081201335,
+          "ci": [
+            0.5873192436040044,
+            0.6521835963977922
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.41,
+            "present": 0.73,
+            "absent": 0.67,
+            "order": 0.65,
+            "repeated": 0.24242424242424243,
+            "count_other": 0.04
+          },
+          "count_mean_abs_error": 3.87,
+          "unparsed": 0,
+          "usd_per_conversation": 5.7348499999999995e-05,
+          "prompt_tokens_mean": 510.56
+        },
+        "gemma-4-31b@25->qwen3.5-27b": {
+          "accuracy": 0.6373748609566184,
+          "ci": [
+            0.6057847686216283,
+            0.6696421023359288
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.78,
+            "last": 0.5,
+            "present": 0.755,
+            "absent": 0.675,
+            "order": 0.675,
+            "repeated": 0.24242424242424243,
+            "count_other": 0.04
+          },
+          "count_mean_abs_error": 3.84,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00016344119999999997,
+          "prompt_tokens_mean": 510.56
+        },
+        "gemma-4-31b@25->gemma-4-31b": {
+          "accuracy": 0.6807563959955506,
+          "ci": [
+            0.646273637374861,
+            0.7130144605116796
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.85,
+            "last": 0.59,
+            "present": 0.765,
+            "absent": 0.67,
+            "order": 0.77,
+            "repeated": 0.2727272727272727,
+            "count_other": 0.05
+          },
+          "count_mean_abs_error": 3.74,
+          "unparsed": 12,
+          "usd_per_conversation": 8.9132e-05,
+          "prompt_tokens_mean": 516.8
+        },
+        "gemma-4-31b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.5962180200222469,
+          "ci": [
+            0.5644444444444444,
+            0.6295884315906563
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.36,
+            "present": 0.705,
+            "absent": 0.645,
+            "order": 0.61,
+            "repeated": 0.26262626262626265,
+            "count_other": 0.04
+          },
+          "count_mean_abs_error": 3.88,
+          "unparsed": 7,
+          "usd_per_conversation": 0.00021869119999999998,
+          "prompt_tokens_mean": 510.56
+        },
+        "gemma-4-31b@25->jev": {
+          "accuracy": 0.6473859844271412,
+          "ci": [
+            0.6106568303937362,
+            0.6826280623608018
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.58,
+            "present": 0.7,
+            "absent": 0.625,
+            "order": 0.73,
+            "repeated": 0.2727272727272727
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "gemma-4-31b@75->qwen3.5-9b": {
+          "accuracy": 0.7241379310344828,
+          "ci": [
+            0.692992213570634,
+            0.754178130021011
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.92,
+            "last": 0.76,
+            "present": 0.775,
+            "absent": 0.77,
+            "order": 0.71,
+            "repeated": 0.32323232323232326,
+            "count_other": 0.28
+          },
+          "count_mean_abs_error": 2.17,
+          "unparsed": 0,
+          "usd_per_conversation": 6.404649999999998e-05,
+          "prompt_tokens_mean": 577.54
+        },
+        "gemma-4-31b@75->qwen3.5-27b": {
+          "accuracy": 0.764182424916574,
+          "ci": [
+            0.7330367074527252,
+            0.7942157953281423
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.84,
+            "present": 0.82,
+            "absent": 0.77,
+            "order": 0.795,
+            "repeated": 0.3939393939393939,
+            "count_other": 0.33
+          },
+          "count_mean_abs_error": 2.1717171717171717,
+          "unparsed": 2,
+          "usd_per_conversation": 0.0001772667,
+          "prompt_tokens_mean": 577.54
+        },
+        "gemma-4-31b@75->gemma-4-31b": {
+          "accuracy": 0.7997775305895439,
+          "ci": [
+            0.7719688542825361,
+            0.8255688405797101
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.88,
+            "present": 0.825,
+            "absent": 0.795,
+            "order": 0.875,
+            "repeated": 0.42424242424242425,
+            "count_other": 0.31
+          },
+          "count_mean_abs_error": 2.3838383838383836,
+          "unparsed": 14,
+          "usd_per_conversation": 9.84464e-05,
+          "prompt_tokens_mean": 583.36
+        },
+        "gemma-4-31b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.7630700778642937,
+          "ci": [
+            0.728587319243604,
+            0.7946485805860806
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.8,
+            "present": 0.805,
+            "absent": 0.785,
+            "order": 0.79,
+            "repeated": 0.3939393939393939,
+            "count_other": 0.38
+          },
+          "count_mean_abs_error": 1.85,
+          "unparsed": 2,
+          "usd_per_conversation": 0.0002355652,
+          "prompt_tokens_mean": 577.54
+        },
+        "gemma-4-31b@75->jev": {
+          "accuracy": 0.7619577308120133,
+          "ci": [
+            0.7277702076381164,
+            0.7911273199703044
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.92,
+            "last": 0.85,
+            "present": 0.785,
+            "absent": 0.745,
+            "order": 0.8,
+            "repeated": 0.42424242424242425
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "gemma-4-31b@200->qwen3.5-9b": {
+          "accuracy": 0.7441601779755284,
+          "ci": [
+            0.7111111111111111,
+            0.7744444444444445
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.79,
+            "present": 0.785,
+            "absent": 0.79,
+            "order": 0.705,
+            "repeated": 0.43434343434343436,
+            "count_other": 0.46
+          },
+          "count_mean_abs_error": 0.97,
+          "unparsed": 0,
+          "usd_per_conversation": 7.293299999999999e-05,
+          "prompt_tokens_mean": 666.39
+        },
+        "gemma-4-31b@200->qwen3.5-27b": {
+          "accuracy": 0.8008898776418243,
+          "ci": [
+            0.7728133506557783,
+            0.8283213905296796
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.92,
+            "present": 0.855,
+            "absent": 0.78,
+            "order": 0.815,
+            "repeated": 0.5050505050505051,
+            "count_other": 0.52
+          },
+          "count_mean_abs_error": 0.9,
+          "unparsed": 2,
+          "usd_per_conversation": 0.00019428045,
+          "prompt_tokens_mean": 666.39
+        },
+        "gemma-4-31b@200->gemma-4-31b": {
+          "accuracy": 0.8387096774193549,
+          "ci": [
+            0.8097833586439771,
+            0.8644609810479376
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.92,
+            "last": 0.92,
+            "present": 0.845,
+            "absent": 0.815,
+            "order": 0.905,
+            "repeated": 0.5757575757575758,
+            "count_other": 0.54
+          },
+          "count_mean_abs_error": 0.83,
+          "unparsed": 2,
+          "usd_per_conversation": 0.00011098179999999999,
+          "prompt_tokens_mean": 672.87
+        },
+        "gemma-4-31b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.8064516129032258,
+          "ci": [
+            0.7811050241008528,
+            0.8331479421579533
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.87,
+            "present": 0.845,
+            "absent": 0.8,
+            "order": 0.85,
+            "repeated": 0.48484848484848486,
+            "count_other": 0.5
+          },
+          "count_mean_abs_error": 0.9191919191919192,
+          "unparsed": 4,
+          "usd_per_conversation": 0.00025983099999999997,
+          "prompt_tokens_mean": 666.39
+        },
+        "gemma-4-31b@200->jev": {
+          "accuracy": 0.8175750834260289,
+          "ci": [
+            0.7875417130144605,
+            0.8453837597330367
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.95,
+            "present": 0.835,
+            "absent": 0.8,
+            "order": 0.865,
+            "repeated": 0.5050505050505051
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-122b-a10b@25->qwen3.5-9b": {
+          "accuracy": 0.5917686318131257,
+          "ci": [
+            0.5612316084934759,
+            0.6216623305363115
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.71,
+            "last": 0.44,
+            "present": 0.68,
+            "absent": 0.62,
+            "order": 0.665,
+            "repeated": 0.24242424242424243,
+            "count_other": 0.04
+          },
+          "count_mean_abs_error": 3.61,
+          "unparsed": 0,
+          "usd_per_conversation": 5.679749999999999e-05,
+          "prompt_tokens_mean": 505.05
+        },
+        "qwen3.5-122b-a10b@25->qwen3.5-27b": {
+          "accuracy": 0.5795328142380423,
+          "ci": [
+            0.5406006674082313,
+            0.6129139784946237
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.69,
+            "last": 0.47,
+            "present": 0.635,
+            "absent": 0.58,
+            "order": 0.67,
+            "repeated": 0.2828282828282828,
+            "count_other": 0.06
+          },
+          "count_mean_abs_error": 3.64,
+          "unparsed": 2,
+          "usd_per_conversation": 0.00016246034999999994,
+          "prompt_tokens_mean": 505.05
+        },
+        "qwen3.5-122b-a10b@25->gemma-4-31b": {
+          "accuracy": 0.625139043381535,
+          "ci": [
+            0.5906398776418242,
+            0.6588888888888889
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.52,
+            "present": 0.655,
+            "absent": 0.6,
+            "order": 0.74,
+            "repeated": 0.24242424242424243,
+            "count_other": 0.07
+          },
+          "count_mean_abs_error": 3.48,
+          "unparsed": 11,
+          "usd_per_conversation": 8.826120000000001e-05,
+          "prompt_tokens_mean": 510.58
+        },
+        "qwen3.5-122b-a10b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.5684093437152391,
+          "ci": [
+            0.5305764757178849,
+            0.6033333333333334
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.76,
+            "last": 0.48,
+            "present": 0.615,
+            "absent": 0.53,
+            "order": 0.635,
+            "repeated": 0.31313131313131315,
+            "count_other": 0.05
+          },
+          "count_mean_abs_error": 3.63,
+          "unparsed": 6,
+          "usd_per_conversation": 0.00021661379999999997,
+          "prompt_tokens_mean": 505.05
+        },
+        "qwen3.5-122b-a10b@25->jev": {
+          "accuracy": 0.5951056729699666,
+          "ci": [
+            0.55776867335563,
+            0.6300175194660734
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.81,
+            "last": 0.53,
+            "present": 0.61,
+            "absent": 0.545,
+            "order": 0.68,
+            "repeated": 0.3434343434343434
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-122b-a10b@75->qwen3.5-9b": {
+          "accuracy": 0.6651835372636262,
+          "ci": [
+            0.6333333333333333,
+            0.6959995453993673
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.56,
+            "present": 0.755,
+            "absent": 0.715,
+            "order": 0.655,
+            "repeated": 0.35353535353535354,
+            "count_other": 0.31
+          },
+          "count_mean_abs_error": 1.47,
+          "unparsed": 0,
+          "usd_per_conversation": 6.31505e-05,
+          "prompt_tokens_mean": 568.55
+        },
+        "qwen3.5-122b-a10b@75->qwen3.5-27b": {
+          "accuracy": 0.7308120133481646,
+          "ci": [
+            0.6988888888888889,
+            0.7614336206061779
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.73,
+            "present": 0.79,
+            "absent": 0.745,
+            "order": 0.775,
+            "repeated": 0.3434343434343434,
+            "count_other": 0.37
+          },
+          "count_mean_abs_error": 1.33,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00017474925000000003,
+          "prompt_tokens_mean": 568.55
+        },
+        "qwen3.5-122b-a10b@75->gemma-4-31b": {
+          "accuracy": 0.7563959955506118,
+          "ci": [
+            0.7285670807069583,
+            0.7842046718576196
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.82,
+            "present": 0.78,
+            "absent": 0.775,
+            "order": 0.79,
+            "repeated": 0.41414141414141414,
+            "count_other": 0.35
+          },
+          "count_mean_abs_error": 1.34,
+          "unparsed": 6,
+          "usd_per_conversation": 9.71092e-05,
+          "prompt_tokens_mean": 573.78
+        },
+        "qwen3.5-122b-a10b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.7085650723025584,
+          "ci": [
+            0.6766576751946607,
+            0.7374920236274433
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.87,
+            "last": 0.66,
+            "present": 0.78,
+            "absent": 0.71,
+            "order": 0.745,
+            "repeated": 0.37373737373737376,
+            "count_other": 0.34
+          },
+          "count_mean_abs_error": 1.4343434343434343,
+          "unparsed": 2,
+          "usd_per_conversation": 0.0002333318,
+          "prompt_tokens_mean": 568.55
+        },
+        "qwen3.5-122b-a10b@75->jev": {
+          "accuracy": 0.7074527252502781,
+          "ci": [
+            0.6733333333333333,
+            0.7397241515718568
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.89,
+            "last": 0.79,
+            "present": 0.715,
+            "absent": 0.67,
+            "order": 0.755,
+            "repeated": 0.40404040404040403
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-122b-a10b@200->qwen3.5-9b": {
+          "accuracy": 0.7352614015572859,
+          "ci": [
+            0.7007591768631813,
+            0.7694877505567929
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.72,
+            "present": 0.775,
+            "absent": 0.755,
+            "order": 0.745,
+            "repeated": 0.46464646464646464,
+            "count_other": 0.44
+          },
+          "count_mean_abs_error": 0.94,
+          "unparsed": 0,
+          "usd_per_conversation": 7.6301e-05,
+          "prompt_tokens_mean": 700.07
+        },
+        "qwen3.5-122b-a10b@200->qwen3.5-27b": {
+          "accuracy": 0.7753058954393771,
+          "ci": [
+            0.7433333333333333,
+            0.8049276979813664
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.91,
+            "last": 0.79,
+            "present": 0.835,
+            "absent": 0.76,
+            "order": 0.785,
+            "repeated": 0.5151515151515151,
+            "count_other": 0.57
+          },
+          "count_mean_abs_error": 0.74,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00020042685000000004,
+          "prompt_tokens_mean": 700.07
+        },
+        "qwen3.5-122b-a10b@200->gemma-4-31b": {
+          "accuracy": 0.8153503893214683,
+          "ci": [
+            0.7886540600667408,
+            0.8430079043483226
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.84,
+            "present": 0.835,
+            "absent": 0.82,
+            "order": 0.88,
+            "repeated": 0.5252525252525253,
+            "count_other": 0.58
+          },
+          "count_mean_abs_error": 0.75,
+          "unparsed": 2,
+          "usd_per_conversation": 0.00011542079999999999,
+          "prompt_tokens_mean": 704.52
+        },
+        "qwen3.5-122b-a10b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.778642936596218,
+          "ci": [
+            0.7477777777777778,
+            0.8064516129032258
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.89,
+            "last": 0.74,
+            "present": 0.82,
+            "absent": 0.78,
+            "order": 0.84,
+            "repeated": 0.494949494949495,
+            "count_other": 0.51
+          },
+          "count_mean_abs_error": 0.86,
+          "unparsed": 1,
+          "usd_per_conversation": 0.0002675478,
+          "prompt_tokens_mean": 700.07
+        },
+        "qwen3.5-122b-a10b@200->jev": {
+          "accuracy": 0.7675194660734149,
+          "ci": [
+            0.7374787873682959,
+            0.7975528364849833
+          ],
+          "n_questions": 899,
+          "by_type": {
+            "first": 0.92,
+            "last": 0.82,
+            "present": 0.76,
+            "absent": 0.785,
+            "order": 0.8,
+            "repeated": 0.47474747474747475
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        }
+      }
+    },
+    "40_turns": {
+      "n_conversations": 50,
+      "raw_words_mean": 470.28,
+      "writers": {
+        "qwen3.5-9b@25": {
+          "words_mean": 17.04,
+          "share_cut": 0.0,
+          "usd_per_conversation": 7.599e-05
+        },
+        "qwen3.5-9b@75": {
+          "words_mean": 60.66,
+          "share_cut": 0.04,
+          "usd_per_conversation": 8.4678e-05
+        },
+        "qwen3.5-9b@200": {
+          "words_mean": 166.98,
+          "share_cut": 0.08,
+          "usd_per_conversation": 0.00010459299999999999
+        },
+        "qwen3.5-27b@25": {
+          "words_mean": 25.96,
+          "share_cut": 0.38,
+          "usd_per_conversation": 0.0002067507
+        },
+        "qwen3.5-27b@75": {
+          "words_mean": 62.36,
+          "share_cut": 0.14,
+          "usd_per_conversation": 0.0003040947
+        },
+        "qwen3.5-27b@200": {
+          "words_mean": 173.68,
+          "share_cut": 0.16,
+          "usd_per_conversation": 0.0006164145
+        },
+        "gemma-4-31b@25": {
+          "words_mean": 27.46,
+          "share_cut": 0.42,
+          "usd_per_conversation": 0.0001229584
+        },
+        "gemma-4-31b@75": {
+          "words_mean": 75.58,
+          "share_cut": 0.42,
+          "usd_per_conversation": 0.0001541584
+        },
+        "gemma-4-31b@200": {
+          "words_mean": 163.62,
+          "share_cut": 0.1,
+          "usd_per_conversation": 0.00022465039999999999
+        },
+        "qwen3.5-122b-a10b@25": {
+          "words_mean": 21.94,
+          "share_cut": 0.14,
+          "usd_per_conversation": 0.0002579876
+        },
+        "qwen3.5-122b-a10b@75": {
+          "words_mean": 65.1,
+          "share_cut": 0.08,
+          "usd_per_conversation": 0.0003899012
+        },
+        "qwen3.5-122b-a10b@200": {
+          "words_mean": 171.1,
+          "share_cut": 0.08,
+          "usd_per_conversation": 0.0007387276
+        }
+      },
+      "raw": {
+        "qwen3.5-9b": {
+          "accuracy": 0.6755555555555556,
+          "ci": [
+            0.6310555555555555,
+            0.7244444444444444
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.64,
+            "present": 0.67,
+            "absent": 0.68,
+            "order": 0.76,
+            "repeated": 0.4,
+            "count_other": 0.16
+          },
+          "count_mean_abs_error": 2.22,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00011672200000000001,
+          "prompt_tokens_mean": 1103.38
+        },
+        "qwen3.5-27b": {
+          "accuracy": 0.7822222222222223,
+          "ci": [
+            0.7511111111111111,
+            0.8133888888888888
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.92,
+            "last": 0.9,
+            "present": 0.81,
+            "absent": 0.72,
+            "order": 0.76,
+            "repeated": 0.64,
+            "count_other": 0.04
+          },
+          "count_mean_abs_error": 2.1,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0002792127,
+          "prompt_tokens_mean": 1103.38
+        },
+        "gemma-4-31b": {
+          "accuracy": 0.8044444444444444,
+          "ci": [
+            0.7733333333333333,
+            0.8355555555555556
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.92,
+            "last": 0.94,
+            "present": 0.81,
+            "absent": 0.8,
+            "order": 0.79,
+            "repeated": 0.58,
+            "count_other": 0.02
+          },
+          "count_mean_abs_error": 1.84,
+          "unparsed": 0,
+          "usd_per_conversation": 0.000172848,
+          "prompt_tokens_mean": 1114.4
+        },
+        "qwen3.5-122b-a10b": {
+          "accuracy": 0.7266666666666667,
+          "ci": [
+            0.6866666666666666,
+            0.7645
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.72,
+            "present": 0.78,
+            "absent": 0.67,
+            "order": 0.77,
+            "repeated": 0.52,
+            "count_other": 0.06
+          },
+          "count_mean_abs_error": 1.88,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00037245000000000003,
+          "prompt_tokens_mean": 1103.38
+        },
+        "jev": {
+          "accuracy": 0.7711111111111111,
+          "ci": [
+            0.7355555555555555,
+            0.8044444444444444
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.86,
+            "present": 0.73,
+            "absent": 0.77,
+            "order": 0.76,
+            "repeated": 0.66
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        }
+      },
+      "cells": {
+        "qwen3.5-9b@25->qwen3.5-9b": {
+          "accuracy": 0.4,
+          "ci": [
+            0.35777777777777775,
+            0.4378333333333333
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.36,
+            "last": 0.26,
+            "present": 0.52,
+            "absent": 0.36,
+            "order": 0.53,
+            "repeated": 0.16,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.36,
+          "unparsed": 0,
+          "usd_per_conversation": 5.5728e-05,
+          "prompt_tokens_mean": 494.28
+        },
+        "qwen3.5-9b@25->qwen3.5-27b": {
+          "accuracy": 0.4311111111111111,
+          "ci": [
+            0.3888888888888889,
+            0.4777777777777778
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.44,
+            "last": 0.24,
+            "present": 0.55,
+            "absent": 0.36,
+            "order": 0.55,
+            "repeated": 0.28,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.7,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0001603446,
+          "prompt_tokens_mean": 494.28
+        },
+        "qwen3.5-9b@25->gemma-4-31b": {
+          "accuracy": 0.41555555555555557,
+          "ci": [
+            0.3688888888888889,
+            0.46
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.42,
+            "last": 0.28,
+            "present": 0.52,
+            "absent": 0.34,
+            "order": 0.55,
+            "repeated": 0.22,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.416666666666667,
+          "unparsed": 14,
+          "usd_per_conversation": 8.72004e-05,
+          "prompt_tokens_mean": 499.66
+        },
+        "qwen3.5-9b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.41333333333333333,
+          "ci": [
+            0.36666666666666664,
+            0.4622222222222222
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.48,
+            "last": 0.22,
+            "present": 0.56,
+            "absent": 0.35,
+            "order": 0.46,
+            "repeated": 0.28,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.6,
+          "unparsed": 16,
+          "usd_per_conversation": 0.00021578960000000002,
+          "prompt_tokens_mean": 494.28
+        },
+        "qwen3.5-9b@25->jev": {
+          "accuracy": 0.39555555555555555,
+          "ci": [
+            0.35333333333333333,
+            0.4378333333333333
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.46,
+            "last": 0.26,
+            "present": 0.46,
+            "absent": 0.33,
+            "order": 0.51,
+            "repeated": 0.24
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-9b@75->qwen3.5-9b": {
+          "accuracy": 0.5377777777777778,
+          "ci": [
+            0.4888888888888889,
+            0.5822222222222222
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.76,
+            "last": 0.42,
+            "present": 0.63,
+            "absent": 0.47,
+            "order": 0.62,
+            "repeated": 0.22,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 6.7,
+          "unparsed": 0,
+          "usd_per_conversation": 6.149e-05,
+          "prompt_tokens_mean": 551.9
+        },
+        "qwen3.5-9b@75->qwen3.5-27b": {
+          "accuracy": 0.54,
+          "ci": [
+            0.5,
+            0.5822222222222222
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.78,
+            "last": 0.42,
+            "present": 0.66,
+            "absent": 0.41,
+            "order": 0.62,
+            "repeated": 0.28,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 6.88,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0001715805,
+          "prompt_tokens_mean": 551.9
+        },
+        "qwen3.5-9b@75->gemma-4-31b": {
+          "accuracy": 0.5577777777777778,
+          "ci": [
+            0.5022222222222222,
+            0.6067222222222222
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.74,
+            "last": 0.4,
+            "present": 0.67,
+            "absent": 0.51,
+            "order": 0.62,
+            "repeated": 0.28,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 6.58,
+          "unparsed": 0,
+          "usd_per_conversation": 9.474079999999998e-05,
+          "prompt_tokens_mean": 556.72
+        },
+        "qwen3.5-9b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.56,
+          "ci": [
+            0.5155555555555555,
+            0.6
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.8,
+            "last": 0.4,
+            "present": 0.7,
+            "absent": 0.46,
+            "order": 0.59,
+            "repeated": 0.34,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 6.86,
+          "unparsed": 0,
+          "usd_per_conversation": 0.000228774,
+          "prompt_tokens_mean": 551.9
+        },
+        "qwen3.5-9b@75->jev": {
+          "accuracy": 0.5444444444444444,
+          "ci": [
+            0.49777777777777776,
+            0.5866666666666667
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.74,
+            "last": 0.38,
+            "present": 0.62,
+            "absent": 0.44,
+            "order": 0.68,
+            "repeated": 0.3
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-9b@200->qwen3.5-9b": {
+          "accuracy": 0.5711111111111111,
+          "ci": [
+            0.5222222222222223,
+            0.6155555555555555
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.76,
+            "last": 0.5,
+            "present": 0.65,
+            "absent": 0.57,
+            "order": 0.61,
+            "repeated": 0.22,
+            "count_other": 0.08
+          },
+          "count_mean_abs_error": 3.42,
+          "unparsed": 0,
+          "usd_per_conversation": 7.4315e-05,
+          "prompt_tokens_mean": 680.06
+        },
+        "qwen3.5-9b@200->qwen3.5-27b": {
+          "accuracy": 0.6,
+          "ci": [
+            0.5555555555555556,
+            0.6422777777777777
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.8,
+            "last": 0.54,
+            "present": 0.65,
+            "absent": 0.58,
+            "order": 0.66,
+            "repeated": 0.28,
+            "count_other": 0.14
+          },
+          "count_mean_abs_error": 3.42,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00019666530000000002,
+          "prompt_tokens_mean": 680.06
+        },
+        "qwen3.5-9b@200->gemma-4-31b": {
+          "accuracy": 0.6155555555555555,
+          "ci": [
+            0.5710555555555555,
+            0.6578333333333333
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.54,
+            "present": 0.7,
+            "absent": 0.6,
+            "order": 0.63,
+            "repeated": 0.32,
+            "count_other": 0.18
+          },
+          "count_mean_abs_error": 2.94,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00011268199999999998,
+          "prompt_tokens_mean": 684.7
+        },
+        "qwen3.5-9b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.6022222222222222,
+          "ci": [
+            0.56,
+            0.6466666666666666
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.72,
+            "last": 0.5,
+            "present": 0.65,
+            "absent": 0.6,
+            "order": 0.65,
+            "repeated": 0.4,
+            "count_other": 0.12
+          },
+          "count_mean_abs_error": 3.92,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0002622204,
+          "prompt_tokens_mean": 680.06
+        },
+        "qwen3.5-9b@200->jev": {
+          "accuracy": 0.6288888888888889,
+          "ci": [
+            0.5911111111111111,
+            0.6688888888888889
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.78,
+            "last": 0.58,
+            "present": 0.66,
+            "absent": 0.58,
+            "order": 0.7,
+            "repeated": 0.42
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-27b@25->qwen3.5-9b": {
+          "accuracy": 0.5288888888888889,
+          "ci": [
+            0.48444444444444446,
+            0.5689444444444444
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.7,
+            "last": 0.32,
+            "present": 0.59,
+            "absent": 0.54,
+            "order": 0.64,
+            "repeated": 0.2,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.78,
+          "unparsed": 0,
+          "usd_per_conversation": 5.692999999999999e-05,
+          "prompt_tokens_mean": 506.3
+        },
+        "qwen3.5-27b@25->qwen3.5-27b": {
+          "accuracy": 0.49333333333333335,
+          "ci": [
+            0.4577777777777778,
+            0.5311111111111111
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.6,
+            "last": 0.28,
+            "present": 0.58,
+            "absent": 0.39,
+            "order": 0.67,
+            "repeated": 0.28,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.88,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00016268849999999998,
+          "prompt_tokens_mean": 506.3
+        },
+        "qwen3.5-27b@25->gemma-4-31b": {
+          "accuracy": 0.5444444444444444,
+          "ci": [
+            0.5022222222222222,
+            0.5866666666666667
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.72,
+            "last": 0.3,
+            "present": 0.59,
+            "absent": 0.49,
+            "order": 0.69,
+            "repeated": 0.34,
+            "count_other": 0.02
+          },
+          "count_mean_abs_error": 7.56,
+          "unparsed": 0,
+          "usd_per_conversation": 8.855519999999998e-05,
+          "prompt_tokens_mean": 512.48
+        },
+        "qwen3.5-27b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.49333333333333335,
+          "ci": [
+            0.45111111111111113,
+            0.535611111111111
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.58,
+            "last": 0.4,
+            "present": 0.6,
+            "absent": 0.41,
+            "order": 0.59,
+            "repeated": 0.26,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.9,
+          "unparsed": 3,
+          "usd_per_conversation": 0.0002172924,
+          "prompt_tokens_mean": 506.3
+        },
+        "qwen3.5-27b@25->jev": {
+          "accuracy": 0.5311111111111111,
+          "ci": [
+            0.4955555555555556,
+            0.5666666666666667
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.72,
+            "last": 0.42,
+            "present": 0.5,
+            "absent": 0.44,
+            "order": 0.72,
+            "repeated": 0.32
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-27b@75->qwen3.5-9b": {
+          "accuracy": 0.58,
+          "ci": [
+            0.5355555555555556,
+            0.6222222222222222
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.8,
+            "last": 0.52,
+            "present": 0.67,
+            "absent": 0.56,
+            "order": 0.62,
+            "repeated": 0.2,
+            "count_other": 0.02
+          },
+          "count_mean_abs_error": 4.8,
+          "unparsed": 0,
+          "usd_per_conversation": 6.3608e-05,
+          "prompt_tokens_mean": 573.02
+        },
+        "qwen3.5-27b@75->qwen3.5-27b": {
+          "accuracy": 0.6088888888888889,
+          "ci": [
+            0.5688888888888889,
+            0.6511111111111111
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.52,
+            "present": 0.65,
+            "absent": 0.57,
+            "order": 0.68,
+            "repeated": 0.34,
+            "count_other": 0.04
+          },
+          "count_mean_abs_error": 4.56,
+          "unparsed": 2,
+          "usd_per_conversation": 0.0001757301,
+          "prompt_tokens_mean": 573.02
+        },
+        "qwen3.5-27b@75->gemma-4-31b": {
+          "accuracy": 0.6533333333333333,
+          "ci": [
+            0.6022222222222222,
+            0.6978333333333333
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.6,
+            "present": 0.7,
+            "absent": 0.6,
+            "order": 0.71,
+            "repeated": 0.38,
+            "count_other": 0.02
+          },
+          "count_mean_abs_error": 4.28,
+          "unparsed": 0,
+          "usd_per_conversation": 9.798519999999998e-05,
+          "prompt_tokens_mean": 579.78
+        },
+        "qwen3.5-27b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.62,
+          "ci": [
+            0.5822222222222222,
+            0.66
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.78,
+            "last": 0.56,
+            "present": 0.74,
+            "absent": 0.56,
+            "order": 0.67,
+            "repeated": 0.3,
+            "count_other": 0.04
+          },
+          "count_mean_abs_error": 4.5,
+          "unparsed": 1,
+          "usd_per_conversation": 0.0002344732,
+          "prompt_tokens_mean": 573.02
+        },
+        "qwen3.5-27b@75->jev": {
+          "accuracy": 0.6244444444444445,
+          "ci": [
+            0.5844444444444444,
+            0.6666666666666666
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.58,
+            "present": 0.67,
+            "absent": 0.56,
+            "order": 0.71,
+            "repeated": 0.28
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-27b@200->qwen3.5-9b": {
+          "accuracy": 0.64,
+          "ci": [
+            0.6066666666666667,
+            0.6755555555555556
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.64,
+            "present": 0.69,
+            "absent": 0.59,
+            "order": 0.68,
+            "repeated": 0.3,
+            "count_other": 0.14
+          },
+          "count_mean_abs_error": 4.38,
+          "unparsed": 0,
+          "usd_per_conversation": 8.328500000000001e-05,
+          "prompt_tokens_mean": 769.58
+        },
+        "qwen3.5-27b@200->qwen3.5-27b": {
+          "accuracy": 0.7422222222222222,
+          "ci": [
+            0.7,
+            0.78
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.82,
+            "present": 0.76,
+            "absent": 0.69,
+            "order": 0.77,
+            "repeated": 0.56,
+            "count_other": 0.12
+          },
+          "count_mean_abs_error": 4.18,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00021424649999999998,
+          "prompt_tokens_mean": 769.58
+        },
+        "qwen3.5-27b@200->gemma-4-31b": {
+          "accuracy": 0.7511111111111111,
+          "ci": [
+            0.7111111111111111,
+            0.7933333333333333
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.78,
+            "present": 0.81,
+            "absent": 0.7,
+            "order": 0.79,
+            "repeated": 0.48,
+            "count_other": 0.14
+          },
+          "count_mean_abs_error": 3.82,
+          "unparsed": 0,
+          "usd_per_conversation": 0.000125348,
+          "prompt_tokens_mean": 775.0
+        },
+        "qwen3.5-27b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.7244444444444444,
+          "ci": [
+            0.6866666666666666,
+            0.7622222222222222
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.76,
+            "present": 0.75,
+            "absent": 0.69,
+            "order": 0.79,
+            "repeated": 0.44,
+            "count_other": 0.14
+          },
+          "count_mean_abs_error": 4.4,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0002857036,
+          "prompt_tokens_mean": 769.58
+        },
+        "qwen3.5-27b@200->jev": {
+          "accuracy": 0.7022222222222222,
+          "ci": [
+            0.6577777777777778,
+            0.7466666666666667
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.74,
+            "present": 0.68,
+            "absent": 0.66,
+            "order": 0.79,
+            "repeated": 0.44
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "gemma-4-31b@25->qwen3.5-9b": {
+          "accuracy": 0.5155555555555555,
+          "ci": [
+            0.4711111111111111,
+            0.5577777777777778
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.76,
+            "last": 0.42,
+            "present": 0.64,
+            "absent": 0.42,
+            "order": 0.54,
+            "repeated": 0.26,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.86,
+          "unparsed": 0,
+          "usd_per_conversation": 5.749e-05,
+          "prompt_tokens_mean": 511.9
+        },
+        "gemma-4-31b@25->qwen3.5-27b": {
+          "accuracy": 0.5244444444444445,
+          "ci": [
+            0.48,
+            0.5644999999999999
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.3,
+            "present": 0.63,
+            "absent": 0.39,
+            "order": 0.65,
+            "repeated": 0.24,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.86,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0001637805,
+          "prompt_tokens_mean": 511.9
+        },
+        "gemma-4-31b@25->gemma-4-31b": {
+          "accuracy": 0.5066666666666667,
+          "ci": [
+            0.46,
+            0.5511111111111111
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.32,
+            "present": 0.56,
+            "absent": 0.4,
+            "order": 0.61,
+            "repeated": 0.24,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.82,
+          "unparsed": 0,
+          "usd_per_conversation": 8.938719999999999e-05,
+          "prompt_tokens_mean": 518.48
+        },
+        "gemma-4-31b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.52,
+          "ci": [
+            0.4777777777777778,
+            0.5644444444444444
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.38,
+            "present": 0.62,
+            "absent": 0.33,
+            "order": 0.61,
+            "repeated": 0.34,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.92,
+          "unparsed": 2,
+          "usd_per_conversation": 0.00021849880000000002,
+          "prompt_tokens_mean": 511.9
+        },
+        "gemma-4-31b@25->jev": {
+          "accuracy": 0.5288888888888889,
+          "ci": [
+            0.4822222222222222,
+            0.5733888888888888
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.38,
+            "present": 0.57,
+            "absent": 0.38,
+            "order": 0.67,
+            "repeated": 0.28
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "gemma-4-31b@75->qwen3.5-9b": {
+          "accuracy": 0.5688888888888889,
+          "ci": [
+            0.5177777777777778,
+            0.6177777777777778
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.74,
+            "last": 0.48,
+            "present": 0.6,
+            "absent": 0.58,
+            "order": 0.64,
+            "repeated": 0.26,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.46,
+          "unparsed": 0,
+          "usd_per_conversation": 6.4967e-05,
+          "prompt_tokens_mean": 586.64
+        },
+        "gemma-4-31b@75->qwen3.5-27b": {
+          "accuracy": 0.6133333333333333,
+          "ci": [
+            0.5622222222222222,
+            0.6666666666666666
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.5,
+            "present": 0.62,
+            "absent": 0.6,
+            "order": 0.72,
+            "repeated": 0.32,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.6,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0001783548,
+          "prompt_tokens_mean": 586.64
+        },
+        "gemma-4-31b@75->gemma-4-31b": {
+          "accuracy": 0.6222222222222222,
+          "ci": [
+            0.5822222222222222,
+            0.6644444444444444
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.48,
+            "present": 0.63,
+            "absent": 0.61,
+            "order": 0.79,
+            "repeated": 0.2,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.5,
+          "unparsed": 2,
+          "usd_per_conversation": 9.983960000000002e-05,
+          "prompt_tokens_mean": 593.14
+        },
+        "gemma-4-31b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.5933333333333334,
+          "ci": [
+            0.5443888888888888,
+            0.6422222222222222
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.48,
+            "present": 0.61,
+            "absent": 0.52,
+            "order": 0.73,
+            "repeated": 0.3,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.4,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0002378064,
+          "prompt_tokens_mean": 586.64
+        },
+        "gemma-4-31b@75->jev": {
+          "accuracy": 0.6355555555555555,
+          "ci": [
+            0.5933333333333334,
+            0.6777777777777778
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.48,
+            "present": 0.61,
+            "absent": 0.58,
+            "order": 0.79,
+            "repeated": 0.38
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "gemma-4-31b@200->qwen3.5-9b": {
+          "accuracy": 0.6955555555555556,
+          "ci": [
+            0.6599444444444444,
+            0.7311111111111112
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.96,
+            "last": 0.78,
+            "present": 0.71,
+            "absent": 0.62,
+            "order": 0.73,
+            "repeated": 0.4,
+            "count_other": 0.12
+          },
+          "count_mean_abs_error": 3.32,
+          "unparsed": 0,
+          "usd_per_conversation": 8.318999999999998e-05,
+          "prompt_tokens_mean": 768.84
+        },
+        "gemma-4-31b@200->qwen3.5-27b": {
+          "accuracy": 0.7355555555555555,
+          "ci": [
+            0.6933333333333334,
+            0.775611111111111
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.94,
+            "last": 0.84,
+            "present": 0.74,
+            "absent": 0.67,
+            "order": 0.73,
+            "repeated": 0.56,
+            "count_other": 0.16
+          },
+          "count_mean_abs_error": 3.5,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00021391499999999996,
+          "prompt_tokens_mean": 768.84
+        },
+        "gemma-4-31b@200->gemma-4-31b": {
+          "accuracy": 0.7755555555555556,
+          "ci": [
+            0.7377777777777778,
+            0.8111111111111111
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.94,
+            "last": 0.86,
+            "present": 0.8,
+            "absent": 0.77,
+            "order": 0.78,
+            "repeated": 0.48,
+            "count_other": 0.18
+          },
+          "count_mean_abs_error": 2.94,
+          "unparsed": 1,
+          "usd_per_conversation": 0.00012559080000000002,
+          "prompt_tokens_mean": 777.02
+        },
+        "gemma-4-31b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.7222222222222222,
+          "ci": [
+            0.6866666666666666,
+            0.7577777777777778
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.8,
+            "present": 0.7,
+            "absent": 0.66,
+            "order": 0.78,
+            "repeated": 0.52,
+            "count_other": 0.12
+          },
+          "count_mean_abs_error": 3.22,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00028522,
+          "prompt_tokens_mean": 768.84
+        },
+        "gemma-4-31b@200->jev": {
+          "accuracy": 0.74,
+          "ci": [
+            0.7088888888888889,
+            0.775611111111111
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.94,
+            "last": 0.84,
+            "present": 0.71,
+            "absent": 0.68,
+            "order": 0.77,
+            "repeated": 0.56
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-122b-a10b@25->qwen3.5-9b": {
+          "accuracy": 0.49777777777777776,
+          "ci": [
+            0.4533333333333333,
+            0.5377777777777778
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.74,
+            "last": 0.32,
+            "present": 0.58,
+            "absent": 0.45,
+            "order": 0.59,
+            "repeated": 0.18,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.82,
+          "unparsed": 0,
+          "usd_per_conversation": 5.6642000000000004e-05,
+          "prompt_tokens_mean": 503.42
+        },
+        "qwen3.5-122b-a10b@25->qwen3.5-27b": {
+          "accuracy": 0.48,
+          "ci": [
+            0.44222222222222224,
+            0.5178333333333333
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.78,
+            "last": 0.34,
+            "present": 0.56,
+            "absent": 0.3,
+            "order": 0.61,
+            "repeated": 0.26,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.86,
+          "unparsed": 2,
+          "usd_per_conversation": 0.00016231410000000003,
+          "prompt_tokens_mean": 503.42
+        },
+        "qwen3.5-122b-a10b@25->gemma-4-31b": {
+          "accuracy": 0.5022222222222222,
+          "ci": [
+            0.4599444444444445,
+            0.5466666666666666
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.42,
+            "present": 0.54,
+            "absent": 0.32,
+            "order": 0.65,
+            "repeated": 0.26,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.82,
+          "unparsed": 0,
+          "usd_per_conversation": 8.813279999999998e-05,
+          "prompt_tokens_mean": 509.52
+        },
+        "qwen3.5-122b-a10b@25->qwen3.5-122b-a10b": {
+          "accuracy": 0.4711111111111111,
+          "ci": [
+            0.4311111111111111,
+            0.5089444444444443
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.8,
+            "last": 0.34,
+            "present": 0.56,
+            "absent": 0.33,
+            "order": 0.52,
+            "repeated": 0.28,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 7.9,
+          "unparsed": 23,
+          "usd_per_conversation": 0.0002170428,
+          "prompt_tokens_mean": 503.42
+        },
+        "qwen3.5-122b-a10b@25->jev": {
+          "accuracy": 0.4955555555555556,
+          "ci": [
+            0.4577777777777778,
+            0.5333333333333333
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.84,
+            "last": 0.36,
+            "present": 0.53,
+            "absent": 0.34,
+            "order": 0.65,
+            "repeated": 0.22
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-122b-a10b@75->qwen3.5-9b": {
+          "accuracy": 0.5777777777777777,
+          "ci": [
+            0.5333333333333333,
+            0.6200555555555555
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.4,
+            "present": 0.6,
+            "absent": 0.57,
+            "order": 0.66,
+            "repeated": 0.28,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 5.82,
+          "unparsed": 0,
+          "usd_per_conversation": 6.278599999999999e-05,
+          "prompt_tokens_mean": 564.86
+        },
+        "qwen3.5-122b-a10b@75->qwen3.5-27b": {
+          "accuracy": 0.6088888888888889,
+          "ci": [
+            0.5666666666666667,
+            0.6511666666666666
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.48,
+            "present": 0.65,
+            "absent": 0.57,
+            "order": 0.67,
+            "repeated": 0.34,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 6.08,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0001741077,
+          "prompt_tokens_mean": 564.86
+        },
+        "qwen3.5-122b-a10b@75->gemma-4-31b": {
+          "accuracy": 0.6,
+          "ci": [
+            0.5555555555555556,
+            0.6444444444444445
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.38,
+            "present": 0.57,
+            "absent": 0.63,
+            "order": 0.74,
+            "repeated": 0.26,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 5.86,
+          "unparsed": 1,
+          "usd_per_conversation": 9.66812e-05,
+          "prompt_tokens_mean": 570.58
+        },
+        "qwen3.5-122b-a10b@75->qwen3.5-122b-a10b": {
+          "accuracy": 0.5977777777777777,
+          "ci": [
+            0.5577777777777778,
+            0.6377777777777778
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.42,
+            "present": 0.64,
+            "absent": 0.53,
+            "order": 0.67,
+            "repeated": 0.4,
+            "count_other": 0.0
+          },
+          "count_mean_abs_error": 5.96,
+          "unparsed": 1,
+          "usd_per_conversation": 0.00023214360000000005,
+          "prompt_tokens_mean": 564.86
+        },
+        "qwen3.5-122b-a10b@75->jev": {
+          "accuracy": 0.6177777777777778,
+          "ci": [
+            0.5711111111111111,
+            0.6688888888888889
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.9,
+            "last": 0.46,
+            "present": 0.64,
+            "absent": 0.56,
+            "order": 0.73,
+            "repeated": 0.34
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        },
+        "qwen3.5-122b-a10b@200->qwen3.5-9b": {
+          "accuracy": 0.6266666666666667,
+          "ci": [
+            0.5821666666666666,
+            0.6688888888888889
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.78,
+            "last": 0.54,
+            "present": 0.64,
+            "absent": 0.64,
+            "order": 0.71,
+            "repeated": 0.34,
+            "count_other": 0.14
+          },
+          "count_mean_abs_error": 3.9,
+          "unparsed": 0,
+          "usd_per_conversation": 7.925199999999998e-05,
+          "prompt_tokens_mean": 729.34
+        },
+        "qwen3.5-122b-a10b@200->qwen3.5-27b": {
+          "accuracy": 0.6777777777777778,
+          "ci": [
+            0.6377777777777778,
+            0.7133333333333334
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.86,
+            "last": 0.58,
+            "present": 0.73,
+            "absent": 0.64,
+            "order": 0.74,
+            "repeated": 0.44,
+            "count_other": 0.1
+          },
+          "count_mean_abs_error": 4.24,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0002062437,
+          "prompt_tokens_mean": 729.34
+        },
+        "qwen3.5-122b-a10b@200->gemma-4-31b": {
+          "accuracy": 0.6688888888888889,
+          "ci": [
+            0.6333333333333333,
+            0.7044444444444444
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.54,
+            "present": 0.74,
+            "absent": 0.65,
+            "order": 0.7,
+            "repeated": 0.42,
+            "count_other": 0.16
+          },
+          "count_mean_abs_error": 3.12,
+          "unparsed": 0,
+          "usd_per_conversation": 0.0001195472,
+          "prompt_tokens_mean": 733.68
+        },
+        "qwen3.5-122b-a10b@200->qwen3.5-122b-a10b": {
+          "accuracy": 0.6422222222222222,
+          "ci": [
+            0.6,
+            0.6844444444444444
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.82,
+            "last": 0.52,
+            "present": 0.73,
+            "absent": 0.62,
+            "order": 0.72,
+            "repeated": 0.3,
+            "count_other": 0.1
+          },
+          "count_mean_abs_error": 3.94,
+          "unparsed": 0,
+          "usd_per_conversation": 0.00027503320000000006,
+          "prompt_tokens_mean": 729.34
+        },
+        "qwen3.5-122b-a10b@200->jev": {
+          "accuracy": 0.6555555555555556,
+          "ci": [
+            0.6177777777777778,
+            0.6955555555555556
+          ],
+          "n_questions": 450,
+          "by_type": {
+            "first": 0.88,
+            "last": 0.64,
+            "present": 0.71,
+            "absent": 0.57,
+            "order": 0.74,
+            "repeated": 0.34
+          },
+          "count_mean_abs_error": null,
+          "unparsed": 0,
+          "usd_per_conversation": null
+        }
+      }
+    }
+  },
+  "spend_usd": {
+    "project_total": 20.531216344499878
+  }
+}

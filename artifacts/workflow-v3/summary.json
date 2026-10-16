@@ -1,0 +1,366 @@
+{
+  "protocol_id": "workflow-v3-routing-2026-10-11",
+  "gate": {
+    "marked_out_of_scope": 391,
+    "pool": 1609,
+    "accepting_encoder_wrong_in_pool": 164
+  },
+  "few_shot_action_shares": {
+    "1": 0.626,
+    "2": 0.1975,
+    "3": 0.0005,
+    "4": 0.176
+  },
+  "ranking_auroc": {
+    "encoder_confidence": 0.924770022786733,
+    "orchestrator_zero_shot": 0.8370432103975018,
+    "orchestrator_few_shot": 0.8851021183222213,
+    "combined": 0.9243079584775087
+  },
+  "results": {
+    "decoder@0.05": {
+      "encoder_confidence": {
+        "turn_success": 0.907,
+        "session_success": 0.67,
+        "session_success_ci": [
+          0.625,
+          0.715
+        ]
+      },
+      "orchestrator_zero_shot": {
+        "turn_success": 0.9065,
+        "session_success": 0.665,
+        "session_success_ci": [
+          0.6199375,
+          0.71
+        ]
+      },
+      "orchestrator_few_shot": {
+        "turn_success": 0.909,
+        "session_success": 0.68,
+        "session_success_ci": [
+          0.635,
+          0.7225624999999997
+        ]
+      },
+      "combined": {
+        "turn_success": 0.9095,
+        "session_success": 0.6825,
+        "session_success_ci": [
+          0.64,
+          0.7250624999999996
+        ]
+      },
+      "oracle": {
+        "turn_success": 0.937,
+        "session_success": 0.7725
+      },
+      "random": {
+        "turn_success": 0.8994874999999999,
+        "session_success": 0.6428999999999999
+      }
+    },
+    "decoder@0.1": {
+      "encoder_confidence": {
+        "turn_success": 0.907,
+        "session_success": 0.6675,
+        "session_success_ci": [
+          0.62,
+          0.71
+        ]
+      },
+      "orchestrator_zero_shot": {
+        "turn_success": 0.905,
+        "session_success": 0.66,
+        "session_success_ci": [
+          0.61,
+          0.705
+        ]
+      },
+      "orchestrator_few_shot": {
+        "turn_success": 0.911,
+        "session_success": 0.685,
+        "session_success_ci": [
+          0.64,
+          0.73
+        ]
+      },
+      "combined": {
+        "turn_success": 0.911,
+        "session_success": 0.6825,
+        "session_success_ci": [
+          0.6375,
+          0.725
+        ]
+      },
+      "oracle": {
+        "turn_success": 0.9355,
+        "session_success": 0.7675
+      },
+      "random": {
+        "turn_success": 0.8988475,
+        "session_success": 0.6406125
+      }
+    },
+    "decoder@0.25": {
+      "encoder_confidence": {
+        "turn_success": 0.896,
+        "session_success": 0.62,
+        "session_success_ci": [
+          0.5725,
+          0.665
+        ]
+      },
+      "orchestrator_zero_shot": {
+        "turn_success": 0.901,
+        "session_success": 0.655,
+        "session_success_ci": [
+          0.61,
+          0.7025
+        ]
+      },
+      "orchestrator_few_shot": {
+        "turn_success": 0.9005,
+        "session_success": 0.6425,
+        "session_success_ci": [
+          0.5975,
+          0.6875
+        ]
+      },
+      "combined": {
+        "turn_success": 0.8955,
+        "session_success": 0.62,
+        "session_success_ci": [
+          0.5725,
+          0.665
+        ]
+      },
+      "oracle": {
+        "turn_success": 0.9275,
+        "session_success": 0.745
+      },
+      "random": {
+        "turn_success": 0.8975075,
+        "session_success": 0.6345375
+      }
+    },
+    "decoder@0.4": {
+      "encoder_confidence": {
+        "turn_success": 0.8935,
+        "session_success": 0.6125,
+        "session_success_ci": [
+          0.5625,
+          0.6575
+        ]
+      },
+      "orchestrator_zero_shot": {
+        "turn_success": 0.899,
+        "session_success": 0.6375,
+        "session_success_ci": [
+          0.5899375,
+          0.685
+        ]
+      },
+      "orchestrator_few_shot": {
+        "turn_success": 0.8925,
+        "session_success": 0.61,
+        "session_success_ci": [
+          0.5624375,
+          0.655
+        ]
+      },
+      "combined": {
+        "turn_success": 0.8925,
+        "session_success": 0.61,
+        "session_success_ci": [
+          0.5624375,
+          0.655
+        ]
+      },
+      "oracle": {
+        "turn_success": 0.92,
+        "session_success": 0.715
+      },
+      "random": {
+        "turn_success": 0.8953174999999999,
+        "session_success": 0.62715
+      }
+    },
+    "jev@0.05": {
+      "encoder_confidence": {
+        "turn_success": 0.9005,
+        "session_success": 0.6475,
+        "session_success_ci": [
+          0.6025,
+          0.6925
+        ]
+      },
+      "orchestrator_zero_shot": {
+        "turn_success": 0.8945,
+        "session_success": 0.65,
+        "session_success_ci": [
+          0.605,
+          0.695
+        ]
+      },
+      "orchestrator_few_shot": {
+        "turn_success": 0.8935,
+        "session_success": 0.63,
+        "session_success_ci": [
+          0.585,
+          0.6775
+        ]
+      },
+      "combined": {
+        "turn_success": 0.9035,
+        "session_success": 0.6625,
+        "session_success_ci": [
+          0.615,
+          0.7075
+        ]
+      },
+      "oracle": {
+        "turn_success": 0.9355,
+        "session_success": 0.7675
+      },
+      "random": {
+        "turn_success": 0.8919825,
+        "session_success": 0.6217999999999999
+      }
+    },
+    "jev@0.1": {
+      "encoder_confidence": {
+        "turn_success": 0.8985,
+        "session_success": 0.645,
+        "session_success_ci": [
+          0.6,
+          0.69
+        ]
+      },
+      "orchestrator_zero_shot": {
+        "turn_success": 0.8725,
+        "session_success": 0.5825,
+        "session_success_ci": [
+          0.535,
+          0.6325
+        ]
+      },
+      "orchestrator_few_shot": {
+        "turn_success": 0.877,
+        "session_success": 0.5875,
+        "session_success_ci": [
+          0.54,
+          0.635
+        ]
+      },
+      "combined": {
+        "turn_success": 0.8945,
+        "session_success": 0.6425,
+        "session_success_ci": [
+          0.5975,
+          0.6875
+        ]
+      },
+      "oracle": {
+        "turn_success": 0.924,
+        "session_success": 0.74
+      },
+      "random": {
+        "turn_success": 0.8843000000000001,
+        "session_success": 0.6004625
+      }
+    },
+    "jev@0.25": {
+      "encoder_confidence": {
+        "turn_success": 0.8735,
+        "session_success": 0.575,
+        "session_success_ci": [
+          0.53,
+          0.6225
+        ]
+      },
+      "orchestrator_zero_shot": {
+        "turn_success": 0.829,
+        "session_success": 0.465,
+        "session_success_ci": [
+          0.4175,
+          0.515
+        ]
+      },
+      "orchestrator_few_shot": {
+        "turn_success": 0.838,
+        "session_success": 0.4775,
+        "session_success_ci": [
+          0.4275,
+          0.5275
+        ]
+      },
+      "combined": {
+        "turn_success": 0.856,
+        "session_success": 0.525,
+        "session_success_ci": [
+          0.4775,
+          0.575
+        ]
+      },
+      "oracle": {
+        "turn_success": 0.9,
+        "session_success": 0.6825
+      },
+      "random": {
+        "turn_success": 0.861465,
+        "session_success": 0.5416875
+      }
+    },
+    "jev@0.4": {
+      "encoder_confidence": {
+        "turn_success": 0.8425,
+        "session_success": 0.495,
+        "session_success_ci": [
+          0.4474375,
+          0.545
+        ]
+      },
+      "orchestrator_zero_shot": {
+        "turn_success": 0.806,
+        "session_success": 0.43,
+        "session_success_ci": [
+          0.3825,
+          0.4825
+        ]
+      },
+      "orchestrator_few_shot": {
+        "turn_success": 0.8155,
+        "session_success": 0.425,
+        "session_success_ci": [
+          0.3775,
+          0.475
+        ]
+      },
+      "combined": {
+        "turn_success": 0.8205,
+        "session_success": 0.4475,
+        "session_success_ci": [
+          0.4024375,
+          0.495
+        ]
+      },
+      "oracle": {
+        "turn_success": 0.872,
+        "session_success": 0.61
+      },
+      "random": {
+        "turn_success": 0.8397374999999999,
+        "session_success": 0.4898374999999999
+      }
+    }
+  },
+  "no_escalation": {
+    "turn_success": 0.9,
+    "session_success": 0.645,
+    "session_success_ci": [
+      0.5999375,
+      0.69
+    ]
+  }
+}

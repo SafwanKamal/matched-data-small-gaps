@@ -1,0 +1,50 @@
+{
+  "protocol_id": "workflow-clinc150-third-domain-2026-10-12",
+  "role": "exploratory: a third domain, with out-of-scope queries that belong to the dataset, to see which of the banking and MASSIVE patterns is the usual one",
+  "claim": "On the banking workflow (section 3.21) the specialist's confidence found the out-of-scope turns, so escalating its least confident quarter beat both systems and the target's size did not matter. On MASSIVE (section 3.26) the specialist's confidence did not find them, and the hosted model alone was as good as any confidence-routed hybrid. The two differ in how out-of-scope was built: borrowed from another dataset in both, against 77 narrow intents in one and against 60 intents with catch-alls in the other. CLINC150 has 150 intents over ten domains and its own out-of-scope queries, written to fall outside those intents. It also allows the comparison section 3.26 said was missing: a specialist trained with an explicit out-of-scope class. Written before any CLINC150 session turn was sent or scored and before either specialist was trained.",
+  "endpoint_rules": "api_protocol.json; the hosts and request rules of workflow_v4_protocol.json except the prompt text below",
+  "run_cap_usd": 3.6,
+  "seed": 20261014,
+  "data": {
+    "source": "clinc/clinc_oos, config plus, revision 155b9c710419136e17307b80d0a13e68cd46b4ec",
+    "train": "15000 in-scope training rows; the 250 out-of-scope training rows are used only by the specialist with an out-of-scope class and for few-shot examples",
+    "dev": "a seeded sample of 400 in-scope validation rows and the 100 out-of-scope validation rows",
+    "sessions": "400 five-turn sessions by the workflow v1 rule (seed 20261014) from the 4500 in-scope test rows and the 1000 out-of-scope test rows. The out-of-scope test rows were used as out-of-scope turns in the banking workflow; here they are native."
+  },
+  "specialists": {
+    "encoder": "150M Ettin encoder fine-tuned on the in-scope training rows with the Program 2 recipe at learning rate 1e-4; scope by a threshold on its top probability chosen on dev, as in workflow v1",
+    "encoder_oos": "the same recipe with a 151st class trained on the 250 out-of-scope training rows; a turn is out of scope when that class has the highest probability; no threshold",
+    "confidence": "top probability after dev temperature, for both"
+  },
+  "models": ["qwen3.5-9b", "qwen3.5-27b", "gemma-4-31b", "qwen3.5-122b-a10b"],
+  "model_note": "four of the eight workflow v4 models, to fit the remaining budget: the smallest, the largest, and the two that led on both earlier domains",
+  "request": {
+    "temperature": 0,
+    "max_tokens": {"answer": 24, "with_notes": 120, "triage": 6},
+    "codes": "option position from 1 in label order, three digits",
+    "system_prompt": "You are the decision step of a general-purpose assistant with a fixed set of skills.{context_clause}\nDecide:\n1. scope: is the current message a request that one of the skills listed below covers? yes or no.\n2. intent: the code of the skill that best describes the current message. Use 000 when scope is no.{repeat_item}\n\nSkills:\n{options}\n\nReply with exactly these lines and nothing else:\nscope: <yes or no>\nintent: <three-digit code>{repeat_line}{notes_line}",
+    "context_clause": {"current_only": "", "raw_history": "", "notes": ""},
+    "repeat_item": "",
+    "repeat_line": "",
+    "notes_line": "",
+    "user": {"current_only": "Current message: {text}"}
+  },
+  "part_a_ladder": "each model answers every turn once, zero-shot; each alone and as the escalation target for each specialist at 0, 5, 10, 25, 40, 60, 80 and 100 percent of turns by ascending specialist confidence, with random and oracle controls, as in workflow v4 part A",
+  "part_b_de_escalation": {
+    "models": ["qwen3.5-9b", "qwen3.5-27b"],
+    "system_prompt": "You route messages for a general-purpose assistant with 150 skills across banking, credit cards, kitchen and dining, home, cars and commuting, travel, utilities, work, small talk and questions about the assistant itself. A small, fast classifier is available at almost no cost. It was trained on fifteen thousand labelled requests and picks one of the 150 skills. On requests the assistant covers it is right more than nine times in ten. It cannot tell when a message is not something the assistant covers, and it is weaker on vague, unusual or mixed messages. Classifying a message yourself is slower and costs more.\nReply with exactly one word:\ndelegate - the small classifier will get this message right\nkeep - the assistant covers it, but the classifier is likely to get it wrong, so you will classify it yourself\nout - it is not something this assistant covers",
+    "user": {"blind": "Message: {text}", "informed": "Message: {text}\n\nThe classifier's top guesses:\n{lines}"},
+    "policy": "as workflow v4 part B, with the threshold encoder as the classifier"
+  },
+  "part_d_few_shot": {
+    "examples": "3 training utterances per intent (first 3 after a seeded shuffle) and four out-of-scope training utterances with code 000, shuffled once",
+    "runs": {"gemma-4-31b": {"3": "all 400 sessions"}},
+    "amendment_2026-10-13": "The first run scored sessions 0 to 149 (82.7% of sessions alone). After seeing that result the project owner asked for the same prompt on all 400 sessions; the first 150 are reused from the saved replies. Added at the same time, from saved answers only: the few-shot model as the escalation target for each specialist at 5, 10, 25, 40 and 60 percent of turns."
+  },
+  "readout_stated_in_advance": [
+    "does the specialist's confidence find the out-of-scope turns (banking pattern) or not (MASSIVE pattern): its scope accuracy, and whether the best escalation rate is near a quarter or near all turns",
+    "does a specialist with an out-of-scope class remove the need for a general model's scope decision: encoder_oos alone against the best hybrid and against informed de-escalation",
+    "is the hosted model alone at least as good as the best hybrid (the plateau)"
+  ],
+  "limits": "Synthetic sessions, one run per model, stated zero-shot answers, four models. CLINC150 is widely used and may be in the hosted models' training data."
+}

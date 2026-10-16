@@ -1,0 +1,456 @@
+{
+  "protocol_id": "choice-suite-2026-10-08",
+  "system": "jev",
+  "datasets": {
+    "banking77_full": {
+      "n_options": 77,
+      "dev_n": 400,
+      "test_n": 3080,
+      "temperature": {
+        "temperature": 3.7369833988970877,
+        "dev_nll": 0.9309927462767439,
+        "dev_nll_at_1": 1.8246521474607704,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.7931818181818182,
+        "brier": 0.33722111261361026,
+        "log_loss": 0.9556838162307827,
+        "ece": 0.10850223123914991,
+        "top_bin_mass": 0.386038961038961,
+        "coverage_at_5pct_error": 0.6009740259740259,
+        "selective_selected_n": 1851,
+        "selective_confidence_threshold": 0.6126907283847379,
+        "aurc": 0.06658756261369236,
+        "macro_f1": 0.784039171333322,
+        "accuracy_ci": [
+          0.7792207792207793,
+          0.8074675324675324
+        ],
+        "brier_ci": [
+          0.3235130785350553,
+          0.35134818842479126
+        ]
+      },
+      "unscaled": {
+        "n": 3080,
+        "accuracy": 0.7931818181818182,
+        "brier": 0.3168358771518356,
+        "log_loss": 1.9780318119800244,
+        "ece": 0.0929887838771082,
+        "top_bin_mass": 0.6282467532467533,
+        "coverage_at_5pct_error": 0.6009740259740259,
+        "selective_selected_n": 1851,
+        "selective_confidence_threshold": 0.9499999999287493,
+        "aurc": 0.06659595021218107,
+        "macro_f1": 0.784039171333322,
+        "accuracy_ci": [
+          0.7792207792207793,
+          0.8074675324675324
+        ],
+        "brier_ci": [
+          0.2966727390183666,
+          0.33682945985524254
+        ]
+      },
+      "input_tokens": 3301845,
+      "latency_p50_ms": 145.4222500033211,
+      "latency_note": "HTTPS round trip, not comparable to local GPU"
+    },
+    "massive_en": {
+      "n_options": 60,
+      "dev_n": 2033,
+      "test_n": 2974,
+      "temperature": {
+        "temperature": 3.7273715609119393,
+        "dev_nll": 0.8629727392727169,
+        "dev_nll_at_1": 1.5920689305156264,
+        "n": 2033,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2974,
+        "accuracy": 0.7918628110289173,
+        "brier": 0.33465573111250274,
+        "log_loss": 0.9047575234384138,
+        "ece": 0.11006870495980113,
+        "top_bin_mass": 0.4011432414256893,
+        "coverage_at_5pct_error": 0.5746469401479489,
+        "selective_selected_n": 1709,
+        "selective_confidence_threshold": 0.6176208971989846,
+        "aurc": 0.06968027808889427,
+        "macro_f1": 0.7815492665820527,
+        "accuracy_ci": [
+          0.7777404169468729,
+          0.8063214525891056
+        ],
+        "brier_ci": [
+          0.31997719997094426,
+          0.3495342367074834
+        ]
+      },
+      "unscaled": {
+        "n": 2974,
+        "accuracy": 0.7918628110289173,
+        "brier": 0.30967783172906005,
+        "log_loss": 1.7007584417274348,
+        "ece": 0.08217202280116219,
+        "top_bin_mass": 0.6123066577000672,
+        "coverage_at_5pct_error": 0.570275722932078,
+        "selective_selected_n": 1696,
+        "selective_confidence_threshold": 0.9599999999452802,
+        "aurc": 0.0632496041158157,
+        "macro_f1": 0.7815492665820527,
+        "accuracy_ci": [
+          0.7777404169468729,
+          0.8063214525891056
+        ],
+        "brier_ci": [
+          0.28884646342388715,
+          0.330203299098588
+        ]
+      },
+      "input_tokens": 3787528,
+      "latency_p50_ms": 145.75560000230325,
+      "latency_note": "HTTPS round trip, not comparable to local GPU"
+    },
+    "clinc150": {
+      "n_options": 150,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 2.8387397667991765,
+        "dev_nll": 0.5527252478838376,
+        "dev_nll_at_1": 0.8442864708078627,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.9046666666666666,
+        "brier": 0.19822342982215688,
+        "log_loss": 0.5154757226525761,
+        "ece": 0.12798137057940723,
+        "top_bin_mass": 0.426,
+        "coverage_at_5pct_error": 0.8406666666666667,
+        "selective_selected_n": 2522,
+        "selective_confidence_threshold": 0.5147800223893068,
+        "aurc": 0.028816275738253544,
+        "macro_f1": 0.8973483572654428,
+        "accuracy_ci": [
+          0.894325,
+          0.915
+        ],
+        "brier_ci": [
+          0.1873642135374053,
+          0.21005128748540539
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.9046666666666666,
+        "brier": 0.14591519296338645,
+        "log_loss": 0.6890901547989877,
+        "ece": 0.022299259168709,
+        "top_bin_mass": 0.7056666666666667,
+        "coverage_at_5pct_error": 0.889,
+        "selective_selected_n": 2667,
+        "selective_confidence_threshold": 0.6999999998984996,
+        "aurc": 0.02337994028908172,
+        "macro_f1": 0.8973483572654428,
+        "accuracy_ci": [
+          0.894325,
+          0.915
+        ],
+        "brier_ci": [
+          0.13169133666981073,
+          0.16080223865065435
+        ]
+      },
+      "out_of_scope_scaled": {
+        "n": 1000,
+        "mean_top_probability": 0.2981493406829204,
+        "share_at_or_above_0.9": 0.02,
+        "share_at_or_above_0.5": 0.128,
+        "in_scope_mean_top_probability": 0.7785613575727119,
+        "auroc_in_scope_vs_out_of_scope_by_confidence": 0.931262
+      },
+      "out_of_scope_unscaled": {
+        "n": 1000,
+        "mean_top_probability": 0.5569496968899793,
+        "share_at_or_above_0.9": 0.11,
+        "share_at_or_above_0.5": 0.517,
+        "in_scope_mean_top_probability": 0.9156329291574234,
+        "auroc_in_scope_vs_out_of_scope_by_confidence": 0.9008286666666667
+      },
+      "input_tokens": 5967231,
+      "latency_p50_ms": 146.18029999837745,
+      "latency_note": "HTTPS round trip, not comparable to local GPU"
+    },
+    "emotion": {
+      "n_options": 6,
+      "dev_n": 400,
+      "test_n": 2000,
+      "temperature": {
+        "temperature": 10.496444592327197,
+        "dev_nll": 1.2869256273508858,
+        "dev_nll_at_1": 4.982533406433254,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2000,
+        "accuracy": 0.5805,
+        "brier": 0.598203576787008,
+        "log_loss": 1.266432056121024,
+        "ece": 0.10280221859849832,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.001,
+        "selective_selected_n": 2,
+        "selective_confidence_threshold": 0.735552519054697,
+        "aurc": 0.2857663500400144,
+        "macro_f1": 0.49565972480310044,
+        "accuracy_ci": [
+          0.5595,
+          0.602
+        ],
+        "brier_ci": [
+          0.5818287733825777,
+          0.6155113679497364
+        ]
+      },
+      "unscaled": {
+        "n": 2000,
+        "accuracy": 0.581,
+        "brier": 0.672406875296563,
+        "log_loss": 4.847341117943044,
+        "ece": 0.27443035353227274,
+        "top_bin_mass": 0.5055,
+        "coverage_at_5pct_error": 0.001,
+        "selective_selected_n": 2,
+        "selective_confidence_threshold": 0.999999999995,
+        "aurc": 0.28427536361042915,
+        "macro_f1": 0.4979384786713302,
+        "accuracy_ci": [
+          0.56,
+          0.6025
+        ],
+        "brier_ci": [
+          0.6392368649143696,
+          0.7065731599583818
+        ]
+      },
+      "input_tokens": 804291,
+      "latency_p50_ms": 138.4336999981315,
+      "latency_note": "HTTPS round trip, not comparable to local GPU"
+    },
+    "yahoo": {
+      "n_options": 10,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 5.943086908008453,
+        "dev_nll": 0.9198566708171382,
+        "dev_nll_at_1": 2.384876064259572,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.7233333333333334,
+        "brier": 0.42998265130942864,
+        "log_loss": 1.019644606899396,
+        "ece": 0.09614434958476487,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.0013333333333333333,
+        "selective_selected_n": 4,
+        "selective_confidence_threshold": 0.9207109669177976,
+        "aurc": 0.13477701526819869,
+        "macro_f1": 0.7190379684214949,
+        "accuracy_ci": [
+          0.707,
+          0.7393333333333333
+        ],
+        "brier_ci": [
+          0.4133947988623594,
+          0.44585230367411827
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.7233333333333334,
+        "brier": 0.4305984917505184,
+        "log_loss": 2.906091378893342,
+        "ece": 0.15210185184496267,
+        "top_bin_mass": 0.5943333333333334,
+        "coverage_at_5pct_error": 0.062,
+        "selective_selected_n": 186,
+        "selective_confidence_threshold": 0.9999999999909999,
+        "aurc": 0.1264206927963257,
+        "macro_f1": 0.7190379684214949,
+        "accuracy_ci": [
+          0.707,
+          0.7393333333333333
+        ],
+        "brier_ci": [
+          0.40571359618576835,
+          0.45630846961431404
+        ]
+      },
+      "input_tokens": 1366777,
+      "latency_p50_ms": 140.05760000145528,
+      "latency_note": "HTTPS round trip, not comparable to local GPU"
+    },
+    "anli_r3": {
+      "n_options": 3,
+      "dev_n": 400,
+      "test_n": 1200,
+      "temperature": {
+        "temperature": 6.621168640163108,
+        "dev_nll": 0.8182899100263359,
+        "dev_nll_at_1": 1.410562334996941,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 1200,
+        "accuracy": 0.7,
+        "brier": 0.4668487645301599,
+        "log_loss": 0.7593177982193625,
+        "ece": 0.1620214964672111,
+        "top_bin_mass": 0.08333333333333333,
+        "coverage_at_5pct_error": 0.13583333333333333,
+        "selective_selected_n": 163,
+        "selective_confidence_threshold": 0.6600664803141125,
+        "aurc": 0.1833734633323012,
+        "macro_f1": 0.7025710015579055,
+        "accuracy_ci": [
+          0.6733333333333333,
+          0.725
+        ],
+        "brier_ci": [
+          0.4539320316799606,
+          0.48075747144443387
+        ]
+      },
+      "unscaled": {
+        "n": 1200,
+        "accuracy": 0.7,
+        "brier": 0.4412973645885309,
+        "log_loss": 0.9531201130223116,
+        "ece": 0.11793863636306601,
+        "top_bin_mass": 0.3325,
+        "coverage_at_5pct_error": 0.13583333333333333,
+        "selective_selected_n": 163,
+        "selective_confidence_threshold": 0.98999999999901,
+        "aurc": 0.18280326559144863,
+        "macro_f1": 0.7025710015579055,
+        "accuracy_ci": [
+          0.6733333333333333,
+          0.725
+        ],
+        "brier_ci": [
+          0.4098993329880137,
+          0.4758313060642748
+        ]
+      },
+      "input_tokens": 625464,
+      "latency_p50_ms": 137.89790000009816,
+      "latency_note": "HTTPS round trip, not comparable to local GPU"
+    },
+    "boolq": {
+      "n_options": 2,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 0.8489044991605029,
+        "dev_nll": 0.16708112900682642,
+        "dev_nll_at_1": 0.1706430883419208,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.9163333333333333,
+        "brier": 0.12778322941223338,
+        "log_loss": 0.22686461045345163,
+        "ece": 0.023243348528927784,
+        "top_bin_mass": 0.77,
+        "coverage_at_5pct_error": 0.9043333333333333,
+        "selective_selected_n": 2713,
+        "selective_confidence_threshold": 0.7954089966944871,
+        "aurc": 0.02454647927824965,
+        "macro_f1": 0.9119549405730927,
+        "accuracy_ci": [
+          0.9063333333333333,
+          0.926
+        ],
+        "brier_ci": [
+          0.11413859353726628,
+          0.14229146107357965
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.9163333333333333,
+        "brier": 0.12642186666666666,
+        "log_loss": 0.22236636070418653,
+        "ece": 0.012146666666668193,
+        "top_bin_mass": 0.684,
+        "coverage_at_5pct_error": 0.9043333333333333,
+        "selective_selected_n": 2713,
+        "selective_confidence_threshold": 0.7599999999999999,
+        "aurc": 0.02454647927824965,
+        "macro_f1": 0.9119549405730927,
+        "accuracy_ci": [
+          0.9063333333333333,
+          0.926
+        ],
+        "brier_ci": [
+          0.113650225,
+          0.13984343666666663
+        ]
+      },
+      "input_tokens": 1473242,
+      "latency_p50_ms": 135.00740000017686,
+      "latency_note": "HTTPS round trip, not comparable to local GPU"
+    }
+  }
+}

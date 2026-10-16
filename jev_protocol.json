@@ -1,0 +1,48 @@
+{
+  "protocol_id": "jev-reference-choice-2026-10-07",
+  "role": "reference system",
+  "claim": "Jev is scored under the Program 1 Choice contract and metric definitions on the Program 1 items in artifacts/splits.json. This file was written before any Jev response on a dataset item. A synthetic sentence was used to check the request and response shape.",
+  "metrics_match": "program-1-choice-2026-10-07",
+  "endpoint": "https://api.typesafe.ai/v1/systemone",
+  "model": "jev-latest",
+  "key_env": "typesafe_jev_key",
+  "key_file": ".env",
+  "datasets": ["sst2", "ag_news", "banking77"],
+  "splits": ["dev", "test"],
+  "request": {
+    "state": "the item text, as one string",
+    "question_id": "label",
+    "type": "choice",
+    "instructions": "Which label best describes the text?",
+    "criteria": "one key per frozen Program 1 label string, in frozen order, each with a null description",
+    "questions_per_request": 1
+  },
+  "scores": {
+    "source": "the probabilities map of the answer, read in frozen label order",
+    "missing_label": "the row is an error and is not scored",
+    "score": "natural log of max(probability, 1e-12)",
+    "unscaled": "softmax of the scores, which is the returned distribution renormalised",
+    "scaled": "softmax of scores / T, with T fit on dev by the Program 1 rule",
+    "vendor_fields_kept": ["choice", "confidence", "model", "usage"]
+  },
+  "decision": "argmax_lowest_index_on_ties over the frozen labels, as in Program 1. The vendor's own choice field is recorded and its agreement with that argmax is reported.",
+  "latency": {
+    "what": "wall-clock milliseconds of the HTTPS call that returned the answer, from this desktop, including network and any gateway",
+    "comparable_to_local_gpu": false,
+    "warmup": 0
+  },
+  "concurrency": 8,
+  "retry": {
+    "statuses": [429, 529],
+    "connection_errors": true,
+    "backoff_seconds": [1, 2, 4, 8, 16],
+    "other_statuses": "the row is an error and is not retried"
+  },
+  "resume": "A finished item_id in the output file is not requested again.",
+  "replay": {
+    "n": 50,
+    "what": "The first 50 test items of each dataset are requested a second time after the main pass. Reported: the fraction whose argmax changed and the largest absolute probability change.",
+    "used_for_metrics": false
+  },
+  "data_leaves_machine": "Item texts and label strings are sent to TypeSafe. All three datasets are public."
+}

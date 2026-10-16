@@ -1,0 +1,10 @@
+{"error": null, "latency_ms": 2150.1444000168703, "text": "scope: yes\nintent: 17", "provider": "Moonshot AI", "prompt_tokens": 578, "cached_tokens": 0, "completion_tokens": 18, "cost": 0.002004, "id": "dev-in-0"}
+{"error": null, "latency_ms": 2212.6873999950476, "text": "scope: yes\nintent: 37", "provider": "Moonshot AI", "prompt_tokens": 585, "cached_tokens": 0, "completion_tokens": 18, "cost": 0.002025, "id": "dev-in-1"}
+{"error": null, "latency_ms": 2408.007899997756, "text": "scope: yes\nintent: 37", "provider": "Moonshot AI", "prompt_tokens": 573, "cached_tokens": 0, "completion_tokens": 18, "cost": 0.001989, "id": "dev-in-2"}
+{"error": null, "latency_ms": 2248.7912999931723, "text": "scope: yes\nintent: 23", "provider": "Moonshot AI", "prompt_tokens": 556, "cached_tokens": 0, "completion_tokens": 18, "cost": 0.001938, "id": "dev-in-3"}
+{"error": null, "latency_ms": 2304.9172000028193, "text": "scope: yes\nintent: 37", "provider": "Moonshot AI", "prompt_tokens": 580, "cached_tokens": 0, "completion_tokens": 18, "cost": 0.00201, "id": "dev-in-4"}
+{"error": null, "latency_ms": 2218.9765000075568, "text": "scope: yes\nintent: 42", "provider": "Moonshot AI", "prompt_tokens": 546, "cached_tokens": 0, "completion_tokens": 18, "cost": 0.001908, "id": "dev-in-5"}
+{"error": null, "latency_ms": 2171.4343999919947, "text": "scope: yes\nintent: 24", "provider": "Moonshot AI", "prompt_tokens": 524, "cached_tokens": 0, "completion_tokens": 18, "cost": 0.001842, "id": "dev-in-6"}
+{"error": null, "latency_ms": 2366.5203000127804, "text": "scope: yes\nintent: 04", "provider": "Moonshot AI", "prompt_tokens": 552, "cached_tokens": 0, "completion_tokens": 18, "cost": 0.001926, "id": "dev-in-7"}
+{"error": null, "latency_ms": 2367.0732000027783, "text": "scope: no\nintent: 00", "provider": "Moonshot AI", "prompt_tokens": 601, "cached_tokens": 256, "completion_tokens": 18, "cost": 0.0013818, "id": "dev-out-0"}
+{"error": null, "latency_ms": 2092.675300023984, "text": "scope: yes\nintent: 23", "provider": "Moonshot AI", "prompt_tokens": 550, "cached_tokens": 256, "completion_tokens": 18, "cost": 0.0012288, "id": "dev-out-1"}

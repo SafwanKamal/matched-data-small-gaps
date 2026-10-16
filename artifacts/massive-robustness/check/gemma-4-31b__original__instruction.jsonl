@@ -1,0 +1,10 @@
+{"error": null, "latency_ms": 899.3228000181261, "text": "scope: yes\nintent: 25", "provider": "Novita", "prompt_tokens": 678, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.892e-05, "id": "massive-s0-t0"}
+{"error": null, "latency_ms": 1090.725999994902, "text": "scope: yes\nintent: 28", "provider": "Novita", "prompt_tokens": 686, "cached_tokens": 0, "completion_tokens": 10, "cost": 0.00010004, "id": "massive-s0-t1"}
+{"error": null, "latency_ms": 1064.5367999968585, "text": "scope: yes\nintent: 37", "provider": "Novita", "prompt_tokens": 652, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.528e-05, "id": "massive-s0-t2"}
+{"error": null, "latency_ms": 1143.2576999941375, "text": "scope: yes\nintent: 10", "provider": "Novita", "prompt_tokens": 785, "cached_tokens": 0, "completion_tokens": 10, "cost": 0.0001139, "id": "massive-s0-t3"}
+{"error": null, "latency_ms": 902.7501000091434, "text": "scope: yes\nintent: 01", "provider": "Novita", "prompt_tokens": 657, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.598e-05, "id": "massive-s0-t4"}
+{"error": null, "latency_ms": 1315.5550000083167, "text": "scope: yes\nintent: 23", "provider": "Novita", "prompt_tokens": 623, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.122e-05, "id": "massive-s1-t0"}
+{"error": null, "latency_ms": 1110.5811000161339, "text": "scope: no\nintent: 00", "provider": "Novita", "prompt_tokens": 694, "cached_tokens": 0, "completion_tokens": 10, "cost": 0.00010116, "id": "massive-s1-t2"}
+{"error": null, "latency_ms": 969.5920000085607, "text": "scope: yes\nintent: 23", "provider": "Novita", "prompt_tokens": 668, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.752e-05, "id": "massive-s2-t0"}
+{"error": null, "latency_ms": 827.5520000024699, "text": "scope: yes\nintent: 23", "provider": "Novita", "prompt_tokens": 686, "cached_tokens": 0, "completion_tokens": 10, "cost": 0.00010004, "id": "massive-s3-t3"}
+{"error": null, "latency_ms": 833.8312999985646, "text": "scope: no\nintent: 00", "provider": "Novita", "prompt_tokens": 644, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.416e-05, "id": "massive-s4-t2"}

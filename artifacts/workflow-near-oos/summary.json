@@ -1,0 +1,255 @@
+{
+  "protocol_id": "workflow-near-domain-oos-2026-10-14",
+  "sets": {
+    "id": {
+      "rows": {
+        "encoder_msp": {
+          "session_success": 0.24,
+          "session_success_ci": [
+            0.1975,
+            0.2825
+          ],
+          "scope_accuracy": 0.787,
+          "intent_accuracy": 0.7846441947565543,
+          "in_scope_kept": 0.8308364544319601,
+          "out_of_scope_caught": 0.6105527638190955,
+          "dev_balanced_accuracy": 0.845
+        },
+        "encoder_energy": {
+          "session_success": 0.2875,
+          "session_success_ci": [
+            0.2425,
+            0.3325
+          ],
+          "scope_accuracy": 0.804,
+          "intent_accuracy": 0.7609238451935081,
+          "in_scope_kept": 0.8127340823970037,
+          "out_of_scope_caught": 0.7688442211055276,
+          "dev_balanced_accuracy": 0.8512500000000001
+        },
+        "encoder_mahalanobis": {
+          "session_success": 0.26,
+          "session_success_ci": [
+            0.215,
+            0.3025
+          ],
+          "scope_accuracy": 0.7935,
+          "intent_accuracy": 0.715980024968789,
+          "in_scope_kept": 0.768414481897628,
+          "out_of_scope_caught": 0.8944723618090452,
+          "dev_balanced_accuracy": 0.8362499999999999
+        },
+        "encoder_knn": {
+          "session_success": 0.2375,
+          "session_success_ci": [
+            0.1975,
+            0.2775
+          ],
+          "scope_accuracy": 0.77,
+          "intent_accuracy": 0.684769038701623,
+          "in_scope_kept": 0.7272159800249688,
+          "out_of_scope_caught": 0.9422110552763819,
+          "dev_balanced_accuracy": 0.8374999999999999
+        },
+        "gemma_zero_shot_alone": {
+          "session_success": 0.1875,
+          "session_success_ci": [
+            0.1525,
+            0.22506249999999967
+          ],
+          "scope_accuracy": 0.8545,
+          "intent_accuracy": 0.7184769038701623,
+          "in_scope_kept": 0.8938826466916354,
+          "out_of_scope_caught": 0.6959798994974874
+        },
+        "gemma_zero_shot_gate_encoder_intent": {
+          "session_success": 0.315,
+          "session_success_ci": [
+            0.27,
+            0.3625
+          ],
+          "scope_accuracy": 0.8545,
+          "intent_accuracy": 0.8064918851435705,
+          "in_scope_kept": 0.8938826466916354,
+          "out_of_scope_caught": 0.6959798994974874
+        },
+        "gemma_retrieval_alone": {
+          "session_success": 0.2875,
+          "session_success_ci": [
+            0.2425,
+            0.3325
+          ],
+          "scope_accuracy": 0.8625,
+          "intent_accuracy": 0.8757802746566792,
+          "in_scope_kept": 0.9831460674157303,
+          "out_of_scope_caught": 0.3768844221105528
+        },
+        "gemma_retrieval_gate_encoder_intent": {
+          "session_success": 0.2975,
+          "session_success_ci": [
+            0.2525,
+            0.34
+          ],
+          "scope_accuracy": 0.8625,
+          "intent_accuracy": 0.8751560549313359,
+          "in_scope_kept": 0.9831460674157303,
+          "out_of_scope_caught": 0.3768844221105528
+        },
+        "encoder_energy_then_gemma_retrieval_0.25": {
+          "session_success": 0.2725,
+          "session_success_ci": [
+            0.23,
+            0.3175
+          ],
+          "scope_accuracy": 0.8395,
+          "intent_accuracy": 0.8439450686641697,
+          "in_scope_kept": 0.9363295880149812,
+          "out_of_scope_caught": 0.44974874371859297
+        },
+        "encoder_energy_then_gemma_retrieval_0.4": {
+          "session_success": 0.2975,
+          "session_success_ci": [
+            0.2525,
+            0.34256249999999966
+          ],
+          "scope_accuracy": 0.8595,
+          "intent_accuracy": 0.8795255930087391,
+          "in_scope_kept": 0.9800249687890137,
+          "out_of_scope_caught": 0.3743718592964824
+        }
+      },
+      "auroc": {
+        "msp": 0.8115483785971054,
+        "energy": 0.873678630355272,
+        "mahalanobis": 0.8939422455598843,
+        "knn": 0.9116446778210654
+      },
+      "dev_selected_detector": "energy"
+    },
+    "ood": {
+      "rows": {
+        "encoder_msp": {
+          "session_success": 0.4875,
+          "session_success_ci": [
+            0.44,
+            0.5375
+          ],
+          "scope_accuracy": 0.917,
+          "intent_accuracy": 0.8439450686641697,
+          "in_scope_kept": 0.9119850187265918,
+          "out_of_scope_caught": 0.9371859296482412,
+          "dev_balanced_accuracy": 0.93625
+        },
+        "encoder_energy": {
+          "session_success": 0.57,
+          "session_success_ci": [
+            0.52,
+            0.62
+          ],
+          "scope_accuracy": 0.96,
+          "intent_accuracy": 0.8682896379525593,
+          "in_scope_kept": 0.9606741573033708,
+          "out_of_scope_caught": 0.957286432160804,
+          "dev_balanced_accuracy": 0.96375
+        },
+        "encoder_mahalanobis": {
+          "session_success": 0.58,
+          "session_success_ci": [
+            0.5299375000000001,
+            0.6275
+          ],
+          "scope_accuracy": 0.974,
+          "intent_accuracy": 0.8745318352059925,
+          "in_scope_kept": 0.9769038701622972,
+          "out_of_scope_caught": 0.9623115577889447,
+          "dev_balanced_accuracy": 0.975
+        },
+        "encoder_knn": {
+          "session_success": 0.535,
+          "session_success_ci": [
+            0.485,
+            0.5825
+          ],
+          "scope_accuracy": 0.9555,
+          "intent_accuracy": 0.8607990012484394,
+          "in_scope_kept": 0.9550561797752809,
+          "out_of_scope_caught": 0.957286432160804,
+          "dev_balanced_accuracy": 0.9612499999999999
+        },
+        "gemma_zero_shot_alone": {
+          "session_success": 0.2725,
+          "session_success_ci": [
+            0.23,
+            0.3175
+          ],
+          "scope_accuracy": 0.918,
+          "intent_accuracy": 0.7166042446941323,
+          "in_scope_kept": 0.8995006242197253,
+          "out_of_scope_caught": 0.992462311557789
+        },
+        "gemma_zero_shot_gate_encoder_intent": {
+          "session_success": 0.44,
+          "session_success_ci": [
+            0.39,
+            0.49
+          ],
+          "scope_accuracy": 0.918,
+          "intent_accuracy": 0.8102372034956304,
+          "in_scope_kept": 0.8995006242197253,
+          "out_of_scope_caught": 0.992462311557789
+        },
+        "gemma_retrieval_alone": {
+          "session_success": 0.5825,
+          "session_success_ci": [
+            0.5325,
+            0.6325
+          ],
+          "scope_accuracy": 0.984,
+          "intent_accuracy": 0.8745318352059925,
+          "in_scope_kept": 0.982521847690387,
+          "out_of_scope_caught": 0.9899497487437185
+        },
+        "gemma_retrieval_gate_encoder_intent": {
+          "session_success": 0.5925,
+          "session_success_ci": [
+            0.5449375000000001,
+            0.6425
+          ],
+          "scope_accuracy": 0.984,
+          "intent_accuracy": 0.8745318352059925,
+          "in_scope_kept": 0.982521847690387,
+          "out_of_scope_caught": 0.9899497487437185
+        },
+        "encoder_mahalanobis_then_gemma_retrieval_0.25": {
+          "session_success": 0.625,
+          "session_success_ci": [
+            0.5775,
+            0.6700624999999997
+          ],
+          "scope_accuracy": 0.982,
+          "intent_accuracy": 0.8895131086142322,
+          "in_scope_kept": 0.9837702871410736,
+          "out_of_scope_caught": 0.9748743718592965
+        },
+        "encoder_mahalanobis_then_gemma_retrieval_0.4": {
+          "session_success": 0.605,
+          "session_success_ci": [
+            0.5575,
+            0.6525
+          ],
+          "scope_accuracy": 0.985,
+          "intent_accuracy": 0.883270911360799,
+          "in_scope_kept": 0.9843945068664169,
+          "out_of_scope_caught": 0.9874371859296482
+        }
+      },
+      "auroc": {
+        "msp": 0.9782119084812326,
+        "energy": 0.990787269681742,
+        "mahalanobis": 0.9946204179449055,
+        "knn": 0.9907527650738085
+      },
+      "dev_selected_detector": "mahalanobis"
+    }
+  }
+}

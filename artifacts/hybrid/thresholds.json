@@ -1,0 +1,589 @@
+{
+  "protocol_id": "program-5-hybrid-cascade-2026-10-08-fp32",
+  "datasets": {
+    "banking77": {
+      "ettin-encoder-log_loss": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.5224710184738732,
+          "dev_n": 400,
+          "dev_escalated": 20
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.6532069131173459,
+          "dev_n": 400,
+          "dev_escalated": 40
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.9434348726128674,
+          "dev_n": 400,
+          "dev_escalated": 100
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.9934709338622225,
+          "dev_n": 400,
+          "dev_escalated": 200
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.9984120949046148,
+          "dev_n": 400,
+          "dev_escalated": 300
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ],
+      "ettin-encoder-brier": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.30128750618614314,
+          "dev_n": 400,
+          "dev_escalated": 20
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.5613391794831961,
+          "dev_n": 400,
+          "dev_escalated": 40
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.8841489794313244,
+          "dev_n": 400,
+          "dev_escalated": 100
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.9800617680373273,
+          "dev_n": 400,
+          "dev_escalated": 200
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.9940164123024189,
+          "dev_n": 400,
+          "dev_escalated": 300
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ],
+      "deberta-v3-large-zeroshot-v2.0-c": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.14359859183116516,
+          "dev_n": 400,
+          "dev_escalated": 20
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.17739329520984218,
+          "dev_n": 400,
+          "dev_escalated": 40
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.24010625834812244,
+          "dev_n": 400,
+          "dev_escalated": 100
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.38540492187629455,
+          "dev_n": 400,
+          "dev_escalated": 200
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.5987928206259447,
+          "dev_n": 400,
+          "dev_escalated": 300
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ],
+      "gliclass-base-v3.0": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.17203004675618352,
+          "dev_n": 400,
+          "dev_escalated": 20
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.21564415893520641,
+          "dev_n": 400,
+          "dev_escalated": 40
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.27097968109390663,
+          "dev_n": 400,
+          "dev_escalated": 100
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.36670821251543445,
+          "dev_n": 400,
+          "dev_escalated": 200
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.490744911636391,
+          "dev_n": 400,
+          "dev_escalated": 300
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ],
+      "qwen3-0.6b": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.043997359281766436,
+          "dev_n": 400,
+          "dev_escalated": 20
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.0458701716787671,
+          "dev_n": 400,
+          "dev_escalated": 40
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.050526801794482414,
+          "dev_n": 400,
+          "dev_escalated": 100
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.05692681309805083,
+          "dev_n": 400,
+          "dev_escalated": 200
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.06444532156367903,
+          "dev_n": 400,
+          "dev_escalated": 300
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ]
+    },
+    "sst2": {
+      "ettin-encoder-log_loss": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.7488815770031225,
+          "dev_n": 400,
+          "dev_escalated": 20
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.8746999513126961,
+          "dev_n": 400,
+          "dev_escalated": 40
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.9477059604821927,
+          "dev_n": 400,
+          "dev_escalated": 100
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.9715352620665524,
+          "dev_n": 400,
+          "dev_escalated": 200
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.9852622504755496,
+          "dev_n": 400,
+          "dev_escalated": 300
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ],
+      "ettin-encoder-brier": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.7903557433643357,
+          "dev_n": 400,
+          "dev_escalated": 20
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.8744228945765185,
+          "dev_n": 400,
+          "dev_escalated": 40
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.9403799781443166,
+          "dev_n": 400,
+          "dev_escalated": 100
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.9685622816753205,
+          "dev_n": 400,
+          "dev_escalated": 200
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.9818815876021695,
+          "dev_n": 400,
+          "dev_escalated": 300
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ],
+      "deberta-v3-large-zeroshot-v2.0-c": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.5465743940332752,
+          "dev_n": 400,
+          "dev_escalated": 20
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.6181563112348709,
+          "dev_n": 400,
+          "dev_escalated": 40
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.7886619517291883,
+          "dev_n": 400,
+          "dev_escalated": 100
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.916024342905812,
+          "dev_n": 400,
+          "dev_escalated": 200
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.9567886375455318,
+          "dev_n": 400,
+          "dev_escalated": 301
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ],
+      "gliclass-base-v3.0": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.5613622903327996,
+          "dev_n": 400,
+          "dev_escalated": 20
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.621049027737237,
+          "dev_n": 400,
+          "dev_escalated": 40
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.80068002611068,
+          "dev_n": 400,
+          "dev_escalated": 100
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.92060645330771,
+          "dev_n": 400,
+          "dev_escalated": 200
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.9472569793030333,
+          "dev_n": 400,
+          "dev_escalated": 300
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ],
+      "qwen3-0.6b": [
+        {
+          "rate": 0.0,
+          "k": 0,
+          "mode": "none",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 0
+        },
+        {
+          "rate": 0.05,
+          "k": 20,
+          "mode": "leq",
+          "tau": 0.5092883903401958,
+          "dev_n": 400,
+          "dev_escalated": 27
+        },
+        {
+          "rate": 0.1,
+          "k": 40,
+          "mode": "leq",
+          "tau": 0.5185703721047665,
+          "dev_n": 400,
+          "dev_escalated": 48
+        },
+        {
+          "rate": 0.25,
+          "k": 100,
+          "mode": "leq",
+          "tau": 0.5463141505226492,
+          "dev_n": 400,
+          "dev_escalated": 114
+        },
+        {
+          "rate": 0.5,
+          "k": 200,
+          "mode": "leq",
+          "tau": 0.5828345683081336,
+          "dev_n": 400,
+          "dev_escalated": 203
+        },
+        {
+          "rate": 0.75,
+          "k": 300,
+          "mode": "leq",
+          "tau": 0.6184682698416663,
+          "dev_n": 400,
+          "dev_escalated": 305
+        },
+        {
+          "rate": 1.0,
+          "k": 400,
+          "mode": "all",
+          "tau": null,
+          "dev_n": 400,
+          "dev_escalated": 400
+        }
+      ]
+    }
+  }
+}

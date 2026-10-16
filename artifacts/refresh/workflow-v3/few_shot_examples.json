@@ -1,0 +1,42 @@
+[
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nThere is a payment I don't recognise!\n\nFast classifier's top guesses:\n- card payment not recognised (100%)\n- direct debit payment not recognised (0%)\n- why verify identity (0%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 2
+ },
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nCan I get my card fast tracked?\n\nFast classifier's top guesses:\n- card arrival (88%)\n- lost or stolen card (3%)\n- card delivery estimate (2%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 2
+ },
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nis marijuana addictive\n\nFast classifier's top guesses:\n- card acceptance (6%)\n- beneficiary not allowed (6%)\n- cash withdrawal not recognised (6%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 4
+ },
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nI just got my card and cannot get it to work.\n\nFast classifier's top guesses:\n- card not working (100%)\n- declined card payment (0%)\n- declined cash withdrawal (0%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 2
+ },
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nwhy do we dream\n\nFast classifier's top guesses:\n- why verify identity (13%)\n- card arrival (9%)\n- visa or mastercard (6%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 4
+ },
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nHow long does it take for the money to show up in my account?\n\nFast classifier's top guesses:\n- transfer timing (97%)\n- balance not updated after bank transfer (2%)\n- pending transfer (0%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 1
+ },
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nCan I have my card delivered on Tuesday?\n\nFast classifier's top guesses:\n- card delivery estimate (85%)\n- card arrival (14%)\n- card about to expire (0%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 1
+ },
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nWill my transfer be done soon?\n\nFast classifier's top guesses:\n- transfer timing (39%)\n- transfer not received by recipient (27%)\n- pending transfer (24%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 2
+ },
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nThe ATM won't give me my card back. I need it back now!\n\nFast classifier's top guesses:\n- card swallowed (100%)\n- wrong amount of cash received (0%)\n- declined cash withdrawal (0%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 1
+ },
+ {
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\nI noticed my exchange rate was incorrect when I got cash.\n\nFast classifier's top guesses:\n- wrong exchange rate for cash withdrawal (100%)\n- cash withdrawal charge (0%)\n- wrong amount of cash received (0%)\n\nChoose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "action": 1
+ }
+]

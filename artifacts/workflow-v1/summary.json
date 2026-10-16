@@ -1,0 +1,439 @@
+{
+  "protocol_id": "workflow-v1-support-desk-2026-10-09",
+  "rules": {
+    "decoder": {
+      "tau": 0.7613283381840439,
+      "dev_balanced_accuracy": 0.9412499999999999,
+      "escalation_tau": 0.9571406614383675,
+      "temperature": 2.0205845245669427
+    },
+    "deepseek": {
+      "tau": 0.5904701209785675,
+      "dev_balanced_accuracy": 0.845,
+      "escalation_tau": 0.5751612624657623,
+      "temperature": 2.138547078930959
+    },
+    "encoder": {
+      "tau": 0.5804351003106049,
+      "dev_balanced_accuracy": 0.9375,
+      "escalation_tau": 0.9436447515611116,
+      "temperature": 0.6871853702254552
+    },
+    "gliclass": {
+      "tau": 0.21564435121536701,
+      "dev_balanced_accuracy": 0.76625,
+      "escalation_tau": 0.27104414034007507,
+      "temperature": 1.4780510493043906
+    },
+    "qwen37": {
+      "tau": 0.4150444097616915,
+      "dev_balanced_accuracy": 0.85875,
+      "escalation_tau": 0.5287681979667701,
+      "temperature": 1.2607729783449062
+    },
+    "qwen4b": {
+      "tau": 0.31083309048587165,
+      "dev_balanced_accuracy": 0.825,
+      "escalation_tau": 0.26913893280465373,
+      "temperature": 4.562279284159313
+    }
+  },
+  "policies": {
+    "jev_raw_history": {
+      "node_accuracy": {
+        "scope": 0.9715,
+        "intent": 0.7864746399499061,
+        "repeat": 0.8813700918964077
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9234828496042217,
+        "an_intent_wrong": 0.8086560364464692
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 758,
+        "an_intent_wrong": 439
+      },
+      "turn_success": 0.7835,
+      "turn_success_ci": [
+        0.7635000000000001,
+        0.8019999999999999
+      ],
+      "session_success": 0.325,
+      "session_success_ci": [
+        0.2825,
+        0.3725
+      ],
+      "jev_requests_per_session": 5.0,
+      "jev_input_tokens_per_session": 5188.0425,
+      "share_of_turns_escalated": 0.0
+    },
+    "jev_typed_state": {
+      "node_accuracy": {
+        "scope": 0.9565,
+        "intent": 0.7614276768941766,
+        "repeat": 0.8705096073517126
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9971550497866287,
+        "an_intent_wrong": 0.6902834008097166
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 703,
+        "an_intent_wrong": 494
+      },
+      "turn_success": 0.7815,
+      "turn_success_ci": [
+        0.7585,
+        0.8015000000000001
+      ],
+      "session_success": 0.365,
+      "session_success_ci": [
+        0.3225,
+        0.4125
+      ],
+      "jev_requests_per_session": 5.0,
+      "jev_input_tokens_per_session": 4871.5575,
+      "share_of_turns_escalated": 0.0
+    },
+    "encoder_typed_state": {
+      "node_accuracy": {
+        "scope": 0.917,
+        "intent": 0.8778960551033187,
+        "repeat": 0.8780284043441938
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9889746416758545,
+        "an_intent_wrong": 0.5310344827586206
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 907,
+        "an_intent_wrong": 290
+      },
+      "turn_success": 0.851,
+      "turn_success_ci": [
+        0.8330000000000001,
+        0.868
+      ],
+      "session_success": 0.4925,
+      "session_success_ci": [
+        0.445,
+        0.5425
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.0
+    },
+    "encoder_then_jev": {
+      "node_accuracy": {
+        "scope": 0.9775,
+        "intent": 0.876017532874139,
+        "repeat": 0.924812030075188
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9977973568281938,
+        "an_intent_wrong": 0.6955017301038062
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 908,
+        "an_intent_wrong": 289
+      },
+      "turn_success": 0.874,
+      "turn_success_ci": [
+        0.8565,
+        0.8900125
+      ],
+      "session_success": 0.5775,
+      "session_success_ci": [
+        0.5325,
+        0.6250624999999996
+      ],
+      "jev_requests_per_session": 2.0325,
+      "jev_input_tokens_per_session": 1979.2175,
+      "share_of_turns_escalated": 0.4065
+    },
+    "gliclass_typed_state": {
+      "node_accuracy": {
+        "scope": 0.829,
+        "intent": 0.49843456480901693,
+        "repeat": 0.7284878863826232
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9592476489028213,
+        "an_intent_wrong": 0.6446469248291572
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 319,
+        "an_intent_wrong": 878
+      },
+      "turn_success": 0.476,
+      "turn_success_ci": [
+        0.4525,
+        0.5010125000000001
+      ],
+      "session_success": 0.04,
+      "session_success_ci": [
+        0.0225,
+        0.06
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.0
+    },
+    "decoder_typed_state": {
+      "node_accuracy": {
+        "scope": 0.9145,
+        "intent": 0.8810269254852849,
+        "repeat": 0.8713450292397661
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 1.0,
+        "an_intent_wrong": 0.44
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 922,
+        "an_intent_wrong": 275
+      },
+      "turn_success": 0.8835,
+      "turn_success_ci": [
+        0.867,
+        0.899
+      ],
+      "session_success": 0.58,
+      "session_success_ci": [
+        0.53,
+        0.6275
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.0
+    },
+    "decoder_then_jev": {
+      "node_accuracy": {
+        "scope": 0.981,
+        "intent": 0.8922980588603632,
+        "repeat": 0.9281537176274018
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9978880675818373,
+        "an_intent_wrong": 0.664
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 947,
+        "an_intent_wrong": 250
+      },
+      "turn_success": 0.886,
+      "turn_success_ci": [
+        0.8684999999999999,
+        0.902
+      ],
+      "session_success": 0.61,
+      "session_success_ci": [
+        0.5625,
+        0.6575
+      ],
+      "jev_requests_per_session": 1.8975,
+      "jev_input_tokens_per_session": 1847.93,
+      "share_of_turns_escalated": 0.3795
+    },
+    "qwen4b_typed_state": {
+      "node_accuracy": {
+        "scope": 0.7585,
+        "intent": 0.4164057608015028,
+        "repeat": 0.6081871345029239
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9960159362549801,
+        "an_intent_wrong": 0.5052854122621564
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 251,
+        "an_intent_wrong": 946
+      },
+      "turn_success": 0.5005,
+      "turn_success_ci": [
+        0.4749875,
+        0.5245000000000001
+      ],
+      "session_success": 0.045,
+      "session_success_ci": [
+        0.027437500000000004,
+        0.0675
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.0
+    },
+    "deepseek_typed_state": {
+      "node_accuracy": {
+        "scope": 0.8035,
+        "intent": 0.6505948653725736,
+        "repeat": 0.6950710108604845
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9943074003795066,
+        "an_intent_wrong": 0.4597014925373134
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 527,
+        "an_intent_wrong": 670
+      },
+      "turn_success": 0.6815,
+      "turn_success_ci": [
+        0.6585,
+        0.7044999999999999
+      ],
+      "session_success": 0.1975,
+      "session_success_ci": [
+        0.16,
+        0.2375
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.0
+    },
+    "qwen37_typed_state": {
+      "node_accuracy": {
+        "scope": 0.8415,
+        "intent": 0.6906700062617408,
+        "repeat": 0.7644110275689223
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9897959183673469,
+        "an_intent_wrong": 0.5467980295566502
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 588,
+        "an_intent_wrong": 609
+      },
+      "turn_success": 0.691,
+      "turn_success_ci": [
+        0.6669999999999999,
+        0.7145125
+      ],
+      "session_success": 0.23,
+      "session_success_ci": [
+        0.1925,
+        0.27
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.0
+    },
+    "encoder_then_decoder": {
+      "node_accuracy": {
+        "scope": 0.9215,
+        "intent": 0.8879148403256105,
+        "repeat": 0.8805346700083542
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 1.0,
+        "an_intent_wrong": 0.44357976653696496
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 940,
+        "an_intent_wrong": 257
+      },
+      "turn_success": 0.887,
+      "turn_success_ci": [
+        0.871,
+        0.902
+      ],
+      "session_success": 0.59,
+      "session_success_ci": [
+        0.54,
+        0.6375
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.4065
+    },
+    "encoder_then_deepseek": {
+      "node_accuracy": {
+        "scope": 0.9055,
+        "intent": 0.8334376956793988,
+        "repeat": 0.8395989974937343
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9950920245398773,
+        "an_intent_wrong": 0.5078534031413613
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 815,
+        "an_intent_wrong": 382
+      },
+      "turn_success": 0.8345,
+      "turn_success_ci": [
+        0.8155000000000001,
+        0.8525
+      ],
+      "session_success": 0.445,
+      "session_success_ci": [
+        0.3975,
+        0.4925
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.4065
+    }
+  }
+}

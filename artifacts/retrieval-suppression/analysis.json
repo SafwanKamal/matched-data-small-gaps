@@ -1,0 +1,1995 @@
+{
+  "protocol_id": "retrieval-suppression-2026-10-16",
+  "groups": {
+    "banking77_oos": {
+      "n_in_scope": 398,
+      "n_held_out": 679,
+      "held_out_intents": 27,
+      "models": {
+        "gemma-4-31b": {
+          "zero_shot": {
+            "held_out_rejected": 0.5949926362297496,
+            "in_scope_right": 0.7587939698492462,
+            "in_scope_kept": 0.9170854271356784,
+            "intent_on_kept": 0.8273972602739726,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 526.8597957288765,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 7.776037140204272e-05,
+              "usd_total": 0.08374792,
+              "latency_ms_p50": 815.181499987375,
+              "latency_ms_p95": 1596.2627200176937
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.30338733431516934,
+            "in_scope_right": 0.8668341708542714,
+            "in_scope_kept": 0.9824120603015075,
+            "intent_on_kept": 0.8823529411764706,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 892.9591457753017,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00012901428040854222,
+              "usd_total": 0.13894837999999998,
+              "latency_ms_p50": 835.1952999946661,
+              "latency_ms_p95": 1583.701979991747
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.3328424153166421,
+            "in_scope_right": 0.864321608040201,
+            "in_scope_kept": 0.9723618090452262,
+            "intent_on_kept": 0.8888888888888888,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 925.9591457753017,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00013363428040854224,
+              "usd_total": 0.14392412,
+              "latency_ms_p50": 870.4665999975987,
+              "latency_ms_p95": 2110.8854799997057
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.3019145802650957,
+            "in_scope_right": 0.8768844221105527,
+            "in_scope_kept": 0.9849246231155779,
+            "intent_on_kept": 0.8903061224489796,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 944.9591457753017,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00013629428040854227,
+              "usd_total": 0.14678894000000003,
+              "latency_ms_p50": 877.9510000022128,
+              "latency_ms_p95": 1869.7794200037604
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "zero_shot": {
+            "held_out_rejected": 0.8217967599410898,
+            "in_scope_right": 0.6633165829145728,
+            "in_scope_kept": 0.8090452261306532,
+            "intent_on_kept": 0.8198757763975155,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 522.6787372330548,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00011596235376044569,
+              "usd_total": 0.124891455,
+              "latency_ms_p50": 1325.160100008361,
+              "latency_ms_p95": 1978.268099995329
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.5846833578792342,
+            "in_scope_right": 0.8592964824120602,
+            "in_scope_kept": 0.9522613065326633,
+            "intent_on_kept": 0.9023746701846965,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 883.4401114206128,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00018631082172701951,
+              "usd_total": 0.20065675500000002,
+              "latency_ms_p50": 1597.5351000088267,
+              "latency_ms_p95": 3023.9688399946313
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.6347569955817378,
+            "in_scope_right": 0.8517587939698492,
+            "in_scope_kept": 0.9447236180904522,
+            "intent_on_kept": 0.901595744680851,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 916.4401114206128,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.0001927458217270195,
+              "usd_total": 0.20758725,
+              "latency_ms_p50": 2041.0056000109762,
+              "latency_ms_p95": 3273.4934000007333
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.5581737849779087,
+            "in_scope_right": 0.8567839195979899,
+            "in_scope_kept": 0.9522613065326633,
+            "intent_on_kept": 0.899736147757256,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 938.4401114206128,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00019703582172701952,
+              "usd_total": 0.21220758,
+              "latency_ms_p50": 1369.5743999851402,
+              "latency_ms_p95": 2559.863000013865
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "zero_shot": {
+            "held_out_rejected": 0.5066273932253313,
+            "in_scope_right": 0.6080402010050251,
+            "in_scope_kept": 0.8919597989949749,
+            "intent_on_kept": 0.6816901408450704,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 461.669452181987,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 4.90469452181987e-05,
+              "usd_total": 0.05282356,
+              "latency_ms_p50": 692.8217000095174,
+              "latency_ms_p95": 2954.652579990214
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.17673048600883653,
+            "in_scope_right": 0.8768844221105527,
+            "in_scope_kept": 0.992462311557789,
+            "intent_on_kept": 0.8835443037974684,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 801.1708449396472,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 8.299708449396471e-05,
+              "usd_total": 0.08938786,
+              "latency_ms_p50": 825.6694999872707,
+              "latency_ms_p95": 2880.457260017283
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.3166421207658321,
+            "in_scope_right": 0.8592964824120602,
+            "in_scope_kept": 0.9673366834170855,
+            "intent_on_kept": 0.8883116883116883,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 834.1708449396472,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 8.629708449396471e-05,
+              "usd_total": 0.09294195999999999,
+              "latency_ms_p50": 726.9872000033502,
+              "latency_ms_p95": 2548.670000018319
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.18556701030927836,
+            "in_scope_right": 0.8768844221105527,
+            "in_scope_kept": 0.9949748743718593,
+            "intent_on_kept": 0.8813131313131313,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 852.1708449396472,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 8.809708449396472e-05,
+              "usd_total": 0.09488056,
+              "latency_ms_p50": 716.5677000011783,
+              "latency_ms_p95": 2560.0577400124116
+            }
+          }
+        },
+        "deepseek-v4-pro": {
+          "zero_shot": {
+            "held_out_rejected": 0.6082474226804123,
+            "in_scope_right": 0.7160804020100503,
+            "in_scope_kept": 0.8894472361809045,
+            "intent_on_kept": 0.8050847457627118,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 454.69359331476323,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00010520203579387187,
+              "usd_total": 0.11330259255,
+              "latency_ms_p50": 1693.3299000083935,
+              "latency_ms_p95": 8973.925199994119
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.2106038291605302,
+            "in_scope_right": 0.8844221105527639,
+            "in_scope_kept": 0.9899497487437185,
+            "intent_on_kept": 0.8934010152284264,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 794.6573816155989,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00018556923334261838,
+              "usd_total": 0.19985806431,
+              "latency_ms_p50": 1764.0108999912627,
+              "latency_ms_p95": 5153.805539995657
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.3181148748159057,
+            "in_scope_right": 0.8819095477386935,
+            "in_scope_kept": 0.9849246231155779,
+            "intent_on_kept": 0.8954081632653061,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 827.6573816155989,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.0002662441334122563,
+              "usd_total": 0.28674493168500004,
+              "latency_ms_p50": 1855.1159999915399,
+              "latency_ms_p95": 3700.5840400175653
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.20765832106038293,
+            "in_scope_right": 0.8819095477386935,
+            "in_scope_kept": 0.9899497487437185,
+            "intent_on_kept": 0.8908629441624365,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1077,
+              "prompt_tokens_mean": 844.6573816155989,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.0001973897258356546,
+              "usd_total": 0.212588734725,
+              "latency_ms_p50": 1822.2582999733277,
+              "latency_ms_p95": 3823.543800011975
+            }
+          }
+        }
+      },
+      "tests": {
+        "H1 gemma-4-31b: zero-shot minus retrieval rejection": {
+          "difference_points": 29.16053019145803,
+          "ci95": [
+            19.54831605641322,
+            39.41249543295579
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 27,
+          "holm_p": 0.0007999200079992001
+        },
+        "H2 gemma-4-31b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 2.945508100147275,
+          "ci95": [
+            0.30112626362379474,
+            5.780496903998215
+          ],
+          "p": 0.0326967303269673,
+          "clusters": 27,
+          "share_of_suppression_recovered": 0.10101010101010102,
+          "in_scope_right_change": {
+            "difference_points": -0.25125628140703515,
+            "ci95": [
+              -1.9607843137254901,
+              1.4048933861082717
+            ],
+            "p": 1.0,
+            "clusters": 45
+          },
+          "works": false,
+          "holm_p": 0.2942705729427057
+        },
+        "H2 gemma-4-31b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -0.14727540500736377,
+          "ci95": [
+            -1.8005680177144507,
+            1.4927614181345514
+          ],
+          "p": 0.6419358064193581,
+          "clusters": 27,
+          "share_of_suppression_recovered": -0.005050505050505032,
+          "in_scope_right_change": {
+            "difference_points": 1.0050251256281406,
+            "ci95": [
+              0.0,
+              2.299369001066474
+            ],
+            "p": 0.21837816218378162,
+            "clusters": 45
+          },
+          "works": false,
+          "holm_p": 1.0
+        },
+        "H1 qwen3.5-27b: zero-shot minus retrieval rejection": {
+          "difference_points": 23.711340206185564,
+          "ci95": [
+            16.78993540028268,
+            31.30617076725107
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 27,
+          "holm_p": 0.0007999200079992001
+        },
+        "H2 qwen3.5-27b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 5.007363770250368,
+          "ci95": [
+            2.2386393923240937,
+            7.582385198017544
+          ],
+          "p": 0.000999900009999,
+          "clusters": 27,
+          "share_of_suppression_recovered": 0.21118012422360227,
+          "in_scope_right_change": {
+            "difference_points": -0.7537688442211055,
+            "ci95": [
+              -1.6439161966156324,
+              0.0
+            ],
+            "p": 0.2572742725727427,
+            "clusters": 45
+          },
+          "works": false,
+          "holm_p": 0.013998600139986002
+        },
+        "H2 qwen3.5-27b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -2.6509572901325478,
+          "ci95": [
+            -6.05188310890359,
+            0.31500386863822566
+          ],
+          "p": 0.9505049495050495,
+          "clusters": 27,
+          "share_of_suppression_recovered": -0.11180124223602494,
+          "in_scope_right_change": {
+            "difference_points": -0.25125628140703515,
+            "ci95": [
+              -0.8086799737743134,
+              0.0
+            ],
+            "p": 1.0,
+            "clusters": 45
+          },
+          "works": false,
+          "holm_p": 1.0
+        },
+        "H1 llama-3.3-70b: zero-shot minus retrieval rejection": {
+          "difference_points": 32.98969072164948,
+          "ci95": [
+            23.2969218703256,
+            42.87886860323062
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 27,
+          "holm_p": 0.0007999200079992001
+        },
+        "H2 llama-3.3-70b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 13.991163475699558,
+          "ci95": [
+            9.943161350537071,
+            18.08841036414566
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 27,
+          "share_of_suppression_recovered": 0.42410714285714285,
+          "in_scope_right_change": {
+            "difference_points": -1.7587939698492463,
+            "ci95": [
+              -2.981736957414761,
+              -0.7140342052313897
+            ],
+            "p": 0.0170982901709829,
+            "clusters": 45
+          },
+          "works": false,
+          "holm_p": 0.0015998400159984002
+        },
+        "H2 llama-3.3-70b: mitigation_rows minus retrieval rejection": {
+          "difference_points": 0.8836524300441826,
+          "ci95": [
+            -0.8709224929864129,
+            2.6786029115454357
+          ],
+          "p": 0.2258774122587741,
+          "clusters": 27,
+          "share_of_suppression_recovered": 0.02678571428571428,
+          "in_scope_right_change": {
+            "difference_points": 0.0,
+            "ci95": [
+              -0.6772776830822623,
+              0.7557152125791922
+            ],
+            "p": 1.0,
+            "clusters": 45
+          },
+          "works": false,
+          "holm_p": 1.0
+        },
+        "H1 deepseek-v4-pro: zero-shot minus retrieval rejection": {
+          "difference_points": 39.76435935198822,
+          "ci95": [
+            30.745994293239683,
+            49.103636804352305
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 27,
+          "holm_p": 0.0007999200079992001
+        },
+        "H2 deepseek-v4-pro: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 10.751104565537556,
+          "ci95": [
+            7.58911008072757,
+            13.978793784296629
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 27,
+          "share_of_suppression_recovered": 0.27037037037037037,
+          "in_scope_right_change": {
+            "difference_points": -0.25125628140703515,
+            "ci95": [
+              -1.1462141422125613,
+              0.5249689183588891
+            ],
+            "p": 1.0,
+            "clusters": 45
+          },
+          "works": false,
+          "holm_p": 0.0015998400159984002
+        },
+        "H2 deepseek-v4-pro: mitigation_rows minus retrieval rejection": {
+          "difference_points": -0.29455081001472755,
+          "ci95": [
+            -1.3806347844226776,
+            0.8810896605338169
+          ],
+          "p": 0.7704229577042295,
+          "clusters": 27,
+          "share_of_suppression_recovered": -0.0074074074074073825,
+          "in_scope_right_change": {
+            "difference_points": -0.25125628140703515,
+            "ci95": [
+              -1.2051124204848593,
+              0.5479828390787292
+            ],
+            "p": 1.0,
+            "clusters": 45
+          },
+          "works": false,
+          "holm_p": 1.0
+        }
+      },
+      "specialist_reference": {
+        "held_out_rejected": 0.4958271968581247,
+        "in_scope_right": 0.8584589614740369
+      },
+      "replicates": {
+        "significant_models": 4,
+        "same_sign": true,
+        "replicates": true
+      }
+    },
+    "clinc_single_domain": {
+      "n_in_scope": 1000,
+      "n_held_out": 700,
+      "held_out_intents": 10,
+      "models": {
+        "gemma-4-31b": {
+          "zero_shot": {
+            "held_out_rejected": 0.4257142857142857,
+            "in_scope_right": 0.952,
+            "in_scope_kept": 0.972,
+            "intent_on_kept": 0.9794238683127572,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 216.10470588235293,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 3.425465882352941e-05,
+              "usd_total": 0.05823292,
+              "latency_ms_p50": 823.5311999887927,
+              "latency_ms_p95": 1511.7323200101964
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.4757142857142857,
+            "in_scope_right": 0.975,
+            "in_scope_kept": 0.988,
+            "intent_on_kept": 0.9868421052631579,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 528.7617647058823,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 7.802664705882354e-05,
+              "usd_total": 0.13264530000000002,
+              "latency_ms_p50": 892.4778499931563,
+              "latency_ms_p95": 1679.630704988085
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.7028571428571428,
+            "in_scope_right": 0.971,
+            "in_scope_kept": 0.981,
+            "intent_on_kept": 0.9898063200815495,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 561.7617647058823,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 8.264664705882352e-05,
+              "usd_total": 0.1404993,
+              "latency_ms_p50": 896.902050008066,
+              "latency_ms_p95": 1687.8345449964395
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.4157142857142857,
+            "in_scope_right": 0.977,
+            "in_scope_kept": 0.987,
+            "intent_on_kept": 0.9898682877406282,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 580.7617647058823,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 8.530664705882354e-05,
+              "usd_total": 0.14502130000000002,
+              "latency_ms_p50": 865.8314999920549,
+              "latency_ms_p95": 1619.0257449896305
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "zero_shot": {
+            "held_out_rejected": 0.67,
+            "in_scope_right": 0.867,
+            "in_scope_kept": 0.884,
+            "intent_on_kept": 0.9807692307692307,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 210.49117647058824,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.508577941176471e-05,
+              "usd_total": 0.093645825,
+              "latency_ms_p50": 812.5612000003457,
+              "latency_ms_p95": 1908.9212150007352
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.6885714285714286,
+            "in_scope_right": 0.966,
+            "in_scope_kept": 0.975,
+            "intent_on_kept": 0.9907692307692307,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 521.1258823529412,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00011565954705882352,
+              "usd_total": 0.19662122999999998,
+              "latency_ms_p50": 982.2587500093505,
+              "latency_ms_p95": 1874.0847099848907
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.8414285714285714,
+            "in_scope_right": 0.962,
+            "in_scope_kept": 0.971,
+            "intent_on_kept": 0.9907312049433573,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 554.1258823529412,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00012209454705882353,
+              "usd_total": 0.20756073,
+              "latency_ms_p50": 986.6213000059361,
+              "latency_ms_p95": 1969.9974449991714
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.6285714285714286,
+            "in_scope_right": 0.969,
+            "in_scope_kept": 0.978,
+            "intent_on_kept": 0.99079754601227,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 576.1258823529412,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00012638454705882354,
+              "usd_total": 0.21485373,
+              "latency_ms_p50": 991.9347499962896,
+              "latency_ms_p95": 2105.769474996486
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "zero_shot": {
+            "held_out_rejected": 0.3442857142857143,
+            "in_scope_right": 0.927,
+            "in_scope_kept": 0.949,
+            "intent_on_kept": 0.9768177028451,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 190.41882352941175,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 2.1921882352941175e-05,
+              "usd_total": 0.0372672,
+              "latency_ms_p50": 770.9135499899276,
+              "latency_ms_p95": 3316.9165599843836
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.3942857142857143,
+            "in_scope_right": 0.982,
+            "in_scope_kept": 0.989,
+            "intent_on_kept": 0.9929221435793731,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 478.69588235294117,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.074958823529412e-05,
+              "usd_total": 0.0862743,
+              "latency_ms_p50": 794.8913000000175,
+              "latency_ms_p95": 2923.6201849984354
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.6657142857142857,
+            "in_scope_right": 0.973,
+            "in_scope_kept": 0.978,
+            "intent_on_kept": 0.9948875255623721,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 511.69588235294117,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.404958823529412e-05,
+              "usd_total": 0.0918843,
+              "latency_ms_p50": 891.2262500089128,
+              "latency_ms_p95": 3335.178120012278
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.3242857142857143,
+            "in_scope_right": 0.981,
+            "in_scope_kept": 0.989,
+            "intent_on_kept": 0.9919110212335692,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 529.6958823529412,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.584958823529412e-05,
+              "usd_total": 0.09494430000000001,
+              "latency_ms_p50": 834.1276999999536,
+              "latency_ms_p95": 3278.587165004865
+            }
+          }
+        },
+        "deepseek-v4-pro": {
+          "zero_shot": {
+            "held_out_rejected": 0.3057142857142857,
+            "in_scope_right": 0.927,
+            "in_scope_kept": 0.957,
+            "intent_on_kept": 0.9686520376175548,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 180.45176470588234,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 7.333142360294118e-05,
+              "usd_total": 0.12466342012500001,
+              "latency_ms_p50": 1656.3177999923937,
+              "latency_ms_p95": 4237.689834983029
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.3171428571428571,
+            "in_scope_right": 0.985,
+            "in_scope_kept": 0.994,
+            "intent_on_kept": 0.9909456740442656,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 469.49882352941177,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00015892356247941176,
+              "usd_total": 0.270170056215,
+              "latency_ms_p50": 1675.1602999866009,
+              "latency_ms_p95": 3701.0550799968755
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.4857142857142857,
+            "in_scope_right": 0.973,
+            "in_scope_kept": 0.984,
+            "intent_on_kept": 0.9888211382113821,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 502.49882352941177,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00016907858502352945,
+              "usd_total": 0.28743359454000006,
+              "latency_ms_p50": 1688.0655999993905,
+              "latency_ms_p95": 3632.078119997458
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.23857142857142857,
+            "in_scope_right": 0.984,
+            "in_scope_kept": 0.993,
+            "intent_on_kept": 0.9909365558912386,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 1700,
+              "prompt_tokens_mean": 519.4988235294118,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00017394479184705883,
+              "usd_total": 0.29570614614,
+              "latency_ms_p50": 1694.3760499998461,
+              "latency_ms_p95": 3977.147749990398
+            }
+          }
+        }
+      },
+      "tests": {
+        "H1 gemma-4-31b: zero-shot minus retrieval rejection": {
+          "difference_points": -5.0,
+          "ci95": [
+            -17.289285714285715,
+            8.428571428571429
+          ],
+          "p": 0.7952204779522047,
+          "clusters": 10,
+          "holm_p": 1.0
+        },
+        "H2 gemma-4-31b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 22.714285714285715,
+          "ci95": [
+            11.428571428571429,
+            32.860714285714266
+          ],
+          "p": 0.0023997600239976003,
+          "clusters": 10,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.4,
+            "ci95": [
+              -0.9,
+              0.1
+            ],
+            "p": 0.31226877312268775,
+            "clusters": 20
+          },
+          "works": false,
+          "holm_p": 0.0263973602639736
+        },
+        "H2 gemma-4-31b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -6.0,
+          "ci95": [
+            -10.428571428571429,
+            -2.4285714285714284
+          ],
+          "p": 1.0,
+          "clusters": 10,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": 0.2,
+            "ci95": [
+              -0.2,
+              0.8
+            ],
+            "p": 0.7513248675132487,
+            "clusters": 20
+          },
+          "works": false,
+          "holm_p": 1.0
+        },
+        "H1 qwen3.5-27b: zero-shot minus retrieval rejection": {
+          "difference_points": -1.8571428571428572,
+          "ci95": [
+            -14.717857142857142,
+            13.142857142857142
+          ],
+          "p": 0.6111388861113889,
+          "clusters": 10,
+          "holm_p": 1.0
+        },
+        "H2 qwen3.5-27b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 15.285714285714286,
+          "ci95": [
+            8.142857142857142,
+            22.714285714285715
+          ],
+          "p": 0.0037996200379962005,
+          "clusters": 10,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.4,
+            "ci95": [
+              -0.8,
+              -0.1
+            ],
+            "p": 0.12148785121487851,
+            "clusters": 20
+          },
+          "works": false,
+          "holm_p": 0.03799620037996201
+        },
+        "H2 qwen3.5-27b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -6.0,
+          "ci95": [
+            -10.142857142857142,
+            -2.4285714285714284
+          ],
+          "p": 1.0,
+          "clusters": 10,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": 0.3,
+            "ci95": [
+              0.0,
+              0.6
+            ],
+            "p": 0.24997500249975002,
+            "clusters": 20
+          },
+          "works": false,
+          "holm_p": 1.0
+        },
+        "H1 llama-3.3-70b: zero-shot minus retrieval rejection": {
+          "difference_points": -5.0,
+          "ci95": [
+            -17.285714285714285,
+            8.003571428571409
+          ],
+          "p": 0.7645235476452354,
+          "clusters": 10,
+          "holm_p": 1.0
+        },
+        "H2 llama-3.3-70b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 27.142857142857142,
+          "ci95": [
+            16.571428571428573,
+            36.43214285714284
+          ],
+          "p": 0.0017998200179982,
+          "clusters": 10,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.8999999999999999,
+            "ci95": [
+              -1.5,
+              -0.4
+            ],
+            "p": 0.016198380161983803,
+            "clusters": 20
+          },
+          "works": false,
+          "holm_p": 0.023397660233976603
+        },
+        "H2 llama-3.3-70b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -7.000000000000001,
+          "ci95": [
+            -12.857142857142858,
+            -2.1392857142857338
+          ],
+          "p": 1.0,
+          "clusters": 10,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.1,
+            "ci95": [
+              -0.3,
+              0.0
+            ],
+            "p": 1.0,
+            "clusters": 20
+          },
+          "works": false,
+          "holm_p": 1.0
+        },
+        "H1 deepseek-v4-pro: zero-shot minus retrieval rejection": {
+          "difference_points": -1.1428571428571428,
+          "ci95": [
+            -10.714285714285714,
+            9.142857142857142
+          ],
+          "p": 0.5934406559344065,
+          "clusters": 10,
+          "holm_p": 1.0
+        },
+        "H2 deepseek-v4-pro: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 16.857142857142858,
+          "ci95": [
+            7.853571428571429,
+            26.289285714285693
+          ],
+          "p": 0.0017998200179982,
+          "clusters": 10,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -1.2,
+            "ci95": [
+              -1.9,
+              -0.5
+            ],
+            "p": 0.004199580041995801,
+            "clusters": 20
+          },
+          "works": false,
+          "holm_p": 0.023397660233976603
+        },
+        "H2 deepseek-v4-pro: mitigation_rows minus retrieval rejection": {
+          "difference_points": -7.857142857142857,
+          "ci95": [
+            -11.14642857142857,
+            -4.714285714285714
+          ],
+          "p": 1.0,
+          "clusters": 10,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.1,
+            "ci95": [
+              -0.4,
+              0.2
+            ],
+            "p": 1.0,
+            "clusters": 20
+          },
+          "works": false,
+          "holm_p": 1.0
+        }
+      },
+      "specialist_reference": {
+        "held_out_rejected": 0.5366666666666666,
+        "in_scope_right": 0.9356666666666666
+      },
+      "replicates": {
+        "significant_models": 0,
+        "same_sign": true,
+        "replicates": false
+      }
+    },
+    "clinc_banking": {
+      "n_in_scope": 500,
+      "n_held_out": 350,
+      "held_out_intents": 5,
+      "models": {
+        "gemma-4-31b": {
+          "zero_shot": {
+            "held_out_rejected": 0.4057142857142857,
+            "in_scope_right": 0.924,
+            "in_scope_kept": 0.96,
+            "intent_on_kept": 0.9625,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 215.94588235294117,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 3.4232423529411764e-05,
+              "usd_total": 0.02909756,
+              "latency_ms_p50": 813.6474500061013,
+              "latency_ms_p95": 1432.8319049876875
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.4857142857142857,
+            "in_scope_right": 0.962,
+            "in_scope_kept": 0.986,
+            "intent_on_kept": 0.9756592292089249,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 529.5035294117647,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 7.813049411764704e-05,
+              "usd_total": 0.06641091999999998,
+              "latency_ms_p50": 883.7007999973139,
+              "latency_ms_p95": 1642.3834550034364
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.6142857142857143,
+            "in_scope_right": 0.956,
+            "in_scope_kept": 0.976,
+            "intent_on_kept": 0.9795081967213115,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 562.5035294117647,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 8.275049411764706e-05,
+              "usd_total": 0.07033792,
+              "latency_ms_p50": 841.5068500034977,
+              "latency_ms_p95": 1494.249594998837
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.4542857142857143,
+            "in_scope_right": 0.968,
+            "in_scope_kept": 0.986,
+            "intent_on_kept": 0.9817444219066938,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 581.5035294117647,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 8.541049411764708e-05,
+              "usd_total": 0.07259892000000001,
+              "latency_ms_p50": 805.9495000052266,
+              "latency_ms_p95": 1487.790250011312
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "zero_shot": {
+            "held_out_rejected": 0.7771428571428571,
+            "in_scope_right": 0.824,
+            "in_scope_kept": 0.852,
+            "intent_on_kept": 0.9671361502347418,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 209.80705882352942,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.495237647058824e-05,
+              "usd_total": 0.046709520000000004,
+              "latency_ms_p50": 802.0850000029895,
+              "latency_ms_p95": 1950.4260649890052
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.6571428571428571,
+            "in_scope_right": 0.958,
+            "in_scope_kept": 0.974,
+            "intent_on_kept": 0.9835728952772074,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 520.6435294117647,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00011556548823529411,
+              "usd_total": 0.098230665,
+              "latency_ms_p50": 1016.2496499833651,
+              "latency_ms_p95": 2018.6954049961055
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.82,
+            "in_scope_right": 0.95,
+            "in_scope_kept": 0.968,
+            "intent_on_kept": 0.981404958677686,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 553.6435294117647,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00012200048823529412,
+              "usd_total": 0.103700415,
+              "latency_ms_p50": 976.0393500182545,
+              "latency_ms_p95": 2026.4258249982936
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.6085714285714285,
+            "in_scope_right": 0.962,
+            "in_scope_kept": 0.976,
+            "intent_on_kept": 0.985655737704918,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 575.6435294117647,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.0001262904882352941,
+              "usd_total": 0.10734691499999999,
+              "latency_ms_p50": 1001.8998999876203,
+              "latency_ms_p95": 2037.8951999999113
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "zero_shot": {
+            "held_out_rejected": 0.35714285714285715,
+            "in_scope_right": 0.928,
+            "in_scope_kept": 0.962,
+            "intent_on_kept": 0.9646569646569647,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 189.69882352941175,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 2.1849882352941177e-05,
+              "usd_total": 0.0185724,
+              "latency_ms_p50": 707.2708499908913,
+              "latency_ms_p95": 3218.3588050014805
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.43714285714285717,
+            "in_scope_right": 0.976,
+            "in_scope_kept": 0.988,
+            "intent_on_kept": 0.9878542510121457,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 477.8905882352941,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.0669058823529414e-05,
+              "usd_total": 0.0430687,
+              "latency_ms_p50": 831.0195499943802,
+              "latency_ms_p95": 2783.956384987686
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.6742857142857143,
+            "in_scope_right": 0.964,
+            "in_scope_kept": 0.974,
+            "intent_on_kept": 0.9897330595482546,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 510.8905882352941,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.3969058823529406e-05,
+              "usd_total": 0.045873699999999996,
+              "latency_ms_p50": 854.5492499979446,
+              "latency_ms_p95": 3097.9216449893993
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.33714285714285713,
+            "in_scope_right": 0.974,
+            "in_scope_kept": 0.988,
+            "intent_on_kept": 0.9858299595141701,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 528.8905882352941,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.576905882352941e-05,
+              "usd_total": 0.0474037,
+              "latency_ms_p50": 804.4860500085633,
+              "latency_ms_p95": 3147.9842900051053
+            }
+          }
+        },
+        "deepseek-v4-pro": {
+          "zero_shot": {
+            "held_out_rejected": 0.2714285714285714,
+            "in_scope_right": 0.906,
+            "in_scope_kept": 0.956,
+            "intent_on_kept": 0.9476987447698745,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 179.72823529411764,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 7.326301012941176e-05,
+              "usd_total": 0.06227355861,
+              "latency_ms_p50": 1679.2089000082342,
+              "latency_ms_p95": 4942.563534989312
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.29428571428571426,
+            "in_scope_right": 0.974,
+            "in_scope_kept": 0.99,
+            "intent_on_kept": 0.9838383838383838,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 468.3635294117647,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00015835260732352942,
+              "usd_total": 0.134599716225,
+              "latency_ms_p50": 1675.7526499859523,
+              "latency_ms_p95": 4514.602475006537
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.5114285714285715,
+            "in_scope_right": 0.964,
+            "in_scope_kept": 0.982,
+            "intent_on_kept": 0.9816700610997964,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 501.3635294117647,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00016879659601764705,
+              "usd_total": 0.143477106615,
+              "latency_ms_p50": 1724.0923000063049,
+              "latency_ms_p95": 4176.374255005794
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.2342857142857143,
+            "in_scope_right": 0.974,
+            "in_scope_kept": 0.988,
+            "intent_on_kept": 0.9858299595141701,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 518.3635294117647,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00017360408244705884,
+              "usd_total": 0.14756347008,
+              "latency_ms_p50": 1707.5379000016255,
+              "latency_ms_p95": 3884.582589997441
+            }
+          }
+        }
+      },
+      "tests": {
+        "H1 gemma-4-31b: zero-shot minus retrieval rejection": {
+          "difference_points": -8.0,
+          "ci95": [
+            -25.142857142857142,
+            3.7142857142857144
+          ],
+          "p": 0.7823217678232177,
+          "clusters": 5
+        },
+        "H2 gemma-4-31b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 12.857142857142856,
+          "ci95": [
+            1.1428571428571428,
+            24.864285714285675
+          ],
+          "p": 0.0585941405859414,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.6,
+            "ci95": [
+              -1.6,
+              0.4
+            ],
+            "p": 0.5024497550244975,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H2 gemma-4-31b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -3.1428571428571432,
+          "ci95": [
+            -5.428571428571429,
+            -1.1428571428571428
+          ],
+          "p": 1.0,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": 0.6,
+            "ci95": [
+              0.0,
+              1.6
+            ],
+            "p": 0.49675032496750327,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H1 qwen3.5-27b: zero-shot minus retrieval rejection": {
+          "difference_points": 12.0,
+          "ci95": [
+            -5.142857142857143,
+            32.857142857142854
+          ],
+          "p": 0.24137586241375864,
+          "clusters": 5
+        },
+        "H2 qwen3.5-27b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 16.28571428571429,
+          "ci95": [
+            4.571428571428571,
+            28.857142857142858
+          ],
+          "p": 0.0585941405859414,
+          "clusters": 5,
+          "share_of_suppression_recovered": 1.3571428571428568,
+          "in_scope_right_change": {
+            "difference_points": -0.8,
+            "ci95": [
+              -1.4,
+              -0.2
+            ],
+            "p": 0.12388761123887611,
+            "clusters": 10
+          },
+          "works": true
+        },
+        "H2 qwen3.5-27b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -4.857142857142857,
+          "ci95": [
+            -9.142857142857142,
+            -1.4285714285714286
+          ],
+          "p": 1.0,
+          "clusters": 5,
+          "share_of_suppression_recovered": -0.404761904761905,
+          "in_scope_right_change": {
+            "difference_points": 0.4,
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "p": 0.4978502149785021,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H1 llama-3.3-70b: zero-shot minus retrieval rejection": {
+          "difference_points": -8.0,
+          "ci95": [
+            -25.72142857142857,
+            9.721428571428532
+          ],
+          "p": 0.7437256274372562,
+          "clusters": 5
+        },
+        "H2 llama-3.3-70b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 23.714285714285715,
+          "ci95": [
+            9.128571428571428,
+            38.285714285714285
+          ],
+          "p": 0.028497150284971504,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -1.2,
+            "ci95": [
+              -2.0,
+              -0.4
+            ],
+            "p": 0.06529347065293471,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H2 llama-3.3-70b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -10.0,
+          "ci95": [
+            -19.714285714285715,
+            -0.2857142857142857
+          ],
+          "p": 1.0,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.2,
+            "ci95": [
+              -0.6,
+              0.0
+            ],
+            "p": 1.0,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H1 deepseek-v4-pro: zero-shot minus retrieval rejection": {
+          "difference_points": -2.2857142857142856,
+          "ci95": [
+            -14.285714285714286,
+            9.714285714285714
+          ],
+          "p": 0.6512348765123488,
+          "clusters": 5
+        },
+        "H2 deepseek-v4-pro: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 21.714285714285715,
+          "ci95": [
+            6.857142857142857,
+            36.57142857142857
+          ],
+          "p": 0.028497150284971504,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -1.0,
+            "ci95": [
+              -1.8049999999999997,
+              -0.2
+            ],
+            "p": 0.12238776122387761,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H2 deepseek-v4-pro: mitigation_rows minus retrieval rejection": {
+          "difference_points": -6.0,
+          "ci95": [
+            -11.142857142857142,
+            -1.7142857142857142
+          ],
+          "p": 1.0,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": 0.0,
+            "ci95": [
+              -0.6,
+              0.6
+            ],
+            "p": 1.0,
+            "clusters": 10
+          },
+          "works": false
+        }
+      },
+      "specialist_reference": {
+        "held_out_rejected": 0.4885714285714286,
+        "in_scope_right": 0.9346666666666666
+      }
+    },
+    "clinc_credit_cards": {
+      "n_in_scope": 500,
+      "n_held_out": 350,
+      "held_out_intents": 5,
+      "models": {
+        "gemma-4-31b": {
+          "zero_shot": {
+            "held_out_rejected": 0.44571428571428573,
+            "in_scope_right": 0.98,
+            "in_scope_kept": 0.984,
+            "intent_on_kept": 0.9959349593495935,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 216.2635294117647,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 3.4276894117647056e-05,
+              "usd_total": 0.02913536,
+              "latency_ms_p50": 833.7241999979597,
+              "latency_ms_p95": 1545.660620003764
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.4657142857142857,
+            "in_scope_right": 0.988,
+            "in_scope_kept": 0.99,
+            "intent_on_kept": 0.997979797979798,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 528.02,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 7.79228e-05,
+              "usd_total": 0.06623438000000001,
+              "latency_ms_p50": 897.0989499939606,
+              "latency_ms_p95": 1682.2137549970646
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.7914285714285715,
+            "in_scope_right": 0.986,
+            "in_scope_kept": 0.986,
+            "intent_on_kept": 1.0,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 561.02,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 8.25428e-05,
+              "usd_total": 0.07016138,
+              "latency_ms_p50": 950.9399999951711,
+              "latency_ms_p95": 1836.1132299905876
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.37714285714285717,
+            "in_scope_right": 0.986,
+            "in_scope_kept": 0.988,
+            "intent_on_kept": 0.9979757085020243,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 580.02,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 8.52028e-05,
+              "usd_total": 0.07242238000000001,
+              "latency_ms_p50": 939.2635999975028,
+              "latency_ms_p95": 1727.5511949861532
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "zero_shot": {
+            "held_out_rejected": 0.5628571428571428,
+            "in_scope_right": 0.91,
+            "in_scope_kept": 0.916,
+            "intent_on_kept": 0.9934497816593887,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 211.17529411764707,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.521918235294117e-05,
+              "usd_total": 0.046936305,
+              "latency_ms_p50": 829.9554500117665,
+              "latency_ms_p95": 1822.7204900089412
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.72,
+            "in_scope_right": 0.974,
+            "in_scope_kept": 0.976,
+            "intent_on_kept": 0.9979508196721312,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 521.6082352941177,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00011575360588235294,
+              "usd_total": 0.098390565,
+              "latency_ms_p50": 958.3841999992728,
+              "latency_ms_p95": 1691.3552499972866
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.8628571428571429,
+            "in_scope_right": 0.974,
+            "in_scope_kept": 0.974,
+            "intent_on_kept": 1.0,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 554.6082352941177,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00012218860588235293,
+              "usd_total": 0.103860315,
+              "latency_ms_p50": 1003.5701999877347,
+              "latency_ms_p95": 1839.0806950032113
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.6485714285714286,
+            "in_scope_right": 0.976,
+            "in_scope_kept": 0.98,
+            "intent_on_kept": 0.9959183673469387,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 576.6082352941177,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 0.00012647860588235293,
+              "usd_total": 0.10750681499999999,
+              "latency_ms_p50": 983.1395000073826,
+              "latency_ms_p95": 2230.5332450065175
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "zero_shot": {
+            "held_out_rejected": 0.3314285714285714,
+            "in_scope_right": 0.926,
+            "in_scope_kept": 0.936,
+            "intent_on_kept": 0.9893162393162394,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 191.13882352941175,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 2.1993882352941177e-05,
+              "usd_total": 0.0186948,
+              "latency_ms_p50": 849.5528000203194,
+              "latency_ms_p95": 3324.903650004125
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.3514285714285714,
+            "in_scope_right": 0.988,
+            "in_scope_kept": 0.99,
+            "intent_on_kept": 0.997979797979798,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 479.50117647058823,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.083011764705882e-05,
+              "usd_total": 0.0432056,
+              "latency_ms_p50": 764.1557000024477,
+              "latency_ms_p95": 3039.0551700009382
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.6571428571428571,
+            "in_scope_right": 0.982,
+            "in_scope_kept": 0.982,
+            "intent_on_kept": 1.0,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 512.5011764705882,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.413011764705882e-05,
+              "usd_total": 0.0460106,
+              "latency_ms_p50": 937.970300015877,
+              "latency_ms_p95": 3791.5136500043427
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.31142857142857144,
+            "in_scope_right": 0.988,
+            "in_scope_kept": 0.99,
+            "intent_on_kept": 0.997979797979798,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 530.5011764705882,
+              "completion_tokens_mean": 9.0,
+              "usd_per_call": 5.5930117647058824e-05,
+              "usd_total": 0.0475406,
+              "latency_ms_p50": 879.3887999927392,
+              "latency_ms_p95": 3305.553189996863
+            }
+          }
+        },
+        "deepseek-v4-pro": {
+          "zero_shot": {
+            "held_out_rejected": 0.34,
+            "in_scope_right": 0.948,
+            "in_scope_kept": 0.958,
+            "intent_on_kept": 0.9895615866388309,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 181.17529411764707,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 7.339983707647058e-05,
+              "usd_total": 0.06238986151499999,
+              "latency_ms_p50": 1634.7435000061523,
+              "latency_ms_p95": 3569.631319996551
+            }
+          },
+          "retrieval": {
+            "held_out_rejected": 0.34,
+            "in_scope_right": 0.996,
+            "in_scope_kept": 0.998,
+            "intent_on_kept": 0.9979959919839679,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 470.6341176470588,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00015949451763529413,
+              "usd_total": 0.13557033999,
+              "latency_ms_p50": 1673.4446000045864,
+              "latency_ms_p95": 3331.613844991079
+            }
+          },
+          "mitigation_instruction": {
+            "held_out_rejected": 0.46,
+            "in_scope_right": 0.982,
+            "in_scope_kept": 0.986,
+            "intent_on_kept": 0.9959432048681541,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 503.6341176470588,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.00016936057402941175,
+              "usd_total": 0.143956487925,
+              "latency_ms_p50": 1664.9837000004482,
+              "latency_ms_p95": 3395.118705002824
+            }
+          },
+          "mitigation_rows": {
+            "held_out_rejected": 0.24285714285714285,
+            "in_scope_right": 0.994,
+            "in_scope_kept": 0.998,
+            "intent_on_kept": 0.9959919839679359,
+            "failed": 0,
+            "parse_failed": 0,
+            "cost": {
+              "calls": 850,
+              "prompt_tokens_mean": 520.6341176470588,
+              "completion_tokens_mean": 10.0,
+              "usd_per_call": 0.0001742855012470588,
+              "usd_total": 0.14814267605999998,
+              "latency_ms_p50": 1673.5299500141991,
+              "latency_ms_p95": 3990.619249992595
+            }
+          }
+        }
+      },
+      "tests": {
+        "H1 gemma-4-31b: zero-shot minus retrieval rejection": {
+          "difference_points": -2.0,
+          "ci95": [
+            -19.714285714285715,
+            20.571428571428573
+          ],
+          "p": 0.6283371662833717,
+          "clusters": 5
+        },
+        "H2 gemma-4-31b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 32.57142857142858,
+          "ci95": [
+            16.571428571428573,
+            43.714285714285715
+          ],
+          "p": 0.028497150284971504,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.2,
+            "ci95": [
+              -0.6,
+              0.0
+            ],
+            "p": 1.0,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H2 gemma-4-31b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -8.857142857142856,
+          "ci95": [
+            -16.0,
+            -2.2857142857142856
+          ],
+          "p": 1.0,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.2,
+            "ci95": [
+              -0.6,
+              0.0
+            ],
+            "p": 1.0,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H1 qwen3.5-27b: zero-shot minus retrieval rejection": {
+          "difference_points": -15.714285714285714,
+          "ci95": [
+            -27.142857142857142,
+            -4.857142857142857
+          ],
+          "p": 1.0,
+          "clusters": 5
+        },
+        "H2 qwen3.5-27b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 14.285714285714285,
+          "ci95": [
+            6.571428571428571,
+            21.428571428571427
+          ],
+          "p": 0.0575942405759424,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "p": 1.0,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H2 qwen3.5-27b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -7.142857142857142,
+          "ci95": [
+            -14.0,
+            -1.1428571428571428
+          ],
+          "p": 1.0,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": 0.2,
+            "ci95": [
+              0.0,
+              0.6
+            ],
+            "p": 1.0,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H1 llama-3.3-70b: zero-shot minus retrieval rejection": {
+          "difference_points": -2.0,
+          "ci95": [
+            -16.571428571428573,
+            18.285714285714285
+          ],
+          "p": 0.6314368563143685,
+          "clusters": 5
+        },
+        "H2 llama-3.3-70b: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 30.571428571428573,
+          "ci95": [
+            19.142857142857142,
+            43.457142857142706
+          ],
+          "p": 0.028497150284971504,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.6,
+            "ci95": [
+              -1.6,
+              0.0
+            ],
+            "p": 0.502049795020498,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H2 llama-3.3-70b: mitigation_rows minus retrieval rejection": {
+          "difference_points": -4.0,
+          "ci95": [
+            -6.0,
+            -1.7142857142857142
+          ],
+          "p": 1.0,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "p": 1.0,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H1 deepseek-v4-pro: zero-shot minus retrieval rejection": {
+          "difference_points": 0.0,
+          "ci95": [
+            -15.714285714285714,
+            16.571428571428573
+          ],
+          "p": 0.5378462153784621,
+          "clusters": 5
+        },
+        "H2 deepseek-v4-pro: mitigation_instruction minus retrieval rejection": {
+          "difference_points": 12.0,
+          "ci95": [
+            4.857142857142857,
+            23.428571428571427
+          ],
+          "p": 0.028497150284971504,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -1.4000000000000001,
+            "ci95": [
+              -2.6,
+              -0.4
+            ],
+            "p": 0.058394160583941604,
+            "clusters": 10
+          },
+          "works": false
+        },
+        "H2 deepseek-v4-pro: mitigation_rows minus retrieval rejection": {
+          "difference_points": -9.714285714285714,
+          "ci95": [
+            -14.285714285714286,
+            -6.0
+          ],
+          "p": 1.0,
+          "clusters": 5,
+          "share_of_suppression_recovered": null,
+          "in_scope_right_change": {
+            "difference_points": -0.2,
+            "ci95": [
+              -0.6,
+              0.0
+            ],
+            "p": 1.0,
+            "clusters": 10
+          },
+          "works": false
+        }
+      },
+      "specialist_reference": {
+        "held_out_rejected": 0.5847619047619047,
+        "in_scope_right": 0.9366666666666666
+      }
+    }
+  }
+}

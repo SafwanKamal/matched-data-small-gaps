@@ -1,0 +1,39 @@
+{
+  "protocol_id": "ettin-size-sweep-2026-10-11",
+  "role": "does the encoder/decoder comparison and the accuracy of the fine-tuned specialist hold at smaller model sizes?",
+  "claim": "Every fine-tuned result so far uses the 150M Ettin pair. Ettin releases the same paired architecture at smaller sizes. This sweep fine-tunes the 17M, 32M and 68M encoder and decoder on Banking77, SST-2 and MASSIVE English with the recipes already frozen for the 150M pair, and adds a small dev-selected learning-rate check because a rate chosen for 150M may undertrain a smaller model. Written before any model in this file was trained or scored.",
+  "sizes": {
+    "17m": {"encoder": "jhu-clsp/ettin-encoder-17m", "encoder_revision": "987607455c61e7a5bbc85f7758e0512ea6d0ae4c", "decoder": "jhu-clsp/ettin-decoder-17m", "decoder_revision": "728fb5b6b3dc5916aa20829c027143ae8eca4eeb"},
+    "32m": {"encoder": "jhu-clsp/ettin-encoder-32m", "encoder_revision": "1b8ba06455dd44f80fc9c1ca9e22806157a57379", "decoder": "jhu-clsp/ettin-decoder-32m", "decoder_revision": "a6ba5b89e2d8a5b71c819ac6c47ba81423019d3e"},
+    "68m": {"encoder": "jhu-clsp/ettin-encoder-68m", "encoder_revision": "ac19ae4bc51093b31c475665ac872a936d056cc2", "decoder": "jhu-clsp/ettin-decoder-68m", "decoder_revision": "5d704138dd3e12a32ca7a357d25b09c618a9fb02"},
+    "150m": {"encoder": "jhu-clsp/ettin-encoder-150m", "encoder_revision": "45d08642849e5c5701b162671ac811b7654bfd9f", "decoder": "jhu-clsp/ettin-decoder-150m", "decoder_revision": "b099375cba8b9045a87a9e6ede0b7ab32fd2f571"}
+  },
+  "size_note": "17M was not in the plan agreed with the user (32M and 68M); it is added because it is the cheapest to train and the most relevant to the FPGA question, and it runs after the other two at each stage.",
+  "datasets": ["banking77", "sst2", "massive_en"],
+  "loss": "log_loss",
+  "seed": 20261007,
+  "recipes": {
+    "banking77 and sst2": "program2.json (encoder) and program2_decoder.json (decoder) with only the model, revision and learning rate replaced; the Program 1 dev rows are excluded from training and used for temperature; test is the Program 1 500-item test split",
+    "massive_en": "the ettin_encoder and ettin_decoder blocks of primary_protocol.json with only the model, revision and learning rate replaced; official train, dev and test",
+    "banking77 decoder": "batch 4 and label chunk 4 at every size, as pinned for the 150M decoder"
+  },
+  "learning_rates": {
+    "matched": 2e-5,
+    "extra": [5e-5, 1e-4],
+    "selection": "for each model and dataset, the rate with the lowest dev negative log-likelihood after temperature scaling. Test is not used to choose. Both the matched-rate row and the dev-selected row are reported.",
+    "which_models": "encoders at all four sizes get both extra rates. Decoders are slow, so they get one extra rate, 1e-4, at 17M, 32M and 68M, and at 150M on Banking77 and MASSIVE only if the chain reaches that stage."
+  },
+  "reference_rows": "the 150M rows at 2e-5 are the existing seed-20261007 log-loss results (artifacts/program2, artifacts/program2-decoder, artifacts/primary); they are not retrained. The existing 150M MASSIVE encoder has no saved dev scores under this file's layout, so its dev negative log-likelihood is read from its metrics file.",
+  "order": [
+    "encoders: 32M, 68M, 17M at 2e-5; then every encoder size at 5e-5 and 1e-4",
+    "decoders at 2e-5: 32M, 68M, 17M",
+    "decoders at 1e-4: 32M, 68M, 17M, then 150M on Banking77 and MASSIVE"
+  ],
+  "metrics": [
+    "accuracy, multiclass Brier, log loss and ECE on test after dev temperature, as in Program 1",
+    "batch-1 GPU latency p50 and p95 over the test items, timed after 20 warm-up items",
+    "parameter count of the trained model",
+    "encoder minus decoder at each size, and each model against its 150M counterpart"
+  ],
+  "limits": "One seed. The 150M results varied by about half a point across three seeds on these sets, so differences smaller than about a point between sizes are not evidence. The Banking77 and SST-2 test splits have 500 items."
+}

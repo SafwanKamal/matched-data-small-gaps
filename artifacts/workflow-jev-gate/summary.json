@@ -1,0 +1,1216 @@
+{
+  "protocol_id": "workflow-jev-scope-gate-2026-10-13",
+  "domains": {
+    "banking77": {
+      "jev_model": [
+        "jev-1.13.0"
+      ],
+      "jev_input_tokens_per_session": 6641.5575,
+      "policies": {
+        "jev_alone": {
+          "session_success": 0.3625,
+          "session_success_ci": [
+            0.3175,
+            0.41
+          ],
+          "turn_success": 0.781,
+          "node_accuracy": {
+            "scope": 0.955,
+            "intent": 0.7608015028177834,
+            "repeat": 0.8705096073517126
+          },
+          "in_scope_kept": 0.9524107701941139,
+          "out_of_scope_caught": 0.9652605459057072
+        },
+        "encoder_alone": {
+          "session_success": 0.66,
+          "session_success_ci": [
+            0.6125,
+            0.7025
+          ],
+          "turn_success": 0.907,
+          "node_accuracy": {
+            "scope": 0.942,
+            "intent": 0.9167188478396995,
+            "repeat": 0.9122807017543859
+          },
+          "in_scope_kept": 0.9455228553537883,
+          "out_of_scope_caught": 0.9280397022332506
+        },
+        "jev_gate_described+encoder": {
+          "session_success": 0.645,
+          "session_success_ci": [
+            0.5975,
+            0.69
+          ],
+          "turn_success": 0.901,
+          "node_accuracy": {
+            "scope": 0.955,
+            "intent": 0.8985597996242956,
+            "repeat": 0.9197994987468672
+          },
+          "in_scope_kept": 0.9524107701941139,
+          "out_of_scope_caught": 0.9652605459057072
+        },
+        "jev_gate_listed+encoder": {
+          "session_success": 0.65,
+          "session_success_ci": [
+            0.6025,
+            0.695
+          ],
+          "turn_success": 0.9015,
+          "node_accuracy": {
+            "scope": 0.954,
+            "intent": 0.8929242329367564,
+            "repeat": 0.9055973266499582
+          },
+          "in_scope_kept": 0.9436443331246086,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "jev_gate_and_specialist+encoder": {
+          "session_success": 0.5925,
+          "session_success_ci": [
+            0.545,
+            0.6375
+          ],
+          "turn_success": 0.8845,
+          "node_accuracy": {
+            "scope": 0.92,
+            "intent": 0.8728866624921728,
+            "repeat": 0.8671679197994987
+          },
+          "in_scope_kept": 0.9010644959298685,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "llm_gate:qwen3.5-9b+encoder": {
+          "session_success": 0.7325,
+          "session_success_ci": [
+            0.6875,
+            0.7725
+          ],
+          "turn_success": 0.9305,
+          "node_accuracy": {
+            "scope": 0.98,
+            "intent": 0.9223544145272385,
+            "repeat": 0.9473684210526315
+          },
+          "in_scope_kept": 0.976205385097057,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "llm_alone:qwen3.5-9b": {
+          "session_success": 0.2925,
+          "session_success_ci": [
+            0.2475,
+            0.3375
+          ],
+          "turn_success": 0.7195,
+          "node_accuracy": {
+            "scope": 0.98,
+            "intent": 0.6850344395742016,
+            "repeat": 0.860484544695071
+          },
+          "in_scope_kept": 0.976205385097057,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "encoder_escalate_25pct:qwen3.5-9b": {
+          "session_success": 0.71,
+          "session_success_ci": [
+            0.6625,
+            0.75
+          ],
+          "turn_success": 0.921,
+          "node_accuracy": {
+            "scope": 0.9865,
+            "intent": 0.9298685034439574,
+            "repeat": 0.9590643274853801
+          },
+          "in_scope_kept": 0.9968691296180339,
+          "out_of_scope_caught": 0.9454094292803971
+        },
+        "llm_gate:qwen3.5-27b+encoder": {
+          "session_success": 0.6975,
+          "session_success_ci": [
+            0.6525,
+            0.74
+          ],
+          "turn_success": 0.9155,
+          "node_accuracy": {
+            "scope": 0.967,
+            "intent": 0.9085785848465874,
+            "repeat": 0.9281537176274018
+          },
+          "in_scope_kept": 0.9599248591108328,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "llm_alone:qwen3.5-27b": {
+          "session_success": 0.4075,
+          "session_success_ci": [
+            0.3625,
+            0.4575
+          ],
+          "turn_success": 0.7875,
+          "node_accuracy": {
+            "scope": 0.967,
+            "intent": 0.7658108954289292,
+            "repeat": 0.8705096073517126
+          },
+          "in_scope_kept": 0.9599248591108328,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "encoder_escalate_25pct:qwen3.5-27b": {
+          "session_success": 0.7125,
+          "session_success_ci": [
+            0.6675,
+            0.7525
+          ],
+          "turn_success": 0.9215,
+          "node_accuracy": {
+            "scope": 0.983,
+            "intent": 0.9298685034439574,
+            "repeat": 0.9532163742690059
+          },
+          "in_scope_kept": 0.9918597370068879,
+          "out_of_scope_caught": 0.9478908188585607
+        },
+        "llm_gate:gemma-4-31b+encoder": {
+          "session_success": 0.755,
+          "session_success_ci": [
+            0.7125,
+            0.795
+          ],
+          "turn_success": 0.938,
+          "node_accuracy": {
+            "scope": 0.988,
+            "intent": 0.9342517219787101,
+            "repeat": 0.960735171261487
+          },
+          "in_scope_kept": 0.9881026925485284,
+          "out_of_scope_caught": 0.9875930521091811
+        },
+        "llm_alone:gemma-4-31b": {
+          "session_success": 0.4225,
+          "session_success_ci": [
+            0.375,
+            0.4700624999999996
+          ],
+          "turn_success": 0.7995,
+          "node_accuracy": {
+            "scope": 0.988,
+            "intent": 0.7802128991859737,
+            "repeat": 0.9030910609857978
+          },
+          "in_scope_kept": 0.9881026925485284,
+          "out_of_scope_caught": 0.9875930521091811
+        },
+        "encoder_escalate_25pct:gemma-4-31b": {
+          "session_success": 0.7225,
+          "session_success_ci": [
+            0.68,
+            0.7625
+          ],
+          "turn_success": 0.9245,
+          "node_accuracy": {
+            "scope": 0.9845,
+            "intent": 0.9342517219787101,
+            "repeat": 0.960735171261487
+          },
+          "in_scope_kept": 0.9956167814652473,
+          "out_of_scope_caught": 0.9404466501240695
+        },
+        "llm_gate:qwen3.5-35b-a3b+encoder": {
+          "session_success": 0.73,
+          "session_success_ci": [
+            0.685,
+            0.7725624999999996
+          ],
+          "turn_success": 0.9305,
+          "node_accuracy": {
+            "scope": 0.9775,
+            "intent": 0.9236067626800251,
+            "repeat": 0.9431913116123642
+          },
+          "in_scope_kept": 0.9730745147150908,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "llm_alone:qwen3.5-35b-a3b": {
+          "session_success": 0.26,
+          "session_success_ci": [
+            0.22,
+            0.305
+          ],
+          "turn_success": 0.7085,
+          "node_accuracy": {
+            "scope": 0.9775,
+            "intent": 0.6687539135879774,
+            "repeat": 0.8596491228070176
+          },
+          "in_scope_kept": 0.9730745147150908,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "encoder_escalate_25pct:qwen3.5-35b-a3b": {
+          "session_success": 0.715,
+          "session_success_ci": [
+            0.6675,
+            0.7550624999999996
+          ],
+          "turn_success": 0.924,
+          "node_accuracy": {
+            "scope": 0.984,
+            "intent": 0.9304946775203506,
+            "repeat": 0.9573934837092731
+          },
+          "in_scope_kept": 0.9931120851596744,
+          "out_of_scope_caught": 0.9478908188585607
+        },
+        "llm_gate:llama-3.3-70b+encoder": {
+          "session_success": 0.7025,
+          "session_success_ci": [
+            0.6575,
+            0.7475
+          ],
+          "turn_success": 0.923,
+          "node_accuracy": {
+            "scope": 0.975,
+            "intent": 0.9179711959924859,
+            "repeat": 0.9406850459482038
+          },
+          "in_scope_kept": 0.9718221665623044,
+          "out_of_scope_caught": 0.9875930521091811
+        },
+        "llm_alone:llama-3.3-70b": {
+          "session_success": 0.295,
+          "session_success_ci": [
+            0.25,
+            0.34
+          ],
+          "turn_success": 0.732,
+          "node_accuracy": {
+            "scope": 0.975,
+            "intent": 0.7006887914840325,
+            "repeat": 0.8646616541353384
+          },
+          "in_scope_kept": 0.9718221665623044,
+          "out_of_scope_caught": 0.9875930521091811
+        },
+        "encoder_escalate_25pct:llama-3.3-70b": {
+          "session_success": 0.71,
+          "session_success_ci": [
+            0.665,
+            0.7525
+          ],
+          "turn_success": 0.92,
+          "node_accuracy": {
+            "scope": 0.9845,
+            "intent": 0.9298685034439574,
+            "repeat": 0.9548872180451128
+          },
+          "in_scope_kept": 0.9956167814652473,
+          "out_of_scope_caught": 0.9404466501240695
+        },
+        "llm_gate:qwen3-next-80b-a3b+encoder": {
+          "session_success": 0.7225,
+          "session_success_ci": [
+            0.6775,
+            0.765
+          ],
+          "turn_success": 0.925,
+          "node_accuracy": {
+            "scope": 0.9765,
+            "intent": 0.9198497182216656,
+            "repeat": 0.9381787802840434
+          },
+          "in_scope_kept": 0.9718221665623044,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "llm_alone:qwen3-next-80b-a3b": {
+          "session_success": 0.325,
+          "session_success_ci": [
+            0.2825,
+            0.3725
+          ],
+          "turn_success": 0.7455,
+          "node_accuracy": {
+            "scope": 0.9765,
+            "intent": 0.7138384470882906,
+            "repeat": 0.8738512949039264
+          },
+          "in_scope_kept": 0.9718221665623044,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "encoder_escalate_25pct:qwen3-next-80b-a3b": {
+          "session_success": 0.7125,
+          "session_success_ci": [
+            0.6675,
+            0.7525
+          ],
+          "turn_success": 0.921,
+          "node_accuracy": {
+            "scope": 0.985,
+            "intent": 0.9298685034439574,
+            "repeat": 0.9540517961570593
+          },
+          "in_scope_kept": 0.9949906073888541,
+          "out_of_scope_caught": 0.9454094292803971
+        },
+        "llm_gate:nemotron-3-super-120b+encoder": {
+          "session_success": 0.6375,
+          "session_success_ci": [
+            0.59,
+            0.685
+          ],
+          "turn_success": 0.9025,
+          "node_accuracy": {
+            "scope": 0.9535,
+            "intent": 0.89167188478397,
+            "repeat": 0.9014202172096909
+          },
+          "in_scope_kept": 0.9423919849718222,
+          "out_of_scope_caught": 0.9975186104218362
+        },
+        "llm_alone:nemotron-3-super-120b": {
+          "session_success": 0.2625,
+          "session_success_ci": [
+            0.22,
+            0.305
+          ],
+          "turn_success": 0.722,
+          "node_accuracy": {
+            "scope": 0.9535,
+            "intent": 0.6862867877269881,
+            "repeat": 0.8345864661654135
+          },
+          "in_scope_kept": 0.9423919849718222,
+          "out_of_scope_caught": 0.9975186104218362
+        },
+        "encoder_escalate_25pct:nemotron-3-super-120b": {
+          "session_success": 0.71,
+          "session_success_ci": [
+            0.665,
+            0.7500624999999996
+          ],
+          "turn_success": 0.922,
+          "node_accuracy": {
+            "scope": 0.983,
+            "intent": 0.9273638071383845,
+            "repeat": 0.9573934837092731
+          },
+          "in_scope_kept": 0.9918597370068879,
+          "out_of_scope_caught": 0.9478908188585607
+        },
+        "llm_gate:qwen3.5-122b-a10b+encoder": {
+          "session_success": 0.76,
+          "session_success_ci": [
+            0.715,
+            0.7975624999999996
+          ],
+          "turn_success": 0.939,
+          "node_accuracy": {
+            "scope": 0.989,
+            "intent": 0.9355040701314965,
+            "repeat": 0.9598997493734336
+          },
+          "in_scope_kept": 0.989355040701315,
+          "out_of_scope_caught": 0.9875930521091811
+        },
+        "llm_alone:qwen3.5-122b-a10b": {
+          "session_success": 0.3925,
+          "session_success_ci": [
+            0.345,
+            0.4425
+          ],
+          "turn_success": 0.784,
+          "node_accuracy": {
+            "scope": 0.989,
+            "intent": 0.7658108954289292,
+            "repeat": 0.8872180451127819
+          },
+          "in_scope_kept": 0.989355040701315,
+          "out_of_scope_caught": 0.9875930521091811
+        },
+        "encoder_escalate_25pct:qwen3.5-122b-a10b": {
+          "session_success": 0.71,
+          "session_success_ci": [
+            0.665,
+            0.75
+          ],
+          "turn_success": 0.92,
+          "node_accuracy": {
+            "scope": 0.986,
+            "intent": 0.9304946775203506,
+            "repeat": 0.9573934837092731
+          },
+          "in_scope_kept": 0.9974953036944271,
+          "out_of_scope_caught": 0.9404466501240695
+        }
+      },
+      "replay_scope_agreement_with_2026-10-09": 0.9955,
+      "replay_intent_agreement_with_2026-10-09": 0.94
+    },
+    "massive": {
+      "jev_model": [
+        "jev-1.13.0"
+      ],
+      "jev_input_tokens_per_session": 5146.755,
+      "policies": {
+        "jev_alone": {
+          "session_success": 0.1875,
+          "session_success_ci": [
+            0.15,
+            0.2275
+          ],
+          "turn_success": 0.6795,
+          "node_accuracy": {
+            "scope": 0.8225,
+            "intent": 0.7471910112359551,
+            "repeat": 0.78369384359401
+          },
+          "in_scope_kept": 0.8826466916354557,
+          "out_of_scope_caught": 0.5804020100502513
+        },
+        "encoder_alone": {
+          "session_success": 0.19,
+          "session_success_ci": [
+            0.1525,
+            0.2275
+          ],
+          "turn_success": 0.6615,
+          "node_accuracy": {
+            "scope": 0.7045,
+            "intent": 0.6354556803995006,
+            "repeat": 0.5906821963394343
+          },
+          "in_scope_kept": 0.6466916354556804,
+          "out_of_scope_caught": 0.9371859296482412
+        },
+        "jev_gate_described+encoder": {
+          "session_success": 0.2625,
+          "session_success_ci": [
+            0.2175,
+            0.3075
+          ],
+          "turn_success": 0.724,
+          "node_accuracy": {
+            "scope": 0.8225,
+            "intent": 0.8008739076154806,
+            "repeat": 0.8011647254575707
+          },
+          "in_scope_kept": 0.8826466916354557,
+          "out_of_scope_caught": 0.5804020100502513
+        },
+        "jev_gate_listed+encoder": {
+          "session_success": 0.4,
+          "session_success_ci": [
+            0.355,
+            0.445
+          ],
+          "turn_success": 0.7985,
+          "node_accuracy": {
+            "scope": 0.8795,
+            "intent": 0.8008739076154806,
+            "repeat": 0.7995008319467554
+          },
+          "in_scope_kept": 0.8670411985018727,
+          "out_of_scope_caught": 0.9296482412060302
+        },
+        "jev_gate_and_specialist+encoder": {
+          "session_success": 0.165,
+          "session_success_ci": [
+            0.13,
+            0.2025
+          ],
+          "turn_success": 0.637,
+          "node_accuracy": {
+            "scope": 0.679,
+            "intent": 0.5961298377028714,
+            "repeat": 0.5515806988352745
+          },
+          "in_scope_kept": 0.6067415730337079,
+          "out_of_scope_caught": 0.9698492462311558
+        },
+        "llm_gate:qwen3.5-9b+encoder": {
+          "session_success": 0.37,
+          "session_success_ci": [
+            0.325,
+            0.4175
+          ],
+          "turn_success": 0.787,
+          "node_accuracy": {
+            "scope": 0.8735,
+            "intent": 0.7784019975031211,
+            "repeat": 0.7762063227953411
+          },
+          "in_scope_kept": 0.8495630461922596,
+          "out_of_scope_caught": 0.9698492462311558
+        },
+        "llm_alone:qwen3.5-9b": {
+          "session_success": 0.295,
+          "session_success_ci": [
+            0.25,
+            0.34
+          ],
+          "turn_success": 0.742,
+          "node_accuracy": {
+            "scope": 0.8735,
+            "intent": 0.7259675405742821,
+            "repeat": 0.7562396006655574
+          },
+          "in_scope_kept": 0.8495630461922596,
+          "out_of_scope_caught": 0.9698492462311558
+        },
+        "encoder_escalate_25pct:qwen3.5-9b": {
+          "session_success": 0.2425,
+          "session_success_ci": [
+            0.2,
+            0.285
+          ],
+          "turn_success": 0.7005,
+          "node_accuracy": {
+            "scope": 0.781,
+            "intent": 0.6903870162297129,
+            "repeat": 0.6755407653910149
+          },
+          "in_scope_kept": 0.7478152309612984,
+          "out_of_scope_caught": 0.914572864321608
+        },
+        "llm_gate:qwen3.5-27b+encoder": {
+          "session_success": 0.46,
+          "session_success_ci": [
+            0.4125,
+            0.5075624999999996
+          ],
+          "turn_success": 0.831,
+          "node_accuracy": {
+            "scope": 0.9175,
+            "intent": 0.8295880149812734,
+            "repeat": 0.8427620632279534
+          },
+          "in_scope_kept": 0.9057428214731585,
+          "out_of_scope_caught": 0.964824120603015
+        },
+        "llm_alone:qwen3.5-27b": {
+          "session_success": 0.445,
+          "session_success_ci": [
+            0.395,
+            0.495
+          ],
+          "turn_success": 0.8275,
+          "node_accuracy": {
+            "scope": 0.9175,
+            "intent": 0.8252184769038702,
+            "repeat": 0.8402662229617305
+          },
+          "in_scope_kept": 0.9057428214731585,
+          "out_of_scope_caught": 0.964824120603015
+        },
+        "encoder_escalate_25pct:qwen3.5-27b": {
+          "session_success": 0.27,
+          "session_success_ci": [
+            0.2275,
+            0.31256249999999963
+          ],
+          "turn_success": 0.718,
+          "node_accuracy": {
+            "scope": 0.79,
+            "intent": 0.7103620474406991,
+            "repeat": 0.6930116472545758
+          },
+          "in_scope_kept": 0.7584269662921348,
+          "out_of_scope_caught": 0.9170854271356784
+        },
+        "llm_gate:gemma-4-31b+encoder": {
+          "session_success": 0.5175,
+          "session_success_ci": [
+            0.4725,
+            0.565
+          ],
+          "turn_success": 0.8545,
+          "node_accuracy": {
+            "scope": 0.9435,
+            "intent": 0.8595505617977528,
+            "repeat": 0.8710482529118136
+          },
+          "in_scope_kept": 0.9413233458177278,
+          "out_of_scope_caught": 0.9522613065326633
+        },
+        "llm_alone:gemma-4-31b": {
+          "session_success": 0.505,
+          "session_success_ci": [
+            0.4549375,
+            0.555
+          ],
+          "turn_success": 0.846,
+          "node_accuracy": {
+            "scope": 0.9435,
+            "intent": 0.8489388264669163,
+            "repeat": 0.8735440931780366
+          },
+          "in_scope_kept": 0.9413233458177278,
+          "out_of_scope_caught": 0.9522613065326633
+        },
+        "encoder_escalate_25pct:gemma-4-31b": {
+          "session_success": 0.2675,
+          "session_success_ci": [
+            0.225,
+            0.3125
+          ],
+          "turn_success": 0.7135,
+          "node_accuracy": {
+            "scope": 0.793,
+            "intent": 0.7097378277153558,
+            "repeat": 0.6921797004991681
+          },
+          "in_scope_kept": 0.764669163545568,
+          "out_of_scope_caught": 0.907035175879397
+        },
+        "llm_gate:qwen3.5-35b-a3b+encoder": {
+          "session_success": 0.4725,
+          "session_success_ci": [
+            0.4225,
+            0.52
+          ],
+          "turn_success": 0.8305,
+          "node_accuracy": {
+            "scope": 0.928,
+            "intent": 0.8533083645443196,
+            "repeat": 0.872712146422629
+          },
+          "in_scope_kept": 0.9438202247191011,
+          "out_of_scope_caught": 0.864321608040201
+        },
+        "llm_alone:qwen3.5-35b-a3b": {
+          "session_success": 0.4125,
+          "session_success_ci": [
+            0.365,
+            0.46
+          ],
+          "turn_success": 0.802,
+          "node_accuracy": {
+            "scope": 0.928,
+            "intent": 0.8202247191011236,
+            "repeat": 0.8594009983361065
+          },
+          "in_scope_kept": 0.9438202247191011,
+          "out_of_scope_caught": 0.864321608040201
+        },
+        "encoder_escalate_25pct:qwen3.5-35b-a3b": {
+          "session_success": 0.2575,
+          "session_success_ci": [
+            0.215,
+            0.3025
+          ],
+          "turn_success": 0.7085,
+          "node_accuracy": {
+            "scope": 0.793,
+            "intent": 0.714107365792759,
+            "repeat": 0.7054908485856906
+          },
+          "in_scope_kept": 0.7784019975031211,
+          "out_of_scope_caught": 0.8517587939698492
+        },
+        "llm_gate:llama-3.3-70b+encoder": {
+          "session_success": 0.465,
+          "session_success_ci": [
+            0.4175,
+            0.5125
+          ],
+          "turn_success": 0.83,
+          "node_accuracy": {
+            "scope": 0.922,
+            "intent": 0.8302122347066168,
+            "repeat": 0.8344425956738769
+          },
+          "in_scope_kept": 0.9113607990012484,
+          "out_of_scope_caught": 0.964824120603015
+        },
+        "llm_alone:llama-3.3-70b": {
+          "session_success": 0.295,
+          "session_success_ci": [
+            0.2525,
+            0.34
+          ],
+          "turn_success": 0.756,
+          "node_accuracy": {
+            "scope": 0.922,
+            "intent": 0.7397003745318352,
+            "repeat": 0.8078202995008319
+          },
+          "in_scope_kept": 0.9113607990012484,
+          "out_of_scope_caught": 0.964824120603015
+        },
+        "encoder_escalate_25pct:llama-3.3-70b": {
+          "session_success": 0.2425,
+          "session_success_ci": [
+            0.2025,
+            0.285
+          ],
+          "turn_success": 0.704,
+          "node_accuracy": {
+            "scope": 0.79,
+            "intent": 0.6910112359550562,
+            "repeat": 0.6880199667221298
+          },
+          "in_scope_kept": 0.7596754057428214,
+          "out_of_scope_caught": 0.9120603015075377
+        },
+        "llm_gate:qwen3-next-80b-a3b+encoder": {
+          "session_success": 0.395,
+          "session_success_ci": [
+            0.345,
+            0.4425
+          ],
+          "turn_success": 0.7965,
+          "node_accuracy": {
+            "scope": 0.8865,
+            "intent": 0.8033707865168539,
+            "repeat": 0.8011647254575707
+          },
+          "in_scope_kept": 0.8764044943820225,
+          "out_of_scope_caught": 0.9271356783919598
+        },
+        "llm_alone:qwen3-next-80b-a3b": {
+          "session_success": 0.3125,
+          "session_success_ci": [
+            0.2675,
+            0.3575
+          ],
+          "turn_success": 0.7555,
+          "node_accuracy": {
+            "scope": 0.8865,
+            "intent": 0.7528089887640449,
+            "repeat": 0.7853577371048253
+          },
+          "in_scope_kept": 0.8764044943820225,
+          "out_of_scope_caught": 0.9271356783919598
+        },
+        "encoder_escalate_25pct:qwen3-next-80b-a3b": {
+          "session_success": 0.235,
+          "session_success_ci": [
+            0.195,
+            0.28
+          ],
+          "turn_success": 0.6985,
+          "node_accuracy": {
+            "scope": 0.775,
+            "intent": 0.6928838951310862,
+            "repeat": 0.6797004991680532
+          },
+          "in_scope_kept": 0.7471910112359551,
+          "out_of_scope_caught": 0.8869346733668342
+        },
+        "llm_gate:nemotron-3-super-120b+encoder": {
+          "session_success": 0.1075,
+          "session_success_ci": [
+            0.0775,
+            0.14
+          ],
+          "turn_success": 0.5885,
+          "node_accuracy": {
+            "scope": 0.641,
+            "intent": 0.529338327091136,
+            "repeat": 0.4933444259567388
+          },
+          "in_scope_kept": 0.5536828963795256,
+          "out_of_scope_caught": 0.992462311557789
+        },
+        "llm_alone:nemotron-3-super-120b": {
+          "session_success": 0.1075,
+          "session_success_ci": [
+            0.0775,
+            0.14
+          ],
+          "turn_success": 0.571,
+          "node_accuracy": {
+            "scope": 0.641,
+            "intent": 0.5062421972534332,
+            "repeat": 0.49001663893510816
+          },
+          "in_scope_kept": 0.5536828963795256,
+          "out_of_scope_caught": 0.992462311557789
+        },
+        "encoder_escalate_25pct:nemotron-3-super-120b": {
+          "session_success": 0.22,
+          "session_success_ci": [
+            0.18,
+            0.2625
+          ],
+          "turn_success": 0.683,
+          "node_accuracy": {
+            "scope": 0.7315,
+            "intent": 0.6629213483146067,
+            "repeat": 0.6256239600665557
+          },
+          "in_scope_kept": 0.6816479400749064,
+          "out_of_scope_caught": 0.9321608040201005
+        },
+        "llm_gate:qwen3.5-122b-a10b+encoder": {
+          "session_success": 0.4575,
+          "session_success_ci": [
+            0.4075,
+            0.505
+          ],
+          "turn_success": 0.826,
+          "node_accuracy": {
+            "scope": 0.9105,
+            "intent": 0.8252184769038702,
+            "repeat": 0.826955074875208
+          },
+          "in_scope_kept": 0.8976279650436954,
+          "out_of_scope_caught": 0.9623115577889447
+        },
+        "llm_alone:qwen3.5-122b-a10b": {
+          "session_success": 0.395,
+          "session_success_ci": [
+            0.345,
+            0.445
+          ],
+          "turn_success": 0.8025,
+          "node_accuracy": {
+            "scope": 0.9105,
+            "intent": 0.8002496878901373,
+            "repeat": 0.8161397670549085
+          },
+          "in_scope_kept": 0.8976279650436954,
+          "out_of_scope_caught": 0.9623115577889447
+        },
+        "encoder_escalate_25pct:qwen3.5-122b-a10b": {
+          "session_success": 0.245,
+          "session_success_ci": [
+            0.2025,
+            0.2875
+          ],
+          "turn_success": 0.7075,
+          "node_accuracy": {
+            "scope": 0.783,
+            "intent": 0.7028714107365793,
+            "repeat": 0.6830282861896838
+          },
+          "in_scope_kept": 0.7528089887640449,
+          "out_of_scope_caught": 0.9045226130653267
+        }
+      }
+    },
+    "clinc150": {
+      "jev_model": [
+        "jev-1.13.0"
+      ],
+      "jev_input_tokens_per_session": 9396.2375,
+      "policies": {
+        "jev_alone": {
+          "session_success": 0.225,
+          "session_success_ci": [
+            0.1874375,
+            0.265
+          ],
+          "turn_success": 0.7085,
+          "node_accuracy": {
+            "scope": 0.788,
+            "intent": 0.7823383084577115,
+            "repeat": 0.8056244830438379
+          },
+          "in_scope_kept": 0.8582089552238806,
+          "out_of_scope_caught": 0.5
+        },
+        "encoder_alone": {
+          "session_success": 0.6275,
+          "session_success_ci": [
+            0.58,
+            0.67
+          ],
+          "turn_success": 0.897,
+          "node_accuracy": {
+            "scope": 0.9125,
+            "intent": 0.9036069651741293,
+            "repeat": 0.890818858560794
+          },
+          "in_scope_kept": 0.9073383084577115,
+          "out_of_scope_caught": 0.9336734693877551
+        },
+        "jev_gate_described+encoder": {
+          "session_success": 0.2925,
+          "session_success_ci": [
+            0.25,
+            0.335
+          ],
+          "turn_success": 0.763,
+          "node_accuracy": {
+            "scope": 0.788,
+            "intent": 0.8432835820895522,
+            "repeat": 0.8287841191066998
+          },
+          "in_scope_kept": 0.8582089552238806,
+          "out_of_scope_caught": 0.5
+        },
+        "jev_gate_listed+encoder": {
+          "session_success": 0.605,
+          "session_success_ci": [
+            0.555,
+            0.655
+          ],
+          "turn_success": 0.897,
+          "node_accuracy": {
+            "scope": 0.9165,
+            "intent": 0.9241293532338308,
+            "repeat": 0.9255583126550868
+          },
+          "in_scope_kept": 0.9396766169154229,
+          "out_of_scope_caught": 0.8214285714285714
+        },
+        "jev_gate_and_specialist+encoder": {
+          "session_success": 0.3825,
+          "session_success_ci": [
+            0.3375,
+            0.425
+          ],
+          "turn_success": 0.7975,
+          "node_accuracy": {
+            "scope": 0.8155,
+            "intent": 0.7779850746268657,
+            "repeat": 0.7510339123242349
+          },
+          "in_scope_kept": 0.7810945273631841,
+          "out_of_scope_caught": 0.9566326530612245
+        },
+        "encoder_oos_alone": {
+          "session_success": 0.6775,
+          "session_success_ci": [
+            0.63,
+            0.7225
+          ],
+          "turn_success": 0.9135,
+          "node_accuracy": {
+            "scope": 0.9405,
+            "intent": 0.972636815920398,
+            "repeat": 0.9818031430934657
+          },
+          "in_scope_kept": 0.9968905472636815,
+          "out_of_scope_caught": 0.7091836734693877
+        },
+        "jev_gate_described+encoder_oos": {
+          "session_success": 0.28,
+          "session_success_ci": [
+            0.2375,
+            0.32256249999999964
+          ],
+          "turn_success": 0.759,
+          "node_accuracy": {
+            "scope": 0.788,
+            "intent": 0.8383084577114428,
+            "repeat": 0.8287841191066998
+          },
+          "in_scope_kept": 0.8582089552238806,
+          "out_of_scope_caught": 0.5
+        },
+        "jev_gate_listed+encoder_oos": {
+          "session_success": 0.595,
+          "session_success_ci": [
+            0.545,
+            0.6425
+          ],
+          "turn_success": 0.893,
+          "node_accuracy": {
+            "scope": 0.9165,
+            "intent": 0.9185323383084577,
+            "repeat": 0.9255583126550868
+          },
+          "in_scope_kept": 0.9396766169154229,
+          "out_of_scope_caught": 0.8214285714285714
+        },
+        "jev_gate_and_specialist+encoder_oos": {
+          "session_success": 0.4275,
+          "session_success_ci": [
+            0.38,
+            0.475
+          ],
+          "turn_success": 0.8265,
+          "node_accuracy": {
+            "scope": 0.849,
+            "intent": 0.8383084577114428,
+            "repeat": 0.8354011579818031
+          },
+          "in_scope_kept": 0.8563432835820896,
+          "out_of_scope_caught": 0.8188775510204082
+        },
+        "llm_gate:qwen3.5-9b+encoder": {
+          "session_success": 0.4525,
+          "session_success_ci": [
+            0.405,
+            0.505
+          ],
+          "turn_success": 0.8295,
+          "node_accuracy": {
+            "scope": 0.856,
+            "intent": 0.8308457711442786,
+            "repeat": 0.8130686517783292
+          },
+          "in_scope_kept": 0.8445273631840796,
+          "out_of_scope_caught": 0.9030612244897959
+        },
+        "llm_alone:qwen3.5-9b": {
+          "session_success": 0.2375,
+          "session_success_ci": [
+            0.195,
+            0.28
+          ],
+          "turn_success": 0.724,
+          "node_accuracy": {
+            "scope": 0.856,
+            "intent": 0.7033582089552238,
+            "repeat": 0.7890818858560794
+          },
+          "in_scope_kept": 0.8445273631840796,
+          "out_of_scope_caught": 0.9030612244897959
+        },
+        "encoder_escalate_25pct:qwen3.5-9b": {
+          "session_success": 0.7,
+          "session_success_ci": [
+            0.655,
+            0.7425624999999997
+          ],
+          "turn_success": 0.9185,
+          "node_accuracy": {
+            "scope": 0.949,
+            "intent": 0.9415422885572139,
+            "repeat": 0.9487179487179487
+          },
+          "in_scope_kept": 0.9682835820895522,
+          "out_of_scope_caught": 0.8698979591836735
+        },
+        "llm_gate:qwen3.5-27b+encoder": {
+          "session_success": 0.635,
+          "session_success_ci": [
+            0.5875,
+            0.6825
+          ],
+          "turn_success": 0.8985,
+          "node_accuracy": {
+            "scope": 0.9225,
+            "intent": 0.9060945273631841,
+            "repeat": 0.891645988420182
+          },
+          "in_scope_kept": 0.9222636815920398,
+          "out_of_scope_caught": 0.923469387755102
+        },
+        "llm_alone:qwen3.5-27b": {
+          "session_success": 0.52,
+          "session_success_ci": [
+            0.47,
+            0.57
+          ],
+          "turn_success": 0.847,
+          "node_accuracy": {
+            "scope": 0.9225,
+            "intent": 0.8432835820895522,
+            "repeat": 0.880066170388751
+          },
+          "in_scope_kept": 0.9222636815920398,
+          "out_of_scope_caught": 0.923469387755102
+        },
+        "encoder_escalate_25pct:qwen3.5-27b": {
+          "session_success": 0.7625,
+          "session_success_ci": [
+            0.72,
+            0.8025
+          ],
+          "turn_success": 0.935,
+          "node_accuracy": {
+            "scope": 0.958,
+            "intent": 0.9595771144278606,
+            "repeat": 0.956989247311828
+          },
+          "in_scope_kept": 0.9763681592039801,
+          "out_of_scope_caught": 0.8826530612244898
+        },
+        "llm_gate:gemma-4-31b+encoder": {
+          "session_success": 0.7225,
+          "session_success_ci": [
+            0.675,
+            0.765
+          ],
+          "turn_success": 0.9345,
+          "node_accuracy": {
+            "scope": 0.9545,
+            "intent": 0.9546019900497512,
+            "repeat": 0.9553349875930521
+          },
+          "in_scope_kept": 0.9720149253731343,
+          "out_of_scope_caught": 0.8826530612244898
+        },
+        "llm_alone:gemma-4-31b": {
+          "session_success": 0.625,
+          "session_success_ci": [
+            0.575,
+            0.6725
+          ],
+          "turn_success": 0.896,
+          "node_accuracy": {
+            "scope": 0.9545,
+            "intent": 0.9116915422885572,
+            "repeat": 0.9404466501240695
+          },
+          "in_scope_kept": 0.9720149253731343,
+          "out_of_scope_caught": 0.8826530612244898
+        },
+        "encoder_escalate_25pct:gemma-4-31b": {
+          "session_success": 0.7675,
+          "session_success_ci": [
+            0.7275,
+            0.81
+          ],
+          "turn_success": 0.937,
+          "node_accuracy": {
+            "scope": 0.9605,
+            "intent": 0.9695273631840796,
+            "repeat": 0.9702233250620348
+          },
+          "in_scope_kept": 0.9875621890547264,
+          "out_of_scope_caught": 0.8494897959183674
+        },
+        "llm_gate:qwen3.5-122b-a10b+encoder": {
+          "session_success": 0.6725,
+          "session_success_ci": [
+            0.625,
+            0.7175624999999997
+          ],
+          "turn_success": 0.912,
+          "node_accuracy": {
+            "scope": 0.934,
+            "intent": 0.9272388059701493,
+            "repeat": 0.923904052936311
+          },
+          "in_scope_kept": 0.943407960199005,
+          "out_of_scope_caught": 0.8954081632653061
+        },
+        "llm_alone:qwen3.5-122b-a10b": {
+          "session_success": 0.5225,
+          "session_success_ci": [
+            0.4725,
+            0.5725
+          ],
+          "turn_success": 0.857,
+          "node_accuracy": {
+            "scope": 0.934,
+            "intent": 0.8625621890547264,
+            "repeat": 0.9032258064516129
+          },
+          "in_scope_kept": 0.943407960199005,
+          "out_of_scope_caught": 0.8954081632653061
+        },
+        "encoder_escalate_25pct:qwen3.5-122b-a10b": {
+          "session_success": 0.735,
+          "session_success_ci": [
+            0.6925,
+            0.7775
+          ],
+          "turn_success": 0.928,
+          "node_accuracy": {
+            "scope": 0.955,
+            "intent": 0.9564676616915423,
+            "repeat": 0.9611248966087675
+          },
+          "in_scope_kept": 0.9794776119402985,
+          "out_of_scope_caught": 0.8545918367346939
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "protocol_id": "choice-suite-2026-10-08",
+  "system": "qwen3.5-9b-4bit-index_prior",
+  "datasets": {
+    "banking77_full": {
+      "n_options": 77,
+      "dev_n": 400,
+      "test_n": 3080,
+      "temperature": {
+        "temperature": 1.3047291711583238,
+        "dev_nll": 1.318444365372202,
+        "dev_nll_at_1": 1.4137382498118467,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.7045454545454546,
+        "brier": 0.426304937883273,
+        "log_loss": 1.3282299006923035,
+        "ece": 0.03209855371696354,
+        "top_bin_mass": 0.21915584415584416,
+        "coverage_at_5pct_error": 0.21558441558441557,
+        "selective_selected_n": 664,
+        "selective_confidence_threshold": 0.9342199486838461,
+        "aurc": 0.1187285972643717,
+        "macro_f1": 0.6913593116504964,
+        "accuracy_ci": [
+          0.6896103896103896,
+          0.7204545454545455
+        ],
+        "brier_ci": [
+          0.4066765938928563,
+          0.4450873949984652
+        ]
+      },
+      "unscaled": {
+        "n": 3080,
+        "accuracy": 0.7045454545454546,
+        "brier": 0.4470493077686286,
+        "log_loss": 1.4581052568686668,
+        "ece": 0.12789202040236186,
+        "top_bin_mass": 0.5081168831168831,
+        "coverage_at_5pct_error": 0.21753246753246752,
+        "selective_selected_n": 670,
+        "selective_confidence_threshold": 0.9880225741040057,
+        "aurc": 0.11875065372192077,
+        "macro_f1": 0.6913593116504964,
+        "accuracy_ci": [
+          0.6896103896103896,
+          0.7204545454545455
+        ],
+        "brier_ci": [
+          0.4244846265965361,
+          0.46846808946097657
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 3080,
+        "p50_ms": 2113.061150012072,
+        "p95_ms": 2187.58282501949,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8365.40185546875
+    },
+    "massive_en": {
+      "n_options": 60,
+      "dev_n": 2033,
+      "test_n": 2974,
+      "temperature": {
+        "temperature": 1.1924401041892276,
+        "dev_nll": 1.0991121997875337,
+        "dev_nll_at_1": 1.1345808208487447,
+        "n": 2033,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2974,
+        "accuracy": 0.7545393409549428,
+        "brier": 0.37290409421926196,
+        "log_loss": 1.1052000418037233,
+        "ece": 0.03501517845848805,
+        "top_bin_mass": 0.2508406186953598,
+        "coverage_at_5pct_error": 0.02387357094821789,
+        "selective_selected_n": 71,
+        "selective_confidence_threshold": 0.9806008195720787,
+        "aurc": 0.11008186428621076,
+        "macro_f1": 0.7001575848429937,
+        "accuracy_ci": [
+          0.7390719569603228,
+          0.7700067249495629
+        ],
+        "brier_ci": [
+          0.35327951773562927,
+          0.39337015594992414
+        ]
+      },
+      "unscaled": {
+        "n": 2974,
+        "accuracy": 0.7545393409549428,
+        "brier": 0.37422316444708226,
+        "log_loss": 1.1368622801465236,
+        "ece": 0.048529427216829596,
+        "top_bin_mass": 0.4182918628110289,
+        "coverage_at_5pct_error": 0.02051109616677875,
+        "selective_selected_n": 61,
+        "selective_confidence_threshold": 0.9950464314835412,
+        "aurc": 0.11173722721726995,
+        "macro_f1": 0.7001575848429937,
+        "accuracy_ci": [
+          0.7390719569603228,
+          0.7700067249495629
+        ],
+        "brier_ci": [
+          0.3527592119003028,
+          0.3964067303351209
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 2974,
+        "p50_ms": 1357.599399983883,
+        "p95_ms": 1362.9993549868232,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8365.40185546875
+    },
+    "emotion": {
+      "n_options": 6,
+      "dev_n": 400,
+      "test_n": 2000,
+      "temperature": {
+        "temperature": 1.8792510298655427,
+        "dev_nll": 1.4881538312663871,
+        "dev_nll_at_1": 1.6343591052710058,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2000,
+        "accuracy": 0.4,
+        "brier": 0.7023779930781765,
+        "log_loss": 1.4700196082712513,
+        "ece": 0.04313831177242394,
+        "top_bin_mass": 0.002,
+        "coverage_at_5pct_error": 0.013,
+        "selective_selected_n": 26,
+        "selective_confidence_threshold": 0.8763753897264248,
+        "aurc": 0.4155217564485757,
+        "macro_f1": 0.37881217241644255,
+        "accuracy_ci": [
+          0.379,
+          0.4215
+        ],
+        "brier_ci": [
+          0.6866334782046966,
+          0.718480728626252
+        ]
+      },
+      "unscaled": {
+        "n": 2000,
+        "accuracy": 0.4,
+        "brier": 0.7577417871779593,
+        "log_loss": 1.6096984480769836,
+        "ece": 0.2041914256653033,
+        "top_bin_mass": 0.0965,
+        "coverage_at_5pct_error": 0.0115,
+        "selective_selected_n": 23,
+        "selective_confidence_threshold": 0.9935841893648542,
+        "aurc": 0.419479875969604,
+        "macro_f1": 0.37881217241644255,
+        "accuracy_ci": [
+          0.379,
+          0.4215
+        ],
+        "brier_ci": [
+          0.7332966240461796,
+          0.7825090686721882
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 2000,
+        "p50_ms": 79.701649985509,
+        "p95_ms": 90.04771999316283,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 7489.5625
+    },
+    "yahoo": {
+      "n_options": 10,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 1.4660981694667237,
+        "dev_nll": 1.1912218384560669,
+        "dev_nll_at_1": 1.2969074677302326,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.6273333333333333,
+        "brier": 0.5147821860794681,
+        "log_loss": 1.2331851648810823,
+        "ece": 0.02836114613002976,
+        "top_bin_mass": 0.08666666666666667,
+        "coverage_at_5pct_error": 0.054,
+        "selective_selected_n": 162,
+        "selective_confidence_threshold": 0.9444764556678925,
+        "aurc": 0.18544771831209875,
+        "macro_f1": 0.5979778352271853,
+        "accuracy_ci": [
+          0.6106666666666667,
+          0.645
+        ],
+        "brier_ci": [
+          0.49481172888515457,
+          0.534755556702985
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.6273333333333333,
+        "brier": 0.5436595104092202,
+        "log_loss": 1.3526328001543397,
+        "ece": 0.14988325889673818,
+        "top_bin_mass": 0.42966666666666664,
+        "coverage_at_5pct_error": 0.05633333333333333,
+        "selective_selected_n": 169,
+        "selective_confidence_threshold": 0.9937988989809233,
+        "aurc": 0.18419071785865304,
+        "macro_f1": 0.5979778352271853,
+        "accuracy_ci": [
+          0.6106666666666667,
+          0.645
+        ],
+        "brier_ci": [
+          0.5196317276360733,
+          0.5679730948559515
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 3000,
+        "p50_ms": 243.95814997842535,
+        "p95_ms": 315.33063501992723,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8050.47900390625
+    },
+    "anli_r3": {
+      "n_options": 3,
+      "dev_n": 400,
+      "test_n": 1200,
+      "temperature": {
+        "temperature": 1.6393556898196449,
+        "dev_nll": 0.9420685866178374,
+        "dev_nll_at_1": 0.9843689488476286,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 1200,
+        "accuracy": 0.5708333333333333,
+        "brier": 0.5456295640984983,
+        "log_loss": 0.9168560014598849,
+        "ece": 0.03758443237753061,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.32945411080185943,
+        "macro_f1": 0.5590160481670845,
+        "accuracy_ci": [
+          0.5441666666666667,
+          0.5991666666666666
+        ],
+        "brier_ci": [
+          0.5281140239532549,
+          0.5646572100313947
+        ]
+      },
+      "unscaled": {
+        "n": 1200,
+        "accuracy": 0.5708333333333333,
+        "brier": 0.5496712699259507,
+        "log_loss": 0.9292477404326541,
+        "ece": 0.07135174181797005,
+        "top_bin_mass": 0.024166666666666666,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.3272675206233696,
+        "macro_f1": 0.5590160481670845,
+        "accuracy_ci": [
+          0.5441666666666667,
+          0.5991666666666666
+        ],
+        "brier_ci": [
+          0.5242853040899217,
+          0.5767182893641534
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 1200,
+        "p50_ms": 104.9920000077691,
+        "p95_ms": 122.38127501332201,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8050.47900390625
+    },
+    "boolq": {
+      "n_options": 2,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 0.5901938906678699,
+        "dev_nll": 0.3324695503584529,
+        "dev_nll_at_1": 0.3655184411458744,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.8326666666666667,
+        "brier": 0.24279721164571516,
+        "log_loss": 0.3974369291258545,
+        "ece": 0.04082102083505773,
+        "top_bin_mass": 0.432,
+        "coverage_at_5pct_error": 0.31666666666666665,
+        "selective_selected_n": 950,
+        "selective_confidence_threshold": 0.9618848266785922,
+        "aurc": 0.07190013498181619,
+        "macro_f1": 0.8290897816570892,
+        "accuracy_ci": [
+          0.8186583333333334,
+          0.8456666666666667
+        ],
+        "brier_ci": [
+          0.2269250357617984,
+          0.2592413365302357
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.8326666666666667,
+        "brier": 0.25131854019908706,
+        "log_loss": 0.4047129163881916,
+        "ece": 0.06156471563125989,
+        "top_bin_mass": 0.12133333333333333,
+        "coverage_at_5pct_error": 0.31666666666666665,
+        "selective_selected_n": 950,
+        "selective_confidence_threshold": 0.870491611979677,
+        "aurc": 0.0719017356070209,
+        "macro_f1": 0.8290897816570892,
+        "accuracy_ci": [
+          0.8186583333333334,
+          0.8456666666666667
+        ],
+        "brier_ci": [
+          0.23883505556326426,
+          0.2640788284025936
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 3000,
+        "p50_ms": 107.78509997180663,
+        "p95_ms": 145.0830299843801,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8050.47900390625
+    }
+  }
+}

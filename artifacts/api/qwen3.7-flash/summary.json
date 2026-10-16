@@ -1,0 +1,578 @@
+{
+  "protocol_id": "api-baselines-token-probability-2026-10-10",
+  "system": "qwen3.7-flash",
+  "suite_protocol_id": "choice-suite-2026-10-08",
+  "datasets": {
+    "banking77_full": {
+      "n_options": 77,
+      "dev_n": 400,
+      "test_n": 3080,
+      "temperature": {
+        "temperature": 1.2607729783449062,
+        "dev_nll": 1.5483030864875513,
+        "dev_nll_at_1": 1.6180317599434528,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.7392857142857143,
+        "brier": 0.40966082036150336,
+        "log_loss": 1.5980856355075006,
+        "ece": 0.08724665578844629,
+        "top_bin_mass": 0.0775974025974026,
+        "coverage_at_5pct_error": 0.2545454545454545,
+        "selective_selected_n": 784,
+        "selective_confidence_threshold": 0.8265197135528095,
+        "aurc": 0.10379101688601938,
+        "macro_f1": 0.7325165118064118,
+        "accuracy_ci": [
+          0.7243506493506493,
+          0.7545454545454545
+        ],
+        "brier_ci": [
+          0.3917472098894994,
+          0.42690237119952895
+        ]
+      },
+      "unscaled": {
+        "n": 3080,
+        "accuracy": 0.7392857142857143,
+        "brier": 0.40295420197636117,
+        "log_loss": 1.6823025277459915,
+        "ece": 0.044078400185287435,
+        "top_bin_mass": 0.24285714285714285,
+        "coverage_at_5pct_error": 0.2584415584415584,
+        "selective_selected_n": 796,
+        "selective_confidence_threshold": 0.9315301063769591,
+        "aurc": 0.10670403980527626,
+        "macro_f1": 0.7325165118064118,
+        "accuracy_ci": [
+          0.7243506493506493,
+          0.7545454545454545
+        ],
+        "brier_ci": [
+          0.38140072173704714,
+          0.42358106527769024
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 3080,
+          "request_errors": 0,
+          "unscorable": 0
+        }
+      },
+      "providers": [
+        "Alibaba"
+      ],
+      "prompt_tokens": 2128953,
+      "latency_p50_ms": 680.9238999994704,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "massive_en": {
+      "n_options": 60,
+      "dev_n": 2033,
+      "test_n": 2974,
+      "temperature": {
+        "temperature": 1.3272550711522415,
+        "dev_nll": 1.1473911329723334,
+        "dev_nll_at_1": 1.2347437116163567,
+        "n": 2033,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2974,
+        "accuracy": 0.7834566240753195,
+        "brier": 0.3301208818555517,
+        "log_loss": 1.1583503289143544,
+        "ece": 0.05304324532103495,
+        "top_bin_mass": 0.2508406186953598,
+        "coverage_at_5pct_error": 0.15097511768661734,
+        "selective_selected_n": 449,
+        "selective_confidence_threshold": 0.9551120696733818,
+        "aurc": 0.0868280382513471,
+        "macro_f1": 0.7550972086211872,
+        "accuracy_ci": [
+          0.7689895763281775,
+          0.7979152656355077
+        ],
+        "brier_ci": [
+          0.31127395967957366,
+          0.3491184029056439
+        ]
+      },
+      "unscaled": {
+        "n": 2974,
+        "accuracy": 0.7834566240753195,
+        "brier": 0.3337976827786382,
+        "log_loss": 1.2420086728781117,
+        "ece": 0.07630631838321687,
+        "top_bin_mass": 0.5564895763281775,
+        "coverage_at_5pct_error": 0.10356422326832548,
+        "selective_selected_n": 308,
+        "selective_confidence_threshold": 0.9955786501474599,
+        "aurc": 0.08930825485166871,
+        "macro_f1": 0.7550972086211872,
+        "accuracy_ci": [
+          0.7689895763281775,
+          0.7979152656355077
+        ],
+        "brier_ci": [
+          0.31221399731653376,
+          0.3560736752282332
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 2033,
+          "request_errors": 0,
+          "unscorable": 1
+        },
+        "test": {
+          "n": 2974,
+          "request_errors": 0,
+          "unscorable": 2
+        }
+      },
+      "providers": [
+        "Alibaba"
+      ],
+      "prompt_tokens": 2189899,
+      "latency_p50_ms": 703.9632000087295,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "clinc150": {
+      "n_options": 150,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 1.130092361207114,
+        "dev_nll": 1.1156871000007182,
+        "dev_nll_at_1": 1.1361227580841031,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.7933333333333333,
+        "brier": 0.32019485936564895,
+        "log_loss": 1.2643504783484292,
+        "ece": 0.04360367269316717,
+        "top_bin_mass": 0.45466666666666666,
+        "coverage_at_5pct_error": 0.49333333333333335,
+        "selective_selected_n": 1480,
+        "selective_confidence_threshold": 0.9121641274787916,
+        "aurc": 0.06361166352057321,
+        "macro_f1": 0.7726749588621115,
+        "accuracy_ci": [
+          0.7793333333333333,
+          0.807
+        ],
+        "brier_ci": [
+          0.30046234320439524,
+          0.33947817404931785
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.7933333333333333,
+        "brier": 0.320731914277116,
+        "log_loss": 1.2950272652588204,
+        "ece": 0.059853436656224356,
+        "top_bin_mass": 0.5526666666666666,
+        "coverage_at_5pct_error": 0.51,
+        "selective_selected_n": 1530,
+        "selective_confidence_threshold": 0.9552612268556808,
+        "aurc": 0.06251697066277997,
+        "macro_f1": 0.7726749588621115,
+        "accuracy_ci": [
+          0.7793333333333333,
+          0.807
+        ],
+        "brier_ci": [
+          0.2986363941506308,
+          0.34138387314976426
+        ]
+      },
+      "out_of_scope_scaled": {
+        "n": 1000,
+        "mean_top_probability": 0.46899510088556917,
+        "share_at_or_above_0.9": 0.099,
+        "share_at_or_above_0.5": 0.413,
+        "in_scope_mean_top_probability": 0.7930184864552916,
+        "auroc_in_scope_vs_out_of_scope_by_confidence": 0.812684
+      },
+      "out_of_scope_unscaled": {
+        "n": 1000,
+        "mean_top_probability": 0.5572382168566303,
+        "share_at_or_above_0.9": 0.17,
+        "share_at_or_above_0.5": 0.57,
+        "in_scope_mean_top_probability": 0.8502723031127898,
+        "auroc_in_scope_vs_out_of_scope_by_confidence": 0.810186
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 3000,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "oos": {
+          "n": 1000,
+          "request_errors": 0,
+          "unscorable": 33
+        }
+      },
+      "providers": [
+        "Alibaba"
+      ],
+      "prompt_tokens": 4809722,
+      "latency_p50_ms": 748.9990999893053,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "emotion": {
+      "n_options": 6,
+      "dev_n": 400,
+      "test_n": 2000,
+      "temperature": {
+        "temperature": 2.556677501035167,
+        "dev_nll": 1.1920078944854324,
+        "dev_nll_at_1": 1.757999872469653,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2000,
+        "accuracy": 0.5745,
+        "brier": 0.5785762948394059,
+        "log_loss": 1.2146156602560707,
+        "ece": 0.030562354990694943,
+        "top_bin_mass": 0.0005,
+        "coverage_at_5pct_error": 0.011,
+        "selective_selected_n": 22,
+        "selective_confidence_threshold": 0.9010198633592075,
+        "aurc": 0.27155682349815957,
+        "macro_f1": 0.49513496996965295,
+        "accuracy_ci": [
+          0.5535,
+          0.597
+        ],
+        "brier_ci": [
+          0.5562221188986118,
+          0.6012889042014422
+        ]
+      },
+      "unscaled": {
+        "n": 2000,
+        "accuracy": 0.5745,
+        "brier": 0.6940966467861712,
+        "log_loss": 1.824502445889074,
+        "ece": 0.2886379778626236,
+        "top_bin_mass": 0.5665,
+        "coverage_at_5pct_error": 0.0015,
+        "selective_selected_n": 3,
+        "selective_confidence_threshold": 0.9998172800722369,
+        "aurc": 0.2763392453215221,
+        "macro_f1": 0.49513496996965295,
+        "accuracy_ci": [
+          0.5535,
+          0.597
+        ],
+        "brier_ci": [
+          0.6585376314050939,
+          0.7309065592241076
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 2000,
+          "request_errors": 0,
+          "unscorable": 1
+        }
+      },
+      "providers": [
+        "Alibaba"
+      ],
+      "prompt_tokens": 184420,
+      "latency_p50_ms": 694.9498500034679,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "yahoo": {
+      "n_options": 10,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 2.5055543275404433,
+        "dev_nll": 0.9901187057306825,
+        "dev_nll_at_1": 1.6262677633043248,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.7143333333333334,
+        "brier": 0.42134143303003097,
+        "log_loss": 1.0339756142658219,
+        "ece": 0.02845556420389303,
+        "top_bin_mass": 0.05266666666666667,
+        "coverage_at_5pct_error": 0.029333333333333333,
+        "selective_selected_n": 88,
+        "selective_confidence_threshold": 0.9376876311582907,
+        "aurc": 0.14000706245718084,
+        "macro_f1": 0.7026878092893193,
+        "accuracy_ci": [
+          0.6983333333333334,
+          0.7310083333333333
+        ],
+        "brier_ci": [
+          0.4018653163491069,
+          0.4414584256001678
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.7143333333333334,
+        "brier": 0.4813145424078901,
+        "log_loss": 1.6732601251952857,
+        "ece": 0.2025681209999857,
+        "top_bin_mass": 0.7296666666666667,
+        "coverage_at_5pct_error": 0.013333333333333334,
+        "selective_selected_n": 40,
+        "selective_confidence_threshold": 0.9999507905901502,
+        "aurc": 0.13842593201949394,
+        "macro_f1": 0.7026878092893193,
+        "accuracy_ci": [
+          0.6983333333333334,
+          0.7310083333333333
+        ],
+        "brier_ci": [
+          0.4547774153167719,
+          0.5102614886556712
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 3000,
+          "request_errors": 0,
+          "unscorable": 0
+        }
+      },
+      "providers": [
+        "Alibaba"
+      ],
+      "prompt_tokens": 482139,
+      "latency_p50_ms": 687.961150004412,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "anli_r3": {
+      "n_options": 3,
+      "dev_n": 400,
+      "test_n": 1200,
+      "temperature": {
+        "temperature": 2.909254617719229,
+        "dev_nll": 0.8230069412383068,
+        "dev_nll_at_1": 1.2032802779217433,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 1200,
+        "accuracy": 0.6416666666666667,
+        "brier": 0.4823699479499794,
+        "log_loss": 0.8141691465781189,
+        "ece": 0.023195691664708657,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.0016666666666666668,
+        "selective_selected_n": 2,
+        "selective_confidence_threshold": 0.9210571178356096,
+        "aurc": 0.24244702309306565,
+        "macro_f1": 0.642652834821286,
+        "accuracy_ci": [
+          0.6141666666666666,
+          0.6683333333333333
+        ],
+        "brier_ci": [
+          0.4604497143397599,
+          0.5056617646296189
+        ]
+      },
+      "unscaled": {
+        "n": 1200,
+        "accuracy": 0.6416666666666667,
+        "brier": 0.5628443763094136,
+        "log_loss": 1.1469491521502322,
+        "ece": 0.20538716452456773,
+        "top_bin_mass": 0.4525,
+        "coverage_at_5pct_error": 0.0025,
+        "selective_selected_n": 3,
+        "selective_confidence_threshold": 0.9997116142582495,
+        "aurc": 0.24903304884887403,
+        "macro_f1": 0.642652834821286,
+        "accuracy_ci": [
+          0.6141666666666666,
+          0.6683333333333333
+        ],
+        "brier_ci": [
+          0.5248175637871298,
+          0.6034463178103261
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 1200,
+          "request_errors": 0,
+          "unscorable": 0
+        }
+      },
+      "providers": [
+        "Alibaba"
+      ],
+      "prompt_tokens": 219486,
+      "latency_p50_ms": 688.6676000140142,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "boolq": {
+      "n_options": 2,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 2.0633404562371642,
+        "dev_nll": 0.20471892028913188,
+        "dev_nll_at_1": 0.27354662824472054,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.9006666666666666,
+        "brier": 0.1478909796752243,
+        "log_loss": 0.2567248093220233,
+        "ece": 0.02034189592910582,
+        "top_bin_mass": 0.7176666666666667,
+        "coverage_at_5pct_error": 0.835,
+        "selective_selected_n": 2505,
+        "selective_confidence_threshold": 0.8197322231725769,
+        "aurc": 0.029149578308121357,
+        "macro_f1": 0.8963533058426129,
+        "accuracy_ci": [
+          0.89,
+          0.911
+        ],
+        "brier_ci": [
+          0.13434142640127544,
+          0.16269243724594712
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.9006666666666666,
+        "brier": 0.1596286858102502,
+        "log_loss": 0.37303355895885987,
+        "ece": 0.06175413804243733,
+        "top_bin_mass": 0.857,
+        "coverage_at_5pct_error": 0.835,
+        "selective_selected_n": 2505,
+        "selective_confidence_threshold": 0.95791227073267,
+        "aurc": 0.029147483202385478,
+        "macro_f1": 0.8963533058426129,
+        "accuracy_ci": [
+          0.89,
+          0.911
+        ],
+        "brier_ci": [
+          0.14336028963884184,
+          0.17686482561501135
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 1
+        },
+        "test": {
+          "n": 3000,
+          "request_errors": 0,
+          "unscorable": 1
+        }
+      },
+      "providers": [
+        "Alibaba"
+      ],
+      "prompt_tokens": 623430,
+      "latency_p50_ms": 691.4617500005988,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    }
+  },
+  "spend_usd": {
+    "this_run": 0.3249053560000058,
+    "project_total": 0.47592702599998254
+  }
+}

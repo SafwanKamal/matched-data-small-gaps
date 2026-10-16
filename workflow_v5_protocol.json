@@ -1,0 +1,29 @@
+{
+  "protocol_id": "workflow-v5-few-shot-and-model-pairs-2026-10-12",
+  "role": "exploratory: do labelled examples in the prompt close the gap between hosted models and the fine-tuned specialist, and when should a smaller hosted model hand a turn to a larger one?",
+  "claim": "Workflow v4 part A scored eight hosted models zero-shot: all were 10 to 20 points behind the fine-tuned specialist on the intent decision, and escalation from the specialist gained about ten points whatever the target's size. Two objections follow. First, a hosted model would normally be given examples. Second, v4 only paired the specialist with a hosted model, not a smaller hosted model with a larger one. Written after v4 part A was scored and before any request in this file was sent.",
+  "endpoint_rules": "api_protocol.json and the workflow_v4_protocol.json request rules (prompt, codes, parsing, temperature 0, pinned hosts)",
+  "run_cap_usd": 2.6,
+  "budget_note": "The $20 project cap leaves about $3.7 after workflow v4. To fit, the few-shot part uses the first 150 of the 400 sessions (750 turns) and not every model gets every shot count. Saved replies are keyed by turn, so a later run on all 400 sessions would reuse them.",
+  "part_d_few_shot": {
+    "sessions": "workflow v1 sessions 0 to 149",
+    "examples": "k training utterances per Banking77 label, the first k after a seeded shuffle of that label's training rows (seed 20261012; the Program 1 dev rows are excluded; no test or session item), and CLINC150 out-of-scope validation queries 10 to 13 with code 00. The examples are shuffled once and appended to the v4 current_only system prompt under the line 'Labelled examples (message => code):'.",
+    "runs": {"gemma-4-31b": [1, 3], "qwen3.5-9b": [1, 3], "qwen3.5-122b-a10b": [1]},
+    "why_these": "the best zero-shot model, the smallest, and the largest; the largest gets one shot count because it costs the most",
+    "rows": "each run alone, and as the escalation target for the encoder and the decoder at 10, 25, 40 and 60 percent of turns, against the same model's zero-shot answers on the same 150 sessions and the specialists alone on those sessions",
+    "readout": "stated before the run: examples close the gap if the few-shot model alone reaches the specialist alone on these sessions; the plateau the user asked about is reached if the model alone is at least as good as the best hybrid"
+  },
+  "part_e_model_pairs": {
+    "small_models": {"qwen3.5-9b": "Parasail", "gemma-4-31b": "Novita"},
+    "calls": "each small model answers all 2000 turns again in the v4 current_only form on a host that returns token log-probabilities. Its confidence in a turn is the product of the probabilities of every token it generated. These replies, not the v4 part A replies, are that model's answers in this part, so answer and confidence come from the same request.",
+    "targets": "every other hosted model, using its saved v4 part A answers; no new call",
+    "rows": "for each small model and target: the small model alone, the target alone, and the small model with its least confident 5, 10, 25, 40, 60 and 80 percent of turns replaced by the target's answer; controls are a random set (100 draws, seed 20261012) and the oracle set at each rate",
+    "metrics": [
+      "AUROC of the small model's confidence for 'its turn decision is wrong'",
+      "session success and API cost per 1000 sessions at each rate (the small model's cost on every turn plus the target's on the escalated turns)",
+      "for each pair, the lowest rate at which the cascade is within one point of the target alone, and whether any rate beats both models"
+    ],
+    "free_companion": "artifacts/workflow-v4/pairs.json, computed from saved answers with no confidence signal: for all 56 ordered pairs, the share of turns the second model fixes and breaks, and oracle and random replacement"
+  },
+  "limits": "One task and synthetic sessions. The few-shot part has 150 sessions, so its intervals are about plus or minus 8 points on session success. Token log-probabilities of a generated two-line answer are a coarse confidence."
+}

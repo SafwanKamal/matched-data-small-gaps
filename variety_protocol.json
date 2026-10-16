@@ -1,0 +1,40 @@
+{
+  "protocol_id": "wrapper-variety-curve-2026-10-10",
+  "role": "exploratory: how much hand-off variety a small encoder needs before it generalises to an unseen convention",
+  "claim": "Trained on one wrapper convention, the Banking77 encoder follows that convention's cue (the last line, or the words 'Current message:') and fails on others. This run trains the same recipe on 1, 2, 4 and 8 conventions and tests on four conventions that no model sees, with the target last, first and in the middle. Written before any of these models was scored.",
+  "base_recipe": "program2.json encoder recipe, log loss, 512-token cap, GPU, float32 weights with a bfloat16 forward",
+  "seeds": [20261007, 20261008],
+  "wrap_seed": 20261010,
+  "levels": [1, 2, 4, 8],
+  "training_inputs": {
+    "clean_share": 0.2,
+    "wrapped": "a convention drawn uniformly from the first k training conventions; 1 to 8 earlier messages, uniform; target first or last with equal probability",
+    "never_in_training": "the target in the middle; the four held-out conventions; small talk; typed summaries"
+  },
+  "conventions": {
+    "fields": "target: the line that carries the current message. header: a line placed before a block of earlier messages, or null. earlier: the line for one earlier message.",
+    "training": [
+      {"target": "Current message: {t}", "header": "Earlier messages (already resolved):", "earlier": "- {d}"},
+      {"target": "Latest request: {t}", "header": "Older requests, all closed:", "earlier": "- {d}"},
+      {"target": "NOW: {t}", "header": "BEFORE:", "earlier": "* {d}"},
+      {"target": "The customer is now asking: {t}", "header": "Previously the customer asked:", "earlier": "{n}. {d}"},
+      {"target": "[ACTIVE] {t}", "header": null, "earlier": "[CLOSED] {d}"},
+      {"target": "Message to classify: {t}", "header": "Context, do not classify:", "earlier": "> {d}"},
+      {"target": "New ticket: {t}", "header": "Past tickets:", "earlier": "- {d}"},
+      {"target": "Q: {t}", "header": "History:", "earlier": "+ {d}"}
+    ],
+    "held_out": [
+      {"target": "This turn: {t}", "header": "Prior turns (handled):", "earlier": "- {d}"},
+      {"target": "Open issue: {t}", "header": "Resolved issues:", "earlier": "# {d}"},
+      {"target": "<current>{t}</current>", "header": null, "earlier": "<past>{d}</past>"},
+      {"target": "User says: {t}", "header": "Earlier the user said:", "earlier": "- {d}"}
+    ]
+  },
+  "test": {
+    "items": "the 500 context-pilot Banking77 test items with the pilot's eight distractors per item",
+    "conditions": "clean; each held-out convention with the target last, first and in the middle (after four of the eight earlier messages); the first training convention in the same three positions; the pilot's small-talk and typed-summary conditions",
+    "temperature": "one scalar per model, fit on the 400 clean Program 1 dev items",
+    "headline": "mean accuracy over the twelve held-out-convention conditions, per level, with the range over seeds; also split by target position"
+  },
+  "not_saved": "model weights; only scores and summaries are kept"
+}

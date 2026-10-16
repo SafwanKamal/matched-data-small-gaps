@@ -1,0 +1,293 @@
+{
+  "protocol_id": "workflow-v2-orchestrator-other-domains-2026-10-14",
+  "domains": {
+    "massive": {
+      "policies": {
+        "orchestrator_with_confidence": {
+          "node_accuracy": {
+            "scope": 0.878,
+            "intent": 0.8801498127340824,
+            "repeat": 0.891846921797005
+          },
+          "turn_success": 0.7725,
+          "session_success": 0.34,
+          "session_success_ci": [
+            0.2925,
+            0.3875
+          ],
+          "action_shares": {
+            "1": 0.877,
+            "2": 0.0205,
+            "3": 0.0,
+            "4": 0.1025
+          },
+          "action4_precision": 0.8634146341463415,
+          "action4_recall": 0.44472361809045224
+        },
+        "orchestrator_with_confidence__as_gate_only": {
+          "node_accuracy": {
+            "scope": 0.8755,
+            "intent": 0.8813982521847691,
+            "repeat": 0.8951747088186356
+          },
+          "turn_success": 0.7635,
+          "session_success": 0.315,
+          "session_success_ci": [
+            0.2724375,
+            0.36
+          ]
+        },
+        "orchestrator_labels_only": {
+          "node_accuracy": {
+            "scope": 0.889,
+            "intent": 0.8607990012484394,
+            "repeat": 0.8743760399334443
+          },
+          "turn_success": 0.789,
+          "session_success": 0.38,
+          "session_success_ci": [
+            0.3325,
+            0.4275
+          ],
+          "action_shares": {
+            "1": 0.7885,
+            "2": 0.079,
+            "3": 0.0,
+            "4": 0.1325
+          },
+          "action4_precision": 0.8415094339622642,
+          "action4_recall": 0.5603015075376885
+        },
+        "orchestrator_labels_only__as_gate_only": {
+          "node_accuracy": {
+            "scope": 0.8915,
+            "intent": 0.8720349563046192,
+            "repeat": 0.8901830282861897
+          },
+          "turn_success": 0.7795,
+          "session_success": 0.355,
+          "session_success_ci": [
+            0.31,
+            0.4025
+          ]
+        },
+        "orchestrator_message_only": {
+          "node_accuracy": {
+            "scope": 0.7615,
+            "intent": 0.7883895131086143,
+            "repeat": 0.7853577371048253
+          },
+          "turn_success": 0.6625,
+          "session_success": 0.1525,
+          "session_success_ci": [
+            0.1175,
+            0.19006249999999966
+          ],
+          "action_shares": {
+            "1": 0.8235,
+            "2": 0.021,
+            "3": 0.0,
+            "4": 0.1555
+          },
+          "action4_precision": 0.35691318327974275,
+          "action4_recall": 0.27889447236180903
+        },
+        "orchestrator_message_only__as_gate_only": {
+          "node_accuracy": {
+            "scope": 0.7565,
+            "intent": 0.7908863920099876,
+            "repeat": 0.7845257903494176
+          },
+          "turn_success": 0.653,
+          "session_success": 0.145,
+          "session_success_ci": [
+            0.11,
+            0.18
+          ]
+        }
+      },
+      "comparators": {
+        "encoder_alone_softmax": {
+          "node_accuracy": {
+            "scope": 0.7045,
+            "intent": 0.6354556803995006,
+            "repeat": 0.5906821963394343
+          },
+          "turn_success": 0.6615,
+          "session_success": 0.19,
+          "session_success_ci": [
+            0.1525,
+            0.2275
+          ]
+        },
+        "encoder_alone_knn": {
+          "session_success": 0.4975
+        },
+        "gemma_gate_encoder_intent": {
+          "node_accuracy": {
+            "scope": 0.9435,
+            "intent": 0.8595505617977528,
+            "repeat": 0.8710482529118136
+          },
+          "turn_success": 0.8545,
+          "session_success": 0.5175,
+          "session_success_ci": [
+            0.4725,
+            0.565
+          ]
+        },
+        "gemma_full_retrieval_alone": {
+          "session_success": 0.65,
+          "session_success_ci": [
+            0.6025,
+            0.7
+          ]
+        }
+      }
+    },
+    "clinc150": {
+      "policies": {
+        "orchestrator_with_confidence": {
+          "node_accuracy": {
+            "scope": 0.9215,
+            "intent": 0.9154228855721394,
+            "repeat": 0.9065343258891646
+          },
+          "turn_success": 0.902,
+          "session_success": 0.6275,
+          "session_success_ci": [
+            0.58,
+            0.675
+          ],
+          "action_shares": {
+            "1": 0.743,
+            "2": 0.0375,
+            "3": 0.0005,
+            "4": 0.219
+          },
+          "action4_precision": 0.730593607305936,
+          "action4_recall": 0.8163265306122449
+        },
+        "orchestrator_with_confidence__as_gate_only": {
+          "node_accuracy": {
+            "scope": 0.905,
+            "intent": 0.914179104477612,
+            "repeat": 0.9040529363110008
+          },
+          "turn_success": 0.8835,
+          "session_success": 0.57,
+          "session_success_ci": [
+            0.5225,
+            0.62
+          ]
+        },
+        "orchestrator_labels_only": {
+          "node_accuracy": {
+            "scope": 0.879,
+            "intent": 0.8694029850746269,
+            "repeat": 0.8552522746071133
+          },
+          "turn_success": 0.8545,
+          "session_success": 0.5075,
+          "session_success_ci": [
+            0.4575,
+            0.555
+          ],
+          "action_shares": {
+            "1": 0.5495,
+            "2": 0.24,
+            "3": 0.0005,
+            "4": 0.21
+          },
+          "action4_precision": 0.5619047619047619,
+          "action4_recall": 0.6020408163265306
+        },
+        "orchestrator_labels_only__as_gate_only": {
+          "node_accuracy": {
+            "scope": 0.83,
+            "intent": 0.8687810945273632,
+            "repeat": 0.8444995864350703
+          },
+          "turn_success": 0.7985,
+          "session_success": 0.3675,
+          "session_success_ci": [
+            0.3175,
+            0.415
+          ]
+        },
+        "orchestrator_message_only": {
+          "node_accuracy": {
+            "scope": 0.64,
+            "intent": 0.6424129353233831,
+            "repeat": 0.6038047973531845
+          },
+          "turn_success": 0.601,
+          "session_success": 0.12,
+          "session_success_ci": [
+            0.0875,
+            0.155
+          ],
+          "action_shares": {
+            "1": 0.5295,
+            "2": 0.0975,
+            "3": 0.0,
+            "4": 0.373
+          },
+          "action4_precision": 0.2546916890080429,
+          "action4_recall": 0.4846938775510204
+        },
+        "orchestrator_message_only__as_gate_only": {
+          "node_accuracy": {
+            "scope": 0.621,
+            "intent": 0.6442786069651741,
+            "repeat": 0.6029776674937966
+          },
+          "turn_success": 0.5825,
+          "session_success": 0.11,
+          "session_success_ci": [
+            0.08,
+            0.1425
+          ]
+        }
+      },
+      "comparators": {
+        "encoder_alone_softmax": {
+          "node_accuracy": {
+            "scope": 0.9125,
+            "intent": 0.9036069651741293,
+            "repeat": 0.890818858560794
+          },
+          "turn_success": 0.897,
+          "session_success": 0.6275,
+          "session_success_ci": [
+            0.58,
+            0.67
+          ]
+        },
+        "encoder_alone_knn": {
+          "session_success": 0.7325
+        },
+        "gemma_gate_encoder_intent": {
+          "node_accuracy": {
+            "scope": 0.9545,
+            "intent": 0.9546019900497512,
+            "repeat": 0.9553349875930521
+          },
+          "turn_success": 0.9345,
+          "session_success": 0.7225,
+          "session_success_ci": [
+            0.675,
+            0.765
+          ]
+        },
+        "gemma_full_retrieval_alone": {
+          "session_success": 0.8075,
+          "session_success_ci": [
+            0.77,
+            0.845
+          ]
+        }
+      }
+    }
+  }
+}

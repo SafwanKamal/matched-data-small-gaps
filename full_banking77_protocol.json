@@ -1,0 +1,28 @@
+{
+  "protocol_id": "banking77-full-test-2026-10-08",
+  "role": "replace the 500-item Banking77 subsample with the whole official test split",
+  "claim": "Every system below was already scored on the 500-item subsample, which is a subset of these 3080 rows. Nothing is refit: each system keeps the temperature it fit on the 400 Program 1 dev rows, and the cascade keeps the dev thresholds in artifacts/hybrid/thresholds.json. Written before any system was scored on the other 2580 rows.",
+  "metrics_match": "program-1-choice-2026-10-07",
+  "dataset": "banking77",
+  "split": "official test, every row, in file order",
+  "expected_n": 3080,
+  "per_class_n": 40,
+  "item_id": "banking77-test-{row}",
+  "systems": {
+    "ettin-encoder-log_loss": "artifacts/program2/banking77-log_loss",
+    "ettin-encoder-brier": "artifacts/program2/banking77-brier",
+    "ettin-decoder-log_loss": "artifacts/program2-decoder/banking77-log_loss",
+    "ettin-decoder-brier": "artifacts/program2-decoder/banking77-brier",
+    "deberta-v3-large-zeroshot-v2.0-c": "Program 1 system, temperature refit by the Program 1 rule on its saved dev scores, which reproduces the Program 1 value",
+    "gliclass-base-v3.0": "same",
+    "jev": "jev_protocol.json request and score rule; temperature from the jev dev rows; rows that return an error are requested again, up to 4 passes"
+  },
+  "cascade": {
+    "gate": "ettin-encoder-log_loss",
+    "strong": "ettin-decoder-log_loss",
+    "thresholds": "artifacts/hybrid/thresholds.json, unchanged",
+    "controls": "random and oracle as in hybrid_protocol.json"
+  },
+  "intervals": "95% percentile bootstrap over items, 2000 resamples, seed 20261008",
+  "macro_f1": "unweighted mean of per-class F1 from the argmax decision, reported next to accuracy"
+}

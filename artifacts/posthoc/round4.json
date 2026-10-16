@@ -1,0 +1,1018 @@
+{
+ "status": "POST HOC: round 4 review requests; not pre-registered",
+ "sibling_absorption": {
+  "models": {
+   "gemma-4-31b": {
+    "accepted_held_out": 194,
+    "chosen_label_among_retrieved": 0.9226804123711341,
+    "chosen_label_is_top1_retrieved": 0.44329896907216493,
+    "top_mappings": [
+     [
+      "verify_my_identity",
+      "why verify identity",
+      17
+     ],
+     [
+      "unable_to_verify_identity",
+      "why verify identity",
+      16
+     ],
+     [
+      "pin_blocked",
+      "change pin",
+      15
+     ],
+     [
+      "top_up_by_bank_transfer_charge",
+      "transfer fee charged",
+      10
+     ],
+     [
+      "top_up_limits",
+      "automatic top up",
+      10
+     ],
+     [
+      "topping_up_by_card",
+      "supported cards and currencies",
+      8
+     ],
+     [
+      "compromised_card",
+      "card payment not recognised",
+      8
+     ],
+     [
+      "get_disposable_virtual_card",
+      "disposable card limits",
+      8
+     ]
+    ],
+    "drop_concentrated": [
+     0.7216494845360825,
+     0.422680412371134
+    ],
+    "drop_diffuse": [
+     0.7577319587628866,
+     0.5773195876288659
+    ],
+    "per_intent_zero_shot_to_retrieval": {
+     "age_limit": [
+      1.0,
+      1.0
+     ],
+     "atm_support": [
+      0.75,
+      0.75
+     ],
+     "card_acceptance": [
+      0.45454545454545453,
+      0.45454545454545453
+     ],
+     "card_swallowed": [
+      0.9166666666666666,
+      0.8333333333333334
+     ],
+     "compromised_card": [
+      0.6666666666666666,
+      0.26666666666666666
+     ],
+     "contactless_not_working": [
+      0.0,
+      0.14285714285714285
+     ],
+     "get_disposable_virtual_card": [
+      0.6875,
+      0.375
+     ],
+     "get_physical_card": [
+      0.6363636363636364,
+      0.6818181818181818
+     ],
+     "getting_virtual_card": [
+      0.9444444444444444,
+      0.3333333333333333
+     ],
+     "passcode_forgotten": [
+      0.6111111111111112,
+      0.6111111111111112
+     ],
+     "pin_blocked": [
+      0.5652173913043478,
+      0.13043478260869565
+     ],
+     "receiving_money": [
+      0.9375,
+      0.875
+     ],
+     "terminate_account": [
+      1.0,
+      1.0
+     ],
+     "top_up_by_bank_transfer_charge": [
+      0.6956521739130435,
+      0.5217391304347826
+     ],
+     "top_up_by_card_charge": [
+      0.631578947368421,
+      0.10526315789473684
+     ],
+     "top_up_by_cash_or_cheque": [
+      1.0,
+      0.5714285714285714
+     ],
+     "top_up_limits": [
+      1.0,
+      0.3888888888888889
+     ],
+     "topping_up_by_card": [
+      0.6,
+      0.2
+     ],
+     "transfer_into_account": [
+      1.0,
+      0.85
+     ],
+     "unable_to_verify_identity": [
+      0.6190476190476191,
+      0.23809523809523808
+     ],
+     "verify_my_identity": [
+      0.47368421052631576,
+      0.10526315789473684
+     ],
+     "verify_source_of_funds": [
+      1.0,
+      0.9523809523809523
+     ],
+     "virtual_card_not_working": [
+      0.14285714285714285,
+      0.14285714285714285
+     ]
+    }
+   },
+   "qwen3.5-27b": {
+    "accepted_held_out": 106,
+    "chosen_label_among_retrieved": 0.9905660377358491,
+    "chosen_label_is_top1_retrieved": 0.5754716981132075,
+    "top_mappings": [
+     [
+      "verify_my_identity",
+      "why verify identity",
+      14
+     ],
+     [
+      "pin_blocked",
+      "change pin",
+      12
+     ],
+     [
+      "top_up_by_bank_transfer_charge",
+      "transfer fee charged",
+      7
+     ],
+     [
+      "top_up_limits",
+      "automatic top up",
+      7
+     ],
+     [
+      "unable_to_verify_identity",
+      "why verify identity",
+      7
+     ],
+     [
+      "compromised_card",
+      "card payment not recognised",
+      6
+     ],
+     [
+      "get_disposable_virtual_card",
+      "disposable card limits",
+      6
+     ],
+     [
+      "contactless_not_working",
+      "declined card payment",
+      4
+     ]
+    ],
+    "drop_concentrated": [
+     0.9381443298969072,
+     0.6443298969072165
+    ],
+    "drop_diffuse": [
+     0.8917525773195877,
+     0.8092783505154639
+    ],
+    "per_intent_zero_shot_to_retrieval": {
+     "age_limit": [
+      1.0,
+      1.0
+     ],
+     "atm_support": [
+      1.0,
+      0.9375
+     ],
+     "card_acceptance": [
+      0.8181818181818182,
+      0.7272727272727273
+     ],
+     "card_swallowed": [
+      0.9166666666666666,
+      1.0
+     ],
+     "compromised_card": [
+      1.0,
+      0.6
+     ],
+     "contactless_not_working": [
+      0.5714285714285714,
+      0.2857142857142857
+     ],
+     "get_disposable_virtual_card": [
+      1.0,
+      0.625
+     ],
+     "get_physical_card": [
+      0.8181818181818182,
+      0.8636363636363636
+     ],
+     "getting_virtual_card": [
+      0.9444444444444444,
+      0.7777777777777778
+     ],
+     "passcode_forgotten": [
+      0.8888888888888888,
+      0.7777777777777778
+     ],
+     "pin_blocked": [
+      0.7391304347826086,
+      0.34782608695652173
+     ],
+     "receiving_money": [
+      0.9375,
+      0.9375
+     ],
+     "terminate_account": [
+      1.0,
+      1.0
+     ],
+     "top_up_by_bank_transfer_charge": [
+      0.9565217391304348,
+      0.6521739130434783
+     ],
+     "top_up_by_card_charge": [
+      0.8421052631578947,
+      0.8421052631578947
+     ],
+     "top_up_by_cash_or_cheque": [
+      1.0,
+      0.8571428571428571
+     ],
+     "top_up_limits": [
+      1.0,
+      0.6111111111111112
+     ],
+     "topping_up_by_card": [
+      0.7,
+      0.5
+     ],
+     "transfer_into_account": [
+      1.0,
+      1.0
+     ],
+     "unable_to_verify_identity": [
+      1.0,
+      0.6666666666666666
+     ],
+     "verify_my_identity": [
+      0.9473684210526315,
+      0.2631578947368421
+     ],
+     "verify_source_of_funds": [
+      1.0,
+      1.0
+     ],
+     "virtual_card_not_working": [
+      0.7142857142857143,
+      0.14285714285714285
+     ]
+    }
+   },
+   "llama-3.3-70b": {
+    "accepted_held_out": 248,
+    "chosen_label_among_retrieved": 0.9637096774193549,
+    "chosen_label_is_top1_retrieved": 0.45564516129032256,
+    "top_mappings": [
+     [
+      "verify_my_identity",
+      "why verify identity",
+      18
+     ],
+     [
+      "top_up_limits",
+      "automatic top up",
+      17
+     ],
+     [
+      "pin_blocked",
+      "change pin",
+      15
+     ],
+     [
+      "unable_to_verify_identity",
+      "why verify identity",
+      14
+     ],
+     [
+      "top_up_by_bank_transfer_charge",
+      "transfer fee charged",
+      13
+     ],
+     [
+      "get_physical_card",
+      "change pin",
+      9
+     ],
+     [
+      "topping_up_by_card",
+      "supported cards and currencies",
+      8
+     ],
+     [
+      "compromised_card",
+      "card payment not recognised",
+      8
+     ]
+    ],
+    "drop_concentrated": [
+     0.5257731958762887,
+     0.27835051546391754
+    ],
+    "drop_diffuse": [
+     0.6701030927835051,
+     0.44329896907216493
+    ],
+    "per_intent_zero_shot_to_retrieval": {
+     "age_limit": [
+      1.0,
+      1.0
+     ],
+     "atm_support": [
+      0.875,
+      0.625
+     ],
+     "card_acceptance": [
+      0.6363636363636364,
+      0.36363636363636365
+     ],
+     "card_swallowed": [
+      0.75,
+      0.4166666666666667
+     ],
+     "compromised_card": [
+      0.7333333333333333,
+      0.06666666666666667
+     ],
+     "contactless_not_working": [
+      0.2857142857142857,
+      0.14285714285714285
+     ],
+     "get_disposable_virtual_card": [
+      0.0625,
+      0.3125
+     ],
+     "get_physical_card": [
+      0.8181818181818182,
+      0.5
+     ],
+     "getting_virtual_card": [
+      1.0,
+      0.2222222222222222
+     ],
+     "passcode_forgotten": [
+      1.0,
+      0.7222222222222222
+     ],
+     "pin_blocked": [
+      0.6086956521739131,
+      0.08695652173913043
+     ],
+     "receiving_money": [
+      0.9375,
+      0.875
+     ],
+     "terminate_account": [
+      1.0,
+      1.0
+     ],
+     "top_up_by_bank_transfer_charge": [
+      0.34782608695652173,
+      0.08695652173913043
+     ],
+     "top_up_by_card_charge": [
+      0.10526315789473684,
+      0.0
+     ],
+     "top_up_by_cash_or_cheque": [
+      0.5714285714285714,
+      0.2857142857142857
+     ],
+     "top_up_limits": [
+      0.05555555555555555,
+      0.0
+     ],
+     "topping_up_by_card": [
+      0.3,
+      0.1
+     ],
+     "transfer_into_account": [
+      0.8,
+      0.45
+     ],
+     "unable_to_verify_identity": [
+      0.38095238095238093,
+      0.3333333333333333
+     ],
+     "verify_my_identity": [
+      0.3157894736842105,
+      0.05263157894736842
+     ],
+     "verify_source_of_funds": [
+      1.0,
+      0.8571428571428571
+     ],
+     "virtual_card_not_working": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "deepseek-v4-pro": {
+    "accepted_held_out": 226,
+    "chosen_label_among_retrieved": 0.9380530973451328,
+    "chosen_label_is_top1_retrieved": 0.4336283185840708,
+    "top_mappings": [
+     [
+      "verify_my_identity",
+      "why verify identity",
+      17
+     ],
+     [
+      "unable_to_verify_identity",
+      "why verify identity",
+      15
+     ],
+     [
+      "get_physical_card",
+      "change pin",
+      15
+     ],
+     [
+      "top_up_limits",
+      "automatic top up",
+      14
+     ],
+     [
+      "top_up_by_bank_transfer_charge",
+      "transfer fee charged",
+      13
+     ],
+     [
+      "pin_blocked",
+      "change pin",
+      9
+     ],
+     [
+      "get_disposable_virtual_card",
+      "disposable card limits",
+      8
+     ],
+     [
+      "getting_virtual_card",
+      "disposable card limits",
+      7
+     ]
+    ],
+    "drop_concentrated": [
+     0.6701030927835051,
+     0.36597938144329895
+    ],
+    "drop_diffuse": [
+     0.6907216494845361,
+     0.4690721649484536
+    ],
+    "per_intent_zero_shot_to_retrieval": {
+     "age_limit": [
+      1.0,
+      1.0
+     ],
+     "atm_support": [
+      0.9375,
+      0.625
+     ],
+     "card_acceptance": [
+      0.8181818181818182,
+      0.36363636363636365
+     ],
+     "card_swallowed": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "compromised_card": [
+      0.9333333333333333,
+      0.06666666666666667
+     ],
+     "contactless_not_working": [
+      0.42857142857142855,
+      0.42857142857142855
+     ],
+     "get_disposable_virtual_card": [
+      0.375,
+      0.5
+     ],
+     "get_physical_card": [
+      0.3181818181818182,
+      0.3181818181818182
+     ],
+     "getting_virtual_card": [
+      0.6666666666666666,
+      0.16666666666666666
+     ],
+     "passcode_forgotten": [
+      0.9444444444444444,
+      0.7222222222222222
+     ],
+     "pin_blocked": [
+      0.6086956521739131,
+      0.34782608695652173
+     ],
+     "receiving_money": [
+      0.9375,
+      0.875
+     ],
+     "terminate_account": [
+      1.0,
+      1.0
+     ],
+     "top_up_by_bank_transfer_charge": [
+      0.34782608695652173,
+      0.08695652173913043
+     ],
+     "top_up_by_card_charge": [
+      0.3684210526315789,
+      0.05263157894736842
+     ],
+     "top_up_by_cash_or_cheque": [
+      0.8571428571428571,
+      0.38095238095238093
+     ],
+     "top_up_limits": [
+      0.7222222222222222,
+      0.1111111111111111
+     ],
+     "topping_up_by_card": [
+      0.5,
+      0.4
+     ],
+     "transfer_into_account": [
+      0.8,
+      0.3
+     ],
+     "unable_to_verify_identity": [
+      0.5714285714285714,
+      0.2857142857142857
+     ],
+     "verify_my_identity": [
+      0.5263157894736842,
+      0.10526315789473684
+     ],
+     "verify_source_of_funds": [
+      1.0,
+      0.9523809523809523
+     ],
+     "virtual_card_not_working": [
+      0.14285714285714285,
+      0.0
+     ]
+    }
+   }
+  },
+  "median_top_label_share": 0.32499999999999996
+ },
+ "freshness_components": {
+  "banking77": {
+   "in-scope, never seen": {
+    "n": 463,
+    "difference_points": -1.2958963282937368,
+    "ci95": [
+     -3.988743645606391,
+     1.5186895635923618
+    ],
+    "p": 0.39086091390860916,
+    "clusters": 69
+   },
+   "in-scope, seen before": {
+    "n": 832,
+    "difference_points": -0.5608974358974361,
+    "ci95": [
+     -2.149276550184795,
+     1.0429415445037464
+    ],
+    "p": 0.549045095490451,
+    "clusters": 77
+   },
+   "out-of-scope, never seen": {
+    "n": 119,
+    "difference_points": -3.0812324929971995,
+    "ci95": [
+     -7.282913165266106,
+     0.5602240896358541
+    ],
+    "p": 0.1832816718328167,
+    "clusters": 119
+   },
+   "out-of-scope, seen before": {
+    "n": 65,
+    "difference_points": -5.1282051282051295,
+    "ci95": [
+     -10.256410256410257,
+     -1.5384615384615385
+    ],
+    "p": 0.0287971202879712,
+    "clusters": 65
+   }
+  },
+  "clinc150": {
+   "in-scope, never seen": {
+    "n": 1659,
+    "difference_points": -2.1900743419730766,
+    "ci95": [
+     -3.122591528980735,
+     -1.3236989127870695
+    ],
+    "p": 9.999000099990002e-05,
+    "clusters": 150
+   },
+   "in-scope, seen before": {
+    "n": 6,
+    "difference_points": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "p": 1.0,
+    "clusters": 6
+   },
+   "out-of-scope, never seen": {
+    "n": 107,
+    "difference_points": 4.049844236760124,
+    "ci95": [
+     -0.9345794392523371,
+     9.657320872274145
+    ],
+    "p": 0.16548345165483452,
+    "clusters": 107
+   },
+   "out-of-scope, seen before": {
+    "n": 78,
+    "difference_points": -7.264957264957267,
+    "ci95": [
+     -14.957264957264957,
+     0.4273504273504261
+    ],
+    "p": 0.08559144085591441,
+    "clusters": 78
+   }
+  }
+ },
+ "cascade_break_even": {
+  "banking77": {
+   "host $50/month": 113383.92769341455,
+   "host $255/month": 578258.0312364142,
+   "specialist_alone_host_$50": 68030.35661604872
+  },
+  "massive": {
+   "host $50/month": 177492.61019701447,
+   "host $255/month": 905212.3120047738,
+   "specialist_alone_host_$50": 106495.56611820868
+  },
+  "clinc150": {
+   "host $50/month": 78517.07074861723,
+   "host $255/month": 400437.0608179479,
+   "specialist_alone_host_$50": 47110.242449170335
+  }
+ },
+ "zroc_sensitivity": {
+  "gemma-4-31b": {
+   "slope 0.6": -0.3115182627414632,
+   "slope 0.8": -0.14177418403648456,
+   "slope 1.0": 0.00012057249928565383,
+   "slope 1.25": 0.14201385412826273
+  },
+  "qwen3.5-27b": {
+   "slope 0.6": -0.33863910282456056,
+   "slope 0.8": -0.1282106308631743,
+   "slope 1.0": 0.04704962972809046,
+   "slope 1.25": 0.22173435428150423
+  },
+  "llama-3.3-70b": {
+   "slope 0.6": 0.48346830076233194,
+   "slope 0.8": 0.8094563433289597,
+   "slope 1.0": 1.0673096141342269,
+   "slope 1.25": 1.3121069873686098
+  },
+  "deepseek-v4-pro": {
+   "slope 0.6": 0.10655362102050048,
+   "slope 0.8": 0.3786126237320462,
+   "slope 1.0": 0.5978302583589652,
+   "slope 1.25": 0.8097349160253593
+  }
+ },
+ "massive_rows_rejection": {
+  "draw_1": {
+   "share_retrieving_a_cross_row": 0.7,
+   "gemma-4-31b": {
+    "rejection_no_rows": 0.68,
+    "rejection_cross_rows": 0.768,
+    "gain_test": {
+     "difference_points": 8.799999999999999,
+     "ci95": [
+      5.2,
+      12.8
+     ],
+     "p": 9.999000099990002e-05,
+     "clusters": 250
+    },
+    "gain_when_row_retrieved": 0.13142857142857142,
+    "gain_when_no_row_retrieved": -0.013333333333333334
+   },
+   "qwen3.5-27b": {
+    "rejection_no_rows": 0.828,
+    "rejection_cross_rows": 0.86,
+    "gain_test": {
+     "difference_points": 3.2,
+     "ci95": [
+      0.8,
+      5.6
+     ],
+     "p": 0.009799020097990201,
+     "clusters": 250
+    },
+    "gain_when_row_retrieved": 0.05142857142857143,
+    "gain_when_no_row_retrieved": -0.013333333333333334
+   }
+  },
+  "draw_2": {
+   "share_retrieving_a_cross_row": 0.468,
+   "gemma-4-31b": {
+    "rejection_no_rows": 0.628,
+    "rejection_cross_rows": 0.688,
+    "gain_test": {
+     "difference_points": 6.0,
+     "ci95": [
+      2.8,
+      9.2
+     ],
+     "p": 0.00029997000299970003,
+     "clusters": 250
+    },
+    "gain_when_row_retrieved": 0.1282051282051282,
+    "gain_when_no_row_retrieved": 0.0
+   },
+   "qwen3.5-27b": {
+    "rejection_no_rows": 0.728,
+    "rejection_cross_rows": 0.784,
+    "gain_test": {
+     "difference_points": 5.6000000000000005,
+     "ci95": [
+      2.4,
+      8.8
+     ],
+     "p": 0.00039996000399960006,
+     "clusters": 250
+    },
+    "gain_when_row_retrieved": 0.1282051282051282,
+    "gain_when_no_row_retrieved": -0.007518796992481203
+   }
+  },
+  "draw_3": {
+   "share_retrieving_a_cross_row": 0.292,
+   "gemma-4-31b": {
+    "rejection_no_rows": 0.612,
+    "rejection_cross_rows": 0.664,
+    "gain_test": {
+     "difference_points": 5.2,
+     "ci95": [
+      2.0,
+      8.4
+     ],
+     "p": 0.0010998900109989002,
+     "clusters": 250
+    },
+    "gain_when_row_retrieved": 0.1643835616438356,
+    "gain_when_no_row_retrieved": 0.005649717514124294
+   },
+   "qwen3.5-27b": {
+    "rejection_no_rows": 0.816,
+    "rejection_cross_rows": 0.84,
+    "gain_test": {
+     "difference_points": 2.4,
+     "ci95": [
+      0.4,
+      4.8
+     ],
+     "p": 0.032396760323967606,
+     "clusters": 250
+    },
+    "gain_when_row_retrieved": 0.0684931506849315,
+    "gain_when_no_row_retrieved": 0.005649717514124294
+   }
+  }
+ },
+ "massive_source_clustering": {
+  "out_of_scope_source_labels": 9,
+  "specialist_minus_gemma": {
+   "difference_points": 4.424312401930311,
+   "ci95": [
+    -1.2027698121055304,
+    8.994179941418976
+   ],
+   "ci90": [
+    -0.2400742420035992,
+    8.381640877720603
+   ],
+   "p": 0.5523447655234477,
+   "clusters": 30
+  },
+  "rows_effect": {
+   "difference_points": 13.333502510161189,
+   "ci95": [
+    7.96779491676664,
+    15.626232686580298
+   ],
+   "ci90": [
+    9.209339538473877,
+    15.4100298414913
+   ],
+   "p": 0.030296970302969704,
+   "clusters": 30
+  }
+ },
+ "jev_vs_gemma": {
+  "banking77": {
+   "difference_points": -0.02971294275642103,
+   "ci95": [
+    -1.0086274559018775,
+    0.9791290032686999
+   ],
+   "ci90": [
+    -0.8773952101690945,
+    0.8008481481600135
+   ],
+   "p": 0.9602039796020398,
+   "clusters": 261
+  },
+  "massive": {
+   "difference_points": 3.9508710491923926,
+   "ci95": [
+    1.7940963825804457,
+    6.338170511775433
+   ],
+   "ci90": [
+    2.091373144819246,
+    5.8535477496848465
+   ],
+   "p": 9.999000099990002e-05,
+   "clusters": 264
+  },
+  "clinc150": {
+   "difference_points": -0.02402402402402397,
+   "ci95": [
+    -0.8533633725387174,
+    0.8287621880476262
+   ],
+   "ci90": [
+    -0.728080838326657,
+    0.7060547771357335
+   ],
+   "p": 0.9876012398760124,
+   "clusters": 335
+  },
+  "massive_draws_jev_minus_gemma": {
+   "draw_1": 0.48000000000000265,
+   "draw_2": -0.8000000000000007,
+   "draw_3": -3.520000000000012
+  },
+  "massive_draws_qwen_minus_specialist": {
+   "draw_1": 3.3599999999999963,
+   "draw_2": 2.213333333333334,
+   "draw_3": 1.8933333333333358
+  }
+ },
+ "latency": {
+  "gemma-4-31b": {
+   "calls": 4545,
+   "p50_ms": 972.2960999934003,
+   "p95_ms": 8809.648859995652,
+   "p99_ms": 40047.52681201216
+  },
+  "qwen3.5-27b": {
+   "calls": 4621,
+   "p50_ms": 2280.356800009031,
+   "p95_ms": 10732.222999999067,
+   "p99_ms": 13305.277960008243
+  },
+  "kimi-k3": {
+   "calls": 1500,
+   "p50_ms": 2848.674900000333,
+   "p95_ms": 5285.543335016699,
+   "p99_ms": 7685.484825988824
+  },
+  "claude-opus-5": {
+   "calls": 1500,
+   "p50_ms": 1237.3815000028117,
+   "p95_ms": 1957.548304986266,
+   "p99_ms": 4183.549620017002
+  }
+ },
+ "rule_after_works": {
+  "gemma-4-31b": {
+   "share_recovered": 0.06451612903225783,
+   "in_scope_right_change": {
+    "difference_points": -0.2,
+    "ci95": [
+     -0.920852785875925,
+     0.42016806722689076
+    ],
+    "p": 1.0,
+    "clusters": 50
+   },
+   "works": false,
+   "weighted": {
+    "zero_shot": 0.784738144329897,
+    "retrieval": 0.8376,
+    "rule_after_examples": 0.8390927835051547
+   }
+  },
+  "qwen3.5-27b": {
+   "share_recovered": 0.5616438356164387,
+   "in_scope_right_change": {
+    "difference_points": -1.7999999999999998,
+    "ci95": [
+     -3.21285140562249,
+     -0.6159848688861214
+    ],
+    "p": 0.015798420157984203,
+    "clusters": 50
+   },
+   "works": false,
+   "weighted": {
+    "zero_shot": 0.7669896907216495,
+    "retrieval": 0.8765608247422682,
+    "rule_after_examples": 0.8832948453608249
+   }
+  },
+  "llama-3.3-70b": {
+   "share_recovered": 0.7934782608695655,
+   "in_scope_right_change": {
+    "difference_points": -0.6,
+    "ci95": [
+     -1.5043333524651321,
+     0.20578257320681553
+    ],
+    "p": 0.3705629437056294,
+    "clusters": 50
+   },
+   "works": true,
+   "weighted": {
+    "zero_shot": 0.6923876288659794,
+    "retrieval": 0.8161649484536083,
+    "rule_after_examples": 0.8489938144329898
+   }
+  },
+  "deepseek-v4-pro": {
+   "share_recovered": 0.2745098039215685,
+   "in_scope_right_change": {
+    "difference_points": 0.0,
+    "ci95": [
+     -0.7968525101192038,
+     0.7952286282306164
+    ],
+    "p": 1.0,
+    "clusters": 50
+   },
+   "works": false,
+   "weighted": {
+    "zero_shot": 0.7216824742268042,
+    "retrieval": 0.8195051546391754,
+    "rule_after_examples": 0.833938144329897
+   }
+  }
+ },
+ "run_d_overlap": {
+  "run_D_banking77_oos_items_in_confirmatory_turns": 462,
+  "of": 1077
+ }
+}

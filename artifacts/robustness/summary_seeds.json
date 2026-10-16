@@ -1,0 +1,263 @@
+{
+  "protocol_id": "headline-robustness-2026-10-14",
+  "banking77": {
+    "20261015": {
+      "softmax": 0.645,
+      "dev_selected": 0.735,
+      "dev_selected_detector": "mahalanobis",
+      "detectors": {
+        "msp": {
+          "dev_balanced_accuracy": 0.955,
+          "session_success": 0.645
+        },
+        "energy": {
+          "dev_balanced_accuracy": 0.97375,
+          "session_success": 0.73
+        },
+        "mahalanobis": {
+          "dev_balanced_accuracy": 0.98375,
+          "session_success": 0.735
+        },
+        "knn": {
+          "dev_balanced_accuracy": 0.97375,
+          "session_success": 0.7325
+        }
+      }
+    },
+    "20261016": {
+      "softmax": 0.69,
+      "dev_selected": 0.74,
+      "dev_selected_detector": "mahalanobis",
+      "detectors": {
+        "msp": {
+          "dev_balanced_accuracy": 0.9437500000000001,
+          "session_success": 0.69
+        },
+        "energy": {
+          "dev_balanced_accuracy": 0.96875,
+          "session_success": 0.74
+        },
+        "mahalanobis": {
+          "dev_balanced_accuracy": 0.97875,
+          "session_success": 0.74
+        },
+        "knn": {
+          "dev_balanced_accuracy": 0.97875,
+          "session_success": 0.735
+        }
+      }
+    }
+  },
+  "massive": {
+    "20261015": {
+      "softmax": 0.265,
+      "dev_selected": 0.4675,
+      "dev_selected_detector": "mahalanobis",
+      "detectors": {
+        "msp": {
+          "dev_balanced_accuracy": 0.83375,
+          "session_success": 0.265
+        },
+        "energy": {
+          "dev_balanced_accuracy": 0.9025,
+          "session_success": 0.3125
+        },
+        "mahalanobis": {
+          "dev_balanced_accuracy": 0.9550000000000001,
+          "session_success": 0.4675
+        },
+        "knn": {
+          "dev_balanced_accuracy": 0.9412499999999999,
+          "session_success": 0.485
+        }
+      }
+    },
+    "20261016": {
+      "softmax": 0.2875,
+      "dev_selected": 0.4475,
+      "dev_selected_detector": "mahalanobis",
+      "detectors": {
+        "msp": {
+          "dev_balanced_accuracy": 0.835,
+          "session_success": 0.2875
+        },
+        "energy": {
+          "dev_balanced_accuracy": 0.8825,
+          "session_success": 0.3125
+        },
+        "mahalanobis": {
+          "dev_balanced_accuracy": 0.94875,
+          "session_success": 0.4475
+        },
+        "knn": {
+          "dev_balanced_accuracy": 0.94,
+          "session_success": 0.5025
+        }
+      }
+    }
+  },
+  "clinc150": {
+    "20261015": {
+      "softmax": 0.62,
+      "dev_selected": 0.7325,
+      "dev_selected_detector": "mahalanobis",
+      "detectors": {
+        "msp": {
+          "dev_balanced_accuracy": 0.9475,
+          "session_success": 0.62
+        },
+        "energy": {
+          "dev_balanced_accuracy": 0.96625,
+          "session_success": 0.71
+        },
+        "mahalanobis": {
+          "dev_balanced_accuracy": 0.97375,
+          "session_success": 0.7325
+        },
+        "knn": {
+          "dev_balanced_accuracy": 0.9675,
+          "session_success": 0.6825
+        }
+      }
+    },
+    "20261016": {
+      "softmax": 0.69,
+      "dev_selected": 0.705,
+      "dev_selected_detector": "knn",
+      "detectors": {
+        "msp": {
+          "dev_balanced_accuracy": 0.95625,
+          "session_success": 0.69
+        },
+        "energy": {
+          "dev_balanced_accuracy": 0.96625,
+          "session_success": 0.705
+        },
+        "mahalanobis": {
+          "dev_balanced_accuracy": 0.96625,
+          "session_success": 0.725
+        },
+        "knn": {
+          "dev_balanced_accuracy": 0.97125,
+          "session_success": 0.705
+        }
+      }
+    }
+  },
+  "banking77_oos": {
+    "20261015": {
+      "id": {
+        "softmax": 0.2125,
+        "dev_selected": 0.265,
+        "dev_selected_detector": "mahalanobis",
+        "detectors": {
+          "msp": {
+            "dev_balanced_accuracy": 0.815,
+            "session_success": 0.2125
+          },
+          "energy": {
+            "dev_balanced_accuracy": 0.8175,
+            "session_success": 0.1675
+          },
+          "mahalanobis": {
+            "dev_balanced_accuracy": 0.8274999999999999,
+            "session_success": 0.265
+          },
+          "knn": {
+            "dev_balanced_accuracy": 0.7975000000000001,
+            "session_success": 0.245
+          }
+        }
+      },
+      "ood": {
+        "softmax": 0.505,
+        "dev_selected": 0.5475,
+        "dev_selected_detector": "mahalanobis",
+        "detectors": {
+          "msp": {
+            "dev_balanced_accuracy": 0.92,
+            "session_success": 0.505
+          },
+          "energy": {
+            "dev_balanced_accuracy": 0.9537500000000001,
+            "session_success": 0.5425
+          },
+          "mahalanobis": {
+            "dev_balanced_accuracy": 0.96875,
+            "session_success": 0.5475
+          },
+          "knn": {
+            "dev_balanced_accuracy": 0.95375,
+            "session_success": 0.4825
+          }
+        }
+      }
+    },
+    "20261016": {
+      "id": {
+        "softmax": 0.2325,
+        "dev_selected": 0.2625,
+        "dev_selected_detector": "mahalanobis",
+        "detectors": {
+          "msp": {
+            "dev_balanced_accuracy": 0.82375,
+            "session_success": 0.2325
+          },
+          "energy": {
+            "dev_balanced_accuracy": 0.83125,
+            "session_success": 0.2425
+          },
+          "mahalanobis": {
+            "dev_balanced_accuracy": 0.85375,
+            "session_success": 0.2625
+          },
+          "knn": {
+            "dev_balanced_accuracy": 0.84,
+            "session_success": 0.285
+          }
+        }
+      },
+      "ood": {
+        "softmax": 0.4,
+        "dev_selected": 0.545,
+        "dev_selected_detector": "mahalanobis",
+        "detectors": {
+          "msp": {
+            "dev_balanced_accuracy": 0.8925,
+            "session_success": 0.4
+          },
+          "energy": {
+            "dev_balanced_accuracy": 0.94625,
+            "session_success": 0.5325
+          },
+          "mahalanobis": {
+            "dev_balanced_accuracy": 0.9675,
+            "session_success": 0.545
+          },
+          "knn": {
+            "dev_balanced_accuracy": 0.9475,
+            "session_success": 0.525
+          }
+        }
+      }
+    }
+  },
+  "multidogo": {
+    "20261015": {
+      "label_accuracy": 0.9455216989843028,
+      "conversation_success": 0.6200417536534447,
+      "conversation_success_ci": [
+        0.5761482254697285,
+        0.6638830897703549
+      ]
+    },
+    "20261016": {
+      "label_accuracy": 0.9462142197599261,
+      "conversation_success": 0.6263048016701461,
+      "conversation_success_ci": [
+        0.5824634655532359,
+        0.6701461377870563
+      ]
+    }
+  }
+}

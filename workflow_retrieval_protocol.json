@@ -1,0 +1,56 @@
+{
+  "protocol_id": "workflow-retrieval-few-shot-2026-10-13",
+  "role": "a stronger few-shot baseline for the hosted models: retrieved demonstrations in place of a fixed set",
+  "claim": "Sections 3.22, 3.26 and 3.27 gave the hosted models a fixed prompt with three examples per intent. The literature sweep (docs/litreview/02 and 00) found that this design is known to be weak: Loukas et al. (arXiv 2311.06102) report on Banking77 that retrieving a few relevant examples is more accurate than the fixed three-per-intent prompt at about a third of the cost, and Bertsch et al. and Milios et al. report large gains from retrieved over random demonstrations on our datasets. Our data threshold (section 3.23) and plateau result (3.27 addendum) therefore rest on a handicapped general model. This protocol adds the retrieval arm on all three workflows. Written before any request in this file was sent.",
+  "endpoint_rules": "api_protocol.json (cap raised to $50 by the project owner on 2026-10-13); hosts, request rules, system prompts and parsing as in the zero-shot run of each workflow",
+  "run_cap_usd": 6.0,
+  "seed": 20261013,
+  "domains": ["banking77", "massive", "clinc150"],
+  "models": ["gemma-4-31b", "qwen3.5-9b"],
+  "retrieval": {
+    "method": "BM25 (k1 = 1.5, b = 0.75) over lower-cased word tokens; no trained component, so the arm stays training-free",
+    "k": 20,
+    "placement": "the system prompt is the unchanged zero-shot prompt; the user message holds the 20 retrieved examples as 'message => code' lines, least similar first, then the current message",
+    "pools": {
+      "three_per_intent": "three training utterances per intent drawn with seed 20261013, plus four out-of-scope examples with the out-of-scope code. The same amount of labelled data as the fixed prompt of the earlier sections.",
+      "full_train": "every training utterance of the domain (Banking77 excluding the Program 1 dev rows; MASSIVE official train; CLINC150 in-scope train), plus out-of-scope examples that are in no session and were not used for any threshold: for Banking77 and CLINC150 the 250 CLINC150 out-of-scope training rows; for MASSIVE the Banking77 Program 1 dev utterances after the first 104, with the same exclusion as section 3.26."
+    }
+  },
+  "sessions": "all 400 sessions of each workflow",
+  "rows": [
+    "each model and pool alone: node accuracies, turn and session success with intervals, cost per 1000 sessions, prompt tokens",
+    "against the same model zero-shot and, where it was run, with the fixed three-per-intent prompt, on the same sessions",
+    "as the escalation target for the workflow's threshold specialist at 10, 25, 40 and 60 percent of turns",
+    "against the specialist alone and the best zero-shot hybrid of the earlier sections"
+  ],
+  "readout_stated_in_advance": [
+    "if retrieval from the three-per-intent pool beats the fixed three-per-intent prompt, the earlier few-shot rows understate the general model at equal data, and the data threshold of section 3.23 moves up",
+    "if a hosted model with retrieval from the full pool is alone at least as good as the best hybrid, then with full data and retrieval the general model alone is the best system on accuracy, and the hybrid's case is cost only",
+    "the full pool gives the general model the same labelled data as the fully trained specialist, so it is the like-for-like comparison"
+  ],
+  "amendment_2026-10-13_data_fractions": {
+    "why": "Written after the main results of this protocol were seen (section 3.29). The data threshold of section 3.23 compared the specialist trained on a fraction of Banking77 with a zero-shot hosted model. With retrieval the hosted model can use the same fraction, so the like-for-like comparison is the specialist trained on a fraction against the hosted model retrieving from that same fraction.",
+    "domain": "banking77",
+    "pools": "the exact per-label subsample the specialist was trained on at each fraction (data_fraction_protocol.json, seed 20261012), plus max(4, round(fraction x 250)) CLINC150 out-of-scope training rows",
+    "fractions": {"gemma-4-31b": [0.01, 0.02, 0.05, 0.1, 0.2, 0.5], "qwen3.5-9b": [0.01, 0.05, 0.2]},
+    "rows": "the hosted model with retrieval alone; the encoder trained on the same fraction alone (from section 3.23); the encoder first with 25, 40 and 60 percent of turns sent to the retrieval-prompted model; the zero-shot model alone for reference",
+    "readout": "at each data size, which of the three is best, and whether a regime remains in which the specialist or the hybrid beats the retrieval-prompted model on accuracy"
+  },
+  "amendment_2026-10-13_other_domains": {
+    "why": "Requested by the project owner after the Banking77 matched-data sweep, so that the replacement for the three-regime map of section 3.23 does not rest on one domain. Written before any of these requests was sent.",
+    "domains": ["massive", "clinc150"],
+    "pools": "the per-label subsample of data_fraction_domains_protocol.json at each fraction (seed 20261012), plus max(4, round(fraction x n)) of the domain's out-of-scope examples from the full_train pool definition above",
+    "fractions": {"gemma-4-31b": [0.01, 0.02, 0.05, 0.1, 0.2, 0.5], "qwen3.5-9b": [0.05]},
+    "run_cap_usd": 3.5,
+    "rows": "as the Banking77 amendment. The specialists of data_fraction_domains_protocol.json are still training; the hosted replies do not depend on them, and the encoder columns are filled from saved replies when those models exist.",
+    "note": "on MASSIVE the specialist's softmax scope rule is known to fail (sections 3.26 and 3.30); the encoder column there is reported with that rule and, as a post hoc companion, with a distance-based detector"
+  },
+  "amendment_2026-10-15_dense": {
+      "why": "The citation checks (docs/litreview/verify-2-icl.md) confirmed that dense retrieval beats BM25 by 3 to 4.5 points on intent tasks (Milios et al.), and Loukas et al. used a dense retriever. Our retrieval results used BM25 and are therefore a lower bound for the general model. Written before any of these requests was sent.",
+      "retriever": "sentence-transformers/all-mpnet-base-v2 (revision e8c3b32e, Apache 2.0), mean pooling over the last hidden state, unit-normalised, cosine similarity; the 20 nearest pool items, least similar first, in the same prompt as the BM25 arm",
+      "runs": "gemma-4-31b with the full-training-set pool on banking77, massive and clinc150",
+      "rows": "the dense arm alone against the BM25 arm alone on the same sessions (paired), and the share of turns whose gold label is among the 20 retrieved examples for each retriever",
+      "run_cap_usd": 3.0
+  },
+  "limits": "One retrieval method and one k. BM25 is a weak retriever; a dense retriever would probably do better, so this is still a lower bound for retrieval-based prompting. Two models. One draw of the small pool."
+}

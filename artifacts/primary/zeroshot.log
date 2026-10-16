@@ -1,0 +1,174 @@
+{"gpu_before": {"nvidia_smi_name": "NVIDIA GeForce RTX 5070", "memory_total_mib": 12227.0, "memory_used_mib": 1141.0, "memory_free_mib": 10803.0, "driver_version": "610.62", "torch_device_name": "NVIDIA GeForce RTX 5070", "torch_cuda": "13.0", "cuda_available": true}}
+loading deberta-v3-large-zeroshot-v2.0-c
+/home/safwan/.venvs/system-one/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  11%|█         | 43/394 [00:00<00:00, 429.79it/s]Loading weights:  26%|██▌       | 103/394 [00:00<00:00, 519.04it/s]Loading weights:  54%|█████▍    | 214/394 [00:00<00:00, 784.88it/s]Loading weights:  74%|███████▍  | 293/394 [00:00<00:00, 770.80it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 832.25it/s]
+dev deberta-v3-large-zeroshot-v2.0-c 0/2033
+  deberta-v3-large-zeroshot-v2.0-c 100/2033
+  deberta-v3-large-zeroshot-v2.0-c 200/2033
+  deberta-v3-large-zeroshot-v2.0-c 300/2033
+  deberta-v3-large-zeroshot-v2.0-c 400/2033
+  deberta-v3-large-zeroshot-v2.0-c 500/2033
+  deberta-v3-large-zeroshot-v2.0-c 600/2033
+  deberta-v3-large-zeroshot-v2.0-c 700/2033
+  deberta-v3-large-zeroshot-v2.0-c 800/2033
+  deberta-v3-large-zeroshot-v2.0-c 900/2033
+  deberta-v3-large-zeroshot-v2.0-c 1000/2033
+  deberta-v3-large-zeroshot-v2.0-c 1100/2033
+  deberta-v3-large-zeroshot-v2.0-c 1200/2033
+  deberta-v3-large-zeroshot-v2.0-c 1300/2033
+  deberta-v3-large-zeroshot-v2.0-c 1400/2033
+  deberta-v3-large-zeroshot-v2.0-c 1500/2033
+  deberta-v3-large-zeroshot-v2.0-c 1600/2033
+  deberta-v3-large-zeroshot-v2.0-c 1700/2033
+  deberta-v3-large-zeroshot-v2.0-c 1800/2033
+  deberta-v3-large-zeroshot-v2.0-c 1900/2033
+  deberta-v3-large-zeroshot-v2.0-c 2000/2033
+temperature deberta-v3-large-zeroshot-v2.0-c T=0.6574 dev_nll=1.9805
+warmup deberta-v3-large-zeroshot-v2.0-c
+test deberta-v3-large-zeroshot-v2.0-c 0/2974
+  deberta-v3-large-zeroshot-v2.0-c 100/2974
+  deberta-v3-large-zeroshot-v2.0-c 200/2974
+  deberta-v3-large-zeroshot-v2.0-c 300/2974
+  deberta-v3-large-zeroshot-v2.0-c 400/2974
+  deberta-v3-large-zeroshot-v2.0-c 500/2974
+  deberta-v3-large-zeroshot-v2.0-c 600/2974
+  deberta-v3-large-zeroshot-v2.0-c 700/2974
+  deberta-v3-large-zeroshot-v2.0-c 800/2974
+  deberta-v3-large-zeroshot-v2.0-c 900/2974
+  deberta-v3-large-zeroshot-v2.0-c 1000/2974
+  deberta-v3-large-zeroshot-v2.0-c 1100/2974
+  deberta-v3-large-zeroshot-v2.0-c 1200/2974
+  deberta-v3-large-zeroshot-v2.0-c 1300/2974
+  deberta-v3-large-zeroshot-v2.0-c 1400/2974
+  deberta-v3-large-zeroshot-v2.0-c 1500/2974
+  deberta-v3-large-zeroshot-v2.0-c 1600/2974
+  deberta-v3-large-zeroshot-v2.0-c 1700/2974
+  deberta-v3-large-zeroshot-v2.0-c 1800/2974
+  deberta-v3-large-zeroshot-v2.0-c 1900/2974
+  deberta-v3-large-zeroshot-v2.0-c 2000/2974
+  deberta-v3-large-zeroshot-v2.0-c 2100/2974
+  deberta-v3-large-zeroshot-v2.0-c 2200/2974
+  deberta-v3-large-zeroshot-v2.0-c 2300/2974
+  deberta-v3-large-zeroshot-v2.0-c 2400/2974
+  deberta-v3-large-zeroshot-v2.0-c 2500/2974
+  deberta-v3-large-zeroshot-v2.0-c 2600/2974
+  deberta-v3-large-zeroshot-v2.0-c 2700/2974
+  deberta-v3-large-zeroshot-v2.0-c 2800/2974
+  deberta-v3-large-zeroshot-v2.0-c 2900/2974
+deberta-v3-large-zeroshot-v2.0-c acc 0.4993 brier 0.6661 p50 33.0 ms
+loading gliclass-base-v3.0
+Loading weights:   0%|          | 0/213 [00:00<?, ?it/s]Loading weights:  31%|███       | 65/213 [00:00<00:00, 649.78it/s]Loading weights:  61%|██████    | 130/213 [00:00<00:00, 575.77it/s]Loading weights: 100%|██████████| 213/213 [00:00<00:00, 810.47it/s]
+[transformers] You are using a model of type `GLiClass` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+dev gliclass-base-v3.0 0/2033
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+  gliclass-base-v3.0 100/2033
+  gliclass-base-v3.0 200/2033
+  gliclass-base-v3.0 300/2033
+  gliclass-base-v3.0 400/2033
+  gliclass-base-v3.0 500/2033
+  gliclass-base-v3.0 600/2033
+  gliclass-base-v3.0 700/2033
+  gliclass-base-v3.0 800/2033
+  gliclass-base-v3.0 900/2033
+  gliclass-base-v3.0 1000/2033
+  gliclass-base-v3.0 1100/2033
+  gliclass-base-v3.0 1200/2033
+  gliclass-base-v3.0 1300/2033
+  gliclass-base-v3.0 1400/2033
+  gliclass-base-v3.0 1500/2033
+  gliclass-base-v3.0 1600/2033
+  gliclass-base-v3.0 1700/2033
+  gliclass-base-v3.0 1800/2033
+  gliclass-base-v3.0 1900/2033
+  gliclass-base-v3.0 2000/2033
+temperature gliclass-base-v3.0 T=1.8606 dev_nll=2.5698
+warmup gliclass-base-v3.0
+test gliclass-base-v3.0 0/2974
+  gliclass-base-v3.0 100/2974
+  gliclass-base-v3.0 200/2974
+  gliclass-base-v3.0 300/2974
+  gliclass-base-v3.0 400/2974
+  gliclass-base-v3.0 500/2974
+  gliclass-base-v3.0 600/2974
+  gliclass-base-v3.0 700/2974
+  gliclass-base-v3.0 800/2974
+  gliclass-base-v3.0 900/2974
+  gliclass-base-v3.0 1000/2974
+  gliclass-base-v3.0 1100/2974
+  gliclass-base-v3.0 1200/2974
+  gliclass-base-v3.0 1300/2974
+  gliclass-base-v3.0 1400/2974
+  gliclass-base-v3.0 1500/2974
+  gliclass-base-v3.0 1600/2974
+  gliclass-base-v3.0 1700/2974
+  gliclass-base-v3.0 1800/2974
+  gliclass-base-v3.0 1900/2974
+  gliclass-base-v3.0 2000/2974
+  gliclass-base-v3.0 2100/2974
+  gliclass-base-v3.0 2200/2974
+  gliclass-base-v3.0 2300/2974
+  gliclass-base-v3.0 2400/2974
+  gliclass-base-v3.0 2500/2974
+  gliclass-base-v3.0 2600/2974
+  gliclass-base-v3.0 2700/2974
+  gliclass-base-v3.0 2800/2974
+  gliclass-base-v3.0 2900/2974
+gliclass-base-v3.0 acc 0.3141 brier 0.8553 p50 31.2 ms
+loading qwen3-0.6b
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   8%|▊         | 24/311 [00:00<00:01, 217.67it/s]Loading weights:  18%|█▊        | 56/311 [00:00<00:00, 263.57it/s]Loading weights:  29%|██▉       | 91/311 [00:00<00:00, 300.89it/s]Loading weights:  69%|██████▉   | 216/311 [00:00<00:00, 664.66it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 728.89it/s]
+dev qwen3-0.6b 0/2033
+  qwen3-0.6b 100/2033
+  qwen3-0.6b 200/2033
+  qwen3-0.6b 300/2033
+  qwen3-0.6b 400/2033
+  qwen3-0.6b 500/2033
+  qwen3-0.6b 600/2033
+  qwen3-0.6b 700/2033
+  qwen3-0.6b 800/2033
+  qwen3-0.6b 900/2033
+  qwen3-0.6b 1000/2033
+  qwen3-0.6b 1100/2033
+  qwen3-0.6b 1200/2033
+  qwen3-0.6b 1300/2033
+  qwen3-0.6b 1400/2033
+  qwen3-0.6b 1500/2033
+  qwen3-0.6b 1600/2033
+  qwen3-0.6b 1700/2033
+  qwen3-0.6b 1800/2033
+  qwen3-0.6b 1900/2033
+  qwen3-0.6b 2000/2033
+temperature qwen3-0.6b T=2.2454 dev_nll=3.4745
+warmup qwen3-0.6b
+test qwen3-0.6b 0/2974
+  qwen3-0.6b 100/2974
+  qwen3-0.6b 200/2974
+  qwen3-0.6b 300/2974
+  qwen3-0.6b 400/2974
+  qwen3-0.6b 500/2974
+  qwen3-0.6b 600/2974
+  qwen3-0.6b 700/2974
+  qwen3-0.6b 800/2974
+  qwen3-0.6b 900/2974
+  qwen3-0.6b 1000/2974
+  qwen3-0.6b 1100/2974
+  qwen3-0.6b 1200/2974
+  qwen3-0.6b 1300/2974
+  qwen3-0.6b 1400/2974
+  qwen3-0.6b 1500/2974
+  qwen3-0.6b 1600/2974
+  qwen3-0.6b 1700/2974
+  qwen3-0.6b 1800/2974
+  qwen3-0.6b 1900/2974
+  qwen3-0.6b 2000/2974
+  qwen3-0.6b 2100/2974
+  qwen3-0.6b 2200/2974
+  qwen3-0.6b 2300/2974
+  qwen3-0.6b 2400/2974
+  qwen3-0.6b 2500/2974
+  qwen3-0.6b 2600/2974
+  qwen3-0.6b 2700/2974
+  qwen3-0.6b 2800/2974
+  qwen3-0.6b 2900/2974
+qwen3-0.6b acc 0.2058 brier 0.9358 p50 673.4 ms
+wrote /home/safwan/system-one/artifacts/primary/zeroshot/summary.json

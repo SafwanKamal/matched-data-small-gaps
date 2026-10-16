@@ -1,0 +1,260 @@
+{
+  "0.01": {
+    "train_rows": 150,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.7050000000000001,
+        "session_success": 0.0125,
+        "session_success_ci": [
+          0.0025,
+          0.0225
+        ],
+        "scope_accuracy": 0.677
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.695,
+        "session_success": 0.015,
+        "session_success_ci": [
+          0.005,
+          0.0275
+        ],
+        "scope_accuracy": 0.608
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.5874999999999999,
+        "session_success": 0.005,
+        "session_success_ci": [
+          0.0,
+          0.0125
+        ],
+        "scope_accuracy": 0.693
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.7,
+        "session_success": 0.0175,
+        "session_success_ci": [
+          0.005,
+          0.0325
+        ],
+        "scope_accuracy": 0.598
+      }
+    },
+    "dev_selected": "msp",
+    "intent_ignoring_scope": 0.3687810945273632
+  },
+  "0.02": {
+    "train_rows": 300,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.76,
+        "session_success": 0.06,
+        "session_success_ci": [
+          0.04,
+          0.0825
+        ],
+        "scope_accuracy": 0.6515
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.7825,
+        "session_success": 0.0525,
+        "session_success_ci": [
+          0.0325,
+          0.075
+        ],
+        "scope_accuracy": 0.681
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.71,
+        "session_success": 0.025,
+        "session_success_ci": [
+          0.0125,
+          0.0425
+        ],
+        "scope_accuracy": 0.5815
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.8125,
+        "session_success": 0.075,
+        "session_success_ci": [
+          0.05,
+          0.1025
+        ],
+        "scope_accuracy": 0.7865
+      }
+    },
+    "dev_selected": "knn",
+    "intent_ignoring_scope": 0.5634328358208955
+  },
+  "0.05": {
+    "train_rows": 750,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.8825000000000001,
+        "session_success": 0.3475,
+        "session_success_ci": [
+          0.3,
+          0.3925
+        ],
+        "scope_accuracy": 0.882
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.9225000000000001,
+        "session_success": 0.365,
+        "session_success_ci": [
+          0.3175,
+          0.4075
+        ],
+        "scope_accuracy": 0.889
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.91125,
+        "session_success": 0.2975,
+        "session_success_ci": [
+          0.2525,
+          0.3425
+        ],
+        "scope_accuracy": 0.88
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.91125,
+        "session_success": 0.315,
+        "session_success_ci": [
+          0.27,
+          0.36
+        ],
+        "scope_accuracy": 0.8735
+      }
+    },
+    "dev_selected": "energy",
+    "intent_ignoring_scope": 0.8513681592039801
+  },
+  "0.1": {
+    "train_rows": 1500,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.91875,
+        "session_success": 0.4225,
+        "session_success_ci": [
+          0.3725,
+          0.4725
+        ],
+        "scope_accuracy": 0.8665
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.9512499999999999,
+        "session_success": 0.4825,
+        "session_success_ci": [
+          0.4325,
+          0.5325
+        ],
+        "scope_accuracy": 0.906
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.9425,
+        "session_success": 0.4775,
+        "session_success_ci": [
+          0.4275,
+          0.5275
+        ],
+        "scope_accuracy": 0.9085
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.925,
+        "session_success": 0.425,
+        "session_success_ci": [
+          0.3775,
+          0.4725
+        ],
+        "scope_accuracy": 0.8825
+      }
+    },
+    "dev_selected": "energy",
+    "intent_ignoring_scope": 0.9036069651741293
+  },
+  "0.2": {
+    "train_rows": 3000,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.91875,
+        "session_success": 0.53,
+        "session_success_ci": [
+          0.48,
+          0.5775
+        ],
+        "scope_accuracy": 0.8955
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.94375,
+        "session_success": 0.59,
+        "session_success_ci": [
+          0.5424375,
+          0.6375
+        ],
+        "scope_accuracy": 0.928
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.95625,
+        "session_success": 0.6225,
+        "session_success_ci": [
+          0.5725,
+          0.6675624999999996
+        ],
+        "scope_accuracy": 0.94
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.94875,
+        "session_success": 0.5925,
+        "session_success_ci": [
+          0.545,
+          0.64
+        ],
+        "scope_accuracy": 0.9255
+      }
+    },
+    "dev_selected": "mahalanobis",
+    "intent_ignoring_scope": 0.9440298507462687
+  },
+  "0.5": {
+    "train_rows": 7500,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.93875,
+        "session_success": 0.65,
+        "session_success_ci": [
+          0.6025,
+          0.6975
+        ],
+        "scope_accuracy": 0.923
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.9525,
+        "session_success": 0.65,
+        "session_success_ci": [
+          0.6,
+          0.6975
+        ],
+        "scope_accuracy": 0.925
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.96,
+        "session_success": 0.6825,
+        "session_success_ci": [
+          0.6375,
+          0.725
+        ],
+        "scope_accuracy": 0.9435
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.9525,
+        "session_success": 0.625,
+        "session_success_ci": [
+          0.575,
+          0.6725
+        ],
+        "scope_accuracy": 0.9235
+      }
+    },
+    "dev_selected": "mahalanobis",
+    "intent_ignoring_scope": 0.9583333333333334
+  }
+}

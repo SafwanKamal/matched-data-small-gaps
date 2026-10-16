@@ -1,0 +1,182 @@
+{
+  "banking77 | specialist (mahalanobis) vs gemma-4-31b retrieval": {
+    "specialist": 0.7425,
+    "model": 0.7875,
+    "difference_points": -4.499999999999993,
+    "ci": [
+      -8.750000000000002,
+      -0.2500000000000058
+    ],
+    "mcnemar": {
+      "only_specialist": 28,
+      "only_model": 46,
+      "exact_p": 0.04739297550405179
+    },
+    "n": 400
+  },
+  "banking77 | specialist (mahalanobis) vs qwen3.5-27b retrieval": {
+    "specialist": 0.7425,
+    "model": 0.77,
+    "difference_points": -2.749999999999997,
+    "ci": [
+      -6.999999999999995,
+      1.5000000000000013
+    ],
+    "mcnemar": {
+      "only_specialist": 33,
+      "only_model": 44,
+      "exact_p": 0.25430466614770003
+    },
+    "n": 400
+  },
+  "massive | specialist (knn) vs gemma-4-31b retrieval": {
+    "specialist": 0.4975,
+    "model": 0.65,
+    "difference_points": -15.250000000000002,
+    "ci": [
+      -19.75,
+      -10.999999999999998
+    ],
+    "mcnemar": {
+      "only_specialist": 15,
+      "only_model": 76,
+      "exact_p": 5.477140413468491e-11
+    },
+    "n": 400
+  },
+  "massive | specialist (knn) vs qwen3.5-27b retrieval": {
+    "specialist": 0.4975,
+    "model": 0.6225,
+    "difference_points": -12.500000000000005,
+    "ci": [
+      -16.75,
+      -8.250000000000002
+    ],
+    "mcnemar": {
+      "only_specialist": 17,
+      "only_model": 67,
+      "exact_p": 3.495893514797303e-08
+    },
+    "n": 400
+  },
+  "clinc150 | specialist (knn) vs gemma-4-31b retrieval": {
+    "specialist": 0.7325,
+    "model": 0.8075,
+    "difference_points": -7.499999999999996,
+    "ci": [
+      -12.5,
+      -2.500000000000002
+    ],
+    "mcnemar": {
+      "only_specialist": 35,
+      "only_model": 65,
+      "exact_p": 0.0035176417229701583
+    },
+    "n": 400
+  },
+  "clinc150 | specialist (knn) vs qwen3.5-27b retrieval": {
+    "specialist": 0.7325,
+    "model": 0.84,
+    "difference_points": -10.749999999999993,
+    "ci": [
+      -15.250000000000007,
+      -6.25
+    ],
+    "mcnemar": {
+      "only_specialist": 25,
+      "only_model": 68,
+      "exact_p": 9.375635307717017e-06
+    },
+    "n": 400
+  },
+  "banking77_oos id | specialist (energy) vs gemma-4-31b retrieval": {
+    "specialist": 0.2875,
+    "model": 0.2875,
+    "difference_points": 0.0,
+    "ci": [
+      -5.000000000000004,
+      5.000000000000002
+    ],
+    "mcnemar": {
+      "only_specialist": 54,
+      "only_model": 54,
+      "exact_p": 1.0
+    },
+    "n": 400
+  },
+  "banking77_oos id | specialist (energy) vs qwen3.5-27b retrieval": {
+    "specialist": 0.2875,
+    "model": 0.3775,
+    "difference_points": -9.000000000000002,
+    "ci": [
+      -13.749999999999996,
+      -4.249999999999998
+    ],
+    "mcnemar": {
+      "only_specialist": 31,
+      "only_model": 67,
+      "exact_p": 0.0003545338559868335
+    },
+    "n": 400
+  },
+  "banking77_oos ood | specialist (mahalanobis) vs gemma-4-31b retrieval": {
+    "specialist": 0.58,
+    "model": 0.5825,
+    "difference_points": -0.2500000000000058,
+    "ci": [
+      -4.249999999999998,
+      3.749999999999998
+    ],
+    "mcnemar": {
+      "only_specialist": 32,
+      "only_model": 33,
+      "exact_p": 1.0
+    },
+    "n": 400
+  },
+  "banking77_oos ood | specialist (mahalanobis) vs qwen3.5-27b retrieval": {
+    "specialist": 0.58,
+    "model": 0.55,
+    "difference_points": 2.9999999999999916,
+    "ci": [
+      -1.0000000000000009,
+      7.250000000000001
+    ],
+    "mcnemar": {
+      "only_specialist": 41,
+      "only_model": 29,
+      "exact_p": 0.18821620302302766
+    },
+    "n": 400
+  },
+  "multidogo | specialist vs gemma-4-31b retrieval": {
+    "specialist": 0.6200417536534447,
+    "model": 0.5824634655532359,
+    "difference_points": 3.75782881002088,
+    "ci": [
+      0.20876826722338038,
+      7.515657620041749
+    ],
+    "mcnemar": {
+      "only_specialist": 47,
+      "only_model": 29,
+      "exact_p": 0.05045241024721763
+    },
+    "n": 479
+  },
+  "multidogo | specialist vs qwen3.5-27b retrieval": {
+    "specialist": 0.6200417536534447,
+    "model": 0.5678496868475992,
+    "difference_points": 5.219206680584554,
+    "ci": [
+      1.6701461377870652,
+      8.768267223382043
+    ],
+    "mcnemar": {
+      "only_specialist": 49,
+      "only_model": 24,
+      "exact_p": 0.004626293921895511
+    },
+    "n": 479
+  }
+}

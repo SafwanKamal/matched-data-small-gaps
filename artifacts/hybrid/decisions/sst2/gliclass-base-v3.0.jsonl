@@ -1,0 +1,872 @@
+{"item_id": "sst2-validation-0", "gold_index": 1, "cheap_confidence": 0.93393606468996, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-1", "gold_index": 0, "cheap_confidence": 0.9669256029839628, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-2", "gold_index": 1, "cheap_confidence": 0.7672287655523891, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-3", "gold_index": 1, "cheap_confidence": 0.9578802234917861, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-4", "gold_index": 0, "cheap_confidence": 0.950992125006618, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-5", "gold_index": 1, "cheap_confidence": 0.955086853640742, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-6", "gold_index": 0, "cheap_confidence": 0.9338772896839972, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-7", "gold_index": 0, "cheap_confidence": 0.8111942213606416, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-8", "gold_index": 1, "cheap_confidence": 0.9526606454505596, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-9", "gold_index": 0, "cheap_confidence": 0.9686156917268607, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-10", "gold_index": 1, "cheap_confidence": 0.9547826210811108, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-11", "gold_index": 0, "cheap_confidence": 0.9279467895755222, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-12", "gold_index": 0, "cheap_confidence": 0.9253815078160853, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-13", "gold_index": 1, "cheap_confidence": 0.6829064413882976, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-14", "gold_index": 0, "cheap_confidence": 0.9187679581831926, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-15", "gold_index": 1, "cheap_confidence": 0.9663373708583723, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-16", "gold_index": 1, "cheap_confidence": 0.8552749203471974, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-17", "gold_index": 1, "cheap_confidence": 0.9334908885339644, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-18", "gold_index": 0, "cheap_confidence": 0.9443292291321765, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-19", "gold_index": 0, "cheap_confidence": 0.9323009215659669, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-20", "gold_index": 0, "cheap_confidence": 0.8156955782662668, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-21", "gold_index": 0, "cheap_confidence": 0.5374098101145831, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-22", "gold_index": 0, "cheap_confidence": 0.9239813268105139, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-23", "gold_index": 1, "cheap_confidence": 0.944473944572268, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-24", "gold_index": 1, "cheap_confidence": 0.9306404820153773, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-25", "gold_index": 0, "cheap_confidence": 0.6714013203486207, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-26", "gold_index": 0, "cheap_confidence": 0.5647828912459294, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-27", "gold_index": 1, "cheap_confidence": 0.5642638226658896, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-28", "gold_index": 0, "cheap_confidence": 0.9371985764481577, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-29", "gold_index": 0, "cheap_confidence": 0.9509786071622359, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-30", "gold_index": 1, "cheap_confidence": 0.9325517818252675, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-31", "gold_index": 0, "cheap_confidence": 0.937684794439881, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-32", "gold_index": 1, "cheap_confidence": 0.9456702136604004, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-33", "gold_index": 0, "cheap_confidence": 0.9281335503642826, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-34", "gold_index": 0, "cheap_confidence": 0.9459103228455413, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-35", "gold_index": 0, "cheap_confidence": 0.9297916828319163, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-36", "gold_index": 1, "cheap_confidence": 0.9304595490128902, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-37", "gold_index": 0, "cheap_confidence": 0.9106175379120344, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-38", "gold_index": 1, "cheap_confidence": 0.7625885065326322, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-39", "gold_index": 1, "cheap_confidence": 0.9464501914529091, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-40", "gold_index": 1, "cheap_confidence": 0.9615419226942551, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-41", "gold_index": 1, "cheap_confidence": 0.9338964415570321, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-42", "gold_index": 1, "cheap_confidence": 0.7991125898557228, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-43", "gold_index": 1, "cheap_confidence": 0.944539670736366, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-44", "gold_index": 0, "cheap_confidence": 0.915067047984886, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-45", "gold_index": 0, "cheap_confidence": 0.798999539248025, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-46", "gold_index": 0, "cheap_confidence": 0.9137551673624472, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-47", "gold_index": 1, "cheap_confidence": 0.8906846306334638, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-48", "gold_index": 1, "cheap_confidence": 0.9344241302368578, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-49", "gold_index": 0, "cheap_confidence": 0.94714677114097, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-50", "gold_index": 0, "cheap_confidence": 0.7946414420601162, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-51", "gold_index": 1, "cheap_confidence": 0.957483112548661, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-52", "gold_index": 1, "cheap_confidence": 0.9379207751358981, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-53", "gold_index": 1, "cheap_confidence": 0.7398977764788143, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-54", "gold_index": 0, "cheap_confidence": 0.9127890637607755, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-55", "gold_index": 1, "cheap_confidence": 0.9096076557783731, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-56", "gold_index": 0, "cheap_confidence": 0.9153613195069129, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-57", "gold_index": 0, "cheap_confidence": 0.7708544841672051, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-58", "gold_index": 0, "cheap_confidence": 0.9508336362421665, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-59", "gold_index": 0, "cheap_confidence": 0.9304909396399497, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-60", "gold_index": 1, "cheap_confidence": 0.9426649435149734, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-61", "gold_index": 0, "cheap_confidence": 0.9229154305748039, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-62", "gold_index": 1, "cheap_confidence": 0.6737469680532437, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-63", "gold_index": 1, "cheap_confidence": 0.9513831336703558, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-64", "gold_index": 0, "cheap_confidence": 0.7735390797199337, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-65", "gold_index": 0, "cheap_confidence": 0.8021012833070948, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-66", "gold_index": 1, "cheap_confidence": 0.5961827674853388, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-67", "gold_index": 1, "cheap_confidence": 0.9580333598627062, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-68", "gold_index": 1, "cheap_confidence": 0.7987672912458496, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-69", "gold_index": 0, "cheap_confidence": 0.9086811347799671, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-70", "gold_index": 0, "cheap_confidence": 0.9048276885547072, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-71", "gold_index": 1, "cheap_confidence": 0.9495107903689732, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-72", "gold_index": 1, "cheap_confidence": 0.8994524435134685, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-73", "gold_index": 1, "cheap_confidence": 0.7690865718193096, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-74", "gold_index": 0, "cheap_confidence": 0.929858496307325, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-75", "gold_index": 1, "cheap_confidence": 0.7358885430019396, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-76", "gold_index": 0, "cheap_confidence": 0.9404396874204922, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-77", "gold_index": 1, "cheap_confidence": 0.9358684726689253, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-78", "gold_index": 1, "cheap_confidence": 0.9046558151314894, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-79", "gold_index": 0, "cheap_confidence": 0.9593227596449371, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-80", "gold_index": 1, "cheap_confidence": 0.9302010075119596, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-81", "gold_index": 0, "cheap_confidence": 0.8914197673752986, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-82", "gold_index": 0, "cheap_confidence": 0.9372519574508525, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-83", "gold_index": 1, "cheap_confidence": 0.9461583907846715, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-84", "gold_index": 1, "cheap_confidence": 0.9101727583473136, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-85", "gold_index": 1, "cheap_confidence": 0.7671918203316523, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-86", "gold_index": 0, "cheap_confidence": 0.9421481222121326, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-87", "gold_index": 1, "cheap_confidence": 0.7935075623219453, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-88", "gold_index": 1, "cheap_confidence": 0.926243826620978, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-89", "gold_index": 1, "cheap_confidence": 0.9011397307259077, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-90", "gold_index": 1, "cheap_confidence": 0.9337618611688394, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-91", "gold_index": 1, "cheap_confidence": 0.883737345467289, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-92", "gold_index": 0, "cheap_confidence": 0.6492663272591943, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-93", "gold_index": 1, "cheap_confidence": 0.8960992743498538, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-94", "gold_index": 1, "cheap_confidence": 0.944668387142287, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-95", "gold_index": 0, "cheap_confidence": 0.9553228615607531, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-96", "gold_index": 0, "cheap_confidence": 0.7731966315517771, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-97", "gold_index": 1, "cheap_confidence": 0.9338261904238433, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-98", "gold_index": 0, "cheap_confidence": 0.9467460620021021, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-99", "gold_index": 0, "cheap_confidence": 0.8603134538902812, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-100", "gold_index": 1, "cheap_confidence": 0.9426822955252921, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-101", "gold_index": 0, "cheap_confidence": 0.8670670702504407, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-102", "gold_index": 1, "cheap_confidence": 0.7327013869550663, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-103", "gold_index": 1, "cheap_confidence": 0.9562672417993325, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-104", "gold_index": 1, "cheap_confidence": 0.8704922594118658, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-105", "gold_index": 0, "cheap_confidence": 0.9328132055412757, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-106", "gold_index": 1, "cheap_confidence": 0.9618976669204984, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-107", "gold_index": 0, "cheap_confidence": 0.8764586188476271, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-108", "gold_index": 0, "cheap_confidence": 0.9284042804917615, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-109", "gold_index": 1, "cheap_confidence": 0.935471129336451, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-110", "gold_index": 0, "cheap_confidence": 0.9066705793857596, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-111", "gold_index": 0, "cheap_confidence": 0.8744969055639695, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-112", "gold_index": 1, "cheap_confidence": 0.9457033952913564, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-113", "gold_index": 0, "cheap_confidence": 0.9564644948983733, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-114", "gold_index": 1, "cheap_confidence": 0.8631665740954985, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-115", "gold_index": 0, "cheap_confidence": 0.8686166831855102, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-116", "gold_index": 1, "cheap_confidence": 0.9361970421787971, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-117", "gold_index": 1, "cheap_confidence": 0.7508450461608471, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-118", "gold_index": 0, "cheap_confidence": 0.8204554243129115, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-119", "gold_index": 0, "cheap_confidence": 0.9375943585882341, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-120", "gold_index": 1, "cheap_confidence": 0.9001513536929535, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-121", "gold_index": 0, "cheap_confidence": 0.9258364000549313, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-122", "gold_index": 1, "cheap_confidence": 0.9539457120402961, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-123", "gold_index": 1, "cheap_confidence": 0.9120267733271092, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-124", "gold_index": 1, "cheap_confidence": 0.8886962115306128, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-125", "gold_index": 1, "cheap_confidence": 0.9690984826964585, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-126", "gold_index": 0, "cheap_confidence": 0.9524769268619847, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-127", "gold_index": 0, "cheap_confidence": 0.9259887324347708, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-128", "gold_index": 1, "cheap_confidence": 0.9520393962242022, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-129", "gold_index": 1, "cheap_confidence": 0.9518562060112133, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-130", "gold_index": 0, "cheap_confidence": 0.9413134891667897, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-131", "gold_index": 0, "cheap_confidence": 0.9297244542990911, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-132", "gold_index": 1, "cheap_confidence": 0.9362891681577982, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-133", "gold_index": 0, "cheap_confidence": 0.9182666861923587, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-134", "gold_index": 0, "cheap_confidence": 0.9541008005346943, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-135", "gold_index": 0, "cheap_confidence": 0.8060645147539587, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-136", "gold_index": 0, "cheap_confidence": 0.8603856780459133, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-137", "gold_index": 0, "cheap_confidence": 0.9470326157768989, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-138", "gold_index": 1, "cheap_confidence": 0.9645679933849315, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-139", "gold_index": 0, "cheap_confidence": 0.7965988147732196, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-140", "gold_index": 0, "cheap_confidence": 0.9384180010379937, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-141", "gold_index": 0, "cheap_confidence": 0.9408489115182864, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-142", "gold_index": 1, "cheap_confidence": 0.9314257149308219, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-143", "gold_index": 1, "cheap_confidence": 0.7560832995080257, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-144", "gold_index": 0, "cheap_confidence": 0.9265935735260075, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-145", "gold_index": 0, "cheap_confidence": 0.93612642959452, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-146", "gold_index": 1, "cheap_confidence": 0.8990407559970286, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-147", "gold_index": 0, "cheap_confidence": 0.7481432164157842, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-148", "gold_index": 0, "cheap_confidence": 0.9474327328315281, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-149", "gold_index": 1, "cheap_confidence": 0.8656706492536732, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-150", "gold_index": 1, "cheap_confidence": 0.9533849299137294, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-151", "gold_index": 1, "cheap_confidence": 0.9385621949494273, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-152", "gold_index": 1, "cheap_confidence": 0.7708237060511627, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-153", "gold_index": 0, "cheap_confidence": 0.9437571193938358, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-154", "gold_index": 1, "cheap_confidence": 0.7861651203963625, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-155", "gold_index": 0, "cheap_confidence": 0.9536505201097025, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-156", "gold_index": 1, "cheap_confidence": 0.9112902538018629, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-157", "gold_index": 0, "cheap_confidence": 0.9386718778839325, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-158", "gold_index": 0, "cheap_confidence": 0.929915453599525, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-159", "gold_index": 1, "cheap_confidence": 0.6276116015126116, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-160", "gold_index": 0, "cheap_confidence": 0.9311451723973143, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-161", "gold_index": 0, "cheap_confidence": 0.9108056575356006, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-162", "gold_index": 0, "cheap_confidence": 0.6662893366909495, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-163", "gold_index": 0, "cheap_confidence": 0.6763771087444762, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-164", "gold_index": 1, "cheap_confidence": 0.897126938256544, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-165", "gold_index": 0, "cheap_confidence": 0.909978466032979, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-166", "gold_index": 0, "cheap_confidence": 0.5742907780647705, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-167", "gold_index": 0, "cheap_confidence": 0.9486665462435698, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-168", "gold_index": 1, "cheap_confidence": 0.9272344760949959, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-169", "gold_index": 1, "cheap_confidence": 0.95786737913059, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-170", "gold_index": 1, "cheap_confidence": 0.9597311399658992, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-171", "gold_index": 0, "cheap_confidence": 0.8101380803968794, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-172", "gold_index": 1, "cheap_confidence": 0.6636339632188447, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-173", "gold_index": 0, "cheap_confidence": 0.9195916555343833, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-174", "gold_index": 1, "cheap_confidence": 0.9188872199550681, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-175", "gold_index": 1, "cheap_confidence": 0.5368597352750769, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-176", "gold_index": 0, "cheap_confidence": 0.7468636064869199, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-177", "gold_index": 0, "cheap_confidence": 0.9217233111292522, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-178", "gold_index": 0, "cheap_confidence": 0.9352052404935813, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-179", "gold_index": 1, "cheap_confidence": 0.9569372052987963, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-180", "gold_index": 0, "cheap_confidence": 0.9083115525362658, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-181", "gold_index": 0, "cheap_confidence": 0.9459815657392452, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-182", "gold_index": 0, "cheap_confidence": 0.9352061332142495, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-183", "gold_index": 0, "cheap_confidence": 0.9401471197653296, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-184", "gold_index": 0, "cheap_confidence": 0.8977817453466247, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-185", "gold_index": 1, "cheap_confidence": 0.9565470435609269, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-186", "gold_index": 1, "cheap_confidence": 0.892077931733479, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-187", "gold_index": 1, "cheap_confidence": 0.6862487957598082, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-188", "gold_index": 0, "cheap_confidence": 0.945650184614338, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-189", "gold_index": 0, "cheap_confidence": 0.8896701862279881, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-190", "gold_index": 0, "cheap_confidence": 0.7635601642459777, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-191", "gold_index": 1, "cheap_confidence": 0.9286614589013503, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-192", "gold_index": 1, "cheap_confidence": 0.8718454785764628, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-193", "gold_index": 1, "cheap_confidence": 0.7578611320623408, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-194", "gold_index": 1, "cheap_confidence": 0.9562087468946343, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-195", "gold_index": 1, "cheap_confidence": 0.8048219979367891, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-196", "gold_index": 1, "cheap_confidence": 0.6038463029832037, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-197", "gold_index": 0, "cheap_confidence": 0.9488599491205584, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-198", "gold_index": 1, "cheap_confidence": 0.9567610241712474, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-199", "gold_index": 0, "cheap_confidence": 0.7872570390287724, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-200", "gold_index": 1, "cheap_confidence": 0.8670053123627055, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-201", "gold_index": 1, "cheap_confidence": 0.5133796371158326, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-202", "gold_index": 0, "cheap_confidence": 0.902277523636377, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-203", "gold_index": 0, "cheap_confidence": 0.9521603078881049, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-204", "gold_index": 1, "cheap_confidence": 0.816635588894546, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-205", "gold_index": 1, "cheap_confidence": 0.8660325979168809, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-206", "gold_index": 1, "cheap_confidence": 0.9452841439390541, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-207", "gold_index": 1, "cheap_confidence": 0.9273295454855155, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-208", "gold_index": 0, "cheap_confidence": 0.5649611147057236, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-209", "gold_index": 0, "cheap_confidence": 0.9377047263499961, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-210", "gold_index": 1, "cheap_confidence": 0.9448576134792207, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-211", "gold_index": 0, "cheap_confidence": 0.5480629145558011, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-212", "gold_index": 0, "cheap_confidence": 0.9628369674343357, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-213", "gold_index": 0, "cheap_confidence": 0.9140832660044573, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-214", "gold_index": 0, "cheap_confidence": 0.9460686083571549, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-215", "gold_index": 1, "cheap_confidence": 0.9159288450314965, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-216", "gold_index": 1, "cheap_confidence": 0.9616301753270659, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-217", "gold_index": 0, "cheap_confidence": 0.9145015088348778, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-218", "gold_index": 0, "cheap_confidence": 0.6246624145973406, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-219", "gold_index": 1, "cheap_confidence": 0.9060402661770225, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-220", "gold_index": 1, "cheap_confidence": 0.7164950543357094, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-221", "gold_index": 0, "cheap_confidence": 0.9632078680371705, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-222", "gold_index": 1, "cheap_confidence": 0.7143058869068856, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-223", "gold_index": 1, "cheap_confidence": 0.7202428996509062, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-224", "gold_index": 1, "cheap_confidence": 0.9437604442841552, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-225", "gold_index": 1, "cheap_confidence": 0.8348965532569064, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-226", "gold_index": 0, "cheap_confidence": 0.9504209550769297, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-227", "gold_index": 1, "cheap_confidence": 0.9530825649467947, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-228", "gold_index": 1, "cheap_confidence": 0.5601604713725897, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-229", "gold_index": 0, "cheap_confidence": 0.8832781733389956, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-230", "gold_index": 1, "cheap_confidence": 0.8033977190288815, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-231", "gold_index": 1, "cheap_confidence": 0.6215377952841635, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-232", "gold_index": 0, "cheap_confidence": 0.8693126322667227, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-233", "gold_index": 0, "cheap_confidence": 0.9561763605995816, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-234", "gold_index": 1, "cheap_confidence": 0.9411193387106565, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-235", "gold_index": 1, "cheap_confidence": 0.6839565915675638, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-236", "gold_index": 1, "cheap_confidence": 0.5042413677108294, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-237", "gold_index": 0, "cheap_confidence": 0.9210276489028688, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-238", "gold_index": 0, "cheap_confidence": 0.9084851654017163, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-239", "gold_index": 1, "cheap_confidence": 0.5968044900899742, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-240", "gold_index": 1, "cheap_confidence": 0.9535213886382974, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-241", "gold_index": 0, "cheap_confidence": 0.9435508125388754, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-242", "gold_index": 0, "cheap_confidence": 0.9651941994160982, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-243", "gold_index": 1, "cheap_confidence": 0.8035688187025799, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-244", "gold_index": 1, "cheap_confidence": 0.958865517044472, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-245", "gold_index": 1, "cheap_confidence": 0.9176977332818798, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-246", "gold_index": 1, "cheap_confidence": 0.8521053071110581, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-247", "gold_index": 0, "cheap_confidence": 0.9170977347586869, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-248", "gold_index": 1, "cheap_confidence": 0.6148138844392413, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-249", "gold_index": 1, "cheap_confidence": 0.8878717234071244, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-250", "gold_index": 1, "cheap_confidence": 0.8883032725428311, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-251", "gold_index": 0, "cheap_confidence": 0.9331480610808355, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-252", "gold_index": 1, "cheap_confidence": 0.9265830511725895, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-253", "gold_index": 0, "cheap_confidence": 0.8943494336755992, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-254", "gold_index": 0, "cheap_confidence": 0.9520092329669737, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-255", "gold_index": 0, "cheap_confidence": 0.9067916387175394, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-256", "gold_index": 0, "cheap_confidence": 0.9413698821034898, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-257", "gold_index": 0, "cheap_confidence": 0.9391484376603142, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-258", "gold_index": 0, "cheap_confidence": 0.9322315309784239, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-259", "gold_index": 1, "cheap_confidence": 0.8628092143094274, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-260", "gold_index": 0, "cheap_confidence": 0.7662403303406302, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-261", "gold_index": 1, "cheap_confidence": 0.8560721013255223, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-262", "gold_index": 0, "cheap_confidence": 0.9475227813938594, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-263", "gold_index": 1, "cheap_confidence": 0.9048086818072176, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-264", "gold_index": 0, "cheap_confidence": 0.6171568141299465, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-265", "gold_index": 0, "cheap_confidence": 0.8772664288448082, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-266", "gold_index": 1, "cheap_confidence": 0.858289486789303, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-267", "gold_index": 0, "cheap_confidence": 0.8069733576530121, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-268", "gold_index": 0, "cheap_confidence": 0.9537086410183149, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-269", "gold_index": 0, "cheap_confidence": 0.7648849262694237, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-270", "gold_index": 1, "cheap_confidence": 0.8831450567312739, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-271", "gold_index": 1, "cheap_confidence": 0.9555754823692102, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-272", "gold_index": 0, "cheap_confidence": 0.9471304567200032, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-273", "gold_index": 1, "cheap_confidence": 0.5977367982641646, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-274", "gold_index": 0, "cheap_confidence": 0.9302426990886059, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-275", "gold_index": 1, "cheap_confidence": 0.9488775593866376, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-276", "gold_index": 1, "cheap_confidence": 0.903070988495066, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-277", "gold_index": 1, "cheap_confidence": 0.9551417869786577, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-278", "gold_index": 0, "cheap_confidence": 0.5966281474759285, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-279", "gold_index": 1, "cheap_confidence": 0.5273438457829048, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-280", "gold_index": 1, "cheap_confidence": 0.8266870068215116, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-281", "gold_index": 0, "cheap_confidence": 0.9456915822234153, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-282", "gold_index": 1, "cheap_confidence": 0.7942939856355034, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-283", "gold_index": 1, "cheap_confidence": 0.9419747562758758, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-284", "gold_index": 0, "cheap_confidence": 0.8248216237550966, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-285", "gold_index": 0, "cheap_confidence": 0.8713733569945827, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-286", "gold_index": 1, "cheap_confidence": 0.896623449658839, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-287", "gold_index": 1, "cheap_confidence": 0.951871215983976, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-288", "gold_index": 1, "cheap_confidence": 0.9336415166157699, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-289", "gold_index": 1, "cheap_confidence": 0.9482748524923158, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-290", "gold_index": 1, "cheap_confidence": 0.9169726573707981, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-291", "gold_index": 0, "cheap_confidence": 0.9260422941439036, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-292", "gold_index": 0, "cheap_confidence": 0.6139037109475838, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-293", "gold_index": 1, "cheap_confidence": 0.9227835974330222, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-294", "gold_index": 1, "cheap_confidence": 0.9676829934323163, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-295", "gold_index": 1, "cheap_confidence": 0.5199158527981623, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-296", "gold_index": 0, "cheap_confidence": 0.9050819070063826, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-297", "gold_index": 1, "cheap_confidence": 0.9100525830590147, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-298", "gold_index": 0, "cheap_confidence": 0.915358371625647, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-299", "gold_index": 1, "cheap_confidence": 0.6758486077851059, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-300", "gold_index": 1, "cheap_confidence": 0.933854596566549, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-301", "gold_index": 0, "cheap_confidence": 0.9018117334061748, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-302", "gold_index": 1, "cheap_confidence": 0.9620677759313833, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-303", "gold_index": 1, "cheap_confidence": 0.9678921303476911, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-304", "gold_index": 1, "cheap_confidence": 0.9224889834720698, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-305", "gold_index": 0, "cheap_confidence": 0.9447031265633066, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-306", "gold_index": 1, "cheap_confidence": 0.9424525468769079, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-307", "gold_index": 1, "cheap_confidence": 0.947657814105294, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-308", "gold_index": 1, "cheap_confidence": 0.6836823248373941, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-309", "gold_index": 1, "cheap_confidence": 0.9580896081778214, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-310", "gold_index": 1, "cheap_confidence": 0.7570352800069624, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-311", "gold_index": 1, "cheap_confidence": 0.9618769776900762, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-312", "gold_index": 0, "cheap_confidence": 0.9119566171987694, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-313", "gold_index": 1, "cheap_confidence": 0.9341998930504376, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-314", "gold_index": 1, "cheap_confidence": 0.9640202592716607, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-315", "gold_index": 0, "cheap_confidence": 0.9485606177709798, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-316", "gold_index": 1, "cheap_confidence": 0.9405615053171278, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-317", "gold_index": 1, "cheap_confidence": 0.9247707995105311, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-318", "gold_index": 0, "cheap_confidence": 0.9269111886016003, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-319", "gold_index": 0, "cheap_confidence": 0.9593172864823867, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-320", "gold_index": 1, "cheap_confidence": 0.955588067500323, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-321", "gold_index": 0, "cheap_confidence": 0.9180664261237866, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-322", "gold_index": 0, "cheap_confidence": 0.9244909659422565, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-323", "gold_index": 1, "cheap_confidence": 0.922826175459273, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-324", "gold_index": 1, "cheap_confidence": 0.9028280329972015, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-325", "gold_index": 1, "cheap_confidence": 0.7082422610752992, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-326", "gold_index": 1, "cheap_confidence": 0.6892878003118766, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-327", "gold_index": 1, "cheap_confidence": 0.9364611462455936, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-328", "gold_index": 0, "cheap_confidence": 0.9530153813838004, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-329", "gold_index": 0, "cheap_confidence": 0.957186170322985, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-330", "gold_index": 0, "cheap_confidence": 0.9400036635005767, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-331", "gold_index": 1, "cheap_confidence": 0.590953352689741, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-332", "gold_index": 1, "cheap_confidence": 0.9041010191275786, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-333", "gold_index": 1, "cheap_confidence": 0.6441905977235038, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-334", "gold_index": 1, "cheap_confidence": 0.9638152775707213, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-335", "gold_index": 0, "cheap_confidence": 0.9172998719988781, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-336", "gold_index": 1, "cheap_confidence": 0.9666521346867464, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-337", "gold_index": 0, "cheap_confidence": 0.932204725479447, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-338", "gold_index": 0, "cheap_confidence": 0.9432124303524061, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-339", "gold_index": 1, "cheap_confidence": 0.8997272676745863, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-340", "gold_index": 0, "cheap_confidence": 0.9397212061275938, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-341", "gold_index": 1, "cheap_confidence": 0.6726048705881467, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-342", "gold_index": 0, "cheap_confidence": 0.9205536406681991, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-343", "gold_index": 0, "cheap_confidence": 0.9570231206086761, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-344", "gold_index": 1, "cheap_confidence": 0.8094609267357424, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-345", "gold_index": 1, "cheap_confidence": 0.9589869508368242, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-346", "gold_index": 0, "cheap_confidence": 0.9548414254319689, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-347", "gold_index": 0, "cheap_confidence": 0.9110677792769368, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-348", "gold_index": 0, "cheap_confidence": 0.9540722270020813, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-349", "gold_index": 0, "cheap_confidence": 0.9350521596737175, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-350", "gold_index": 0, "cheap_confidence": 0.9360956431591948, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-351", "gold_index": 1, "cheap_confidence": 0.968112064901279, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-352", "gold_index": 1, "cheap_confidence": 0.6027268682141202, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-353", "gold_index": 1, "cheap_confidence": 0.9623147009792973, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-354", "gold_index": 1, "cheap_confidence": 0.8924830977804314, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-355", "gold_index": 0, "cheap_confidence": 0.9334850365896851, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-356", "gold_index": 0, "cheap_confidence": 0.8676617475661181, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-357", "gold_index": 0, "cheap_confidence": 0.9509886323344207, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-358", "gold_index": 1, "cheap_confidence": 0.5506203860280362, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-359", "gold_index": 1, "cheap_confidence": 0.902117359779625, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-360", "gold_index": 1, "cheap_confidence": 0.9615562218931014, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-361", "gold_index": 0, "cheap_confidence": 0.9467425585726322, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-362", "gold_index": 1, "cheap_confidence": 0.6810125461561353, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-363", "gold_index": 0, "cheap_confidence": 0.941734804646873, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-364", "gold_index": 0, "cheap_confidence": 0.9068530660248368, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-365", "gold_index": 0, "cheap_confidence": 0.9355553180758301, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-366", "gold_index": 1, "cheap_confidence": 0.954566952296723, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-367", "gold_index": 1, "cheap_confidence": 0.9359958244416844, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-368", "gold_index": 0, "cheap_confidence": 0.9450044899764086, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-369", "gold_index": 1, "cheap_confidence": 0.8807810698054447, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-370", "gold_index": 0, "cheap_confidence": 0.8922871112774304, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-371", "gold_index": 1, "cheap_confidence": 0.879791086186078, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-372", "gold_index": 1, "cheap_confidence": 0.9322661832369218, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-373", "gold_index": 0, "cheap_confidence": 0.9296553418161867, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-374", "gold_index": 0, "cheap_confidence": 0.9466614510480402, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-375", "gold_index": 1, "cheap_confidence": 0.6453251026695992, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-376", "gold_index": 0, "cheap_confidence": 0.9124769353414206, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-377", "gold_index": 0, "cheap_confidence": 0.9338323441981328, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-378", "gold_index": 0, "cheap_confidence": 0.9428727111618894, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-379", "gold_index": 0, "cheap_confidence": 0.9310202349503064, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-380", "gold_index": 0, "cheap_confidence": 0.9515992282047397, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-381", "gold_index": 1, "cheap_confidence": 0.8816852837995786, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-382", "gold_index": 0, "cheap_confidence": 0.778890717058871, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-383", "gold_index": 1, "cheap_confidence": 0.9349398140667889, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-384", "gold_index": 0, "cheap_confidence": 0.9128942647630841, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-385", "gold_index": 0, "cheap_confidence": 0.8923346864303852, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-386", "gold_index": 1, "cheap_confidence": 0.9575699524340208, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-387", "gold_index": 1, "cheap_confidence": 0.7460510538892692, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-388", "gold_index": 0, "cheap_confidence": 0.9363315765946666, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-389", "gold_index": 1, "cheap_confidence": 0.9235306289664563, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-390", "gold_index": 0, "cheap_confidence": 0.9284953824772991, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-391", "gold_index": 0, "cheap_confidence": 0.9052459437904091, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-392", "gold_index": 0, "cheap_confidence": 0.944309881728586, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-393", "gold_index": 1, "cheap_confidence": 0.9632956060525811, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-394", "gold_index": 1, "cheap_confidence": 0.9382717609387343, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-395", "gold_index": 0, "cheap_confidence": 0.9372987891763065, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-396", "gold_index": 1, "cheap_confidence": 0.957272526837876, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-397", "gold_index": 1, "cheap_confidence": 0.9519170316165076, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-398", "gold_index": 1, "cheap_confidence": 0.7690936302257186, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-399", "gold_index": 0, "cheap_confidence": 0.5464116378296507, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-400", "gold_index": 1, "cheap_confidence": 0.9337402329276445, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-401", "gold_index": 1, "cheap_confidence": 0.6424661299253789, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-402", "gold_index": 0, "cheap_confidence": 0.9434889296900824, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-403", "gold_index": 0, "cheap_confidence": 0.9325796197262957, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-404", "gold_index": 1, "cheap_confidence": 0.9449688550872476, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-405", "gold_index": 0, "cheap_confidence": 0.525457597206946, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-406", "gold_index": 1, "cheap_confidence": 0.7076571713433963, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-407", "gold_index": 0, "cheap_confidence": 0.9403830222460706, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-408", "gold_index": 0, "cheap_confidence": 0.9284920090974903, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-409", "gold_index": 0, "cheap_confidence": 0.9457208751398342, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-410", "gold_index": 1, "cheap_confidence": 0.7512118632788336, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-411", "gold_index": 0, "cheap_confidence": 0.6199619356135339, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-412", "gold_index": 0, "cheap_confidence": 0.9341607808678666, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-413", "gold_index": 0, "cheap_confidence": 0.9544702005765324, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-414", "gold_index": 1, "cheap_confidence": 0.9425800494934672, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-415", "gold_index": 1, "cheap_confidence": 0.9502039371110239, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-416", "gold_index": 1, "cheap_confidence": 0.92064628962018, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-417", "gold_index": 1, "cheap_confidence": 0.6193507653280633, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-418", "gold_index": 1, "cheap_confidence": 0.8300590776648301, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-419", "gold_index": 0, "cheap_confidence": 0.8382763738852873, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-420", "gold_index": 0, "cheap_confidence": 0.9454355634458196, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-421", "gold_index": 1, "cheap_confidence": 0.947217201327947, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-422", "gold_index": 1, "cheap_confidence": 0.9159194072867153, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-423", "gold_index": 0, "cheap_confidence": 0.8468091790355851, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-424", "gold_index": 1, "cheap_confidence": 0.9443761806478776, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-425", "gold_index": 1, "cheap_confidence": 0.6496508861371468, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-426", "gold_index": 1, "cheap_confidence": 0.9326300815543683, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-427", "gold_index": 1, "cheap_confidence": 0.9413001777866497, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-428", "gold_index": 1, "cheap_confidence": 0.9537567526747184, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-429", "gold_index": 0, "cheap_confidence": 0.9501935127916692, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-430", "gold_index": 1, "cheap_confidence": 0.9518149003462281, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-431", "gold_index": 0, "cheap_confidence": 0.9352980361928436, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-432", "gold_index": 0, "cheap_confidence": 0.9432517298683609, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-433", "gold_index": 1, "cheap_confidence": 0.8092815979471544, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-434", "gold_index": 0, "cheap_confidence": 0.8595252271850377, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-435", "gold_index": 1, "cheap_confidence": 0.9390386684918642, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-436", "gold_index": 0, "cheap_confidence": 0.781913219584033, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-437", "gold_index": 1, "cheap_confidence": 0.9054553176405064, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-438", "gold_index": 1, "cheap_confidence": 0.8946155727998882, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-439", "gold_index": 1, "cheap_confidence": 0.9625082375039553, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-440", "gold_index": 1, "cheap_confidence": 0.9521825804848572, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-441", "gold_index": 0, "cheap_confidence": 0.8692466761181094, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-442", "gold_index": 0, "cheap_confidence": 0.9172234245988412, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-443", "gold_index": 1, "cheap_confidence": 0.9420919887813347, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-444", "gold_index": 0, "cheap_confidence": 0.9090758248025751, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-445", "gold_index": 1, "cheap_confidence": 0.9401127822788791, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-446", "gold_index": 0, "cheap_confidence": 0.9021628046661925, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-447", "gold_index": 1, "cheap_confidence": 0.8921722774233642, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-448", "gold_index": 1, "cheap_confidence": 0.8951648328575993, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-449", "gold_index": 0, "cheap_confidence": 0.9233294866104871, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-450", "gold_index": 1, "cheap_confidence": 0.9296939189432152, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-451", "gold_index": 1, "cheap_confidence": 0.9587010414350742, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-452", "gold_index": 0, "cheap_confidence": 0.9260418690968376, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-453", "gold_index": 1, "cheap_confidence": 0.9522554627529867, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-454", "gold_index": 0, "cheap_confidence": 0.8508203223107234, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-455", "gold_index": 1, "cheap_confidence": 0.946704896134976, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-456", "gold_index": 0, "cheap_confidence": 0.9363178998869238, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-457", "gold_index": 1, "cheap_confidence": 0.9581914291487941, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-458", "gold_index": 1, "cheap_confidence": 0.7793105155246769, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-459", "gold_index": 1, "cheap_confidence": 0.785949983017509, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-460", "gold_index": 1, "cheap_confidence": 0.9585327552489342, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-461", "gold_index": 0, "cheap_confidence": 0.9435777822937066, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-462", "gold_index": 0, "cheap_confidence": 0.9442024350321343, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-463", "gold_index": 0, "cheap_confidence": 0.9377798122890001, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-464", "gold_index": 1, "cheap_confidence": 0.9271523461568185, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-465", "gold_index": 0, "cheap_confidence": 0.8813502184460907, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-466", "gold_index": 1, "cheap_confidence": 0.8460165408803545, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-467", "gold_index": 1, "cheap_confidence": 0.5097669474910952, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-468", "gold_index": 1, "cheap_confidence": 0.9627332245277921, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-469", "gold_index": 0, "cheap_confidence": 0.9634059699537288, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-470", "gold_index": 1, "cheap_confidence": 0.9589413244029941, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-471", "gold_index": 0, "cheap_confidence": 0.9519895824629682, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-472", "gold_index": 1, "cheap_confidence": 0.7882609341154047, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-473", "gold_index": 1, "cheap_confidence": 0.842399852879762, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-474", "gold_index": 0, "cheap_confidence": 0.9487241199053095, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-475", "gold_index": 1, "cheap_confidence": 0.921688683578787, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-476", "gold_index": 0, "cheap_confidence": 0.9560058023741703, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-477", "gold_index": 0, "cheap_confidence": 0.8494612551621966, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-478", "gold_index": 0, "cheap_confidence": 0.5563744311449083, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-479", "gold_index": 1, "cheap_confidence": 0.9636176322427406, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-480", "gold_index": 1, "cheap_confidence": 0.9355516881049445, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-481", "gold_index": 1, "cheap_confidence": 0.8152738704542355, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-482", "gold_index": 1, "cheap_confidence": 0.9345477886141035, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-483", "gold_index": 1, "cheap_confidence": 0.9045935968376734, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-484", "gold_index": 1, "cheap_confidence": 0.7073819433885749, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-485", "gold_index": 1, "cheap_confidence": 0.5707289512357977, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-486", "gold_index": 0, "cheap_confidence": 0.9350663147547034, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-487", "gold_index": 0, "cheap_confidence": 0.9415532488735643, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-488", "gold_index": 1, "cheap_confidence": 0.9508073008389158, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-489", "gold_index": 0, "cheap_confidence": 0.6117706673132853, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-490", "gold_index": 0, "cheap_confidence": 0.9567076523570329, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-491", "gold_index": 0, "cheap_confidence": 0.9477403055287781, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-492", "gold_index": 1, "cheap_confidence": 0.9583365269907554, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-493", "gold_index": 0, "cheap_confidence": 0.9599021608390325, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-494", "gold_index": 0, "cheap_confidence": 0.8106821705044659, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-495", "gold_index": 1, "cheap_confidence": 0.8537821112543571, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-496", "gold_index": 1, "cheap_confidence": 0.5958925618856928, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-497", "gold_index": 0, "cheap_confidence": 0.935729116688496, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-498", "gold_index": 1, "cheap_confidence": 0.931347038220089, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-499", "gold_index": 1, "cheap_confidence": 0.8494154938169728, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-500", "gold_index": 0, "cheap_confidence": 0.9493921165830611, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-501", "gold_index": 1, "cheap_confidence": 0.8322796337119116, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-502", "gold_index": 0, "cheap_confidence": 0.9520172404632812, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-503", "gold_index": 0, "cheap_confidence": 0.928316977483999, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-504", "gold_index": 1, "cheap_confidence": 0.9554788241171996, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-505", "gold_index": 1, "cheap_confidence": 0.9251436300001825, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-506", "gold_index": 1, "cheap_confidence": 0.8857783343354443, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-507", "gold_index": 1, "cheap_confidence": 0.8001812474658493, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-508", "gold_index": 1, "cheap_confidence": 0.9336015639895837, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-509", "gold_index": 1, "cheap_confidence": 0.5026384698505604, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-510", "gold_index": 1, "cheap_confidence": 0.6442082924097526, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-511", "gold_index": 1, "cheap_confidence": 0.8099635558836659, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-512", "gold_index": 0, "cheap_confidence": 0.9417470180849973, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-513", "gold_index": 0, "cheap_confidence": 0.8387037179145127, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-514", "gold_index": 1, "cheap_confidence": 0.8764088921065503, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-515", "gold_index": 0, "cheap_confidence": 0.752042811900992, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-516", "gold_index": 0, "cheap_confidence": 0.9304885462194471, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-517", "gold_index": 1, "cheap_confidence": 0.9280272953176604, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-518", "gold_index": 1, "cheap_confidence": 0.9395034967097796, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-519", "gold_index": 0, "cheap_confidence": 0.639507931186701, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-520", "gold_index": 1, "cheap_confidence": 0.7652151429963198, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-521", "gold_index": 0, "cheap_confidence": 0.935464115991216, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-522", "gold_index": 0, "cheap_confidence": 0.9370551121829241, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-523", "gold_index": 1, "cheap_confidence": 0.890289075393275, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-524", "gold_index": 1, "cheap_confidence": 0.9519494520022083, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-525", "gold_index": 1, "cheap_confidence": 0.9494944825199955, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-526", "gold_index": 0, "cheap_confidence": 0.8585435784302872, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-527", "gold_index": 0, "cheap_confidence": 0.7801640953524027, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-528", "gold_index": 1, "cheap_confidence": 0.6271191500040975, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-529", "gold_index": 0, "cheap_confidence": 0.9573561927959121, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-530", "gold_index": 1, "cheap_confidence": 0.9266194059896531, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-531", "gold_index": 0, "cheap_confidence": 0.9317319801975839, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-532", "gold_index": 1, "cheap_confidence": 0.68160460876834, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-533", "gold_index": 1, "cheap_confidence": 0.9408237191654504, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-534", "gold_index": 1, "cheap_confidence": 0.9631888090104382, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-535", "gold_index": 1, "cheap_confidence": 0.8468747685173407, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-536", "gold_index": 0, "cheap_confidence": 0.9334999770057351, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-537", "gold_index": 1, "cheap_confidence": 0.7667550209891664, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-538", "gold_index": 0, "cheap_confidence": 0.9253577224987668, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-539", "gold_index": 0, "cheap_confidence": 0.9417577275287821, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-540", "gold_index": 1, "cheap_confidence": 0.7847377000429263, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-541", "gold_index": 1, "cheap_confidence": 0.9369859777854834, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-542", "gold_index": 0, "cheap_confidence": 0.6505488972187393, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-543", "gold_index": 0, "cheap_confidence": 0.8720492084077783, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-544", "gold_index": 0, "cheap_confidence": 0.9346710034442512, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-545", "gold_index": 0, "cheap_confidence": 0.9415448154229878, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-546", "gold_index": 1, "cheap_confidence": 0.5859288863391217, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-547", "gold_index": 0, "cheap_confidence": 0.9029796185876316, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-548", "gold_index": 0, "cheap_confidence": 0.7281818252465305, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-549", "gold_index": 0, "cheap_confidence": 0.9448644548136558, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-550", "gold_index": 0, "cheap_confidence": 0.926773378772316, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-551", "gold_index": 0, "cheap_confidence": 0.8390765404825886, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-552", "gold_index": 0, "cheap_confidence": 0.9351640644970828, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-553", "gold_index": 1, "cheap_confidence": 0.9498540394637138, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-554", "gold_index": 0, "cheap_confidence": 0.956501794236754, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-555", "gold_index": 0, "cheap_confidence": 0.9287928084399636, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-556", "gold_index": 0, "cheap_confidence": 0.9511644049802931, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-557", "gold_index": 1, "cheap_confidence": 0.8991317624904618, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-558", "gold_index": 1, "cheap_confidence": 0.8900290995583777, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-559", "gold_index": 0, "cheap_confidence": 0.8390609703560273, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-560", "gold_index": 0, "cheap_confidence": 0.9565807390694163, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-561", "gold_index": 1, "cheap_confidence": 0.7873569658169552, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-562", "gold_index": 0, "cheap_confidence": 0.9328229542250601, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-563", "gold_index": 1, "cheap_confidence": 0.8489348775349251, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-564", "gold_index": 0, "cheap_confidence": 0.9390951984344251, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-565", "gold_index": 1, "cheap_confidence": 0.9420125088136162, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-566", "gold_index": 0, "cheap_confidence": 0.93831875779197, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-567", "gold_index": 1, "cheap_confidence": 0.7372813118987888, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-568", "gold_index": 0, "cheap_confidence": 0.8914645139255979, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-569", "gold_index": 1, "cheap_confidence": 0.9653735072474514, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-570", "gold_index": 1, "cheap_confidence": 0.7073089724978858, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-571", "gold_index": 0, "cheap_confidence": 0.9082410326269905, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-572", "gold_index": 0, "cheap_confidence": 0.9530008509106176, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-573", "gold_index": 1, "cheap_confidence": 0.9676367481338123, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-574", "gold_index": 0, "cheap_confidence": 0.9513372542076551, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-575", "gold_index": 0, "cheap_confidence": 0.8318900853578375, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-576", "gold_index": 0, "cheap_confidence": 0.9384819974828023, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-577", "gold_index": 1, "cheap_confidence": 0.9452331404777915, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-578", "gold_index": 0, "cheap_confidence": 0.942701456617327, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-579", "gold_index": 0, "cheap_confidence": 0.9291972034582563, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-580", "gold_index": 0, "cheap_confidence": 0.9345520246042301, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-581", "gold_index": 0, "cheap_confidence": 0.9461253235469088, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-582", "gold_index": 0, "cheap_confidence": 0.9109989787228405, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-583", "gold_index": 0, "cheap_confidence": 0.9275860991985719, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-584", "gold_index": 0, "cheap_confidence": 0.9508968949995832, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-585", "gold_index": 0, "cheap_confidence": 0.9096100497673013, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-586", "gold_index": 0, "cheap_confidence": 0.9053943713528352, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-587", "gold_index": 0, "cheap_confidence": 0.9371938788859535, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-588", "gold_index": 1, "cheap_confidence": 0.8720728187330437, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-589", "gold_index": 1, "cheap_confidence": 0.7338863225511373, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-590", "gold_index": 0, "cheap_confidence": 0.9505164162583989, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-591", "gold_index": 0, "cheap_confidence": 0.9504264537405361, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-592", "gold_index": 0, "cheap_confidence": 0.9213755766055985, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-593", "gold_index": 1, "cheap_confidence": 0.9491362546203791, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-594", "gold_index": 1, "cheap_confidence": 0.9627084655792754, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-595", "gold_index": 0, "cheap_confidence": 0.8694526596316311, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-596", "gold_index": 0, "cheap_confidence": 0.8294219132517059, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-597", "gold_index": 0, "cheap_confidence": 0.8264385083241967, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-598", "gold_index": 0, "cheap_confidence": 0.9552972523309876, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-599", "gold_index": 0, "cheap_confidence": 0.948057089311782, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-600", "gold_index": 0, "cheap_confidence": 0.945056073476836, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-601", "gold_index": 0, "cheap_confidence": 0.9253978626862887, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-602", "gold_index": 1, "cheap_confidence": 0.9112417263427164, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-603", "gold_index": 1, "cheap_confidence": 0.9665974208453308, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-604", "gold_index": 0, "cheap_confidence": 0.5673527691882242, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-605", "gold_index": 1, "cheap_confidence": 0.5997833744429715, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-606", "gold_index": 0, "cheap_confidence": 0.9600809202661077, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-607", "gold_index": 1, "cheap_confidence": 0.8972308621518315, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-608", "gold_index": 1, "cheap_confidence": 0.923642951795405, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-609", "gold_index": 1, "cheap_confidence": 0.5528380220326653, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-610", "gold_index": 0, "cheap_confidence": 0.8805416772077318, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-611", "gold_index": 1, "cheap_confidence": 0.947827418310329, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-612", "gold_index": 0, "cheap_confidence": 0.9435260250164877, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-613", "gold_index": 1, "cheap_confidence": 0.9516061948248834, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-614", "gold_index": 1, "cheap_confidence": 0.5931525753344555, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-615", "gold_index": 0, "cheap_confidence": 0.9228277657788324, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-616", "gold_index": 1, "cheap_confidence": 0.93716914983012, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-617", "gold_index": 0, "cheap_confidence": 0.9332492945100446, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-618", "gold_index": 0, "cheap_confidence": 0.8167041542496317, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-619", "gold_index": 0, "cheap_confidence": 0.955802161727432, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-620", "gold_index": 0, "cheap_confidence": 0.9276195583299311, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-621", "gold_index": 1, "cheap_confidence": 0.9396456808167172, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-622", "gold_index": 1, "cheap_confidence": 0.9271574386901359, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-623", "gold_index": 1, "cheap_confidence": 0.9275363554747872, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-624", "gold_index": 1, "cheap_confidence": 0.9314157783887435, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-625", "gold_index": 1, "cheap_confidence": 0.9471847538710186, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-626", "gold_index": 1, "cheap_confidence": 0.9550168634304471, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-627", "gold_index": 0, "cheap_confidence": 0.9411407728939517, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-628", "gold_index": 1, "cheap_confidence": 0.9541651978114581, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-629", "gold_index": 0, "cheap_confidence": 0.9354159452914984, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-630", "gold_index": 1, "cheap_confidence": 0.8997409034470889, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-631", "gold_index": 0, "cheap_confidence": 0.8202347061020805, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-632", "gold_index": 0, "cheap_confidence": 0.9585211574369054, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-633", "gold_index": 1, "cheap_confidence": 0.9452311707517892, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-634", "gold_index": 1, "cheap_confidence": 0.9680999047293791, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-635", "gold_index": 0, "cheap_confidence": 0.7209215246907589, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-636", "gold_index": 1, "cheap_confidence": 0.7882276013871126, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-637", "gold_index": 0, "cheap_confidence": 0.6837387110410619, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-638", "gold_index": 1, "cheap_confidence": 0.9310470794425658, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-639", "gold_index": 0, "cheap_confidence": 0.9237105507647565, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-640", "gold_index": 1, "cheap_confidence": 0.9466712144645536, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-641", "gold_index": 1, "cheap_confidence": 0.9291783086450547, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-642", "gold_index": 0, "cheap_confidence": 0.9507066911095514, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-643", "gold_index": 1, "cheap_confidence": 0.7850878491909516, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-644", "gold_index": 1, "cheap_confidence": 0.8385658874920107, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-645", "gold_index": 0, "cheap_confidence": 0.7847295591510228, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-646", "gold_index": 0, "cheap_confidence": 0.7860076113005816, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-647", "gold_index": 0, "cheap_confidence": 0.9428863653715931, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-648", "gold_index": 1, "cheap_confidence": 0.5361308940851913, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-649", "gold_index": 0, "cheap_confidence": 0.9484772023642438, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-650", "gold_index": 0, "cheap_confidence": 0.9511109027058793, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-651", "gold_index": 0, "cheap_confidence": 0.9550328027406679, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-652", "gold_index": 0, "cheap_confidence": 0.9547301116064765, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-653", "gold_index": 0, "cheap_confidence": 0.9471440301394423, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-654", "gold_index": 0, "cheap_confidence": 0.9428236356689558, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-655", "gold_index": 1, "cheap_confidence": 0.7595308253327182, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-656", "gold_index": 1, "cheap_confidence": 0.7866273112020915, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-657", "gold_index": 0, "cheap_confidence": 0.927197893085193, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-658", "gold_index": 1, "cheap_confidence": 0.9435431382140631, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-659", "gold_index": 0, "cheap_confidence": 0.5086182433466149, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-660", "gold_index": 1, "cheap_confidence": 0.9580133936724082, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-661", "gold_index": 0, "cheap_confidence": 0.9044758417743629, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-662", "gold_index": 0, "cheap_confidence": 0.928444816447605, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-663", "gold_index": 1, "cheap_confidence": 0.5746812015380054, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-664", "gold_index": 1, "cheap_confidence": 0.5275878582946019, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-665", "gold_index": 1, "cheap_confidence": 0.7593152369659044, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-666", "gold_index": 1, "cheap_confidence": 0.9514144157160862, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-667", "gold_index": 1, "cheap_confidence": 0.8950714384911647, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-668", "gold_index": 0, "cheap_confidence": 0.7260704249149781, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-669", "gold_index": 1, "cheap_confidence": 0.9367452329947782, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-670", "gold_index": 0, "cheap_confidence": 0.9453043420612788, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-671", "gold_index": 1, "cheap_confidence": 0.9621324335737336, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-672", "gold_index": 0, "cheap_confidence": 0.8706147505734324, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-673", "gold_index": 1, "cheap_confidence": 0.9522309165641678, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-674", "gold_index": 1, "cheap_confidence": 0.8779725802922935, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-675", "gold_index": 1, "cheap_confidence": 0.8833340012183161, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-676", "gold_index": 0, "cheap_confidence": 0.9458039375495445, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-677", "gold_index": 1, "cheap_confidence": 0.6083142170315792, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-678", "gold_index": 1, "cheap_confidence": 0.935266677930901, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-679", "gold_index": 1, "cheap_confidence": 0.9404273537006541, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-680", "gold_index": 1, "cheap_confidence": 0.8436834504213161, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-681", "gold_index": 0, "cheap_confidence": 0.9386267964511825, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-682", "gold_index": 0, "cheap_confidence": 0.944078547833443, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-683", "gold_index": 1, "cheap_confidence": 0.8429734705004686, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-684", "gold_index": 1, "cheap_confidence": 0.654400232940238, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-685", "gold_index": 1, "cheap_confidence": 0.6454745907886252, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-686", "gold_index": 1, "cheap_confidence": 0.9466020787270872, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-687", "gold_index": 0, "cheap_confidence": 0.9397359136300788, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-688", "gold_index": 0, "cheap_confidence": 0.9356191925787041, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-689", "gold_index": 0, "cheap_confidence": 0.7308639944498224, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-690", "gold_index": 0, "cheap_confidence": 0.9585464518876009, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-691", "gold_index": 1, "cheap_confidence": 0.7734671762336655, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-692", "gold_index": 0, "cheap_confidence": 0.7457390443855283, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-693", "gold_index": 0, "cheap_confidence": 0.9601882249950422, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-694", "gold_index": 0, "cheap_confidence": 0.5353012172779514, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-695", "gold_index": 0, "cheap_confidence": 0.7982721428397134, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-696", "gold_index": 1, "cheap_confidence": 0.9452546349776176, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-697", "gold_index": 1, "cheap_confidence": 0.9298424511502348, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-698", "gold_index": 1, "cheap_confidence": 0.8182751511266, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-699", "gold_index": 1, "cheap_confidence": 0.8499711605852077, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-700", "gold_index": 0, "cheap_confidence": 0.7733724505660328, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-701", "gold_index": 0, "cheap_confidence": 0.9198999414552569, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-702", "gold_index": 0, "cheap_confidence": 0.9345691575406608, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-703", "gold_index": 0, "cheap_confidence": 0.9361521339137471, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-704", "gold_index": 0, "cheap_confidence": 0.9408751424615054, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-705", "gold_index": 0, "cheap_confidence": 0.9656684007534921, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-706", "gold_index": 0, "cheap_confidence": 0.8049147135426219, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-707", "gold_index": 0, "cheap_confidence": 0.5016575772717279, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-708", "gold_index": 1, "cheap_confidence": 0.960624659924269, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-709", "gold_index": 0, "cheap_confidence": 0.9262053421932338, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-710", "gold_index": 0, "cheap_confidence": 0.7236637587638077, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-711", "gold_index": 0, "cheap_confidence": 0.939868346449564, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-712", "gold_index": 0, "cheap_confidence": 0.9347427024409714, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-713", "gold_index": 0, "cheap_confidence": 0.8714578936778352, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-714", "gold_index": 1, "cheap_confidence": 0.9568692358833979, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-715", "gold_index": 0, "cheap_confidence": 0.9244808997056005, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-716", "gold_index": 0, "cheap_confidence": 0.9303652382937615, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-717", "gold_index": 1, "cheap_confidence": 0.9578141175008735, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-718", "gold_index": 1, "cheap_confidence": 0.9465831656616752, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-719", "gold_index": 0, "cheap_confidence": 0.9516352637767024, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-720", "gold_index": 1, "cheap_confidence": 0.7141254585343239, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-721", "gold_index": 1, "cheap_confidence": 0.8403580611799865, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-722", "gold_index": 0, "cheap_confidence": 0.9325769137315306, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-723", "gold_index": 1, "cheap_confidence": 0.9666063935622243, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-724", "gold_index": 0, "cheap_confidence": 0.9187739880466265, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-725", "gold_index": 1, "cheap_confidence": 0.9414540277737585, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-726", "gold_index": 1, "cheap_confidence": 0.9530179888321567, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-727", "gold_index": 0, "cheap_confidence": 0.9566342313788472, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-728", "gold_index": 1, "cheap_confidence": 0.5575328126658704, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-729", "gold_index": 1, "cheap_confidence": 0.9569597673622112, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-730", "gold_index": 0, "cheap_confidence": 0.9547749379501619, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-731", "gold_index": 0, "cheap_confidence": 0.9012304031480539, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-732", "gold_index": 0, "cheap_confidence": 0.9546853985114214, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-733", "gold_index": 0, "cheap_confidence": 0.9368632868729397, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-734", "gold_index": 0, "cheap_confidence": 0.8115228685974994, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-735", "gold_index": 0, "cheap_confidence": 0.8928654750887196, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-736", "gold_index": 0, "cheap_confidence": 0.5076337791749834, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-737", "gold_index": 1, "cheap_confidence": 0.9205700552911608, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-738", "gold_index": 1, "cheap_confidence": 0.9375226616645549, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-739", "gold_index": 1, "cheap_confidence": 0.9373978724179897, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-740", "gold_index": 1, "cheap_confidence": 0.9563206181423618, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-741", "gold_index": 1, "cheap_confidence": 0.5645244280075404, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-742", "gold_index": 1, "cheap_confidence": 0.5985555546038321, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-743", "gold_index": 0, "cheap_confidence": 0.9125429486987233, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-744", "gold_index": 1, "cheap_confidence": 0.8739835345168865, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-745", "gold_index": 0, "cheap_confidence": 0.9517653498472419, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-746", "gold_index": 1, "cheap_confidence": 0.9019758610209752, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-747", "gold_index": 1, "cheap_confidence": 0.9368217270735683, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-748", "gold_index": 0, "cheap_confidence": 0.9421034169679169, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-749", "gold_index": 1, "cheap_confidence": 0.940250650535755, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-750", "gold_index": 0, "cheap_confidence": 0.945011085081812, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-751", "gold_index": 0, "cheap_confidence": 0.8472027031433437, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-752", "gold_index": 0, "cheap_confidence": 0.9024473245165815, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-753", "gold_index": 1, "cheap_confidence": 0.9362549656044425, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-754", "gold_index": 1, "cheap_confidence": 0.9308436765054166, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-755", "gold_index": 1, "cheap_confidence": 0.8423252583275809, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-756", "gold_index": 0, "cheap_confidence": 0.7036270106025637, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-757", "gold_index": 0, "cheap_confidence": 0.9024915889729852, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-758", "gold_index": 1, "cheap_confidence": 0.9371210315741051, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-759", "gold_index": 0, "cheap_confidence": 0.9110735359434686, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-760", "gold_index": 1, "cheap_confidence": 0.8513108549412236, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-761", "gold_index": 0, "cheap_confidence": 0.9444530805079804, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-762", "gold_index": 1, "cheap_confidence": 0.9647075465596141, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-763", "gold_index": 1, "cheap_confidence": 0.7466478037304779, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-764", "gold_index": 0, "cheap_confidence": 0.9072444451193473, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-765", "gold_index": 0, "cheap_confidence": 0.7394466108830021, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-766", "gold_index": 1, "cheap_confidence": 0.9402664033273387, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-767", "gold_index": 1, "cheap_confidence": 0.9640374882681605, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-768", "gold_index": 1, "cheap_confidence": 0.5906313083376855, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-769", "gold_index": 1, "cheap_confidence": 0.9506069429747133, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-770", "gold_index": 0, "cheap_confidence": 0.8321140260773588, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-771", "gold_index": 0, "cheap_confidence": 0.94030757678651, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-772", "gold_index": 1, "cheap_confidence": 0.9348224074016789, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-773", "gold_index": 1, "cheap_confidence": 0.9263674857027459, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-774", "gold_index": 0, "cheap_confidence": 0.9223726804936466, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-775", "gold_index": 0, "cheap_confidence": 0.8628926372921553, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-776", "gold_index": 0, "cheap_confidence": 0.9521315756425578, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-777", "gold_index": 1, "cheap_confidence": 0.6651040231231714, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-778", "gold_index": 1, "cheap_confidence": 0.9558932353733913, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-779", "gold_index": 0, "cheap_confidence": 0.9221001157257775, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-780", "gold_index": 1, "cheap_confidence": 0.5109361763558072, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-781", "gold_index": 0, "cheap_confidence": 0.9337052004966643, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-782", "gold_index": 1, "cheap_confidence": 0.7829905439980015, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-783", "gold_index": 1, "cheap_confidence": 0.5867741556164127, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-784", "gold_index": 1, "cheap_confidence": 0.9420610600513705, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-785", "gold_index": 1, "cheap_confidence": 0.9477139333731845, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-786", "gold_index": 0, "cheap_confidence": 0.8409839132432787, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-787", "gold_index": 0, "cheap_confidence": 0.9370465692012584, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-788", "gold_index": 1, "cheap_confidence": 0.8875547567977776, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-789", "gold_index": 0, "cheap_confidence": 0.9543063870873132, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-790", "gold_index": 0, "cheap_confidence": 0.9471942933931997, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-791", "gold_index": 0, "cheap_confidence": 0.7267394246521431, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-792", "gold_index": 1, "cheap_confidence": 0.9222065943694296, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-793", "gold_index": 1, "cheap_confidence": 0.8239729766087559, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-794", "gold_index": 1, "cheap_confidence": 0.9250962506036816, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-795", "gold_index": 0, "cheap_confidence": 0.9327263618379589, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-796", "gold_index": 1, "cheap_confidence": 0.8199966758825091, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-797", "gold_index": 0, "cheap_confidence": 0.9134913319752674, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-798", "gold_index": 0, "cheap_confidence": 0.9143513659495769, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-799", "gold_index": 1, "cheap_confidence": 0.9701155648039115, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-800", "gold_index": 0, "cheap_confidence": 0.9538681340264151, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-801", "gold_index": 0, "cheap_confidence": 0.7861696251267889, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-802", "gold_index": 0, "cheap_confidence": 0.9147748195306823, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-803", "gold_index": 1, "cheap_confidence": 0.6675570491621411, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-804", "gold_index": 0, "cheap_confidence": 0.8786886384689206, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-805", "gold_index": 0, "cheap_confidence": 0.7225846695332048, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-806", "gold_index": 1, "cheap_confidence": 0.9490079744531835, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-807", "gold_index": 1, "cheap_confidence": 0.9671218923786826, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-808", "gold_index": 1, "cheap_confidence": 0.9498118199302056, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-809", "gold_index": 1, "cheap_confidence": 0.9089538679828312, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-810", "gold_index": 1, "cheap_confidence": 0.9579943380215079, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-811", "gold_index": 0, "cheap_confidence": 0.9425323464570123, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-812", "gold_index": 1, "cheap_confidence": 0.9430182292563035, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-813", "gold_index": 0, "cheap_confidence": 0.9193257495641504, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-814", "gold_index": 0, "cheap_confidence": 0.946765084341436, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-815", "gold_index": 1, "cheap_confidence": 0.9678548480691233, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-816", "gold_index": 1, "cheap_confidence": 0.5719309501780122, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-817", "gold_index": 1, "cheap_confidence": 0.9588204483574935, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-818", "gold_index": 0, "cheap_confidence": 0.6293642882325877, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-819", "gold_index": 0, "cheap_confidence": 0.6599841101830218, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-820", "gold_index": 1, "cheap_confidence": 0.9219410637900326, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-821", "gold_index": 1, "cheap_confidence": 0.8631307555404305, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-822", "gold_index": 0, "cheap_confidence": 0.9463469281844427, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-823", "gold_index": 1, "cheap_confidence": 0.6496793362007968, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-824", "gold_index": 0, "cheap_confidence": 0.8626721746314874, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-825", "gold_index": 1, "cheap_confidence": 0.9627389301250124, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-826", "gold_index": 1, "cheap_confidence": 0.9525058085112025, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-827", "gold_index": 0, "cheap_confidence": 0.6661719040383184, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-828", "gold_index": 0, "cheap_confidence": 0.9267691196581441, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-829", "gold_index": 0, "cheap_confidence": 0.9560609986979849, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-830", "gold_index": 1, "cheap_confidence": 0.8933052015028944, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-831", "gold_index": 1, "cheap_confidence": 0.5473719305525512, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-832", "gold_index": 0, "cheap_confidence": 0.9309005722776893, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-833", "gold_index": 0, "cheap_confidence": 0.953029705069181, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-834", "gold_index": 1, "cheap_confidence": 0.8607714459290872, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-835", "gold_index": 1, "cheap_confidence": 0.946170438955348, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-836", "gold_index": 0, "cheap_confidence": 0.932617682611233, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-837", "gold_index": 1, "cheap_confidence": 0.893637818671756, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-838", "gold_index": 0, "cheap_confidence": 0.8458993451788877, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-839", "gold_index": 0, "cheap_confidence": 0.9277288884788768, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-840", "gold_index": 0, "cheap_confidence": 0.8808187585919782, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-841", "gold_index": 1, "cheap_confidence": 0.6868524599835861, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-842", "gold_index": 0, "cheap_confidence": 0.8055867939997211, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-843", "gold_index": 0, "cheap_confidence": 0.9478028094077097, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-844", "gold_index": 0, "cheap_confidence": 0.9582476326350754, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-845", "gold_index": 0, "cheap_confidence": 0.9345477176573239, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-846", "gold_index": 0, "cheap_confidence": 0.8884875847451483, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-847", "gold_index": 1, "cheap_confidence": 0.6419279321818273, "cheap_choice": 0, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-848", "gold_index": 1, "cheap_confidence": 0.9482249294008095, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-849", "gold_index": 1, "cheap_confidence": 0.9144777649342514, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-850", "gold_index": 1, "cheap_confidence": 0.926041710200161, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-851", "gold_index": 0, "cheap_confidence": 0.8705647820047135, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-852", "gold_index": 0, "cheap_confidence": 0.790156422156604, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-853", "gold_index": 1, "cheap_confidence": 0.8143079552752411, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-854", "gold_index": 0, "cheap_confidence": 0.7755010373178182, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-855", "gold_index": 1, "cheap_confidence": 0.9169603274551064, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-856", "gold_index": 1, "cheap_confidence": 0.8434873864503754, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-857", "gold_index": 1, "cheap_confidence": 0.9676736544131807, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-858", "gold_index": 1, "cheap_confidence": 0.8750354576606312, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-859", "gold_index": 1, "cheap_confidence": 0.9490612658725791, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-860", "gold_index": 1, "cheap_confidence": 0.9288466473187739, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-861", "gold_index": 1, "cheap_confidence": 0.9256673543695003, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-862", "gold_index": 0, "cheap_confidence": 0.6902720459227124, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-863", "gold_index": 0, "cheap_confidence": 0.8292661522829725, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-864", "gold_index": 0, "cheap_confidence": 0.9498770475915926, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "sst2-validation-865", "gold_index": 1, "cheap_confidence": 0.5378710431750549, "cheap_choice": 1, "strong_choice": 0, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-866", "gold_index": 1, "cheap_confidence": 0.946228404773504, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "sst2-validation-867", "gold_index": 0, "cheap_confidence": 0.7899087982374244, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-868", "gold_index": 1, "cheap_confidence": 0.7548789997003313, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-869", "gold_index": 0, "cheap_confidence": 0.8967757099560363, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-870", "gold_index": 0, "cheap_confidence": 0.8365516866831202, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "sst2-validation-871", "gold_index": 1, "cheap_confidence": 0.9206217135497118, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}

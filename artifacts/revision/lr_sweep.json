@@ -1,0 +1,217 @@
+{
+  "banking77": {
+    "lr-2e-05__ep-3": {
+      "dev_accuracy": 0.9025,
+      "dev_log_loss": 0.3880312228457389,
+      "train_loss": 1.1055784157476287
+    },
+    "lr-5e-05__ep-3": {
+      "dev_accuracy": 0.9225,
+      "dev_log_loss": 0.24191399975516803,
+      "train_loss": 0.7390868409494493
+    },
+    "lr-0.0001__ep-3": {
+      "dev_accuracy": 0.9325,
+      "dev_log_loss": 0.22326839296114379,
+      "train_loss": 0.5514039653126492
+    },
+    "lr-0.0002__ep-3": {
+      "dev_accuracy": 0.9425,
+      "dev_log_loss": 0.2119966017320509,
+      "train_loss": 0.49289344991186007
+    },
+    "lr-2e-05__ep-6": {
+      "dev_accuracy": 0.93,
+      "dev_log_loss": 0.2806357658401527,
+      "train_loss": 0.6313500077982463
+    },
+    "lr-5e-05__ep-6": {
+      "dev_accuracy": 0.935,
+      "dev_log_loss": 0.22369269732771077,
+      "train_loss": 0.4184712649871507
+    },
+    "lr-0.0001__ep-6": {
+      "dev_accuracy": 0.95,
+      "dev_log_loss": 0.23008678303089097,
+      "train_loss": 0.3542797993410035
+    },
+    "lr-0.0002__ep-6": {
+      "dev_accuracy": 0.94,
+      "dev_log_loss": 0.20446269951560814,
+      "train_loss": 0.317124229222948
+    },
+    "selected": "lr-0.0001__ep-6"
+  },
+  "massive": {
+    "lr-2e-05__ep-3": {
+      "dev_accuracy": 0.8925,
+      "dev_log_loss": 0.4194186716790722,
+      "train_loss": 0.9193061676152327
+    },
+    "lr-5e-05__ep-3": {
+      "dev_accuracy": 0.925,
+      "dev_log_loss": 0.3186706272341057,
+      "train_loss": 0.6061422293484039
+    },
+    "lr-0.0001__ep-3": {
+      "dev_accuracy": 0.935,
+      "dev_log_loss": 0.28278120566708576,
+      "train_loss": 0.5067856373569359
+    },
+    "lr-0.0002__ep-3": {
+      "dev_accuracy": 0.9275,
+      "dev_log_loss": 0.3270858667465083,
+      "train_loss": 0.4902757508561653
+    },
+    "lr-2e-05__ep-6": {
+      "dev_accuracy": 0.8975,
+      "dev_log_loss": 0.3426317288733133,
+      "train_loss": 0.540335727135944
+    },
+    "lr-5e-05__ep-6": {
+      "dev_accuracy": 0.9375,
+      "dev_log_loss": 0.2963629935930768,
+      "train_loss": 0.3694053129019772
+    },
+    "lr-0.0001__ep-6": {
+      "dev_accuracy": 0.935,
+      "dev_log_loss": 0.32885878991001105,
+      "train_loss": 0.3208854933887913
+    },
+    "lr-0.0002__ep-6": {
+      "dev_accuracy": 0.9425,
+      "dev_log_loss": 0.32872409019901305,
+      "train_loss": 0.3004116429221405
+    },
+    "selected": "lr-0.0002__ep-6"
+  },
+  "clinc150": {
+    "lr-2e-05__ep-3": {
+      "dev_accuracy": 0.9475,
+      "dev_log_loss": 0.23307312097620325,
+      "train_loss": 0.9440830830059675
+    },
+    "lr-5e-05__ep-3": {
+      "dev_accuracy": 0.9775,
+      "dev_log_loss": 0.14700242528163346,
+      "train_loss": 0.527568255227811
+    },
+    "lr-0.0001__ep-3": {
+      "dev_accuracy": 0.975,
+      "dev_log_loss": 0.14476164903471664,
+      "train_loss": 0.40803406019320293
+    },
+    "lr-0.0002__ep-3": {
+      "dev_accuracy": 0.96,
+      "dev_log_loss": 0.1805293912685124,
+      "train_loss": 0.36021827210693463
+    },
+    "lr-2e-05__ep-6": {
+      "dev_accuracy": 0.965,
+      "dev_log_loss": 0.1778913189699029,
+      "train_loss": 0.5005549965717985
+    },
+    "lr-5e-05__ep-6": {
+      "dev_accuracy": 0.9625,
+      "dev_log_loss": 0.1718662069786434,
+      "train_loss": 0.3273363991417896
+    },
+    "lr-0.0001__ep-6": {
+      "dev_accuracy": 0.9775,
+      "dev_log_loss": 0.1557983046157768,
+      "train_loss": 0.2612660247794528
+    },
+    "lr-0.0002__ep-6": {
+      "dev_accuracy": 0.9725,
+      "dev_log_loss": 0.1749183615844219,
+      "train_loss": 0.23404232893198923
+    },
+    "selected": "lr-5e-05__ep-3"
+  },
+  "banking77_oos": {
+    "lr-2e-05__ep-3": {
+      "dev_accuracy": 0.845,
+      "dev_log_loss": 0.6762625581481353,
+      "train_loss": 1.3669632446390014
+    },
+    "lr-5e-05__ep-3": {
+      "dev_accuracy": 0.8875,
+      "dev_log_loss": 0.45421104335493667,
+      "train_loss": 0.9473070957974807
+    },
+    "lr-0.0001__ep-3": {
+      "dev_accuracy": 0.8925,
+      "dev_log_loss": 0.40798733422101213,
+      "train_loss": 0.7094194398202874
+    },
+    "lr-0.0002__ep-3": {
+      "dev_accuracy": 0.8825,
+      "dev_log_loss": 0.40846377530321365,
+      "train_loss": 0.6430162046742331
+    },
+    "lr-2e-05__ep-6": {
+      "dev_accuracy": 0.8675,
+      "dev_log_loss": 0.49263895541527847,
+      "train_loss": 0.8220908290094083
+    },
+    "lr-5e-05__ep-6": {
+      "dev_accuracy": 0.89,
+      "dev_log_loss": 0.4177757097298388,
+      "train_loss": 0.5165891205040352
+    },
+    "lr-0.0001__ep-6": {
+      "dev_accuracy": 0.8825,
+      "dev_log_loss": 0.4792385189005436,
+      "train_loss": 0.480207389238215
+    },
+    "lr-0.0002__ep-6": {
+      "dev_accuracy": 0.88,
+      "dev_log_loss": 0.49069455789095784,
+      "train_loss": 0.4143353209852845
+    },
+    "selected": "lr-0.0001__ep-3"
+  },
+  "multidogo": {
+    "lr-2e-05__ep-3": {
+      "dev_accuracy": 0.9489322191272052,
+      "dev_log_loss": 0.18837026230179144,
+      "train_loss": 0.3077806739152229
+    },
+    "lr-5e-05__ep-3": {
+      "dev_accuracy": 0.9512534818941504,
+      "dev_log_loss": 0.18071249246443574,
+      "train_loss": 0.26816878405873107
+    },
+    "lr-0.0001__ep-3": {
+      "dev_accuracy": 0.9512534818941504,
+      "dev_log_loss": 0.18848764478529553,
+      "train_loss": 0.2512898027902751
+    },
+    "lr-0.0002__ep-3": {
+      "dev_accuracy": 0.9503249767873724,
+      "dev_log_loss": 0.186836427688217,
+      "train_loss": 0.2569329018178931
+    },
+    "lr-2e-05__ep-6": {
+      "dev_accuracy": 0.9484679665738162,
+      "dev_log_loss": 0.2176593841137221,
+      "train_loss": 0.23100718286417357
+    },
+    "lr-5e-05__ep-6": {
+      "dev_accuracy": 0.9503249767873724,
+      "dev_log_loss": 0.20592176530061324,
+      "train_loss": 0.2049878173682536
+    },
+    "lr-0.0001__ep-6": {
+      "dev_accuracy": 0.947539461467038,
+      "dev_log_loss": 0.2193003046298577,
+      "train_loss": 0.20172182800297506
+    },
+    "lr-0.0002__ep-6": {
+      "dev_accuracy": 0.947539461467038,
+      "dev_log_loss": 0.2178312247520044,
+      "train_loss": 0.20268888205868005
+    },
+    "selected": "lr-5e-05__ep-3"
+  }
+}

@@ -1,0 +1,5 @@
+{"error": null, "latency_ms": 28647.94019999681, "text": "scope: yes\nintent: 110", "provider": "Novita", "prompt_tokens": 1486, "cached_tokens": 0, "completion_tokens": 11, "cost": 0.00021244, "id": "clinc150-s0-t0"}
+{"error": null, "latency_ms": 40234.71459999564, "text": "scope: yes\nintent: 100", "provider": "Novita", "prompt_tokens": 1578, "cached_tokens": 0, "completion_tokens": 11, "cost": 0.00022532, "id": "clinc150-s0-t1"}
+{"error": null, "latency_ms": 17704.44219998899, "text": "scope: no\nintent: 000", "provider": "Novita", "prompt_tokens": 1486, "cached_tokens": 0, "completion_tokens": 11, "cost": 0.00021244, "id": "clinc150-s0-t2"}
+{"error": null, "latency_ms": 28338.883100019302, "text": "scope: yes\nintent: 100", "provider": "Novita", "prompt_tokens": 1567, "cached_tokens": 0, "completion_tokens": 11, "cost": 0.00022378, "id": "clinc150-s0-t3"}
+{"error": null, "latency_ms": 58190.16820000252, "text": "scope: yes\nintent: 100", "provider": "Novita", "prompt_tokens": 1581, "cached_tokens": 0, "completion_tokens": 11, "cost": 0.00022574, "id": "clinc150-s0-t4"}

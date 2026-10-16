@@ -1,0 +1,110 @@
+{
+  "protocol_id": "workflow-retrieval-few-shot-2026-10-13",
+  "domains": {
+    "banking77": {
+      "dense_alone": {
+        "node_accuracy": {
+          "scope": 0.998,
+          "intent": 0.9486537257357546,
+          "repeat": 0.9724310776942355
+        },
+        "turn_success": 0.95,
+        "session_success": 0.8125,
+        "session_success_ci": [
+          0.775,
+          0.8475
+        ]
+      },
+      "dense_minus_bm25": {
+        "specialist": 0.8125,
+        "model": 0.7875,
+        "difference_points": 2.500000000000002,
+        "ci": [
+          -0.2500000000000058,
+          5.249999999999999
+        ],
+        "mcnemar": {
+          "only_specialist": 22,
+          "only_model": 12,
+          "exact_p": 0.12144948495551944
+        },
+        "n": 400
+      },
+      "gold_in_top20": {
+        "dense": 0.965,
+        "bm25": 0.946
+      },
+      "usd_per_1000_sessions": 0.7521558999999999
+    },
+    "massive": {
+      "dense_alone": {
+        "node_accuracy": {
+          "scope": 0.985,
+          "intent": 0.9051186017478152,
+          "repeat": 0.9292845257903494
+        },
+        "turn_success": 0.9075,
+        "session_success": 0.6625,
+        "session_success_ci": [
+          0.6175,
+          0.7075
+        ]
+      },
+      "dense_minus_bm25": {
+        "specialist": 0.6625,
+        "model": 0.65,
+        "difference_points": 1.2499999999999956,
+        "ci": [
+          -2.2500000000000075,
+          4.749999999999998
+        ],
+        "mcnemar": {
+          "only_specialist": 29,
+          "only_model": 24,
+          "exact_p": 0.5831321542611763
+        },
+        "n": 400
+      },
+      "gold_in_top20": {
+        "dense": 0.9745,
+        "bm25": 0.9605
+      },
+      "usd_per_1000_sessions": 0.5714698
+    },
+    "clinc150": {
+      "dense_alone": {
+        "node_accuracy": {
+          "scope": 0.962,
+          "intent": 0.9832089552238806,
+          "repeat": 0.9801488833746899
+        },
+        "turn_success": 0.9445,
+        "session_success": 0.785,
+        "session_success_ci": [
+          0.745,
+          0.825
+        ]
+      },
+      "dense_minus_bm25": {
+        "specialist": 0.785,
+        "model": 0.8075,
+        "difference_points": -2.2499999999999964,
+        "ci": [
+          -5.75,
+          1.0000000000000009
+        ],
+        "mcnemar": {
+          "only_specialist": 19,
+          "only_model": 28,
+          "exact_p": 0.24296021728332562
+        },
+        "n": 400
+      },
+      "gold_in_top20": {
+        "dense": 0.898,
+        "bm25": 0.8915
+      },
+      "usd_per_1000_sessions": 1.0676676999999999
+    }
+  }
+}

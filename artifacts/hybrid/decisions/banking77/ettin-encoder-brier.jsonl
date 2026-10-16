@@ -1,0 +1,500 @@
+{"item_id": "banking77-test-527", "gold_index": 49, "cheap_confidence": 0.8139493037868593, "cheap_choice": 49, "strong_choice": 49, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1170", "gold_index": 74, "cheap_confidence": 0.7824963833152773, "cheap_choice": 74, "strong_choice": 74, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1588", "gold_index": 26, "cheap_confidence": 0.9820011592624127, "cheap_choice": 26, "strong_choice": 26, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2249", "gold_index": 50, "cheap_confidence": 0.9890351340364602, "cheap_choice": 50, "strong_choice": 50, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2391", "gold_index": 71, "cheap_confidence": 0.9376093586799479, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1137", "gold_index": 30, "cheap_confidence": 0.9751244876624411, "cheap_choice": 30, "strong_choice": 30, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2629", "gold_index": 37, "cheap_confidence": 0.9944304437608574, "cheap_choice": 37, "strong_choice": 37, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1862", "gold_index": 48, "cheap_confidence": 0.39014768431942337, "cheap_choice": 48, "strong_choice": 48, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1505", "gold_index": 28, "cheap_confidence": 0.9976133671706187, "cheap_choice": 28, "strong_choice": 28, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1746", "gold_index": 27, "cheap_confidence": 0.9790510305068097, "cheap_choice": 27, "strong_choice": 27, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1632", "gold_index": 45, "cheap_confidence": 0.9377900681801318, "cheap_choice": 45, "strong_choice": 45, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1389", "gold_index": 29, "cheap_confidence": 0.5627549966182273, "cheap_choice": 29, "strong_choice": 29, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2763", "gold_index": 31, "cheap_confidence": 0.9966263050080085, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-632", "gold_index": 56, "cheap_confidence": 0.32126078516610695, "cheap_choice": 7, "strong_choice": 50, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-654", "gold_index": 47, "cheap_confidence": 0.9816059914715821, "cheap_choice": 47, "strong_choice": 47, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-77", "gold_index": 13, "cheap_confidence": 0.9974328981220671, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-607", "gold_index": 56, "cheap_confidence": 0.9101241287074163, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2054", "gold_index": 67, "cheap_confidence": 0.991629991274635, "cheap_choice": 67, "strong_choice": 67, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-3021", "gold_index": 69, "cheap_confidence": 0.9922676728576099, "cheap_choice": 69, "strong_choice": 69, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-118", "gold_index": 32, "cheap_confidence": 0.7837001390131337, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-73", "gold_index": 13, "cheap_confidence": 0.9951448596359562, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-609", "gold_index": 56, "cheap_confidence": 0.9601355209099403, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2334", "gold_index": 65, "cheap_confidence": 0.9904571431581392, "cheap_choice": 65, "strong_choice": 65, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1189", "gold_index": 74, "cheap_confidence": 0.9066007232000741, "cheap_choice": 74, "strong_choice": 74, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2387", "gold_index": 71, "cheap_confidence": 0.9915686221152001, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1631", "gold_index": 45, "cheap_confidence": 0.7545176841180058, "cheap_choice": 45, "strong_choice": 45, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1637", "gold_index": 45, "cheap_confidence": 0.9825435225598577, "cheap_choice": 45, "strong_choice": 45, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2276", "gold_index": 50, "cheap_confidence": 0.9817807879700241, "cheap_choice": 50, "strong_choice": 50, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1109", "gold_index": 16, "cheap_confidence": 0.6756447008024856, "cheap_choice": 66, "strong_choice": 16, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-708", "gold_index": 8, "cheap_confidence": 0.973037489188732, "cheap_choice": 8, "strong_choice": 8, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1111", "gold_index": 16, "cheap_confidence": 0.9612296268656814, "cheap_choice": 16, "strong_choice": 16, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2438", "gold_index": 39, "cheap_confidence": 0.7228422330626397, "cheap_choice": 39, "strong_choice": 13, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1309", "gold_index": 73, "cheap_confidence": 0.9977396101162602, "cheap_choice": 73, "strong_choice": 73, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2408", "gold_index": 39, "cheap_confidence": 0.9933338573306972, "cheap_choice": 39, "strong_choice": 39, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1382", "gold_index": 29, "cheap_confidence": 0.9970050012511669, "cheap_choice": 29, "strong_choice": 29, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-40", "gold_index": 13, "cheap_confidence": 0.4730932839723926, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2216", "gold_index": 64, "cheap_confidence": 0.9809580886101946, "cheap_choice": 64, "strong_choice": 64, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-618", "gold_index": 56, "cheap_confidence": 0.9720378390115811, "cheap_choice": 57, "strong_choice": 57, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-665", "gold_index": 47, "cheap_confidence": 0.9537766352840034, "cheap_choice": 47, "strong_choice": 47, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2410", "gold_index": 39, "cheap_confidence": 0.9767103724014373, "cheap_choice": 39, "strong_choice": 39, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2853", "gold_index": 0, "cheap_confidence": 0.9992369668751392, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1105", "gold_index": 16, "cheap_confidence": 0.43182474167048257, "cheap_choice": 16, "strong_choice": 16, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2265", "gold_index": 50, "cheap_confidence": 0.9760943596524376, "cheap_choice": 50, "strong_choice": 50, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-225", "gold_index": 46, "cheap_confidence": 0.9957868629132395, "cheap_choice": 46, "strong_choice": 46, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-830", "gold_index": 15, "cheap_confidence": 0.7910284731995859, "cheap_choice": 15, "strong_choice": 15, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-786", "gold_index": 75, "cheap_confidence": 0.9922600771711927, "cheap_choice": 75, "strong_choice": 75, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-615", "gold_index": 56, "cheap_confidence": 0.9942063591428018, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-758", "gold_index": 60, "cheap_confidence": 0.9895570930956471, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1779", "gold_index": 51, "cheap_confidence": 0.987595615907446, "cheap_choice": 51, "strong_choice": 51, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2933", "gold_index": 9, "cheap_confidence": 0.9960387640434784, "cheap_choice": 9, "strong_choice": 9, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-368", "gold_index": 14, "cheap_confidence": 0.8811719271072355, "cheap_choice": 49, "strong_choice": 49, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1621", "gold_index": 45, "cheap_confidence": 0.9236225578861187, "cheap_choice": 45, "strong_choice": 45, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-238", "gold_index": 46, "cheap_confidence": 0.9933130969433764, "cheap_choice": 46, "strong_choice": 46, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-66", "gold_index": 13, "cheap_confidence": 0.769968769665247, "cheap_choice": 11, "strong_choice": 13, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1844", "gold_index": 48, "cheap_confidence": 0.9858971801237733, "cheap_choice": 48, "strong_choice": 48, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-159", "gold_index": 17, "cheap_confidence": 0.9892475718609741, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2562", "gold_index": 76, "cheap_confidence": 0.9427763800324117, "cheap_choice": 76, "strong_choice": 76, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-226", "gold_index": 46, "cheap_confidence": 0.9905900520062806, "cheap_choice": 46, "strong_choice": 46, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-88", "gold_index": 32, "cheap_confidence": 0.9963516183728421, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2240", "gold_index": 50, "cheap_confidence": 0.9909660866329093, "cheap_choice": 50, "strong_choice": 50, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-156", "gold_index": 17, "cheap_confidence": 0.8955153086355387, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-205", "gold_index": 46, "cheap_confidence": 0.9965589708473008, "cheap_choice": 46, "strong_choice": 46, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2995", "gold_index": 2, "cheap_confidence": 0.9901163540626686, "cheap_choice": 2, "strong_choice": 2, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-75", "gold_index": 13, "cheap_confidence": 0.986498797316441, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2130", "gold_index": 21, "cheap_confidence": 0.21017819108822924, "cheap_choice": 21, "strong_choice": 21, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1483", "gold_index": 28, "cheap_confidence": 0.9945281640978774, "cheap_choice": 28, "strong_choice": 28, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-988", "gold_index": 10, "cheap_confidence": 0.2559723940287586, "cheap_choice": 10, "strong_choice": 10, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2080", "gold_index": 53, "cheap_confidence": 0.9666348971909812, "cheap_choice": 53, "strong_choice": 53, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1453", "gold_index": 3, "cheap_confidence": 0.9976016031420136, "cheap_choice": 3, "strong_choice": 3, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2521", "gold_index": 72, "cheap_confidence": 0.2510705559653495, "cheap_choice": 14, "strong_choice": 72, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1542", "gold_index": 44, "cheap_confidence": 0.9954206322583578, "cheap_choice": 44, "strong_choice": 44, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-680", "gold_index": 8, "cheap_confidence": 0.9883739914823421, "cheap_choice": 8, "strong_choice": 8, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1467", "gold_index": 3, "cheap_confidence": 0.9949796130935169, "cheap_choice": 3, "strong_choice": 3, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2560", "gold_index": 76, "cheap_confidence": 0.8642524843138807, "cheap_choice": 76, "strong_choice": 76, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1315", "gold_index": 73, "cheap_confidence": 0.6660951628107551, "cheap_choice": 54, "strong_choice": 54, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-3020", "gold_index": 69, "cheap_confidence": 0.6819873698967508, "cheap_choice": 69, "strong_choice": 74, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-950", "gold_index": 40, "cheap_confidence": 0.9796815122306909, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-638", "gold_index": 56, "cheap_confidence": 0.8968822834588509, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1888", "gold_index": 55, "cheap_confidence": 0.9966060251095716, "cheap_choice": 55, "strong_choice": 55, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-34", "gold_index": 11, "cheap_confidence": 0.9727267096367771, "cheap_choice": 11, "strong_choice": 11, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1065", "gold_index": 6, "cheap_confidence": 0.9802706927207688, "cheap_choice": 6, "strong_choice": 6, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-949", "gold_index": 40, "cheap_confidence": 0.982683241566514, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2847", "gold_index": 0, "cheap_confidence": 0.99785774882769, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1875", "gold_index": 48, "cheap_confidence": 0.6624827555694645, "cheap_choice": 48, "strong_choice": 48, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1823", "gold_index": 25, "cheap_confidence": 0.959234491315249, "cheap_choice": 25, "strong_choice": 25, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-3044", "gold_index": 24, "cheap_confidence": 0.9934927188109174, "cheap_choice": 24, "strong_choice": 24, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1217", "gold_index": 68, "cheap_confidence": 0.9806953514521707, "cheap_choice": 68, "strong_choice": 68, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1626", "gold_index": 45, "cheap_confidence": 0.9824208871904854, "cheap_choice": 63, "strong_choice": 63, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2128", "gold_index": 21, "cheap_confidence": 0.9840557907176384, "cheap_choice": 21, "strong_choice": 21, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2418", "gold_index": 39, "cheap_confidence": 0.9924813436006809, "cheap_choice": 39, "strong_choice": 39, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2061", "gold_index": 67, "cheap_confidence": 0.9203725863768908, "cheap_choice": 67, "strong_choice": 67, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2693", "gold_index": 5, "cheap_confidence": 0.44984220282694676, "cheap_choice": 48, "strong_choice": 5, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1240", "gold_index": 38, "cheap_confidence": 0.9775095171971205, "cheap_choice": 38, "strong_choice": 38, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-818", "gold_index": 15, "cheap_confidence": 0.9943716724558518, "cheap_choice": 15, "strong_choice": 15, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-668", "gold_index": 47, "cheap_confidence": 0.9776892599459994, "cheap_choice": 47, "strong_choice": 47, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1259", "gold_index": 38, "cheap_confidence": 0.9743827235749649, "cheap_choice": 38, "strong_choice": 38, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2424", "gold_index": 39, "cheap_confidence": 0.9923126882405435, "cheap_choice": 39, "strong_choice": 39, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1758", "gold_index": 27, "cheap_confidence": 0.2950023688484503, "cheap_choice": 25, "strong_choice": 25, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2828", "gold_index": 57, "cheap_confidence": 0.9946683341047676, "cheap_choice": 57, "strong_choice": 57, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-248", "gold_index": 36, "cheap_confidence": 0.9966336296197907, "cheap_choice": 36, "strong_choice": 36, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-730", "gold_index": 60, "cheap_confidence": 0.9908740386713119, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-703", "gold_index": 8, "cheap_confidence": 0.9865214068043812, "cheap_choice": 8, "strong_choice": 8, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-966", "gold_index": 10, "cheap_confidence": 0.43564601105112677, "cheap_choice": 29, "strong_choice": 10, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2779", "gold_index": 31, "cheap_confidence": 0.8128188631303288, "cheap_choice": 31, "strong_choice": 31, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-751", "gold_index": 60, "cheap_confidence": 0.9972313572979778, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1445", "gold_index": 3, "cheap_confidence": 0.9954966536576907, "cheap_choice": 3, "strong_choice": 3, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-629", "gold_index": 56, "cheap_confidence": 0.4906402523342223, "cheap_choice": 64, "strong_choice": 64, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-311", "gold_index": 12, "cheap_confidence": 0.9145171411918722, "cheap_choice": 12, "strong_choice": 12, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1843", "gold_index": 48, "cheap_confidence": 0.986032076058641, "cheap_choice": 48, "strong_choice": 48, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1761", "gold_index": 51, "cheap_confidence": 0.9981675887123875, "cheap_choice": 51, "strong_choice": 51, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-766", "gold_index": 75, "cheap_confidence": 0.9481141856741531, "cheap_choice": 75, "strong_choice": 75, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-302", "gold_index": 12, "cheap_confidence": 0.9475216514328202, "cheap_choice": 12, "strong_choice": 12, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2889", "gold_index": 19, "cheap_confidence": 0.9993068589103838, "cheap_choice": 19, "strong_choice": 19, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2401", "gold_index": 39, "cheap_confidence": 0.8492182323595882, "cheap_choice": 39, "strong_choice": 39, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-49", "gold_index": 13, "cheap_confidence": 0.994946109438361, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-637", "gold_index": 56, "cheap_confidence": 0.38422819833846666, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-277", "gold_index": 36, "cheap_confidence": 0.9966871700776101, "cheap_choice": 36, "strong_choice": 36, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2231", "gold_index": 64, "cheap_confidence": 0.702646961533889, "cheap_choice": 15, "strong_choice": 64, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2482", "gold_index": 43, "cheap_confidence": 0.9626117452197643, "cheap_choice": 43, "strong_choice": 43, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-160", "gold_index": 34, "cheap_confidence": 0.9912208857755658, "cheap_choice": 34, "strong_choice": 34, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2527", "gold_index": 72, "cheap_confidence": 0.2510287537694818, "cheap_choice": 14, "strong_choice": 72, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-928", "gold_index": 40, "cheap_confidence": 0.9622457175862337, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1976", "gold_index": 63, "cheap_confidence": 0.9933370774158647, "cheap_choice": 63, "strong_choice": 63, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1132", "gold_index": 30, "cheap_confidence": 0.9846987881697052, "cheap_choice": 30, "strong_choice": 30, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2127", "gold_index": 21, "cheap_confidence": 0.9887113016563875, "cheap_choice": 21, "strong_choice": 21, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1061", "gold_index": 6, "cheap_confidence": 0.9444753696487566, "cheap_choice": 6, "strong_choice": 6, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-243", "gold_index": 36, "cheap_confidence": 0.9603891958575206, "cheap_choice": 36, "strong_choice": 36, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2834", "gold_index": 57, "cheap_confidence": 0.9756756413938802, "cheap_choice": 57, "strong_choice": 57, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1696", "gold_index": 52, "cheap_confidence": 0.9939202124815801, "cheap_choice": 52, "strong_choice": 52, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-912", "gold_index": 54, "cheap_confidence": 0.9304297076565082, "cheap_choice": 36, "strong_choice": 36, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-3000", "gold_index": 69, "cheap_confidence": 0.9276174088040887, "cheap_choice": 69, "strong_choice": 69, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2899", "gold_index": 19, "cheap_confidence": 0.9961105506877223, "cheap_choice": 19, "strong_choice": 19, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2880", "gold_index": 19, "cheap_confidence": 0.9917744665037689, "cheap_choice": 19, "strong_choice": 19, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2396", "gold_index": 71, "cheap_confidence": 0.9905708328237696, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-7", "gold_index": 11, "cheap_confidence": 0.9288909115965163, "cheap_choice": 11, "strong_choice": 11, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-965", "gold_index": 10, "cheap_confidence": 0.30206861714210315, "cheap_choice": 10, "strong_choice": 10, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2287", "gold_index": 35, "cheap_confidence": 0.46975827455735547, "cheap_choice": 35, "strong_choice": 66, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1880", "gold_index": 55, "cheap_confidence": 0.9896646894710832, "cheap_choice": 55, "strong_choice": 55, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-245", "gold_index": 36, "cheap_confidence": 0.9392930698088754, "cheap_choice": 36, "strong_choice": 36, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-290", "gold_index": 12, "cheap_confidence": 0.9857781139697155, "cheap_choice": 12, "strong_choice": 12, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2479", "gold_index": 58, "cheap_confidence": 0.4900621508888974, "cheap_choice": 58, "strong_choice": 58, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2082", "gold_index": 53, "cheap_confidence": 0.9882709072076706, "cheap_choice": 53, "strong_choice": 53, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-3079", "gold_index": 24, "cheap_confidence": 0.9703242139871276, "cheap_choice": 24, "strong_choice": 24, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-3009", "gold_index": 69, "cheap_confidence": 0.8932150642518544, "cheap_choice": 69, "strong_choice": 69, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2650", "gold_index": 59, "cheap_confidence": 0.4218326679913895, "cheap_choice": 59, "strong_choice": 59, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1627", "gold_index": 45, "cheap_confidence": 0.9300933911690392, "cheap_choice": 45, "strong_choice": 45, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2817", "gold_index": 57, "cheap_confidence": 0.9782101752422587, "cheap_choice": 57, "strong_choice": 57, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-856", "gold_index": 66, "cheap_confidence": 0.9864931448763586, "cheap_choice": 66, "strong_choice": 66, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1284", "gold_index": 73, "cheap_confidence": 0.998543132346354, "cheap_choice": 73, "strong_choice": 73, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-137", "gold_index": 17, "cheap_confidence": 0.9849209184507622, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1553", "gold_index": 44, "cheap_confidence": 0.9972806694711356, "cheap_choice": 44, "strong_choice": 44, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-36", "gold_index": 11, "cheap_confidence": 0.9746244753996107, "cheap_choice": 11, "strong_choice": 11, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1958", "gold_index": 18, "cheap_confidence": 0.287776514684603, "cheap_choice": 26, "strong_choice": 61, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-141", "gold_index": 17, "cheap_confidence": 0.9927286014782336, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2703", "gold_index": 5, "cheap_confidence": 0.39817025916402055, "cheap_choice": 35, "strong_choice": 35, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2047", "gold_index": 67, "cheap_confidence": 0.32639894369924355, "cheap_choice": 67, "strong_choice": 67, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-498", "gold_index": 1, "cheap_confidence": 0.4338392225427025, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2384", "gold_index": 71, "cheap_confidence": 0.9916571515095008, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-149", "gold_index": 17, "cheap_confidence": 0.9948712322384484, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1404", "gold_index": 22, "cheap_confidence": 0.22867271647034682, "cheap_choice": 41, "strong_choice": 22, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2302", "gold_index": 35, "cheap_confidence": 0.9810965842908718, "cheap_choice": 35, "strong_choice": 35, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2836", "gold_index": 57, "cheap_confidence": 0.9900664510971301, "cheap_choice": 57, "strong_choice": 57, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2386", "gold_index": 71, "cheap_confidence": 0.9945768318217272, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2457", "gold_index": 58, "cheap_confidence": 0.9961939970282604, "cheap_choice": 58, "strong_choice": 58, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1972", "gold_index": 63, "cheap_confidence": 0.9829880732931164, "cheap_choice": 63, "strong_choice": 63, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1431", "gold_index": 22, "cheap_confidence": 0.43124592315356225, "cheap_choice": 9, "strong_choice": 22, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2125", "gold_index": 21, "cheap_confidence": 0.9957618690149401, "cheap_choice": 21, "strong_choice": 21, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-666", "gold_index": 47, "cheap_confidence": 0.910778582673368, "cheap_choice": 59, "strong_choice": 59, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2254", "gold_index": 50, "cheap_confidence": 0.9496306017698585, "cheap_choice": 50, "strong_choice": 50, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-783", "gold_index": 75, "cheap_confidence": 0.9843284652473897, "cheap_choice": 75, "strong_choice": 75, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1054", "gold_index": 6, "cheap_confidence": 0.5921550494012285, "cheap_choice": 6, "strong_choice": 53, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-700", "gold_index": 8, "cheap_confidence": 0.9381840569356223, "cheap_choice": 8, "strong_choice": 8, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-93", "gold_index": 32, "cheap_confidence": 0.41116806895941366, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1199", "gold_index": 74, "cheap_confidence": 0.9788950540460518, "cheap_choice": 74, "strong_choice": 74, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1926", "gold_index": 18, "cheap_confidence": 0.41458437840698026, "cheap_choice": 3, "strong_choice": 18, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1136", "gold_index": 30, "cheap_confidence": 0.9924402308871026, "cheap_choice": 30, "strong_choice": 30, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-109", "gold_index": 32, "cheap_confidence": 0.9973845375643274, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1475", "gold_index": 3, "cheap_confidence": 0.990936108454072, "cheap_choice": 3, "strong_choice": 3, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-868", "gold_index": 66, "cheap_confidence": 0.9663009941444942, "cheap_choice": 66, "strong_choice": 66, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2356", "gold_index": 65, "cheap_confidence": 0.9936736282825037, "cheap_choice": 65, "strong_choice": 65, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-494", "gold_index": 1, "cheap_confidence": 0.9963062411321462, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1339", "gold_index": 62, "cheap_confidence": 0.328145907694104, "cheap_choice": 50, "strong_choice": 62, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-535", "gold_index": 49, "cheap_confidence": 0.9828201239926665, "cheap_choice": 49, "strong_choice": 49, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2928", "gold_index": 9, "cheap_confidence": 0.9947070613032989, "cheap_choice": 9, "strong_choice": 9, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1719", "gold_index": 52, "cheap_confidence": 0.9867907428409681, "cheap_choice": 52, "strong_choice": 52, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-625", "gold_index": 56, "cheap_confidence": 0.9369303231760611, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2622", "gold_index": 37, "cheap_confidence": 0.8999999635799474, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2690", "gold_index": 5, "cheap_confidence": 0.3940876601432986, "cheap_choice": 5, "strong_choice": 5, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-955", "gold_index": 40, "cheap_confidence": 0.9017936121745372, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1526", "gold_index": 44, "cheap_confidence": 0.9881473244441379, "cheap_choice": 44, "strong_choice": 44, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-215", "gold_index": 46, "cheap_confidence": 0.9915560720906162, "cheap_choice": 46, "strong_choice": 46, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1859", "gold_index": 48, "cheap_confidence": 0.47071722889669537, "cheap_choice": 48, "strong_choice": 48, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2918", "gold_index": 19, "cheap_confidence": 0.9800667375711555, "cheap_choice": 19, "strong_choice": 19, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2728", "gold_index": 20, "cheap_confidence": 0.813684932619835, "cheap_choice": 20, "strong_choice": 20, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-3029", "gold_index": 69, "cheap_confidence": 0.9503336653030352, "cheap_choice": 69, "strong_choice": 69, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2217", "gold_index": 64, "cheap_confidence": 0.9706743760835743, "cheap_choice": 64, "strong_choice": 64, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1298", "gold_index": 73, "cheap_confidence": 0.9989074153703188, "cheap_choice": 73, "strong_choice": 73, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1714", "gold_index": 52, "cheap_confidence": 0.9316009510893541, "cheap_choice": 52, "strong_choice": 52, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-80", "gold_index": 32, "cheap_confidence": 0.9927583960816324, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-72", "gold_index": 13, "cheap_confidence": 0.9934152260593239, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-5", "gold_index": 11, "cheap_confidence": 0.9744934810937687, "cheap_choice": 12, "strong_choice": 12, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2062", "gold_index": 67, "cheap_confidence": 0.9528132199254407, "cheap_choice": 67, "strong_choice": 67, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2310", "gold_index": 35, "cheap_confidence": 0.9514518649856338, "cheap_choice": 35, "strong_choice": 35, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2823", "gold_index": 57, "cheap_confidence": 0.9419354324681205, "cheap_choice": 57, "strong_choice": 57, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1767", "gold_index": 51, "cheap_confidence": 0.8787933686407055, "cheap_choice": 51, "strong_choice": 51, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2883", "gold_index": 19, "cheap_confidence": 0.9885758875259814, "cheap_choice": 19, "strong_choice": 19, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2780", "gold_index": 31, "cheap_confidence": 0.9800641011373691, "cheap_choice": 31, "strong_choice": 31, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-74", "gold_index": 13, "cheap_confidence": 0.7864391558767827, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2659", "gold_index": 59, "cheap_confidence": 0.633895302547328, "cheap_choice": 59, "strong_choice": 59, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1563", "gold_index": 26, "cheap_confidence": 0.9898100404385012, "cheap_choice": 26, "strong_choice": 26, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2639", "gold_index": 37, "cheap_confidence": 0.9726245995941099, "cheap_choice": 37, "strong_choice": 37, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1551", "gold_index": 44, "cheap_confidence": 0.9636791795603976, "cheap_choice": 44, "strong_choice": 44, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2191", "gold_index": 7, "cheap_confidence": 0.995537649578138, "cheap_choice": 7, "strong_choice": 7, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-71", "gold_index": 13, "cheap_confidence": 0.8422481145745847, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1971", "gold_index": 63, "cheap_confidence": 0.9962671793769076, "cheap_choice": 63, "strong_choice": 63, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-761", "gold_index": 75, "cheap_confidence": 0.9972834624136258, "cheap_choice": 75, "strong_choice": 75, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1108", "gold_index": 16, "cheap_confidence": 0.975189850736888, "cheap_choice": 16, "strong_choice": 16, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1358", "gold_index": 62, "cheap_confidence": 0.5870558108218199, "cheap_choice": 61, "strong_choice": 47, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-293", "gold_index": 12, "cheap_confidence": 0.5685850449672104, "cheap_choice": 12, "strong_choice": 12, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1237", "gold_index": 68, "cheap_confidence": 0.8952223429862765, "cheap_choice": 68, "strong_choice": 68, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-224", "gold_index": 46, "cheap_confidence": 0.994076615538657, "cheap_choice": 46, "strong_choice": 46, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-497", "gold_index": 1, "cheap_confidence": 0.99193074317251, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2182", "gold_index": 7, "cheap_confidence": 0.9923960896052957, "cheap_choice": 7, "strong_choice": 7, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-347", "gold_index": 4, "cheap_confidence": 0.9987742683471265, "cheap_choice": 4, "strong_choice": 4, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-3026", "gold_index": 69, "cheap_confidence": 0.880958068903303, "cheap_choice": 69, "strong_choice": 69, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1870", "gold_index": 48, "cheap_confidence": 0.997732822324928, "cheap_choice": 48, "strong_choice": 48, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-790", "gold_index": 75, "cheap_confidence": 0.986594673068011, "cheap_choice": 75, "strong_choice": 75, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-690", "gold_index": 8, "cheap_confidence": 0.9962532953955126, "cheap_choice": 8, "strong_choice": 8, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1451", "gold_index": 3, "cheap_confidence": 0.9914078159817432, "cheap_choice": 3, "strong_choice": 3, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-944", "gold_index": 40, "cheap_confidence": 0.98629072090764, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-564", "gold_index": 23, "cheap_confidence": 0.33543151942697474, "cheap_choice": 37, "strong_choice": 23, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1835", "gold_index": 25, "cheap_confidence": 0.7290501417777766, "cheap_choice": 25, "strong_choice": 25, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2163", "gold_index": 7, "cheap_confidence": 0.9227452439037025, "cheap_choice": 7, "strong_choice": 7, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-3004", "gold_index": 69, "cheap_confidence": 0.3800907362856662, "cheap_choice": 69, "strong_choice": 68, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2197", "gold_index": 7, "cheap_confidence": 0.4545242435742765, "cheap_choice": 7, "strong_choice": 7, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-366", "gold_index": 14, "cheap_confidence": 0.9955516286267817, "cheap_choice": 14, "strong_choice": 14, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-176", "gold_index": 34, "cheap_confidence": 0.9987752216305281, "cheap_choice": 34, "strong_choice": 34, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-993", "gold_index": 10, "cheap_confidence": 0.7149418822985112, "cheap_choice": 10, "strong_choice": 10, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2821", "gold_index": 57, "cheap_confidence": 0.9865223052148445, "cheap_choice": 57, "strong_choice": 57, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2964", "gold_index": 2, "cheap_confidence": 0.9947323834156094, "cheap_choice": 2, "strong_choice": 2, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2966", "gold_index": 2, "cheap_confidence": 0.9927185079909028, "cheap_choice": 2, "strong_choice": 2, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1340", "gold_index": 62, "cheap_confidence": 0.37839936822599646, "cheap_choice": 65, "strong_choice": 62, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1224", "gold_index": 68, "cheap_confidence": 0.9359483784787614, "cheap_choice": 68, "strong_choice": 68, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-553", "gold_index": 49, "cheap_confidence": 0.9789457467364998, "cheap_choice": 49, "strong_choice": 49, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1313", "gold_index": 73, "cheap_confidence": 0.9522645935141469, "cheap_choice": 73, "strong_choice": 73, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1756", "gold_index": 27, "cheap_confidence": 0.8710338607008928, "cheap_choice": 25, "strong_choice": 25, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2280", "gold_index": 35, "cheap_confidence": 0.9261897560946188, "cheap_choice": 35, "strong_choice": 35, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1908", "gold_index": 55, "cheap_confidence": 0.9864165605903609, "cheap_choice": 55, "strong_choice": 55, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1630", "gold_index": 45, "cheap_confidence": 0.9894681552729845, "cheap_choice": 45, "strong_choice": 45, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2747", "gold_index": 20, "cheap_confidence": 0.7428979712950338, "cheap_choice": 20, "strong_choice": 20, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-144", "gold_index": 17, "cheap_confidence": 0.9883280735629468, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2035", "gold_index": 70, "cheap_confidence": 0.9914803524336289, "cheap_choice": 70, "strong_choice": 70, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-754", "gold_index": 60, "cheap_confidence": 0.996450152317639, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1378", "gold_index": 29, "cheap_confidence": 0.9968598188364846, "cheap_choice": 29, "strong_choice": 29, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-676", "gold_index": 47, "cheap_confidence": 0.9297259390355154, "cheap_choice": 47, "strong_choice": 47, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-584", "gold_index": 23, "cheap_confidence": 0.2034070018977361, "cheap_choice": 14, "strong_choice": 23, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-134", "gold_index": 17, "cheap_confidence": 0.9964292365792238, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1133", "gold_index": 30, "cheap_confidence": 0.9584428323298666, "cheap_choice": 30, "strong_choice": 30, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1426", "gold_index": 22, "cheap_confidence": 0.9913770008133592, "cheap_choice": 22, "strong_choice": 22, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1797", "gold_index": 51, "cheap_confidence": 0.9680810421101889, "cheap_choice": 51, "strong_choice": 51, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1812", "gold_index": 25, "cheap_confidence": 0.5736442922423707, "cheap_choice": 53, "strong_choice": 25, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-704", "gold_index": 8, "cheap_confidence": 0.8836170306595917, "cheap_choice": 8, "strong_choice": 8, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2864", "gold_index": 0, "cheap_confidence": 0.9876694286034742, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1970", "gold_index": 63, "cheap_confidence": 0.9974215385654328, "cheap_choice": 63, "strong_choice": 63, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-693", "gold_index": 8, "cheap_confidence": 0.9910077807747217, "cheap_choice": 8, "strong_choice": 8, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-946", "gold_index": 40, "cheap_confidence": 0.9813946787202676, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1581", "gold_index": 26, "cheap_confidence": 0.9898487234347761, "cheap_choice": 26, "strong_choice": 26, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-202", "gold_index": 46, "cheap_confidence": 0.9904448916379832, "cheap_choice": 46, "strong_choice": 46, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2336", "gold_index": 65, "cheap_confidence": 0.9960652989892361, "cheap_choice": 65, "strong_choice": 65, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2751", "gold_index": 20, "cheap_confidence": 0.9330887095493053, "cheap_choice": 20, "strong_choice": 20, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1979", "gold_index": 63, "cheap_confidence": 0.9899648910850521, "cheap_choice": 63, "strong_choice": 63, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-541", "gold_index": 49, "cheap_confidence": 0.6129370075127807, "cheap_choice": 49, "strong_choice": 49, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-531", "gold_index": 49, "cheap_confidence": 0.9799784452111269, "cheap_choice": 49, "strong_choice": 49, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2476", "gold_index": 58, "cheap_confidence": 0.9901168612248186, "cheap_choice": 58, "strong_choice": 58, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2871", "gold_index": 0, "cheap_confidence": 0.999609724987857, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1916", "gold_index": 55, "cheap_confidence": 0.9789815863766795, "cheap_choice": 55, "strong_choice": 55, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2642", "gold_index": 59, "cheap_confidence": 0.6574897870111108, "cheap_choice": 59, "strong_choice": 59, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2094", "gold_index": 53, "cheap_confidence": 0.8794084536736062, "cheap_choice": 25, "strong_choice": 25, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1323", "gold_index": 62, "cheap_confidence": 0.3037163395197252, "cheap_choice": 65, "strong_choice": 62, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2340", "gold_index": 65, "cheap_confidence": 0.23321909756718948, "cheap_choice": 65, "strong_choice": 65, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-56", "gold_index": 13, "cheap_confidence": 0.9974695772831309, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-906", "gold_index": 54, "cheap_confidence": 0.9814870200621795, "cheap_choice": 54, "strong_choice": 54, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2963", "gold_index": 2, "cheap_confidence": 0.9902552440764361, "cheap_choice": 2, "strong_choice": 2, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2375", "gold_index": 71, "cheap_confidence": 0.9906047241373511, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1099", "gold_index": 16, "cheap_confidence": 0.9848884006686027, "cheap_choice": 16, "strong_choice": 16, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2661", "gold_index": 59, "cheap_confidence": 0.9938639562244936, "cheap_choice": 59, "strong_choice": 59, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1201", "gold_index": 68, "cheap_confidence": 0.5075744190100755, "cheap_choice": 74, "strong_choice": 68, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-838", "gold_index": 15, "cheap_confidence": 0.9953643617872713, "cheap_choice": 15, "strong_choice": 15, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-51", "gold_index": 13, "cheap_confidence": 0.9956702835817377, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-723", "gold_index": 60, "cheap_confidence": 0.9959522654361085, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1477", "gold_index": 3, "cheap_confidence": 0.9801579562332343, "cheap_choice": 3, "strong_choice": 3, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-952", "gold_index": 40, "cheap_confidence": 0.9909365712753885, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-867", "gold_index": 66, "cheap_confidence": 0.9322107528076488, "cheap_choice": 66, "strong_choice": 66, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1413", "gold_index": 22, "cheap_confidence": 0.562198347925842, "cheap_choice": 74, "strong_choice": 22, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-407", "gold_index": 33, "cheap_confidence": 0.9950051842142829, "cheap_choice": 33, "strong_choice": 33, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2600", "gold_index": 37, "cheap_confidence": 0.9907694705853031, "cheap_choice": 37, "strong_choice": 37, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2118", "gold_index": 53, "cheap_confidence": 0.9963809254851667, "cheap_choice": 53, "strong_choice": 53, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-639", "gold_index": 56, "cheap_confidence": 0.8027764222130939, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-560", "gold_index": 23, "cheap_confidence": 0.121494115570194, "cheap_choice": 37, "strong_choice": 23, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1227", "gold_index": 68, "cheap_confidence": 0.38757222212206577, "cheap_choice": 74, "strong_choice": 74, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1658", "gold_index": 42, "cheap_confidence": 0.9915063992684626, "cheap_choice": 42, "strong_choice": 42, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2528", "gold_index": 72, "cheap_confidence": 0.3078202912839248, "cheap_choice": 14, "strong_choice": 72, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-122", "gold_index": 17, "cheap_confidence": 0.7799127246091571, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2052", "gold_index": 67, "cheap_confidence": 0.8311439285002974, "cheap_choice": 67, "strong_choice": 67, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-655", "gold_index": 47, "cheap_confidence": 0.8967001400554155, "cheap_choice": 47, "strong_choice": 47, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2104", "gold_index": 53, "cheap_confidence": 0.9988412509034714, "cheap_choice": 53, "strong_choice": 53, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2385", "gold_index": 71, "cheap_confidence": 0.9932690103148629, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2172", "gold_index": 7, "cheap_confidence": 0.16511141056170223, "cheap_choice": 36, "strong_choice": 20, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1473", "gold_index": 3, "cheap_confidence": 0.9960535706741843, "cheap_choice": 3, "strong_choice": 3, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-769", "gold_index": 75, "cheap_confidence": 0.9813563221864063, "cheap_choice": 75, "strong_choice": 75, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2626", "gold_index": 37, "cheap_confidence": 0.9923062181560736, "cheap_choice": 37, "strong_choice": 37, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-155", "gold_index": 17, "cheap_confidence": 0.9976115979831511, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1753", "gold_index": 27, "cheap_confidence": 0.9930533383970221, "cheap_choice": 27, "strong_choice": 27, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-3074", "gold_index": 24, "cheap_confidence": 0.9971761031986652, "cheap_choice": 24, "strong_choice": 24, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-318", "gold_index": 12, "cheap_confidence": 0.7347975266663596, "cheap_choice": 12, "strong_choice": 12, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2380", "gold_index": 71, "cheap_confidence": 0.9956274769597497, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2977", "gold_index": 2, "cheap_confidence": 0.9891621110771683, "cheap_choice": 2, "strong_choice": 2, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2371", "gold_index": 71, "cheap_confidence": 0.9934583084209696, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2262", "gold_index": 50, "cheap_confidence": 0.17557179140307722, "cheap_choice": 50, "strong_choice": 50, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-146", "gold_index": 17, "cheap_confidence": 0.9811278214240033, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1042", "gold_index": 6, "cheap_confidence": 0.913940381059039, "cheap_choice": 6, "strong_choice": 6, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-722", "gold_index": 60, "cheap_confidence": 0.9357831127189787, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-94", "gold_index": 32, "cheap_confidence": 0.9904317530839034, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1411", "gold_index": 22, "cheap_confidence": 0.8356508998999833, "cheap_choice": 22, "strong_choice": 22, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2892", "gold_index": 19, "cheap_confidence": 0.9924722788905529, "cheap_choice": 19, "strong_choice": 19, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1587", "gold_index": 26, "cheap_confidence": 0.9930095959507375, "cheap_choice": 26, "strong_choice": 26, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2756", "gold_index": 20, "cheap_confidence": 0.7316280720165427, "cheap_choice": 20, "strong_choice": 20, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-586", "gold_index": 23, "cheap_confidence": 0.3333382578540234, "cheap_choice": 39, "strong_choice": 9, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1043", "gold_index": 6, "cheap_confidence": 0.9916996590484136, "cheap_choice": 6, "strong_choice": 6, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-544", "gold_index": 49, "cheap_confidence": 0.9853000122193215, "cheap_choice": 49, "strong_choice": 49, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1273", "gold_index": 38, "cheap_confidence": 0.9824076831732702, "cheap_choice": 38, "strong_choice": 38, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1668", "gold_index": 42, "cheap_confidence": 0.6947061583737926, "cheap_choice": 42, "strong_choice": 42, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2042", "gold_index": 67, "cheap_confidence": 0.9917327763839776, "cheap_choice": 67, "strong_choice": 67, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2214", "gold_index": 64, "cheap_confidence": 0.8383528455224784, "cheap_choice": 64, "strong_choice": 64, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2539", "gold_index": 72, "cheap_confidence": 0.3421360757220684, "cheap_choice": 40, "strong_choice": 72, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2342", "gold_index": 65, "cheap_confidence": 0.7532213804999277, "cheap_choice": 65, "strong_choice": 5, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-169", "gold_index": 34, "cheap_confidence": 0.9961726391087131, "cheap_choice": 34, "strong_choice": 34, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1929", "gold_index": 18, "cheap_confidence": 0.20313956890792417, "cheap_choice": 3, "strong_choice": 18, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1774", "gold_index": 51, "cheap_confidence": 0.9367479492823262, "cheap_choice": 51, "strong_choice": 51, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2299", "gold_index": 35, "cheap_confidence": 0.9561920527203899, "cheap_choice": 35, "strong_choice": 35, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2465", "gold_index": 58, "cheap_confidence": 0.9770676252350748, "cheap_choice": 58, "strong_choice": 58, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-635", "gold_index": 56, "cheap_confidence": 0.8815802361687836, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1294", "gold_index": 73, "cheap_confidence": 0.9262205483145668, "cheap_choice": 73, "strong_choice": 73, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1777", "gold_index": 51, "cheap_confidence": 0.9917875792191408, "cheap_choice": 51, "strong_choice": 51, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1058", "gold_index": 6, "cheap_confidence": 0.9816003522660105, "cheap_choice": 6, "strong_choice": 6, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-42", "gold_index": 13, "cheap_confidence": 0.9982305433134142, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2412", "gold_index": 39, "cheap_confidence": 0.922277782108913, "cheap_choice": 39, "strong_choice": 39, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1991", "gold_index": 63, "cheap_confidence": 0.9846058489174067, "cheap_choice": 63, "strong_choice": 63, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-881", "gold_index": 54, "cheap_confidence": 0.17221497923567833, "cheap_choice": 4, "strong_choice": 62, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-424", "gold_index": 33, "cheap_confidence": 0.8319999524301777, "cheap_choice": 33, "strong_choice": 33, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1514", "gold_index": 28, "cheap_confidence": 0.9984392522367326, "cheap_choice": 28, "strong_choice": 28, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2967", "gold_index": 2, "cheap_confidence": 0.9980417636629398, "cheap_choice": 2, "strong_choice": 2, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-97", "gold_index": 32, "cheap_confidence": 0.846682292437795, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1203", "gold_index": 68, "cheap_confidence": 0.9727181579826487, "cheap_choice": 68, "strong_choice": 68, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1366", "gold_index": 29, "cheap_confidence": 0.9979729797777025, "cheap_choice": 29, "strong_choice": 29, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-642", "gold_index": 47, "cheap_confidence": 0.9921576206786065, "cheap_choice": 47, "strong_choice": 47, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2700", "gold_index": 5, "cheap_confidence": 0.9795794601592951, "cheap_choice": 5, "strong_choice": 5, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-869", "gold_index": 66, "cheap_confidence": 0.9612528152266907, "cheap_choice": 66, "strong_choice": 66, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-662", "gold_index": 47, "cheap_confidence": 0.24525155514033464, "cheap_choice": 71, "strong_choice": 47, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-752", "gold_index": 60, "cheap_confidence": 0.9981748919246705, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1934", "gold_index": 18, "cheap_confidence": 0.7618752651721534, "cheap_choice": 26, "strong_choice": 26, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1801", "gold_index": 25, "cheap_confidence": 0.5457488190375526, "cheap_choice": 25, "strong_choice": 25, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2460", "gold_index": 58, "cheap_confidence": 0.986576445198002, "cheap_choice": 58, "strong_choice": 58, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-850", "gold_index": 66, "cheap_confidence": 0.9070558576376165, "cheap_choice": 66, "strong_choice": 66, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1840", "gold_index": 48, "cheap_confidence": 0.9962720568638852, "cheap_choice": 48, "strong_choice": 48, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2908", "gold_index": 19, "cheap_confidence": 0.10662083643913493, "cheap_choice": 19, "strong_choice": 19, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2851", "gold_index": 0, "cheap_confidence": 0.9992683915744751, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-339", "gold_index": 4, "cheap_confidence": 0.16878536775444072, "cheap_choice": 26, "strong_choice": 4, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-3002", "gold_index": 69, "cheap_confidence": 0.9251792897192914, "cheap_choice": 69, "strong_choice": 69, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2136", "gold_index": 21, "cheap_confidence": 0.5179002624825516, "cheap_choice": 21, "strong_choice": 21, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2679", "gold_index": 59, "cheap_confidence": 0.9827559889437426, "cheap_choice": 59, "strong_choice": 59, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2010", "gold_index": 70, "cheap_confidence": 0.9979189033763062, "cheap_choice": 70, "strong_choice": 70, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2916", "gold_index": 19, "cheap_confidence": 0.3846990977168128, "cheap_choice": 75, "strong_choice": 19, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1691", "gold_index": 52, "cheap_confidence": 0.9392017789713126, "cheap_choice": 52, "strong_choice": 52, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-595", "gold_index": 23, "cheap_confidence": 0.2881345997178382, "cheap_choice": 2, "strong_choice": 23, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1769", "gold_index": 51, "cheap_confidence": 0.9975474247183259, "cheap_choice": 51, "strong_choice": 51, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2984", "gold_index": 2, "cheap_confidence": 0.3538603049539118, "cheap_choice": 2, "strong_choice": 2, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-274", "gold_index": 36, "cheap_confidence": 0.9874716090579516, "cheap_choice": 36, "strong_choice": 36, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1527", "gold_index": 44, "cheap_confidence": 0.9977155965085003, "cheap_choice": 44, "strong_choice": 44, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2025", "gold_index": 70, "cheap_confidence": 0.9536183216268241, "cheap_choice": 70, "strong_choice": 70, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1775", "gold_index": 51, "cheap_confidence": 0.6336534073644912, "cheap_choice": 51, "strong_choice": 53, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1671", "gold_index": 42, "cheap_confidence": 0.9638429129839168, "cheap_choice": 42, "strong_choice": 42, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-911", "gold_index": 54, "cheap_confidence": 0.9198947840014456, "cheap_choice": 54, "strong_choice": 54, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1324", "gold_index": 62, "cheap_confidence": 0.3860688751588777, "cheap_choice": 13, "strong_choice": 62, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-179", "gold_index": 34, "cheap_confidence": 0.9986544371383147, "cheap_choice": 34, "strong_choice": 34, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-889", "gold_index": 54, "cheap_confidence": 0.9921758080725214, "cheap_choice": 54, "strong_choice": 54, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2382", "gold_index": 71, "cheap_confidence": 0.9844616698778711, "cheap_choice": 71, "strong_choice": 71, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2724", "gold_index": 20, "cheap_confidence": 0.973790841662059, "cheap_choice": 20, "strong_choice": 20, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-432", "gold_index": 33, "cheap_confidence": 0.9906387080125756, "cheap_choice": 33, "strong_choice": 33, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-119", "gold_index": 32, "cheap_confidence": 0.9923373692999548, "cheap_choice": 32, "strong_choice": 32, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-309", "gold_index": 12, "cheap_confidence": 0.7948315787789177, "cheap_choice": 12, "strong_choice": 12, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-351", "gold_index": 4, "cheap_confidence": 0.6942077663452898, "cheap_choice": 4, "strong_choice": 4, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2609", "gold_index": 37, "cheap_confidence": 0.9887081864589976, "cheap_choice": 37, "strong_choice": 37, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-297", "gold_index": 12, "cheap_confidence": 0.9863095838929982, "cheap_choice": 12, "strong_choice": 12, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1530", "gold_index": 44, "cheap_confidence": 0.9945354524826515, "cheap_choice": 44, "strong_choice": 44, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2040", "gold_index": 67, "cheap_confidence": 0.9752077238387751, "cheap_choice": 67, "strong_choice": 67, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-862", "gold_index": 66, "cheap_confidence": 0.9874891125804033, "cheap_choice": 66, "strong_choice": 66, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-303", "gold_index": 12, "cheap_confidence": 0.9787908318340051, "cheap_choice": 12, "strong_choice": 12, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-780", "gold_index": 75, "cheap_confidence": 0.995109312175708, "cheap_choice": 75, "strong_choice": 75, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-555", "gold_index": 49, "cheap_confidence": 0.43803549602873654, "cheap_choice": 14, "strong_choice": 14, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1009", "gold_index": 61, "cheap_confidence": 0.9959379321315315, "cheap_choice": 61, "strong_choice": 61, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-3051", "gold_index": 24, "cheap_confidence": 0.33165138809810424, "cheap_choice": 24, "strong_choice": 24, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1075", "gold_index": 6, "cheap_confidence": 0.921883047747904, "cheap_choice": 6, "strong_choice": 6, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1955", "gold_index": 18, "cheap_confidence": 0.45231774402884467, "cheap_choice": 26, "strong_choice": 18, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2511", "gold_index": 43, "cheap_confidence": 0.961575850962694, "cheap_choice": 43, "strong_choice": 43, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-620", "gold_index": 56, "cheap_confidence": 0.5487173461536106, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1356", "gold_index": 62, "cheap_confidence": 0.17472717169314986, "cheap_choice": 61, "strong_choice": 62, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-931", "gold_index": 40, "cheap_confidence": 0.9843928542318162, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-48", "gold_index": 13, "cheap_confidence": 0.9794132917922209, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1731", "gold_index": 27, "cheap_confidence": 0.9764028615815479, "cheap_choice": 27, "strong_choice": 27, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2906", "gold_index": 19, "cheap_confidence": 0.9805057347214948, "cheap_choice": 19, "strong_choice": 19, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2645", "gold_index": 59, "cheap_confidence": 0.9826791447997977, "cheap_choice": 59, "strong_choice": 59, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1580", "gold_index": 26, "cheap_confidence": 0.9472956361644634, "cheap_choice": 26, "strong_choice": 26, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2085", "gold_index": 53, "cheap_confidence": 0.9911138873366714, "cheap_choice": 53, "strong_choice": 53, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-753", "gold_index": 60, "cheap_confidence": 0.9978355984546767, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1606", "gold_index": 45, "cheap_confidence": 0.9912855988421184, "cheap_choice": 45, "strong_choice": 45, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1905", "gold_index": 55, "cheap_confidence": 0.9764351967306766, "cheap_choice": 55, "strong_choice": 55, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-837", "gold_index": 15, "cheap_confidence": 0.9925292610348211, "cheap_choice": 15, "strong_choice": 15, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2673", "gold_index": 59, "cheap_confidence": 0.986167513227327, "cheap_choice": 59, "strong_choice": 59, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1048", "gold_index": 6, "cheap_confidence": 0.9902259697721202, "cheap_choice": 6, "strong_choice": 6, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-3070", "gold_index": 24, "cheap_confidence": 0.995382463207167, "cheap_choice": 24, "strong_choice": 24, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1448", "gold_index": 3, "cheap_confidence": 0.996255119848861, "cheap_choice": 3, "strong_choice": 3, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1721", "gold_index": 27, "cheap_confidence": 0.4415035157907854, "cheap_choice": 25, "strong_choice": 25, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-485", "gold_index": 1, "cheap_confidence": 0.9892845750827904, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-735", "gold_index": 60, "cheap_confidence": 0.9986535410954595, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2435", "gold_index": 39, "cheap_confidence": 0.9747373797499432, "cheap_choice": 39, "strong_choice": 39, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-554", "gold_index": 49, "cheap_confidence": 0.9905319645570182, "cheap_choice": 49, "strong_choice": 49, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1357", "gold_index": 62, "cheap_confidence": 0.0768809192332218, "cheap_choice": 6, "strong_choice": 62, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2155", "gold_index": 21, "cheap_confidence": 0.9812960344724938, "cheap_choice": 21, "strong_choice": 21, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1521", "gold_index": 44, "cheap_confidence": 0.979981724996142, "cheap_choice": 44, "strong_choice": 44, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1710", "gold_index": 52, "cheap_confidence": 0.9832984436786235, "cheap_choice": 52, "strong_choice": 52, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2943", "gold_index": 9, "cheap_confidence": 0.9904224721439308, "cheap_choice": 9, "strong_choice": 9, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-721", "gold_index": 60, "cheap_confidence": 0.844295464716609, "cheap_choice": 60, "strong_choice": 60, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1096", "gold_index": 16, "cheap_confidence": 0.40035094753223, "cheap_choice": 20, "strong_choice": 22, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-161", "gold_index": 34, "cheap_confidence": 0.9994090226910184, "cheap_choice": 34, "strong_choice": 34, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2471", "gold_index": 58, "cheap_confidence": 0.9568262793865848, "cheap_choice": 58, "strong_choice": 58, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1125", "gold_index": 30, "cheap_confidence": 0.8982636021754993, "cheap_choice": 30, "strong_choice": 30, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1213", "gold_index": 68, "cheap_confidence": 0.9791287039579163, "cheap_choice": 68, "strong_choice": 68, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2226", "gold_index": 64, "cheap_confidence": 0.9095844981697344, "cheap_choice": 64, "strong_choice": 64, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2760", "gold_index": 31, "cheap_confidence": 0.9674867342857967, "cheap_choice": 31, "strong_choice": 31, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2017", "gold_index": 70, "cheap_confidence": 0.9968121861244383, "cheap_choice": 70, "strong_choice": 70, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-929", "gold_index": 40, "cheap_confidence": 0.9887581313265436, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1427", "gold_index": 22, "cheap_confidence": 0.8894834116060596, "cheap_choice": 22, "strong_choice": 22, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-596", "gold_index": 23, "cheap_confidence": 0.1725018960974686, "cheap_choice": 2, "strong_choice": 23, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2979", "gold_index": 2, "cheap_confidence": 0.9961696077170382, "cheap_choice": 2, "strong_choice": 2, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1421", "gold_index": 22, "cheap_confidence": 0.5998209542239533, "cheap_choice": 55, "strong_choice": 22, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2416", "gold_index": 39, "cheap_confidence": 0.9941803473596655, "cheap_choice": 39, "strong_choice": 39, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-979", "gold_index": 10, "cheap_confidence": 0.9577995152428715, "cheap_choice": 24, "strong_choice": 24, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1534", "gold_index": 44, "cheap_confidence": 0.9845914125653121, "cheap_choice": 44, "strong_choice": 44, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2166", "gold_index": 7, "cheap_confidence": 0.8352607175524221, "cheap_choice": 65, "strong_choice": 65, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-513", "gold_index": 1, "cheap_confidence": 0.993355622590734, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1959", "gold_index": 18, "cheap_confidence": 0.23690175137341585, "cheap_choice": 41, "strong_choice": 18, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1390", "gold_index": 29, "cheap_confidence": 0.9948779883489086, "cheap_choice": 29, "strong_choice": 29, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2005", "gold_index": 70, "cheap_confidence": 0.9904714034969369, "cheap_choice": 70, "strong_choice": 70, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2877", "gold_index": 0, "cheap_confidence": 0.9974003603698068, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1749", "gold_index": 27, "cheap_confidence": 0.9942838393939044, "cheap_choice": 27, "strong_choice": 27, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1228", "gold_index": 68, "cheap_confidence": 0.9409747523637836, "cheap_choice": 68, "strong_choice": 68, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-3014", "gold_index": 69, "cheap_confidence": 0.9474291213326512, "cheap_choice": 69, "strong_choice": 69, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2604", "gold_index": 37, "cheap_confidence": 0.1080694186931024, "cheap_choice": 40, "strong_choice": 40, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-717", "gold_index": 8, "cheap_confidence": 0.3652667085368676, "cheap_choice": 66, "strong_choice": 8, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-37", "gold_index": 11, "cheap_confidence": 0.18929378063587934, "cheap_choice": 5, "strong_choice": 11, "escalated_rates": [0.05, 0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2440", "gold_index": 58, "cheap_confidence": 0.9964934212194071, "cheap_choice": 58, "strong_choice": 58, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2845", "gold_index": 0, "cheap_confidence": 0.9975623889360897, "cheap_choice": 0, "strong_choice": 0, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1789", "gold_index": 51, "cheap_confidence": 0.995076104972206, "cheap_choice": 51, "strong_choice": 51, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1419", "gold_index": 22, "cheap_confidence": 0.4199988393215176, "cheap_choice": 22, "strong_choice": 22, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1839", "gold_index": 25, "cheap_confidence": 0.9910106886498472, "cheap_choice": 25, "strong_choice": 25, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2575", "gold_index": 76, "cheap_confidence": 0.6856931708724, "cheap_choice": 76, "strong_choice": 76, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-60", "gold_index": 13, "cheap_confidence": 0.8699531543876879, "cheap_choice": 13, "strong_choice": 13, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-508", "gold_index": 1, "cheap_confidence": 0.9862299947496076, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1035", "gold_index": 61, "cheap_confidence": 0.9980066358248556, "cheap_choice": 61, "strong_choice": 61, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1689", "gold_index": 52, "cheap_confidence": 0.3418739259771555, "cheap_choice": 17, "strong_choice": 17, "escalated_rates": [0.1, 0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-4", "gold_index": 11, "cheap_confidence": 0.9046743404224735, "cheap_choice": 11, "strong_choice": 11, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2242", "gold_index": 50, "cheap_confidence": 0.9894512154738248, "cheap_choice": 50, "strong_choice": 50, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1867", "gold_index": 48, "cheap_confidence": 0.724528128814876, "cheap_choice": 66, "strong_choice": 66, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2030", "gold_index": 70, "cheap_confidence": 0.9932264067829031, "cheap_choice": 70, "strong_choice": 70, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2912", "gold_index": 19, "cheap_confidence": 0.9961270453606639, "cheap_choice": 19, "strong_choice": 19, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-626", "gold_index": 56, "cheap_confidence": 0.9829107110215102, "cheap_choice": 56, "strong_choice": 56, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-324", "gold_index": 4, "cheap_confidence": 0.9955549342613416, "cheap_choice": 4, "strong_choice": 4, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1846", "gold_index": 48, "cheap_confidence": 0.995204726928788, "cheap_choice": 48, "strong_choice": 48, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-312", "gold_index": 12, "cheap_confidence": 0.8737808680049408, "cheap_choice": 11, "strong_choice": 11, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-688", "gold_index": 8, "cheap_confidence": 0.9834490669058127, "cheap_choice": 8, "strong_choice": 8, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1498", "gold_index": 28, "cheap_confidence": 0.6464444358533695, "cheap_choice": 28, "strong_choice": 16, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2162", "gold_index": 7, "cheap_confidence": 0.9557603829342886, "cheap_choice": 7, "strong_choice": 7, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-787", "gold_index": 75, "cheap_confidence": 0.9857368991840909, "cheap_choice": 75, "strong_choice": 75, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1175", "gold_index": 74, "cheap_confidence": 0.9353455049068917, "cheap_choice": 74, "strong_choice": 74, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2116", "gold_index": 53, "cheap_confidence": 0.8202394677481614, "cheap_choice": 53, "strong_choice": 53, "escalated_rates": [0.25, 0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1022", "gold_index": 61, "cheap_confidence": 0.9965885848784618, "cheap_choice": 61, "strong_choice": 61, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-515", "gold_index": 1, "cheap_confidence": 0.9974507083278276, "cheap_choice": 1, "strong_choice": 1, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-876", "gold_index": 66, "cheap_confidence": 0.9885574697585906, "cheap_choice": 66, "strong_choice": 66, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2631", "gold_index": 37, "cheap_confidence": 0.9885212428465097, "cheap_choice": 37, "strong_choice": 37, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2284", "gold_index": 35, "cheap_confidence": 0.9851820518465897, "cheap_choice": 35, "strong_choice": 35, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2084", "gold_index": 53, "cheap_confidence": 0.9886164686494879, "cheap_choice": 53, "strong_choice": 53, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-1996", "gold_index": 63, "cheap_confidence": 0.9824784601121863, "cheap_choice": 63, "strong_choice": 63, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2662", "gold_index": 59, "cheap_confidence": 0.9337658891374994, "cheap_choice": 59, "strong_choice": 59, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2184", "gold_index": 7, "cheap_confidence": 0.9953569293430344, "cheap_choice": 7, "strong_choice": 7, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-1131", "gold_index": 30, "cheap_confidence": 0.992005854275498, "cheap_choice": 30, "strong_choice": 30, "escalated_rates": [0.75, 1.0]}
+{"item_id": "banking77-test-2630", "gold_index": 37, "cheap_confidence": 0.9362126301909246, "cheap_choice": 37, "strong_choice": 37, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-2937", "gold_index": 9, "cheap_confidence": 0.9981906616660048, "cheap_choice": 9, "strong_choice": 9, "escalated_rates": [1.0]}
+{"item_id": "banking77-test-2920", "gold_index": 9, "cheap_confidence": 0.9366646253917703, "cheap_choice": 9, "strong_choice": 9, "escalated_rates": [0.5, 0.75, 1.0]}
+{"item_id": "banking77-test-1799", "gold_index": 51, "cheap_confidence": 0.9979462146967494, "cheap_choice": 51, "strong_choice": 51, "escalated_rates": [1.0]}

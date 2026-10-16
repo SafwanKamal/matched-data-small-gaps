@@ -1,0 +1,26 @@
+{
+  "protocol_id": "workflow-v3-routing-2026-10-11",
+  "role": "exploratory: can a local model rank which turns to escalate better than the specialist's own confidence?",
+  "claim": "In workflow v2 the 9B orchestrator won by spotting out-of-scope turns and almost never escalated, so it said nothing about routing. Here escalation is forced to fixed rates and only the ranking differs: which turns get sent to the stronger worker. Same sessions, workers, decisions and success rule as workflow v1 and v2. Written before the few-shot orchestrator was run and before any ranking in this file was scored.",
+  "scope_gate": "every policy here uses the same gate: the workflow v2 orchestrator with confidences marks a turn out of scope when action 4 has its highest probability. Rankers differ only in which of the remaining turns they escalate.",
+  "rankers": {
+    "encoder_confidence": "ascending top probability of the encoder",
+    "orchestrator_zero_shot": "the workflow v2 orchestrator with confidences: probability of actions 2 and 3 divided by the probability of actions 1, 2 and 3, already saved in artifacts/workflow-v2/actions.json",
+    "orchestrator_few_shot": "the same model and prompt preceded by ten worked examples from dev, scored the same way",
+    "combined": "the mean of the within-pool ranks under encoder_confidence and orchestrator_few_shot",
+    "random": "uniform over the remaining turns, mean of 200 draws with seed 20261011",
+    "oracle": "turns where accepting the encoder would be wrong and the target worker's answer would be right, first; a bound, uses gold"
+  },
+  "few_shot": {
+    "examples": "four dev utterances the encoder classified correctly (answer: action 1), four it got wrong (answer: action 2), and two CLINC150 out-of-scope validation queries (answer: action 4), drawn with seed 20261011 and shown in a shuffled order as earlier turns of the chat, each in the workflow v2 prompt with the encoder's top three guesses and probabilities",
+    "labels_used": "the gold intents of those eight Banking77 dev items and the out-of-scope status of the two queries; no session item"
+  },
+  "targets": ["decoder", "jev"],
+  "rates": [0.05, 0.1, 0.25, 0.4],
+  "rate_meaning": "share of all 2000 turns escalated; the top-ranked turns among those the gate left in scope",
+  "metrics": [
+    "ranking quality: AUROC of each ranker for 'accepting the encoder here would be wrong', over the turns the gate left in scope",
+    "turn and session success at each rate and target, with 95% bootstrap intervals over sessions",
+    "the no-escalation baseline under the same gate"
+  ]
+}

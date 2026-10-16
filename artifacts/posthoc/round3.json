@@ -1,0 +1,1010 @@
+{
+  "status": "POST HOC: written after run D's results were seen; not pre-registered",
+  "groups": {
+    "banking77_oos": {
+      "n_in": 398,
+      "n_held_out": 679,
+      "models": {
+        "gemma-4-31b": {
+          "sdt": {
+            "zero_shot": {
+              "d_prime": 1.626137746285539,
+              "criterion": 0.5726618414622411,
+              "d_prime_ci": [
+                1.267719986951847,
+                2.01852176219587
+              ],
+              "criterion_ci": [
+                0.38395881307529384,
+                0.7605923631501835
+              ]
+            },
+            "retrieval": {
+              "d_prime": 1.5916450630858792,
+              "criterion": 1.3105053686304702,
+              "d_prime_ci": [
+                1.2341782137749897,
+                2.042696758428816
+              ],
+              "criterion_ci": [
+                1.1309581573516578,
+                1.5518697081015804
+              ]
+            },
+            "mitigation_instruction": {
+              "d_prime": 1.484619577557345,
+              "criterion": 1.1743876416291157,
+              "d_prime_ci": [
+                1.1408074409006803,
+                1.9040414275660822
+              ],
+              "criterion_ci": [
+                1.004898288079953,
+                1.3882512103609828
+              ]
+            },
+            "retrieval_minus_zero_shot": {
+              "d_prime": -0.034492683199659924,
+              "d_prime_ci": [
+                -0.4149670921664083,
+                0.39476446659546105
+              ],
+              "criterion": 0.7378435271682291,
+              "criterion_ci": [
+                0.5681061763377833,
+                0.9626157128440892
+              ]
+            }
+          },
+          "label_copying": {
+            "held_out_accepted_predicts_majority_neighbour": 0.42283298097251587,
+            "in_scope_accepted_predicts_majority_neighbour": 0.8542199488491049,
+            "held_out_accepted_predicts_a_neighbour_label": 0.9133192389006343
+          },
+          "suppression_vs_closeness_spearman": 0.2512995904409132,
+          "mitigations": {
+            "retrieval (as run)": {
+              "held_out_rejected": 0.30338733431516934,
+              "in_scope_kept": 0.9824120603015075,
+              "in_scope_right": 0.8668341708542714,
+              "balanced": 0.6428996973083384
+            },
+            "zero-shot (as run)": {
+              "held_out_rejected": 0.5949926362297496,
+              "in_scope_kept": 0.9170854271356784,
+              "in_scope_right": 0.7587939698492462,
+              "balanced": 0.756039031682714
+            },
+            "instruction (as run)": {
+              "held_out_rejected": 0.3328424153166421,
+              "in_scope_kept": 0.9723618090452262,
+              "in_scope_right": 0.864321608040201,
+              "balanced": 0.6526021121809341
+            },
+            "retrieval + neighbour-label rule": {
+              "held_out_rejected": 0.3637702503681885,
+              "in_scope_kept": 0.9798994974874372,
+              "in_scope_right": 0.8668341708542714,
+              "balanced": 0.6718348739278128
+            },
+            "retrieval + BM25 floor": {
+              "held_out_rejected": 0.759941089837997,
+              "in_scope_kept": 0.6030150753768844,
+              "in_scope_right": 0.5452261306532663,
+              "balanced": 0.6814780826074407
+            },
+            "retrieval + dense floor": {
+              "held_out_rejected": 0.6980854197349042,
+              "in_scope_kept": 0.7989949748743719,
+              "in_scope_right": 0.7185929648241206,
+              "balanced": 0.748540197304638
+            },
+            "retrieval + specialist veto": {
+              "held_out_rejected": 0.5655375552282769,
+              "in_scope_kept": 0.9371859296482412,
+              "in_scope_right": 0.8442211055276382,
+              "balanced": 0.751361742438259
+            },
+            "instruction + specialist veto": {
+              "held_out_rejected": 0.5758468335787923,
+              "in_scope_kept": 0.9296482412060302,
+              "in_scope_right": 0.8391959798994975,
+              "balanced": 0.7527475373924113
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "sdt": {
+            "zero_shot": {
+              "d_prime": 1.7966174013289318,
+              "criterion": -0.023925398587817837,
+              "d_prime_ci": [
+                1.4800582950953685,
+                2.132945429257278
+              ],
+              "criterion_ci": [
+                -0.19547929814342832,
+                0.13165197376068874
+              ]
+            },
+            "retrieval": {
+              "d_prime": 1.8810756234262938,
+              "criterion": 0.7266483831268056,
+              "d_prime_ci": [
+                1.592336036637729,
+                2.201991159816114
+              ],
+              "criterion_ci": [
+                0.583288003578683,
+                0.8861979036709628
+              ]
+            },
+            "mitigation_instruction": {
+              "d_prime": 1.9401926448790672,
+              "criterion": 0.625617219402014,
+              "d_prime_ci": [
+                1.6347391337367339,
+                2.2857362245780384
+              ],
+              "criterion_ci": [
+                0.47142326356579045,
+                0.7975670007897373
+              ]
+            },
+            "retrieval_minus_zero_shot": {
+              "d_prime": 0.08445822209736198,
+              "d_prime_ci": [
+                -0.2647464119607131,
+                0.426304067341782
+              ],
+              "criterion": 0.7505737817146234,
+              "criterion_ci": [
+                0.5838957900623325,
+                0.9293603999368059
+              ]
+            }
+          },
+          "label_copying": {
+            "held_out_accepted_predicts_majority_neighbour": 0.5460992907801419,
+            "in_scope_accepted_predicts_majority_neighbour": 0.8601583113456465,
+            "held_out_accepted_predicts_a_neighbour_label": 0.9893617021276596
+          },
+          "suppression_vs_closeness_spearman": 0.5956342612519194,
+          "mitigations": {
+            "retrieval (as run)": {
+              "held_out_rejected": 0.5846833578792342,
+              "in_scope_kept": 0.9522613065326633,
+              "in_scope_right": 0.8592964824120602,
+              "balanced": 0.7684723322059488
+            },
+            "zero-shot (as run)": {
+              "held_out_rejected": 0.8217967599410898,
+              "in_scope_kept": 0.8090452261306532,
+              "in_scope_right": 0.6633165829145728,
+              "balanced": 0.8154209930358716
+            },
+            "instruction (as run)": {
+              "held_out_rejected": 0.6347569955817378,
+              "in_scope_kept": 0.9447236180904522,
+              "in_scope_right": 0.8517587939698492,
+              "balanced": 0.7897403068360951
+            },
+            "retrieval + neighbour-label rule": {
+              "held_out_rejected": 0.5891016200294551,
+              "in_scope_kept": 0.9522613065326633,
+              "in_scope_right": 0.8592964824120602,
+              "balanced": 0.7706814632810592
+            },
+            "retrieval + BM25 floor": {
+              "held_out_rejected": 0.8321060382916053,
+              "in_scope_kept": 0.5904522613065326,
+              "in_scope_right": 0.5376884422110553,
+              "balanced": 0.7112791497990689
+            },
+            "retrieval + dense floor": {
+              "held_out_rejected": 0.7776141384388807,
+              "in_scope_kept": 0.7914572864321608,
+              "in_scope_right": 0.7160804020100503,
+              "balanced": 0.7845357124355208
+            },
+            "retrieval + specialist veto": {
+              "held_out_rejected": 0.7039764359351989,
+              "in_scope_kept": 0.9221105527638191,
+              "in_scope_right": 0.8391959798994975,
+              "balanced": 0.8130434943495091
+            },
+            "instruction + specialist veto": {
+              "held_out_rejected": 0.7201767304860088,
+              "in_scope_kept": 0.914572864321608,
+              "in_scope_right": 0.8316582914572864,
+              "balanced": 0.8173747974038084
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "sdt": {
+            "zero_shot": {
+              "d_prime": 1.2536311704758176,
+              "criterion": 0.6102024098244155,
+              "d_prime_ci": [
+                0.8795485208037997,
+                1.6847437436502908
+              ],
+              "criterion_ci": [
+                0.4126408673823104,
+                0.8282553351055216
+              ]
+            },
+            "retrieval": {
+              "d_prime": 1.5026661381498365,
+              "criterion": 1.6792301244471328,
+              "d_prime_ci": [
+                0.9741668695109738,
+                2.168047215801359
+              ],
+              "criterion_ci": [
+                1.4443951784163374,
+                2.0290924516266515
+              ]
+            },
+            "mitigation_instruction": {
+              "d_prime": 1.3659069109763127,
+              "criterion": 1.1600628272227242,
+              "d_prime_ci": [
+                1.0421713551367344,
+                1.7244319283051173
+              ],
+              "criterion_ci": [
+                0.9995296100984691,
+                1.352164248628026
+              ]
+            },
+            "retrieval_minus_zero_shot": {
+              "d_prime": 0.2490349676740189,
+              "d_prime_ci": [
+                -0.2735256227677279,
+                0.8796909216111608
+              ],
+              "criterion": 1.0690277146227172,
+              "criterion_ci": [
+                0.8391295669678583,
+                1.4100733190188777
+              ]
+            }
+          },
+          "label_copying": {
+            "held_out_accepted_predicts_majority_neighbour": 0.4329159212880143,
+            "in_scope_accepted_predicts_majority_neighbour": 0.8405063291139241,
+            "held_out_accepted_predicts_a_neighbour_label": 0.9481216457960644
+          },
+          "suppression_vs_closeness_spearman": -0.004586461156064156,
+          "mitigations": {
+            "retrieval (as run)": {
+              "held_out_rejected": 0.17673048600883653,
+              "in_scope_kept": 0.992462311557789,
+              "in_scope_right": 0.8768844221105527,
+              "balanced": 0.5845963987833127
+            },
+            "zero-shot (as run)": {
+              "held_out_rejected": 0.5066273932253313,
+              "in_scope_kept": 0.8919597989949749,
+              "in_scope_right": 0.6080402010050251,
+              "balanced": 0.6992935961101532
+            },
+            "instruction (as run)": {
+              "held_out_rejected": 0.3166421207658321,
+              "in_scope_kept": 0.9673366834170855,
+              "in_scope_right": 0.8592964824120602,
+              "balanced": 0.6419894020914587
+            },
+            "retrieval + neighbour-label rule": {
+              "held_out_rejected": 0.21944035346097202,
+              "in_scope_kept": 0.9899497487437185,
+              "in_scope_right": 0.8768844221105527,
+              "balanced": 0.6046950511023452
+            },
+            "retrieval + BM25 floor": {
+              "held_out_rejected": 0.7378497790868925,
+              "in_scope_kept": 0.6055276381909548,
+              "in_scope_right": 0.5477386934673367,
+              "balanced": 0.6716887086389236
+            },
+            "retrieval + dense floor": {
+              "held_out_rejected": 0.6568483063328424,
+              "in_scope_kept": 0.8015075376884422,
+              "in_scope_right": 0.7236180904522613,
+              "balanced": 0.7291779220106422
+            },
+            "retrieval + specialist veto": {
+              "held_out_rejected": 0.5110456553755522,
+              "in_scope_kept": 0.9447236180904522,
+              "in_scope_right": 0.8467336683417085,
+              "balanced": 0.7278846367330023
+            },
+            "instruction + specialist veto": {
+              "held_out_rejected": 0.5699558173784978,
+              "in_scope_kept": 0.9246231155778895,
+              "in_scope_right": 0.8316582914572864,
+              "balanced": 0.7472894664781936
+            }
+          }
+        },
+        "deepseek-v4-pro": {
+          "sdt": {
+            "zero_shot": {
+              "d_prime": 1.4983478382937914,
+              "criterion": 0.474419806688147,
+              "d_prime_ci": [
+                1.1676658320613391,
+                1.901429002908358
+              ],
+              "criterion_ci": [
+                0.29112510861737584,
+                0.659950068656314
+              ]
+            },
+            "retrieval": {
+              "d_prime": 1.5201386980645628,
+              "criterion": 1.5643971977833218,
+              "d_prime_ci": [
+                1.0812139190491192,
+                2.132942274652484
+              ],
+              "criterion_ci": [
+                1.356968731329423,
+                1.8810986339875142
+              ]
+            },
+            "mitigation_instruction": {
+              "d_prime": 1.6951274996180965,
+              "criterion": 1.3205405238275398,
+              "d_prime_ci": [
+                1.340967827309352,
+                2.1901297956365373
+              ],
+              "criterion_ci": [
+                1.1511097688284646,
+                1.575087692623874
+              ]
+            },
+            "retrieval_minus_zero_shot": {
+              "d_prime": 0.021790859770771442,
+              "d_prime_ci": [
+                -0.4655354905178227,
+                0.6341785984496268
+              ],
+              "criterion": 1.0899773910951747,
+              "criterion_ci": [
+                0.8808447259780682,
+                1.4080817932409142
+              ]
+            }
+          },
+          "label_copying": {
+            "held_out_accepted_predicts_majority_neighbour": 0.4253731343283582,
+            "in_scope_accepted_predicts_majority_neighbour": 0.8451776649746193,
+            "held_out_accepted_predicts_a_neighbour_label": 0.960820895522388
+          },
+          "suppression_vs_closeness_spearman": 0.24759578978744573,
+          "mitigations": {
+            "retrieval (as run)": {
+              "held_out_rejected": 0.2106038291605302,
+              "in_scope_kept": 0.9899497487437185,
+              "in_scope_right": 0.8844221105527639,
+              "balanced": 0.6002767889521243
+            },
+            "zero-shot (as run)": {
+              "held_out_rejected": 0.6082474226804123,
+              "in_scope_kept": 0.8894472361809045,
+              "in_scope_right": 0.7160804020100503,
+              "balanced": 0.7488473294306583
+            },
+            "instruction (as run)": {
+              "held_out_rejected": 0.3181148748159057,
+              "in_scope_kept": 0.9849246231155779,
+              "in_scope_right": 0.8819095477386935,
+              "balanced": 0.6515197489657418
+            },
+            "retrieval + neighbour-label rule": {
+              "held_out_rejected": 0.24153166421207659,
+              "in_scope_kept": 0.9874371859296482,
+              "in_scope_right": 0.8844221105527639,
+              "balanced": 0.6144844250708624
+            },
+            "retrieval + BM25 floor": {
+              "held_out_rejected": 0.7363770250368189,
+              "in_scope_kept": 0.6030150753768844,
+              "in_scope_right": 0.5477386934673367,
+              "balanced": 0.6696960502068516
+            },
+            "retrieval + dense floor": {
+              "held_out_rejected": 0.6539027982326951,
+              "in_scope_kept": 0.8015075376884422,
+              "in_scope_right": 0.7261306532663316,
+              "balanced": 0.7277051679605686
+            },
+            "retrieval + specialist veto": {
+              "held_out_rejected": 0.5154639175257731,
+              "in_scope_kept": 0.9422110552763819,
+              "in_scope_right": 0.8567839195979899,
+              "balanced": 0.7288374864010776
+            },
+            "instruction + specialist veto": {
+              "held_out_rejected": 0.5567010309278351,
+              "in_scope_kept": 0.9422110552763819,
+              "in_scope_right": 0.8542713567839196,
+              "balanced": 0.7494560431021084
+            }
+          }
+        }
+      },
+      "closeness": {
+        "bm25_top1_mean": {
+          "in_scope": 20.368904842028154,
+          "held_out": 16.122103585002062
+        },
+        "dense_top1_mean": {
+          "in_scope": 0.8880567547663971,
+          "held_out": 0.7735494974347734
+        },
+        "auroc_in_vs_held_bm25": 0.7215292219566166,
+        "auroc_in_vs_held_dense": 0.7732550824816276
+      },
+      "floors_alone": {
+        "bm25": {
+          "held_out_rejected": 0.7172312223858616,
+          "in_scope_kept": 0.6055276381909548
+        },
+        "dense": {
+          "held_out_rejected": 0.6421207658321061,
+          "in_scope_kept": 0.8015075376884422
+        }
+      },
+      "specialist_majority": {
+        "held_out_rejected": 0.48159057437407954,
+        "in_scope_kept": 0.949748743718593
+      }
+    },
+    "clinc_single_domain": {
+      "n_in": 1000,
+      "n_held_out": 700,
+      "models": {
+        "gemma-4-31b": {
+          "sdt": {
+            "zero_shot": {
+              "d_prime": 1.7237396633604165,
+              "criterion": 1.0491658158689097,
+              "d_prime_ci": [
+                1.030458319187924,
+                2.4443809132997196
+              ],
+              "criterion_ci": [
+                0.7193348378497588,
+                1.4338183679081373
+              ]
+            },
+            "retrieval": {
+              "d_prime": 2.196216338984789,
+              "criterion": 1.159021074993831,
+              "d_prime_ci": [
+                1.5572355399854982,
+                3.0222906726023653
+              ],
+              "criterion_ci": [
+                0.8321527279316477,
+                1.566884053753656
+              ]
+            },
+            "mitigation_instruction": {
+              "d_prime": 2.6074905357573193,
+              "criterion": 0.7711094665146503,
+              "d_prime_ci": [
+                2.0394098447946747,
+                3.286523925041993
+              ],
+              "criterion_ci": [
+                0.45168931974004606,
+                1.0668602108832415
+              ]
+            },
+            "retrieval_minus_zero_shot": {
+              "d_prime": 0.47247667562437234,
+              "d_prime_ci": [
+                0.07469132078706185,
+                0.9777824876165442
+              ],
+              "criterion": 0.10985525912492133,
+              "criterion_ci": [
+                -0.07561893947232055,
+                0.328924587356006
+              ]
+            }
+          },
+          "label_copying": {
+            "held_out_accepted_predicts_majority_neighbour": 0.5912806539509536,
+            "in_scope_accepted_predicts_majority_neighbour": 0.9321862348178138,
+            "held_out_accepted_predicts_a_neighbour_label": 0.9618528610354223
+          },
+          "suppression_vs_closeness_spearman": -0.0303030303030303,
+          "mitigations": {
+            "retrieval (as run)": {
+              "held_out_rejected": 0.4757142857142857,
+              "in_scope_kept": 0.988,
+              "in_scope_right": 0.975,
+              "balanced": 0.7318571428571429
+            },
+            "zero-shot (as run)": {
+              "held_out_rejected": 0.4257142857142857,
+              "in_scope_kept": 0.972,
+              "in_scope_right": 0.952,
+              "balanced": 0.6988571428571428
+            },
+            "instruction (as run)": {
+              "held_out_rejected": 0.7028571428571428,
+              "in_scope_kept": 0.981,
+              "in_scope_right": 0.971,
+              "balanced": 0.8419285714285714
+            },
+            "retrieval + neighbour-label rule": {
+              "held_out_rejected": 0.4957142857142857,
+              "in_scope_kept": 0.986,
+              "in_scope_right": 0.973,
+              "balanced": 0.7408571428571429
+            },
+            "retrieval + BM25 floor": {
+              "held_out_rejected": 0.7928571428571428,
+              "in_scope_kept": 0.703,
+              "in_scope_right": 0.696,
+              "balanced": 0.7479285714285714
+            },
+            "retrieval + dense floor": {
+              "held_out_rejected": 0.8657142857142858,
+              "in_scope_kept": 0.866,
+              "in_scope_right": 0.859,
+              "balanced": 0.8658571428571429
+            },
+            "retrieval + specialist veto": {
+              "held_out_rejected": 0.6857142857142857,
+              "in_scope_kept": 0.953,
+              "in_scope_right": 0.94,
+              "balanced": 0.8193571428571429
+            },
+            "instruction + specialist veto": {
+              "held_out_rejected": 0.7985714285714286,
+              "in_scope_kept": 0.947,
+              "in_scope_right": 0.937,
+              "balanced": 0.8727857142857143
+            }
+          }
+        },
+        "qwen3.5-27b": {
+          "sdt": {
+            "zero_shot": {
+              "d_prime": 1.635135947110661,
+              "criterion": 0.37765480788209654,
+              "d_prime_ci": [
+                1.0041517752847862,
+                2.349714260066258
+              ],
+              "criterion_ci": [
+                0.05018273998326883,
+                0.7075470294436862
+              ]
+            },
+            "retrieval": {
+              "d_prime": 2.451769067544862,
+              "criterion": 0.7340794507676236,
+              "d_prime_ci": [
+                1.979125974284034,
+                3.013670267396849
+              ],
+              "criterion_ci": [
+                0.4642446689140758,
+                0.9767486773720778
+              ]
+            },
+            "mitigation_instruction": {
+              "d_prime": 2.896044411712368,
+              "criterion": 0.44767571813565454,
+              "d_prime_ci": [
+                2.4294320307364132,
+                3.4876842524722735
+              ],
+              "criterion_ci": [
+                0.15045227188434282,
+                0.6790844802132409
+              ]
+            },
+            "retrieval_minus_zero_shot": {
+              "d_prime": 0.8166331204342008,
+              "d_prime_ci": [
+                0.2199435208152235,
+                1.3615514875199337
+              ],
+              "criterion": 0.35642464288552705,
+              "criterion_ci": [
+                0.09095093015177233,
+                0.6564021160906269
+              ]
+            }
+          },
+          "label_copying": {
+            "held_out_accepted_predicts_majority_neighbour": 0.6880733944954128,
+            "in_scope_accepted_predicts_majority_neighbour": 0.9374358974358974,
+            "held_out_accepted_predicts_a_neighbour_label": 0.981651376146789
+          },
+          "suppression_vs_closeness_spearman": 0.23100410659842455,
+          "mitigations": {
+            "retrieval (as run)": {
+              "held_out_rejected": 0.6885714285714286,
+              "in_scope_kept": 0.975,
+              "in_scope_right": 0.966,
+              "balanced": 0.8317857142857144
+            },
+            "zero-shot (as run)": {
+              "held_out_rejected": 0.67,
+              "in_scope_kept": 0.884,
+              "in_scope_right": 0.867,
+              "balanced": 0.777
+            },
+            "instruction (as run)": {
+              "held_out_rejected": 0.8414285714285714,
+              "in_scope_kept": 0.971,
+              "in_scope_right": 0.962,
+              "balanced": 0.9062142857142856
+            },
+            "retrieval + neighbour-label rule": {
+              "held_out_rejected": 0.6942857142857143,
+              "in_scope_kept": 0.974,
+              "in_scope_right": 0.965,
+              "balanced": 0.8341428571428571
+            },
+            "retrieval + BM25 floor": {
+              "held_out_rejected": 0.8928571428571429,
+              "in_scope_kept": 0.697,
+              "in_scope_right": 0.693,
+              "balanced": 0.7949285714285714
+            },
+            "retrieval + dense floor": {
+              "held_out_rejected": 0.9114285714285715,
+              "in_scope_kept": 0.865,
+              "in_scope_right": 0.859,
+              "balanced": 0.8882142857142857
+            },
+            "retrieval + specialist veto": {
+              "held_out_rejected": 0.7842857142857143,
+              "in_scope_kept": 0.947,
+              "in_scope_right": 0.938,
+              "balanced": 0.8656428571428572
+            },
+            "instruction + specialist veto": {
+              "held_out_rejected": 0.8857142857142857,
+              "in_scope_kept": 0.944,
+              "in_scope_right": 0.935,
+              "balanced": 0.9148571428571428
+            }
+          }
+        },
+        "llama-3.3-70b": {
+          "sdt": {
+            "zero_shot": {
+              "d_prime": 1.2344395153995396,
+              "criterion": 1.0180142576888804,
+              "d_prime_ci": [
+                0.4931906703663979,
+                2.0718027566103325
+              ],
+              "criterion_ci": [
+                0.6627710845254424,
+                1.4568731960999912
+              ]
+            },
+            "retrieval": {
+              "d_prime": 2.0222017267898247,
+              "criterion": 1.279267014460355,
+              "d_prime_ci": [
+                1.3905097952995196,
+                2.725451161412769
+              ],
+              "criterion_ci": [
+                1.0039534309188989,
+                1.6668175782823027
+              ]
+            },
+            "mitigation_instruction": {
+              "d_prime": 2.442200273605799,
+              "criterion": 0.7929906752152394,
+              "d_prime_ci": [
+                1.8769417850676606,
+                3.073808582707501
+              ],
+              "criterion_ci": [
+                0.48510539203859654,
+                1.076381155354157
+              ]
+            },
+            "retrieval_minus_zero_shot": {
+              "d_prime": 0.7877622113902851,
+              "d_prime_ci": [
+                0.13036094631868064,
+                1.493888580908149
+              ],
+              "criterion": 0.26125275677147464,
+              "criterion_ci": [
+                -0.0770115804991288,
+                0.5796767202865991
+              ]
+            }
+          },
+          "label_copying": {
+            "held_out_accepted_predicts_majority_neighbour": 0.5849056603773585,
+            "in_scope_accepted_predicts_majority_neighbour": 0.9342770475227502,
+            "held_out_accepted_predicts_a_neighbour_label": 0.9599056603773585
+          },
+          "suppression_vs_closeness_spearman": 0.10942299786241164,
+          "mitigations": {
+            "retrieval (as run)": {
+              "held_out_rejected": 0.3942857142857143,
+              "in_scope_kept": 0.989,
+              "in_scope_right": 0.982,
+              "balanced": 0.6916428571428571
+            },
+            "zero-shot (as run)": {
+              "held_out_rejected": 0.3442857142857143,
+              "in_scope_kept": 0.949,
+              "in_scope_right": 0.927,
+              "balanced": 0.6466428571428571
+            },
+            "instruction (as run)": {
+              "held_out_rejected": 0.6657142857142857,
+              "in_scope_kept": 0.978,
+              "in_scope_right": 0.973,
+              "balanced": 0.8218571428571428
+            },
+            "retrieval + neighbour-label rule": {
+              "held_out_rejected": 0.4185714285714286,
+              "in_scope_kept": 0.987,
+              "in_scope_right": 0.98,
+              "balanced": 0.7027857142857143
+            },
+            "retrieval + BM25 floor": {
+              "held_out_rejected": 0.7585714285714286,
+              "in_scope_kept": 0.702,
+              "in_scope_right": 0.699,
+              "balanced": 0.7302857142857142
+            },
+            "retrieval + dense floor": {
+              "held_out_rejected": 0.8257142857142857,
+              "in_scope_kept": 0.866,
+              "in_scope_right": 0.861,
+              "balanced": 0.8458571428571429
+            },
+            "retrieval + specialist veto": {
+              "held_out_rejected": 0.6585714285714286,
+              "in_scope_kept": 0.955,
+              "in_scope_right": 0.948,
+              "balanced": 0.8067857142857142
+            },
+            "instruction + specialist veto": {
+              "held_out_rejected": 0.8,
+              "in_scope_kept": 0.945,
+              "in_scope_right": 0.94,
+              "balanced": 0.8725
+            }
+          }
+        },
+        "deepseek-v4-pro": {
+          "sdt": {
+            "zero_shot": {
+              "d_prime": 1.2088506953145792,
+              "criterion": 1.1124606707737512,
+              "d_prime_ci": [
+                0.579843216882693,
+                1.917824567782396
+              ],
+              "criterion_ci": [
+                0.8369496927285293,
+                1.4892639817846163
+              ]
+            },
+            "retrieval": {
+              "d_prime": 2.036440950305411,
+              "criterion": 1.493923852777756,
+              "d_prime_ci": [
+                1.4070829196481658,
+                3.0038464089482577
+              ],
+              "criterion_ci": [
+                1.2151739820267569,
+                1.9847594239429782
+              ]
+            },
+            "mitigation_instruction": {
+              "d_prime": 2.1085939892517707,
+              "criterion": 1.090113626285955,
+              "d_prime_ci": [
+                1.5780087428864238,
+                2.695741755032497
+              ],
+              "criterion_ci": [
+                0.8392430852847188,
+                1.3643741158550582
+              ]
+            },
+            "retrieval_minus_zero_shot": {
+              "d_prime": 0.8275902549908318,
+              "d_prime_ci": [
+                0.17404193478607163,
+                1.8279472124522729
+              ],
+              "criterion": 0.38146318200400486,
+              "criterion_ci": [
+                0.06795503255553734,
+                0.8686919335447406
+              ]
+            }
+          },
+          "label_copying": {
+            "held_out_accepted_predicts_majority_neighbour": 0.5292887029288703,
+            "in_scope_accepted_predicts_majority_neighbour": 0.9336016096579477,
+            "held_out_accepted_predicts_a_neighbour_label": 0.9393305439330544
+          },
+          "suppression_vs_closeness_spearman": 0.5151515151515151,
+          "mitigations": {
+            "retrieval (as run)": {
+              "held_out_rejected": 0.3171428571428571,
+              "in_scope_kept": 0.994,
+              "in_scope_right": 0.985,
+              "balanced": 0.6555714285714286
+            },
+            "zero-shot (as run)": {
+              "held_out_rejected": 0.3057142857142857,
+              "in_scope_kept": 0.957,
+              "in_scope_right": 0.927,
+              "balanced": 0.6313571428571428
+            },
+            "instruction (as run)": {
+              "held_out_rejected": 0.4857142857142857,
+              "in_scope_kept": 0.984,
+              "in_scope_right": 0.973,
+              "balanced": 0.7348571428571429
+            },
+            "retrieval + neighbour-label rule": {
+              "held_out_rejected": 0.3585714285714286,
+              "in_scope_kept": 0.992,
+              "in_scope_right": 0.983,
+              "balanced": 0.6752857142857143
+            },
+            "retrieval + BM25 floor": {
+              "held_out_rejected": 0.7371428571428571,
+              "in_scope_kept": 0.707,
+              "in_scope_right": 0.703,
+              "balanced": 0.7220714285714285
+            },
+            "retrieval + dense floor": {
+              "held_out_rejected": 0.8342857142857143,
+              "in_scope_kept": 0.866,
+              "in_scope_right": 0.861,
+              "balanced": 0.8501428571428571
+            },
+            "retrieval + specialist veto": {
+              "held_out_rejected": 0.6557142857142857,
+              "in_scope_kept": 0.958,
+              "in_scope_right": 0.949,
+              "balanced": 0.8068571428571428
+            },
+            "instruction + specialist veto": {
+              "held_out_rejected": 0.7442857142857143,
+              "in_scope_kept": 0.95,
+              "in_scope_right": 0.94,
+              "balanced": 0.8471428571428572
+            }
+          }
+        }
+      },
+      "closeness": {
+        "bm25_top1_mean": {
+          "in_scope": 13.033502747923752,
+          "held_out": 9.923792033046915
+        },
+        "dense_top1_mean": {
+          "in_scope": 0.832199482679367,
+          "held_out": 0.6292948134030615
+        },
+        "auroc_in_vs_held_bm25": 0.7561914285714286,
+        "auroc_in_vs_held_dense": 0.9075728571428572
+      },
+      "floors_alone": {
+        "bm25": {
+          "held_out_rejected": 0.6471428571428571,
+          "in_scope_kept": 0.712
+        },
+        "dense": {
+          "held_out_rejected": 0.7514285714285714,
+          "in_scope_kept": 0.867
+        }
+      },
+      "specialist_majority": {
+        "held_out_rejected": 0.54,
+        "in_scope_kept": 0.962
+      }
+    }
+  },
+  "old_sessions_contrast": {
+    "note": "exploratory: the 400 old BANKING77-OOS sessions, id = held-out intents, ood = off-topic",
+    "rows": {
+      "gemma-4-31b | id": {
+        "zero_shot": {
+          "out_rejected": 0.6959798994974874,
+          "in_scope_kept": 0.8938826466916354,
+          "d_prime_c": [
+            1.7603170387491622,
+            0.36728557613590507
+          ]
+        },
+        "retrieval": {
+          "out_rejected": 0.3768844221105528,
+          "in_scope_kept": 0.9831460674157303,
+          "d_prime_c": [
+            1.8098753614943044,
+            1.2186114248175308
+          ]
+        }
+      },
+      "qwen3.5-27b | id": {
+        "zero_shot": {
+          "out_rejected": 0.8844221105527639,
+          "in_scope_kept": 0.8033707865168539,
+          "d_prime_c": [
+            2.051110030185444,
+            -0.17183190638386836
+          ]
+        },
+        "retrieval": {
+          "out_rejected": 0.6658291457286433,
+          "in_scope_kept": 0.9506866416978776,
+          "d_prime_c": [
+            2.079973080620151,
+            0.6115615154927674
+          ]
+        }
+      },
+      "gemma-4-31b | ood": {
+        "zero_shot": {
+          "out_rejected": 0.992462311557789,
+          "in_scope_kept": 0.8995006242197253,
+          "d_prime_c": [
+            3.7092744577662393,
+            -0.5759259646389323
+          ]
+        },
+        "retrieval": {
+          "out_rejected": 0.9899497487437185,
+          "in_scope_kept": 0.982521847690387,
+          "d_prime_c": [
+            4.433330752655042,
+            -0.10780117048808058
+          ]
+        }
+      },
+      "qwen3.5-27b | ood": {
+        "zero_shot": {
+          "out_rejected": 0.9949748743718593,
+          "in_scope_kept": 0.8033707865168539,
+          "d_prime_c": [
+            3.427818662297019,
+            -0.8601862224396559
+          ]
+        },
+        "retrieval": {
+          "out_rejected": 0.9899497487437185,
+          "in_scope_kept": 0.9506866416978776,
+          "d_prime_c": [
+            3.9760146026184446,
+            -0.3364592455063795
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "protocol_id": "program-5-hybrid-cascade-2026-10-08-fp32",
+  "role": "measurement",
+  "claim": "This is a measurement of a confidence cascade. FrugalGPT (arXiv:2305.05176) already stops a cheap-to-strong list when a reliability score clears a threshold. RouteLLM (arXiv:2406.18665) routes each query to one model. Dekoninck, Baader, and Vechev unify routing and cascading and treat the quality estimate as the term that decides whether a cascade helps. The control structure is theirs. The quantity measured here is the Brier of a typed simplex when the cheap model's own max probability decides the call.",
+  "datasets": {
+    "banking77": {
+      "role": "primary",
+      "reason": "The high-cardinality Choice set on which every gate and the Ettin decoder are scored on the same 500 test items."
+    },
+    "sst2": {
+      "role": "sanity",
+      "reason": "Sanity set. The strong model is not the better model here."
+    }
+  },
+  "excluded": {
+    "ag_news": "No Ettin checkpoint. The audit also marks AG News as a sanity check.",
+    "massive": "Endorsed as the paper's high-cardinality set. No checkpoint from this project. Not trained here.",
+    "llm_aggrefact": "Endorsed as the Noul set. No checkpoint from this project. Not trained here."
+  },
+  "strong": {
+    "id": "ettin-decoder-log_loss",
+    "artifact": "artifacts/program2-decoder/{dataset}-log_loss",
+    "reason": "Among the two finished float32 Banking77 decoder runs, the log-loss checkpoint has the lower scaled Brier (0.1173 against 0.1398). That comparison was published before this revision. On SST-2 the decoder is weaker than the Ettin encoder gates (Brier 0.115 against 0.091), so SST-2 shows what a cascade does when the model it escalates to is not the better one."
+  },
+  "gates": [
+    {
+      "id": "ettin-encoder-log_loss",
+      "kind": "encoder",
+      "artifact": "artifacts/program2/{dataset}-log_loss"
+    },
+    {
+      "id": "ettin-encoder-brier",
+      "kind": "encoder",
+      "artifact": "artifacts/program2/{dataset}-brier"
+    },
+    {
+      "id": "deberta-v3-large-zeroshot-v2.0-c",
+      "kind": "zeroshot",
+      "decisions": "artifacts/decisions/deberta-v3-large-zeroshot-v2.0-c__{dataset}__{split}.jsonl"
+    },
+    {
+      "id": "gliclass-base-v3.0",
+      "kind": "zeroshot",
+      "decisions": "artifacts/decisions/gliclass-base-v3.0__{dataset}__{split}.jsonl"
+    },
+    {
+      "id": "qwen3-0.6b",
+      "kind": "zeroshot",
+      "decisions": "artifacts/decisions/qwen3-0.6b__{dataset}__{split}.jsonl",
+      "latency_note": "On Banking77 the Qwen batch-1 median is about 1.3 s and the decoder median is 158 ms. A saved decoder call is not a saved millisecond for this gate."
+    }
+  ],
+  "escalation_rates": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "confidence": "Maximum entry of the temperature-scaled simplex. Ettin temperatures are the values already stored in each job metrics.json. Zero-shot probabilities are the probs_scaled field already stored in the decision files. Temperature is not refit.",
+  "threshold": {
+    "split": "dev",
+    "labels_used": false,
+    "k": "Python round(rate * n_dev), half to even.",
+    "rule": "If k is 0, escalate no item. If k is n_dev, escalate every item. Otherwise tau is the k-th smallest dev confidence (1-based). An item escalates when its confidence is less than or equal to tau. Ties at tau escalate as well, so the realized dev rate can exceed the target. The same tau is applied to test. The realized test rate is reported and is not forced back to the target.",
+    "dev_scores": "Zero-shot dev probabilities already exist. Ettin dev logits were not saved. They are recomputed from the saved checkpoints onto artifacts/hybrid/dev/{dataset}/{gate}.npz before tau is chosen. Test hybrid metrics are not computed in that step."
+  },
+  "load_check": {
+    "rows": 8,
+    "atol": 0.02,
+    "rtol": 0.02,
+    "what": "The first 8 test logits from the reloaded Ettin checkpoint are compared with the saved test_scores.npz. This checks that the reload is the checkpoint that produced the published scores. It is not a hybrid metric and it does not choose tau."
+  },
+  "decision": "On an escalated item the hybrid simplex is the strong model's simplex. On every other item it is the cheap model's simplex. The two distributions are not averaged.",
+  "argmax": "Lowest index on a tie, as in Program 1.",
+  "metrics": [
+    "accuracy, multiclass Brier, and log loss of the hybrid, of always-cheap (rate 0), and of always-strong (rate 1), using the Program 1 definitions",
+    "score_drop = hybrid Brier minus always-strong Brier",
+    "strong_call_fraction = fraction of test items escalated",
+    "strong_calls_saved = 1 - strong_call_fraction",
+    "argmax agreement of cheap versus strong, overall and inside confidence bins [0, 0.2), [0.2, 0.4), [0.4, 0.6), [0.6, 0.8), [0.8, 1]",
+    "random-deferral and oracle controls at the realized call count, as defined under controls"
+  ],
+  "latency": "Not re-timed. Medians quoted in the write-up are copied from the Program 1 and float32 Program 2 latency fields.",
+  "training": false,
+  "grpo": false,
+  "rlcd": false,
+  "revision_note": "Revised 2026-10-08, before any metric from the float32 checkpoints was combined into a cascade. The first run used checkpoints trained with bfloat16 weights and had no random-deferral control; it is kept under artifacts/superseded-bf16/hybrid/. The standalone test metrics of every model here were already published in the float32 rerun tables.",
+  "controls": {
+    "random_draws": 2000,
+    "random_seed": 20261008,
+    "random": "For each gate and rate, the same number of test items as the confidence rule escalated is drawn uniformly without replacement, 2000 times. Reported: mean and central 95% of the hybrid Brier, mean accuracy, the observed Brier minus that mean, and the fraction of draws at or below the observed Brier.",
+    "oracle": "The same number of items, chosen by the largest per-item Brier improvement using gold labels. A lower bound on Brier at that call budget, not a method."
+  }
+}

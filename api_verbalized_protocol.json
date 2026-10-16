@@ -1,0 +1,78 @@
+{
+  "protocol_id": "api-baselines-verbalized-and-pilot-2026-10-10",
+  "role": "two additions to api_protocol.json: hosted models that can only state probabilities in text, on a fixed slice; and the two token-probability models on the context pilot",
+  "claim": "Written before any of these runs touched a test item. A stated probability is a different object from a token probability or a one-pass typed distribution: the model writes numbers it chooses to write. It is reported as its own baseline and never pooled with the others.",
+  "metrics_match": "program-1-choice-2026-10-07",
+  "budget": {
+    "this_run_cap_usd": 5.0,
+    "project_cap_usd": 20.0,
+    "rule": "as in api_protocol.json; spend continues in artifacts/api/spend.json"
+  },
+  "verbalized": {
+    "systems": {
+      "gpt-5.6-luna": {
+        "model": "openai/gpt-5.6-luna",
+        "provider": "OpenAI",
+        "reasoning": {
+          "enabled": false
+        },
+        "max_tokens": 400
+      },
+      "claude-haiku-5.5": {
+        "model": "anthropic/claude-haiku-5.5",
+        "provider": "Claude Platform on AWS",
+        "reasoning": {
+          "enabled": false
+        },
+        "max_tokens": 400
+      },
+      "gemini-3.5-flash-lite": {
+        "model": "google/gemini-3.5-flash-lite",
+        "provider": "Google",
+        "reasoning": {
+          "effort": "low"
+        },
+        "max_tokens": 2500
+      },
+      "gemini-3.1-pro": {
+        "model": "google/gemini-3.1-pro-preview",
+        "provider": "Google",
+        "reasoning": {
+          "effort": "low"
+        },
+        "max_tokens": 2500,
+        "sub_slice": {
+          "test_n": 150,
+          "dev_n": 50,
+          "seed": 20261011
+        },
+        "added": "2026-10-11, before it saw any slice item: a strong reference with mandatory reasoning, on a seeded subset of the fixed slice (150 test and 50 dev items per dataset) because it costs about 25 times as much per item as the others"
+      }
+    },
+    "reasoning_note": "Gemini 3.5 Flash-Lite cannot run with reasoning off on this endpoint, so it runs at low effort and its generated tokens are reported. The other two run with reasoning off.",
+    "slice": {
+      "seed": 20261010,
+      "test_n": 500,
+      "dev_n": 150,
+      "rule": "for each suite dataset, a seeded random subset of its test and dev items, drawn once and saved; the CLINC150 out-of-scope split is not included"
+    },
+    "prompt": "Text:\n{text}\n\nOptions:\n{options}\n\nGive your probability for each plausible option as a JSON object that maps option codes to probabilities, for example {example}. The probabilities must sum to 1. Reply with only the JSON.",
+    "option_line": "{code}: {label}",
+    "codes": "as in api_protocol.json",
+    "temperature_setting": 0,
+    "readout": [
+      "Take the first JSON object in the reply. Keys are read as option codes after stripping and zero-padding; keys that are not codes and values that are not non-negative numbers are dropped.",
+      "If the stated probabilities sum to more than 1 they are divided by their sum. If they sum to less than 1 the remainder is split equally among the options not listed.",
+      "The result is floored at 1e-9 and renormalised. Scores are its logarithm; one temperature per system and dataset is fit on the dev slice."
+    ],
+    "unscorable": "a reply with no usable JSON object is scored as uniform and counted",
+    "also_reported": "the mean number of options listed per reply and the mean stated sum"
+  },
+  "context_pilot": {
+    "systems": [
+      "qwen3.7-flash",
+      "deepseek-v4.1-flash"
+    ],
+    "what": "context_pilot_protocol.json conditions and items for Banking77 and CLINC150, unchanged; the wrapped text takes the place of the text in the api_protocol.json prompt; the top-k tree readout; each system keeps the temperature it has for the clean dataset on the suite"
+  }
+}

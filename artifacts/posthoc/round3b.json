@@ -1,0 +1,1664 @@
+{
+ "status": "POST HOC: round 3 review requests; not pre-registered",
+ "label_audit_summary": {
+  "status": "POST HOC (round 3 review, R2 N1). Text matched to legacy-datasets/banking77 after lower-casing and stripping.",
+  "source_identical_to_upstream": "data/banking77-oos/train is byte-identical to github.com/jianguoz/Few-Shot-Intent-Detection commit fa955331 (sha256 of train/seq.in 5ba97261..., train/label b4cfaddc...)",
+  "pool_rows": 5905,
+  "pool_matched": 5903,
+  "pool_mislabelled": 366,
+  "pool_leaked_held_out": 145,
+  "held_out_intents_leaking": [
+   "atm_support",
+   "card_acceptance",
+   "card_not_working",
+   "card_swallowed",
+   "get_disposable_virtual_card",
+   "get_physical_card",
+   "passcode_forgotten",
+   "receiving_money",
+   "top_up_by_bank_transfer_charge",
+   "top_up_by_card_charge",
+   "top_up_by_cash_or_cheque",
+   "top_up_limits",
+   "topping_up_by_card",
+   "transfer_into_account",
+   "verify_my_identity",
+   "verify_source_of_funds",
+   "virtual_card_not_working"
+  ],
+  "in_scope_items_wrong_gold": 32,
+  "held_out_items_true_in_scope": 36,
+  "leaked_rows_sha256": "a071c6efcf2e49ccfa0bcdd5c43a581c2c8008ad3cac7e1d3cf7f7f391c901ec"
+ },
+ "leak": {
+  "subset_sizes": {
+   "as run": {
+    "in_scope": 398,
+    "held_out": 679,
+    "held_out_intents": 27
+   },
+   "held-out intents that never leak": {
+    "in_scope": 398,
+    "held_out": 249,
+    "held_out_intents": 10
+   },
+   "never-leaking intents, label-clean items": {
+    "in_scope": 366,
+    "held_out": 240,
+    "held_out_intents": 10
+   },
+   "held-out items with no leaked row retrieved": {
+    "in_scope": 398,
+    "held_out": 181,
+    "held_out_intents": 27
+   }
+  },
+  "models": {
+   "gemma-4-31b": {
+    "as run": {
+     "rejected_zero_shot": 0.5949926362297496,
+     "rejected_retrieval": 0.30338733431516934,
+     "rejected_instruction": 0.3328424153166421,
+     "drop_test": {
+      "difference_points": 29.16053019145803,
+      "ci95": [
+       19.54831605641322,
+       39.41249543295579
+      ],
+      "p": 9.999000099990002e-05,
+      "clusters": 27
+     },
+     "in_scope_kept_zero_shot": 0.9170854271356784,
+     "in_scope_kept_retrieval": 0.9824120603015075,
+     "d_prime_change": -0.034492683199659924,
+     "criterion_change": 0.7378435271682291
+    },
+    "held-out intents that never leak": {
+     "rejected_zero_shot": 0.6506024096385542,
+     "rejected_retrieval": 0.41365461847389556,
+     "rejected_instruction": 0.4899598393574297,
+     "drop_test": {
+      "difference_points": 23.694779116465863,
+      "ci95": [
+       11.876902457861979,
+       38.64803286852588
+      ],
+      "p": 0.004299570042995701,
+      "clusters": 10
+     },
+     "in_scope_kept_zero_shot": 0.9170854271356784,
+     "in_scope_kept_retrieval": 0.9824120603015075,
+     "d_prime_change": 0.11549597261259281,
+     "criterion_change": 0.662849199262103
+    },
+    "never-leaking intents, label-clean items": {
+     "rejected_zero_shot": 0.675,
+     "rejected_retrieval": 0.42916666666666664,
+     "rejected_instruction": 0.5083333333333333,
+     "drop_test": {
+      "difference_points": 24.583333333333332,
+      "ci95": [
+       12.203250023908954,
+       40.1844381239842
+      ],
+      "p": 0.004299570042995701,
+      "clusters": 10
+     },
+     "in_scope_kept_zero_shot": 0.9316939890710383,
+     "in_scope_kept_retrieval": 0.9890710382513661,
+     "d_prime_change": 0.17204260717307518,
+     "criterion_change": 0.7182796579786259
+    },
+    "held-out items with no leaked row retrieved": {
+     "rejected_zero_shot": 0.5082872928176796,
+     "rejected_retrieval": 0.3867403314917127,
+     "rejected_instruction": 0.43646408839779005,
+     "drop_test": {
+      "difference_points": 12.154696132596685,
+      "ci95": [
+       3.355610963218477,
+       20.863739102357094
+      ],
+      "p": 0.012798720127987202,
+      "clusters": 27
+     },
+     "in_scope_kept_zero_shot": 0.9170854271356784,
+     "in_scope_kept_retrieval": 0.9824120603015075,
+     "d_prime_change": 0.4119974810614053,
+     "criterion_change": 0.5145984450376966
+    }
+   },
+   "qwen3.5-27b": {
+    "as run": {
+     "rejected_zero_shot": 0.8217967599410898,
+     "rejected_retrieval": 0.5846833578792342,
+     "rejected_instruction": 0.6347569955817378,
+     "drop_test": {
+      "difference_points": 23.711340206185564,
+      "ci95": [
+       16.78993540028268,
+       31.30617076725107
+      ],
+      "p": 9.999000099990002e-05,
+      "clusters": 27
+     },
+     "in_scope_kept_zero_shot": 0.8090452261306532,
+     "in_scope_kept_retrieval": 0.9522613065326633,
+     "d_prime_change": 0.08445822209736198,
+     "criterion_change": 0.7505737817146234
+    },
+    "held-out intents that never leak": {
+     "rejected_zero_shot": 0.8232931726907631,
+     "rejected_retrieval": 0.6867469879518072,
+     "rejected_instruction": 0.7710843373493976,
+     "drop_test": {
+      "difference_points": 13.654618473895583,
+      "ci95": [
+       6.047177419354839,
+       22.176894467689444
+      ],
+      "p": 0.007699230076992301,
+      "clusters": 10
+     },
+     "in_scope_kept_zero_shot": 0.8090452261306532,
+     "in_scope_kept_retrieval": 0.9522613065326633,
+     "d_prime_change": 0.3514651311354544,
+     "criterion_change": 0.6170703271955772
+    },
+    "never-leaking intents, label-clean items": {
+     "rejected_zero_shot": 0.8541666666666666,
+     "rejected_retrieval": 0.7125,
+     "rejected_instruction": 0.8,
+     "drop_test": {
+      "difference_points": 14.166666666666666,
+      "ci95": [
+       6.224066390041494,
+       23.110025001736226
+      ],
+      "p": 0.007699230076992301,
+      "clusters": 10
+     },
+     "in_scope_kept_zero_shot": 0.8306010928961749,
+     "in_scope_kept_retrieval": 0.9699453551912568,
+     "d_prime_change": 0.4296783795174708,
+     "criterion_change": 0.708608609653705
+    },
+    "held-out items with no leaked row retrieved": {
+     "rejected_zero_shot": 0.6464088397790055,
+     "rejected_retrieval": 0.569060773480663,
+     "rejected_instruction": 0.6243093922651933,
+     "drop_test": {
+      "difference_points": 7.734806629834254,
+      "ci95": [
+       1.3418374149962222,
+       15.094888108819655
+      ],
+      "p": 0.025297470252974703,
+      "clusters": 27
+     },
+     "in_scope_kept_zero_shot": 0.8090452261306532,
+     "in_scope_kept_retrieval": 0.9522613065326633,
+     "d_prime_change": 0.5911433652402844,
+     "criterion_change": 0.49723121014316213
+    }
+   },
+   "llama-3.3-70b": {
+    "as run": {
+     "rejected_zero_shot": 0.5066273932253313,
+     "rejected_retrieval": 0.17673048600883653,
+     "rejected_instruction": 0.3166421207658321,
+     "drop_test": {
+      "difference_points": 32.98969072164948,
+      "ci95": [
+       23.2969218703256,
+       42.87886860323062
+      ],
+      "p": 9.999000099990002e-05,
+      "clusters": 27
+     },
+     "in_scope_kept_zero_shot": 0.8919597989949749,
+     "in_scope_kept_retrieval": 0.992462311557789,
+     "d_prime_change": 0.2490349676740189,
+     "criterion_change": 1.0690277146227172
+    },
+    "held-out intents that never leak": {
+     "rejected_zero_shot": 0.6666666666666666,
+     "rejected_retrieval": 0.30522088353413657,
+     "rejected_instruction": 0.4819277108433735,
+     "drop_test": {
+      "difference_points": 36.144578313253014,
+      "ci95": [
+       18.970712791045273,
+       54.3570522953303
+      ],
+      "p": 0.008799120087991202,
+      "clusters": 10
+     },
+     "in_scope_kept_zero_shot": 0.8919597989949749,
+     "in_scope_kept_retrieval": 0.992462311557789,
+     "d_prime_change": 0.2533749344245422,
+     "criterion_change": 1.0668577312474556
+    },
+    "never-leaking intents, label-clean items": {
+     "rejected_zero_shot": 0.6916666666666667,
+     "rejected_retrieval": 0.31666666666666665,
+     "rejected_instruction": 0.5,
+     "drop_test": {
+      "difference_points": 37.5,
+      "ci95": [
+       20.079918032786885,
+       55.74222147875542
+      ],
+      "p": 0.008799120087991202,
+      "clusters": 10
+     },
+     "in_scope_kept_zero_shot": 0.9043715846994536,
+     "in_scope_kept_retrieval": 0.994535519125683,
+     "d_prime_change": 0.26047140341009656,
+     "criterion_change": 1.1078562356612318
+    },
+    "held-out items with no leaked row retrieved": {
+     "rejected_zero_shot": 0.5027624309392266,
+     "rejected_retrieval": 0.2596685082872928,
+     "rejected_instruction": 0.425414364640884,
+     "drop_test": {
+      "difference_points": 24.30939226519337,
+      "ci95": [
+       11.485583866309057,
+       35.294117647058826
+      ],
+      "p": 0.0006999300069993001,
+      "clusters": 27
+     },
+     "in_scope_kept_zero_shot": 0.8919597989949749,
+     "in_scope_kept_retrieval": 0.992462311557789,
+     "d_prime_change": 0.54225304334958,
+     "criterion_change": 0.9224186767849366
+    }
+   },
+   "deepseek-v4-pro": {
+    "as run": {
+     "rejected_zero_shot": 0.6082474226804123,
+     "rejected_retrieval": 0.2106038291605302,
+     "rejected_instruction": 0.3181148748159057,
+     "drop_test": {
+      "difference_points": 39.76435935198822,
+      "ci95": [
+       30.745994293239683,
+       49.103636804352305
+      ],
+      "p": 9.999000099990002e-05,
+      "clusters": 27
+     },
+     "in_scope_kept_zero_shot": 0.8894472361809045,
+     "in_scope_kept_retrieval": 0.9899497487437185,
+     "d_prime_change": 0.021790859770771442,
+     "criterion_change": 1.0899773910951747
+    },
+    "held-out intents that never leak": {
+     "rejected_zero_shot": 0.678714859437751,
+     "rejected_retrieval": 0.36947791164658633,
+     "rejected_instruction": 0.4738955823293173,
+     "drop_test": {
+      "difference_points": 30.923694779116467,
+      "ci95": [
+       16.129032258064516,
+       46.80893279297535
+      ],
+      "p": 0.004299570042995701,
+      "clusters": 10
+     },
+     "in_scope_kept_zero_shot": 0.8894472361809045,
+     "in_scope_kept_retrieval": 0.9899497487437185,
+     "d_prime_change": 0.303528269508172,
+     "criterion_change": 0.9491086862264746
+    },
+    "never-leaking intents, label-clean items": {
+     "rejected_zero_shot": 0.7041666666666667,
+     "rejected_retrieval": 0.38333333333333336,
+     "rejected_instruction": 0.49166666666666664,
+     "drop_test": {
+      "difference_points": 32.083333333333336,
+      "ci95": [
+       16.80672268907563,
+       48.66186884236453
+      ],
+      "p": 0.004299570042995701,
+      "clusters": 10
+     },
+     "in_scope_kept_zero_shot": 0.8989071038251366,
+     "in_scope_kept_retrieval": 0.994535519125683,
+     "d_prime_change": 0.43645296705468306,
+     "criterion_change": 1.0513867030170665
+    },
+    "held-out items with no leaked row retrieved": {
+     "rejected_zero_shot": 0.5138121546961326,
+     "rejected_retrieval": 0.2983425414364641,
+     "rejected_instruction": 0.39226519337016574,
+     "drop_test": {
+      "difference_points": 21.54696132596685,
+      "ci95": [
+       8.620404201872574,
+       35.00048638132296
+      ],
+      "p": 0.0006999300069993001,
+      "clusters": 27
+     },
+     "in_scope_kept_zero_shot": 0.8894472361809045,
+     "in_scope_kept_retrieval": 0.9899497487437185,
+     "d_prime_change": 0.537070442018583,
+     "criterion_change": 0.832337599971269
+    }
+   },
+   "jev-1.13.0": {
+    "as run": {
+     "rejected_zero_shot": 0.7069219440353461,
+     "rejected_retrieval": 0.2533136966126657,
+     "drop_test": {
+      "difference_points": 45.36082474226804,
+      "ci95": [
+       35.631846635367765,
+       55.29754467074847
+      ],
+      "p": 9.999000099990002e-05,
+      "clusters": 27
+     },
+     "auroc_zero_shot": 0.8881780034191576,
+     "auroc_retrieval": 0.8912918791305571,
+     "auroc_change_ci95": [
+      -0.03174161989020757,
+      0.03952988984090035
+     ],
+     "mean_prob_held_out_change": 0.2884241531664212
+    },
+    "held-out intents that never leak": {
+     "rejected_zero_shot": 0.7670682730923695,
+     "rejected_retrieval": 0.4859437751004016,
+     "drop_test": {
+      "difference_points": 28.11244979919679,
+      "ci95": [
+       16.99604743083004,
+       39.67627401837928
+      ],
+      "p": 0.004299570042995701,
+      "clusters": 10
+     },
+     "auroc_zero_shot": 0.8921262941212085,
+     "auroc_retrieval": 0.9196888054731489,
+     "auroc_change_ci95": [
+      0.00298018005620197,
+      0.06005040505332589
+     ],
+     "mean_prob_held_out_change": 0.1699598393574297
+    },
+    "never-leaking intents, label-clean items": {
+     "rejected_zero_shot": 0.7916666666666666,
+     "rejected_retrieval": 0.5041666666666667,
+     "drop_test": {
+      "difference_points": 28.749999999999996,
+      "ci95": [
+       17.35438803620622,
+       40.32921810699588
+      ],
+      "p": 0.004299570042995701,
+      "clusters": 10
+     },
+     "auroc_zero_shot": 0.914936247723133,
+     "auroc_retrieval": 0.9472108378870674,
+     "auroc_change_ci95": [
+      0.007022883095542226,
+      0.06800096557059876
+     ],
+     "mean_prob_held_out_change": 0.17158333333333337
+    },
+    "held-out items with no leaked row retrieved": {
+     "rejected_zero_shot": 0.580110497237569,
+     "rejected_retrieval": 0.3756906077348066,
+     "drop_test": {
+      "difference_points": 20.441988950276244,
+      "ci95": [
+       11.863495534900675,
+       29.62962962962963
+      ],
+      "p": 0.00039996000399960006,
+      "clusters": 27
+     },
+     "auroc_zero_shot": 0.8115508481634692,
+     "auroc_retrieval": 0.8445750853716094,
+     "auroc_change_ci95": [
+      -0.017381823244539296,
+      0.07908467939086665
+     ],
+     "mean_prob_held_out_change": 0.14276243093922653
+    }
+   }
+  },
+  "closeness_dense_auroc": {
+   "as run (leaky pool)": 0.7732550824816276,
+   "leaked rows removed": 0.9028722404363496,
+   "leaked rows removed, never-leaking intents, label-clean items": 0.9399817850637523
+  }
+ },
+ "mitigations_unseen": {
+  "dev_seen_held_out_intents": {
+   "banking77_oos": [
+    "age_limit",
+    "card_delivery_estimate",
+    "card_not_working",
+    "exchange_rate",
+    "lost_or_stolen_card"
+   ],
+   "clinc_banking": [
+    "oos_balance",
+    "oos_transfer"
+   ],
+   "clinc_credit_cards": [
+    "oos_improve_credit_score",
+    "oos_replacement_card_duration"
+   ]
+  },
+  "note": "round3.json kept only rates, so the veto and floors are recomputed here on the unseen-intent held-out items",
+  "banking77_oos": {
+   "held_out_unseen": 557,
+   "held_out_seen": 122,
+   "specialist": {
+    "rejected_seen": 0.6475409836065574,
+    "rejected_unseen": 0.4452423698384201
+   },
+   "models": {
+    "gemma-4-31b": {
+     "zero_shot_rejected": 0.5906642728904847,
+     "retrieval_rejected": 0.26929982046678635,
+     "retrieval + specialist veto": {
+      "rejected": 0.526032315978456,
+      "gain_test": {
+       "difference_points": 25.673249551166965,
+       "ci95": [
+        16.990478824273072,
+        35.503640330899096
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -2.261306532663317,
+       "ci95": [
+        -3.6407766990291264,
+        -1.0256410256410255
+       ],
+       "p": 0.0046995300469953,
+       "clusters": 45
+      },
+      "share_recovered": 0.7988826815642458,
+      "works_by_run_D_rule": false
+     },
+     "retrieval + dense floor": {
+      "rejected": 0.6696588868940754,
+      "gain_test": {
+       "difference_points": 40.035906642728904,
+       "ci95": [
+        31.434167710061722,
+        49.12610097514942
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -14.824120603015075,
+       "ci95": [
+        -18.544695592912312,
+        -11.18682579970886
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 45
+      },
+      "share_recovered": 1.2458100558659218,
+      "works_by_run_D_rule": false
+     },
+     "instruction + specialist veto": {
+      "rejected": 0.533213644524237,
+      "gain_test": {
+       "difference_points": 26.391382405745063,
+       "ci95": [
+        18.146398841838582,
+        35.91181325267875
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -2.763819095477387,
+       "ci95": [
+        -4.736874917968237,
+        -0.8264462809917356
+       ],
+       "p": 0.0173982601739826,
+       "clusters": 45
+      },
+      "share_recovered": 0.8212290502793298,
+      "works_by_run_D_rule": false
+     }
+    },
+    "qwen3.5-27b": {
+     "zero_shot_rejected": 0.8330341113105925,
+     "retrieval_rejected": 0.5673249551166966,
+     "retrieval + specialist veto": {
+      "rejected": 0.6786355475763016,
+      "gain_test": {
+       "difference_points": 11.131059245960502,
+       "ci95": [
+        7.575291580124621,
+        15.30127699365886
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -2.0100502512562812,
+       "ci95": [
+        -3.2665186049294093,
+        -0.8771290471075651
+       ],
+       "p": 0.007699230076992301,
+       "clusters": 45
+      },
+      "share_recovered": 0.418918918918919,
+      "works_by_run_D_rule": false
+     },
+     "retrieval + dense floor": {
+      "rejected": 0.7648114901256733,
+      "gain_test": {
+       "difference_points": 19.748653500897667,
+       "ci95": [
+        14.257042323224326,
+        25.267000269794572
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -14.321608040201006,
+       "ci95": [
+        -17.991156667671593,
+        -10.704512387140497
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 45
+      },
+      "share_recovered": 0.7432432432432434,
+      "works_by_run_D_rule": false
+     },
+     "instruction + specialist veto": {
+      "rejected": 0.6929982046678635,
+      "gain_test": {
+       "difference_points": 12.567324955116696,
+       "ci95": [
+        8.14291917796752,
+        17.311315229486755
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -2.763819095477387,
+       "ci95": [
+        -4.0964349200079,
+        -1.470231296402058
+       ],
+       "p": 0.0008999100089991,
+       "clusters": 45
+      },
+      "share_recovered": 0.472972972972973,
+      "works_by_run_D_rule": false
+     }
+    },
+    "llama-3.3-70b": {
+     "zero_shot_rejected": 0.4865350089766607,
+     "retrieval_rejected": 0.14721723518850988,
+     "retrieval + specialist veto": {
+      "rejected": 0.47217235188509876,
+      "gain_test": {
+       "difference_points": 32.49551166965889,
+       "ci95": [
+        21.998885077186966,
+        43.626815733638
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -3.015075376884422,
+       "ci95": [
+        -4.9081084435618285,
+        -1.3476183230443735
+       ],
+       "p": 0.0020997900209979003,
+       "clusters": 45
+      },
+      "share_recovered": 0.9576719576719577,
+      "works_by_run_D_rule": false
+     },
+     "retrieval + dense floor": {
+      "rejected": 0.6193895870736086,
+      "gain_test": {
+       "difference_points": 47.217235188509875,
+       "ci95": [
+        37.23563344446394,
+        56.91528860332842
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -15.326633165829145,
+       "ci95": [
+        -19.389993301106223,
+        -11.583529325967659
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 45
+      },
+      "share_recovered": 1.3915343915343914,
+      "works_by_run_D_rule": false
+     },
+     "instruction + specialist veto": {
+      "rejected": 0.5314183123877917,
+      "gain_test": {
+       "difference_points": 38.42010771992819,
+       "ci95": [
+        28.455033181073862,
+        49.05352613461364
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -4.522613065326634,
+       "ci95": [
+        -6.591284427417685,
+        -2.643741797900265
+       ],
+       "p": 0.00029997000299970003,
+       "clusters": 45
+      },
+      "share_recovered": 1.132275132275132,
+      "works_by_run_D_rule": false
+     }
+    },
+    "deepseek-v4-pro": {
+     "zero_shot_rejected": 0.6140035906642729,
+     "retrieval_rejected": 0.17594254937163376,
+     "retrieval + specialist veto": {
+      "rejected": 0.473967684021544,
+      "gain_test": {
+       "difference_points": 29.80251346499102,
+       "ci95": [
+        20.886787280701753,
+        39.092100783112016
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -2.763819095477387,
+       "ci95": [
+        -4.576746379722955,
+        -1.2711326679858903
+       ],
+       "p": 0.0017998200179982,
+       "clusters": 45
+      },
+      "share_recovered": 0.680327868852459,
+      "works_by_run_D_rule": false
+     },
+     "retrieval + dense floor": {
+      "rejected": 0.6157989228007181,
+      "gain_test": {
+       "difference_points": 43.98563734290844,
+       "ci95": [
+        35.133720107542096,
+        52.196860696421325
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -15.829145728643216,
+       "ci95": [
+        -19.94137016256166,
+        -12.029834817222085
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 45
+      },
+      "share_recovered": 1.0040983606557377,
+      "works_by_run_D_rule": false
+     },
+     "instruction + specialist veto": {
+      "rejected": 0.5098743267504489,
+      "gain_test": {
+       "difference_points": 33.39317773788151,
+       "ci95": [
+        24.568713105076743,
+        42.59611687812378
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 22
+      },
+      "in_scope_right_change": {
+       "difference_points": -3.015075376884422,
+       "ci95": [
+        -4.831438728075316,
+        -1.4995370370370396
+       ],
+       "p": 0.0010998900109989002,
+       "clusters": 45
+      },
+      "share_recovered": 0.7622950819672132,
+      "works_by_run_D_rule": false
+     }
+    }
+   }
+  },
+  "clinc_single_domain": {
+   "held_out_unseen": 420,
+   "held_out_seen": 280,
+   "specialist": {
+    "rejected_seen": 0.7821428571428571,
+    "rejected_unseen": 0.37857142857142856
+   },
+   "models": {
+    "gemma-4-31b": {
+     "zero_shot_rejected": 0.4261904761904762,
+     "retrieval_rejected": 0.38095238095238093,
+     "retrieval + specialist veto": {
+      "rejected": 0.569047619047619,
+      "gain_test": {
+       "difference_points": 18.80952380952381,
+       "ci95": [
+        8.571428571428571,
+        31.904761904761905
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -3.5000000000000004,
+       "ci95": [
+        -5.3,
+        -1.9
+       ],
+       "p": 0.00039996000399960006,
+       "clusters": 20
+      },
+      "share_recovered": 4.157894736842104,
+      "works_by_run_D_rule": false
+     },
+     "retrieval + dense floor": {
+      "rejected": 0.819047619047619,
+      "gain_test": {
+       "difference_points": 43.80952380952381,
+       "ci95": [
+        25.714285714285715,
+        58.095238095238095
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -11.600000000000001,
+       "ci95": [
+        -15.5,
+        -7.6
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 20
+      },
+      "share_recovered": 9.684210526315788,
+      "works_by_run_D_rule": false
+     },
+     "instruction + specialist veto": {
+      "rejected": 0.7071428571428572,
+      "gain_test": {
+       "difference_points": 32.61904761904762,
+       "ci95": [
+        18.791666666666668,
+        45.476190476190474
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -3.8,
+       "ci95": [
+        -5.6,
+        -2.2
+       ],
+       "p": 0.00039996000399960006,
+       "clusters": 20
+      },
+      "share_recovered": 7.210526315789474,
+      "works_by_run_D_rule": false
+     }
+    },
+    "qwen3.5-27b": {
+     "zero_shot_rejected": 0.7166666666666667,
+     "retrieval_rejected": 0.638095238095238,
+     "retrieval + specialist veto": {
+      "rejected": 0.7023809523809523,
+      "gain_test": {
+       "difference_points": 6.428571428571428,
+       "ci95": [
+        3.3333333333333335,
+        9.523809523809524
+       ],
+       "p": 0.030596940305969402,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -2.8000000000000003,
+       "ci95": [
+        -4.1,
+        -1.6
+       ],
+       "p": 0.00039996000399960006,
+       "clusters": 20
+      },
+      "share_recovered": 0.8181818181818176,
+      "works_by_run_D_rule": false
+     },
+     "retrieval + dense floor": {
+      "rejected": 0.8809523809523809,
+      "gain_test": {
+       "difference_points": 24.285714285714285,
+       "ci95": [
+        10.714285714285714,
+        38.57142857142857
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -10.7,
+       "ci95": [
+        -14.5,
+        -7.0
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 20
+      },
+      "share_recovered": 3.090909090909089,
+      "works_by_run_D_rule": false
+     },
+     "instruction + specialist veto": {
+      "rejected": 0.8428571428571429,
+      "gain_test": {
+       "difference_points": 20.476190476190474,
+       "ci95": [
+        10.238095238095237,
+        31.19047619047619
+       ],
+       "p": 0.030596940305969402,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -3.1,
+       "ci95": [
+        -4.4,
+        -1.9
+       ],
+       "p": 0.00039996000399960006,
+       "clusters": 20
+      },
+      "share_recovered": 2.606060606060605,
+      "works_by_run_D_rule": false
+     }
+    },
+    "llama-3.3-70b": {
+     "zero_shot_rejected": 0.3380952380952381,
+     "retrieval_rejected": 0.3547619047619048,
+     "retrieval + specialist veto": {
+      "rejected": 0.55,
+      "gain_test": {
+       "difference_points": 19.523809523809526,
+       "ci95": [
+        11.19047619047619,
+        28.33928571428568
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -3.4000000000000004,
+       "ci95": [
+        -5.1,
+        -1.9
+       ],
+       "p": 0.00039996000399960006,
+       "clusters": 20
+      },
+      "share_recovered": null,
+      "works_by_run_D_rule": false
+     },
+     "retrieval + dense floor": {
+      "rejected": 0.7833333333333333,
+      "gain_test": {
+       "difference_points": 42.857142857142854,
+       "ci95": [
+        27.61904761904762,
+        54.523809523809526
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -12.1,
+       "ci95": [
+        -16.4,
+        -7.897500000000014
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 20
+      },
+      "share_recovered": null,
+      "works_by_run_D_rule": false
+     },
+     "instruction + specialist veto": {
+      "rejected": 0.7238095238095238,
+      "gain_test": {
+       "difference_points": 36.904761904761905,
+       "ci95": [
+        27.142857142857142,
+        46.19047619047619
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -4.2,
+       "ci95": [
+        -5.7,
+        -2.8
+       ],
+       "p": 0.00019998000199980003,
+       "clusters": 20
+      },
+      "share_recovered": null,
+      "works_by_run_D_rule": false
+     }
+    },
+    "deepseek-v4-pro": {
+     "zero_shot_rejected": 0.37142857142857144,
+     "retrieval_rejected": 0.29285714285714287,
+     "retrieval + specialist veto": {
+      "rejected": 0.5380952380952381,
+      "gain_test": {
+       "difference_points": 24.523809523809522,
+       "ci95": [
+        11.904761904761905,
+        43.095238095238095
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -3.5999999999999996,
+       "ci95": [
+        -5.4,
+        -2.0
+       ],
+       "p": 0.00039996000399960006,
+       "clusters": 20
+      },
+      "share_recovered": 3.1212121212121207,
+      "works_by_run_D_rule": false
+     },
+     "retrieval + dense floor": {
+      "rejected": 0.7904761904761904,
+      "gain_test": {
+       "difference_points": 49.76190476190476,
+       "ci95": [
+        31.19047619047619,
+        61.904761904761905
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -12.4,
+       "ci95": [
+        -16.8,
+        -8.0
+       ],
+       "p": 9.999000099990002e-05,
+       "clusters": 20
+      },
+      "share_recovered": 6.333333333333333,
+      "works_by_run_D_rule": false
+     },
+     "instruction + specialist veto": {
+      "rejected": 0.6571428571428571,
+      "gain_test": {
+       "difference_points": 36.42857142857142,
+       "ci95": [
+        21.904761904761905,
+        52.142857142857146
+       ],
+       "p": 0.015298470152984701,
+       "clusters": 6
+      },
+      "in_scope_right_change": {
+       "difference_points": -4.5,
+       "ci95": [
+        -6.2,
+        -2.8975000000000137
+       ],
+       "p": 0.00029997000299970003,
+       "clusters": 20
+      },
+      "share_recovered": 4.636363636363636,
+      "works_by_run_D_rule": false
+     }
+    }
+   }
+  }
+ },
+ "freshness": {
+  "definition": "a turn is 'never seen' when its normalised text appears in no session built before the confirmatory run (workflow v1, MASSIVE, CLINC150, BANKING77-OOS id and ood)",
+  "sets": {
+   "banking77": {
+    "turns": 1479,
+    "never_seen": 582,
+    "never_seen_in_scope": 463,
+    "never_seen_out_of_scope": 119,
+    "weighted_never_seen": {
+     "specialist": 0.9318704587666601,
+     "gemma-4-31b": 0.9484000943790043,
+     "qwen3.5-27b": 0.9431221300615278,
+     "gemma with rows": 0.9500807666479119,
+     "gemma-4-31b: combination": 0.958191311081668,
+     "gemma-4-31b: cascade_0.4": 0.9495991917285272,
+     "qwen3.5-27b: combination": 0.9506095310694473,
+     "qwen3.5-27b: cascade_0.4": 0.9460490891821091,
+     "jev zero_shot": 0.8048459988747119,
+     "jev retrieval": 0.9396664065194112
+    },
+    "tests_never_seen": {
+     "specialist vs gemma-4-31b": {
+      "difference_points": -1.6529635612344293,
+      "ci95": [
+       -4.023216891703414,
+       0.6814377617877265
+      ],
+      "ci90": [
+       -3.5884738060954438,
+       0.25389564783057844
+      ],
+      "p": 0.19838016198380162,
+      "clusters": 188,
+      "holm_p_same_family": 0.9365063493650635
+     },
+     "gemma-4-31b: combination vs gemma-4-31b": {
+      "difference_points": 0.9791216702663786,
+      "ci95": [
+       -0.42405778203487426,
+       2.396074957044672
+      ],
+      "ci90": [
+       -0.19778090326613543,
+       2.1793728056907664
+      ],
+      "p": 0.21787821217878212,
+      "clusters": 188,
+      "holm_p_same_family": 0.9365063493650635
+     },
+     "specialist vs qwen3.5-27b": {
+      "difference_points": -1.1251671294867842,
+      "ci95": [
+       -3.408410515816473,
+       1.2088803858999693
+      ],
+      "ci90": [
+       -3.0577190845718043,
+       0.8675396332073665
+      ],
+      "p": 0.3882611738826117,
+      "clusters": 188
+     },
+     "gemma-4-31b: cascade_0.4 vs gemma-4-31b": {
+      "difference_points": 0.11990973495229627,
+      "ci95": [
+       -0.3560147436539573,
+       0.5926363426363424
+      ],
+      "ci90": [
+       -0.2818341362169107,
+       0.5172911161651351
+      ],
+      "p": 0.6280371962803719,
+      "clusters": 188
+     },
+     "gemma with rows vs gemma-4-31b": {
+      "difference_points": 0.16806722689075632,
+      "ci95": [
+       0.0,
+       0.5263157894736843
+      ],
+      "ci90": [
+       0.0,
+       0.49586776859504134
+      ],
+      "p": 1.0,
+      "clusters": 188
+     },
+     "jev retrieval vs gemma-4-31b": {
+      "difference_points": -0.8733687859593084,
+      "ci95": [
+       -2.2721723495962047,
+       0.610916608732202
+      ],
+      "ci90": [
+       -2.0351782871162722,
+       0.32504377710498294
+      ],
+      "p": 0.192980701929807,
+      "clusters": 188
+     },
+     "jev retrieval vs specialist": {
+      "difference_points": 0.7795947752751209,
+      "ci95": [
+       -1.3559515273859972,
+       3.0808769965865643
+      ],
+      "ci90": [
+       -1.0371506483860455,
+       2.6166156339861395
+      ],
+      "p": 0.5308469153084692,
+      "clusters": 188
+     }
+    }
+   },
+   "massive": {
+    "turns": 1216,
+    "never_seen": 1215,
+    "never_seen_in_scope": 972,
+    "never_seen_out_of_scope": 243,
+    "weighted_never_seen": {
+     "specialist": 0.7824417009602196,
+     "gemma-4-31b": 0.7382716049382716,
+     "qwen3.5-27b": 0.8082304526748971,
+     "gemma with rows": 0.8716049382716049,
+     "gemma-4-31b: combination": 0.7443072702331961,
+     "gemma-4-31b: cascade_0.4": 0.7347050754458162,
+     "qwen3.5-27b: combination": 0.8170096021947874,
+     "qwen3.5-27b: cascade_0.4": 0.8041152263374486,
+     "jev zero_shot": 0.6337448559670782,
+     "jev retrieval": 0.7777777777777779
+    },
+    "tests_never_seen": {
+     "specialist vs gemma-4-31b": {
+      "difference_points": 4.417009602194788,
+      "ci95": [
+       -0.043241684592222385,
+       8.092484122777016
+      ],
+      "ci90": [
+       0.743551017225739,
+       7.592894857811401
+      ],
+      "p": 0.17988201179882013,
+      "clusters": 264,
+      "holm_p_same_family": 0.9365063493650635
+     },
+     "gemma-4-31b: combination vs gemma-4-31b": {
+      "difference_points": 0.6035665294924555,
+      "ci95": [
+       -0.1465608465608466,
+       1.1787071356971346
+      ],
+      "ci90": [
+       -0.06230314439837035,
+       1.098930402930403
+      ],
+      "p": 0.29647035296470353,
+      "clusters": 264,
+      "holm_p_same_family": 0.9365063493650635
+     },
+     "specialist vs qwen3.5-27b": {
+      "difference_points": -2.5788751714677653,
+      "ci95": [
+       -5.75271551593916,
+       0.12851627436609572
+      ],
+      "ci90": [
+       -5.244407424968222,
+       -0.29415609141932125
+      ],
+      "p": 0.2555744425557444,
+      "clusters": 264
+     },
+     "gemma-4-31b: cascade_0.4 vs gemma-4-31b": {
+      "difference_points": -0.356652949245542,
+      "ci95": [
+       -1.4359100795766195,
+       0.6235605291064344
+      ],
+      "ci90": [
+       -1.277441065638574,
+       0.44818829689347267
+      ],
+      "p": 0.569043095690431,
+      "clusters": 264
+     },
+     "gemma with rows vs gemma-4-31b": {
+      "difference_points": 13.333333333333336,
+      "ci95": [
+       12.106030529367136,
+       14.548415997767783
+      ],
+      "ci90": [
+       12.28202018427929,
+       14.35500235879611
+      ],
+      "p": 9.999000099990002e-05,
+      "clusters": 264
+     },
+     "jev retrieval vs gemma-4-31b": {
+      "difference_points": 3.950617283950618,
+      "ci95": [
+       1.7940767068726995,
+       6.340385831392228
+      ],
+      "ci90": [
+       2.086818755826485,
+       5.8547615803344515
+      ],
+      "p": 9.999000099990002e-05,
+      "clusters": 264
+     },
+     "jev retrieval vs specialist": {
+      "difference_points": -0.4663923182441687,
+      "ci95": [
+       -4.754799410039784,
+       5.405497927324204
+      ],
+      "ci90": [
+       -4.365092963287218,
+       4.34628623803574
+      ],
+      "p": 0.960903909609039,
+      "clusters": 264
+     }
+    }
+   },
+   "clinc150": {
+    "turns": 1850,
+    "never_seen": 1766,
+    "never_seen_in_scope": 1659,
+    "never_seen_out_of_scope": 107,
+    "weighted_never_seen": {
+     "specialist": 0.937705219711608,
+     "gemma-4-31b": 0.9471261259738724,
+     "qwen3.5-27b": 0.9544236196785588,
+     "gemma with rows": 0.9550252657551842,
+     "gemma-4-31b: combination": 0.9480905623813467,
+     "gemma-4-31b: cascade_0.4": 0.947929822980101,
+     "qwen3.5-27b: combination": 0.9558702742897704,
+     "qwen3.5-27b: cascade_0.4": 0.9557095348885247,
+     "jev zero_shot": 0.8817326054993156,
+     "jev retrieval": 0.9447150349551864
+    },
+    "tests_never_seen": {
+     "specialist vs gemma-4-31b": {
+      "difference_points": -0.9420906262264362,
+      "ci95": [
+       -2.139086671689164,
+       0.3475344123217332
+      ],
+      "ci90": [
+       -1.9598586026620153,
+       0.11280587704365444
+      ],
+      "p": 0.15608439156084392,
+      "clusters": 257,
+      "holm_p_same_family": 0.9365063493650635
+     },
+     "gemma-4-31b: combination vs gemma-4-31b": {
+      "difference_points": 0.0964436407474382,
+      "ci95": [
+       -0.1303066105633592,
+       0.3392346184720878
+      ],
+      "ci90": [
+       -0.09752840807255263,
+       0.2974687835440285
+      ],
+      "p": 0.5124487551244875,
+      "clusters": 257,
+      "holm_p_same_family": 0.9365063493650635
+     },
+     "specialist vs qwen3.5-27b": {
+      "difference_points": -1.6718399966950779,
+      "ci95": [
+       -3.036739075368745,
+       -0.23754989738616827
+      ],
+      "ci90": [
+       -2.808246925923728,
+       -0.4778252757888807
+      ],
+      "p": 0.017998200179982,
+      "clusters": 257
+     },
+     "gemma-4-31b: cascade_0.4 vs gemma-4-31b": {
+      "difference_points": 0.08036970062286518,
+      "ci95": [
+       -0.01590645245852526,
+       0.20861273668269575
+      ],
+      "ci90": [
+       -5.713420868896224e-18,
+       0.18448124677241312
+      ],
+      "p": 0.31196880311968805,
+      "clusters": 257
+     },
+     "gemma with rows vs gemma-4-31b": {
+      "difference_points": 0.7899139781311793,
+      "ci95": [
+       0.05144519915890089,
+       1.6720509377716646
+      ],
+      "ci90": [
+       0.1475561527217114,
+       1.5409711169496576
+      ],
+      "p": 0.0643935606439356,
+      "clusters": 257
+     },
+     "jev retrieval vs gemma-4-31b": {
+      "difference_points": -0.24110910186859552,
+      "ci95": [
+       -1.320301561158359,
+       0.8022538955092668
+      ],
+      "ci90": [
+       -1.133002966041956,
+       0.6104518648540067
+      ],
+      "p": 0.6813318668133187,
+      "clusters": 257
+     },
+     "jev retrieval vs specialist": {
+      "difference_points": 0.7009815243578407,
+      "ci95": [
+       -0.6656735773089064,
+       1.999249153366035
+      ],
+      "ci90": [
+       -0.47874066584053965,
+       1.8246549589614662
+      ],
+      "p": 0.32356764323567644,
+      "clusters": 257
+     }
+    }
+   }
+  }
+ },
+ "massive": {
+  "in_scope_labels_covered": 21,
+  "labels_total": 42,
+  "top5_share": 0.6197327852004111,
+  "top5": [
+   [
+    "calendar set",
+    175
+   ],
+   [
+    "general quirky",
+    134
+   ],
+   [
+    "weather query",
+    112
+   ],
+   [
+    "qa factoid",
+    100
+   ],
+   [
+    "calendar query",
+    82
+   ]
+  ],
+  "dev_labels_covered": 24,
+  "test_labels_missing_from_dev": 9,
+  "out_of_scope_rejected_by_domain": {
+   "email": {
+    "turns": 98,
+    "specialist (3 seeds, majority)": 0.8061224489795918,
+    "gemma-4-31b": 0.3469387755102041,
+    "qwen3.5-27b": 0.8163265306122449,
+    "gemma-4-31b with rows": 0.9591836734693877,
+    "jev zero_shot": 0.9693877551020408,
+    "jev retrieval": 0.7142857142857143,
+    "kimi-k3 (first 100 sessions)": 0.5405405405405406,
+    "claude-opus-5 (first 100 sessions)": 0.5405405405405406
+   },
+   "iot": {
+    "turns": 15,
+    "specialist (3 seeds, majority)": 0.9333333333333333,
+    "gemma-4-31b": 1.0,
+    "qwen3.5-27b": 1.0,
+    "gemma-4-31b with rows": 1.0,
+    "jev zero_shot": 1.0,
+    "jev retrieval": 0.5333333333333333,
+    "kimi-k3 (first 100 sessions)": 1.0,
+    "claude-opus-5 (first 100 sessions)": 1.0
+   },
+   "play": {
+    "turns": 130,
+    "specialist (3 seeds, majority)": 0.7846153846153846,
+    "gemma-4-31b": 0.05384615384615385,
+    "qwen3.5-27b": 0.5461538461538461,
+    "gemma-4-31b with rows": 0.8538461538461538,
+    "jev zero_shot": 0.4846153846153846,
+    "jev retrieval": 0.2230769230769231,
+    "kimi-k3 (first 100 sessions)": 0.09803921568627451,
+    "claude-opus-5 (first 100 sessions)": 0.0784313725490196
+   }
+  },
+  "specialist_vs_gemma_without_general_quirky": {
+   "difference_points": 6.087592028527005,
+   "ci95": [
+    2.3707454992311203,
+    8.769205574650835
+   ],
+   "ci90": [
+    3.040998344385906,
+    8.322188722609077
+   ],
+   "p": 0.0011998800119988001,
+   "clusters": 263
+  }
+ },
+ "mdd": {
+  "banking77": {
+   "null_sd_points": 0.6847310747919225,
+   "mdd_80pct_points": 1.917247009417383
+  },
+  "massive": {
+   "null_sd_points": 3.153879635335403,
+   "mdd_80pct_points": 8.830862978939127
+  },
+  "clinc150": {
+   "null_sd_points": 0.5936821782819917,
+   "mdd_80pct_points": 1.6623100991895767
+  }
+ },
+ "tost_noise": {
+  "lower_bound_mean": -2.5115604440145747,
+  "lower_bound_sd": 0.030510902077558036,
+  "share_of_seeds_inside_margin": 0.375,
+  "seeds": 40
+ },
+ "cost": {
+  "prices_as_of": "2026-10-15/16, OpenRouter listing for the pinned host",
+  "hosts": {
+   "gemma-4-31b": {
+    "host": "Novita",
+    "precision": "bf16",
+    "usd_per_million": [
+     0.14,
+     0.4
+    ]
+   },
+   "qwen3.5-27b": {
+    "host": "Alibaba",
+    "precision": "not stated by host",
+    "usd_per_million": [
+     0.195,
+     1.56
+    ]
+   },
+   "kimi-k3": {
+    "host": "Moonshot AI",
+    "precision": "mxfp4",
+    "usd_per_million": [
+     3.0,
+     15.0
+    ]
+   },
+   "claude-opus-5": {
+    "host": "Anthropic",
+    "precision": "not stated by host",
+    "usd_per_million": [
+     5.0,
+     25.0
+    ]
+   },
+   "llama-3.3-70b": {
+    "host": "DeepInfra",
+    "precision": "fp8",
+    "usd_per_million": [
+     0.1,
+     0.32
+    ]
+   },
+   "deepseek-v4-pro": {
+    "host": "StreamLake (Parasail fp8 partial, discarded)",
+    "precision": "fp8",
+    "usd_per_million": [
+     0.955,
+     1.911
+    ]
+   },
+   "jev-1.13.0": {
+    "host": "TypeSafe",
+    "precision": "not stated",
+    "usd_per_million": null
+   }
+  },
+  "sets": {
+   "banking77": {
+    "gemma-4-31b": {
+     "usd_per_1000_sessions_billed": 0.7349660135135134,
+     "usd_per_1000_sessions_uncached_list": 0.7349660135135134,
+     "cached_share": 0.0,
+     "multiple_of_gemma_uncached": 1.0
+    },
+    "qwen3.5-27b": {
+     "usd_per_1000_sessions_billed": 1.059548310810811,
+     "usd_per_1000_sessions_uncached_list": 1.059548310810811,
+     "cached_share": 0.0,
+     "multiple_of_gemma_uncached": 1.44162898872783
+    },
+    "kimi-k3": {
+     "usd_per_1000_sessions_billed": 8.253371627027027,
+     "usd_per_1000_sessions_uncached_list": 15.050184081081081,
+     "cached_share": 0.5511977803646294,
+     "multiple_of_gemma_uncached": 20.47738780346251
+    },
+    "claude-opus-5": {
+     "usd_per_1000_sessions_billed": 32.42537614864866,
+     "usd_per_1000_sessions_uncached_list": 32.42537614864866,
+     "cached_share": 0.0,
+     "multiple_of_gemma_uncached": 44.11819805604177
+    },
+    "break_even_sessions_per_month": {
+     "host $50/month": 68030.35661604872,
+     "host $255/month": 346954.81874184846
+    }
+   },
+   "massive": {
+    "gemma-4-31b": {
+     "usd_per_1000_sessions_billed": 0.46950311475409834,
+     "usd_per_1000_sessions_uncached_list": 0.4695031147540984,
+     "cached_share": 0.0,
+     "multiple_of_gemma_uncached": 1.0
+    },
+    "qwen3.5-27b": {
+     "usd_per_1000_sessions_billed": 0.6940441598360657,
+     "usd_per_1000_sessions_uncached_list": 0.6940441598360657,
+     "cached_share": 0.0,
+     "multiple_of_gemma_uncached": 1.4782525142555665
+    },
+    "kimi-k3": {
+     "usd_per_1000_sessions_billed": 6.593215790163935,
+     "usd_per_1000_sessions_uncached_list": 9.989659278688524,
+     "cached_share": 0.4365789874223409,
+     "multiple_of_gemma_uncached": 21.27708840423901
+    },
+    "claude-opus-5": {
+     "usd_per_1000_sessions_billed": 20.202045901639345,
+     "usd_per_1000_sessions_uncached_list": 20.202045901639345,
+     "cached_share": 0.0,
+     "multiple_of_gemma_uncached": 43.02856630082239
+    },
+    "break_even_sessions_per_month": {
+     "host $50/month": 106495.56611820868,
+     "host $255/month": 543127.3872028643
+    }
+   },
+   "clinc150": {
+    "gemma-4-31b": {
+     "usd_per_1000_sessions_billed": 1.0613403243243242,
+     "usd_per_1000_sessions_uncached_list": 1.0613403243243245,
+     "cached_share": 0.0,
+     "multiple_of_gemma_uncached": 1.0
+    },
+    "qwen3.5-27b": {
+     "usd_per_1000_sessions_billed": 1.5219165000000001,
+     "usd_per_1000_sessions_uncached_list": 1.5219165000000003,
+     "cached_share": 0.0,
+     "multiple_of_gemma_uncached": 1.433957106047855
+    },
+    "kimi-k3": {
+     "usd_per_1000_sessions_billed": 8.276988,
+     "usd_per_1000_sessions_uncached_list": 18.479100000000003,
+     "cached_share": 0.6617790777098622,
+     "multiple_of_gemma_uncached": 17.411097624849273
+    },
+    "claude-opus-5": {
+     "usd_per_1000_sessions_billed": 38.354150000000004,
+     "usd_per_1000_sessions_uncached_list": 38.354150000000004,
+     "cached_share": 0.0,
+     "multiple_of_gemma_uncached": 36.13746610863693
+    },
+    "break_even_sessions_per_month": {
+     "host $50/month": 47110.242449170335,
+     "host $255/month": 240262.23649076873
+    }
+   }
+  },
+  "cross_host_deepseek": {
+   "requests": 686,
+   "different_reply_text": 0.09475218658892129,
+   "scope_flips": 0.052478134110787174,
+   "held_out_rejected_parasail": 0.6343042071197411,
+   "held_out_rejected_streamlake": 0.5954692556634305
+  }
+ }
+}

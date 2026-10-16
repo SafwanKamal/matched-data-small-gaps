@@ -1,0 +1,44 @@
+{
+  "role": "wall-clock gate, not a metric",
+  "split_scored": null,
+  "encoder": {
+    "steps": 1080,
+    "eval_batches": 79,
+    "median_step_s": 0.044758732001355384,
+    "median_eval_batch_s": 0.03372572100124671,
+    "median_latency_s": 0.009792166500119492,
+    "load_s": 1.0913972070011368,
+    "raw_seconds": 81.21706289891881,
+    "projected_seconds": 93.39962233375662,
+    "margin": 1.15,
+    "batch_size": 32,
+    "eval_batch_size": 64,
+    "step_seconds": [
+      0.8162994679987605,
+      0.06264969499898143,
+      0.044159347999084275,
+      0.044758732001355384
+    ]
+  },
+  "decoder": {
+    "steps": 4320,
+    "eval_batches": 627,
+    "median_step_s": 0.7399159780034097,
+    "median_eval_batch_s": 0.18829853599891067,
+    "median_latency_s": 0.10594503550055379,
+    "load_s": 0.7704165760005708,
+    "raw_seconds": 3630.3511592006944,
+    "projected_seconds": 4174.903833080798,
+    "margin": 1.15,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "step_seconds": [
+      0.9678271310003765,
+      0.7399159780034097
+    ]
+  },
+  "protocol_id": "program-primary-suite-2026-10-07",
+  "protocol_sha256": "671d2cace3880d09b65e18f68d4df1d69bc312e52223d649c371e6bc04188a2d",
+  "git_head": "c5c413d8a727af129530fbeb5928ab26e395fa0c",
+  "finished_at_utc": "2026-10-07T15:13:01Z"
+}

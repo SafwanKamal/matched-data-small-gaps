@@ -1,0 +1,644 @@
+{
+  "protocol_id": "workflow-retrieval-few-shot-2026-10-13",
+  "rows": {
+    "gemma-4-31b@0.01": {
+      "train_rows": 98,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.99,
+          "intent": 0.8196618659987477,
+          "repeat": 0.910609857978279
+        },
+        "turn_success": 0.828,
+        "session_success": 0.49,
+        "session_success_ci": [
+          0.4425,
+          0.5375
+        ]
+      },
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.734,
+          "intent": 0.2417031934877896,
+          "repeat": 0.543859649122807
+        },
+        "turn_success": 0.321,
+        "session_success": 0.015,
+        "session_success_ci": [
+          0.005,
+          0.0275
+        ]
+      },
+      "usd_per_1000_sessions": 0.7936253000000001,
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.8525,
+            "intent": 0.36192861615529115,
+            "repeat": 0.6808688387635756
+          },
+          "turn_success": 0.409,
+          "session_success": 0.04,
+          "session_success_ci": [
+            0.0225,
+            0.06
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.959,
+            "intent": 0.4765184721352536,
+            "repeat": 0.8036758563074352
+          },
+          "turn_success": 0.506,
+          "session_success": 0.0625,
+          "session_success_ci": [
+            0.04,
+            0.0875
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.9825,
+            "intent": 0.6080150281778335,
+            "repeat": 0.8253968253968254
+          },
+          "turn_success": 0.6315,
+          "session_success": 0.155,
+          "session_success_ci": [
+            0.1224375,
+            0.19
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.02": {
+      "train_rows": 186,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.9925,
+          "intent": 0.8465873512836568,
+          "repeat": 0.923141186299081
+        },
+        "turn_success": 0.854,
+        "session_success": 0.5425,
+        "session_success_ci": [
+          0.495,
+          0.59
+        ]
+      },
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.74,
+          "intent": 0.30619912335629307,
+          "repeat": 0.5580618212197159
+        },
+        "turn_success": 0.377,
+        "session_success": 0.01,
+        "session_success_ci": [
+          0.0025,
+          0.02
+        ]
+      },
+      "usd_per_1000_sessions": 0.79543445,
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.8645,
+            "intent": 0.44082654978083907,
+            "repeat": 0.6992481203007519
+          },
+          "turn_success": 0.4785,
+          "session_success": 0.0375,
+          "session_success_ci": [
+            0.02,
+            0.0575
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.9575,
+            "intent": 0.5472761427676894,
+            "repeat": 0.8070175438596491
+          },
+          "turn_success": 0.558,
+          "session_success": 0.0775,
+          "session_success_ci": [
+            0.0525,
+            0.105
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.986,
+            "intent": 0.6725109580463369,
+            "repeat": 0.8512949039264829
+          },
+          "turn_success": 0.694,
+          "session_success": 0.24,
+          "session_success_ci": [
+            0.2,
+            0.2825
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.05": {
+      "train_rows": 481,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.9945,
+          "intent": 0.876017532874139,
+          "repeat": 0.9331662489557226
+        },
+        "turn_success": 0.881,
+        "session_success": 0.6,
+        "session_success_ci": [
+          0.5525,
+          0.6475
+        ]
+      },
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.853,
+          "intent": 0.65184721352536,
+          "repeat": 0.7276524644945698
+        },
+        "turn_success": 0.68,
+        "session_success": 0.1875,
+        "session_success_ci": [
+          0.1525,
+          0.225
+        ]
+      },
+      "usd_per_1000_sessions": 0.7790205,
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.9295,
+            "intent": 0.7313713212273012,
+            "repeat": 0.8270676691729323
+          },
+          "turn_success": 0.7455,
+          "session_success": 0.275,
+          "session_success_ci": [
+            0.235,
+            0.315
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.991,
+            "intent": 0.812773951158422,
+            "repeat": 0.9022556390977443
+          },
+          "turn_success": 0.8175,
+          "session_success": 0.4175,
+          "session_success_ci": [
+            0.3725,
+            0.465
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.994,
+            "intent": 0.8591108328115216,
+            "repeat": 0.923141186299081
+          },
+          "turn_success": 0.865,
+          "session_success": 0.555,
+          "session_success_ci": [
+            0.5075,
+            0.605
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.1": {
+      "train_rows": 961,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.996,
+          "intent": 0.8960551033187226,
+          "repeat": 0.9465329991645781
+        },
+        "turn_success": 0.903,
+        "session_success": 0.6525,
+        "session_success_ci": [
+          0.6075,
+          0.6975
+        ]
+      },
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.924,
+          "intent": 0.8246712586098935,
+          "repeat": 0.8596491228070176
+        },
+        "turn_success": 0.8165,
+        "session_success": 0.4425,
+        "session_success_ci": [
+          0.3925,
+          0.4925
+        ]
+      },
+      "usd_per_1000_sessions": 0.7749958499999999,
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.9795,
+            "intent": 0.876017532874139,
+            "repeat": 0.9331662489557226
+          },
+          "turn_success": 0.863,
+          "session_success": 0.555,
+          "session_success_ci": [
+            0.505,
+            0.6
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.994,
+            "intent": 0.8979336255479023,
+            "repeat": 0.9465329991645781
+          },
+          "turn_success": 0.901,
+          "session_success": 0.6475,
+          "session_success_ci": [
+            0.6,
+            0.6925
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.996,
+            "intent": 0.9010644959298685,
+            "repeat": 0.9473684210526315
+          },
+          "turn_success": 0.906,
+          "session_success": 0.6625,
+          "session_success_ci": [
+            0.6175,
+            0.7075
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.2": {
+      "train_rows": 1922,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.996,
+          "intent": 0.915466499686913,
+          "repeat": 0.9532163742690059
+        },
+        "turn_success": 0.9185,
+        "session_success": 0.705,
+        "session_success_ci": [
+          0.66,
+          0.75
+        ]
+      },
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.915,
+          "intent": 0.8515967438948028,
+          "repeat": 0.8563074352548037
+        },
+        "turn_success": 0.8435,
+        "session_success": 0.515,
+        "session_success_ci": [
+          0.465,
+          0.5625
+        ]
+      },
+      "usd_per_1000_sessions": 0.7677001,
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.9785,
+            "intent": 0.9104571070757671,
+            "repeat": 0.948203842940685
+          },
+          "turn_success": 0.895,
+          "session_success": 0.6425,
+          "session_success_ci": [
+            0.595,
+            0.6875
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.994,
+            "intent": 0.9204758922980588,
+            "repeat": 0.9565580618212197
+          },
+          "turn_success": 0.92,
+          "session_success": 0.71,
+          "session_success_ci": [
+            0.6675,
+            0.7525
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.996,
+            "intent": 0.9204758922980588,
+            "repeat": 0.9523809523809523
+          },
+          "turn_success": 0.922,
+          "session_success": 0.72,
+          "session_success_ci": [
+            0.675,
+            0.765
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.5": {
+      "train_rows": 4801,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.9975,
+          "intent": 0.9298685034439574,
+          "repeat": 0.9649122807017544
+        },
+        "turn_success": 0.9335,
+        "session_success": 0.7525,
+        "session_success_ci": [
+          0.71,
+          0.7925
+        ]
+      },
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.939,
+          "intent": 0.9079524107701941,
+          "repeat": 0.9206349206349206
+        },
+        "turn_success": 0.889,
+        "session_success": 0.59,
+        "session_success_ci": [
+          0.5425,
+          0.635
+        ]
+      },
+      "usd_per_1000_sessions": 0.76034065,
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.9865,
+            "intent": 0.9398872886662493,
+            "repeat": 0.9690893901420217
+          },
+          "turn_success": 0.9305,
+          "session_success": 0.73,
+          "session_success_ci": [
+            0.6875,
+            0.7725
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.997,
+            "intent": 0.9373825923606762,
+            "repeat": 0.9690893901420217
+          },
+          "turn_success": 0.9395,
+          "session_success": 0.77,
+          "session_success_ci": [
+            0.7275,
+            0.81
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.9975,
+            "intent": 0.9317470256731372,
+            "repeat": 0.9649122807017544
+          },
+          "turn_success": 0.935,
+          "session_success": 0.7575,
+          "session_success_ci": [
+            0.715,
+            0.7975
+          ]
+        }
+      }
+    },
+    "qwen3.5-9b@0.01": {
+      "train_rows": 98,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.9715,
+          "intent": 0.73888541014402,
+          "repeat": 0.8512949039264829
+        },
+        "turn_success": 0.76,
+        "session_success": 0.3425,
+        "session_success_ci": [
+          0.2975,
+          0.3875
+        ]
+      },
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.734,
+          "intent": 0.2417031934877896,
+          "repeat": 0.543859649122807
+        },
+        "turn_success": 0.321,
+        "session_success": 0.015,
+        "session_success_ci": [
+          0.005,
+          0.0275
+        ]
+      },
+      "usd_per_1000_sessions": 0.5545835,
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.845,
+            "intent": 0.3475266123982467,
+            "repeat": 0.6666666666666666
+          },
+          "turn_success": 0.397,
+          "session_success": 0.03,
+          "session_success_ci": [
+            0.015,
+            0.0475
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.9505,
+            "intent": 0.44395742016280526,
+            "repeat": 0.7827903091060986
+          },
+          "turn_success": 0.4775,
+          "session_success": 0.0475,
+          "session_success_ci": [
+            0.0275,
+            0.07
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.971,
+            "intent": 0.5604257983719474,
+            "repeat": 0.7994987468671679
+          },
+          "turn_success": 0.593,
+          "session_success": 0.12,
+          "session_success_ci": [
+            0.0875,
+            0.1525
+          ]
+        }
+      }
+    },
+    "qwen3.5-9b@0.05": {
+      "train_rows": 481,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.9825,
+          "intent": 0.8196618659987477,
+          "repeat": 0.9014202172096909
+        },
+        "turn_success": 0.8325,
+        "session_success": 0.4525,
+        "session_success_ci": [
+          0.405,
+          0.5
+        ]
+      },
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.853,
+          "intent": 0.65184721352536,
+          "repeat": 0.7276524644945698
+        },
+        "turn_success": 0.68,
+        "session_success": 0.1875,
+        "session_success_ci": [
+          0.1525,
+          0.225
+        ]
+      },
+      "usd_per_1000_sessions": 0.54495225,
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.9255,
+            "intent": 0.7175954915466499,
+            "repeat": 0.8187134502923976
+          },
+          "turn_success": 0.734,
+          "session_success": 0.255,
+          "session_success_ci": [
+            0.2175,
+            0.295
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.9855,
+            "intent": 0.7877269881026926,
+            "repeat": 0.8897243107769424
+          },
+          "turn_success": 0.7955,
+          "session_success": 0.3575,
+          "session_success_ci": [
+            0.31,
+            0.4025
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.986,
+            "intent": 0.8221665623043206,
+            "repeat": 0.9039264828738512
+          },
+          "turn_success": 0.833,
+          "session_success": 0.455,
+          "session_success_ci": [
+            0.405,
+            0.505
+          ]
+        }
+      }
+    },
+    "qwen3.5-9b@0.2": {
+      "train_rows": 1922,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.987,
+          "intent": 0.8747651847213526,
+          "repeat": 0.9298245614035088
+        },
+        "turn_success": 0.8825,
+        "session_success": 0.6,
+        "session_success_ci": [
+          0.5525,
+          0.6475
+        ]
+      },
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.915,
+          "intent": 0.8515967438948028,
+          "repeat": 0.8563074352548037
+        },
+        "turn_success": 0.8435,
+        "session_success": 0.515,
+        "session_success_ci": [
+          0.465,
+          0.5625
+        ]
+      },
+      "usd_per_1000_sessions": 0.537518,
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.9785,
+            "intent": 0.9029430181590482,
+            "repeat": 0.9456975772765246
+          },
+          "turn_success": 0.888,
+          "session_success": 0.625,
+          "session_success_ci": [
+            0.5775,
+            0.67
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.9915,
+            "intent": 0.9054477144646211,
+            "repeat": 0.949874686716792
+          },
+          "turn_success": 0.906,
+          "session_success": 0.6725,
+          "session_success_ci": [
+            0.6275,
+            0.715
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.993,
+            "intent": 0.8960551033187226,
+            "repeat": 0.9431913116123642
+          },
+          "turn_success": 0.9015,
+          "session_success": 0.6575,
+          "session_success_ci": [
+            0.61,
+            0.7025
+          ]
+        }
+      }
+    }
+  }
+}

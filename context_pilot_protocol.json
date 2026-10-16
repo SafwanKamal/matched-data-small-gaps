@@ -1,0 +1,42 @@
+{
+  "protocol_id": "context-pilot-2026-10-09",
+  "role": "exploratory pilot, not a confirmatory result",
+  "claim": "How much does a typed decision degrade when the item arrives wrapped in conversation context, as it would inside an agent workflow? JevOut (arXiv:2609.30243) shows that optimised context can flip Jev's decisions. This pilot uses fixed, unoptimised context templates. It runs on test items every system has already been scored on, so its numbers size an effect and decide whether a full study is worth doing. Written before any wrapped item was scored.",
+  "seed": 20261009,
+  "datasets": {
+    "banking77": {
+      "items": "the 500 Program 1 Banking77 test items",
+      "distractors": "Banking77 train rows outside the Program 1 dev split, drawn with a label different from the target and from each other"
+    },
+    "clinc150": {
+      "items": "the first 500 of the suite's CLINC150 test items in frozen order",
+      "distractors": "in-scope CLINC150 train rows, drawn the same way"
+    }
+  },
+  "conditions": {
+    "clean": "{target}",
+    "chatter": "Customer: Hi there, hope you're having a good day.\nAgent: Hello! Thanks, I am. How can I help you today?\nCustomer: Sorry, one second, my dog is barking. Okay, I'm back.\nCustomer: {target}",
+    "related_prior": "Earlier message (already resolved): {d1}\nCurrent message: {target}",
+    "typed_summary": "Earlier decisions in this conversation: {l1} (resolved); {l2} (resolved); {l3} (resolved).\nCurrent message: {target}",
+    "long_history": "Earlier messages (already resolved):\n- {d1}\n- {d2}\n- {d3}\n- {d4}\n- {d5}\n- {d6}\n- {d7}\n- {d8}\nCurrent message: {target}",
+    "long_history_target_first": "Current message: {target}\nEarlier messages (already resolved):\n- {d1}\n- {d2}\n- {d3}\n- {d4}\n- {d5}\n- {d6}\n- {d7}\n- {d8}"
+  },
+  "gold": "the target's label in every condition",
+  "systems": {
+    "jev-generic": "jev_protocol.json request, instructions unchanged: Which label best describes the text?",
+    "jev-current": "same request with instructions: Which label best describes the customer's current message? Ignore earlier messages that are already resolved.",
+    "ettin-encoder-log_loss": "the float32 Banking77 checkpoint (seed 20261007), scored on the processor in float32, 128-token cap with the tail truncated as in training; Banking77 only",
+    "gliclass-base-v3.0": "the Program 1 system on the processor",
+    "ettin-decoder-log_loss": "added 2026-10-10 before it was scored on any wrapped item: the float32 Banking77 decoder (seed 20261007) on the GPU with its own recipe, which keeps the first 128 tokens of the text; Banking77 only",
+    "qwen3-4b-index_prior": "added 2026-10-10 before it was scored on any wrapped item: the suite's Qwen3-4B readout with the prior and temperature it has for Banking77; the wrapped text takes the place of the text in its prompt; Banking77 only"
+  },
+  "temperature": "each system keeps the temperature it already has for the clean dataset; nothing is refit. Jev is reported as delivered.",
+  "metrics": [
+    "accuracy and multiclass Brier per condition",
+    "mean top probability and top-label ECE",
+    "broken: of the items the system gets right in the clean condition, the share it gets wrong in this condition",
+    "repaired: of the items it gets wrong when clean, the share it gets right in this condition",
+    "for the encoder, the share of items whose wrapped text exceeds 128 tokens"
+  ],
+  "not_in_this_pilot": "CLINC150 for the decoder (no fine-tuned checkpoint) and for Qwen3-4B (about three hours of GPU)"
+}

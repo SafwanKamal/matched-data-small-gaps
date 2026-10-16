@@ -1,0 +1,104 @@
+{
+  "protocol_id": "revision-free-2026-10-15",
+  "role": "the no-API work agreed in the simulated review (docs/reviews/round2/synthesis.md). Written before any of the analyses or trainings below was run.",
+  "status_of_results": "Every analysis here uses the existing 400-session sets, which have been looked at many times. All of it is EXPLORATORY and is labelled post hoc in the paper. Its purpose is to inform, and to supply the specialist side of, a separate confirmatory protocol on fresh sessions, which will be frozen before any hosted-model request.",
+  "domains": {
+    "synthetic": [
+      "banking77",
+      "massive",
+      "clinc150"
+    ],
+    "near_oos": [
+      "banking77_oos/id",
+      "banking77_oos/ood"
+    ],
+    "real": [
+      "multidogo"
+    ]
+  },
+  "part_a_seeds_fp32": {
+    "what": "session-turn, train, dev and out-of-scope-pool features for training seeds 20261015 and 20261016 recomputed in float32 without autocast from the saved weights, so that all three seeds are computed the same way as seed 1",
+    "rows": "every analysis below reported per seed and as the mean of the three seeds; one specialist number per table"
+  },
+  "part_b_thresholds": {
+    "balanced": "the existing rule: maximise balanced accuracy on dev in-scope and dev out-of-scope items",
+    "prior_weighted": "maximise 0.8 x (share of dev in-scope items kept) + 0.2 x (share of dev out-of-scope items caught), the expected scope accuracy at the sessions' 20% out-of-scope rate",
+    "sensitivity": "the prior-weighted rule with out-of-scope rates 0.1 and 0.3",
+    "detector_selection": "on dev, by the objective of the rule being used"
+  },
+  "part_c_turn_level": {
+    "endpoint": "a turn is right when its scope decision is right and, for an in-scope turn, its intent is right. Also reported separately: scope accuracy, intent accuracy on in-scope turns, in-scope kept, out-of-scope caught.",
+    "decomposition": "specialist alone; general model alone; general-model scope with specialist intent; specialist scope with general-model intent",
+    "tests": "paired sign-flip permutation test (10,000 draws) on the per-turn difference, clustered by gold intent (each out-of-scope turn is its own cluster); clustering by session reported as a sensitivity check. Holm correction within the family {specialist vs Gemma 4 31B, specialist vs Qwen3.5 27B} x {banking77, massive, clinc150, banking77_oos/id, banking77_oos/ood} for each threshold rule.",
+    "session_success": "reported as secondary"
+  },
+  "part_d_combinations": {
+    "note": "Both designs were found by a reviewer after looking at test results (two thresholds and three rates tried). They are fixed here as stated and remain post hoc on these sessions; the confirmatory protocol tests them.",
+    "combination": "scope from the general model; intent from the specialist when its temperature-scaled top probability is at least 0.9, otherwise from the general model",
+    "equipped_cascade": "the specialist with its dev-selected detector and prior-weighted threshold; the 40% of turns with the lowest specialist top probability take the general model's scope and intent"
+  },
+  "part_e_symmetric_data": {
+    "why": "the general model's retrieval pool held the domain's labelled out-of-scope rows (250-275), which the specialist never trained on",
+    "k_plus_1": "the specialist retrained (seed 1 recipe, learning rate 1e-4, 3 epochs) with those rows as an extra class; scope is out when the argmax is the extra class",
+    "knn_vote": "on the existing specialist's embeddings: out of scope when at least 5 of the 10 nearest rows (cosine) among training rows plus the out-of-scope rows are out-of-scope rows",
+    "rule_choice": "for each domain, the one of {dev-selected detector, kNN vote, either} with the best prior-weighted dev objective"
+  },
+  "part_f_trained_oos_method": {
+    "method": "Adaptive decision boundary (ADB, Zhang et al. 2021) on the specialist's frozen embeddings: class centroids from training rows, a learned radius per class, out of scope when outside every class's radius. Uses in-scope training data only, so it is equally fair on held-out intents.",
+    "training": "radius parameters through softplus, Adam lr 0.05, 100 epochs, batch 256, seed 20261015"
+  },
+  "part_g_learning_rate": {
+    "grid": {
+      "learning_rate": [
+        2e-05,
+        5e-05,
+        0.0001,
+        0.0002
+      ],
+      "epochs": [
+        3,
+        6
+      ]
+    },
+    "domains": [
+      "banking77",
+      "massive",
+      "clinc150",
+      "banking77_oos",
+      "multidogo"
+    ],
+    "selection": "dev in-scope intent accuracy (dev log loss breaks ties); seed 20261015",
+    "rows": "the selected setting's numbers reported beside the 1e-4 / 3-epoch rows already in the paper, which are kept"
+  },
+  "part_h_low_data_baselines": {
+    "fractions": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1.0
+    ],
+    "rows": "exactly the per-label subsample (seed 20261012) that the specialist was trained on and the general model retrieved from",
+    "knn_centroid": "nearest-neighbour (k = min(10, median rows per intent), cosine) and nearest-centroid classifiers on frozen all-mpnet-base-v2 embeddings (revision e8c3b32e) of those rows: the retriever without the general model",
+    "setfit": "SetFit 1.2.0 on all-mpnet-base-v2, default CosineSimilarityLoss, 20 pair iterations, 1 epoch, logistic-regression head; fractions 0.01 to 0.1 only; training seeds 20261015, 20261016, 20261017",
+    "scope_for_baselines": "the nearest-neighbour (10th neighbour) score on each baseline's own embeddings, prior-weighted threshold on dev",
+    "decoder": "the existing 150M label-scoring decoder rows (banking77 at 0.01, 0.05, 0.2, 1) added to the figure as they are",
+    "endpoints": "intent accuracy on in-scope session turns (primary for this part), turn-level correctness, session success"
+  },
+  "part_i_multidogo": {
+    "label_groups": "by gold label: task intents (10), dialogue acts other than out-of-domain (6), out of domain",
+    "tests": "per group, specialist against Gemma 4 31B retrieval and against Qwen3.5 27B retrieval (the paper's models), turn-level discordant pairs with a conversation-level sign-flip test; Holm over the 6 tests",
+    "class_balanced": "one specialist retrained with loss weights proportional to 1 / sqrt(label frequency), seed 20261015, to separate label frequency from label type"
+  },
+  "part_j_release": "features of every seed and fraction, heads, SHA256SUMS, data hashes checked by the loaders, number_check.py pointed at paper/main.tex",
+  "cost_usd": 0.0,
+  "part_k_cost": {
+    "added": "2026-10-15, at the owner's request, before any of it was computed",
+    "source": "the per-request fields already saved with every hosted answer: prompt_tokens, cached_tokens, completion_tokens, provider-returned cost, latency_ms",
+    "rows": "for every hosted system on every domain (zero-shot ladder 9B-122B, fixed few-shot, retrieval, hybrids, combination, cascade): mean input and output tokens per turn, USD per 1,000 sessions, USD per correct session (cost / session success) and per correct turn, latency p50/p95/p99 per call, and per session (five sequential decisions)",
+    "specialist": "per-call API cost 0; latency from artifacts/encoder_latency; hosting reported separately as a break-even volume N* = monthly fixed cost / API cost per session at stated instance prices",
+    "figure": "accuracy (turn-level correctness, and session success) against USD per 1,000 sessions on a log axis, one point per system, with the cost-accuracy frontier drawn"
+  }
+}

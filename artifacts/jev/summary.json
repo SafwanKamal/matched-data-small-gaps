@@ -1,0 +1,212 @@
+{
+  "protocol_id": "jev-reference-choice-2026-10-07",
+  "datasets": {
+    "sst2": {
+      "n_labels": 2,
+      "dev_n": 400,
+      "dev_errors": 0,
+      "test_n": 872,
+      "test_errors": 0,
+      "error_examples": [],
+      "temperature": {
+        "temperature": 5.671997193282685,
+        "dev_nll": 0.3253846902501006,
+        "dev_nll_at_1": 0.6149302595848664,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 872,
+        "accuracy": 0.9403669724770642,
+        "brier": 0.1334237573885466,
+        "log_loss": 0.22568561996933817,
+        "ece": 0.08416378418738911,
+        "top_bin_mass": 0.6399082568807339,
+        "coverage_at_5pct_error": 0.9713302752293578,
+        "selective_selected_n": 847,
+        "selective_confidence_threshold": 0.5253381331017745,
+        "aurc": 0.016926389008777666,
+        "schema_validity_of_scored": 1.0
+      },
+      "unscaled": {
+        "n": 872,
+        "accuracy": 0.9403669724770642,
+        "brier": 0.09447339449538533,
+        "log_loss": 0.32768385192152016,
+        "ece": 0.027844036696607732,
+        "top_bin_mass": 0.8532110091743119,
+        "coverage_at_5pct_error": 0.9713302752293578,
+        "selective_selected_n": 847,
+        "selective_confidence_threshold": 0.64,
+        "aurc": 0.016926389008777666,
+        "schema_validity_of_scored": 1.0
+      },
+      "vendor_probability_sum": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "vendor_choice_matches_argmax": 0.9988532110091743,
+      "vendor_models": [
+        "jev-1.13.0"
+      ],
+      "input_tokens": 393951,
+      "output_tokens_billed": 39432,
+      "retried_rows": 0,
+      "latency": {
+        "n": 872,
+        "p50_ms": 137.84560000203783,
+        "p95_ms": 182.8113400013535,
+        "mean_ms": 143.7163474768509
+      },
+      "replay": {
+        "requested": 50,
+        "compared": 47,
+        "argmax_flips": 0,
+        "max_abs_probability_change": 0.050000000000000044
+      }
+    },
+    "ag_news": {
+      "n_labels": 4,
+      "dev_n": 400,
+      "dev_errors": 0,
+      "test_n": 1000,
+      "test_errors": 0,
+      "error_examples": [],
+      "temperature": {
+        "temperature": 6.291623164877849,
+        "dev_nll": 0.43359647459780204,
+        "dev_nll_at_1": 1.2233305473678124,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 1000,
+        "accuracy": 0.892,
+        "brier": 0.2039299021001737,
+        "log_loss": 0.38549731404178356,
+        "ece": 0.0820980713375665,
+        "top_bin_mass": 0.631,
+        "coverage_at_5pct_error": 0.776,
+        "selective_selected_n": 776,
+        "selective_confidence_threshold": 0.5985300451093846,
+        "aurc": 0.050999151442031834,
+        "schema_validity_of_scored": 1.0
+      },
+      "unscaled": {
+        "n": 1000,
+        "accuracy": 0.892,
+        "brier": 0.17472102340550885,
+        "log_loss": 0.9127016586002367,
+        "ece": 0.05637878787652187,
+        "top_bin_mass": 0.797,
+        "coverage_at_5pct_error": 0.788,
+        "selective_selected_n": 788,
+        "selective_confidence_threshold": 0.93999999999812,
+        "aurc": 0.05827633709025531,
+        "schema_validity_of_scored": 1.0
+      },
+      "vendor_probability_sum": {
+        "min": 0.9900000000000001,
+        "max": 1.0
+      },
+      "vendor_choice_matches_argmax": 0.999,
+      "vendor_models": [
+        "jev-1.13.0"
+      ],
+      "input_tokens": 499298,
+      "output_tokens_billed": 66310,
+      "retried_rows": 0,
+      "latency": {
+        "n": 1000,
+        "p50_ms": 143.17654999467777,
+        "p95_ms": 198.11235500674218,
+        "mean_ms": 149.0675813000271
+      },
+      "replay": {
+        "requested": 50,
+        "compared": 46,
+        "argmax_flips": 1,
+        "max_abs_probability_change": 0.08999999999999997
+      }
+    },
+    "banking77": {
+      "n_labels": 77,
+      "dev_n": 400,
+      "dev_errors": 0,
+      "test_n": 500,
+      "test_errors": 0,
+      "error_examples": [],
+      "temperature": {
+        "temperature": 3.7369833988970877,
+        "dev_nll": 0.9309927462767439,
+        "dev_nll_at_1": 1.8246521474607704,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 500,
+        "accuracy": 0.79,
+        "brier": 0.3358992770468009,
+        "log_loss": 0.9290100787712209,
+        "ece": 0.1110324126008228,
+        "top_bin_mass": 0.376,
+        "coverage_at_5pct_error": 0.6,
+        "selective_selected_n": 300,
+        "selective_confidence_threshold": 0.6126907283847379,
+        "aurc": 0.0652781499827727,
+        "schema_validity_of_scored": 1.0
+      },
+      "unscaled": {
+        "n": 500,
+        "accuracy": 0.79,
+        "brier": 0.3149602926526852,
+        "log_loss": 1.8512439176509168,
+        "ece": 0.09727333326995102,
+        "top_bin_mass": 0.638,
+        "coverage_at_5pct_error": 0.582,
+        "selective_selected_n": 291,
+        "selective_confidence_threshold": 0.9599999999280007,
+        "aurc": 0.06438038251978201,
+        "schema_validity_of_scored": 1.0
+      },
+      "vendor_probability_sum": {
+        "min": 0.99,
+        "max": 1.0
+      },
+      "vendor_choice_matches_argmax": 0.998,
+      "vendor_models": [
+        "jev-1.13.0"
+      ],
+      "input_tokens": 854538,
+      "output_tokens_billed": 679890,
+      "retried_rows": 0,
+      "latency": {
+        "n": 500,
+        "p50_ms": 138.2226499990793,
+        "p95_ms": 182.58256000190158,
+        "mean_ms": 143.32848339976044
+      },
+      "replay": {
+        "requested": 50,
+        "compared": 48,
+        "argmax_flips": 1,
+        "max_abs_probability_change": 0.16999999999999998
+      }
+    }
+  }
+}

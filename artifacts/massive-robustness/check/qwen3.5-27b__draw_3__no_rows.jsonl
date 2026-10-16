@@ -1,0 +1,10 @@
+{"error": null, "latency_ms": 1313.3849000150803, "text": "scope: yes\nintent: 03", "provider": "Alibaba", "prompt_tokens": 613, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000133575, "id": "draw_3-in-0"}
+{"error": null, "latency_ms": 1365.7666000071913, "text": "scope: yes\nintent: 15", "provider": "Alibaba", "prompt_tokens": 602, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00013143, "id": "draw_3-in-2"}
+{"error": null, "latency_ms": 2428.7774999975227, "text": "scope: yes\nintent: 10", "provider": "Alibaba", "prompt_tokens": 620, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00013494, "id": "draw_3-in-3"}
+{"error": null, "latency_ms": 1364.2946000036318, "text": "scope: yes\nintent: 09", "provider": "Alibaba", "prompt_tokens": 649, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000140595, "id": "draw_3-in-4"}
+{"error": null, "latency_ms": 2419.2971999873407, "text": "scope: yes\nintent: 02", "provider": "Alibaba", "prompt_tokens": 600, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00013104, "id": "draw_3-in-5"}
+{"error": null, "latency_ms": 2427.587800018955, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 598, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00013065, "id": "draw_3-out-0"}
+{"error": null, "latency_ms": 2422.4911000055727, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 648, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.0001404, "id": "draw_3-out-1"}
+{"error": null, "latency_ms": 2454.603499994846, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 628, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.0001365, "id": "draw_3-out-2"}
+{"error": null, "latency_ms": 1133.5344999970403, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 634, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00013767, "id": "draw_3-out-3"}
+{"error": null, "latency_ms": 1101.8801000027452, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 701, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000150735, "id": "draw_3-out-5"}

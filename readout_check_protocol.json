@@ -1,0 +1,20 @@
+{
+  "protocol_id": "qwen4b-readout-check-2026-10-09",
+  "role": "dev-only diagnostic of the option-code format for the 4B zero-shot baseline",
+  "claim": "The suite test results for Qwen3-4B used zero-padded option codes and a readout variant selected on Qwen3-0.6B. Yahoo Answers at 39% and Banking77 at 48% look low next to LLM2Jev (arXiv:2610.02076), which numbers options [1]..[K] and scores the suffix k]. This check compares the two code formats on dev rows only. It was written after the padded test results and before any bracket-format score. It does not touch a test row.",
+  "model": "suite_protocol.json systems.qwen3-4b-index_prior",
+  "datasets": "every suite dataset; the first 400 dev rows of each in frozen order",
+  "variants": {
+    "padded": "readout_protocol.json as run: codes zero-padded to equal width, score is the sum of digit log-probabilities from a softmax over the full vocabulary; dev scores are read from artifacts/suite/qwen3-4b-index_prior",
+    "padded_prior": "padded minus the per-option mean over these dev inputs",
+    "bracket": "codes 1..K without padding; the option line is [k] label and the prefill is unchanged, so the model continues with k]. The score is the sum over the code's tokens (digits, then the closing bracket) of the log-probability renormalised over the continuations that some option allows at that point. A position where only one continuation is allowed contributes zero, so only prefixes with two or more allowed continuations need a forward.",
+    "bracket_prior": "bracket minus the per-option mean over these dev inputs"
+  },
+  "difference_from_llm2jev": "LLM2Jev reads the suffix from a softmax over the full vocabulary. Renormalising over allowed continuations changes each option's score by an amount that depends on the path, and is used here to keep the number of forwards small.",
+  "selection": {
+    "per_dataset": "mean dev NLL after one temperature fit on the same rows, divided by ln(number of options); accuracy is reported beside it",
+    "rule": "the variant with the lowest mean of that quantity over the datasets; a tie goes to the earlier variant in the order padded, padded_prior, bracket, bracket_prior",
+    "consequence": "If a bracket variant wins, the 4B suite test results are rerun with it and the padded test results are kept and labelled as the earlier readout. If a padded variant wins, the suite results stand."
+  },
+  "prefix_batch": 4
+}

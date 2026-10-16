@@ -1,0 +1,578 @@
+{
+  "protocol_id": "api-baselines-token-probability-2026-10-10",
+  "system": "qwen3.5-9b-bf16",
+  "suite_protocol_id": "choice-suite-2026-10-08",
+  "datasets": {
+    "banking77_full": {
+      "n_options": 77,
+      "dev_n": 400,
+      "test_n": 3080,
+      "temperature": {
+        "temperature": 1.1539153833341729,
+        "dev_nll": 1.6316671809882999,
+        "dev_nll_at_1": 1.6592801995679871,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.6847402597402598,
+        "brier": 0.466460655717826,
+        "log_loss": 1.6787445492219577,
+        "ece": 0.034986831201076166,
+        "top_bin_mass": 0.22337662337662337,
+        "coverage_at_5pct_error": 0.30584415584415586,
+        "selective_selected_n": 942,
+        "selective_confidence_threshold": 0.8929458238622465,
+        "aurc": 0.12758317222609833,
+        "macro_f1": 0.6772002175950895,
+        "accuracy_ci": [
+          0.6685064935064935,
+          0.700974025974026
+        ],
+        "brier_ci": [
+          0.4470589765638621,
+          0.4865015078342542
+        ]
+      },
+      "unscaled": {
+        "n": 3080,
+        "accuracy": 0.6847402597402598,
+        "brier": 0.4687321335986737,
+        "log_loss": 1.7170805351706169,
+        "ece": 0.05869231387029306,
+        "top_bin_mass": 0.337987012987013,
+        "coverage_at_5pct_error": 0.29383116883116883,
+        "selective_selected_n": 905,
+        "selective_confidence_threshold": 0.9510787807613783,
+        "aurc": 0.12834981488791583,
+        "macro_f1": 0.6772002175950895,
+        "accuracy_ci": [
+          0.6685064935064935,
+          0.700974025974026
+        ],
+        "brier_ci": [
+          0.4473263670790733,
+          0.4909146528452079
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 3080,
+          "request_errors": 0,
+          "unscorable": 0
+        }
+      },
+      "providers": [
+        "Parasail"
+      ],
+      "prompt_tokens": 2128953,
+      "latency_p50_ms": 531.507900042925,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "massive_en": {
+      "n_options": 60,
+      "dev_n": 2033,
+      "test_n": 2974,
+      "temperature": {
+        "temperature": 1.3223772454699705,
+        "dev_nll": 1.3879669640844259,
+        "dev_nll_at_1": 1.4765308556711585,
+        "n": 2033,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2974,
+        "accuracy": 0.7373907195696032,
+        "brier": 0.3940598260798207,
+        "log_loss": 1.4276556731461743,
+        "ece": 0.06732810058881022,
+        "top_bin_mass": 0.21351714862138535,
+        "coverage_at_5pct_error": 0.23100201748486887,
+        "selective_selected_n": 687,
+        "selective_confidence_threshold": 0.9270148190585357,
+        "aurc": 0.10090273340344175,
+        "macro_f1": 0.7129601526422591,
+        "accuracy_ci": [
+          0.7212508406186954,
+          0.7525218560860794
+        ],
+        "brier_ci": [
+          0.37479733488792344,
+          0.4128371333934247
+        ]
+      },
+      "unscaled": {
+        "n": 2974,
+        "accuracy": 0.7373907195696032,
+        "brier": 0.39162953569936587,
+        "log_loss": 1.5184748634197456,
+        "ece": 0.06689646552736432,
+        "top_bin_mass": 0.4653665097511769,
+        "coverage_at_5pct_error": 0.22024209818426363,
+        "selective_selected_n": 655,
+        "selective_confidence_threshold": 0.9869163019469782,
+        "aurc": 0.10248283363271124,
+        "macro_f1": 0.7129601526422591,
+        "accuracy_ci": [
+          0.7212508406186954,
+          0.7525218560860794
+        ],
+        "brier_ci": [
+          0.36984041465236656,
+          0.41341014853381364
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 2033,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 2974,
+          "request_errors": 0,
+          "unscorable": 0
+        }
+      },
+      "providers": [
+        "Parasail"
+      ],
+      "prompt_tokens": 2189899,
+      "latency_p50_ms": 490.1778000057675,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "clinc150": {
+      "n_options": 150,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 1.057557320317852,
+        "dev_nll": 1.3117257517668375,
+        "dev_nll_at_1": 1.3166116755701749,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.7923333333333333,
+        "brier": 0.3216675324419048,
+        "log_loss": 1.2694586505927492,
+        "ece": 0.047409261560515295,
+        "top_bin_mass": 0.3576666666666667,
+        "coverage_at_5pct_error": 0.48233333333333334,
+        "selective_selected_n": 1447,
+        "selective_confidence_threshold": 0.8731701929149507,
+        "aurc": 0.06306404373626773,
+        "macro_f1": 0.7804035424040344,
+        "accuracy_ci": [
+          0.7773333333333333,
+          0.807
+        ],
+        "brier_ci": [
+          0.3027971903620008,
+          0.3396088172969258
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.7923333333333333,
+        "brier": 0.3184915657858913,
+        "log_loss": 1.2665422971788367,
+        "ece": 0.033113865927349106,
+        "top_bin_mass": 0.41833333333333333,
+        "coverage_at_5pct_error": 0.48233333333333334,
+        "selective_selected_n": 1447,
+        "selective_confidence_threshold": 0.9080132517337902,
+        "aurc": 0.062796035532767,
+        "macro_f1": 0.7804035424040344,
+        "accuracy_ci": [
+          0.7773333333333333,
+          0.807
+        ],
+        "brier_ci": [
+          0.2985386817170183,
+          0.3372527631316327
+        ]
+      },
+      "out_of_scope_scaled": {
+        "n": 1000,
+        "mean_top_probability": 0.4412332493628986,
+        "share_at_or_above_0.9": 0.076,
+        "share_at_or_above_0.5": 0.387,
+        "in_scope_mean_top_probability": 0.7556709126402863,
+        "auroc_in_scope_vs_out_of_scope_by_confidence": 0.7974816666666666
+      },
+      "out_of_scope_unscaled": {
+        "n": 1000,
+        "mean_top_probability": 0.48062585970507965,
+        "share_at_or_above_0.9": 0.099,
+        "share_at_or_above_0.5": 0.448,
+        "in_scope_mean_top_probability": 0.7865885416997529,
+        "auroc_in_scope_vs_out_of_scope_by_confidence": 0.7966566666666667
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 5
+        },
+        "test": {
+          "n": 3000,
+          "request_errors": 0,
+          "unscorable": 38
+        },
+        "oos": {
+          "n": 1000,
+          "request_errors": 0,
+          "unscorable": 3
+        }
+      },
+      "providers": [
+        "Parasail"
+      ],
+      "prompt_tokens": 4809722,
+      "latency_p50_ms": 637.6516500022262,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "emotion": {
+      "n_options": 6,
+      "dev_n": 400,
+      "test_n": 2000,
+      "temperature": {
+        "temperature": 2.0229503993008118,
+        "dev_nll": 1.2266237698722124,
+        "dev_nll_at_1": 1.4695044582649164,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2000,
+        "accuracy": 0.552,
+        "brier": 0.6048229505000418,
+        "log_loss": 1.2709065978598424,
+        "ece": 0.06067797859779865,
+        "top_bin_mass": 0.0435,
+        "coverage_at_5pct_error": 0.005,
+        "selective_selected_n": 10,
+        "selective_confidence_threshold": 0.971920846880077,
+        "aurc": 0.2878836289664499,
+        "macro_f1": 0.48755739464176046,
+        "accuracy_ci": [
+          0.5305,
+          0.5735125
+        ],
+        "brier_ci": [
+          0.5833856598874222,
+          0.6267562979982283
+        ]
+      },
+      "unscaled": {
+        "n": 2000,
+        "accuracy": 0.552,
+        "brier": 0.6695203877561778,
+        "log_loss": 1.582491553335412,
+        "ece": 0.2076186988860578,
+        "top_bin_mass": 0.383,
+        "coverage_at_5pct_error": 0.0045,
+        "selective_selected_n": 9,
+        "selective_confidence_threshold": 0.9998169082132483,
+        "aurc": 0.2892646936459329,
+        "macro_f1": 0.48755739464176046,
+        "accuracy_ci": [
+          0.5305,
+          0.5735125
+        ],
+        "brier_ci": [
+          0.6390378778091494,
+          0.7012637291201731
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 2000,
+          "request_errors": 0,
+          "unscorable": 0
+        }
+      },
+      "providers": [
+        "Parasail"
+      ],
+      "prompt_tokens": 184420,
+      "latency_p50_ms": 436.2428500025999,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "yahoo": {
+      "n_options": 10,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 2.122544941497085,
+        "dev_nll": 1.0035500635870154,
+        "dev_nll_at_1": 1.38205326532303,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.703,
+        "brier": 0.4303489506862838,
+        "log_loss": 1.039798749721356,
+        "ece": 0.035708111133119724,
+        "top_bin_mass": 0.20933333333333334,
+        "coverage_at_5pct_error": 0.01633333333333333,
+        "selective_selected_n": 49,
+        "selective_confidence_threshold": 0.9709144076959548,
+        "aurc": 0.14164535749779472,
+        "macro_f1": 0.6877358744303362,
+        "accuracy_ci": [
+          0.687,
+          0.7196666666666667
+        ],
+        "brier_ci": [
+          0.4107233556153929,
+          0.45003833963877515
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.703,
+        "brier": 0.47294585495964414,
+        "log_loss": 1.4500333030343642,
+        "ece": 0.17721365626447858,
+        "top_bin_mass": 0.6506666666666666,
+        "coverage_at_5pct_error": 0.017,
+        "selective_selected_n": 51,
+        "selective_confidence_threshold": 0.9999275784233852,
+        "aurc": 0.1402001949804576,
+        "macro_f1": 0.6877358744303362,
+        "accuracy_ci": [
+          0.687,
+          0.7196666666666667
+        ],
+        "brier_ci": [
+          0.44685765070431527,
+          0.49888434397918174
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 3000,
+          "request_errors": 0,
+          "unscorable": 0
+        }
+      },
+      "providers": [
+        "Parasail"
+      ],
+      "prompt_tokens": 482139,
+      "latency_p50_ms": 476.17715000524186,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "anli_r3": {
+      "n_options": 3,
+      "dev_n": 400,
+      "test_n": 1200,
+      "temperature": {
+        "temperature": 3.4829868377804356,
+        "dev_nll": 0.9363070755472503,
+        "dev_nll_at_1": 1.3555494858529409,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 1200,
+        "accuracy": 0.58,
+        "brier": 0.5379746552933314,
+        "log_loss": 0.9018312034612405,
+        "ece": 0.03946204531182919,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.3057668325463492,
+        "macro_f1": 0.5802198823020214,
+        "accuracy_ci": [
+          0.5516666666666666,
+          0.6083333333333333
+        ],
+        "brier_ci": [
+          0.5203950078506595,
+          0.5562419417567573
+        ]
+      },
+      "unscaled": {
+        "n": 1200,
+        "accuracy": 0.58,
+        "brier": 0.6088770992569893,
+        "log_loss": 1.2077993254702712,
+        "ece": 0.2112256505103285,
+        "top_bin_mass": 0.26916666666666667,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.30869036747361134,
+        "macro_f1": 0.5802198823020214,
+        "accuracy_ci": [
+          0.5516666666666666,
+          0.6083333333333333
+        ],
+        "brier_ci": [
+          0.5722813009582495,
+          0.6476697941069145
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 1200,
+          "request_errors": 0,
+          "unscorable": 0
+        }
+      },
+      "providers": [
+        "Parasail"
+      ],
+      "prompt_tokens": 219489,
+      "latency_p50_ms": 453.93884999793954,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    },
+    "boolq": {
+      "n_options": 2,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 1.5372345075085205,
+        "dev_nll": 0.23159145633602324,
+        "dev_nll_at_1": 0.259503623045032,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.8886666666666667,
+        "brier": 0.1621108696722071,
+        "log_loss": 0.2708263807477839,
+        "ece": 0.022965565236317424,
+        "top_bin_mass": 0.6446666666666667,
+        "coverage_at_5pct_error": 0.803,
+        "selective_selected_n": 2409,
+        "selective_confidence_threshold": 0.8567956438283901,
+        "aurc": 0.029639029975470646,
+        "macro_f1": 0.8832883881031498,
+        "accuracy_ci": [
+          0.8779916666666667,
+          0.8996666666666666
+        ],
+        "brier_ci": [
+          0.14752486832071995,
+          0.17735639805024409
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.8886666666666667,
+        "brier": 0.17294673288853593,
+        "log_loss": 0.3174403541627231,
+        "ece": 0.06110173027184683,
+        "top_bin_mass": 0.8073333333333333,
+        "coverage_at_5pct_error": 0.803,
+        "selective_selected_n": 2409,
+        "selective_confidence_threshold": 0.9399133468805266,
+        "aurc": 0.02964040808635545,
+        "macro_f1": 0.8832883881031498,
+        "accuracy_ci": [
+          0.8779916666666667,
+          0.8996666666666666
+        ],
+        "brier_ci": [
+          0.15599821787130888,
+          0.1907479476385282
+        ]
+      },
+      "readout": "top-k tree",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "request_errors": 0,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 3000,
+          "request_errors": 0,
+          "unscorable": 0
+        }
+      },
+      "providers": [
+        "Parasail"
+      ],
+      "prompt_tokens": 623434,
+      "latency_p50_ms": 451.90650000586174,
+      "latency_note": "HTTPS round trip through OpenRouter, not comparable to local GPU"
+    }
+  },
+  "spend_usd": {
+    "this_run": 1.0807921000000056,
+    "project_total": 11.5554399920002
+  }
+}

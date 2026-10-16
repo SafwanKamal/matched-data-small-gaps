@@ -1,0 +1,5 @@
+{"error": null, "latency_ms": 4161.441400006879, "text": "scope: yes\nintent: 25", "provider": "Novita", "prompt_tokens": 646, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.444e-05, "id": "massive-s0-t0"}
+{"error": null, "latency_ms": 54985.15429999679, "text": "scope: yes\nintent: 28", "provider": "Novita", "prompt_tokens": 654, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.556e-05, "id": "massive-s0-t1"}
+{"error": null, "latency_ms": 6548.266499972669, "text": "scope: yes\nintent: 37", "provider": "Novita", "prompt_tokens": 620, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.08e-05, "id": "massive-s0-t2"}
+{"error": null, "latency_ms": 38305.02390000038, "text": "scope: yes\nintent: 10", "provider": "Novita", "prompt_tokens": 753, "cached_tokens": 0, "completion_tokens": 10, "cost": 0.00010942, "id": "massive-s0-t3"}
+{"error": null, "latency_ms": 55008.00270002219, "text": "scope: yes\nintent: 01", "provider": "Novita", "prompt_tokens": 625, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.15e-05, "id": "massive-s0-t4"}

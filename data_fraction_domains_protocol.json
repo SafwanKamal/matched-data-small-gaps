@@ -1,0 +1,18 @@
+{
+  "protocol_id": "specialist-data-fraction-massive-clinc-2026-10-13",
+  "role": "exploratory: is the training-data threshold found on banking (section 3.23) the same on the other two domains?",
+  "claim": "On the banking workflow the hosted model alone is the better choice below about 5 labelled examples per intent, the hybrid from about 6, and the specialist alone matches the best zero-shot hosted model from about 12. This protocol repeats the sweep on MASSIVE and CLINC150 with the same rules and joins each specialist to the saved zero-shot answers of the hosted models on that domain's sessions (sections 3.26 and 3.27). No API call. Written before any model in this file was trained.",
+  "seed": 20261012,
+  "fractions": {"encoder": [0.01, 0.02, 0.05, 0.1, 0.2, 0.5], "massive_decoder": [0.01, 0.05, 0.2]},
+  "subsample": "per label, a random max(1, round(fraction x count)) of that label's training rows, seed 20261012",
+  "recipes": {
+    "encoder": "the Program 2 encoder recipe at learning rate 1e-4, log loss; 3 epochs or as many as give at least 300 optimizer steps",
+    "massive_decoder": "the primary protocol's decoder recipe unchanged (2e-5), with the same epoch rule",
+    "clinc_decoder": "not run: 150 options make each decoder step about twice as slow as on Banking77",
+    "full_data_rows": "MASSIVE: the size sweep's 150M encoder at 1e-4 and the primary decoder. CLINC150: the threshold encoder of section 3.27."
+  },
+  "scope": "a threshold on the top probability, chosen on dev by the workflow v1 rule, for every specialist. On MASSIVE this rule is known to work badly (section 3.26); that is part of what is being measured.",
+  "join": "each specialist alone, and first with its least confident 10, 25, 40 and 60 percent of turns sent to each hosted model; each hosted model alone",
+  "readout": "per domain, the smallest training size at which the specialist alone matches the best zero-shot hosted model alone, and the smallest at which the best hybrid does",
+  "limits": "One seed per fraction. Hosted models zero-shot. CLINC150 has exactly 100 training rows per intent, so 1% is one example per intent; MASSIVE is imbalanced, so a fraction is not a fixed number per intent."
+}

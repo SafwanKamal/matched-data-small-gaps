@@ -1,0 +1,41 @@
+{
+  "protocol_id": "workflow-jev-scope-gate-2026-10-13",
+  "role": "exploratory: can a typed-decision model serve as the scope gate in front of the fine-tuned specialist?",
+  "claim": "Across three domains the specialist is the better intent classifier and a general model the better scope judge (sections 3.21, 3.26, 3.27), and on MASSIVE the working arrangement is a general model deciding scope on every turn with the specialist naming the intent. Jev answers a yes/no question as a probability in one pass at a small fraction of an LLM's cost, so it is a natural candidate for that gate. This protocol asks Jev the scope question on every turn of all three workflows and combines its answer with the specialist's intent. It uses Jev as a component, not as the subject. Written before any request in this file was sent. Jev's scope and intent answers for the banking sessions exist from workflow v1 (jev-latest on 2026-10-09); they are not used for the results here, only compared with the new answers as a replay check.",
+  "jev_request": {
+    "model": "jev-latest",
+    "version_note": "the model string returned with each response is saved; results are reported against that version",
+    "state": "the current message only",
+    "questions": {
+      "scope_described": "a Noul question describing the assistant in one sentence, without the option list",
+      "scope_listed": "a Noul question that lists every in-scope skill by name",
+      "intent": "a Choice question over the domain's labels, option strings only"
+    },
+    "threshold": "a turn is in scope when the Noul probability is at least 0.5; no tuning",
+    "retry": "as workflow v1"
+  },
+  "scope_questions": {
+    "banking77": "Is the current message a request that a retail bank's customer support can handle?",
+    "massive": "Is the current message a request that a voice assistant for home and personal tasks can handle?",
+    "clinc150": "Is the current message a request that a general-purpose assistant for banking, credit cards, kitchen and dining, home, cars and commuting, travel, utilities, work, small talk and questions about the assistant itself can handle?",
+    "listed_form": "Is the current message a request covered by one of these skills: {labels}?"
+  },
+  "specialists": "the threshold encoder of each workflow at learning rate 1e-4; for CLINC150 also the encoder with an out-of-scope class",
+  "policies": {
+    "specialist_alone": "as in the earlier sections",
+    "jev_alone": "Jev's scope_described and intent",
+    "jev_gate_described": "scope from Jev's scope_described answer; intent from the specialist",
+    "jev_gate_listed": "scope from Jev's scope_listed answer; intent from the specialist",
+    "jev_gate_and_specialist": "in scope only when both Jev (scope_described) and the specialist's own scope rule say so; intent from the specialist",
+    "llm_gate": "from saved zero-shot answers, no new call: each hosted model's scope decision with the specialist's intent",
+    "reference": "the best confidence-routed hybrid and the best hosted model alone from the earlier sections"
+  },
+  "metrics": [
+    "scope accuracy, share of in-scope turns kept, share of out-of-scope turns caught, for each gate",
+    "turn and session success with 95% intervals over sessions",
+    "Jev input tokens per session",
+    "replay check on banking: agreement of the new scope_described decisions with the 2026-10-09 ones"
+  ],
+  "readout_stated_in_advance": "the gate is useful if a Jev-gated specialist matches the LLM-gated specialist or the best confidence-routed hybrid on a domain. MASSIVE is the case of interest, because there the specialist's own confidence cannot find the out-of-scope turns.",
+  "limits": "Synthetic sessions; out-of-scope turns are topically unrelated on two of the three domains; one fixed threshold; one Jev version."
+}

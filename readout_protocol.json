@@ -1,0 +1,40 @@
+{
+  "protocol_id": "qwen-index-readout-2026-10-08",
+  "role": "choose one zero-shot readout for a causal LLM on dev, then score test once",
+  "claim": "The Program 1 Qwen readout scores the mean token log-probability of the whole label string. LLM2Jev (arXiv:2610.02076) numbers the options, prefills the answer turn and scores the option index. AnyJev (arXiv:2610.00831) divides out a label prior estimated from unlabelled inputs, following batch calibration (arXiv:2309.17249). This file compares those on the Program 1 dev items and was written before any index-readout score existed.",
+  "metrics_match": "program-1-choice-2026-10-07",
+  "model": {
+    "hf_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "dtype": "bfloat16",
+    "enable_thinking": false,
+    "generate": false
+  },
+  "datasets": ["banking77", "sst2", "ag_news"],
+  "prompt": {
+    "user": "Choose the one option that best describes the text.\n\nOptions:\n{options}\n\nText:\n{text}\n",
+    "option_line": "[{code}] {label}",
+    "prefill": "Best answer: [",
+    "codes": "option position from 1 in frozen label order, zero-padded to the width of the option count, so every code has the same number of digits and no code is a prefix of another",
+    "difference_from_llm2jev": "LLM2Jev scores the suffix k] with a closing bracket. Fixed-width codes make the closing bracket unnecessary and let the option scores come from at most 1 + 10^(width-1) forwards."
+  },
+  "score": "sum of the log-probabilities of the code's digit tokens, each read from a softmax over the full vocabulary at its position",
+  "variants": {
+    "label_string": "the Program 1 readout; dev scores are read from artifacts/decisions/qwen3-0.6b__{dataset}__dev.jsonl",
+    "index": "the index score as is",
+    "index_prior": "the index score minus the mean index score of that option over the dev inputs of the dataset; no label is used"
+  },
+  "selection": {
+    "split": "dev",
+    "per_dataset": "mean dev NLL after one temperature fit on that same dev split by the Program 1 rule, divided by ln(number of options)",
+    "rule": "the variant with the lowest mean of that quantity over the three datasets is frozen; a tie goes to the earlier variant in the order label_string, index, index_prior",
+    "note": "The temperature is fit and read on the same split, for every variant alike. This number chooses a readout and is not reported as a result."
+  },
+  "test": {
+    "when": "after artifacts/readout/selection.json exists",
+    "what": "the selected variant only, on the Program 1 test items, with the dev temperature and, for index_prior, the dev prior",
+    "also_reported": "the unselected index variant's test metrics are written to a separate file marked as not selected"
+  },
+  "latency": "one text per timed call, torch.cuda.synchronize around the call, 20 dev items warmed up, Program 1 percentiles",
+  "context_limit": 40960
+}

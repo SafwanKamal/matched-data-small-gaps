@@ -1,0 +1,61 @@
+{
+  "dataset": "banking77",
+  "loss": "log_loss",
+  "train_n": 9603,
+  "excluded_dev_n": 400,
+  "epochs": 3,
+  "batch_size": 32,
+  "oom_fallback": false,
+  "mean_train_loss": 0.6850555010626875,
+  "temperature": {
+    "temperature": 1.1301520172924011,
+    "dev_nll": 0.3380015620186907,
+    "dev_nll_at_1": 0.3437124842679331,
+    "n": 400,
+    "bounds": [
+      0.05,
+      20.0
+    ],
+    "at_lower_bound": false,
+    "at_upper_bound": false
+  },
+  "scaled": {
+    "n": 500,
+    "accuracy": 0.916,
+    "brier": 0.1240852185965199,
+    "log_loss": 0.32000295680813745,
+    "ece": 0.01871748979491547,
+    "top_bin_mass": 0.74,
+    "coverage_at_5pct_error": 0.934,
+    "selective_selected_n": 467,
+    "selective_confidence_threshold": 0.5293621737189463,
+    "aurc": 0.012662528093338912
+  },
+  "unscaled": {
+    "n": 500,
+    "accuracy": 0.916,
+    "brier": 0.12413768837145153,
+    "log_loss": 0.3220991838386629,
+    "ece": 0.026279390551488507,
+    "top_bin_mass": 0.782,
+    "coverage_at_5pct_error": 0.93,
+    "selective_selected_n": 465,
+    "selective_confidence_threshold": 0.5965779502268358,
+    "aurc": 0.012633296904486876
+  },
+  "n_truncated_test": 0,
+  "peak_allocated_mib": 2012.54931640625,
+  "device": "NVIDIA GeForce RTX 5070",
+  "latency": {
+    "n": 500,
+    "p50_ms": 9.48200000129873,
+    "p95_ms": 15.035710000665857
+  },
+  "parameters": 68184141,
+  "protocol_id": "ettin-size-sweep-2026-10-11",
+  "size": "68m",
+  "kind": "encoder",
+  "learning_rate": 5e-05,
+  "seed": 20261007,
+  "minutes": 0.8274245316667171
+}

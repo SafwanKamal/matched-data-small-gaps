@@ -1,0 +1,42 @@
+{
+  "protocol_id": "workflow-multidogo-real-conversations-2026-10-14",
+  "role": "the workflow on real conversations, answering the objection that every earlier session was a sequence of unrelated single utterances",
+  "claim": "All earlier workflows assembled sessions from single-utterance datasets, so context could only hurt and the 'same issue as before?' decision had synthetic gold. MultiDoGO (Peskov et al., EMNLP 2019) has customer-support chats collected live between crowd workers playing customers and trained agents, with every customer turn labelled. This protocol rebuilds the comparison of specialist, general model and hybrid on the finance domain's real conversations. Written after inspecting the label counts of the released files and before any model was trained or queried on them.",
+  "data": {
+    "source": "github.com/awslabs/multi-domain-goal-oriented-dialogues-dataset, data/paper_splits/splits_annotated_at_turn_level/finance/{train,dev,test}.tsv, downloaded 2026-10-14 into data/multidogo",
+    "licence": "CDLA-Permissive-1.0",
+    "units": "customer turns only (the turn-level files hold customer turns); train 15,213 turns in 1,684 conversations, dev 2,167 in 240, test 4,361 in 482; median 9 customer turns per conversation",
+    "labels": "10 task intents (check balance, transfer money, report lost card, replace card, dispute charge, update address, close account, get routing number, check offer eligibility, order checks) and 7 dialogue labels (content only, confirmation, rejection, thank you, opening greeting, closing greeting, out of domain). The 10 turns in train labelled with two intents joined by '<div>' take the first; the same rule is applied in dev and test and the count is reported. Conversations containing a label that never occurs in training (open account: 1 turn in dev, 3 in test) are dropped, leaving 239 dev and 479 test conversations.",
+    "note_on_out_of_domain": "In this dataset 'out of domain' marks customer turns that are not usable requests ('please help sir', complaints, off-topic remarks), not requests for unsupported services. It is scored as one of the 17 labels, not as a separate scope decision."
+  },
+  "decisions_per_turn": {
+    "label": "one of the 17 labels",
+    "repeat": "asked on turns whose gold label is a task intent and that have an earlier task-intent turn in the conversation: is this the same task as the most recent earlier task request? Gold from the labels."
+  },
+  "success": {
+    "turn": "the label is right, and the repeat decision when asked",
+    "conversation": "every customer turn succeeds",
+    "also": "accuracy on task-intent turns only, recall and precision of 'out of domain', repeat accuracy"
+  },
+  "systems": {
+    "encoder": "150M Ettin encoder, Program 2 recipe at learning rate 1e-4, trained on the train turns, current message only",
+    "encoder_with_previous": "the same, with the previous customer turn prepended to the input as 'previous: ... current: ...'",
+    "gemma_zero_current": "Gemma 4 31B, current message only",
+    "gemma_zero_history": "Gemma 4 31B, all earlier customer turns of the conversation numbered, then the current message; it also states the repeat decision",
+    "gemma_retrieval_current": "Gemma 4 31B with the 20 nearest train turns by BM25, current message only",
+    "gemma_retrieval_history": "the same with the earlier customer turns; states the repeat decision",
+    "qwen9b_zero_current and qwen9b_retrieval_current": "Qwen3.5 9B, current message only, without and with retrieval",
+    "hybrid": "the encoder first; its least confident 25 and 40 percent of turns go to Gemma with retrieval (current message)",
+    "repeat_rule": "typed state for every system (its own label on this turn against its label on the most recent earlier turn it labelled as a task); for the two history conditions also the stated repeat"
+  },
+  "prompt": {
+    "system": "You label each customer message in a bank's customer-support chat with exactly one label.\n\nLabels:\n{options}\n\nDefinitions of the non-task labels: content only = the message only supplies requested information such as a name, number or address; confirmation = the customer agrees or confirms; rejection = the customer declines or says no; thank you = thanks; opening greeting and closing greeting = hello and goodbye; out of domain = not a usable request or unrelated to the bank's services.\n{history_clause}\nReply with exactly these lines and nothing else:\nlabel: <two-digit code>{repeat_line}",
+    "history_clause": "You also see the customer's earlier messages in this chat. If the current message has a task label (codes 01 to 10), decide whether it is the same task as the most recent earlier task request.\n",
+    "repeat_line": "\nrepeat: <yes or no; no if the current message is not a task or there is no earlier task>",
+    "user_current": "Current message: {text}",
+    "user_history": "Earlier customer messages:\n{earlier}\n\nCurrent message: {text}",
+    "max_tokens": 16
+  },
+  "run_cap_usd": 4.0,
+  "limits": "One domain of MultiDoGO; customers are crowd workers playing a role; one seed per specialist; one hosted run per condition; the label definitions in the prompt were written by us from the dataset paper."
+}

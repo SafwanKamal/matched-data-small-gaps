@@ -1,0 +1,106 @@
+{
+  "qwen3.5-9b": {
+    "errors": [],
+    "n_ok": 10,
+    "parse_failed": 0,
+    "max_completion_tokens": 10,
+    "prompt_tokens": 693,
+    "cached_tokens_last": 0,
+    "cost_total": 0.0007087,
+    "providers": [
+      "DeepInfra"
+    ],
+    "sample": "scope: yes\nintent: 29"
+  },
+  "qwen3.5-27b": {
+    "errors": [],
+    "n_ok": 10,
+    "parse_failed": 0,
+    "max_completion_tokens": 9,
+    "prompt_tokens": 693,
+    "cached_tokens_last": 0,
+    "cost_total": 0.001493115,
+    "providers": [
+      "Alibaba"
+    ],
+    "sample": "scope: yes\nintent: 29"
+  },
+  "gemma-4-31b": {
+    "errors": [],
+    "n_ok": 10,
+    "parse_failed": 0,
+    "max_completion_tokens": 10,
+    "prompt_tokens": 696,
+    "cached_tokens_last": 0,
+    "cost_total": 0.0010159400000000001,
+    "providers": [
+      "Novita"
+    ],
+    "sample": "scope: yes\nintent: 29"
+  },
+  "qwen3.5-35b-a3b": {
+    "errors": [],
+    "n_ok": 10,
+    "parse_failed": 0,
+    "max_completion_tokens": 9,
+    "prompt_tokens": 693,
+    "cached_tokens_last": 0,
+    "cost_total": 0.0012442625,
+    "providers": [
+      "Alibaba"
+    ],
+    "sample": "scope: yes\nintent: 29"
+  },
+  "llama-3.3-70b": {
+    "errors": [],
+    "n_ok": 10,
+    "parse_failed": 0,
+    "max_completion_tokens": 9,
+    "prompt_tokens": 606,
+    "cached_tokens_last": 0,
+    "cost_total": 0.000855045,
+    "providers": [
+      "Novita"
+    ],
+    "sample": "scope: yes\nintent: 29"
+  },
+  "qwen3-next-80b-a3b": {
+    "errors": [],
+    "n_ok": 10,
+    "parse_failed": 0,
+    "max_completion_tokens": 10,
+    "prompt_tokens": 681,
+    "cached_tokens_last": 544,
+    "cost_total": 0.0006285,
+    "providers": [
+      "Parasail"
+    ],
+    "sample": "scope: yes\nintent: 29"
+  },
+  "nemotron-3-super-120b": {
+    "errors": [],
+    "n_ok": 10,
+    "parse_failed": 0,
+    "max_completion_tokens": 10,
+    "prompt_tokens": 689,
+    "cached_tokens_last": 0,
+    "cost_total": 0.00059692,
+    "providers": [
+      "DekaLLM"
+    ],
+    "sample": "scope: yes\nintent: 29"
+  },
+  "qwen3.5-122b-a10b": {
+    "errors": [],
+    "n_ok": 10,
+    "parse_failed": 0,
+    "max_completion_tokens": 9,
+    "prompt_tokens": 693,
+    "cached_tokens_last": 0,
+    "cost_total": 0.00199082,
+    "providers": [
+      "Alibaba"
+    ],
+    "sample": "scope: yes\nintent: 29"
+  }
+}

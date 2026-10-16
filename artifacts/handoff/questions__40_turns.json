@@ -1,0 +1,5152 @@
+{
+ "40_turns-0": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card payment wrong exchange rate",
+    "card linking",
+    "country support",
+    "getting spare card"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "beneficiary not allowed",
+    "balance not updated after cheque or cash deposit",
+    "card payment wrong exchange rate",
+    "card acceptance"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "edit personal details",
+    "cash withdrawal charge",
+    "apple pay or google pay",
+    "card payment wrong exchange rate"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card payment not recognised",
+    "supported cards and currencies",
+    "declined card payment",
+    "why verify identity"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "verify top up",
+    "Refund not showing up",
+    "top up by cash or cheque",
+    "activate my card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "failed transfer",
+    "activate my card",
+    "pending transfer",
+    "declined transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "passcode forgotten",
+    "lost or stolen phone"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "pending transfer",
+    "balance not updated after cheque or cash deposit"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "lost or stolen phone",
+    "passcode forgotten",
+    "declined transfer",
+    "cash withdrawal not recognised"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "5"
+  }
+ ],
+ "40_turns-1": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "contactless not working",
+    "terminate account",
+    "balance not updated after cheque or cash deposit",
+    "transaction charged twice"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "transaction charged twice",
+    "verify my identity",
+    "card about to expire",
+    "fiat currency support"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "verify top up",
+    "top up limits",
+    "declined cash withdrawal",
+    "card delivery estimate"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "activate my card",
+    "exchange rate",
+    "declined transfer",
+    "top up by bank transfer charge"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "get disposable virtual card",
+    "contactless not working",
+    "transfer not received by recipient",
+    "apple pay or google pay"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "beneficiary not allowed",
+    "card arrival",
+    "get disposable virtual card",
+    "exchange charge"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "direct debit payment not recognised",
+    "get disposable virtual card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "terminate account",
+    "direct debit payment not recognised"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "top up reverted",
+    "transaction charged twice",
+    "transfer not received by recipient",
+    "get physical card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-2": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "transfer fee charged",
+    "transfer not received by recipient",
+    "card arrival",
+    "wrong amount of cash received"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "pending cash withdrawal",
+    "transfer not received by recipient",
+    "balance not updated after cheque or cash deposit",
+    "verify source of funds"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "cash withdrawal not recognised",
+    "exchange rate",
+    "verify top up",
+    "verify source of funds"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "wrong exchange rate for cash withdrawal",
+    "wrong amount of cash received",
+    "top up by card charge",
+    "compromised card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "topping up by card",
+    "transfer fee charged",
+    "pending cash withdrawal",
+    "fiat currency support"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card about to expire",
+    "transfer fee charged",
+    "order physical card",
+    "cancel transfer"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "balance not updated after cheque or cash deposit",
+    "pending transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "transfer not received by recipient",
+    "balance not updated after cheque or cash deposit"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "card arrival",
+    "order physical card",
+    "declined transfer",
+    "card about to expire"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "7"
+  }
+ ],
+ "40_turns-3": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card payment fee charged",
+    "pending card payment",
+    "card payment not recognised",
+    "visa or mastercard"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "pending cash withdrawal",
+    "getting virtual card",
+    "transaction charged twice",
+    "visa or mastercard"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "exchange rate",
+    "fiat currency support",
+    "Refund not showing up",
+    "verify top up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card arrival",
+    "top up by cash or cheque",
+    "change pin",
+    "cancel transfer"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "top up reverted",
+    "card acceptance",
+    "beneficiary not allowed",
+    "card payment fee charged"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "verify my identity",
+    "pending cash withdrawal",
+    "beneficiary not allowed",
+    "exchange charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "fiat currency support",
+    "cancel transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "cancel transfer",
+    "edit personal details"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "country support",
+    "exchange charge",
+    "card payment fee charged",
+    "beneficiary not allowed"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-4": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card delivery estimate",
+    "top up failed",
+    "fiat currency support",
+    "exchange rate"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "fiat currency support",
+    "getting virtual card",
+    "get physical card",
+    "getting spare card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "top up limits",
+    "why verify identity",
+    "balance not updated after bank transfer",
+    "virtual card not working"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "top up by cash or cheque",
+    "direct debit payment not recognised",
+    "top up by card charge",
+    "topping up by card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "balance not updated after bank transfer",
+    "atm support",
+    "request refund",
+    "exchange via app"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "balance not updated after cheque or cash deposit",
+    "verify top up",
+    "activate my card",
+    "getting virtual card"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card not working",
+    "pending card payment"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "direct debit payment not recognised",
+    "get physical card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "passcode forgotten",
+    "card not working",
+    "atm support",
+    "exchange rate"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-5": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card linking",
+    "verify my identity",
+    "verify source of funds",
+    "wrong exchange rate for cash withdrawal"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "top up by card charge",
+    "direct debit payment not recognised",
+    "top up reverted",
+    "lost or stolen card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "atm support",
+    "getting virtual card",
+    "visa or mastercard",
+    "get disposable virtual card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "why verify identity",
+    "transfer fee charged",
+    "apple pay or google pay",
+    "topping up by card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card arrival",
+    "lost or stolen card",
+    "card swallowed",
+    "transfer into account"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "exchange charge",
+    "atm support",
+    "failed transfer",
+    "card linking"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up reverted",
+    "transfer fee charged"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card linking",
+    "exchange charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "verify my identity",
+    "terminate account",
+    "wrong exchange rate for cash withdrawal",
+    "direct debit payment not recognised"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "10"
+  }
+ ],
+ "40_turns-6": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card payment wrong exchange rate",
+    "card payment not recognised",
+    "transfer into account",
+    "transfer timing"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card linking",
+    "card payment wrong exchange rate",
+    "cash withdrawal charge",
+    "disposable card limits"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "topping up by card",
+    "cash withdrawal not recognised",
+    "why verify identity",
+    "transfer into account"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "reverted card payment?",
+    "beneficiary not allowed",
+    "card about to expire",
+    "top up by cash or cheque"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "transaction charged twice",
+    "top up reverted",
+    "card payment wrong exchange rate",
+    "wrong exchange rate for cash withdrawal"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card not working",
+    "declined card payment",
+    "card linking",
+    "lost or stolen phone"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "declined card payment",
+    "transaction charged twice"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "cash withdrawal charge",
+    "compromised card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "transfer timing",
+    "card payment not recognised",
+    "wrong exchange rate for cash withdrawal",
+    "card linking"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "10"
+  }
+ ],
+ "40_turns-7": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "reverted card payment?",
+    "contactless not working",
+    "getting virtual card",
+    "compromised card"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "disposable card limits",
+    "receiving money",
+    "supported cards and currencies",
+    "cancel transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "top up failed",
+    "compromised card",
+    "top up by cash or cheque",
+    "pending top up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "cash withdrawal charge",
+    "card swallowed",
+    "beneficiary not allowed",
+    "card linking"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "visa or mastercard",
+    "unable to verify identity",
+    "cancel transfer",
+    "reverted card payment?"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "country support",
+    "topping up by card",
+    "card payment not recognised",
+    "disposable card limits"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "cash withdrawal charge",
+    "supported cards and currencies"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card delivery estimate",
+    "reverted card payment?"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "topping up by card",
+    "contactless not working",
+    "exchange via app",
+    "change pin"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "7"
+  }
+ ],
+ "40_turns-8": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "automatic top up",
+    "top up reverted",
+    "card arrival",
+    "declined cash withdrawal"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card swallowed",
+    "virtual card not working",
+    "top up reverted",
+    "exchange rate"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "lost or stolen phone",
+    "apple pay or google pay",
+    "activate my card",
+    "card arrival"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "top up failed",
+    "wrong amount of cash received",
+    "automatic top up",
+    "failed transfer"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card swallowed",
+    "getting spare card",
+    "receiving money",
+    "request refund"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "getting spare card",
+    "automatic top up",
+    "contactless not working",
+    "Refund not showing up"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card not working",
+    "atm support"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "pending card payment",
+    "receiving money"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "terminate account",
+    "declined cash withdrawal",
+    "card arrival",
+    "card acceptance"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "12"
+  }
+ ],
+ "40_turns-9": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "top up by bank transfer charge",
+    "wrong amount of cash received",
+    "top up reverted",
+    "balance not updated after bank transfer"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "exchange charge",
+    "card linking",
+    "top up reverted",
+    "balance not updated after bank transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "country support",
+    "virtual card not working",
+    "direct debit payment not recognised",
+    "top up by card charge"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "pending card payment",
+    "visa or mastercard",
+    "transfer timing",
+    "disposable card limits"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "topping up by card",
+    "card linking",
+    "disposable card limits",
+    "wrong amount of cash received"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "direct debit payment not recognised",
+    "transfer timing",
+    "card payment not recognised",
+    "card payment wrong exchange rate"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "direct debit payment not recognised",
+    "wrong amount of cash received"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card payment wrong exchange rate",
+    "exchange charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "change pin",
+    "wrong amount of cash received",
+    "exchange charge",
+    "card payment wrong exchange rate"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-10": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card payment fee charged",
+    "top up by card charge",
+    "virtual card not working",
+    "pin blocked"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "pin blocked",
+    "declined transfer",
+    "card arrival",
+    "transfer fee charged"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "top up reverted",
+    "exchange via app",
+    "verify my identity",
+    "request refund"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "balance not updated after bank transfer",
+    "card swallowed",
+    "pending card payment",
+    "receiving money"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "transfer not received by recipient",
+    "exchange charge",
+    "top up failed",
+    "order physical card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "getting virtual card",
+    "automatic top up",
+    "declined card payment",
+    "order physical card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "cash withdrawal not recognised",
+    "virtual card not working"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "cash withdrawal not recognised",
+    "declined transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "request refund",
+    "automatic top up",
+    "card payment fee charged",
+    "extra charge on statement"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-11": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "verify source of funds",
+    "pin blocked",
+    "declined cash withdrawal",
+    "beneficiary not allowed"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card about to expire",
+    "pin blocked",
+    "top up by cash or cheque",
+    "transfer not received by recipient"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "pending top up",
+    "transfer into account",
+    "card payment not recognised",
+    "cash withdrawal not recognised"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card payment wrong exchange rate",
+    "getting spare card",
+    "unable to verify identity",
+    "virtual card not working"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card payment not recognised",
+    "transfer not received by recipient",
+    "balance not updated after cheque or cash deposit",
+    "visa or mastercard"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "exchange via app",
+    "top up failed",
+    "exchange rate",
+    "contactless not working"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "pin blocked",
+    "beneficiary not allowed"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up failed",
+    "card not working"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "card payment not recognised",
+    "disposable card limits",
+    "edit personal details",
+    "terminate account"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "5"
+  }
+ ],
+ "40_turns-12": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "why verify identity",
+    "contactless not working",
+    "card acceptance",
+    "transfer not received by recipient"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "declined transfer",
+    "card delivery estimate",
+    "order physical card",
+    "pending card payment"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "activate my card",
+    "lost or stolen card",
+    "country support",
+    "why verify identity"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card payment wrong exchange rate",
+    "terminate account",
+    "pending card payment",
+    "balance not updated after cheque or cash deposit"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "getting spare card",
+    "transaction charged twice",
+    "pending card payment",
+    "transfer not received by recipient"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "top up reverted",
+    "contactless not working",
+    "verify my identity",
+    "verify top up"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "verify my identity",
+    "top up failed"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "disposable card limits",
+    "transaction charged twice"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "top up failed",
+    "edit personal details",
+    "verify my identity",
+    "top up by card charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "6"
+  }
+ ],
+ "40_turns-13": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "passcode forgotten",
+    "card delivery estimate",
+    "balance not updated after cheque or cash deposit",
+    "transfer not received by recipient"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card swallowed",
+    "card delivery estimate",
+    "wrong exchange rate for cash withdrawal",
+    "top up by card charge"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "verify my identity",
+    "top up limits",
+    "pending top up",
+    "card acceptance"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "get disposable virtual card",
+    "direct debit payment not recognised",
+    "pending cash withdrawal",
+    "card linking"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "reverted card payment?",
+    "verify my identity",
+    "cancel transfer",
+    "card delivery estimate"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card payment wrong exchange rate",
+    "card delivery estimate",
+    "apple pay or google pay",
+    "reverted card payment?"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "topping up by card",
+    "card payment not recognised"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up by card charge",
+    "card swallowed"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "transfer not received by recipient",
+    "cash withdrawal charge",
+    "top up limits",
+    "exchange charge"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "5"
+  }
+ ],
+ "40_turns-14": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "pin blocked",
+    "getting virtual card",
+    "getting spare card",
+    "change pin"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "visa or mastercard",
+    "transfer not received by recipient",
+    "beneficiary not allowed",
+    "activate my card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "passcode forgotten",
+    "transfer fee charged",
+    "card linking",
+    "pending top up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "declined transfer",
+    "card linking",
+    "reverted card payment?",
+    "why verify identity"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "age limit",
+    "country support",
+    "balance not updated after cheque or cash deposit",
+    "visa or mastercard"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "visa or mastercard",
+    "pin blocked",
+    "age limit",
+    "direct debit payment not recognised"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "lost or stolen card",
+    "card payment not recognised"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "transfer fee charged",
+    "beneficiary not allowed"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "getting virtual card",
+    "transfer not received by recipient",
+    "get physical card",
+    "order physical card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-15": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "top up by bank transfer charge",
+    "apple pay or google pay",
+    "verify source of funds",
+    "lost or stolen phone"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "verify top up",
+    "topping up by card",
+    "exchange via app",
+    "activate my card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card payment not recognised",
+    "pending top up",
+    "fiat currency support",
+    "card about to expire"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card payment not recognised",
+    "declined cash withdrawal",
+    "verify top up",
+    "request refund"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "apple pay or google pay",
+    "unable to verify identity",
+    "top up limits",
+    "exchange charge"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "beneficiary not allowed",
+    "pending card payment",
+    "card not working",
+    "card linking"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up by bank transfer charge",
+    "Refund not showing up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "get physical card",
+    "pending card payment"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "top up by bank transfer charge",
+    "Refund not showing up",
+    "virtual card not working",
+    "pin blocked"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "7"
+  }
+ ],
+ "40_turns-16": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "apple pay or google pay",
+    "topping up by card",
+    "transfer into account",
+    "Refund not showing up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "contactless not working",
+    "terminate account",
+    "pending transfer",
+    "wrong amount of cash received"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "get physical card",
+    "unable to verify identity",
+    "top up by cash or cheque",
+    "cancel transfer"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "direct debit payment not recognised",
+    "get disposable virtual card",
+    "pending transfer",
+    "pending cash withdrawal"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "contactless not working",
+    "verify source of funds",
+    "Refund not showing up",
+    "terminate account"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "failed transfer",
+    "pending transfer",
+    "Refund not showing up",
+    "card arrival"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "failed transfer",
+    "cancel transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "pending transfer",
+    "atm support"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "Refund not showing up",
+    "failed transfer",
+    "pending transfer",
+    "contactless not working"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-17": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "getting virtual card",
+    "declined card payment",
+    "transaction charged twice",
+    "card linking"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "pending top up",
+    "card delivery estimate",
+    "topping up by card",
+    "top up by card charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "apple pay or google pay",
+    "wrong exchange rate for cash withdrawal",
+    "card swallowed",
+    "disposable card limits"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "disposable card limits",
+    "card payment fee charged",
+    "card acceptance",
+    "top up by bank transfer charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "pending card payment",
+    "getting virtual card",
+    "pending top up",
+    "visa or mastercard"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "transaction charged twice",
+    "transfer not received by recipient",
+    "top up reverted",
+    "card linking"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "atm support",
+    "transaction charged twice"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "getting virtual card",
+    "wrong amount of cash received"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "atm support",
+    "topping up by card",
+    "balance not updated after bank transfer",
+    "top up by card charge"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-18": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card acceptance",
+    "lost or stolen phone",
+    "age limit",
+    "card arrival"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card arrival",
+    "declined transfer",
+    "pending card payment",
+    "lost or stolen phone"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "pending card payment",
+    "disposable card limits",
+    "exchange via app",
+    "failed transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "lost or stolen card",
+    "transfer fee charged",
+    "Refund not showing up",
+    "atm support"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "lost or stolen phone",
+    "direct debit payment not recognised",
+    "cash withdrawal charge",
+    "extra charge on statement"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "automatic top up",
+    "card delivery estimate",
+    "card linking",
+    "pending card payment"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "pending card payment",
+    "card swallowed"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "extra charge on statement",
+    "lost or stolen phone"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "declined cash withdrawal",
+    "top up by card charge",
+    "card linking",
+    "card arrival"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-19": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "exchange rate",
+    "activate my card",
+    "get physical card",
+    "Refund not showing up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "exchange rate",
+    "cancel transfer",
+    "automatic top up",
+    "balance not updated after cheque or cash deposit"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "change pin",
+    "top up by card charge",
+    "top up limits",
+    "card not working"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card swallowed",
+    "edit personal details",
+    "top up by cash or cheque",
+    "virtual card not working"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "contactless not working",
+    "why verify identity",
+    "automatic top up",
+    "request refund"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card acceptance",
+    "transfer not received by recipient",
+    "exchange via app",
+    "top up limits"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up reverted",
+    "passcode forgotten"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "exchange rate",
+    "get physical card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "balance not updated after cheque or cash deposit",
+    "virtual card not working",
+    "activate my card",
+    "card payment not recognised"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-20": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card arrival",
+    "card about to expire",
+    "get disposable virtual card",
+    "lost or stolen card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "disposable card limits",
+    "supported cards and currencies",
+    "card delivery estimate",
+    "get disposable virtual card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card not working",
+    "apple pay or google pay",
+    "atm support",
+    "transfer timing"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "lost or stolen phone",
+    "card acceptance",
+    "card not working",
+    "edit personal details"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "pending cash withdrawal",
+    "lost or stolen phone",
+    "top up by card charge",
+    "failed transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "transfer fee charged",
+    "getting spare card",
+    "card swallowed",
+    "extra charge on statement"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "contactless not working",
+    "supported cards and currencies"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "get disposable virtual card",
+    "lost or stolen card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "extra charge on statement",
+    "fiat currency support",
+    "top up by cash or cheque",
+    "card arrival"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "7"
+  }
+ ],
+ "40_turns-21": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "pending top up",
+    "card linking",
+    "pin blocked",
+    "top up by card charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "pending top up",
+    "beneficiary not allowed",
+    "card payment not recognised",
+    "pending cash withdrawal"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "exchange rate",
+    "transaction charged twice",
+    "pending top up",
+    "automatic top up"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "extra charge on statement",
+    "card payment not recognised",
+    "transfer not received by recipient",
+    "reverted card payment?"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "contactless not working",
+    "card arrival",
+    "get disposable virtual card",
+    "exchange charge"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "cancel transfer",
+    "age limit",
+    "get disposable virtual card",
+    "card arrival"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "balance not updated after cheque or cash deposit",
+    "pin blocked"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "age limit",
+    "pin blocked"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "direct debit payment not recognised",
+    "top up limits",
+    "card payment not recognised",
+    "contactless not working"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-22": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "getting virtual card",
+    "atm support",
+    "card payment wrong exchange rate",
+    "wrong exchange rate for cash withdrawal"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "exchange via app",
+    "card not working",
+    "getting virtual card",
+    "exchange charge"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "supported cards and currencies",
+    "get physical card",
+    "transfer not received by recipient",
+    "getting virtual card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "activate my card",
+    "lost or stolen phone",
+    "wrong amount of cash received",
+    "top up failed"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "balance not updated after bank transfer",
+    "verify source of funds",
+    "exchange charge",
+    "card payment not recognised"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "receiving money",
+    "cash withdrawal not recognised",
+    "card arrival",
+    "transfer fee charged"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "atm support",
+    "cash withdrawal not recognised"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card delivery estimate",
+    "card payment wrong exchange rate"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "verify source of funds",
+    "atm support",
+    "extra charge on statement",
+    "verify top up"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-23": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "top up failed",
+    "cash withdrawal charge",
+    "card delivery estimate",
+    "top up by bank transfer charge"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "cash withdrawal charge",
+    "lost or stolen phone",
+    "top up by cash or cheque",
+    "exchange via app"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "cancel transfer",
+    "balance not updated after cheque or cash deposit",
+    "pending cash withdrawal",
+    "visa or mastercard"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "exchange via app",
+    "verify source of funds",
+    "virtual card not working",
+    "visa or mastercard"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "automatic top up",
+    "declined cash withdrawal",
+    "transfer timing",
+    "exchange via app"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "why verify identity",
+    "lost or stolen phone",
+    "wrong amount of cash received",
+    "order physical card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "verify top up",
+    "declined card payment"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card arrival",
+    "declined card payment"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "declined cash withdrawal",
+    "exchange charge",
+    "declined card payment",
+    "unable to verify identity"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "5"
+  }
+ ],
+ "40_turns-24": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "pin blocked",
+    "failed transfer",
+    "card payment wrong exchange rate",
+    "get physical card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "Refund not showing up",
+    "age limit",
+    "card delivery estimate",
+    "compromised card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "cash withdrawal not recognised",
+    "virtual card not working",
+    "verify top up",
+    "top up by cash or cheque"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "pending top up",
+    "apple pay or google pay",
+    "card arrival",
+    "top up by card charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "getting virtual card",
+    "pin blocked",
+    "card delivery estimate",
+    "beneficiary not allowed"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "passcode forgotten",
+    "failed transfer",
+    "pin blocked",
+    "Refund not showing up"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "verify my identity",
+    "age limit"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "Refund not showing up",
+    "pin blocked"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "age limit",
+    "country support",
+    "declined cash withdrawal",
+    "pending top up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "5"
+  }
+ ],
+ "40_turns-25": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "request refund",
+    "pin blocked",
+    "card acceptance",
+    "cancel transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "unable to verify identity",
+    "declined transfer",
+    "contactless not working",
+    "pending cash withdrawal"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "disposable card limits",
+    "card acceptance",
+    "Refund not showing up",
+    "direct debit payment not recognised"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card not working",
+    "lost or stolen card",
+    "card linking",
+    "atm support"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "getting spare card",
+    "passcode forgotten",
+    "wrong amount of cash received",
+    "contactless not working"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "exchange charge",
+    "passcode forgotten",
+    "exchange via app",
+    "pending top up"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "reverted card payment?",
+    "transaction charged twice"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "unable to verify identity",
+    "balance not updated after cheque or cash deposit"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "pin blocked",
+    "reverted card payment?",
+    "declined card payment",
+    "declined transfer"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "6"
+  }
+ ],
+ "40_turns-26": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card swallowed",
+    "country support",
+    "supported cards and currencies",
+    "failed transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "failed transfer",
+    "transfer not received by recipient",
+    "get physical card",
+    "supported cards and currencies"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "unable to verify identity",
+    "getting spare card",
+    "pending cash withdrawal",
+    "passcode forgotten"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "transaction charged twice",
+    "exchange rate",
+    "getting spare card",
+    "card payment wrong exchange rate"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "order physical card",
+    "getting spare card",
+    "transfer timing",
+    "card arrival"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "wrong amount of cash received",
+    "pending transfer",
+    "lost or stolen phone",
+    "top up limits"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up limits",
+    "transfer not received by recipient"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "failed transfer",
+    "card swallowed"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "exchange charge",
+    "fiat currency support",
+    "order physical card",
+    "top up limits"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-27": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "atm support",
+    "verify top up",
+    "card acceptance",
+    "declined card payment"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card about to expire",
+    "country support",
+    "verify my identity",
+    "getting spare card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "country support",
+    "balance not updated after bank transfer",
+    "cash withdrawal not recognised",
+    "top up reverted"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "wrong amount of cash received",
+    "country support",
+    "topping up by card",
+    "failed transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "automatic top up",
+    "country support",
+    "topping up by card",
+    "terminate account"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card payment not recognised",
+    "getting spare card",
+    "top up by card charge",
+    "terminate account"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up failed",
+    "country support"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "activate my card",
+    "atm support"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "verify top up",
+    "terminate account",
+    "card about to expire",
+    "verify my identity"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "6"
+  }
+ ],
+ "40_turns-28": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "transfer fee charged",
+    "balance not updated after cheque or cash deposit",
+    "pending transfer",
+    "top up failed"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "failed transfer",
+    "order physical card",
+    "activate my card",
+    "balance not updated after cheque or cash deposit"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "beneficiary not allowed",
+    "balance not updated after cheque or cash deposit",
+    "transfer timing",
+    "verify source of funds"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "getting virtual card",
+    "contactless not working",
+    "edit personal details",
+    "failed transfer"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "cash withdrawal not recognised",
+    "declined transfer",
+    "balance not updated after cheque or cash deposit",
+    "get physical card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card delivery estimate",
+    "passcode forgotten",
+    "cash withdrawal not recognised",
+    "automatic top up"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "visa or mastercard",
+    "card about to expire"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "pending transfer",
+    "lost or stolen card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "verify top up",
+    "pending transfer",
+    "activate my card",
+    "card delivery estimate"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-29": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "declined card payment",
+    "card not working",
+    "balance not updated after bank transfer",
+    "topping up by card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "balance not updated after bank transfer",
+    "lost or stolen phone",
+    "virtual card not working",
+    "declined transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "reverted card payment?",
+    "pending top up",
+    "balance not updated after bank transfer",
+    "pending card payment"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "wrong amount of cash received",
+    "top up by card charge",
+    "getting virtual card",
+    "card acceptance"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "lost or stolen phone",
+    "fiat currency support",
+    "get physical card",
+    "balance not updated after cheque or cash deposit"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "contactless not working",
+    "order physical card",
+    "declined transfer",
+    "card not working"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up reverted",
+    "topping up by card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "verify top up",
+    "virtual card not working"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "top up reverted",
+    "card about to expire",
+    "card not working",
+    "contactless not working"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "14"
+  }
+ ],
+ "40_turns-30": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "terminate account",
+    "activate my card",
+    "cancel transfer",
+    "top up by bank transfer charge"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "virtual card not working",
+    "transfer into account",
+    "reverted card payment?",
+    "order physical card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "lost or stolen card",
+    "unable to verify identity",
+    "transfer not received by recipient",
+    "top up limits"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "visa or mastercard",
+    "card linking",
+    "exchange charge",
+    "beneficiary not allowed"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "country support",
+    "apple pay or google pay",
+    "atm support",
+    "cash withdrawal not recognised"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "terminate account",
+    "transfer fee charged",
+    "card acceptance",
+    "age limit"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "age limit",
+    "card payment not recognised"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "activate my card",
+    "age limit"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "extra charge on statement",
+    "pending transfer",
+    "age limit",
+    "exchange charge"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-31": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "card acceptance",
+    "extra charge on statement",
+    "card payment fee charged",
+    "exchange charge"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "verify my identity",
+    "top up by bank transfer charge",
+    "card swallowed",
+    "transfer into account"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "change pin",
+    "order physical card",
+    "visa or mastercard",
+    "declined cash withdrawal"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "get physical card",
+    "card linking",
+    "apple pay or google pay",
+    "pin blocked"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "pending transfer",
+    "card swallowed",
+    "exchange charge",
+    "balance not updated after cheque or cash deposit"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "pending top up",
+    "card acceptance",
+    "top up failed",
+    "top up by bank transfer charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card swallowed",
+    "change pin"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "failed transfer",
+    "top up reverted"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "cash withdrawal not recognised",
+    "direct debit payment not recognised",
+    "balance not updated after bank transfer",
+    "transfer into account"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "6"
+  }
+ ],
+ "40_turns-32": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "country support",
+    "compromised card",
+    "card linking",
+    "top up limits"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "top up by bank transfer charge",
+    "card payment not recognised",
+    "top up failed",
+    "declined cash withdrawal"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "getting virtual card",
+    "apple pay or google pay",
+    "pending top up",
+    "card arrival"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "compromised card",
+    "card delivery estimate",
+    "fiat currency support",
+    "visa or mastercard"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "change pin",
+    "transfer fee charged",
+    "country support",
+    "pending card payment"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "direct debit payment not recognised",
+    "exchange rate",
+    "topping up by card",
+    "cancel transfer"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "edit personal details",
+    "passcode forgotten"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up failed",
+    "reverted card payment?"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "top up by card charge",
+    "failed transfer",
+    "exchange rate",
+    "top up failed"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "6"
+  }
+ ],
+ "40_turns-33": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "reverted card payment?",
+    "card delivery estimate",
+    "atm support",
+    "card linking"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "transaction charged twice",
+    "exchange rate",
+    "card delivery estimate",
+    "top up failed"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "lost or stolen phone",
+    "declined transfer",
+    "card delivery estimate",
+    "virtual card not working"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "failed transfer",
+    "lost or stolen card",
+    "top up limits",
+    "extra charge on statement"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "passcode forgotten",
+    "get disposable virtual card",
+    "pin blocked",
+    "top up by bank transfer charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "reverted card payment?",
+    "top up failed",
+    "cash withdrawal not recognised",
+    "atm support"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "transaction charged twice",
+    "get disposable virtual card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card payment fee charged",
+    "card acceptance"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "card linking",
+    "atm support",
+    "exchange rate",
+    "pin blocked"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-34": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "verify my identity",
+    "reverted card payment?",
+    "declined transfer",
+    "card about to expire"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "get physical card",
+    "age limit",
+    "lost or stolen card",
+    "get disposable virtual card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card linking",
+    "card delivery estimate",
+    "passcode forgotten",
+    "balance not updated after bank transfer"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "reverted card payment?",
+    "exchange via app",
+    "transfer timing",
+    "top up reverted"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "contactless not working",
+    "declined transfer",
+    "reverted card payment?",
+    "get disposable virtual card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "automatic top up",
+    "reverted card payment?",
+    "direct debit payment not recognised",
+    "virtual card not working"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "declined cash withdrawal",
+    "declined transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "verify top up",
+    "card payment fee charged"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "get disposable virtual card",
+    "pending top up",
+    "top up by cash or cheque",
+    "terminate account"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-35": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "exchange charge",
+    "fiat currency support",
+    "verify my identity",
+    "visa or mastercard"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "wrong amount of cash received",
+    "terminate account",
+    "cancel transfer",
+    "passcode forgotten"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "verify source of funds",
+    "unable to verify identity",
+    "card payment not recognised",
+    "card linking"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "transfer into account",
+    "pending transfer",
+    "wrong amount of cash received",
+    "order physical card"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "exchange rate",
+    "card payment not recognised",
+    "verify my identity",
+    "fiat currency support"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "wrong amount of cash received",
+    "contactless not working",
+    "transaction charged twice",
+    "passcode forgotten"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "visa or mastercard",
+    "verify my identity"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "verify my identity",
+    "direct debit payment not recognised"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "fiat currency support",
+    "cancel transfer",
+    "transfer not received by recipient",
+    "failed transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "4"
+  }
+ ],
+ "40_turns-36": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "getting spare card",
+    "card delivery estimate",
+    "direct debit payment not recognised",
+    "pending card payment"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "cash withdrawal not recognised",
+    "receiving money",
+    "card delivery estimate",
+    "country support"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "transfer timing",
+    "card delivery estimate",
+    "transfer into account",
+    "pin blocked"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "top up by card charge",
+    "top up failed",
+    "pending transfer",
+    "verify top up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "top up failed",
+    "unable to verify identity",
+    "passcode forgotten",
+    "declined card payment"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "lost or stolen card",
+    "unable to verify identity",
+    "cash withdrawal not recognised",
+    "fiat currency support"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "extra charge on statement",
+    "getting spare card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "virtual card not working",
+    "pending card payment"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "getting spare card",
+    "receiving money",
+    "card delivery estimate",
+    "direct debit payment not recognised"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "6"
+  }
+ ],
+ "40_turns-37": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "cash withdrawal charge",
+    "card arrival",
+    "transfer not received by recipient",
+    "fiat currency support"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card arrival",
+    "cash withdrawal charge",
+    "top up by card charge",
+    "top up reverted"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "balance not updated after bank transfer",
+    "receiving money",
+    "apple pay or google pay",
+    "pending cash withdrawal"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "country support",
+    "transfer into account",
+    "card payment not recognised",
+    "declined card payment"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "pending cash withdrawal",
+    "transfer not received by recipient",
+    "card about to expire",
+    "transfer into account"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "age limit",
+    "unable to verify identity",
+    "fiat currency support",
+    "verify my identity"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "virtual card not working",
+    "top up reverted"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "declined transfer",
+    "cancel transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "verify my identity",
+    "unable to verify identity",
+    "top up reverted",
+    "declined transfer"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "10"
+  }
+ ],
+ "40_turns-38": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "change pin",
+    "verify top up",
+    "top up by card charge",
+    "declined card payment"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "country support",
+    "balance not updated after cheque or cash deposit",
+    "declined card payment",
+    "change pin"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "passcode forgotten",
+    "pending top up",
+    "top up limits",
+    "card swallowed"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "direct debit payment not recognised",
+    "exchange charge",
+    "lost or stolen phone",
+    "balance not updated after bank transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "getting virtual card",
+    "top up by card charge",
+    "change pin",
+    "cash withdrawal charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "topping up by card",
+    "change pin",
+    "exchange charge",
+    "card payment not recognised"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "get physical card",
+    "passcode forgotten"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "exchange charge",
+    "lost or stolen card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "failed transfer",
+    "change pin",
+    "get physical card",
+    "verify top up"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "12"
+  }
+ ],
+ "40_turns-39": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "transfer not received by recipient",
+    "virtual card not working",
+    "automatic top up",
+    "transfer into account"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card about to expire",
+    "transfer not received by recipient",
+    "request refund",
+    "contactless not working"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "verify my identity",
+    "pending top up",
+    "declined cash withdrawal",
+    "unable to verify identity"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card acceptance",
+    "card arrival",
+    "country support",
+    "virtual card not working"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "exchange charge",
+    "passcode forgotten",
+    "apple pay or google pay",
+    "country support"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "get disposable virtual card",
+    "request refund",
+    "transfer not received by recipient",
+    "declined card payment"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "cancel transfer",
+    "wrong exchange rate for cash withdrawal"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "getting spare card",
+    "top up by card charge"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "contactless not working",
+    "wrong exchange rate for cash withdrawal",
+    "pending cash withdrawal",
+    "exchange rate"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-40": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "get physical card",
+    "card linking",
+    "card payment not recognised",
+    "beneficiary not allowed"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "automatic top up",
+    "exchange charge",
+    "pending transfer",
+    "order physical card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "cancel transfer",
+    "transfer into account",
+    "lost or stolen card",
+    "card about to expire"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "atm support",
+    "unable to verify identity",
+    "verify my identity",
+    "get physical card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "receiving money",
+    "declined card payment",
+    "beneficiary not allowed",
+    "get physical card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "get physical card",
+    "supported cards and currencies",
+    "top up by bank transfer charge",
+    "apple pay or google pay"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card payment not recognised",
+    "card delivery estimate"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card payment fee charged",
+    "lost or stolen card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "wrong amount of cash received",
+    "lost or stolen card",
+    "card linking",
+    "topping up by card"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-41": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "unable to verify identity",
+    "verify source of funds",
+    "pending transfer",
+    "why verify identity"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "declined transfer",
+    "wrong amount of cash received",
+    "pending cash withdrawal",
+    "atm support"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "exchange via app",
+    "card payment wrong exchange rate",
+    "pending cash withdrawal",
+    "extra charge on statement"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "getting spare card",
+    "visa or mastercard",
+    "pending cash withdrawal",
+    "fiat currency support"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card payment fee charged",
+    "topping up by card",
+    "pending cash withdrawal",
+    "receiving money"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "activate my card",
+    "pending transfer",
+    "transfer not received by recipient",
+    "why verify identity"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "atm support",
+    "transaction charged twice"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "verify top up",
+    "failed transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "verify source of funds",
+    "verify top up",
+    "country support",
+    "card payment fee charged"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "8"
+  }
+ ],
+ "40_turns-42": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "reverted card payment?",
+    "card linking",
+    "get physical card",
+    "transfer timing"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "passcode forgotten",
+    "exchange rate",
+    "balance not updated after bank transfer",
+    "card about to expire"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card payment wrong exchange rate",
+    "terminate account",
+    "request refund",
+    "unable to verify identity"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "transfer fee charged",
+    "card delivery estimate",
+    "atm support",
+    "getting virtual card"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "pending card payment",
+    "declined card payment",
+    "disposable card limits",
+    "Refund not showing up"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "declined cash withdrawal",
+    "disposable card limits",
+    "declined card payment",
+    "transfer timing"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "transfer fee charged",
+    "change pin"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "reverted card payment?",
+    "verify my identity"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "receiving money",
+    "get physical card",
+    "transfer fee charged",
+    "supported cards and currencies"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "10"
+  }
+ ],
+ "40_turns-43": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "extra charge on statement",
+    "why verify identity",
+    "wrong exchange rate for cash withdrawal",
+    "supported cards and currencies"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card acceptance",
+    "compromised card",
+    "reverted card payment?",
+    "supported cards and currencies"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "order physical card",
+    "top up failed",
+    "verify top up",
+    "transfer fee charged"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "activate my card",
+    "topping up by card",
+    "card payment wrong exchange rate",
+    "pin blocked"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "supported cards and currencies",
+    "passcode forgotten",
+    "order physical card",
+    "cancel transfer"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "age limit",
+    "declined transfer",
+    "extra charge on statement",
+    "supported cards and currencies"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card payment wrong exchange rate",
+    "cash withdrawal not recognised"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "getting spare card",
+    "passcode forgotten"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "extra charge on statement",
+    "verify top up",
+    "verify my identity",
+    "receiving money"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "11"
+  }
+ ],
+ "40_turns-44": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "exchange charge",
+    "request refund",
+    "cancel transfer",
+    "transfer fee charged"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "get disposable virtual card",
+    "pending top up",
+    "lost or stolen card",
+    "disposable card limits"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "top up by card charge",
+    "why verify identity",
+    "verify source of funds",
+    "request refund"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "supported cards and currencies",
+    "disposable card limits",
+    "lost or stolen phone",
+    "balance not updated after cheque or cash deposit"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card arrival",
+    "get disposable virtual card",
+    "card payment wrong exchange rate",
+    "wrong amount of cash received"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "top up limits",
+    "transfer fee charged",
+    "getting spare card",
+    "wrong amount of cash received"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "card about to expire",
+    "lost or stolen card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "order physical card",
+    "pending transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "transfer fee charged",
+    "pending transfer",
+    "card swallowed",
+    "card arrival"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "10"
+  }
+ ],
+ "40_turns-45": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "fiat currency support",
+    "lost or stolen card",
+    "card delivery estimate",
+    "exchange via app"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "exchange rate",
+    "lost or stolen card",
+    "terminate account",
+    "direct debit payment not recognised"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "declined cash withdrawal",
+    "pending cash withdrawal",
+    "verify my identity",
+    "pending transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "card not working",
+    "exchange charge",
+    "verify my identity",
+    "declined cash withdrawal"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "wrong amount of cash received",
+    "get physical card",
+    "pending top up",
+    "transfer fee charged"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "top up reverted",
+    "transfer fee charged",
+    "terminate account",
+    "card arrival"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "pending cash withdrawal",
+    "exchange via app"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "pending top up",
+    "pending cash withdrawal"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "top up by card charge",
+    "card delivery estimate",
+    "why verify identity",
+    "exchange rate"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ],
+ "40_turns-46": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "receiving money",
+    "verify top up",
+    "verify source of funds",
+    "atm support"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "direct debit payment not recognised",
+    "supported cards and currencies",
+    "cash withdrawal not recognised",
+    "getting spare card"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "declined cash withdrawal",
+    "compromised card",
+    "verify top up",
+    "terminate account"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "request refund",
+    "card arrival",
+    "get disposable virtual card",
+    "card payment fee charged"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card payment fee charged",
+    "topping up by card",
+    "exchange rate",
+    "supported cards and currencies"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "receiving money",
+    "edit personal details",
+    "balance not updated after bank transfer",
+    "verify top up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "visa or mastercard",
+    "verify top up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "request refund",
+    "verify top up"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "balance not updated after bank transfer",
+    "top up reverted",
+    "cash withdrawal not recognised",
+    "topping up by card"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "10"
+  }
+ ],
+ "40_turns-47": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "why verify identity",
+    "edit personal details",
+    "pending transfer",
+    "pending card payment"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "apple pay or google pay",
+    "exchange via app",
+    "verify my identity",
+    "pending card payment"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "getting spare card",
+    "exchange via app",
+    "lost or stolen card",
+    "failed transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "visa or mastercard",
+    "request refund",
+    "top up limits",
+    "transfer timing"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card acceptance",
+    "pending card payment",
+    "top up reverted",
+    "top up by cash or cheque"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "top up by cash or cheque",
+    "verify my identity",
+    "wrong exchange rate for cash withdrawal",
+    "pending card payment"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up by cash or cheque",
+    "pending transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "transfer fee charged",
+    "pending transfer"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "verify my identity",
+    "verify source of funds",
+    "transfer fee charged",
+    "top up by cash or cheque"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "7"
+  }
+ ],
+ "40_turns-48": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "wrong amount of cash received",
+    "verify source of funds",
+    "balance not updated after cheque or cash deposit",
+    "reverted card payment?"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "getting virtual card",
+    "transfer timing",
+    "verify source of funds",
+    "why verify identity"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "getting spare card",
+    "balance not updated after cheque or cash deposit",
+    "country support",
+    "get physical card"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "activate my card",
+    "top up by bank transfer charge",
+    "receiving money",
+    "card not working"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "transfer timing",
+    "change pin",
+    "getting virtual card",
+    "activate my card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "change pin",
+    "balance not updated after cheque or cash deposit",
+    "contactless not working",
+    "virtual card not working"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "top up by cash or cheque",
+    "beneficiary not allowed"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "getting virtual card",
+    "request refund"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "exchange rate",
+    "card swallowed",
+    "why verify identity",
+    "pin blocked"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "7"
+  }
+ ],
+ "40_turns-49": [
+  {
+   "type": "first",
+   "text": "Which of these was the first banking issue the customer raised?",
+   "options": [
+    "change pin",
+    "transaction charged twice",
+    "lost or stolen card",
+    "activate my card"
+   ],
+   "gold": "D"
+  },
+  {
+   "type": "last",
+   "text": "Which of these was the most recent banking issue the customer raised?",
+   "options": [
+    "card acceptance",
+    "atm support",
+    "transfer not received by recipient",
+    "cancel transfer"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "transfer into account",
+    "card about to expire",
+    "failed transfer",
+    "top up failed"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "present",
+   "text": "Which of these issues did the customer raise?",
+   "options": [
+    "automatic top up",
+    "card acceptance",
+    "getting virtual card",
+    "age limit"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "card payment fee charged",
+    "terminate account",
+    "disposable card limits",
+    "passcode forgotten"
+   ],
+   "gold": "A"
+  },
+  {
+   "type": "absent",
+   "text": "Which of these issues did the customer NOT raise?",
+   "options": [
+    "Refund not showing up",
+    "get disposable virtual card",
+    "beneficiary not allowed",
+    "card acceptance"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "change pin",
+    "atm support"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "order",
+   "text": "Which of these two issues did the customer raise first?",
+   "options": [
+    "topping up by card",
+    "atm support"
+   ],
+   "gold": "B"
+  },
+  {
+   "type": "repeated",
+   "text": "Which of these issues did the customer raise more than once?",
+   "options": [
+    "top up limits",
+    "change pin",
+    "get physical card",
+    "cancel transfer"
+   ],
+   "gold": "C"
+  },
+  {
+   "type": "count_other",
+   "text": "How many of the customer's messages were not banking requests? Answer with a number.",
+   "options": [],
+   "gold": "9"
+  }
+ ]
+}

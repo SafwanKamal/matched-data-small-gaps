@@ -1,0 +1,187 @@
+{
+  "banking77": {
+    "n": 500,
+    "accuracy": {
+      "encoder_1e-4": 0.926,
+      "decoder_1e-4": 0.918,
+      "decoder_2e-5": 0.92,
+      "encoder_2e-5": 0.896
+    },
+    "brier": {
+      "encoder_1e-4": 0.1188204644555701,
+      "decoder_1e-4": 0.1298332553548454,
+      "decoder_2e-5": 0.11732287029575267,
+      "encoder_2e-5": 0.16257208282068852
+    },
+    "pairs": {
+      "encoder_1e-4 minus decoder_1e-4": {
+        "accuracy_difference_points": 0.8000000000000007,
+        "accuracy_difference_ci": [
+          -1.0000000000000009,
+          2.6000000000000023
+        ],
+        "brier_difference": -0.011012790899275315,
+        "brier_difference_ci": [
+          -0.03703952329159097,
+          0.013985078889953617
+        ],
+        "mcnemar": {
+          "only_first_right": 12,
+          "only_second_right": 8,
+          "exact_p": 0.5034446716308594
+        }
+      },
+      "encoder_1e-4 minus decoder_2e-5": {
+        "accuracy_difference_points": 0.6000000000000005,
+        "accuracy_difference_ci": [
+          -1.200000000000001,
+          2.400000000000002
+        ],
+        "brier_difference": 0.001497594159817428,
+        "brier_difference_ci": [
+          -0.01909164261445191,
+          0.021817552629887455
+        ],
+        "mcnemar": {
+          "only_first_right": 13,
+          "only_second_right": 10,
+          "exact_p": 0.6776394844055176
+        }
+      },
+      "encoder_1e-4 minus encoder_2e-5": {
+        "accuracy_difference_points": 3.0000000000000027,
+        "accuracy_difference_ci": [
+          1.0000000000000009,
+          5.199999999999994
+        ],
+        "brier_difference": -0.04375161836511843,
+        "brier_difference_ci": [
+          -0.06905907050395095,
+          -0.01997062740600452
+        ],
+        "mcnemar": {
+          "only_first_right": 22,
+          "only_second_right": 7,
+          "exact_p": 0.008130058646202087
+        }
+      }
+    }
+  },
+  "massive_en": {
+    "n": 2974,
+    "accuracy": {
+      "encoder_1e-4": 0.8981170141223941,
+      "decoder_1e-4": 0.8863483523873571,
+      "decoder_2e-5": 0.8833221250840618,
+      "encoder_2e-5": 0.8685272360457297
+    },
+    "brier": {
+      "encoder_1e-4": 0.155067879875848,
+      "decoder_1e-4": 0.16699629523923995,
+      "decoder_2e-5": 0.16789424476440404,
+      "encoder_2e-5": 0.19871971452442058
+    },
+    "pairs": {
+      "encoder_1e-4 minus decoder_1e-4": {
+        "accuracy_difference_points": 1.176866173503699,
+        "accuracy_difference_ci": [
+          0.26899798251512896,
+          2.051109616677882
+        ],
+        "brier_difference": -0.011928415363391953,
+        "brier_difference_ci": [
+          -0.021196828089294763,
+          -0.002595036129129501
+        ],
+        "mcnemar": {
+          "only_first_right": 107,
+          "only_second_right": 72,
+          "exact_p": 0.010839916955286594
+        }
+      },
+      "encoder_1e-4 minus decoder_2e-5": {
+        "accuracy_difference_points": 1.479488903833226,
+        "accuracy_difference_ci": [
+          0.6052454606590429,
+          2.353732347007398
+        ],
+        "brier_difference": -0.012826364888556041,
+        "brier_difference_ci": [
+          -0.02196619184561394,
+          -0.0038339925110193233
+        ],
+        "mcnemar": {
+          "only_first_right": 110,
+          "only_second_right": 66,
+          "exact_p": 0.00112931791137213
+        }
+      },
+      "encoder_1e-4 minus encoder_2e-5": {
+        "accuracy_difference_points": 2.958977807666441,
+        "accuracy_difference_ci": [
+          2.0847343644922685,
+          3.8668459986550108
+        ],
+        "brier_difference": -0.043651834648572585,
+        "brier_difference_ci": [
+          -0.053781037072523824,
+          -0.03358387774013107
+        ],
+        "mcnemar": {
+          "only_first_right": 142,
+          "only_second_right": 54,
+          "exact_p": 2.5894806368421e-10
+        }
+      }
+    }
+  },
+  "sst2": {
+    "n": 872,
+    "accuracy": {
+      "encoder_1e-4": 0.9403669724770642,
+      "decoder_2e-5": 0.930045871559633,
+      "encoder_2e-5": 0.9426605504587156
+    },
+    "brier": {
+      "encoder_1e-4": 0.09750287370263944,
+      "decoder_2e-5": 0.1147796233217133,
+      "encoder_2e-5": 0.09053755815221608
+    },
+    "pairs": {
+      "encoder_1e-4 minus decoder_2e-5": {
+        "accuracy_difference_points": 1.0321100917431214,
+        "accuracy_difference_ci": [
+          -0.4587155963302725,
+          2.5229357798165153
+        ],
+        "brier_difference": -0.01727674961907387,
+        "brier_difference_ci": [
+          -0.034372260800179945,
+          -9.569783736178692e-06
+        ],
+        "mcnemar": {
+          "only_first_right": 27,
+          "only_second_right": 18,
+          "exact_p": 0.23269319190831084
+        }
+      },
+      "encoder_1e-4 minus encoder_2e-5": {
+        "accuracy_difference_points": -0.2293577981651307,
+        "accuracy_difference_ci": [
+          -1.6055045871559595,
+          1.1467889908256867
+        ],
+        "brier_difference": 0.006965315550423359,
+        "brier_difference_ci": [
+          -0.006444913934977867,
+          0.020626188976649137
+        ],
+        "mcnemar": {
+          "only_first_right": 18,
+          "only_second_right": 20,
+          "exact_p": 0.8714146793645341
+        }
+      }
+    }
+  }
+}

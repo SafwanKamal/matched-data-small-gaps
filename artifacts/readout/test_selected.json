@@ -1,0 +1,112 @@
+{
+  "protocol_id": "qwen-index-readout-2026-10-08",
+  "variant": "index_prior",
+  "selected": true,
+  "datasets": {
+    "banking77": {
+      "n_options": 77,
+      "temperature": 2.5626494805427096,
+      "scaled": {
+        "n": 500,
+        "accuracy": 0.14,
+        "brier": 0.950844098250888,
+        "log_loss": 3.717617597508983,
+        "ece": 0.046650121551602364,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.7898253025305184
+      },
+      "unscaled": {
+        "n": 500,
+        "accuracy": 0.14,
+        "brier": 1.1374640912542977,
+        "log_loss": 4.835984447386438,
+        "ece": 0.35668536901004066,
+        "top_bin_mass": 0.076,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.803921644957075
+      },
+      "n_truncated": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 500,
+        "p50_ms": 301.08419999305625,
+        "p95_ms": 325.02918500758824
+      }
+    },
+    "sst2": {
+      "n_options": 2,
+      "temperature": 0.34267536349998,
+      "scaled": {
+        "n": 872,
+        "accuracy": 0.8577981651376146,
+        "brier": 0.2200303410996752,
+        "log_loss": 0.3637755811990082,
+        "ece": 0.032462063528025456,
+        "top_bin_mass": 0.5126146788990825,
+        "coverage_at_5pct_error": 0.5321100917431193,
+        "selective_selected_n": 464,
+        "selective_confidence_threshold": 0.9197861151832775,
+        "aurc": 0.05834896022221116
+      },
+      "unscaled": {
+        "n": 872,
+        "accuracy": 0.8577981651376146,
+        "brier": 0.263988512615062,
+        "log_loss": 0.4298832189982156,
+        "ece": 0.14948235449858016,
+        "top_bin_mass": 0.011467889908256881,
+        "coverage_at_5pct_error": 0.5321100917431193,
+        "selective_selected_n": 464,
+        "selective_confidence_threshold": 0.6976089261447675,
+        "aurc": 0.0583488375580478
+      },
+      "n_truncated": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 872,
+        "p50_ms": 54.425799993623514,
+        "p95_ms": 59.60865500383079
+      }
+    },
+    "ag_news": {
+      "n_options": 4,
+      "temperature": 0.9575713898620363,
+      "scaled": {
+        "n": 1000,
+        "accuracy": 0.383,
+        "brier": 0.705099466803976,
+        "log_loss": 1.2916221561614065,
+        "ece": 0.038406465408002285,
+        "top_bin_mass": 0.005,
+        "coverage_at_5pct_error": 0.005,
+        "selective_selected_n": 5,
+        "selective_confidence_threshold": 0.9379309898745605,
+        "aurc": 0.5629202336817697
+      },
+      "unscaled": {
+        "n": 1000,
+        "accuracy": 0.383,
+        "brier": 0.7049740984359322,
+        "log_loss": 1.2918174601046504,
+        "ece": 0.030721421692037586,
+        "top_bin_mass": 0.002,
+        "coverage_at_5pct_error": 0.005,
+        "selective_selected_n": 5,
+        "selective_confidence_threshold": 0.9286551944523298,
+        "aurc": 0.5630765604774459
+      },
+      "n_truncated": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 1000,
+        "p50_ms": 53.82244999782415,
+        "p95_ms": 60.898169997381046
+      }
+    }
+  }
+}

@@ -1,0 +1,941 @@
+{
+  "protocol_id": "wrapper-variety-curve-2026-10-10",
+  "runs": {
+    "level-1__seed-20261007": {
+      "temperature": 0.6251471428245731,
+      "conditions": {
+        "clean": {
+          "accuracy": 0.884,
+          "brier": 0.174748096721084,
+          "mean_top_probability": 0.8912242159225108,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "accuracy": 0.462,
+          "brier": 0.671260976793706,
+          "mean_top_probability": 0.5896338984892234,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "accuracy": 0.854,
+          "brier": 0.20504889295940468,
+          "mean_top_probability": 0.8874582808514583,
+          "share_over_cap": 0.0
+        },
+        "seen__last": {
+          "accuracy": 0.888,
+          "brier": 0.16995911164565147,
+          "mean_top_probability": 0.9179715600532785,
+          "share_over_cap": 0.0
+        },
+        "seen__first": {
+          "accuracy": 0.89,
+          "brier": 0.1684835373322437,
+          "mean_top_probability": 0.9177145366591843,
+          "share_over_cap": 0.0
+        },
+        "seen__middle": {
+          "accuracy": 0.874,
+          "brier": 0.18276804637432514,
+          "mean_top_probability": 0.9069698465345677,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__last": {
+          "accuracy": 0.888,
+          "brier": 0.1757048397240238,
+          "mean_top_probability": 0.9070374381292203,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__first": {
+          "accuracy": 0.882,
+          "brier": 0.1706707774236391,
+          "mean_top_probability": 0.9094276781808606,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__middle": {
+          "accuracy": 0.822,
+          "brier": 0.2481307340918709,
+          "mean_top_probability": 0.8492754542614063,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__last": {
+          "accuracy": 0.864,
+          "brier": 0.1946375271018564,
+          "mean_top_probability": 0.8889512363312458,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__first": {
+          "accuracy": 0.87,
+          "brier": 0.1958092347648222,
+          "mean_top_probability": 0.8965321368164945,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__middle": {
+          "accuracy": 0.756,
+          "brier": 0.3524759476200899,
+          "mean_top_probability": 0.7724187598595673,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__last": {
+          "accuracy": 0.096,
+          "brier": 1.1776677455072946,
+          "mean_top_probability": 0.4583539008101102,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__first": {
+          "accuracy": 0.63,
+          "brier": 0.4919784293353615,
+          "mean_top_probability": 0.6481301367699035,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__middle": {
+          "accuracy": 0.034,
+          "brier": 1.2628331921093163,
+          "mean_top_probability": 0.47185539972888874,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__last": {
+          "accuracy": 0.882,
+          "brier": 0.17929590285570196,
+          "mean_top_probability": 0.9001941524085837,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__first": {
+          "accuracy": 0.88,
+          "brier": 0.18392842279108595,
+          "mean_top_probability": 0.9071908327131194,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__middle": {
+          "accuracy": 0.848,
+          "brier": 0.22305294914984228,
+          "mean_top_probability": 0.878810880893701,
+          "share_over_cap": 0.0
+        }
+      },
+      "held_out_mean_accuracy": 0.7043333333333334,
+      "held_out_last": 0.6825,
+      "held_out_first": 0.8155,
+      "held_out_middle": 0.615
+    },
+    "level-2__seed-20261007": {
+      "temperature": 0.613945670824154,
+      "conditions": {
+        "clean": {
+          "accuracy": 0.88,
+          "brier": 0.18383535572288787,
+          "mean_top_probability": 0.8821903224736464,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "accuracy": 0.574,
+          "brier": 0.5219053233749935,
+          "mean_top_probability": 0.6160608248633137,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "accuracy": 0.81,
+          "brier": 0.2849738079738183,
+          "mean_top_probability": 0.8320291103956979,
+          "share_over_cap": 0.0
+        },
+        "seen__last": {
+          "accuracy": 0.878,
+          "brier": 0.18018097902594332,
+          "mean_top_probability": 0.9157628080519588,
+          "share_over_cap": 0.0
+        },
+        "seen__first": {
+          "accuracy": 0.876,
+          "brier": 0.17829780231175318,
+          "mean_top_probability": 0.9122084933985297,
+          "share_over_cap": 0.0
+        },
+        "seen__middle": {
+          "accuracy": 0.866,
+          "brier": 0.20130706095384643,
+          "mean_top_probability": 0.8924590399668623,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__last": {
+          "accuracy": 0.878,
+          "brier": 0.18174655138015516,
+          "mean_top_probability": 0.9119803580717747,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__first": {
+          "accuracy": 0.878,
+          "brier": 0.17824412938326548,
+          "mean_top_probability": 0.9055695857913968,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__middle": {
+          "accuracy": 0.846,
+          "brier": 0.22201256445693077,
+          "mean_top_probability": 0.8712214701621538,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__last": {
+          "accuracy": 0.872,
+          "brier": 0.19654851253134223,
+          "mean_top_probability": 0.9061924985062714,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__first": {
+          "accuracy": 0.86,
+          "brier": 0.21084239123255524,
+          "mean_top_probability": 0.8983641712091055,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__middle": {
+          "accuracy": 0.798,
+          "brier": 0.2896677659998815,
+          "mean_top_probability": 0.8345006678786179,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__last": {
+          "accuracy": 0.174,
+          "brier": 1.0679678371233334,
+          "mean_top_probability": 0.49381201381540096,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__first": {
+          "accuracy": 0.4,
+          "brier": 0.7756692714467608,
+          "mean_top_probability": 0.5367937128430793,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__middle": {
+          "accuracy": 0.038,
+          "brier": 1.268658485033734,
+          "mean_top_probability": 0.47681430021698895,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__last": {
+          "accuracy": 0.876,
+          "brier": 0.1855037685228357,
+          "mean_top_probability": 0.905349994468806,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__first": {
+          "accuracy": 0.872,
+          "brier": 0.18790112949063553,
+          "mean_top_probability": 0.9023402952722517,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__middle": {
+          "accuracy": 0.842,
+          "brier": 0.24246622577968788,
+          "mean_top_probability": 0.8695551296069314,
+          "share_over_cap": 0.0
+        }
+      },
+      "held_out_mean_accuracy": 0.6945000000000001,
+      "held_out_last": 0.7,
+      "held_out_first": 0.7525,
+      "held_out_middle": 0.631
+    },
+    "level-4__seed-20261007": {
+      "temperature": 0.6285170629464881,
+      "conditions": {
+        "clean": {
+          "accuracy": 0.874,
+          "brier": 0.19252759526968868,
+          "mean_top_probability": 0.8852717550940828,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "accuracy": 0.574,
+          "brier": 0.542263811039527,
+          "mean_top_probability": 0.6223743286549558,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "accuracy": 0.864,
+          "brier": 0.20680874401070737,
+          "mean_top_probability": 0.8654194527087593,
+          "share_over_cap": 0.0
+        },
+        "seen__last": {
+          "accuracy": 0.88,
+          "brier": 0.18287635044073638,
+          "mean_top_probability": 0.9080775945595921,
+          "share_over_cap": 0.0
+        },
+        "seen__first": {
+          "accuracy": 0.878,
+          "brier": 0.18667862909490462,
+          "mean_top_probability": 0.9058165426071904,
+          "share_over_cap": 0.0
+        },
+        "seen__middle": {
+          "accuracy": 0.854,
+          "brier": 0.20640292812348593,
+          "mean_top_probability": 0.8812462553880719,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__last": {
+          "accuracy": 0.874,
+          "brier": 0.1813519555327128,
+          "mean_top_probability": 0.9044804785146695,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__first": {
+          "accuracy": 0.878,
+          "brier": 0.18179969741760227,
+          "mean_top_probability": 0.9026055109878435,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__middle": {
+          "accuracy": 0.86,
+          "brier": 0.20920694276603846,
+          "mean_top_probability": 0.8713728539507276,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__last": {
+          "accuracy": 0.866,
+          "brier": 0.18343936472565395,
+          "mean_top_probability": 0.9021489657147119,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__first": {
+          "accuracy": 0.872,
+          "brier": 0.20011576583410212,
+          "mean_top_probability": 0.9006538642133042,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__middle": {
+          "accuracy": 0.844,
+          "brier": 0.2332236130541767,
+          "mean_top_probability": 0.8630586378895242,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__last": {
+          "accuracy": 0.132,
+          "brier": 1.1971193828068334,
+          "mean_top_probability": 0.5348387021533852,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__first": {
+          "accuracy": 0.668,
+          "brier": 0.46167002036095256,
+          "mean_top_probability": 0.679751885709811,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__middle": {
+          "accuracy": 0.02,
+          "brier": 1.3504493608974226,
+          "mean_top_probability": 0.5345924420581598,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__last": {
+          "accuracy": 0.876,
+          "brier": 0.17802368936070656,
+          "mean_top_probability": 0.9048413259467302,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__first": {
+          "accuracy": 0.884,
+          "brier": 0.18374138627515957,
+          "mean_top_probability": 0.9073438676773198,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__middle": {
+          "accuracy": 0.858,
+          "brier": 0.20569812266397908,
+          "mean_top_probability": 0.8845867916786531,
+          "share_over_cap": 0.0
+        }
+      },
+      "held_out_mean_accuracy": 0.7193333333333333,
+      "held_out_last": 0.6869999999999999,
+      "held_out_first": 0.8255,
+      "held_out_middle": 0.6455
+    },
+    "level-8__seed-20261007": {
+      "temperature": 0.6248067344603311,
+      "conditions": {
+        "clean": {
+          "accuracy": 0.888,
+          "brier": 0.16919342698782788,
+          "mean_top_probability": 0.8885200849527192,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "accuracy": 0.872,
+          "brier": 0.1882529258344081,
+          "mean_top_probability": 0.8843380284210779,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "accuracy": 0.884,
+          "brier": 0.17709523544409522,
+          "mean_top_probability": 0.8945170327109313,
+          "share_over_cap": 0.0
+        },
+        "seen__last": {
+          "accuracy": 0.878,
+          "brier": 0.177475053886309,
+          "mean_top_probability": 0.9089340252583084,
+          "share_over_cap": 0.0
+        },
+        "seen__first": {
+          "accuracy": 0.886,
+          "brier": 0.16708363750663813,
+          "mean_top_probability": 0.9114593996592633,
+          "share_over_cap": 0.0
+        },
+        "seen__middle": {
+          "accuracy": 0.852,
+          "brier": 0.21147312868137938,
+          "mean_top_probability": 0.8922785783797058,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__last": {
+          "accuracy": 0.88,
+          "brier": 0.17378782944452315,
+          "mean_top_probability": 0.9068012280419224,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__first": {
+          "accuracy": 0.89,
+          "brier": 0.1665747862134873,
+          "mean_top_probability": 0.909412381259543,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__middle": {
+          "accuracy": 0.848,
+          "brier": 0.21487953739837148,
+          "mean_top_probability": 0.8799310869576866,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__last": {
+          "accuracy": 0.884,
+          "brier": 0.17747906003511954,
+          "mean_top_probability": 0.9055123794474194,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__first": {
+          "accuracy": 0.884,
+          "brier": 0.17843863853950706,
+          "mean_top_probability": 0.9061522020685361,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__middle": {
+          "accuracy": 0.854,
+          "brier": 0.22425425711726213,
+          "mean_top_probability": 0.8826987752240043,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__last": {
+          "accuracy": 0.404,
+          "brier": 0.8113136387026193,
+          "mean_top_probability": 0.5992768181809154,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__first": {
+          "accuracy": 0.662,
+          "brier": 0.46650113812467586,
+          "mean_top_probability": 0.6884875952194128,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__middle": {
+          "accuracy": 0.03,
+          "brier": 1.3253398708540554,
+          "mean_top_probability": 0.5210828307202244,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__last": {
+          "accuracy": 0.878,
+          "brier": 0.1825256310776739,
+          "mean_top_probability": 0.9052267757527511,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__first": {
+          "accuracy": 0.892,
+          "brier": 0.16735446941270493,
+          "mean_top_probability": 0.9118444232343541,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__middle": {
+          "accuracy": 0.844,
+          "brier": 0.22002714173010007,
+          "mean_top_probability": 0.8852706091275925,
+          "share_over_cap": 0.0
+        }
+      },
+      "held_out_mean_accuracy": 0.7458333333333332,
+      "held_out_last": 0.7615000000000001,
+      "held_out_first": 0.832,
+      "held_out_middle": 0.644
+    },
+    "level-1__seed-20261008": {
+      "temperature": 0.6019863318981709,
+      "conditions": {
+        "clean": {
+          "accuracy": 0.892,
+          "brier": 0.16727675248797375,
+          "mean_top_probability": 0.9062910708115477,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "accuracy": 0.59,
+          "brier": 0.528610660978393,
+          "mean_top_probability": 0.5831113453435061,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "accuracy": 0.89,
+          "brier": 0.16199044382335295,
+          "mean_top_probability": 0.9118329858698191,
+          "share_over_cap": 0.0
+        },
+        "seen__last": {
+          "accuracy": 0.898,
+          "brier": 0.1614638586321433,
+          "mean_top_probability": 0.9216466322923291,
+          "share_over_cap": 0.0
+        },
+        "seen__first": {
+          "accuracy": 0.894,
+          "brier": 0.16059530817861192,
+          "mean_top_probability": 0.9234989565983404,
+          "share_over_cap": 0.0
+        },
+        "seen__middle": {
+          "accuracy": 0.884,
+          "brier": 0.17181293984464313,
+          "mean_top_probability": 0.9164421272109662,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__last": {
+          "accuracy": 0.886,
+          "brier": 0.17822094178607492,
+          "mean_top_probability": 0.9175815034883056,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__first": {
+          "accuracy": 0.882,
+          "brier": 0.1825017583312481,
+          "mean_top_probability": 0.9200840643822332,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__middle": {
+          "accuracy": 0.8,
+          "brier": 0.29506381426027073,
+          "mean_top_probability": 0.7987834030075344,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__last": {
+          "accuracy": 0.872,
+          "brier": 0.18886798241362202,
+          "mean_top_probability": 0.9067558163108674,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__first": {
+          "accuracy": 0.868,
+          "brier": 0.19466280845338024,
+          "mean_top_probability": 0.8995945348629207,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__middle": {
+          "accuracy": 0.682,
+          "brier": 0.46346462339042077,
+          "mean_top_probability": 0.7364814669535419,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__last": {
+          "accuracy": 0.1,
+          "brier": 1.2597070392771734,
+          "mean_top_probability": 0.5631069296672412,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__first": {
+          "accuracy": 0.622,
+          "brier": 0.49747556747117183,
+          "mean_top_probability": 0.6792331621169573,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__middle": {
+          "accuracy": 0.022,
+          "brier": 1.3999012126582087,
+          "mean_top_probability": 0.5727040812967847,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__last": {
+          "accuracy": 0.884,
+          "brier": 0.17115822015742457,
+          "mean_top_probability": 0.9126193753152549,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__first": {
+          "accuracy": 0.888,
+          "brier": 0.1714997654423729,
+          "mean_top_probability": 0.9171729060635392,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__middle": {
+          "accuracy": 0.828,
+          "brier": 0.2525730615908722,
+          "mean_top_probability": 0.8421557711879966,
+          "share_over_cap": 0.0
+        }
+      },
+      "held_out_mean_accuracy": 0.6945000000000001,
+      "held_out_last": 0.6855,
+      "held_out_first": 0.815,
+      "held_out_middle": 0.5830000000000001
+    },
+    "level-2__seed-20261008": {
+      "temperature": 0.6072307559969521,
+      "conditions": {
+        "clean": {
+          "accuracy": 0.888,
+          "brier": 0.1714733921536331,
+          "mean_top_probability": 0.8980924367023875,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "accuracy": 0.786,
+          "brier": 0.30402147610339864,
+          "mean_top_probability": 0.7751017484557929,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "accuracy": 0.814,
+          "brier": 0.25336132629843044,
+          "mean_top_probability": 0.8353278302321048,
+          "share_over_cap": 0.0
+        },
+        "seen__last": {
+          "accuracy": 0.896,
+          "brier": 0.16568178708708228,
+          "mean_top_probability": 0.9210827323971644,
+          "share_over_cap": 0.0
+        },
+        "seen__first": {
+          "accuracy": 0.902,
+          "brier": 0.1545792640362538,
+          "mean_top_probability": 0.9203115322448698,
+          "share_over_cap": 0.0
+        },
+        "seen__middle": {
+          "accuracy": 0.89,
+          "brier": 0.16721020885982785,
+          "mean_top_probability": 0.9078962122684078,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__last": {
+          "accuracy": 0.898,
+          "brier": 0.17094130818072198,
+          "mean_top_probability": 0.9172236868472707,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__first": {
+          "accuracy": 0.9,
+          "brier": 0.15910759723871837,
+          "mean_top_probability": 0.9203568113287032,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__middle": {
+          "accuracy": 0.878,
+          "brier": 0.17711280308964167,
+          "mean_top_probability": 0.8879313141839292,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__last": {
+          "accuracy": 0.89,
+          "brier": 0.17545035264195588,
+          "mean_top_probability": 0.9026913035915324,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__first": {
+          "accuracy": 0.888,
+          "brier": 0.17016800261637746,
+          "mean_top_probability": 0.9039441676695483,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__middle": {
+          "accuracy": 0.824,
+          "brier": 0.2550302037475302,
+          "mean_top_probability": 0.8340252939576966,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__last": {
+          "accuracy": 0.244,
+          "brier": 1.0011932871250206,
+          "mean_top_probability": 0.5108211677776269,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__first": {
+          "accuracy": 0.316,
+          "brier": 0.8896836286423625,
+          "mean_top_probability": 0.5379460133022105,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__middle": {
+          "accuracy": 0.032,
+          "brier": 1.3091297117579215,
+          "mean_top_probability": 0.5072217274089212,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__last": {
+          "accuracy": 0.882,
+          "brier": 0.17182811886902766,
+          "mean_top_probability": 0.9120632044131524,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__first": {
+          "accuracy": 0.898,
+          "brier": 0.15445509620594763,
+          "mean_top_probability": 0.9170481862659151,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__middle": {
+          "accuracy": 0.868,
+          "brier": 0.18479432541861868,
+          "mean_top_probability": 0.8771791601590724,
+          "share_over_cap": 0.0
+        }
+      },
+      "held_out_mean_accuracy": 0.7098333333333332,
+      "held_out_last": 0.7285,
+      "held_out_first": 0.7505000000000001,
+      "held_out_middle": 0.6505
+    },
+    "level-4__seed-20261008": {
+      "temperature": 0.5992964420496005,
+      "conditions": {
+        "clean": {
+          "accuracy": 0.88,
+          "brier": 0.18288630260788769,
+          "mean_top_probability": 0.89554394481361,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "accuracy": 0.836,
+          "brier": 0.24959191809548467,
+          "mean_top_probability": 0.8514515960126098,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "accuracy": 0.82,
+          "brier": 0.2542771261270817,
+          "mean_top_probability": 0.8466505516596086,
+          "share_over_cap": 0.0
+        },
+        "seen__last": {
+          "accuracy": 0.888,
+          "brier": 0.17611632434378327,
+          "mean_top_probability": 0.9155656199772754,
+          "share_over_cap": 0.0
+        },
+        "seen__first": {
+          "accuracy": 0.884,
+          "brier": 0.17122145473983127,
+          "mean_top_probability": 0.9179012787993004,
+          "share_over_cap": 0.0
+        },
+        "seen__middle": {
+          "accuracy": 0.872,
+          "brier": 0.18464396338561437,
+          "mean_top_probability": 0.9039251263067425,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__last": {
+          "accuracy": 0.884,
+          "brier": 0.1825505057074799,
+          "mean_top_probability": 0.9150140961274391,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__first": {
+          "accuracy": 0.888,
+          "brier": 0.1688591075818201,
+          "mean_top_probability": 0.9135101658774785,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__middle": {
+          "accuracy": 0.874,
+          "brier": 0.192177752815374,
+          "mean_top_probability": 0.8915046946239685,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__last": {
+          "accuracy": 0.886,
+          "brier": 0.18498310192113127,
+          "mean_top_probability": 0.9101410758602277,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__first": {
+          "accuracy": 0.884,
+          "brier": 0.1800616096552923,
+          "mean_top_probability": 0.9064957783573862,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__middle": {
+          "accuracy": 0.866,
+          "brier": 0.1975522167083409,
+          "mean_top_probability": 0.8887449454524043,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__last": {
+          "accuracy": 0.224,
+          "brier": 1.0241129163185743,
+          "mean_top_probability": 0.5130593581855074,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__first": {
+          "accuracy": 0.26,
+          "brier": 0.9653552327574468,
+          "mean_top_probability": 0.5380060766420106,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__middle": {
+          "accuracy": 0.03,
+          "brier": 1.3127674453389475,
+          "mean_top_probability": 0.5095126055035815,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__last": {
+          "accuracy": 0.88,
+          "brier": 0.18124992840992535,
+          "mean_top_probability": 0.9150376517932481,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__first": {
+          "accuracy": 0.884,
+          "brier": 0.17217964152161333,
+          "mean_top_probability": 0.915630187394883,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__middle": {
+          "accuracy": 0.874,
+          "brier": 0.18774874327624322,
+          "mean_top_probability": 0.8951892585044449,
+          "share_over_cap": 0.0
+        }
+      },
+      "held_out_mean_accuracy": 0.7028333333333334,
+      "held_out_last": 0.7185,
+      "held_out_first": 0.729,
+      "held_out_middle": 0.661
+    },
+    "level-8__seed-20261008": {
+      "temperature": 0.6014568458067383,
+      "conditions": {
+        "clean": {
+          "accuracy": 0.878,
+          "brier": 0.17754388612550262,
+          "mean_top_probability": 0.89258248498404,
+          "share_over_cap": 0.0
+        },
+        "chatter": {
+          "accuracy": 0.864,
+          "brier": 0.2116534378371108,
+          "mean_top_probability": 0.8896811940854987,
+          "share_over_cap": 0.0
+        },
+        "typed_summary": {
+          "accuracy": 0.876,
+          "brier": 0.1773581667390907,
+          "mean_top_probability": 0.8900791702150518,
+          "share_over_cap": 0.0
+        },
+        "seen__last": {
+          "accuracy": 0.886,
+          "brier": 0.17356113857849248,
+          "mean_top_probability": 0.9198392707516584,
+          "share_over_cap": 0.0
+        },
+        "seen__first": {
+          "accuracy": 0.892,
+          "brier": 0.1643982971887096,
+          "mean_top_probability": 0.9137220203879285,
+          "share_over_cap": 0.0
+        },
+        "seen__middle": {
+          "accuracy": 0.884,
+          "brier": 0.18088727621213746,
+          "mean_top_probability": 0.8997308015138212,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__last": {
+          "accuracy": 0.89,
+          "brier": 0.17515586184191193,
+          "mean_top_probability": 0.9177917747240226,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__first": {
+          "accuracy": 0.894,
+          "brier": 0.1645562244943294,
+          "mean_top_probability": 0.9137657006204974,
+          "share_over_cap": 0.0
+        },
+        "held_out_1__middle": {
+          "accuracy": 0.884,
+          "brier": 0.1856039567040524,
+          "mean_top_probability": 0.8926021219871556,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__last": {
+          "accuracy": 0.892,
+          "brier": 0.17390705382133564,
+          "mean_top_probability": 0.9160802205546175,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__first": {
+          "accuracy": 0.89,
+          "brier": 0.1740957888491898,
+          "mean_top_probability": 0.910886390709017,
+          "share_over_cap": 0.0
+        },
+        "held_out_2__middle": {
+          "accuracy": 0.868,
+          "brier": 0.19715894998714908,
+          "mean_top_probability": 0.8951909438537871,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__last": {
+          "accuracy": 0.486,
+          "brier": 0.7032749746591337,
+          "mean_top_probability": 0.6719384420952383,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__first": {
+          "accuracy": 0.556,
+          "brier": 0.6123862848636633,
+          "mean_top_probability": 0.680110497859119,
+          "share_over_cap": 0.0
+        },
+        "held_out_3__middle": {
+          "accuracy": 0.012,
+          "brier": 1.4187294564422104,
+          "mean_top_probability": 0.5834759276913704,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__last": {
+          "accuracy": 0.888,
+          "brier": 0.17657034491494858,
+          "mean_top_probability": 0.9170209239011463,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__first": {
+          "accuracy": 0.886,
+          "brier": 0.1666224456563677,
+          "mean_top_probability": 0.9132741237319617,
+          "share_over_cap": 0.0
+        },
+        "held_out_4__middle": {
+          "accuracy": 0.882,
+          "brier": 0.18177447621774565,
+          "mean_top_probability": 0.8911456918344689,
+          "share_over_cap": 0.0
+        }
+      },
+      "held_out_mean_accuracy": 0.7523333333333332,
+      "held_out_last": 0.7889999999999999,
+      "held_out_first": 0.8065,
+      "held_out_middle": 0.6615
+    }
+  }
+}

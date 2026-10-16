@@ -1,0 +1,74 @@
+{
+  "protocol_id": "api-baselines-token-probability-2026-10-10",
+  "system": "qwen3.5-9b-bf16",
+  "suite_protocol_id": "choice-suite-2026-10-08",
+  "datasets": {
+    "banking77_full": {
+      "dev_check_n": 15,
+      "argmax_accuracy": 0.4,
+      "failures": {
+        "n": 15,
+        "request_errors": 0,
+        "unscorable": 0
+      }
+    },
+    "massive_en": {
+      "dev_check_n": 15,
+      "argmax_accuracy": 0.9333333333333333,
+      "failures": {
+        "n": 15,
+        "request_errors": 0,
+        "unscorable": 0
+      }
+    },
+    "clinc150": {
+      "dev_check_n": 15,
+      "argmax_accuracy": 0.9333333333333333,
+      "failures": {
+        "n": 15,
+        "request_errors": 0,
+        "unscorable": 0
+      }
+    },
+    "emotion": {
+      "dev_check_n": 15,
+      "argmax_accuracy": 0.4,
+      "failures": {
+        "n": 15,
+        "request_errors": 0,
+        "unscorable": 0
+      }
+    },
+    "yahoo": {
+      "dev_check_n": 15,
+      "argmax_accuracy": 0.8,
+      "failures": {
+        "n": 15,
+        "request_errors": 0,
+        "unscorable": 0
+      }
+    },
+    "anli_r3": {
+      "dev_check_n": 15,
+      "argmax_accuracy": 0.8,
+      "failures": {
+        "n": 15,
+        "request_errors": 0,
+        "unscorable": 0
+      }
+    },
+    "boolq": {
+      "dev_check_n": 15,
+      "argmax_accuracy": 1.0,
+      "failures": {
+        "n": 15,
+        "request_errors": 0,
+        "unscorable": 0
+      }
+    }
+  },
+  "spend_usd": {
+    "this_run": 0.004038149999999997,
+    "project_total": 6.406799712000299
+  }
+}

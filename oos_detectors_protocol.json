@@ -1,0 +1,22 @@
+{
+  "protocol_id": "encoder-side-oos-detectors-2026-10-13",
+  "role": "control: would a stronger out-of-scope detector on the specialist itself have removed the need for a general model's scope decision?",
+  "claim": "Every workflow so far gave the specialist one scope rule, a threshold on its top softmax probability. The literature sweep (docs/litreview/01 and 00, objection 4) points out that stronger encoder-side detectors are standard and were not tried before a general model was called in. In particular the MASSIVE failure (section 3.26) might be a failure of maximum softmax probability only. This control scores the usual detectors on the three workflows' existing specialists. No API call and no training. Written before any detector here was scored on a session turn; the session turns have been scored by maximum softmax probability before.",
+  "specialists": "the threshold encoders at learning rate 1e-4 used in sections 3.23, 3.26 and 3.27",
+  "detectors": {
+    "msp": "top softmax probability after dev temperature (the existing rule)",
+    "max_logit": "largest logit",
+    "energy": "log-sum-exp of the logits",
+    "neg_entropy": "negative entropy of the temperature-scaled distribution",
+    "mahalanobis": "negative minimum Mahalanobis distance from the mean-pooled embedding to the class means of the training embeddings, shared covariance",
+    "knn": "cosine similarity to the 10th nearest training embedding"
+  },
+  "threshold": "for each detector, the value with the best balanced accuracy on the same dev split as before (400 in-scope dev utterances, 100 out-of-scope dev utterances); no session turn is used",
+  "metrics": [
+    "AUROC for in-scope against out-of-scope on the session turns",
+    "share of in-scope turns kept and of out-of-scope turns caught at the dev threshold",
+    "session success of the workflow with this scope rule and the encoder's intent, with intervals",
+    "the same for the saved Gemma 4 31B and Qwen3.5 9B scope decisions and the Jev listed-form gate, for reference"
+  ],
+  "readout_stated_in_advance": "if any encoder-side detector on MASSIVE reaches the scope accuracy of a general model as gate, the MASSIVE failure is a property of maximum softmax probability and not of the label set, and section 3.26 must say so"
+}

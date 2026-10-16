@@ -1,0 +1,145 @@
+{
+  "protocol_id": "choice-suite-2026-10-08",
+  "role": "wider Choice suite for zero-shot systems",
+  "claim": "Fixed option lists, human labels, test splits that can be scored locally. Written before any system was scored on a dataset that is new here. Banking77 and MASSIVE reuse items that fine-tuned and zero-shot systems were already scored on.",
+  "metrics_match": "program-1-choice-2026-10-07",
+  "seed": 20261008,
+  "seed_spawn_order": [
+    "clinc150_dev",
+    "clinc150_test",
+    "emotion_dev",
+    "yahoo_dev",
+    "yahoo_test",
+    "anli_r3_dev",
+    "boolq_dev",
+    "boolq_test"
+  ],
+  "test_cap": 3000,
+  "dev_n": 400,
+  "subsample": "prefix of a permutation from numpy SeedSequence(seed).spawn in seed_spawn_order; a split at or under its cap is used whole, in file order",
+  "datasets": {
+    "banking77_full": {
+      "source": "full_banking77_protocol.json items; dev is the Program 1 Banking77 dev split",
+      "options": 77
+    },
+    "massive_en": {
+      "source": "primary_protocol.json items; dev is the whole official dev partition",
+      "options": 60
+    },
+    "clinc150": {
+      "hf_id": "clinc/clinc_oos",
+      "config": "plus",
+      "revision": "155b9c710419136e17307b80d0a13e68cd46b4ec",
+      "text": "text",
+      "label": "intent",
+      "label_transform": "replace underscore with space; the oos class is not an option",
+      "dev_from": "validation, in-scope rows",
+      "test_from": "test, in-scope rows",
+      "out_of_scope": "the 1000 oos test rows are kept as a separate split named oos. They have no correct option and are scored only for how much confidence a system places on them.",
+      "options": 150
+    },
+    "emotion": {
+      "hf_id": "dair-ai/emotion",
+      "config": "split",
+      "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+      "text": "text",
+      "label": "label",
+      "dev_from": "validation",
+      "test_from": "test",
+      "options": 6
+    },
+    "yahoo": {
+      "hf_id": "community-datasets/yahoo_answers_topics",
+      "config": null,
+      "revision": "6652a1e7c94f7260a0bfd0c9092dd48e2d536ea1",
+      "text": "question_title, a newline, then question_content; best_answer is not shown",
+      "label": "topic",
+      "dev_from": "train",
+      "test_from": "test",
+      "options": 10
+    },
+    "anli_r3": {
+      "hf_id": "facebook/anli",
+      "config": null,
+      "revision": "8e4813d81f46d313dac7892e1c28076917cfcdf9",
+      "text": "Premise: {premise}\nHypothesis: {hypothesis}",
+      "label": "label",
+      "labels": [
+        "entailment",
+        "neutral",
+        "contradiction"
+      ],
+      "dev_from": "dev_r3",
+      "test_from": "test_r3",
+      "options": 3
+    },
+    "boolq": {
+      "hf_id": "google/boolq",
+      "config": null,
+      "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+      "text": "Passage: {passage}\nQuestion: {question}?",
+      "label": "answer",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "dev_from": "train",
+      "test_from": "validation",
+      "options": 2
+    }
+  },
+  "not_included_yet": {
+    "ai2_arc and mmlu": "each item has its own option list; the Choice runners take one list per dataset",
+    "financial_phrasebank": "the hub copy is a loading script, which datasets 5.1.0 refuses",
+    "llm_aggrefact": "gated; no Hugging Face token on this machine"
+  },
+  "systems": {
+    "jev": "jev_protocol.json request and score rule; rows that return an error are requested again, up to 4 passes",
+    "qwen3-4b-index_prior": {
+      "hf_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "readout": "readout_protocol.json prompt and score; the index_prior variant chosen there on Qwen3-0.6B dev is used as is and is not reselected for this model",
+      "prior": "mean index score per option over the dev inputs of the dataset; no label is used",
+      "dtype": "bfloat16",
+      "prefix_batch": 4
+    },
+    "gliclass-base-v3.0": {
+      "added": "2026-10-08, before any GLiClass score on a dataset that is new in this suite",
+      "rule": "the Program 1 GLiClass system unchanged: single-label softmax, float32, chunks of 25 labels",
+      "device": "cpu for rows that are new here, because the GPU is held by decoder training; Banking77 and MASSIVE rows scored earlier on the GPU are reused",
+      "cpu_threads": 10,
+      "cpu_vs_gpu_check": "the first 40 Banking77 test items are scored on the cpu and compared with the saved GPU scores; the largest difference and any argmax change are reported",
+      "latency": "not timed on cpu; GPU latency on these datasets is a separate run"
+    },
+    "qwen3.5-4b-index_prior": {
+      "added": "2026-10-10, before this model was scored on any suite item",
+      "hf_id": "Qwen/Qwen3.5-4B",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "readout": "identical to qwen3-4b-index_prior: readout_protocol.json prompt and score, zero-padded codes, the dev prior, no reselection. Only the model changes, so the two rows isolate the model generation.",
+      "loaded_as": "the text-only causal model (AutoModelForCausalLM); the vision encoder is not loaded",
+      "prior": "mean index score per option over the dev inputs of the dataset; no label is used",
+      "dtype": "bfloat16",
+      "prefix_batch": 4,
+      "why": "Qwen3.5-4B is the model LLM2Jev (arXiv:2610.02076) reads, and it is rated well above Qwen3-4B. The Qwen3-4B suite results trailed LLM2Jev's published Banking77 number by about 20 points.",
+      "latency_note": "the optional causal_conv1d and flash-linear-attention kernels are not installed, so transformers uses its slower reference implementation; latency from this run is not a fair speed figure for the model"
+    },
+    "qwen3.5-9b-4bit-index_prior": {
+      "added": "2026-10-10, before this model was scored on any suite item; four made-up sentiment sentences were used to check that it loads and reads out",
+      "hf_id": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "load_in_4bit": true,
+      "quantization": "bitsandbytes 0.50.2, NF4 with double quantisation, bfloat16 compute; the output head stays bfloat16",
+      "quantization_note": "At 16 bits this model needs about 19 GB and does not fit the 12 GB card. Results are for the 4-bit model and must not be read as the full-precision model's.",
+      "readout": "identical to the other local Qwen rows: readout_protocol.json prompt and score, zero-padded codes, the dev prior, no reselection",
+      "loaded_as": "the text-only causal model; the vision encoder is not loaded",
+      "prior": "mean index score per option over the dev inputs of the dataset; no label is used",
+      "prefix_batch": 4,
+      "latency_note": "as for qwen3.5-4b-index_prior, the optional fast kernels are not installed",
+      "skip_datasets": [
+        "clinc150"
+      ],
+      "skip_note": "Decided by the project owner on 2026-10-10, before this model had produced any CLINC150 score and before any of its test results were seen: at about 2 seconds per 77-option item, CLINC150 would take about 11 GPU hours. The model is scored on the other six datasets."
+    }
+  },
+  "temperature": "one scalar per system and dataset, fit on dev by the Program 1 rule"
+}

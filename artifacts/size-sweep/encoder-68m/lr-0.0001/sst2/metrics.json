@@ -1,0 +1,49 @@
+{
+  "dataset": "sst2",
+  "loss": "log_loss",
+  "train_n": 66949,
+  "excluded_dev_n": 400,
+  "epochs": 3,
+  "batch_size": 32,
+  "oom_fallback": false,
+  "mean_train_loss": 0.1469255551848212,
+  "temperature": {
+    "temperature": 2.316752577107861,
+    "dev_nll": 0.20049239262158727,
+    "dev_nll_at_1": 0.3142618537847809,
+    "n": 400,
+    "bounds": [
+      0.05,
+      20.0
+    ],
+    "at_lower_bound": false,
+    "at_upper_bound": false
+  },
+  "scaled": {
+    "n": 872,
+    "accuracy": 0.9185779816513762,
+    "brier": 0.12305957222584027,
+    "log_loss": 0.2149355772133079,
+    "ece": 0.029807398272103672,
+    "top_bin_mass": 0.591743119266055,
+    "coverage_at_5pct_error": 0.9071100917431193,
+    "selective_selected_n": 791,
+    "selective_confidence_threshold": 0.768411811626383,
+    "aurc": 0.01724258014504978
+  },
+  "unscaled": {
+    "n": 872,
+    "accuracy": 0.9185779816513762,
+    "brier": 0.1350919867121757,
+    "log_loss": 0.28698697223523206,
+    "ece": 0.06104619902300751,
+    "top_bin_mass": 0.9105504587155964,
+    "coverage_at_5pct_error": 0.9071100917431193,
+    "selective_selected_n": 791,
+    "selective_confidence_threshold": 0.941510160776857,
+    "aurc": 0.01724258014504978
+  },
+  "n_truncated_test": 0,
+  "peak_allocated_mib": 1708.548828125,
+  "device": "NVIDIA GeForce RTX 5070"
+}

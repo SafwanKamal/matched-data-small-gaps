@@ -1,0 +1,503 @@
+{
+  "protocol_id": "workflow-retrieval-few-shot-2026-10-13",
+  "domain": "clinc150",
+  "rows": {
+    "gemma-4-31b@0.01": {
+      "train_rows": 150,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.968,
+          "intent": 0.9508706467661692,
+          "repeat": 0.9660876757650951
+        },
+        "turn_success": 0.9315,
+        "session_success": 0.7525,
+        "session_success_ci": [
+          0.7075,
+          0.7925624999999996
+        ]
+      },
+      "usd_per_1000_sessions": 1.07796645,
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.6805,
+          "intent": 0.3289800995024876,
+          "repeat": 0.5351530190239868
+        },
+        "turn_success": 0.3645,
+        "session_success": 0.0125,
+        "session_success_ci": [
+          0.0025,
+          0.0225
+        ]
+      },
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.83,
+            "intent": 0.5143034825870647,
+            "repeat": 0.707196029776675
+          },
+          "turn_success": 0.499,
+          "session_success": 0.0525,
+          "session_success_ci": [
+            0.0325,
+            0.075
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.9245,
+            "intent": 0.6349502487562189,
+            "repeat": 0.8387096774193549
+          },
+          "turn_success": 0.6005,
+          "session_success": 0.1225,
+          "session_success_ci": [
+            0.0925,
+            0.155
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.9495,
+            "intent": 0.7699004975124378,
+            "repeat": 0.8784119106699751
+          },
+          "turn_success": 0.743,
+          "session_success": 0.3075,
+          "session_success_ci": [
+            0.2625,
+            0.355
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.02": {
+      "train_rows": 300,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.968,
+          "intent": 0.9539800995024875,
+          "repeat": 0.9685690653432589
+        },
+        "turn_success": 0.9325,
+        "session_success": 0.7475,
+        "session_success_ci": [
+          0.7025,
+          0.7875
+        ]
+      },
+      "usd_per_1000_sessions": 1.0718131,
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.711,
+          "intent": 0.4931592039800995,
+          "repeat": 0.597187758478081
+        },
+        "turn_success": 0.5215,
+        "session_success": 0.075,
+        "session_success_ci": [
+          0.0525,
+          0.1
+        ]
+      },
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.8265,
+            "intent": 0.6417910447761194,
+            "repeat": 0.7468982630272953
+          },
+          "turn_success": 0.634,
+          "session_success": 0.1525,
+          "session_success_ci": [
+            0.12,
+            0.1875
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.9335,
+            "intent": 0.7748756218905473,
+            "repeat": 0.8883374689826302
+          },
+          "turn_success": 0.7375,
+          "session_success": 0.29,
+          "session_success_ci": [
+            0.245,
+            0.335
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.9595,
+            "intent": 0.8830845771144279,
+            "repeat": 0.9338296112489661
+          },
+          "turn_success": 0.8545,
+          "session_success": 0.5225,
+          "session_success_ci": [
+            0.4725,
+            0.575
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.05": {
+      "train_rows": 750,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.9705,
+          "intent": 0.9626865671641791,
+          "repeat": 0.9702233250620348
+        },
+        "turn_success": 0.941,
+        "session_success": 0.775,
+        "session_success_ci": [
+          0.7325,
+          0.815
+        ]
+      },
+      "usd_per_1000_sessions": 1.07132345,
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.884,
+          "intent": 0.8252487562189055,
+          "repeat": 0.8626964433416047
+        },
+        "turn_success": 0.786,
+        "session_success": 0.3475,
+        "session_success_ci": [
+          0.3,
+          0.3925
+        ]
+      },
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.947,
+            "intent": 0.902363184079602,
+            "repeat": 0.9528535980148883
+          },
+          "turn_success": 0.858,
+          "session_success": 0.4975,
+          "session_success_ci": [
+            0.45,
+            0.545
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.961,
+            "intent": 0.9390547263681592,
+            "repeat": 0.9594706368899917
+          },
+          "turn_success": 0.9095,
+          "session_success": 0.665,
+          "session_success_ci": [
+            0.6175,
+            0.7125
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.967,
+            "intent": 0.9589552238805971,
+            "repeat": 0.9685690653432589
+          },
+          "turn_success": 0.9345,
+          "session_success": 0.7525,
+          "session_success_ci": [
+            0.7075,
+            0.795
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.1": {
+      "train_rows": 1500,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.9685,
+          "intent": 0.9738805970149254,
+          "repeat": 0.9768403639371381
+        },
+        "turn_success": 0.945,
+        "session_success": 0.795,
+        "session_success_ci": [
+          0.755,
+          0.83
+        ]
+      },
+      "usd_per_1000_sessions": 1.06948665,
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.8675,
+          "intent": 0.8389303482587065,
+          "repeat": 0.8312655086848635
+        },
+        "turn_success": 0.824,
+        "session_success": 0.4275,
+        "session_success_ci": [
+          0.3775,
+          0.4775
+        ]
+      },
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.93,
+            "intent": 0.9291044776119403,
+            "repeat": 0.9363110008271298
+          },
+          "turn_success": 0.886,
+          "session_success": 0.595,
+          "session_success_ci": [
+            0.5475,
+            0.64
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.963,
+            "intent": 0.9664179104477612,
+            "repeat": 0.9718775847808105
+          },
+          "turn_success": 0.932,
+          "session_success": 0.755,
+          "session_success_ci": [
+            0.7125,
+            0.795
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.968,
+            "intent": 0.972636815920398,
+            "repeat": 0.9760132340777502
+          },
+          "turn_success": 0.9435,
+          "session_success": 0.7875,
+          "session_success_ci": [
+            0.7475,
+            0.825
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.2": {
+      "train_rows": 3000,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.9685,
+          "intent": 0.9788557213930348,
+          "repeat": 0.9809760132340778
+        },
+        "turn_success": 0.949,
+        "session_success": 0.805,
+        "session_success_ci": [
+          0.7675,
+          0.8425
+        ]
+      },
+      "usd_per_1000_sessions": 1.0666376499999999,
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.898,
+          "intent": 0.8986318407960199,
+          "repeat": 0.8941273779983457
+        },
+        "turn_success": 0.8755,
+        "session_success": 0.535,
+        "session_success_ci": [
+          0.48743749999999997,
+          0.5825
+        ]
+      },
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.9515,
+            "intent": 0.9732587064676617,
+            "repeat": 0.9760132340777502
+          },
+          "turn_success": 0.9255,
+          "session_success": 0.71,
+          "session_success_ci": [
+            0.6675,
+            0.7525
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.9675,
+            "intent": 0.9800995024875622,
+            "repeat": 0.9826302729528535
+          },
+          "turn_success": 0.95,
+          "session_success": 0.805,
+          "session_success_ci": [
+            0.7675,
+            0.8425
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.9675,
+            "intent": 0.9788557213930348,
+            "repeat": 0.9809760132340778
+          },
+          "turn_success": 0.948,
+          "session_success": 0.8,
+          "session_success_ci": [
+            0.7625,
+            0.8375
+          ]
+        }
+      }
+    },
+    "gemma-4-31b@0.5": {
+      "train_rows": 7500,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.9665,
+          "intent": 0.9819651741293532,
+          "repeat": 0.9809760132340778
+        },
+        "turn_success": 0.951,
+        "session_success": 0.8025,
+        "session_success_ci": [
+          0.7625,
+          0.84
+        ]
+      },
+      "usd_per_1000_sessions": 1.06537485,
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.923,
+          "intent": 0.9247512437810945,
+          "repeat": 0.9222497932175352
+        },
+        "turn_success": 0.9075,
+        "session_success": 0.6525,
+        "session_success_ci": [
+          0.605,
+          0.6975
+        ]
+      },
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.961,
+            "intent": 0.9838308457711443,
+            "repeat": 0.9826302729528535
+          },
+          "turn_success": 0.945,
+          "session_success": 0.78,
+          "session_success_ci": [
+            0.7375,
+            0.82
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.9655,
+            "intent": 0.9825870646766169,
+            "repeat": 0.9818031430934657
+          },
+          "turn_success": 0.9505,
+          "session_success": 0.7975,
+          "session_success_ci": [
+            0.7575,
+            0.8350624999999996
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.966,
+            "intent": 0.9825870646766169,
+            "repeat": 0.9818031430934657
+          },
+          "turn_success": 0.9505,
+          "session_success": 0.8,
+          "session_success_ci": [
+            0.76,
+            0.8375624999999997
+          ]
+        }
+      }
+    },
+    "qwen3.5-9b@0.05": {
+      "train_rows": 750,
+      "retrieval_alone": {
+        "node_accuracy": {
+          "scope": 0.8925,
+          "intent": 0.8351990049751243,
+          "repeat": 0.847808105872622
+        },
+        "turn_success": 0.8375,
+        "session_success": 0.48,
+        "session_success_ci": [
+          0.43,
+          0.53
+        ]
+      },
+      "usd_per_1000_sessions": 0.7556337500000001,
+      "encoder_alone": {
+        "node_accuracy": {
+          "scope": 0.884,
+          "intent": 0.8252487562189055,
+          "repeat": 0.8626964433416047
+        },
+        "turn_success": 0.786,
+        "session_success": 0.3475,
+        "session_success_ci": [
+          0.3,
+          0.3925
+        ]
+      },
+      "hybrid": {
+        "0.25": {
+          "node_accuracy": {
+            "scope": 0.9285,
+            "intent": 0.8725124378109452,
+            "repeat": 0.9255583126550868
+          },
+          "turn_success": 0.8365,
+          "session_success": 0.4575,
+          "session_success_ci": [
+            0.41,
+            0.505
+          ]
+        },
+        "0.4": {
+          "node_accuracy": {
+            "scope": 0.925,
+            "intent": 0.8793532338308457,
+            "repeat": 0.9040529363110008
+          },
+          "turn_success": 0.8645,
+          "session_success": 0.5225,
+          "session_success_ci": [
+            0.4725,
+            0.5725
+          ]
+        },
+        "0.6": {
+          "node_accuracy": {
+            "scope": 0.909,
+            "intent": 0.8582089552238806,
+            "repeat": 0.8759305210918115
+          },
+          "turn_success": 0.8545,
+          "session_success": 0.5075,
+          "session_success_ci": [
+            0.455,
+            0.555
+          ]
+        }
+      }
+    }
+  }
+}

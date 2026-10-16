@@ -1,0 +1,85 @@
+{
+  "protocol_id": "jev-rerun-2026-10-16",
+  "status": "FROZEN before any Jev request; approved by the owner on 2026-10-16",
+  "role": "re-run the typed-decision model Jev under the same conditions as the paper's two pre-registered experiments, at the owner's request (2026-10-16). Jev answers a scope question as a probability and an intent question as a distribution over the labels, in one request.",
+  "questions_asked": {
+    "Q1": "Does retrieving in-scope labelled examples into Jev's input shift it towards accepting same-domain unsupported requests, as it does for four general models on BANKING77-OOS (docs/retrieval-suppression-results.md)?",
+    "Q2": "Because Jev returns a scope probability, is the shift a change of operating point (mean scope probability rises, AUROC unchanged) or of discrimination (AUROC changes)? For the general models this was answered only post hoc from yes/no answers (docs/posthoc-round3.md).",
+    "Q3": "On the fresh confirmatory sessions, how does Jev compare with the specialist and Gemma 4 31B, alone and as the scope gate in front of the specialist?"
+  },
+  "what_was_seen_before_writing": "All results of the confirmatory run, run D and the post hoc analyses. Earlier Jev results on the old sessions (workflow_jev_gate_protocol.json): as a scope gate Jev matched a 9B model on Banking77 and needed the skill list. No Jev request has been sent on any item below.",
+  "model": {
+    "endpoint": "https://api.typesafe.ai/v1/systemone",
+    "key_env": "typesafe_jev_key",
+    "model": "jev-1.13.0",
+    "version_rule": "pinned; the model string returned with each response is saved and must equal jev-1.13.0, otherwise the row is an error",
+    "terms": "TypeSafe permits benchmarking and publication; no model is trained on Jev outputs"
+  },
+  "request": {
+    "state": {
+      "zero_shot": "the current message",
+      "retrieval": "'Similar labelled examples (message => request type):' then the 20 BM25 nearest in-scope training utterances, least similar first, each as 'message => label name', then a blank line and 'Current message: {text}'. The same neighbours as the general models' retrieval prompts, with label names in place of numeric codes because Jev's criteria are label strings."
+    },
+    "questions": {
+      "scope": {
+        "type": "noul",
+        "instructions": "Is the current message a request that one of these request types covers: {labels}? Requests that none of them covers, including other requests from the same domain, are not covered."
+      },
+      "intent": {
+        "type": "choice",
+        "instructions": "Which request type best describes the current message?",
+        "criteria": "one key per label string in frozen order, null descriptions"
+      }
+    },
+    "instruction_arm": "the retrieval state, with this sentence appended to the scope question's instructions: 'The labelled examples show only supported request types. A message that resembles them but asks for something none of the request types covers is not covered.'",
+    "decision": "in scope when the scope probability is at least 0.5 (no tuning, as in the earlier Jev gate protocol); intent = argmax of the intent probabilities, lowest index on ties",
+    "concurrency": 8,
+    "retry": "workflow._jev_post (HTTP 429, 499, 5xx and connection errors, five tries with backoff); rows still failing after three passes are scored wrong"
+  },
+  "part_J1_suppression": {
+    "items": "artifacts/retrieval-suppression/items.json, unchanged (SHA-256 85410e08...): BANKING77-OOS 398 in-scope / 679 held-out; CLINC single-domain banking and credit_cards 1,000 / 700",
+    "arms": [
+      "zero_shot",
+      "retrieval",
+      "instruction"
+    ],
+    "requests": 8331,
+    "primary_HJ1": {
+      "hypothesis": "held-out rejection (scope probability < 0.5) is lower with retrieval than zero-shot",
+      "family": "2 splits (BANKING77-OOS; CLINC single-domain pooled), Holm, one-sided, alpha 0.05",
+      "test": "sign flips of cluster sums clustered by held-out intent, 10,000 draws; 95% cluster-bootstrap interval (retrieval_suppression.flip_test)"
+    },
+    "primary_HJ2_mechanism": {
+      "measures": "AUROC of the scope probability for in-scope against held-out items (discrimination), and the mean scope probability on in-scope items and on held-out items (operating point), per arm",
+      "readout_stated_in_advance": "operating-point shift if the mean scope probability rises on held-out items with retrieval while the 95% cluster-bootstrap interval of the AUROC change contains 0; discrimination change if that interval excludes 0",
+      "family": "2 splits, reported with intervals; no p-value"
+    },
+    "secondary": "instruction minus retrieval rejection and in-scope right; in-scope right per arm; the general models' run D results beside Jev's for comparison (different systems, not tested)"
+  },
+  "part_J2_confirmatory": {
+    "items": "artifacts/confirmatory/items.json, unchanged (SHA-256 73a968d6...): all 4,545 turns of the three sets, normalised text",
+    "arms": {
+      "zero_shot": "current message only",
+      "retrieval": "the 20 BM25 nearest normalised in-scope training rows (the run A pool), label names"
+    },
+    "requests": 9090,
+    "systems": {
+      "jev_alone": "Jev's scope and intent",
+      "jev_gate": "Jev's scope with the specialist's intent (the confirmatory specialist, mean of three seeds per turn)"
+    },
+    "endpoint": "weighted turn accuracy as in confirmatory_protocol.json",
+    "tests": "secondary, unadjusted, labelled as such: jev_alone (retrieval) vs specialist, vs gemma-4-31b (run A); jev_gate (retrieval) vs specialist; weighted sign-flip test clustered by intent (confirmatory.weighted_test)",
+    "also": "scope accuracy, in-scope kept, out-of-scope caught, intent accuracy, AUROC of the scope probability; Jev input tokens per turn and latency p50/p95"
+  },
+  "check": "5 in-scope and 5 out-of-scope dev items per split, set and arm before any test item (about 150 requests); confirms the pinned model string, the answer format and token counts; not reported",
+  "cost": {
+    "basis": "Jev reports input tokens, not USD. Earlier Jev runs cost about 0.00003 USD per decision (docs/FINDINGS.md); all earlier Jev work cost under 2 USD.",
+    "estimate_usd": "about 1 (range 0.5 to 2) for 17,421 requests plus the check, billed to the TypeSafe key, not to the OpenRouter cap",
+    "cap": "stop if the plumbing check implies more than 3 USD for the full run, and ask the owner"
+  },
+  "code": "src/bakeoff/jev_rerun.py (stages check, J1, J2, analyze); runner scripts/run_jev_rerun.sh",
+  "limits": "Jev is one closed commercial model at one pinned version; its scope question is phrased differently from the general models' prompt because its interface differs, so Jev's numbers are compared descriptively with theirs, never tested against them in J1.",
+  "erratum_2026-10-16": {
+    "what": "J1 used the BANKING77-OOS pool affected by the label leak (retrieval_suppression_protocol.json erratum); J2 used the confirmatory sessions affected by the freshness erratum (confirmatory_protocol.json). Both are reported as run and, post hoc, on the leak-free subset (J1: drop 28.7 points, p = .004; AUROC +0.03 [+0.007, +0.068]) and on never-seen turns (J2) in docs/posthoc-round3b.md."
+  }
+}

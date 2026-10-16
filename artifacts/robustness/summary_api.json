@@ -1,0 +1,220 @@
+{
+  "protocol_id": "headline-robustness-2026-10-14",
+  "synthetic": {
+    "banking77": {
+      "qwen3.5-27b": {
+        "alone": {
+          "node_accuracy": {
+            "scope": 0.9895,
+            "intent": 0.9348778960551033,
+            "repeat": 0.960735171261487
+          },
+          "turn_success": 0.9395,
+          "session_success": 0.77,
+          "session_success_ci": [
+            0.7275,
+            0.8075624999999996
+          ]
+        },
+        "usd_per_1000_sessions": 1.0894416
+      },
+      "gemma-4-31b__repeat": {
+        "alone": {
+          "node_accuracy": {
+            "scope": 0.998,
+            "intent": 0.939261114589856,
+            "repeat": 0.9699248120300752
+          },
+          "turn_success": 0.9415,
+          "session_success": 0.785,
+          "session_success_ci": [
+            0.7449375,
+            0.8225
+          ]
+        },
+        "usd_per_1000_sessions": 0.7571066499999999,
+        "share_of_turns_changed": 0.0025,
+        "original_alone": {
+          "node_accuracy": {
+            "scope": 0.998,
+            "intent": 0.939261114589856,
+            "repeat": 0.9707602339181286
+          },
+          "turn_success": 0.9415,
+          "session_success": 0.7875,
+          "session_success_ci": [
+            0.7475,
+            0.825
+          ]
+        }
+      }
+    },
+    "massive": {
+      "qwen3.5-27b": {
+        "alone": {
+          "node_accuracy": {
+            "scope": 0.9605,
+            "intent": 0.8895131086142322,
+            "repeat": 0.8960066555740432
+          },
+          "turn_success": 0.8885,
+          "session_success": 0.6225,
+          "session_success_ci": [
+            0.5775,
+            0.6725
+          ]
+        },
+        "usd_per_1000_sessions": 0.8329459124999999
+      },
+      "gemma-4-31b__repeat": {
+        "alone": {
+          "node_accuracy": {
+            "scope": 0.9765,
+            "intent": 0.9026217228464419,
+            "repeat": 0.9201331114808652
+          },
+          "turn_success": 0.9015,
+          "session_success": 0.65,
+          "session_success_ci": [
+            0.6025,
+            0.7
+          ]
+        },
+        "usd_per_1000_sessions": 0.56268445,
+        "share_of_turns_changed": 0.0035,
+        "original_alone": {
+          "node_accuracy": {
+            "scope": 0.9765,
+            "intent": 0.9032459425717853,
+            "repeat": 0.9201331114808652
+          },
+          "turn_success": 0.902,
+          "session_success": 0.65,
+          "session_success_ci": [
+            0.6025,
+            0.7
+          ]
+        }
+      }
+    },
+    "clinc150": {
+      "qwen3.5-27b": {
+        "alone": {
+          "node_accuracy": {
+            "scope": 0.9725,
+            "intent": 0.9757462686567164,
+            "repeat": 0.9751861042183623
+          },
+          "turn_success": 0.9565,
+          "session_success": 0.84,
+          "session_success_ci": [
+            0.8049375000000001,
+            0.875
+          ]
+        },
+        "usd_per_1000_sessions": 1.5259973625
+      },
+      "gemma-4-31b__repeat": {
+        "alone": {
+          "node_accuracy": {
+            "scope": 0.9695,
+            "intent": 0.9794776119402985,
+            "repeat": 0.9793217535153019
+          },
+          "turn_success": 0.9505,
+          "session_success": 0.8075,
+          "session_success_ci": [
+            0.77,
+            0.845
+          ]
+        },
+        "usd_per_1000_sessions": 1.06445155,
+        "share_of_turns_changed": 0.001,
+        "original_alone": {
+          "node_accuracy": {
+            "scope": 0.9695,
+            "intent": 0.9794776119402985,
+            "repeat": 0.9793217535153019
+          },
+          "turn_success": 0.9505,
+          "session_success": 0.8075,
+          "session_success_ci": [
+            0.77,
+            0.845
+          ]
+        }
+      }
+    }
+  },
+  "banking77_oos": {
+    "id__zero_shot": {
+      "node_accuracy": {
+        "scope": 0.8195,
+        "intent": 0.6491885143570537,
+        "repeat": 0.7171381031613977
+      },
+      "turn_success": 0.6695,
+      "session_success": 0.175,
+      "session_success_ci": [
+        0.14,
+        0.2125
+      ],
+      "out_of_scope_caught": 0.8844221105527639
+    },
+    "id__retrieval": {
+      "node_accuracy": {
+        "scope": 0.894,
+        "intent": 0.8595505617977528,
+        "repeat": 0.891846921797005
+      },
+      "turn_success": 0.8,
+      "session_success": 0.3775,
+      "session_success_ci": [
+        0.33,
+        0.425
+      ],
+      "out_of_scope_caught": 0.6658291457286433
+    },
+    "ood__zero_shot": {
+      "node_accuracy": {
+        "scope": 0.8415,
+        "intent": 0.6485642946317104,
+        "repeat": 0.7204658901830283
+      },
+      "turn_success": 0.6915,
+      "session_success": 0.2,
+      "session_success_ci": [
+        0.165,
+        0.24
+      ],
+      "out_of_scope_caught": 0.9949748743718593
+    },
+    "ood__retrieval": {
+      "node_accuracy": {
+        "scope": 0.9585,
+        "intent": 0.8595505617977528,
+        "repeat": 0.9034941763727121
+      },
+      "turn_success": 0.871,
+      "session_success": 0.55,
+      "session_success_ci": [
+        0.5,
+        0.6
+      ],
+      "out_of_scope_caught": 0.9899497487437185
+    }
+  },
+  "multidogo": {
+    "retrieval_current": {
+      "label_accuracy": 0.9319021237303786,
+      "conversation_success": 0.5678496868475992,
+      "conversation_success_ci": [
+        0.5239561586638831,
+        0.6116910229645094
+      ]
+    }
+  },
+  "spend_usd": {
+    "project_total": 44.940071784499594
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "sst2": {
+    "temperature": 4.110571926606977,
+    "dev_nll": 0.35031475176323235,
+    "dev_nll_at_1": 0.7913644244962392,
+    "n": 400,
+    "bounds": [
+      0.05,
+      20.0
+    ],
+    "at_lower_bound": false,
+    "at_upper_bound": false
+  },
+  "ag_news": {
+    "temperature": 3.7891542270492438,
+    "dev_nll": 0.8448668232806804,
+    "dev_nll_at_1": 1.6637285049250707,
+    "n": 400,
+    "bounds": [
+      0.05,
+      20.0
+    ],
+    "at_lower_bound": false,
+    "at_upper_bound": false
+  },
+  "banking77": {
+    "temperature": 1.4780510493043906,
+    "dev_nll": 2.2482849261444664,
+    "dev_nll_at_1": 2.451251911735771,
+    "n": 400,
+    "bounds": [
+      0.05,
+      20.0
+    ],
+    "at_lower_bound": false,
+    "at_upper_bound": false
+  }
+}

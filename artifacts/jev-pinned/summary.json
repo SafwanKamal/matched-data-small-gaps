@@ -1,0 +1,345 @@
+{
+  "pinned_model": "jev-1.13.0",
+  "workflow_v1": {
+    "jev_typed_state": {
+      "session_success_unrecorded_version": 0.365,
+      "session_success_pinned": 0.37,
+      "session_success_pinned_ci": [
+        0.3275,
+        0.4175
+      ],
+      "scope_agreement": 0.996,
+      "intent_agreement": 0.959
+    },
+    "jev_raw_history": {
+      "session_success_unrecorded_version": 0.325,
+      "session_success_pinned": 0.3175,
+      "session_success_pinned_ci": [
+        0.2725,
+        0.3625
+      ],
+      "scope_agreement": 0.993,
+      "intent_agreement": 0.969
+    }
+  },
+  "handoff": {
+    "10_turns": {
+      "raw": {
+        "accuracy_unrecorded_version": 0.8841394825646794,
+        "accuracy_pinned": 0.8875140607424072,
+        "ci_pinned": [
+          0.8592504358785573,
+          0.9130974442275231
+        ]
+      },
+      "qwen3.5-9b__25": {
+        "accuracy_unrecorded_version": 0.6749156355455568,
+        "accuracy_pinned": 0.6794150731158605,
+        "ci_pinned": [
+          0.6369760606957205,
+          0.7183285409135721
+        ]
+      },
+      "qwen3.5-9b__75": {
+        "accuracy_unrecorded_version": 0.8008998875140607,
+        "accuracy_pinned": 0.8042744656917885,
+        "ci_pinned": [
+          0.7738995719426475,
+          0.835214446952596
+        ]
+      },
+      "qwen3.5-9b__200": {
+        "accuracy_unrecorded_version": 0.8211473565804275,
+        "accuracy_pinned": 0.8267716535433071,
+        "ci_pinned": [
+          0.8001965337902838,
+          0.8531197511070393
+        ]
+      },
+      "qwen3.5-27b__25": {
+        "accuracy_unrecorded_version": 0.7997750281214848,
+        "accuracy_pinned": 0.8020247469066367,
+        "ci_pinned": [
+          0.7699127742751904,
+          0.8337125310533551
+        ]
+      },
+      "qwen3.5-27b__75": {
+        "accuracy_unrecorded_version": 0.859392575928009,
+        "accuracy_pinned": 0.859392575928009,
+        "ci_pinned": [
+          0.8320135514987286,
+          0.8847929261593639
+        ]
+      },
+      "qwen3.5-27b__200": {
+        "accuracy_unrecorded_version": 0.8886389201349831,
+        "accuracy_pinned": 0.8863892013498312,
+        "ci_pinned": [
+          0.8587443946188341,
+          0.910122857470065
+        ]
+      },
+      "gemma-4-31b__25": {
+        "accuracy_unrecorded_version": 0.8065241844769404,
+        "accuracy_pinned": 0.8020247469066367,
+        "ci_pinned": [
+          0.7684519405711869,
+          0.8335208098987626
+        ]
+      },
+      "gemma-4-31b__75": {
+        "accuracy_unrecorded_version": 0.8571428571428571,
+        "accuracy_pinned": 0.8537682789651294,
+        "ci_pinned": [
+          0.8237934904601572,
+          0.8828927412260745
+        ]
+      },
+      "gemma-4-31b__200": {
+        "accuracy_unrecorded_version": 0.8773903262092239,
+        "accuracy_pinned": 0.8785151856017998,
+        "ci_pinned": [
+          0.8507253244050997,
+          0.9040659093858874
+        ]
+      },
+      "qwen3.5-122b-a10b__25": {
+        "accuracy_unrecorded_version": 0.7761529808773904,
+        "accuracy_pinned": 0.7761529808773904,
+        "ci_pinned": [
+          0.7438255222717403,
+          0.8095438512105179
+        ]
+      },
+      "qwen3.5-122b-a10b__75": {
+        "accuracy_unrecorded_version": 0.8380202474690663,
+        "accuracy_pinned": 0.8346456692913385,
+        "ci_pinned": [
+          0.8031388933526167,
+          0.8663014981273409
+        ]
+      },
+      "qwen3.5-122b-a10b__200": {
+        "accuracy_unrecorded_version": 0.8740157480314961,
+        "accuracy_pinned": 0.8717660292463442,
+        "ci_pinned": [
+          0.8448389097063347,
+          0.8986486486486487
+        ]
+      }
+    },
+    "20_turns": {
+      "raw": {
+        "accuracy_unrecorded_version": 0.8309232480533927,
+        "accuracy_pinned": 0.8409343715239155,
+        "ci_pinned": [
+          0.8151272581044295,
+          0.8676307007786429
+        ]
+      },
+      "qwen3.5-9b__25": {
+        "accuracy_unrecorded_version": 0.45272525027808674,
+        "accuracy_pinned": 0.4549499443826474,
+        "ci_pinned": [
+          0.42268757060675616,
+          0.4905450500556173
+        ]
+      },
+      "qwen3.5-9b__75": {
+        "accuracy_unrecorded_version": 0.6384872080088988,
+        "accuracy_pinned": 0.6373748609566184,
+        "ci_pinned": [
+          0.6062291434927698,
+          0.671866734643431
+        ]
+      },
+      "qwen3.5-9b__200": {
+        "accuracy_unrecorded_version": 0.7163515016685206,
+        "accuracy_pinned": 0.7063403781979978,
+        "ci_pinned": [
+          0.6711111111111111,
+          0.7377777777777778
+        ]
+      },
+      "qwen3.5-27b__25": {
+        "accuracy_unrecorded_version": 0.625139043381535,
+        "accuracy_pinned": 0.6218020022246941,
+        "ci_pinned": [
+          0.5839822024471635,
+          0.6629682054134223
+        ]
+      },
+      "qwen3.5-27b__75": {
+        "accuracy_unrecorded_version": 0.7274749721913237,
+        "accuracy_pinned": 0.728587319243604,
+        "ci_pinned": [
+          0.6966666666666667,
+          0.7605857225672673
+        ]
+      },
+      "qwen3.5-27b__200": {
+        "accuracy_unrecorded_version": 0.8231368186874305,
+        "accuracy_pinned": 0.8231368186874305,
+        "ci_pinned": [
+          0.7908787541713015,
+          0.8517362286598636
+        ]
+      },
+      "gemma-4-31b__25": {
+        "accuracy_unrecorded_version": 0.6473859844271412,
+        "accuracy_pinned": 0.6440489432703004,
+        "ci_pinned": [
+          0.6051058030328179,
+          0.6796440489432704
+        ]
+      },
+      "gemma-4-31b__75": {
+        "accuracy_unrecorded_version": 0.7619577308120133,
+        "accuracy_pinned": 0.7686318131256952,
+        "ci_pinned": [
+          0.7349535387280377,
+          0.7977943578322197
+        ]
+      },
+      "gemma-4-31b__200": {
+        "accuracy_unrecorded_version": 0.8175750834260289,
+        "accuracy_pinned": 0.814238042269188,
+        "ci_pinned": [
+          0.7848285024154589,
+          0.8411256967670011
+        ]
+      },
+      "qwen3.5-122b-a10b__25": {
+        "accuracy_unrecorded_version": 0.5951056729699666,
+        "accuracy_pinned": 0.5962180200222469,
+        "ci_pinned": [
+          0.5590167656520663,
+          0.6322295842613215
+        ]
+      },
+      "qwen3.5-122b-a10b__75": {
+        "accuracy_unrecorded_version": 0.7074527252502781,
+        "accuracy_pinned": 0.7152391546162402,
+        "ci_pinned": [
+          0.6807475083673767,
+          0.7472230652221845
+        ]
+      },
+      "qwen3.5-122b-a10b__200": {
+        "accuracy_unrecorded_version": 0.7675194660734149,
+        "accuracy_pinned": 0.7664071190211346,
+        "ci_pinned": [
+          0.734665458937198,
+          0.7975584600173031
+        ]
+      }
+    },
+    "40_turns": {
+      "raw": {
+        "accuracy_unrecorded_version": 0.7711111111111111,
+        "accuracy_pinned": 0.7844444444444445,
+        "ci_pinned": [
+          0.7511111111111111,
+          0.8155555555555556
+        ]
+      },
+      "qwen3.5-9b__25": {
+        "accuracy_unrecorded_version": 0.39555555555555555,
+        "accuracy_pinned": 0.4,
+        "ci_pinned": [
+          0.35777777777777775,
+          0.4444444444444444
+        ]
+      },
+      "qwen3.5-9b__75": {
+        "accuracy_unrecorded_version": 0.5444444444444444,
+        "accuracy_pinned": 0.5444444444444444,
+        "ci_pinned": [
+          0.49777777777777776,
+          0.5866666666666667
+        ]
+      },
+      "qwen3.5-9b__200": {
+        "accuracy_unrecorded_version": 0.6288888888888889,
+        "accuracy_pinned": 0.6155555555555555,
+        "ci_pinned": [
+          0.5755555555555556,
+          0.6577777777777778
+        ]
+      },
+      "qwen3.5-27b__25": {
+        "accuracy_unrecorded_version": 0.5311111111111111,
+        "accuracy_pinned": 0.5222222222222223,
+        "ci_pinned": [
+          0.4843888888888889,
+          0.5600555555555555
+        ]
+      },
+      "qwen3.5-27b__75": {
+        "accuracy_unrecorded_version": 0.6244444444444445,
+        "accuracy_pinned": 0.6177777777777778,
+        "ci_pinned": [
+          0.5777777777777777,
+          0.6577777777777778
+        ]
+      },
+      "qwen3.5-27b__200": {
+        "accuracy_unrecorded_version": 0.7022222222222222,
+        "accuracy_pinned": 0.7111111111111111,
+        "ci_pinned": [
+          0.6711111111111111,
+          0.7511111111111111
+        ]
+      },
+      "gemma-4-31b__25": {
+        "accuracy_unrecorded_version": 0.5288888888888889,
+        "accuracy_pinned": 0.5244444444444445,
+        "ci_pinned": [
+          0.47555555555555556,
+          0.5711666666666666
+        ]
+      },
+      "gemma-4-31b__75": {
+        "accuracy_unrecorded_version": 0.6355555555555555,
+        "accuracy_pinned": 0.6422222222222222,
+        "ci_pinned": [
+          0.5977777777777777,
+          0.6866666666666666
+        ]
+      },
+      "gemma-4-31b__200": {
+        "accuracy_unrecorded_version": 0.74,
+        "accuracy_pinned": 0.7488888888888889,
+        "ci_pinned": [
+          0.7155555555555555,
+          0.7844444444444445
+        ]
+      },
+      "qwen3.5-122b-a10b__25": {
+        "accuracy_unrecorded_version": 0.4955555555555556,
+        "accuracy_pinned": 0.4955555555555556,
+        "ci_pinned": [
+          0.45555555555555555,
+          0.5333333333333333
+        ]
+      },
+      "qwen3.5-122b-a10b__75": {
+        "accuracy_unrecorded_version": 0.6177777777777778,
+        "accuracy_pinned": 0.6133333333333333,
+        "ci_pinned": [
+          0.5688888888888889,
+          0.6644444444444444
+        ]
+      },
+      "qwen3.5-122b-a10b__200": {
+        "accuracy_unrecorded_version": 0.6555555555555556,
+        "accuracy_pinned": 0.6488888888888888,
+        "ci_pinned": [
+          0.6111111111111112,
+          0.6866666666666666
+        ]
+      }
+    }
+  }
+}

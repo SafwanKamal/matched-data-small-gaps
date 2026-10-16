@@ -1,0 +1,20 @@
+{
+  "protocol_id": "readout-like-for-like-2026-10-11",
+  "role": "separate precision from prompt and readout for the local Qwen3.5 models",
+  "claim": "The hosted bfloat16 Qwen3.5-9B beat the local 4-bit one by 6 to 15 points on BoolQ, emotion and Yahoo and trailed it by 2 on Banking77 and MASSIVE. Those two rows differ in precision, prompt and readout. Here the local models are run through the hosted prompt and the hosted readout, so that (a) local 4-bit against hosted bfloat16 differs only in precision and serving stack, and (b) the same local model under the two readouts differs only in prompt and readout. Written after both sets of results it compares against and before any score from this run.",
+  "systems": {
+    "qwen3.5-9b-4bit-hosted_prompt": {"from": "suite_protocol.json systems.qwen3.5-9b-4bit-index_prior", "load_in_4bit": true},
+    "qwen3.5-4b-hosted_prompt": {"from": "suite_protocol.json systems.qwen3.5-4b-index_prior", "load_in_4bit": false}
+  },
+  "datasets": ["boolq", "anli_r3", "emotion", "yahoo", "massive_en", "banking77_full"],
+  "not_run": "clinc150, which the local 9B was not scored on",
+  "prompt": "api_protocol.json request.prompt and option_line as one user message through the model's chat template with thinking off; no prefilled answer",
+  "decoding": "greedy, at most 6 new tokens, stopping when the generated text is a full option code or at the end-of-turn token",
+  "readout": "api_protocol.json top-k tree with the 20 most probable tokens at each generated step taken from the local softmax, so the local run sees exactly what an API with top_logprobs 20 would return",
+  "temperature": "one scalar per system and dataset, fit on the suite dev split by the Program 1 rule",
+  "comparisons": {
+    "precision": "qwen3.5-9b-4bit-hosted_prompt against artifacts/api/qwen3.5-9b-bf16",
+    "prompt_and_readout": "each system here against the same model's index_prior row in artifacts/suite"
+  },
+  "reading": "If the 4-bit local run matches the hosted bfloat16 run under this prompt, quantisation is not the cause of the earlier gap and the index readout is. If it stays well below, precision or the serving stack matters."
+}

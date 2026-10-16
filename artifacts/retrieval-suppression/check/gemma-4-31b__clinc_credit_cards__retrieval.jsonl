@@ -1,0 +1,10 @@
+{"error": null, "latency_ms": 913.0593000154477, "text": "scope: yes\nintent: 05", "provider": "Novita", "prompt_tokens": 485, "cached_tokens": 0, "completion_tokens": 10, "cost": 7.19e-05, "id": "dev-in-0"}
+{"error": null, "latency_ms": 761.4895999722648, "text": "scope: yes\nintent: 05", "provider": "Novita", "prompt_tokens": 486, "cached_tokens": 0, "completion_tokens": 10, "cost": 7.204e-05, "id": "dev-in-1"}
+{"error": null, "latency_ms": 664.4400000222959, "text": "scope: yes\nintent: 05", "provider": "Novita", "prompt_tokens": 484, "cached_tokens": 0, "completion_tokens": 10, "cost": 7.176e-05, "id": "dev-in-2"}
+{"error": null, "latency_ms": 759.8644999961834, "text": "scope: yes\nintent: 05", "provider": "Novita", "prompt_tokens": 471, "cached_tokens": 0, "completion_tokens": 10, "cost": 6.994e-05, "id": "dev-in-3"}
+{"error": null, "latency_ms": 636.5604999882635, "text": "scope: yes\nintent: 05", "provider": "Novita", "prompt_tokens": 458, "cached_tokens": 0, "completion_tokens": 10, "cost": 6.812e-05, "id": "dev-in-4"}
+{"error": null, "latency_ms": 664.9789000221062, "text": "scope: no\nintent: 00", "provider": "Novita", "prompt_tokens": 553, "cached_tokens": 0, "completion_tokens": 10, "cost": 8.142e-05, "id": "dev-out-0"}
+{"error": null, "latency_ms": 640.9022999869194, "text": "scope: yes\nintent: 05", "provider": "Novita", "prompt_tokens": 505, "cached_tokens": 0, "completion_tokens": 10, "cost": 7.47e-05, "id": "dev-out-1"}
+{"error": null, "latency_ms": 804.7727999801282, "text": "scope: no\nintent: 00", "provider": "Novita", "prompt_tokens": 464, "cached_tokens": 0, "completion_tokens": 10, "cost": 6.896e-05, "id": "dev-out-2"}
+{"error": null, "latency_ms": 854.2318000108935, "text": "scope: yes\nintent: 05", "provider": "Novita", "prompt_tokens": 472, "cached_tokens": 0, "completion_tokens": 10, "cost": 7.008e-05, "id": "dev-out-3"}
+{"error": null, "latency_ms": 704.9929999921005, "text": "scope: yes\nintent: 05", "provider": "Novita", "prompt_tokens": 489, "cached_tokens": 0, "completion_tokens": 10, "cost": 7.246e-05, "id": "dev-out-4"}

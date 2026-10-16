@@ -1,0 +1,2466 @@
+{
+  "protocol_id": "program-5-hybrid-cascade-2026-10-08-fp32",
+  "role": "measurement",
+  "datasets": {
+    "banking77": {
+      "role": "primary",
+      "n": 500,
+      "strong": {
+        "n": 500,
+        "accuracy": 0.92,
+        "brier": 0.11732287029575267,
+        "log_loss": 0.2848407235389839,
+        "ece": 0.01984219610246266,
+        "coverage_at_5pct_error": 0.938,
+        "aurc": 0.009435084770251899
+      },
+      "gates": {
+        "ettin-encoder-log_loss": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.92,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 2,
+                "agreement": 0.0
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 10,
+                "agreement": 0.2
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 24,
+                "agreement": 0.5416666666666666
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 40,
+                "agreement": 0.65
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 424,
+                "agreement": 0.9882075471698113
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.896,
+              "brier": 0.16257208282068852,
+              "log_loss": 0.4097018545094146,
+              "ece": 0.0361389216704586,
+              "coverage_at_5pct_error": 0.868,
+              "aurc": 0.018212846034656817,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.045249212524935856,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.16257208282068847,
+                "brier_lo": 0.16257208282068852,
+                "brier_hi": 0.16257208282068852,
+                "accuracy_mean": 0.8960000000000004
+              },
+              "brier_gain_over_random": -5.551115123125783e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.16257208282068852,
+                "accuracy": 0.896
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.91,
+              "brier": 0.1425090672627341,
+              "log_loss": 0.35815827530361527,
+              "ece": 0.033268470072501014,
+              "coverage_at_5pct_error": 0.904,
+              "aurc": 0.01603716144210514,
+              "rate": 0.05,
+              "tau": 0.5224710184738732,
+              "mode": "leq",
+              "strong_calls": 26,
+              "strong_call_fraction": 0.052,
+              "strong_calls_saved": 0.948,
+              "score_drop": 0.025186196966981433,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.16018042474180297,
+                "brier_lo": 0.1544256777051212,
+                "brier_hi": 0.16441591144197615,
+                "accuracy_mean": 0.8973150000000001
+              },
+              "brier_gain_over_random": 0.017671357479068867,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.11293227440128632,
+                "accuracy": 0.938
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.916,
+              "brier": 0.13168042086435156,
+              "log_loss": 0.32902906003324345,
+              "ece": 0.035644132255745566,
+              "coverage_at_5pct_error": 0.93,
+              "aurc": 0.014742273721604793,
+              "rate": 0.1,
+              "tau": 0.6532069131173459,
+              "mode": "leq",
+              "strong_calls": 47,
+              "strong_call_fraction": 0.094,
+              "strong_calls_saved": 0.906,
+              "score_drop": 0.014357550568598887,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.15835429660498923,
+                "brier_lo": 0.15122841952311106,
+                "brier_hi": 0.16442754665748235,
+                "accuracy_mean": 0.8982330000000001
+              },
+              "brier_gain_over_random": 0.026673875740637676,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.10144941223392161,
+                "accuracy": 0.942
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11809733004959927,
+              "log_loss": 0.30356789302554515,
+              "ece": 0.02582957382580672,
+              "coverage_at_5pct_error": 0.944,
+              "aurc": 0.01312537959278751,
+              "rate": 0.25,
+              "tau": 0.9434348726128674,
+              "mode": "leq",
+              "strong_calls": 128,
+              "strong_call_fraction": 0.256,
+              "strong_calls_saved": 0.744,
+              "score_drop": 0.0007744597538466014,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.15095804628400214,
+                "brier_lo": 0.14064144204383866,
+                "brier_hi": 0.16038093938903122,
+                "accuracy_mean": 0.9021950000000001
+              },
+              "brier_gain_over_random": 0.03286071623440287,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.09642083081820806,
+                "accuracy": 0.942
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11686142821096636,
+              "log_loss": 0.2898111556127172,
+              "ece": 0.021537246224267496,
+              "coverage_at_5pct_error": 0.94,
+              "aurc": 0.01119504554832315,
+              "rate": 0.5,
+              "tau": 0.9934709338622225,
+              "mode": "leq",
+              "strong_calls": 264,
+              "strong_call_fraction": 0.528,
+              "strong_calls_saved": 0.472,
+              "score_drop": -0.0004614420847863093,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.13867626751567308,
+                "brier_lo": 0.12757437484824402,
+                "brier_hi": 0.1498367169819886,
+                "accuracy_mean": 0.9086150000000001
+              },
+              "brier_gain_over_random": 0.02181483930470672,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.09638859092806194,
+                "accuracy": 0.942
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11734218812985348,
+              "log_loss": 0.2920375363785556,
+              "ece": 0.020342363901922074,
+              "coverage_at_5pct_error": 0.938,
+              "aurc": 0.010917710195318614,
+              "rate": 0.75,
+              "tau": 0.9984120949046148,
+              "mode": "leq",
+              "strong_calls": 377,
+              "strong_call_fraction": 0.754,
+              "strong_calls_saved": 0.246,
+              "score_drop": 1.931783410080712e-05,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.12855559946305278,
+                "brier_lo": 0.11914572458576739,
+                "brier_hi": 0.1393124674418158,
+                "accuracy_mean": 0.913984
+              },
+              "brier_gain_over_random": 0.011213411333199308,
+              "random_draws_at_or_below_observed": 0.007,
+              "oracle": {
+                "brier": 0.09639009657102447,
+                "accuracy": 0.942
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11732287029575267,
+              "log_loss": 0.2848407235389839,
+              "ece": 0.01984219610246266,
+              "coverage_at_5pct_error": 0.938,
+              "aurc": 0.009435084770251899,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.11732287029575271,
+                "brier_lo": 0.11732287029575267,
+                "brier_hi": 0.11732287029575267,
+                "accuracy_mean": 0.9200000000000002
+              },
+              "brier_gain_over_random": 4.163336342344337e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.11732287029575267,
+                "accuracy": 0.92
+              }
+            }
+          ]
+        },
+        "ettin-encoder-brier": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.9,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 11,
+                "agreement": 0.2727272727272727
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 35,
+                "agreement": 0.4
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 30,
+                "agreement": 0.5666666666666667
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 30,
+                "agreement": 0.7333333333333333
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 394,
+                "agreement": 1.0
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.866,
+              "brier": 0.1975074072148602,
+              "log_loss": 0.6860898636978884,
+              "ece": 0.024351012386122892,
+              "coverage_at_5pct_error": 0.852,
+              "aurc": 0.023985603630700784,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.08018453691910754,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.19750740721486026,
+                "brier_lo": 0.1975074072148602,
+                "brier_hi": 0.1975074072148602,
+                "accuracy_mean": 0.8659999999999998
+              },
+              "brier_gain_over_random": 5.551115123125783e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.1975074072148602,
+                "accuracy": 0.866
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.894,
+              "brier": 0.1679168965106158,
+              "log_loss": 0.5321319598380824,
+              "ece": 0.025926079193827896,
+              "coverage_at_5pct_error": 0.884,
+              "aurc": 0.02012861370526129,
+              "rate": 0.05,
+              "tau": 0.30128750618614314,
+              "mode": "leq",
+              "strong_calls": 24,
+              "strong_call_fraction": 0.048,
+              "strong_calls_saved": 0.952,
+              "score_drop": 0.05059402621486314,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.19358818959279303,
+                "brier_lo": 0.1873745220992831,
+                "brier_hi": 0.19861113806265132,
+                "accuracy_mean": 0.868652
+              },
+              "brier_gain_over_random": 0.02567129308217722,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.14269288565695853,
+                "accuracy": 0.914
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.13070443483040856,
+              "log_loss": 0.3656025234896998,
+              "ece": 0.021385264008411498,
+              "coverage_at_5pct_error": 0.926,
+              "aurc": 0.01603967261261247,
+              "rate": 0.1,
+              "tau": 0.5613391794831961,
+              "mode": "leq",
+              "strong_calls": 69,
+              "strong_call_fraction": 0.138,
+              "strong_calls_saved": 0.862,
+              "score_drop": 0.013381564534655888,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1863618945084423,
+                "brier_lo": 0.176383838276518,
+                "brier_hi": 0.1955705961401938,
+                "accuracy_mean": 0.8735940000000001
+              },
+              "brier_gain_over_random": 0.05565745967803373,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.10029403934188295,
+                "accuracy": 0.936
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11895051534231539,
+              "log_loss": 0.31091179090109805,
+              "ece": 0.018450122682433474,
+              "coverage_at_5pct_error": 0.94,
+              "aurc": 0.014941838148445552,
+              "rate": 0.25,
+              "tau": 0.8841489794313244,
+              "mode": "leq",
+              "strong_calls": 130,
+              "strong_call_fraction": 0.26,
+              "strong_calls_saved": 0.74,
+              "score_drop": 0.001627645046562723,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.17677035136758332,
+                "brier_lo": 0.1645527162684527,
+                "brier_hi": 0.1878860308982374,
+                "accuracy_mean": 0.8799069999999999
+              },
+              "brier_gain_over_random": 0.057819836025267926,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.09525184520773405,
+                "accuracy": 0.936
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11744349940755719,
+              "log_loss": 0.295201115966877,
+              "ece": 0.019133805197871997,
+              "coverage_at_5pct_error": 0.938,
+              "aurc": 0.011787107337753448,
+              "rate": 0.5,
+              "tau": 0.9800617680373273,
+              "mode": "leq",
+              "strong_calls": 246,
+              "strong_call_fraction": 0.492,
+              "strong_calls_saved": 0.508,
+              "score_drop": 0.00012062911180452107,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.15793124490217625,
+                "brier_lo": 0.14445375992235482,
+                "brier_hi": 0.17136814890067895,
+                "accuracy_mean": 0.892769
+              },
+              "brier_gain_over_random": 0.04048774549461906,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.09489253114658251,
+                "accuracy": 0.936
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11733508507002052,
+              "log_loss": 0.2880472722369866,
+              "ece": 0.019740669606237056,
+              "coverage_at_5pct_error": 0.938,
+              "aurc": 0.010058589448253948,
+              "rate": 0.75,
+              "tau": 0.9940164123024189,
+              "mode": "leq",
+              "strong_calls": 396,
+              "strong_call_fraction": 0.792,
+              "strong_calls_saved": 0.20799999999999996,
+              "score_drop": 1.2214774267854667e-05,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.13388741161685663,
+                "brier_lo": 0.12367626673066544,
+                "brier_hi": 0.14519521765579044,
+                "accuracy_mean": 0.9089190000000001
+              },
+              "brier_gain_over_random": 0.01655232654683611,
+              "random_draws_at_or_below_observed": 0.0005,
+              "oracle": {
+                "brier": 0.09488048075311363,
+                "accuracy": 0.936
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11732287029575267,
+              "log_loss": 0.2848407235389839,
+              "ece": 0.01984219610246266,
+              "coverage_at_5pct_error": 0.938,
+              "aurc": 0.009435084770251899,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.11732287029575271,
+                "brier_lo": 0.11732287029575267,
+                "brier_hi": 0.11732287029575267,
+                "accuracy_mean": 0.9200000000000002
+              },
+              "brier_gain_over_random": 4.163336342344337e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.11732287029575267,
+                "accuracy": 0.92
+              }
+            }
+          ]
+        },
+        "deberta-v3-large-zeroshot-v2.0-c": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.512,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 89,
+                "agreement": 0.1797752808988764
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 177,
+                "agreement": 0.3728813559322034
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 133,
+                "agreement": 0.6616541353383458
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 70,
+                "agreement": 0.8285714285714286
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 31,
+                "agreement": 0.9032258064516129
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.49,
+              "brier": 0.689133191191522,
+              "log_loss": 2.3577464464190516,
+              "ece": 0.08738633710476615,
+              "coverage_at_5pct_error": 0.054,
+              "aurc": 0.2966423822071047,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.5718103208957694,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.6891331911915218,
+                "brier_lo": 0.689133191191522,
+                "brier_hi": 0.689133191191522,
+                "accuracy_mean": 0.49000000000000016
+              },
+              "brier_gain_over_random": -2.220446049250313e-16,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.689133191191522,
+                "accuracy": 0.49
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.546,
+              "brier": 0.6370355172441117,
+              "log_loss": 2.0816442217930238,
+              "ece": 0.08413313783377518,
+              "coverage_at_5pct_error": 0.106,
+              "aurc": 0.24885436085233714,
+              "rate": 0.05,
+              "tau": 0.14359859183116516,
+              "mode": "leq",
+              "strong_calls": 32,
+              "strong_call_fraction": 0.064,
+              "strong_calls_saved": 0.9359999999999999,
+              "score_drop": 0.5197126469483591,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.6525521773880676,
+                "brier_lo": 0.6425022889623034,
+                "brier_hi": 0.6632908082005903,
+                "accuracy_mean": 0.517444
+              },
+              "brier_gain_over_random": 0.015516660143955918,
+              "random_draws_at_or_below_observed": 0.001,
+              "oracle": {
+                "brier": 0.6045246055002915,
+                "accuracy": 0.554
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.596,
+              "brier": 0.5874268425965186,
+              "log_loss": 1.8486693511405592,
+              "ece": 0.09034014030488677,
+              "coverage_at_5pct_error": 0.1,
+              "aurc": 0.2131995540238769,
+              "rate": 0.1,
+              "tau": 0.17739329520984218,
+              "mode": "leq",
+              "strong_calls": 68,
+              "strong_call_fraction": 0.136,
+              "strong_calls_saved": 0.864,
+              "score_drop": 0.4701039723007659,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.611197596100006,
+                "brier_lo": 0.5976873164512652,
+                "brier_hi": 0.6261031135325376,
+                "accuracy_mean": 0.54859
+              },
+              "brier_gain_over_random": 0.023770753503487452,
+              "random_draws_at_or_below_observed": 0.0005,
+              "oracle": {
+                "brier": 0.5230029629363646,
+                "accuracy": 0.626
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.668,
+              "brier": 0.49602635395868544,
+              "log_loss": 1.515642780105893,
+              "ece": 0.07999462151536181,
+              "coverage_at_5pct_error": 0.258,
+              "aurc": 0.14872187242368137,
+              "rate": 0.25,
+              "tau": 0.24010625834812244,
+              "mode": "leq",
+              "strong_calls": 123,
+              "strong_call_fraction": 0.246,
+              "strong_calls_saved": 0.754,
+              "score_drop": 0.37870348366293277,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.5486931496405644,
+                "brier_lo": 0.5303206164872557,
+                "brier_hi": 0.5673008504861495,
+                "accuracy_mean": 0.595554
+              },
+              "brier_gain_over_random": 0.05266679568187893,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.40831471178992357,
+                "accuracy": 0.736
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.796,
+              "brier": 0.32322027139796033,
+              "log_loss": 0.9662116817215529,
+              "ece": 0.0601375071866857,
+              "coverage_at_5pct_error": 0.508,
+              "aurc": 0.06338378221593642,
+              "rate": 0.5,
+              "tau": 0.38540492187629455,
+              "mode": "leq",
+              "strong_calls": 250,
+              "strong_call_fraction": 0.5,
+              "strong_calls_saved": 0.5,
+              "score_drop": 0.20589740110220767,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.4024499847456086,
+                "brier_lo": 0.38161858148227745,
+                "brier_hi": 0.4232448388516542,
+                "accuracy_mean": 0.705599
+              },
+              "brier_gain_over_random": 0.07922971334764828,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.20464729560478184,
+                "accuracy": 0.916
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.9,
+              "brier": 0.1606846728430011,
+              "log_loss": 0.46413528653214403,
+              "ece": 0.02996899873296891,
+              "coverage_at_5pct_error": 0.832,
+              "aurc": 0.018241136628939652,
+              "rate": 0.75,
+              "tau": 0.5987928206259447,
+              "mode": "leq",
+              "strong_calls": 398,
+              "strong_call_fraction": 0.796,
+              "strong_calls_saved": 0.20399999999999996,
+              "score_drop": 0.04336180254724842,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.2339434486183021,
+                "brier_lo": 0.21708460063935392,
+                "brier_hi": 0.2507496489749933,
+                "accuracy_mean": 0.832235
+              },
+              "brier_gain_over_random": 0.07325877577530102,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.1022080499182357,
+                "accuracy": 0.928
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11732287029575267,
+              "log_loss": 0.2848407235389839,
+              "ece": 0.01984219610246266,
+              "coverage_at_5pct_error": 0.938,
+              "aurc": 0.009435084770251899,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.11732287029575271,
+                "brier_lo": 0.11732287029575267,
+                "brier_hi": 0.11732287029575267,
+                "accuracy_mean": 0.9200000000000002
+              },
+              "brier_gain_over_random": 4.163336342344337e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.11732287029575267,
+                "accuracy": 0.92
+              }
+            }
+          ]
+        },
+        "gliclass-base-v3.0": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.52,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 42,
+                "agreement": 0.023809523809523808
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 229,
+                "agreement": 0.4585152838427948
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 183,
+                "agreement": 0.6557377049180327
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 46,
+                "agreement": 0.7391304347826086
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 0,
+                "agreement": null
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.504,
+              "brier": 0.7068485034655289,
+              "log_loss": 2.287724967821739,
+              "ece": 0.13295851065670336,
+              "coverage_at_5pct_error": 0.002,
+              "aurc": 0.3654744358741919,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.5895256331697762,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.7068485034655291,
+                "brier_lo": 0.7068485034655289,
+                "brier_hi": 0.7068485034655289,
+                "accuracy_mean": 0.5039999999999998
+              },
+              "brier_gain_over_random": 2.220446049250313e-16,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.7068485034655289,
+                "accuracy": 0.504
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.554,
+              "brier": 0.6576111671773749,
+              "log_loss": 2.1067120930429657,
+              "ece": 0.12875319818935899,
+              "coverage_at_5pct_error": 0.052,
+              "aurc": 0.29337745949895977,
+              "rate": 0.05,
+              "tau": 0.17203004675618352,
+              "mode": "leq",
+              "strong_calls": 27,
+              "strong_call_fraction": 0.054,
+              "strong_calls_saved": 0.946,
+              "score_drop": 0.5402882968816223,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.6750485694452603,
+                "brier_lo": 0.6664307267617839,
+                "brier_hi": 0.6842236498154006,
+                "accuracy_mean": 0.5265340000000001
+              },
+              "brier_gain_over_random": 0.01743740226788537,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.6359924294022195,
+                "accuracy": 0.558
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.594,
+              "brier": 0.6137956592279348,
+              "log_loss": 1.9354392990928586,
+              "ece": 0.12602618049845116,
+              "coverage_at_5pct_error": 0.102,
+              "aurc": 0.2501444392698863,
+              "rate": 0.1,
+              "tau": 0.21564415893520641,
+              "mode": "leq",
+              "strong_calls": 52,
+              "strong_call_fraction": 0.104,
+              "strong_calls_saved": 0.896,
+              "score_drop": 0.4964727889321821,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.645614434731662,
+                "brier_lo": 0.6335760642997224,
+                "brier_hi": 0.6580204214802532,
+                "accuracy_mean": 0.5473340000000001
+              },
+              "brier_gain_over_random": 0.03181877550372725,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.5774342931696008,
+                "accuracy": 0.608
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.656,
+              "brier": 0.5468874137519174,
+              "log_loss": 1.6675762452310832,
+              "ece": 0.12713587448691982,
+              "coverage_at_5pct_error": 0.178,
+              "aurc": 0.19907805807966655,
+              "rate": 0.25,
+              "tau": 0.27097968109390663,
+              "mode": "leq",
+              "strong_calls": 103,
+              "strong_call_fraction": 0.206,
+              "strong_calls_saved": 0.794,
+              "score_drop": 0.42956454345616474,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.5857397392390792,
+                "brier_lo": 0.5696682851349253,
+                "brier_hi": 0.6027009633843062,
+                "accuracy_mean": 0.5893959999999999
+              },
+              "brier_gain_over_random": 0.038852325487161776,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.46658209612808516,
+                "accuracy": 0.71
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.768,
+              "brier": 0.3835981059140149,
+              "log_loss": 1.2025798828020597,
+              "ece": 0.08199368896652472,
+              "coverage_at_5pct_error": 0.444,
+              "aurc": 0.08986295378717302,
+              "rate": 0.5,
+              "tau": 0.36670821251543445,
+              "mode": "leq",
+              "strong_calls": 233,
+              "strong_call_fraction": 0.466,
+              "strong_calls_saved": 0.534,
+              "score_drop": 0.2662752356182622,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.43232337446042085,
+                "brier_lo": 0.4126670672788295,
+                "brier_hi": 0.45180150435887745,
+                "accuracy_mean": 0.6976939999999999
+              },
+              "brier_gain_over_random": 0.048725268546405964,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.2574177812274064,
+                "accuracy": 0.914
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.852,
+              "brier": 0.22715507786533384,
+              "log_loss": 0.6834338443889397,
+              "ece": 0.02412584821714296,
+              "coverage_at_5pct_error": 0.756,
+              "aurc": 0.030092764048301406,
+              "rate": 0.75,
+              "tau": 0.490744911636391,
+              "mode": "leq",
+              "strong_calls": 382,
+              "strong_call_fraction": 0.764,
+              "strong_calls_saved": 0.236,
+              "score_drop": 0.10983220756958118,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.25669990946130644,
+                "brier_lo": 0.23922641598299055,
+                "brier_hi": 0.27381212746913924,
+                "accuracy_mean": 0.821444
+              },
+              "brier_gain_over_random": 0.029544831595972598,
+              "random_draws_at_or_below_observed": 0.001,
+              "oracle": {
+                "brier": 0.12344672860513536,
+                "accuracy": 0.93
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11732287029575267,
+              "log_loss": 0.2848407235389839,
+              "ece": 0.01984219610246266,
+              "coverage_at_5pct_error": 0.938,
+              "aurc": 0.009435084770251899,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.11732287029575271,
+                "brier_lo": 0.11732287029575267,
+                "brier_hi": 0.11732287029575267,
+                "accuracy_mean": 0.9200000000000002
+              },
+              "brier_gain_over_random": 4.163336342344337e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.11732287029575267,
+                "accuracy": 0.92
+              }
+            }
+          ]
+        },
+        "qwen3-0.6b": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.086,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 500,
+                "agreement": 0.086
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 0,
+                "agreement": null
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.09,
+              "brier": 0.9723517461355675,
+              "log_loss": 4.018974991519361,
+              "ece": 0.029756847635636956,
+              "coverage_at_5pct_error": 0.01,
+              "aurc": 0.8354526547543553,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.8550288758398148,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.9723517461355674,
+                "brier_lo": 0.9723517461355675,
+                "brier_hi": 0.9723517461355675,
+                "accuracy_mean": 0.09
+              },
+              "brier_gain_over_random": -1.1102230246251565e-16,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.9723517461355675,
+                "accuracy": 0.09
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.142,
+              "brier": 0.927021891087638,
+              "log_loss": 3.7961529496156317,
+              "ece": 0.040373863986347076,
+              "coverage_at_5pct_error": 0.048,
+              "aurc": 0.6836808454181119,
+              "rate": 0.05,
+              "tau": 0.043997359281766436,
+              "mode": "leq",
+              "strong_calls": 31,
+              "strong_call_fraction": 0.062,
+              "strong_calls_saved": 0.938,
+              "score_drop": 0.8096990207918853,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.9193018576452266,
+                "brier_lo": 0.9128052242082093,
+                "brier_hi": 0.9278554215529704,
+                "accuracy_mean": 0.14147499999999996
+              },
+              "brier_gain_over_random": -0.007720033442411345,
+              "random_draws_at_or_below_observed": 0.965,
+              "oracle": {
+                "brier": 0.909445984938747,
+                "accuracy": 0.152
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.172,
+              "brier": 0.894962333783124,
+              "log_loss": 3.658051492170485,
+              "ece": 0.03984763017793273,
+              "coverage_at_5pct_error": 0.084,
+              "aurc": 0.6069174667478742,
+              "rate": 0.1,
+              "tau": 0.0458701716787671,
+              "mode": "leq",
+              "strong_calls": 48,
+              "strong_call_fraction": 0.096,
+              "strong_calls_saved": 0.904,
+              "score_drop": 0.7776394634873713,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.8902682379916526,
+                "brier_lo": 0.8818388903293113,
+                "brier_hi": 0.9004789741748305,
+                "accuracy_mean": 0.169767
+              },
+              "brier_gain_over_random": -0.004694095791471398,
+              "random_draws_at_or_below_observed": 0.826,
+              "oracle": {
+                "brier": 0.8750933299936293,
+                "accuracy": 0.186
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.312,
+              "brier": 0.749238183569589,
+              "log_loss": 3.000950153676091,
+              "ece": 0.039785217026775344,
+              "coverage_at_5pct_error": 0.242,
+              "aurc": 0.3638384306515776,
+              "rate": 0.25,
+              "tau": 0.050526801794482414,
+              "mode": "leq",
+              "strong_calls": 132,
+              "strong_call_fraction": 0.264,
+              "strong_calls_saved": 0.736,
+              "score_drop": 0.6319153132738364,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.7466080516019853,
+                "brier_lo": 0.7328713078793935,
+                "brier_hi": 0.7613618965846146,
+                "accuracy_mean": 0.30915
+              },
+              "brier_gain_over_random": -0.002630131967603755,
+              "random_draws_at_or_below_observed": 0.644,
+              "oracle": {
+                "brier": 0.7067968975419451,
+                "accuracy": 0.354
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.486,
+              "brier": 0.5728300310949465,
+              "log_loss": 2.2092625631986307,
+              "ece": 0.044664336056101706,
+              "coverage_at_5pct_error": 0.424,
+              "aurc": 0.18560143151221253,
+              "rate": 0.5,
+              "tau": 0.05692681309805083,
+              "mode": "leq",
+              "strong_calls": 233,
+              "strong_call_fraction": 0.466,
+              "strong_calls_saved": 0.534,
+              "score_drop": 0.4555071607991938,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.573973405700264,
+                "brier_lo": 0.5585808557267442,
+                "brier_hi": 0.5898817840178446,
+                "accuracy_mean": 0.47673000000000004
+              },
+              "brier_gain_over_random": 0.0011433746053175486,
+              "random_draws_at_or_below_observed": 0.4505,
+              "oracle": {
+                "brier": 0.5079111016601627,
+                "accuracy": 0.556
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.696,
+              "brier": 0.3592963220638315,
+              "log_loss": 1.276417441773153,
+              "ece": 0.03846343081725333,
+              "coverage_at_5pct_error": 0.664,
+              "aurc": 0.06336824775319803,
+              "rate": 0.75,
+              "tau": 0.06444532156367903,
+              "mode": "leq",
+              "strong_calls": 357,
+              "strong_call_fraction": 0.714,
+              "strong_calls_saved": 0.28600000000000003,
+              "score_drop": 0.24197345176807883,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.36172340330741404,
+                "brier_lo": 0.34650328829247873,
+                "brier_hi": 0.37572241318028965,
+                "accuracy_mean": 0.6829649999999999
+              },
+              "brier_gain_over_random": 0.0024270812435825406,
+              "random_draws_at_or_below_observed": 0.3615,
+              "oracle": {
+                "brier": 0.2697286489219301,
+                "accuracy": 0.804
+              }
+            },
+            {
+              "n": 500,
+              "accuracy": 0.92,
+              "brier": 0.11732287029575267,
+              "log_loss": 0.2848407235389839,
+              "ece": 0.01984219610246266,
+              "coverage_at_5pct_error": 0.938,
+              "aurc": 0.009435084770251899,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.11732287029575271,
+                "brier_lo": 0.11732287029575267,
+                "brier_hi": 0.11732287029575267,
+                "accuracy_mean": 0.9200000000000002
+              },
+              "brier_gain_over_random": 4.163336342344337e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.11732287029575267,
+                "accuracy": 0.92
+              }
+            }
+          ]
+        }
+      }
+    },
+    "sst2": {
+      "role": "sanity",
+      "n": 872,
+      "strong": {
+        "n": 872,
+        "accuracy": 0.930045871559633,
+        "brier": 0.1147796233217133,
+        "log_loss": 0.2116494238158929,
+        "ece": 0.02862658392145174,
+        "coverage_at_5pct_error": 0.9288990825688074,
+        "aurc": 0.0215925528064022
+      },
+      "gates": {
+        "ettin-encoder-log_loss": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.9575688073394495,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 13,
+                "agreement": 0.5384615384615384
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 44,
+                "agreement": 0.7954545454545454
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 815,
+                "agreement": 0.9730061349693252
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.9426605504587156,
+              "brier": 0.09053755815221608,
+              "log_loss": 0.16204102456533295,
+              "ece": 0.025265941499179406,
+              "coverage_at_5pct_error": 0.9747706422018348,
+              "aurc": 0.010096246654307976,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": -0.02424206516949723,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.09053755815221608,
+                "brier_lo": 0.09053755815221608,
+                "brier_hi": 0.09053755815221608,
+                "accuracy_mean": 0.9426605504587152
+              },
+              "brier_gain_over_random": 0.0,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.09053755815221608,
+                "accuracy": 0.9426605504587156
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9426605504587156,
+              "brier": 0.09171080631477573,
+              "log_loss": 0.16390880855597512,
+              "ece": 0.02646472140444483,
+              "coverage_at_5pct_error": 0.981651376146789,
+              "aurc": 0.010015589466831466,
+              "rate": 0.05,
+              "tau": 0.7488815770031225,
+              "mode": "leq",
+              "strong_calls": 42,
+              "strong_call_fraction": 0.0481651376146789,
+              "strong_calls_saved": 0.9518348623853211,
+              "score_drop": -0.02306881700693758,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.09172746263501887,
+                "brier_lo": 0.08843487650435024,
+                "brier_hi": 0.09532727327353267,
+                "accuracy_mean": 0.9420481651376147
+              },
+              "brier_gain_over_random": 1.6656320243141343e-05,
+              "random_draws_at_or_below_observed": 0.5145,
+              "oracle": {
+                "brier": 0.0669167543679809,
+                "accuracy": 0.9575688073394495
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9403669724770642,
+              "brier": 0.09488743873545323,
+              "log_loss": 0.16835042922278903,
+              "ece": 0.026794208194262096,
+              "coverage_at_5pct_error": 0.9713302752293578,
+              "aurc": 0.01031531889784884,
+              "rate": 0.1,
+              "tau": 0.8746999513126961,
+              "mode": "leq",
+              "strong_calls": 96,
+              "strong_call_fraction": 0.11009174311926606,
+              "strong_calls_saved": 0.8899082568807339,
+              "score_drop": -0.019892184586260075,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.09326001712716205,
+                "brier_lo": 0.08822703604819178,
+                "brier_hi": 0.09865099337451502,
+                "accuracy_mean": 0.9412173165137615
+              },
+              "brier_gain_over_random": -0.0016274216082911852,
+              "random_draws_at_or_below_observed": 0.7375,
+              "oracle": {
+                "brier": 0.06576305628289253,
+                "accuracy": 0.9575688073394495
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9323394495412844,
+              "brier": 0.10669280950371993,
+              "log_loss": 0.1869083579900373,
+              "ece": 0.019435160672780817,
+              "coverage_at_5pct_error": 0.9380733944954128,
+              "aurc": 0.01388939206874916,
+              "rate": 0.25,
+              "tau": 0.9477059604821927,
+              "mode": "leq",
+              "strong_calls": 238,
+              "strong_call_fraction": 0.27293577981651373,
+              "strong_calls_saved": 0.7270642201834863,
+              "score_drop": -0.00808681381799338,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.09713763640565722,
+                "brier_lo": 0.0900948688988441,
+                "brier_hi": 0.10474834741228661,
+                "accuracy_mean": 0.9392150229357797
+              },
+              "brier_gain_over_random": -0.009555173098062711,
+              "random_draws_at_or_below_observed": 0.994,
+              "oracle": {
+                "brier": 0.06572480772671434,
+                "accuracy": 0.9575688073394495
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9311926605504587,
+              "brier": 0.10956503961748341,
+              "log_loss": 0.19390424816977408,
+              "ece": 0.01739318807999678,
+              "coverage_at_5pct_error": 0.9415137614678899,
+              "aurc": 0.015685721979696348,
+              "rate": 0.5,
+              "tau": 0.9715352620665524,
+              "mode": "leq",
+              "strong_calls": 439,
+              "strong_call_fraction": 0.5034403669724771,
+              "strong_calls_saved": 0.49655963302752293,
+              "score_drop": -0.0052145837042298915,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.10271254472714253,
+                "brier_lo": 0.09517880422124654,
+                "brier_hi": 0.11042118769461547,
+                "accuracy_mean": 0.936401376146789
+              },
+              "brier_gain_over_random": -0.006852494890340885,
+              "random_draws_at_or_below_observed": 0.958,
+              "oracle": {
+                "brier": 0.06611640956558254,
+                "accuracy": 0.9575688073394495
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.930045871559633,
+              "brier": 0.11353392767366802,
+              "log_loss": 0.20556069596573914,
+              "ece": 0.023020777126231518,
+              "coverage_at_5pct_error": 0.930045871559633,
+              "aurc": 0.018322679903770858,
+              "rate": 0.75,
+              "tau": 0.9852622504755496,
+              "mode": "leq",
+              "strong_calls": 663,
+              "strong_call_fraction": 0.7603211009174312,
+              "strong_calls_saved": 0.23967889908256879,
+              "score_drop": -0.001245695648045289,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.10892027056110132,
+                "brier_lo": 0.10190592306735131,
+                "brier_hi": 0.11579128616924293,
+                "accuracy_mean": 0.9330797018348624
+              },
+              "brier_gain_over_random": -0.004613657112566699,
+              "random_draws_at_or_below_observed": 0.8895,
+              "oracle": {
+                "brier": 0.0683567428859317,
+                "accuracy": 0.9575688073394495
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.930045871559633,
+              "brier": 0.1147796233217133,
+              "log_loss": 0.2116494238158929,
+              "ece": 0.02862658392145174,
+              "coverage_at_5pct_error": 0.9288990825688074,
+              "aurc": 0.0215925528064022,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1147796233217133,
+                "brier_lo": 0.1147796233217133,
+                "brier_hi": 0.1147796233217133,
+                "accuracy_mean": 0.930045871559633
+              },
+              "brier_gain_over_random": 0.0,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.1147796233217133,
+                "accuracy": 0.930045871559633
+              }
+            }
+          ]
+        },
+        "ettin-encoder-brier": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.9564220183486238,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 11,
+                "agreement": 0.7272727272727273
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 41,
+                "agreement": 0.6585365853658537
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 820,
+                "agreement": 0.974390243902439
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.9438073394495413,
+              "brier": 0.08666948526760676,
+              "log_loss": 0.158979520616663,
+              "ece": 0.015506113112350041,
+              "coverage_at_5pct_error": 0.9839449541284404,
+              "aurc": 0.01169472708226503,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": -0.028110138054106545,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.08666948526760675,
+                "brier_lo": 0.08666948526760676,
+                "brier_hi": 0.08666948526760676,
+                "accuracy_mean": 0.9438073394495415
+              },
+              "brier_gain_over_random": -1.3877787807814457e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.08666948526760676,
+                "accuracy": 0.9438073394495413
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9461009174311926,
+              "brier": 0.0888505265345951,
+              "log_loss": 0.16379490778219416,
+              "ece": 0.019252728755999114,
+              "coverage_at_5pct_error": 0.9873853211009175,
+              "aurc": 0.01215315959625729,
+              "rate": 0.05,
+              "tau": 0.7903557433643357,
+              "mode": "leq",
+              "strong_calls": 49,
+              "strong_call_fraction": 0.05619266055045872,
+              "strong_calls_saved": 0.9438073394495413,
+              "score_drop": -0.025929096787118203,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.08830098471563042,
+                "brier_lo": 0.08472730166993644,
+                "brier_hi": 0.09216650124189493,
+                "accuracy_mean": 0.9430080275229359
+              },
+              "brier_gain_over_random": -0.0005495418189646883,
+              "random_draws_at_or_below_observed": 0.624,
+              "oracle": {
+                "brier": 0.06286168478456719,
+                "accuracy": 0.9587155963302753
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9415137614678899,
+              "brier": 0.09521085452498736,
+              "log_loss": 0.17232377529143184,
+              "ece": 0.025597699000807494,
+              "coverage_at_5pct_error": 0.9701834862385321,
+              "aurc": 0.012540895216051867,
+              "rate": 0.1,
+              "tau": 0.8744228945765185,
+              "mode": "leq",
+              "strong_calls": 97,
+              "strong_call_fraction": 0.11123853211009174,
+              "strong_calls_saved": 0.8887614678899083,
+              "score_drop": -0.01956876879672595,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.08975395482820217,
+                "brier_lo": 0.08479361595571391,
+                "brier_hi": 0.09509280627578647,
+                "accuracy_mean": 0.9423509174311927
+              },
+              "brier_gain_over_random": -0.005456899696785186,
+              "random_draws_at_or_below_observed": 0.9775,
+              "oracle": {
+                "brier": 0.061983540376408935,
+                "accuracy": 0.9587155963302753
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9369266055045872,
+              "brier": 0.10086461881392993,
+              "log_loss": 0.17891325665450353,
+              "ece": 0.021448710071527884,
+              "coverage_at_5pct_error": 0.9552752293577982,
+              "aurc": 0.013263973209035138,
+              "rate": 0.25,
+              "tau": 0.9403799781443166,
+              "mode": "leq",
+              "strong_calls": 202,
+              "strong_call_fraction": 0.231651376146789,
+              "strong_calls_saved": 0.768348623853211,
+              "score_drop": -0.01391500450778338,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.09337563485388084,
+                "brier_lo": 0.08640797402960841,
+                "brier_hi": 0.10043931613995175,
+                "accuracy_mean": 0.9405607798165138
+              },
+              "brier_gain_over_random": -0.0074889839600490865,
+              "random_draws_at_or_below_observed": 0.982,
+              "oracle": {
+                "brier": 0.061919946389410764,
+                "accuracy": 0.9587155963302753
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9311926605504587,
+              "brier": 0.10939099166254847,
+              "log_loss": 0.1932642895110105,
+              "ece": 0.01919732586769389,
+              "coverage_at_5pct_error": 0.9403669724770642,
+              "aurc": 0.015532099085772005,
+              "rate": 0.5,
+              "tau": 0.9685622816753205,
+              "mode": "leq",
+              "strong_calls": 406,
+              "strong_call_fraction": 0.46559633027522934,
+              "strong_calls_saved": 0.5344036697247707,
+              "score_drop": -0.005388631659164839,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.0996769597740471,
+                "brier_lo": 0.09168403748431889,
+                "brier_hi": 0.10792572811977834,
+                "accuracy_mean": 0.9374845183486239
+              },
+              "brier_gain_over_random": -0.009714031888501368,
+              "random_draws_at_or_below_observed": 0.991,
+              "oracle": {
+                "brier": 0.06219615445316129,
+                "accuracy": 0.9587155963302753
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.930045871559633,
+              "brier": 0.11293956828710132,
+              "log_loss": 0.20358968267556385,
+              "ece": 0.021627399240413986,
+              "coverage_at_5pct_error": 0.9311926605504587,
+              "aurc": 0.018821297951984117,
+              "rate": 0.75,
+              "tau": 0.9818815876021695,
+              "mode": "leq",
+              "strong_calls": 610,
+              "strong_call_fraction": 0.6995412844036697,
+              "strong_calls_saved": 0.3004587155963303,
+              "score_drop": -0.001840055034611987,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1064744676261117,
+                "brier_lo": 0.09929033816511755,
+                "brier_hi": 0.11370877681042413,
+                "accuracy_mean": 0.934081995412844
+              },
+              "brier_gain_over_random": -0.0064651006609896255,
+              "random_draws_at_or_below_observed": 0.9585,
+              "oracle": {
+                "brier": 0.06367496298480758,
+                "accuracy": 0.9587155963302753
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.930045871559633,
+              "brier": 0.1147796233217133,
+              "log_loss": 0.2116494238158929,
+              "ece": 0.02862658392145174,
+              "coverage_at_5pct_error": 0.9288990825688074,
+              "aurc": 0.0215925528064022,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1147796233217133,
+                "brier_lo": 0.1147796233217133,
+                "brier_hi": 0.1147796233217133,
+                "accuracy_mean": 0.930045871559633
+              },
+              "brier_gain_over_random": 0.0,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.1147796233217133,
+                "accuracy": 0.930045871559633
+              }
+            }
+          ]
+        },
+        "deberta-v3-large-zeroshot-v2.0-c": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.8761467889908257,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 52,
+                "agreement": 0.5384615384615384
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 168,
+                "agreement": 0.7380952380952381
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 652,
+                "agreement": 0.9386503067484663
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.8864678899082569,
+              "brier": 0.17483775472247584,
+              "log_loss": 0.29941968947947045,
+              "ece": 0.036584344092871104,
+              "coverage_at_5pct_error": 0.7144495412844036,
+              "aurc": 0.03976976657148999,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.060058131400762535,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.17483775472247579,
+                "brier_lo": 0.17483775472247584,
+                "brier_hi": 0.17483775472247584,
+                "accuracy_mean": 0.8864678899082569
+              },
+              "brier_gain_over_random": -5.551115123125783e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.17483775472247584,
+                "accuracy": 0.8864678899082569
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.8967889908256881,
+              "brier": 0.16770065766095288,
+              "log_loss": 0.2920925676624793,
+              "ece": 0.030140107118408737,
+              "coverage_at_5pct_error": 0.7339449541284404,
+              "aurc": 0.04222589302542663,
+              "rate": 0.05,
+              "tau": 0.5465743940332752,
+              "mode": "leq",
+              "strong_calls": 23,
+              "strong_call_fraction": 0.026376146788990827,
+              "strong_calls_saved": 0.9736238532110092,
+              "score_drop": 0.05292103433923957,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.17337011126505014,
+                "brier_lo": 0.16898642897798222,
+                "brier_hi": 0.17775311214427453,
+                "accuracy_mean": 0.8875395642201834
+              },
+              "brier_gain_over_random": 0.005669453604097263,
+              "random_draws_at_or_below_observed": 0.009,
+              "oracle": {
+                "brier": 0.134774691949709,
+                "accuracy": 0.9128440366972477
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9036697247706422,
+              "brier": 0.16131594523797377,
+              "log_loss": 0.28461662996168335,
+              "ece": 0.024410388996125812,
+              "coverage_at_5pct_error": 0.7511467889908257,
+              "aurc": 0.04154667516530196,
+              "rate": 0.1,
+              "tau": 0.6181563112348709,
+              "mode": "leq",
+              "strong_calls": 61,
+              "strong_call_fraction": 0.06995412844036697,
+              "strong_calls_saved": 0.930045871559633,
+              "score_drop": 0.04653632191626046,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.17064350406224615,
+                "brier_lo": 0.16385155845536534,
+                "brier_hi": 0.17796045464509963,
+                "accuracy_mean": 0.8895114678899082
+              },
+              "brier_gain_over_random": 0.009327558824272386,
+              "random_draws_at_or_below_observed": 0.004,
+              "oracle": {
+                "brier": 0.09500370566997945,
+                "accuracy": 0.9541284403669725
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9208715596330275,
+              "brier": 0.13618552277785304,
+              "log_loss": 0.2517157414256013,
+              "ece": 0.023057772124886897,
+              "coverage_at_5pct_error": 0.8577981651376146,
+              "aurc": 0.03724223880845251,
+              "rate": 0.25,
+              "tau": 0.7886619517291883,
+              "mode": "leq",
+              "strong_calls": 202,
+              "strong_call_fraction": 0.231651376146789,
+              "strong_calls_saved": 0.768348623853211,
+              "score_drop": 0.02140589945613973,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.16109300658941578,
+                "brier_lo": 0.1489605908996285,
+                "brier_hi": 0.17318376062979796,
+                "accuracy_mean": 0.8964248853211009
+              },
+              "brier_gain_over_random": 0.02490748381156274,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.05853384277025234,
+                "accuracy": 0.9701834862385321
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.926605504587156,
+              "brier": 0.11990292976380384,
+              "log_loss": 0.2218137619245099,
+              "ece": 0.025391978122981104,
+              "coverage_at_5pct_error": 0.9438073394495413,
+              "aurc": 0.026416495349569625,
+              "rate": 0.5,
+              "tau": 0.916024342905812,
+              "mode": "leq",
+              "strong_calls": 478,
+              "strong_call_fraction": 0.5481651376146789,
+              "strong_calls_saved": 0.4518348623853211,
+              "score_drop": 0.005123306442090539,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1418038169650169,
+                "brier_lo": 0.12753701249979263,
+                "brier_hi": 0.15503204698757728,
+                "accuracy_mean": 0.910473623853211
+              },
+              "brier_gain_over_random": 0.021900887201213054,
+              "random_draws_at_or_below_observed": 0.001,
+              "oracle": {
+                "brier": 0.05071354780322348,
+                "accuracy": 0.9701834862385321
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9311926605504587,
+              "brier": 0.11152304674152867,
+              "log_loss": 0.20546188800894086,
+              "ece": 0.025883368733368696,
+              "coverage_at_5pct_error": 0.9357798165137615,
+              "aurc": 0.020945648957368484,
+              "rate": 0.75,
+              "tau": 0.9567886375455318,
+              "mode": "leq",
+              "strong_calls": 738,
+              "strong_call_fraction": 0.8463302752293578,
+              "strong_calls_saved": 0.15366972477064222,
+              "score_drop": -0.0032565765801846336,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1240629858232806,
+                "brier_lo": 0.11403847766326271,
+                "brier_hi": 0.13427046544351925,
+                "accuracy_mean": 0.9233090596330276
+              },
+              "brier_gain_over_random": 0.012539939081751925,
+              "random_draws_at_or_below_observed": 0.0085,
+              "oracle": {
+                "brier": 0.051399010354752396,
+                "accuracy": 0.9701834862385321
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.930045871559633,
+              "brier": 0.1147796233217133,
+              "log_loss": 0.2116494238158929,
+              "ece": 0.02862658392145174,
+              "coverage_at_5pct_error": 0.9288990825688074,
+              "aurc": 0.0215925528064022,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1147796233217133,
+                "brier_lo": 0.1147796233217133,
+                "brier_hi": 0.1147796233217133,
+                "accuracy_mean": 0.930045871559633
+              },
+              "brier_gain_over_random": 0.0,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.1147796233217133,
+                "accuracy": 0.930045871559633
+              }
+            }
+          ]
+        },
+        "gliclass-base-v3.0": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.893348623853211,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 46,
+                "agreement": 0.45652173913043476
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 127,
+                "agreement": 0.7322834645669292
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 699,
+                "agreement": 0.9513590844062947
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.8899082568807339,
+              "brier": 0.16791574099396045,
+              "log_loss": 0.2868987941348701,
+              "ece": 0.025137080565213424,
+              "coverage_at_5pct_error": 0.786697247706422,
+              "aurc": 0.03797576894960312,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.05313611767224714,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.16791574099396042,
+                "brier_lo": 0.16791574099396045,
+                "brier_hi": 0.16791574099396045,
+                "accuracy_mean": 0.8899082568807338
+              },
+              "brier_gain_over_random": -2.7755575615628914e-17,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.16791574099396045,
+                "accuracy": 0.8899082568807339
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.8944954128440367,
+              "brier": 0.16212907916465438,
+              "log_loss": 0.27972234255507106,
+              "ece": 0.028921450209961244,
+              "coverage_at_5pct_error": 0.8038990825688074,
+              "aurc": 0.03652395627619838,
+              "rate": 0.05,
+              "tau": 0.5613622903327996,
+              "mode": "leq",
+              "strong_calls": 25,
+              "strong_call_fraction": 0.028669724770642203,
+              "strong_calls_saved": 0.9713302752293578,
+              "score_drop": 0.04734945584294108,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.16636405765361936,
+                "brier_lo": 0.16194655500749391,
+                "brier_hi": 0.17067005866131388,
+                "accuracy_mean": 0.891079128440367
+              },
+              "brier_gain_over_random": 0.00423497848896498,
+              "random_draws_at_or_below_observed": 0.031,
+              "oracle": {
+                "brier": 0.126148901318702,
+                "accuracy": 0.9185779816513762
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9036697247706422,
+              "brier": 0.15428594835261478,
+              "log_loss": 0.2696262335680718,
+              "ece": 0.028912470052011696,
+              "coverage_at_5pct_error": 0.8256880733944955,
+              "aurc": 0.033629564086608,
+              "rate": 0.1,
+              "tau": 0.621049027737237,
+              "mode": "leq",
+              "strong_calls": 55,
+              "strong_call_fraction": 0.06307339449541284,
+              "strong_calls_saved": 0.9369266055045872,
+              "score_drop": 0.03950632503090147,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1646108604185517,
+                "brier_lo": 0.1582146641040253,
+                "brier_hi": 0.17042289423915374,
+                "accuracy_mean": 0.8923944954128441
+              },
+              "brier_gain_over_random": 0.010324912065936914,
+              "random_draws_at_or_below_observed": 0.002,
+              "oracle": {
+                "brier": 0.09661084540696843,
+                "accuracy": 0.9506880733944955
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9243119266055045,
+              "brier": 0.1294839958267727,
+              "log_loss": 0.24263965813654784,
+              "ece": 0.024513793283192923,
+              "coverage_at_5pct_error": 0.8577981651376146,
+              "aurc": 0.041323750056537406,
+              "rate": 0.25,
+              "tau": 0.80068002611068,
+              "mode": "leq",
+              "strong_calls": 174,
+              "strong_call_fraction": 0.19954128440366972,
+              "strong_calls_saved": 0.8004587155963303,
+              "score_drop": 0.01470437250505939,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.15721683573247106,
+                "brier_lo": 0.1467246948596088,
+                "brier_hi": 0.16723262047374707,
+                "accuracy_mean": 0.8979885321100917
+              },
+              "brier_gain_over_random": 0.02773283990569836,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.06676086590869891,
+                "accuracy": 0.963302752293578
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9311926605504587,
+              "brier": 0.11749795595591758,
+              "log_loss": 0.22175594948309177,
+              "ece": 0.02137494621297821,
+              "coverage_at_5pct_error": 0.9220183486238532,
+              "aurc": 0.03162340279856827,
+              "rate": 0.5,
+              "tau": 0.92060645330771,
+              "mode": "leq",
+              "strong_calls": 398,
+              "strong_call_fraction": 0.45642201834862384,
+              "strong_calls_saved": 0.5435779816513762,
+              "score_drop": 0.0027183326342042763,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.14379744614462617,
+                "brier_lo": 0.13132111906742613,
+                "brier_hi": 0.15653452667414977,
+                "accuracy_mean": 0.9081049311926604
+              },
+              "brier_gain_over_random": 0.026299490188708585,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.06277244404488012,
+                "accuracy": 0.963302752293578
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9311926605504587,
+              "brier": 0.11428008212695966,
+              "log_loss": 0.2131101067259706,
+              "ece": 0.026625500218839852,
+              "coverage_at_5pct_error": 0.9311926605504587,
+              "aurc": 0.025343483373617026,
+              "rate": 0.75,
+              "tau": 0.9472569793030333,
+              "mode": "leq",
+              "strong_calls": 685,
+              "strong_call_fraction": 0.7855504587155964,
+              "strong_calls_saved": 0.21444954128440363,
+              "score_drop": -0.0004995411947536499,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.12602485888673373,
+                "brier_lo": 0.11518425359160096,
+                "brier_hi": 0.13672155880123726,
+                "accuracy_mean": 0.921625
+              },
+              "brier_gain_over_random": 0.011744776759774075,
+              "random_draws_at_or_below_observed": 0.0175,
+              "oracle": {
+                "brier": 0.062384005005218325,
+                "accuracy": 0.963302752293578
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.930045871559633,
+              "brier": 0.1147796233217133,
+              "log_loss": 0.2116494238158929,
+              "ece": 0.02862658392145174,
+              "coverage_at_5pct_error": 0.9288990825688074,
+              "aurc": 0.0215925528064022,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1147796233217133,
+                "brier_lo": 0.1147796233217133,
+                "brier_hi": 0.1147796233217133,
+                "accuracy_mean": 0.930045871559633
+              },
+              "brier_gain_over_random": 0.0,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.1147796233217133,
+                "accuracy": 0.930045871559633
+              }
+            }
+          ]
+        },
+        "qwen3-0.6b": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.6146788990825688,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 664,
+                "agreement": 0.5120481927710844
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 208,
+                "agreement": 0.9423076923076923
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 0,
+                "agreement": null
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.6043577981651376,
+              "brier": 0.4467380703702184,
+              "log_loss": 0.6388882764806822,
+              "ece": 0.14524719158497756,
+              "coverage_at_5pct_error": 0.1731651376146789,
+              "aurc": 0.19404366052727093,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.3319584470485051,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.44673807037021823,
+                "brier_lo": 0.4467380703702184,
+                "brier_hi": 0.4467380703702184,
+                "accuracy_mean": 0.6043577981651378
+              },
+              "brier_gain_over_random": -1.6653345369377348e-16,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.4467380703702184,
+                "accuracy": 0.6043577981651376
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.6903669724770642,
+              "brier": 0.3885119220578144,
+              "log_loss": 0.5638881384872151,
+              "ece": 0.12443157324970418,
+              "coverage_at_5pct_error": 0.3130733944954128,
+              "aurc": 0.12334377787359946,
+              "rate": 0.05,
+              "tau": 0.5092883903401958,
+              "mode": "leq",
+              "strong_calls": 107,
+              "strong_call_fraction": 0.12270642201834862,
+              "strong_calls_saved": 0.8772935779816514,
+              "score_drop": 0.27373229873610105,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.40602505211850043,
+                "brier_lo": 0.39918899683596987,
+                "brier_hi": 0.41385972375145197,
+                "accuracy_mean": 0.6443061926605504
+              },
+              "brier_gain_over_random": 0.017513130060686055,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.37099250917682897,
+                "accuracy": 0.7270642201834863
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.7396788990825688,
+              "brier": 0.34843942793975413,
+              "log_loss": 0.5149561214091076,
+              "ece": 0.11725117843073396,
+              "coverage_at_5pct_error": 0.4139908256880734,
+              "aurc": 0.0916784390721262,
+              "rate": 0.1,
+              "tau": 0.5185703721047665,
+              "mode": "leq",
+              "strong_calls": 193,
+              "strong_call_fraction": 0.2213302752293578,
+              "strong_calls_saved": 0.7786697247706422,
+              "score_drop": 0.2336598046180408,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.37344390625225077,
+                "brier_lo": 0.364183983540183,
+                "brier_hi": 0.3833827791329654,
+                "accuracy_mean": 0.6762981651376146
+              },
+              "brier_gain_over_random": 0.025004478312496636,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.31685000080894804,
+                "accuracy": 0.8256880733944955
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.8520642201834863,
+              "brier": 0.262049591402371,
+              "log_loss": 0.40587602807230083,
+              "ece": 0.11836435338714443,
+              "coverage_at_5pct_error": 0.6100917431192661,
+              "aurc": 0.046955845806408644,
+              "rate": 0.25,
+              "tau": 0.5463141505226492,
+              "mode": "leq",
+              "strong_calls": 365,
+              "strong_call_fraction": 0.41857798165137616,
+              "strong_calls_saved": 0.5814220183486238,
+              "score_drop": 0.14726996808065768,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.30775971177336925,
+                "brier_lo": 0.2969637146202852,
+                "brier_hi": 0.31941679278248,
+                "accuracy_mean": 0.7409822247706421
+              },
+              "brier_gain_over_random": 0.04571012037099825,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.21981499186120196,
+                "accuracy": 0.9518348623853211
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9208715596330275,
+              "brier": 0.1805112877515717,
+              "log_loss": 0.3044143933363629,
+              "ece": 0.10404661074913897,
+              "coverage_at_5pct_error": 0.6571100917431193,
+              "aurc": 0.03265502190586038,
+              "rate": 0.5,
+              "tau": 0.5828345683081336,
+              "mode": "leq",
+              "strong_calls": 604,
+              "strong_call_fraction": 0.6926605504587156,
+              "strong_calls_saved": 0.30733944954128445,
+              "score_drop": 0.06573166442985838,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.2168753234015831,
+                "brier_lo": 0.2056069762323632,
+                "brier_hi": 0.22706805587976728,
+                "accuracy_mean": 0.8295974770642202
+              },
+              "brier_gain_over_random": 0.03636403565001142,
+              "random_draws_at_or_below_observed": 0.0,
+              "oracle": {
+                "brier": 0.12073568405642272,
+                "accuracy": 0.9564220183486238
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.930045871559633,
+              "brier": 0.13280511471983786,
+              "log_loss": 0.23987770008694734,
+              "ece": 0.05137386771460425,
+              "coverage_at_5pct_error": 0.8440366972477065,
+              "aurc": 0.02711108314707871,
+              "rate": 0.75,
+              "tau": 0.6184682698416663,
+              "mode": "leq",
+              "strong_calls": 799,
+              "strong_call_fraction": 0.9162844036697247,
+              "strong_calls_saved": 0.08371559633027525,
+              "score_drop": 0.018025491398124552,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.14258655916220375,
+                "brier_lo": 0.13621850478461411,
+                "brier_hi": 0.14857222878370663,
+                "accuracy_mean": 0.9028417431192661
+              },
+              "brier_gain_over_random": 0.009781444442365894,
+              "random_draws_at_or_below_observed": 0.003,
+              "oracle": {
+                "brier": 0.06121221753235176,
+                "accuracy": 0.9598623853211009
+              }
+            },
+            {
+              "n": 872,
+              "accuracy": 0.930045871559633,
+              "brier": 0.1147796233217133,
+              "log_loss": 0.2116494238158929,
+              "ece": 0.02862658392145174,
+              "coverage_at_5pct_error": 0.9288990825688074,
+              "aurc": 0.0215925528064022,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0,
+              "random": {
+                "draws": 2000,
+                "brier_mean": 0.1147796233217133,
+                "brier_lo": 0.1147796233217133,
+                "brier_hi": 0.1147796233217133,
+                "accuracy_mean": 0.930045871559633
+              },
+              "brier_gain_over_random": 0.0,
+              "random_draws_at_or_below_observed": 1.0,
+              "oracle": {
+                "brier": 0.1147796233217133,
+                "accuracy": 0.930045871559633
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

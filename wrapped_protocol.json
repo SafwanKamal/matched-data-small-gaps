@@ -1,0 +1,34 @@
+{
+  "protocol_id": "wrapped-finetune-pilot-2026-10-09",
+  "role": "exploratory follow-up to the context pilot",
+  "claim": "The fine-tuned Ettin encoder fell from 90% to between 2% and 32% on Banking77 when the utterance arrived inside conversation context. This pilot asks whether that is a property of the model or of its training inputs: the same encoder recipe is trained on Banking77 utterances that are wrapped at random, and tested on the context pilot's wrapped test items. Half of the test wrappers are never shown in training. Written before any wrapped-trained model was scored.",
+  "base_recipe": "program2.json encoder recipe, log loss, seed 20261007: same model, learning rate, epochs, batch size, warmup and dev exclusion",
+  "changes": {
+    "max_length": 512,
+    "training_inputs": "each training utterance is wrapped afresh every epoch: with probability 1/3 left clean, 1/3 the related_prior template, 1/3 the long_history template with a number of earlier messages drawn uniformly from 2 to 8",
+    "distractors": "Banking77 train rows outside the Program 1 dev split, with labels different from the target and from each other",
+    "device": "GPU, float32 weights with a bfloat16 forward, as in the base recipe",
+    "device_note": "Revised 2026-10-09 before any wrapped-trained score existed. The first attempt ran on the processor and was killed in its second epoch when Windows ran out of virtual memory; it saved nothing. The run now takes a GPU slot between decoder seed jobs."
+  },
+  "seed": 20261009,
+  "test": {
+    "items": "the context pilot's wrapped Banking77 test items, unchanged (500 items in each of six conditions)",
+    "seen_in_training": [
+      "clean",
+      "related_prior",
+      "long_history"
+    ],
+    "never_seen_in_training": [
+      "chatter",
+      "typed_summary",
+      "long_history_target_first"
+    ],
+    "temperature": "one scalar fit on the 400 clean Program 1 dev items"
+  },
+  "comparison": {
+    "bare_128": "the existing float32 Banking77 encoder at its 128-token cap, from the context pilot",
+    "bare_512": "the same checkpoint rescored with a 512-token cap, so that truncation is separated from input shape",
+    "wrapped_512": "the model trained here"
+  },
+  "metrics": "accuracy, Brier, mean top probability and the share of clean-correct items broken, per condition, as in the context pilot"
+}

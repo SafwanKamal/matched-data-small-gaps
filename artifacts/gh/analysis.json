@@ -1,0 +1,209 @@
+{
+  "protocol_id": "gh-ordering-contamination-2026-10-16",
+  "G": {
+    "clinc150": {
+      "orders": {
+        "A": {
+          "weighted": 0.9502702702702703,
+          "weighted_never_seen": 0.9471261259738724,
+          "in_scope_kept": 0.9957957957957958,
+          "out_of_scope_rejected": 0.8378378378378378,
+          "share_changed_vs_A": 0.0,
+          "failed": 0,
+          "specialist_minus_gemma": {
+            "difference_points": -1.8898898898898902,
+            "ci95": [
+              -3.1036384833125825,
+              -0.8395764862502492
+            ],
+            "ci90": [
+              -2.8859026888918775,
+              -0.9935160974094727
+            ],
+            "p": 0.0014998500149985001,
+            "clusters": 335
+          }
+        },
+        "G1": {
+          "weighted": 0.9503903903903905,
+          "weighted_never_seen": 0.9480308484449027,
+          "in_scope_kept": 0.9933933933933934,
+          "out_of_scope_rejected": 0.8432432432432433,
+          "share_changed_vs_A": 0.008108108108108109,
+          "failed": 0,
+          "specialist_minus_gemma": {
+            "difference_points": -1.9019019019019021,
+            "ci95": [
+              -3.037715682507247,
+              -0.8695315556145702
+            ],
+            "ci90": [
+              -2.8406376886795255,
+              -1.0099375844671112
+            ],
+            "p": 0.0013998600139986002,
+            "clusters": 335
+          }
+        },
+        "G2": {
+          "weighted": 0.9488288288288289,
+          "weighted_never_seen": 0.9438103124841561,
+          "in_scope_kept": 0.993993993993994,
+          "out_of_scope_rejected": 0.8378378378378378,
+          "share_changed_vs_A": 0.005945945945945946,
+          "failed": 0,
+          "specialist_minus_gemma": {
+            "difference_points": -1.745745745745746,
+            "ci95": [
+              -2.9151878661227024,
+              -0.6599621593867082
+            ],
+            "ci90": [
+              -2.752723650263173,
+              -0.8163218747436888
+            ],
+            "p": 0.0035996400359964,
+            "clusters": 335
+          }
+        }
+      },
+      "weighted_range_points": 0.15615615615616196,
+      "weighted_sd_points": 0.07095113171839702
+    },
+    "massive": {
+      "orders": {
+        "A": {
+          "weighted": 0.7383824157605132,
+          "weighted_never_seen": 0.7382716049382716,
+          "in_scope_kept": 0.9701952723535457,
+          "out_of_scope_rejected": 0.23045267489711935,
+          "share_changed_vs_A": 0.0,
+          "failed": 0,
+          "specialist_minus_gemma": {
+            "difference_points": 4.42431240193031,
+            "ci95": [
+              0.0390722320517569,
+              8.0908676589644
+            ],
+            "ci90": [
+              0.6867826378289977,
+              7.657099916245606
+            ],
+            "p": 0.17688231176882313,
+            "clusters": 264
+          }
+        },
+        "G1": {
+          "weighted": 0.7424967962138227,
+          "weighted_never_seen": 0.7423868312757202,
+          "in_scope_kept": 0.9743062692702981,
+          "out_of_scope_rejected": 0.24691358024691357,
+          "share_changed_vs_A": 0.04523026315789474,
+          "failed": 0,
+          "specialist_minus_gemma": {
+            "difference_points": 4.012874356599378,
+            "ci95": [
+              -1.184586603088509,
+              8.246334194145977
+            ],
+            "ci90": [
+              -0.4608753171724143,
+              7.806842908482905
+            ],
+            "p": 0.2983701629837016,
+            "clusters": 264
+          }
+        },
+        "G2": {
+          "weighted": 0.7408490139105647,
+          "weighted_never_seen": 0.7407407407407408,
+          "in_scope_kept": 0.9722507708119219,
+          "out_of_scope_rejected": 0.23045267489711935,
+          "share_changed_vs_A": 0.03289473684210526,
+          "failed": 0,
+          "specialist_minus_gemma": {
+            "difference_points": 4.177652586925169,
+            "ci95": [
+              -0.8244669173428304,
+              8.100622840263709
+            ],
+            "ci90": [
+              0.06999681458074246,
+              7.662603743143972
+            ],
+            "p": 0.2515748425157484,
+            "clusters": 264
+          }
+        }
+      },
+      "weighted_range_points": 0.4114380453309474,
+      "weighted_sd_points": 0.16907401228568722
+    }
+  },
+  "H": {
+    "gemma-4-31b": {
+      "banking77": {
+        "exact_share": 0.005,
+        "f1_own": 0.17914924035410304,
+        "f1_sibling": 0.07698498475511881,
+        "own_minus_sibling": {
+          "difference_points": 10.216425559898425,
+          "ci95": [
+            7.753822553486996,
+            12.803473560970913
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 73
+        },
+        "memorisation_indicated": false
+      },
+      "clinc150": {
+        "exact_share": 0.005,
+        "f1_own": 0.1393527914895562,
+        "f1_sibling": 0.06991038949881424,
+        "own_minus_sibling": {
+          "difference_points": 6.944240199074195,
+          "ci95": [
+            4.866196861836677,
+            9.167384614108332
+          ],
+          "p": 9.999000099990002e-05,
+          "clusters": 107
+        },
+        "memorisation_indicated": false
+      }
+    },
+    "qwen3.5-27b": {
+      "banking77": {
+        "exact_share": 0.0,
+        "f1_own": 0.07398404435933922,
+        "f1_sibling": 0.06732251562973186,
+        "own_minus_sibling": {
+          "difference_points": 0.6661528729607364,
+          "ci95": [
+            -0.1683281790241024,
+            1.5124227340089165
+          ],
+          "p": 0.1327867213278672,
+          "clusters": 73
+        },
+        "memorisation_indicated": false
+      },
+      "clinc150": {
+        "exact_share": 0.0,
+        "f1_own": 0.048167849874078655,
+        "f1_sibling": 0.04767176819498383,
+        "own_minus_sibling": {
+          "difference_points": 0.0496081679094829,
+          "ci95": [
+            -0.6374535641153969,
+            0.719864100892857
+          ],
+          "p": 0.8897110288971103,
+          "clusters": 107
+        },
+        "memorisation_indicated": false
+      }
+    }
+  }
+}

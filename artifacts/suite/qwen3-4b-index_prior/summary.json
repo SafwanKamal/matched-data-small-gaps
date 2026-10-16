@@ -1,0 +1,505 @@
+{
+  "protocol_id": "choice-suite-2026-10-08",
+  "system": "qwen3-4b-index_prior",
+  "datasets": {
+    "banking77_full": {
+      "n_options": 77,
+      "dev_n": 400,
+      "test_n": 3080,
+      "temperature": {
+        "temperature": 4.562279284159313,
+        "dev_nll": 2.561471665896335,
+        "dev_nll_at_1": 7.466188021559012,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.4811688311688312,
+        "brier": 0.6964631506572587,
+        "log_loss": 2.4589299233700057,
+        "ece": 0.04590770333954642,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.07597402597402597,
+        "selective_selected_n": 234,
+        "selective_confidence_threshold": 0.8184892496681505,
+        "aurc": 0.307489688445876,
+        "macro_f1": 0.46073485487027105,
+        "accuracy_ci": [
+          0.4642857142857143,
+          0.49902597402597404
+        ],
+        "brier_ci": [
+          0.6783984594665186,
+          0.71372258964951
+        ]
+      },
+      "unscaled": {
+        "n": 3080,
+        "accuracy": 0.4811688311688312,
+        "brier": 0.9510869968131244,
+        "log_loss": 7.204314771522299,
+        "ece": 0.4521756930768832,
+        "top_bin_mass": 0.7915584415584416,
+        "coverage_at_5pct_error": 0.014935064935064935,
+        "selective_selected_n": 46,
+        "selective_confidence_threshold": 0.999999998512741,
+        "aurc": 0.3328244476334109,
+        "macro_f1": 0.46073485487027105,
+        "accuracy_ci": [
+          0.4642857142857143,
+          0.49902597402597404
+        ],
+        "brier_ci": [
+          0.9184729782616604,
+          0.982476027187552
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 3080,
+        "p50_ms": 914.3671500060009,
+        "p95_ms": 934.5739500087802,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8411.87109375
+    },
+    "massive_en": {
+      "n_options": 60,
+      "dev_n": 2033,
+      "test_n": 2974,
+      "temperature": {
+        "temperature": 4.562222688686712,
+        "dev_nll": 1.8520262928739681,
+        "dev_nll_at_1": 5.740670470975383,
+        "n": 2033,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2974,
+        "accuracy": 0.5780094149293881,
+        "brier": 0.5787652405728243,
+        "log_loss": 1.902372220424248,
+        "ece": 0.05872324595147967,
+        "top_bin_mass": 0.02320107599193006,
+        "coverage_at_5pct_error": 0.003698722259583053,
+        "selective_selected_n": 11,
+        "selective_confidence_threshold": 0.957109848226774,
+        "aurc": 0.22679494878644665,
+        "macro_f1": 0.5046008261928436,
+        "accuracy_ci": [
+          0.5605245460659045,
+          0.595838937457969
+        ],
+        "brier_ci": [
+          0.5571706947877414,
+          0.6004245388859227
+        ]
+      },
+      "unscaled": {
+        "n": 2974,
+        "accuracy": 0.5780094149293881,
+        "brier": 0.7908281908499685,
+        "log_loss": 5.9047511090225475,
+        "ece": 0.38184502281935945,
+        "top_bin_mass": 0.8708809683927371,
+        "coverage_at_5pct_error": 0.006724949562878279,
+        "selective_selected_n": 20,
+        "selective_confidence_threshold": 0.9999999999089015,
+        "aurc": 0.22754746303246953,
+        "macro_f1": 0.5046008261928436,
+        "accuracy_ci": [
+          0.5605245460659045,
+          0.595838937457969
+        ],
+        "brier_ci": [
+          0.7573991649548688,
+          0.8257805959807865
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 2974,
+        "p50_ms": 570.3838499903213,
+        "p95_ms": 578.0763599934289,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8411.87109375
+    },
+    "clinc150": {
+      "n_options": 150,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 3.868028661785319,
+        "dev_nll": 2.583252065876154,
+        "dev_nll_at_1": 6.355104067519787,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.48633333333333334,
+        "brier": 0.6777916642925694,
+        "log_loss": 2.6673202368767734,
+        "ece": 0.030050217217030176,
+        "top_bin_mass": 0.004333333333333333,
+        "coverage_at_5pct_error": 0.02,
+        "selective_selected_n": 60,
+        "selective_confidence_threshold": 0.9076672882059376,
+        "aurc": 0.2786589080729845,
+        "macro_f1": 0.44163116498104976,
+        "accuracy_ci": [
+          0.4683333333333333,
+          0.5040083333333333
+        ],
+        "brier_ci": [
+          0.6603908355613242,
+          0.6956159468038423
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.48633333333333334,
+        "brier": 0.8899214068810596,
+        "log_loss": 6.478752189035745,
+        "ece": 0.404467390204639,
+        "top_bin_mass": 0.6916666666666667,
+        "coverage_at_5pct_error": 0.016,
+        "selective_selected_n": 48,
+        "selective_confidence_threshold": 0.999999991105286,
+        "aurc": 0.2818467911811596,
+        "macro_f1": 0.44163116498104976,
+        "accuracy_ci": [
+          0.4683333333333333,
+          0.5040083333333333
+        ],
+        "brier_ci": [
+          0.8598150325985547,
+          0.9209894882690999
+        ]
+      },
+      "out_of_scope_scaled": {
+        "n": 1000,
+        "mean_top_probability": 0.17614108928964936,
+        "share_at_or_above_0.9": 0.001,
+        "share_at_or_above_0.5": 0.084,
+        "in_scope_mean_top_probability": 0.4662035949469464,
+        "auroc_in_scope_vs_out_of_scope_by_confidence": 0.823511
+      },
+      "out_of_scope_unscaled": {
+        "n": 1000,
+        "mean_top_probability": 0.6908929041919216,
+        "share_at_or_above_0.9": 0.339,
+        "share_at_or_above_0.5": 0.706,
+        "in_scope_mean_top_probability": 0.8908007235379725,
+        "auroc_in_scope_vs_out_of_scope_by_confidence": 0.7607253333333334
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 3000,
+        "p50_ms": 3686.5261499915505,
+        "p95_ms": 3732.8431549845845,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8860.423828125
+    },
+    "emotion": {
+      "n_options": 6,
+      "dev_n": 400,
+      "test_n": 2000,
+      "temperature": {
+        "temperature": 9.831592227602549,
+        "dev_nll": 1.4528628930023586,
+        "dev_nll_at_1": 6.392127293076449,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2000,
+        "accuracy": 0.4965,
+        "brier": 0.6660870736503643,
+        "log_loss": 1.423527305247811,
+        "ece": 0.04724356857158995,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.38990380100285305,
+        "macro_f1": 0.4209726469885012,
+        "accuracy_ci": [
+          0.475,
+          0.5185
+        ],
+        "brier_ci": [
+          0.6482044743455665,
+          0.6840376791488301
+        ]
+      },
+      "unscaled": {
+        "n": 2000,
+        "accuracy": 0.4965,
+        "brier": 0.9356745181318694,
+        "log_loss": 6.168473049814387,
+        "ece": 0.45037040294143293,
+        "top_bin_mass": 0.8205,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.3888116526479788,
+        "macro_f1": 0.4209726469885012,
+        "accuracy_ci": [
+          0.475,
+          0.5185
+        ],
+        "brier_ci": [
+          0.8944794015687492,
+          0.9778357595923272
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 2000,
+        "p50_ms": 27.656649996060878,
+        "p95_ms": 28.46180498600006,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8860.423828125
+    },
+    "yahoo": {
+      "n_options": 10,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 7.712780489652299,
+        "dev_nll": 1.8122918097217078,
+        "dev_nll_at_1": 6.985345331615797,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.3903333333333333,
+        "brier": 0.7541729910552898,
+        "log_loss": 1.8432981921877174,
+        "ece": 0.06341361477464193,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.004,
+        "selective_selected_n": 12,
+        "selective_confidence_threshold": 0.7368937857143424,
+        "aurc": 0.42430564461319675,
+        "macro_f1": 0.35600439001777207,
+        "accuracy_ci": [
+          0.37266666666666665,
+          0.4073333333333333
+        ],
+        "brier_ci": [
+          0.7400793394407394,
+          0.7674295458369806
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.3903333333333333,
+        "brier": 1.1445610568459226,
+        "log_loss": 7.18197655428639,
+        "ece": 0.555034211869308,
+        "top_bin_mass": 0.8133333333333334,
+        "coverage_at_5pct_error": 0.008,
+        "selective_selected_n": 24,
+        "selective_confidence_threshold": 0.9999999967475417,
+        "aurc": 0.43432238059019335,
+        "macro_f1": 0.35600439001777207,
+        "accuracy_ci": [
+          0.37266666666666665,
+          0.4073333333333333
+        ],
+        "brier_ci": [
+          1.1124144330634502,
+          1.1774126004143493
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 3000,
+        "p50_ms": 83.52195000043139,
+        "p95_ms": 117.49607498641126,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8860.423828125
+    },
+    "anli_r3": {
+      "n_options": 3,
+      "dev_n": 400,
+      "test_n": 1200,
+      "temperature": {
+        "temperature": 14.740456838539574,
+        "dev_nll": 0.9772845587638761,
+        "dev_nll_at_1": 4.946766948619694,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 1200,
+        "accuracy": 0.49833333333333335,
+        "brier": 0.5913682255241601,
+        "log_loss": 0.9802169875131047,
+        "ece": 0.0399863848283824,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.0025,
+        "selective_selected_n": 3,
+        "selective_confidence_threshold": 0.7588556882047661,
+        "aurc": 0.4042571842417789,
+        "macro_f1": 0.4882766669370113,
+        "accuracy_ci": [
+          0.4708333333333333,
+          0.5258333333333334
+        ],
+        "brier_ci": [
+          0.5743598167576668,
+          0.6092354314015606
+        ]
+      },
+      "unscaled": {
+        "n": 1200,
+        "accuracy": 0.49833333333333335,
+        "brier": 0.9202599295656197,
+        "log_loss": 4.694512092226257,
+        "ece": 0.45058940787231616,
+        "top_bin_mass": 0.7991666666666667,
+        "coverage_at_5pct_error": 0.0025,
+        "selective_selected_n": 3,
+        "selective_confidence_threshold": 0.9999999999960474,
+        "aurc": 0.4072253393038654,
+        "macro_f1": 0.4882766669370113,
+        "accuracy_ci": [
+          0.4708333333333333,
+          0.5258333333333334
+        ],
+        "brier_ci": [
+          0.8685907192676565,
+          0.9743627054047052
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 1200,
+        "p50_ms": 33.570800005691126,
+        "p95_ms": 42.34231497393921,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8860.423828125
+    },
+    "boolq": {
+      "n_options": 2,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 3.844234591849312,
+        "dev_nll": 0.3497125878131436,
+        "dev_nll_at_1": 0.7369011071911532,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.8293333333333334,
+        "brier": 0.25285882686221717,
+        "log_loss": 0.4241958097976578,
+        "ece": 0.027395188080726957,
+        "top_bin_mass": 0.36666666666666664,
+        "coverage_at_5pct_error": 0.04066666666666666,
+        "selective_selected_n": 122,
+        "selective_confidence_threshold": 0.9927035129155644,
+        "aurc": 0.09633765769743383,
+        "macro_f1": 0.8241718793141422,
+        "accuracy_ci": [
+          0.816,
+          0.8423333333333334
+        ],
+        "brier_ci": [
+          0.23537983282956432,
+          0.270090382938291
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.8293333333333334,
+        "brier": 0.29847366858854374,
+        "log_loss": 1.0223978362889756,
+        "ece": 0.13940169507592548,
+        "top_bin_mass": 0.8666666666666667,
+        "coverage_at_5pct_error": 0.04066666666666666,
+        "selective_selected_n": 122,
+        "selective_confidence_threshold": 0.9999999937261435,
+        "aurc": 0.09633765769743383,
+        "macro_f1": 0.8241718793141422,
+        "accuracy_ci": [
+          0.816,
+          0.8423333333333334
+        ],
+        "brier_ci": [
+          0.27456560588211487,
+          0.3222761184304967
+        ]
+      },
+      "readout": "index_prior",
+      "n_truncated_test": 0,
+      "output_tokens": 0,
+      "latency": {
+        "n": 3000,
+        "p50_ms": 34.75135000189766,
+        "p95_ms": 57.432980004523415,
+        "note": "includes the first few calls; no separate warmup"
+      },
+      "peak_allocated_mib": 8860.423828125
+    }
+  }
+}

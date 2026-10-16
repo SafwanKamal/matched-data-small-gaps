@@ -1,0 +1,10 @@
+{"error": null, "latency_ms": 1828.1693999888375, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 584, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00012792, "id": "draw_2-in-2"}
+{"error": null, "latency_ms": 1825.305699981982, "text": "scope: yes\nintent: 14", "provider": "Alibaba", "prompt_tokens": 563, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000123825, "id": "draw_2-in-3"}
+{"error": null, "latency_ms": 1823.32480000332, "text": "scope: yes\nintent: 09", "provider": "Alibaba", "prompt_tokens": 597, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000130455, "id": "draw_2-in-4"}
+{"error": null, "latency_ms": 1943.4604999842122, "text": "scope: yes\nintent: 08", "provider": "Alibaba", "prompt_tokens": 626, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00013611, "id": "draw_2-in-5"}
+{"error": null, "latency_ms": 1899.4067999883555, "text": "scope: yes\nintent: 02", "provider": "Alibaba", "prompt_tokens": 576, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00012636, "id": "draw_2-in-6"}
+{"error": null, "latency_ms": 1772.1981999929994, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 629, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000136695, "id": "draw_2-out-6"}
+{"error": null, "latency_ms": 752.8873999835923, "text": "scope: yes\nintent: 18", "provider": "Alibaba", "prompt_tokens": 563, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000123825, "id": "draw_2-out-8"}
+{"error": null, "latency_ms": 1801.5242000110447, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 591, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000129285, "id": "draw_2-out-13"}
+{"error": null, "latency_ms": 1211.869699996896, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 558, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.00012285, "id": "draw_2-out-14"}
+{"error": null, "latency_ms": 749.5979999948759, "text": "scope: no\nintent: 00", "provider": "Alibaba", "prompt_tokens": 533, "cached_tokens": 0, "completion_tokens": 9, "cost": 0.000117975, "id": "draw_2-out-19"}

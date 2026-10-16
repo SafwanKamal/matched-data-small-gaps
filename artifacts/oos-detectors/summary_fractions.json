@@ -1,0 +1,260 @@
+{
+  "0.01": {
+    "train_rows": 98,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.79,
+        "session_success": 0.015,
+        "session_success_ci": [
+          0.005,
+          0.0275
+        ],
+        "scope_accuracy": 0.7205
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.855,
+        "session_success": 0.015,
+        "session_success_ci": [
+          0.005,
+          0.0275
+        ],
+        "scope_accuracy": 0.7935
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.60375,
+        "session_success": 0.005,
+        "session_success_ci": [
+          0.0,
+          0.0125
+        ],
+        "scope_accuracy": 0.6245
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.7575000000000001,
+        "session_success": 0.015,
+        "session_success_ci": [
+          0.005,
+          0.0275
+        ],
+        "scope_accuracy": 0.7345
+      }
+    },
+    "dev_selected": "energy",
+    "intent_ignoring_scope": 0.27050720100187853
+  },
+  "0.02": {
+    "train_rows": 186,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.73,
+        "session_success": 0.0075,
+        "session_success_ci": [
+          0.0,
+          0.0175
+        ],
+        "scope_accuracy": 0.776
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.8125,
+        "session_success": 0.0125,
+        "session_success_ci": [
+          0.0025,
+          0.025
+        ],
+        "scope_accuracy": 0.734
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.63375,
+        "session_success": 0.0075,
+        "session_success_ci": [
+          0.0,
+          0.0175
+        ],
+        "scope_accuracy": 0.784
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.78125,
+        "session_success": 0.0175,
+        "session_success_ci": [
+          0.005,
+          0.03
+        ],
+        "scope_accuracy": 0.7605
+      }
+    },
+    "dev_selected": "energy",
+    "intent_ignoring_scope": 0.33625547902316844
+  },
+  "0.05": {
+    "train_rows": 481,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.9175,
+        "session_success": 0.185,
+        "session_success_ci": [
+          0.1525,
+          0.2225
+        ],
+        "scope_accuracy": 0.8505
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.9675,
+        "session_success": 0.2175,
+        "session_success_ci": [
+          0.18,
+          0.25506249999999964
+        ],
+        "scope_accuracy": 0.9375
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.9412499999999999,
+        "session_success": 0.22,
+        "session_success_ci": [
+          0.1825,
+          0.26
+        ],
+        "scope_accuracy": 0.9315
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.9237500000000001,
+        "session_success": 0.175,
+        "session_success_ci": [
+          0.14,
+          0.21256249999999965
+        ],
+        "scope_accuracy": 0.886
+      }
+    },
+    "dev_selected": "energy",
+    "intent_ignoring_scope": 0.704445835942392
+  },
+  "0.1": {
+    "train_rows": 961,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.935,
+        "session_success": 0.4425,
+        "session_success_ci": [
+          0.3925,
+          0.4925
+        ],
+        "scope_accuracy": 0.926
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.98,
+        "session_success": 0.4875,
+        "session_success_ci": [
+          0.4375,
+          0.5375
+        ],
+        "scope_accuracy": 0.9585
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.96875,
+        "session_success": 0.495,
+        "session_success_ci": [
+          0.445,
+          0.5425
+        ],
+        "scope_accuracy": 0.9625
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.9624999999999999,
+        "session_success": 0.4025,
+        "session_success_ci": [
+          0.3525,
+          0.4525
+        ],
+        "scope_accuracy": 0.92
+      }
+    },
+    "dev_selected": "energy",
+    "intent_ignoring_scope": 0.8515967438948028
+  },
+  "0.2": {
+    "train_rows": 1922,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.92125,
+        "session_success": 0.5025,
+        "session_success_ci": [
+          0.4525,
+          0.55
+        ],
+        "scope_accuracy": 0.908
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.97125,
+        "session_success": 0.54,
+        "session_success_ci": [
+          0.4925,
+          0.5875
+        ],
+        "scope_accuracy": 0.9435
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.98125,
+        "session_success": 0.565,
+        "session_success_ci": [
+          0.5175,
+          0.6125
+        ],
+        "scope_accuracy": 0.9615
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.95375,
+        "session_success": 0.4625,
+        "session_success_ci": [
+          0.415,
+          0.5075
+        ],
+        "scope_accuracy": 0.9035
+      }
+    },
+    "dev_selected": "mahalanobis",
+    "intent_ignoring_scope": 0.8854101440200376
+  },
+  "0.5": {
+    "train_rows": 4801,
+    "detectors": {
+      "msp": {
+        "dev_balanced_accuracy": 0.955,
+        "session_success": 0.59,
+        "session_success_ci": [
+          0.5425,
+          0.635
+        ],
+        "scope_accuracy": 0.939
+      },
+      "energy": {
+        "dev_balanced_accuracy": 0.9924999999999999,
+        "session_success": 0.6825,
+        "session_success_ci": [
+          0.635,
+          0.7275
+        ],
+        "scope_accuracy": 0.9665
+      },
+      "mahalanobis": {
+        "dev_balanced_accuracy": 0.97875,
+        "session_success": 0.66,
+        "session_success_ci": [
+          0.615,
+          0.7025
+        ],
+        "scope_accuracy": 0.964
+      },
+      "knn": {
+        "dev_balanced_accuracy": 0.965,
+        "session_success": 0.635,
+        "session_success_ci": [
+          0.5875,
+          0.68
+        ],
+        "scope_accuracy": 0.948
+      }
+    },
+    "dev_selected": "energy",
+    "intent_ignoring_scope": 0.9298685034439574
+  }
+}

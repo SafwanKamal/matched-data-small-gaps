@@ -1,0 +1,426 @@
+{
+  "protocol_id": "readout-like-for-like-2026-10-11",
+  "system": "qwen3.5-4b-hosted_prompt",
+  "datasets": {
+    "boolq": {
+      "n_options": 2,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 1.5304773944463828,
+        "dev_nll": 0.2819642700591461,
+        "dev_nll_at_1": 0.31220498498541466,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.8763333333333333,
+        "brier": 0.18754304082456685,
+        "log_loss": 0.31970090761422176,
+        "ece": 0.022100023667047622,
+        "top_bin_mass": 0.547,
+        "coverage_at_5pct_error": 0.6366666666666667,
+        "selective_selected_n": 1910,
+        "selective_confidence_threshold": 0.9077836029705328,
+        "aurc": 0.05084919426341471,
+        "macro_f1": 0.8715829142278861,
+        "accuracy_ci": [
+          0.8646666666666667,
+          0.8876666666666667
+        ],
+        "brier_ci": [
+          0.17266350303147765,
+          0.20330894277339312
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.8763333333333333,
+        "brier": 0.1939625206484413,
+        "log_loss": 0.36765011376678286,
+        "ece": 0.05474555315348139,
+        "top_bin_mass": 0.7296666666666667,
+        "coverage_at_5pct_error": 0.6366666666666667,
+        "selective_selected_n": 1910,
+        "selective_confidence_threshold": 0.9706877660157724,
+        "aurc": 0.0508462371018782,
+        "macro_f1": 0.8715829142278861,
+        "accuracy_ci": [
+          0.8646666666666667,
+          0.8876666666666667
+        ],
+        "brier_ci": [
+          0.1771281551690357,
+          0.21191300919067732
+        ]
+      },
+      "readout": "top-k tree from local softmax, hosted prompt",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 3000,
+          "unscorable": 0
+        }
+      }
+    },
+    "anli_r3": {
+      "n_options": 3,
+      "dev_n": 400,
+      "test_n": 1200,
+      "temperature": {
+        "temperature": 2.4644552587427655,
+        "dev_nll": 0.9508160362475693,
+        "dev_nll_at_1": 1.1192336070053754,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 1200,
+        "accuracy": 0.525,
+        "brier": 0.5679649419812821,
+        "log_loss": 0.9358662682774175,
+        "ece": 0.01884130680909128,
+        "top_bin_mass": 0.0,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.36265547577832946,
+        "macro_f1": 0.5222858274113864,
+        "accuracy_ci": [
+          0.49583333333333335,
+          0.5525208333333332
+        ],
+        "brier_ci": [
+          0.5522335291609911,
+          0.5839059675871572
+        ]
+      },
+      "unscaled": {
+        "n": 1200,
+        "accuracy": 0.525,
+        "brier": 0.6154750629241984,
+        "log_loss": 1.044361998341224,
+        "ece": 0.1603872183323001,
+        "top_bin_mass": 0.07833333333333334,
+        "coverage_at_5pct_error": 0.0,
+        "selective_selected_n": 0,
+        "selective_confidence_threshold": null,
+        "aurc": 0.37333110968446326,
+        "macro_f1": 0.5222858274113864,
+        "accuracy_ci": [
+          0.49583333333333335,
+          0.5525208333333332
+        ],
+        "brier_ci": [
+          0.5862105761662554,
+          0.6458233037951585
+        ]
+      },
+      "readout": "top-k tree from local softmax, hosted prompt",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 1200,
+          "unscorable": 0
+        }
+      }
+    },
+    "emotion": {
+      "n_options": 6,
+      "dev_n": 400,
+      "test_n": 2000,
+      "temperature": {
+        "temperature": 2.7883313174199387,
+        "dev_nll": 1.3302877786048832,
+        "dev_nll_at_1": 1.8960177409713972,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2000,
+        "accuracy": 0.5395,
+        "brier": 0.6088184614348128,
+        "log_loss": 1.3090040919001567,
+        "ece": 0.035153976479720385,
+        "top_bin_mass": 0.0025,
+        "coverage_at_5pct_error": 0.0215,
+        "selective_selected_n": 43,
+        "selective_confidence_threshold": 0.8961467026385044,
+        "aurc": 0.2766226397400313,
+        "macro_f1": 0.47416155111034625,
+        "accuracy_ci": [
+          0.5185,
+          0.5620125
+        ],
+        "brier_ci": [
+          0.5902887151776391,
+          0.6284307546526973
+        ]
+      },
+      "unscaled": {
+        "n": 2000,
+        "accuracy": 0.5395,
+        "brier": 0.694508329709194,
+        "log_loss": 1.8330211247782349,
+        "ece": 0.24394578982949178,
+        "top_bin_mass": 0.3935,
+        "coverage_at_5pct_error": 0.0255,
+        "selective_selected_n": 51,
+        "selective_confidence_threshold": 0.9997528359432409,
+        "aurc": 0.27938663665186075,
+        "macro_f1": 0.47416155111034625,
+        "accuracy_ci": [
+          0.5185,
+          0.5620125
+        ],
+        "brier_ci": [
+          0.6623394861349011,
+          0.7283110116661052
+        ]
+      },
+      "readout": "top-k tree from local softmax, hosted prompt",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 2000,
+          "unscorable": 0
+        }
+      }
+    },
+    "yahoo": {
+      "n_options": 10,
+      "dev_n": 400,
+      "test_n": 3000,
+      "temperature": {
+        "temperature": 2.0527518064263455,
+        "dev_nll": 1.0826318433019195,
+        "dev_nll_at_1": 1.4331107420944091,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3000,
+        "accuracy": 0.6856666666666666,
+        "brier": 0.45969980878833255,
+        "log_loss": 1.15056014994332,
+        "ece": 0.03531246635609537,
+        "top_bin_mass": 0.13366666666666666,
+        "coverage_at_5pct_error": 0.17333333333333334,
+        "selective_selected_n": 520,
+        "selective_confidence_threshold": 0.9230506855810542,
+        "aurc": 0.14196906235465168,
+        "macro_f1": 0.6679611906507996,
+        "accuracy_ci": [
+          0.6696666666666666,
+          0.7023333333333334
+        ],
+        "brier_ci": [
+          0.43930594068197837,
+          0.47963840218850484
+        ]
+      },
+      "unscaled": {
+        "n": 3000,
+        "accuracy": 0.6856666666666666,
+        "brier": 0.5040535607708195,
+        "log_loss": 1.5771182812944784,
+        "ece": 0.17967421282405832,
+        "top_bin_mass": 0.6316666666666667,
+        "coverage_at_5pct_error": 0.16533333333333333,
+        "selective_selected_n": 496,
+        "selective_confidence_threshold": 0.998682090819505,
+        "aurc": 0.14043490281965343,
+        "macro_f1": 0.6679611906507996,
+        "accuracy_ci": [
+          0.6696666666666666,
+          0.7023333333333334
+        ],
+        "brier_ci": [
+          0.47763374464473307,
+          0.5306205536970772
+        ]
+      },
+      "readout": "top-k tree from local softmax, hosted prompt",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "unscorable": 0
+        },
+        "test": {
+          "n": 3000,
+          "unscorable": 0
+        }
+      }
+    },
+    "massive_en": {
+      "n_options": 60,
+      "dev_n": 2033,
+      "test_n": 2974,
+      "temperature": {
+        "temperature": 1.4310762435547264,
+        "dev_nll": 1.691079439106761,
+        "dev_nll_at_1": 1.8470092138432603,
+        "n": 2033,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 2974,
+        "accuracy": 0.6294552790854069,
+        "brier": 0.5017067698836634,
+        "log_loss": 1.7615947796058313,
+        "ece": 0.046754001475202894,
+        "top_bin_mass": 0.15097511768661734,
+        "coverage_at_5pct_error": 0.24915938130464022,
+        "selective_selected_n": 741,
+        "selective_confidence_threshold": 0.8836392865204467,
+        "aurc": 0.13782546548605237,
+        "macro_f1": 0.6550104439458593,
+        "accuracy_ci": [
+          0.6119704102219233,
+          0.6466039004707465
+        ],
+        "brier_ci": [
+          0.48270592019133485,
+          0.5198128264986289
+        ]
+      },
+      "unscaled": {
+        "n": 2974,
+        "accuracy": 0.6294552790854069,
+        "brier": 0.5255116895647559,
+        "log_loss": 1.9309369541312675,
+        "ece": 0.12333602204315812,
+        "top_bin_mass": 0.3890383322125084,
+        "coverage_at_5pct_error": 0.2703429724277068,
+        "selective_selected_n": 804,
+        "selective_confidence_threshold": 0.9754288133080647,
+        "aurc": 0.14142347322061055,
+        "macro_f1": 0.6550104439458593,
+        "accuracy_ci": [
+          0.6119704102219233,
+          0.6466039004707465
+        ],
+        "brier_ci": [
+          0.5024333323512288,
+          0.548319095218368
+        ]
+      },
+      "readout": "top-k tree from local softmax, hosted prompt",
+      "failures": {
+        "dev": {
+          "n": 2033,
+          "unscorable": 13
+        },
+        "test": {
+          "n": 2974,
+          "unscorable": 16
+        }
+      }
+    },
+    "banking77_full": {
+      "n_options": 77,
+      "dev_n": 400,
+      "test_n": 3080,
+      "temperature": {
+        "temperature": 1.2778081280325748,
+        "dev_nll": 1.6797649467492917,
+        "dev_nll_at_1": 1.7620618060779296,
+        "n": 400,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "at_lower_bound": false,
+        "at_upper_bound": false
+      },
+      "scaled": {
+        "n": 3080,
+        "accuracy": 0.685064935064935,
+        "brier": 0.46173396299882885,
+        "log_loss": 1.6794162832631296,
+        "ece": 0.05079727810334677,
+        "top_bin_mass": 0.19675324675324676,
+        "coverage_at_5pct_error": 0.2470779220779221,
+        "selective_selected_n": 761,
+        "selective_confidence_threshold": 0.9103285389654888,
+        "aurc": 0.12251877321536202,
+        "macro_f1": 0.680540992972213,
+        "accuracy_ci": [
+          0.6694805194805195,
+          0.7009821428571429
+        ],
+        "brier_ci": [
+          0.44339763172333313,
+          0.48007713603892693
+        ]
+      },
+      "unscaled": {
+        "n": 3080,
+        "accuracy": 0.685064935064935,
+        "brier": 0.4653283499609203,
+        "log_loss": 1.7427225390964893,
+        "ece": 0.08006906177068446,
+        "top_bin_mass": 0.4022727272727273,
+        "coverage_at_5pct_error": 0.23766233766233766,
+        "selective_selected_n": 732,
+        "selective_confidence_threshold": 0.981529671924778,
+        "aurc": 0.1231280736469178,
+        "macro_f1": 0.680540992972213,
+        "accuracy_ci": [
+          0.6694805194805195,
+          0.7009821428571429
+        ],
+        "brier_ci": [
+          0.4433608274277315,
+          0.48715564708965947
+        ]
+      },
+      "readout": "top-k tree from local softmax, hosted prompt",
+      "failures": {
+        "dev": {
+          "n": 400,
+          "unscorable": 1
+        },
+        "test": {
+          "n": 3080,
+          "unscorable": 1
+        }
+      }
+    }
+  }
+}

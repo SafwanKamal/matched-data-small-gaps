@@ -1,0 +1,10 @@
+{"error": null, "latency_ms": 1421.9395999971312, "text": "scope: yes\nintent: 03", "provider": "Novita", "prompt_tokens": 616, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.024e-05, "id": "draw_3-in-0"}
+{"error": null, "latency_ms": 1025.794599991059, "text": "scope: yes\nintent: 15", "provider": "Novita", "prompt_tokens": 620, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.08e-05, "id": "draw_3-in-2"}
+{"error": null, "latency_ms": 1113.386300014099, "text": "scope: yes\nintent: 10", "provider": "Novita", "prompt_tokens": 636, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.304e-05, "id": "draw_3-in-3"}
+{"error": null, "latency_ms": 1275.3824000246823, "text": "scope: yes\nintent: 09", "provider": "Novita", "prompt_tokens": 648, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.472e-05, "id": "draw_3-in-4"}
+{"error": null, "latency_ms": 1445.744199998444, "text": "scope: yes\nintent: 02", "provider": "Novita", "prompt_tokens": 602, "cached_tokens": 0, "completion_tokens": 10, "cost": 8.828e-05, "id": "draw_3-in-5"}
+{"error": null, "latency_ms": 721.7679999885149, "text": "scope: no\nintent: 00", "provider": "Novita", "prompt_tokens": 596, "cached_tokens": 0, "completion_tokens": 10, "cost": 8.744e-05, "id": "draw_3-out-0"}
+{"error": null, "latency_ms": 1248.5581999935675, "text": "scope: no\nintent: 00", "provider": "Novita", "prompt_tokens": 669, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.766e-05, "id": "draw_3-out-1"}
+{"error": null, "latency_ms": 1076.2881999835372, "text": "scope: no\nintent: 00", "provider": "Novita", "prompt_tokens": 631, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.234e-05, "id": "draw_3-out-2"}
+{"error": null, "latency_ms": 847.499900002731, "text": "scope: no\nintent: 00", "provider": "Novita", "prompt_tokens": 624, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.136e-05, "id": "draw_3-out-3"}
+{"error": null, "latency_ms": 1855.256000009831, "text": "scope: no\nintent: 00", "provider": "Novita", "prompt_tokens": 621, "cached_tokens": 0, "completion_tokens": 10, "cost": 9.094e-05, "id": "draw_3-out-5"}

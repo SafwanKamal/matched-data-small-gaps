@@ -1,0 +1,431 @@
+{
+  "protocol_id": "workflow-v2-model-orchestrator-2026-10-11",
+  "policies": {
+    "orchestrator_with_confidence": {
+      "node_accuracy": {
+        "scope": 0.9905,
+        "intent": 0.9054477144646211,
+        "repeat": 0.9440267335004177
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9989733059548255,
+        "an_intent_wrong": 0.7040358744394619
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 974,
+        "an_intent_wrong": 223
+      },
+      "turn_success": 0.906,
+      "turn_success_ci": [
+        0.8905000000000001,
+        0.92
+      ],
+      "session_success": 0.6675,
+      "session_success_ci": [
+        0.6225,
+        0.7125
+      ],
+      "jev_requests_per_session": 0.02,
+      "jev_input_tokens_per_session": 19.4675,
+      "share_of_turns_escalated": 0.0145,
+      "action_shares": {
+        "1": 0.79,
+        "2": 0.0105,
+        "3": 0.004,
+        "4": 0.1955
+      },
+      "decoder_calls_per_session": 0.0525,
+      "action4_precision": 0.9846547314578005,
+      "action4_recall": 0.9553349875930521,
+      "accepted_encoder_right": 0.9075949367088607
+    },
+    "orchestrator_with_confidence__matched_threshold": {
+      "node_accuracy": {
+        "scope": 0.9175,
+        "intent": 0.878522229179712,
+        "repeat": 0.8788638262322472
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9889867841409692,
+        "an_intent_wrong": 0.532871972318339
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 908,
+        "an_intent_wrong": 289
+      },
+      "turn_success": 0.8515,
+      "turn_success_ci": [
+        0.8335000000000001,
+        0.8680000000000001
+      ],
+      "session_success": 0.4925,
+      "session_success_ci": [
+        0.445,
+        0.5425
+      ],
+      "jev_requests_per_session": 0.02,
+      "jev_input_tokens_per_session": 19.365,
+      "share_of_turns_escalated": 0.0145,
+      "action_shares": {
+        "1": 0.7755,
+        "2": 0.0105,
+        "3": 0.004,
+        "4": 0.21
+      },
+      "decoder_calls_per_session": 0.0525,
+      "action4_precision": 0.75,
+      "action4_recall": 0.7816377171215881,
+      "accepted_encoder_right": 0.903932946486138
+    },
+    "orchestrator_labels_only": {
+      "node_accuracy": {
+        "scope": 0.9835,
+        "intent": 0.8960551033187226,
+        "repeat": 0.9365079365079365
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9978991596638656,
+        "an_intent_wrong": 0.6979591836734694
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 952,
+        "an_intent_wrong": 245
+      },
+      "turn_success": 0.897,
+      "turn_success_ci": [
+        0.8809999999999999,
+        0.9119999999999999
+      ],
+      "session_success": 0.635,
+      "session_success_ci": [
+        0.59,
+        0.68
+      ],
+      "jev_requests_per_session": 0.0425,
+      "jev_input_tokens_per_session": 41.4175,
+      "share_of_turns_escalated": 0.028,
+      "action_shares": {
+        "1": 0.7815,
+        "2": 0.0195,
+        "3": 0.0085,
+        "4": 0.1905
+      },
+      "decoder_calls_per_session": 0.0975,
+      "action4_precision": 0.9711286089238845,
+      "action4_recall": 0.9181141439205955,
+      "accepted_encoder_right": 0.9021113243761996
+    },
+    "orchestrator_labels_only__matched_threshold": {
+      "node_accuracy": {
+        "scope": 0.9175,
+        "intent": 0.878522229179712,
+        "repeat": 0.8788638262322472
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9889867841409692,
+        "an_intent_wrong": 0.532871972318339
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 908,
+        "an_intent_wrong": 289
+      },
+      "turn_success": 0.8515,
+      "turn_success_ci": [
+        0.8335000000000001,
+        0.8680000000000001
+      ],
+      "session_success": 0.4925,
+      "session_success_ci": [
+        0.445,
+        0.5425
+      ],
+      "jev_requests_per_session": 0.0425,
+      "jev_input_tokens_per_session": 41.2575,
+      "share_of_turns_escalated": 0.028,
+      "action_shares": {
+        "1": 0.7755,
+        "2": 0.0195,
+        "3": 0.0085,
+        "4": 0.1965
+      },
+      "decoder_calls_per_session": 0.0975,
+      "action4_precision": 0.7353689567430025,
+      "action4_recall": 0.71712158808933,
+      "accepted_encoder_right": 0.903932946486138
+    },
+    "orchestrator_message_only": {
+      "node_accuracy": {
+        "scope": 0.928,
+        "intent": 0.8378209142141515,
+        "repeat": 0.8663324979114453
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9964071856287425,
+        "an_intent_wrong": 0.5662983425414365
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 835,
+        "an_intent_wrong": 362
+      },
+      "turn_success": 0.837,
+      "turn_success_ci": [
+        0.8180000000000001,
+        0.8554999999999999
+      ],
+      "session_success": 0.4875,
+      "session_success_ci": [
+        0.44,
+        0.5375624999999996
+      ],
+      "jev_requests_per_session": 0.0475,
+      "jev_input_tokens_per_session": 46.155,
+      "share_of_turns_escalated": 0.018,
+      "action_shares": {
+        "1": 0.7425,
+        "2": 0.0085,
+        "3": 0.0095,
+        "4": 0.2395
+      },
+      "decoder_calls_per_session": 0.0425,
+      "action4_precision": 0.7536534446764092,
+      "action4_recall": 0.8957816377171216,
+      "accepted_encoder_right": 0.8915824915824916
+    },
+    "orchestrator_message_only__matched_threshold": {
+      "node_accuracy": {
+        "scope": 0.9175,
+        "intent": 0.878522229179712,
+        "repeat": 0.8788638262322472
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9889867841409692,
+        "an_intent_wrong": 0.532871972318339
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 908,
+        "an_intent_wrong": 289
+      },
+      "turn_success": 0.8515,
+      "turn_success_ci": [
+        0.8335000000000001,
+        0.8680000000000001
+      ],
+      "session_success": 0.4925,
+      "session_success_ci": [
+        0.445,
+        0.5425
+      ],
+      "jev_requests_per_session": 0.0475,
+      "jev_input_tokens_per_session": 46.11,
+      "share_of_turns_escalated": 0.018,
+      "action_shares": {
+        "1": 0.7755,
+        "2": 0.0085,
+        "3": 0.0095,
+        "4": 0.2065
+      },
+      "decoder_calls_per_session": 0.0425,
+      "action4_precision": 0.7457627118644068,
+      "action4_recall": 0.7642679900744417,
+      "accepted_encoder_right": 0.903932946486138
+    }
+  },
+  "from_workflow_v1": {
+    "encoder_typed_state": {
+      "node_accuracy": {
+        "scope": 0.917,
+        "intent": 0.8778960551033187,
+        "repeat": 0.8780284043441938
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9889746416758545,
+        "an_intent_wrong": 0.5310344827586206
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 907,
+        "an_intent_wrong": 290
+      },
+      "turn_success": 0.851,
+      "turn_success_ci": [
+        0.8330000000000001,
+        0.868
+      ],
+      "session_success": 0.4925,
+      "session_success_ci": [
+        0.445,
+        0.5425
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.0
+    },
+    "decoder_typed_state": {
+      "node_accuracy": {
+        "scope": 0.9145,
+        "intent": 0.8810269254852849,
+        "repeat": 0.8713450292397661
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 1.0,
+        "an_intent_wrong": 0.44
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 922,
+        "an_intent_wrong": 275
+      },
+      "turn_success": 0.8835,
+      "turn_success_ci": [
+        0.867,
+        0.899
+      ],
+      "session_success": 0.58,
+      "session_success_ci": [
+        0.53,
+        0.6275
+      ],
+      "jev_requests_per_session": 0.0,
+      "jev_input_tokens_per_session": 0.0,
+      "share_of_turns_escalated": 0.0
+    },
+    "encoder_then_decoder": null,
+    "encoder_then_jev": {
+      "node_accuracy": {
+        "scope": 0.9775,
+        "intent": 0.876017532874139,
+        "repeat": 0.924812030075188
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9977973568281938,
+        "an_intent_wrong": 0.6955017301038062
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 908,
+        "an_intent_wrong": 289
+      },
+      "turn_success": 0.874,
+      "turn_success_ci": [
+        0.8565,
+        0.8900125
+      ],
+      "session_success": 0.5775,
+      "session_success_ci": [
+        0.5325,
+        0.6250624999999996
+      ],
+      "jev_requests_per_session": 2.0325,
+      "jev_input_tokens_per_session": 1979.2175,
+      "share_of_turns_escalated": 0.4065
+    },
+    "decoder_then_jev": {
+      "node_accuracy": {
+        "scope": 0.981,
+        "intent": 0.8922980588603632,
+        "repeat": 0.9281537176274018
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9978880675818373,
+        "an_intent_wrong": 0.664
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 947,
+        "an_intent_wrong": 250
+      },
+      "turn_success": 0.886,
+      "turn_success_ci": [
+        0.8684999999999999,
+        0.902
+      ],
+      "session_success": 0.61,
+      "session_success_ci": [
+        0.5625,
+        0.6575
+      ],
+      "jev_requests_per_session": 1.8975,
+      "jev_input_tokens_per_session": 1847.93,
+      "share_of_turns_escalated": 0.3795
+    },
+    "jev_typed_state": {
+      "node_accuracy": {
+        "scope": 0.9565,
+        "intent": 0.7614276768941766,
+        "repeat": 0.8705096073517126
+      },
+      "node_n": {
+        "scope": 2000,
+        "intent": 1597,
+        "repeat": 1197
+      },
+      "repeat_accuracy_by_dependency": {
+        "both_intents_right": 0.9971550497866287,
+        "an_intent_wrong": 0.6902834008097166
+      },
+      "repeat_n_by_dependency": {
+        "both_intents_right": 703,
+        "an_intent_wrong": 494
+      },
+      "turn_success": 0.7815,
+      "turn_success_ci": [
+        0.7585,
+        0.8015000000000001
+      ],
+      "session_success": 0.365,
+      "session_success_ci": [
+        0.3225,
+        0.4125
+      ],
+      "jev_requests_per_session": 5.0,
+      "jev_input_tokens_per_session": 4871.5575,
+      "share_of_turns_escalated": 0.0
+    }
+  }
+}

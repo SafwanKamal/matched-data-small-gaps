@@ -1,0 +1,129 @@
+{
+  "protocol_id": "massive-robustness-2026-10-16",
+  "status": "FROZEN before any training, request or scoring; approved by the owner on 2026-10-16 (with the Jev arms)",
+  "role": "the MASSIVE robustness run of docs/reviews/round3/synthesis.md section 6 (priority 2): do the confirmatory MASSIVE findings survive other held-out-domain draws, and does a deployable version of the 'rows' effect exist?",
+  "findings_under_test": {
+    "F1": "the specialist's lead over Gemma on MASSIVE (+4.4 weighted points, not significant; +6.1 without general quirky, post hoc)",
+    "F2": "Gemma rejects few held-out-domain requests without out-of-scope rows (23%; 5% of play)",
+    "F3": "labelled out-of-scope rows in the retrieval pool raise Gemma's rejection (23 to 91%, +13.3 weighted), but those rows came from the same domains as the test out-of-scope turns",
+    "F4": "an explicit scope instruction was never tried on MASSIVE"
+  },
+  "status_of_results": "SENSITIVITY ANALYSIS, not confirmatory: MASSIVE has no unused in-scope test items left, so the new draws reuse test utterances that earlier runs used (as in-scope or out-of-scope turns under other label sets). Results are reported as such and never pooled with the confirmatory family.",
+  "seed": 20261018,
+  "draws": {
+    "rule": "for k = 0, 1, 2, ...: numpy default_rng(20261018 + k).choice(eligible, 6, replace=False), eligible = the 16 MASSIVE domains other than general and qa; the first three are the test out-of-scope domains (T), the last three the rows-source domains (R); a draw is skipped if T equals the confirmatory draw {email, iot, play} or an earlier T. The first three accepted draws are used. Computed while writing this file (design only, no scoring):",
+    "draw_1": {
+      "T": [
+        "alarm",
+        "play",
+        "social"
+      ],
+      "R": [
+        "email",
+        "lists",
+        "music"
+      ],
+      "labels_kept": 39
+    },
+    "draw_2": {
+      "T": [
+        "calendar",
+        "iot",
+        "play"
+      ],
+      "R": [
+        "cooking",
+        "music",
+        "recommendation"
+      ],
+      "labels_kept": 34
+    },
+    "draw_3": {
+      "T": [
+        "audio",
+        "takeaway",
+        "weather"
+      ],
+      "R": [
+        "iot",
+        "news",
+        "play"
+      ],
+      "labels_kept": 38
+    },
+    "label_set": "the labels of the 12 domains in neither T nor R; both T and R are out of scope for every system in that draw"
+  },
+  "items_per_draw": {
+    "in_scope": "1,000 test utterances of the kept domains, drawn with the draw's seed",
+    "out_of_scope": "250 test utterances of the T domains, drawn with the draw's seed",
+    "text": "normalised as in confirmatory_protocol.json (lower-case, punctuation other than apostrophes removed)",
+    "unit": "single turns (no sessions); the endpoint is turn-level",
+    "frozen": "artifacts/massive-robustness/items.json, SHA-256 88e6051264a41e8a19782cb16331aec27642076c76714c3fcb36e65b4f06611c (each draw: 1,000 in-scope / 250 out-of-scope; train 7,532 / 6,704 / 7,745 rows; dev 400 / 100; rows 250 + 250)"
+  },
+  "systems": {
+    "specialist": "150M Ettin encoder retrained per draw on the kept domains' training rows (normalised), learning rate 2e-4, 6 epochs, seeds 20261007, 20261015, 20261016; temperature on 400 kept-domain dev items; dev-selected detector with the prior-weighted threshold using 100 dev items of the T domains (the same asymmetry as the confirmatory run, stated)",
+    "gemma-4-31b": {
+      "provider": "Novita"
+    },
+    "qwen3.5-27b": {
+      "provider": "Alibaba"
+    },
+    "jev-1.13.0": "optional, the same arms through Jev's interface (TypeSafe key)",
+    "prompt": "the workflow_massive zero-shot system prompt with the draw's labels; user message with 20 BM25 neighbours as in the confirmatory run"
+  },
+  "pool_arms": {
+    "no_rows": "kept-domain training rows only (the confirmatory primary condition)",
+    "same_source_rows": "plus 250 training rows of the T domains with the out-of-scope code (as run C: rows from the domains that are tested)",
+    "cross_source_rows": "plus 250 training rows of the R domains with the out-of-scope code (deployment-realistic: examples of some unsupported requests, not of the future ones)",
+    "instruction": "no_rows pool, with the run D instruction sentence adapted to the skill list added to the system prompt (Gemma and Qwen)"
+  },
+  "original_draw_arm": "the instruction arm for Gemma and Qwen on the 1,216 confirmatory MASSIVE turns (email, iot, play held out), paired with runs A and B; no rows arms here because the original label set has no second held-out source",
+  "hypotheses": {
+    "M1_specialist_vs_gemma": "per draw, specialist minus Gemma (no rows) in weighted turn accuracy; two-sided weighted sign-flip clustered by intent; reported per draw and as the count of draws with the confirmatory sign (+); no Holm claim (sensitivity)",
+    "M2_gemma_rejection": "Gemma's held-out rejection without rows per draw and per T domain (descriptive)",
+    "M3_same_source_rows": "Gemma and Qwen, same_source_rows minus no_rows, weighted accuracy, one-sided; 3 draws x 2 models, Holm",
+    "M4_cross_source_rows": "Gemma and Qwen, cross_source_rows minus no_rows, held-out rejection and weighted accuracy, one-sided; 3 draws x 2 models = 6 tests on weighted accuracy, Holm. This is the main question of the run.",
+    "M5_instruction": "Gemma and Qwen, instruction minus no_rows, weighted accuracy, one-sided; on the original draw (2 tests) and on the 3 new draws (6 tests), Holm over 8",
+    "also_reported": "in-scope kept, held-out rejected and intent accuracy for every arm; the post hoc signal-detection c and d' per arm"
+  },
+  "outcome_sentences": {
+    "M1 same sign in 3 of 3": "On three further held-out-domain draws the specialist stays ahead of Gemma on MASSIVE ({values}).",
+    "M1 mixed": "On further held-out-domain draws the specialist-minus-Gemma difference on MASSIVE changes sign ({values}): the confirmatory MASSIVE result depends on which domains are held out.",
+    "M4 significant": "Labelled examples of unrelated unsupported domains raise the general model's accuracy by {d} points: out-of-scope examples help beyond the domains they come from.",
+    "M4 not significant": "Labelled examples of other unsupported domains do not help; the +13-point rows effect of the confirmatory run required examples of the very domains being tested.",
+    "M5 significant": "One scope sentence raises the general model's accuracy on MASSIVE by {d} points.",
+    "M5 not significant": "A scope sentence does not repair the general model's acceptance of sibling-domain requests on MASSIVE."
+  },
+  "cost": {
+    "basis": "measured per-turn cost on the confirmatory MASSIVE turns: Gemma 0.094e-3, Qwen 0.139e-3 USD; rows arms have the same prompt length",
+    "per_draw": "1,250 items x (Gemma 4 arms + Qwen 4 arms) = 10,000 calls, about 1.17 USD",
+    "new_draws": 3.5,
+    "original_draw_instruction": 0.28,
+    "check": 0.03,
+    "total_estimate_usd": 3.8,
+    "run_cap_usd": 5.0,
+    "jev_optional": "about 15,000 requests, roughly 0.5 to 1.5 USD on the TypeSafe key",
+    "gpu": "9 specialist trainings (3 draws x 3 seeds), about 1-2 minutes each; one GPU job at a time",
+    "budget": "spent before 68.36 of the 80 USD cap; remaining after this run about 7.8",
+    "check_cap_usd": 0.1,
+    "per_model_process_cap_usd": 3.0
+  },
+  "code": "src/bakeoff/massive_robustness.py (stages build, train, check, hosted <model>, jev_check, jev, analyze); runner scripts/run_massive_robustness.sh",
+  "limits": "Items reuse MASSIVE test utterances (sensitivity, not confirmatory). Three draws of three domains each; play is a test domain in two draws and a rows source in one. 250 out-of-scope items per draw give wide intervals on rejection by domain.",
+  "models": {
+    "gemma-4-31b": {
+      "model": "google/gemma-4-31b-it",
+      "provider": "Novita",
+      "reasoning_off": true
+    },
+    "qwen3.5-27b": {
+      "model": "qwen/qwen3.5-27b",
+      "provider": "Alibaba",
+      "reasoning_off": true
+    }
+  },
+  "jev": "jev-1.13.0 through Jev's interface (jev_rerun_protocol.json conventions): retrieval state with label names; rows labelled 'out of scope' in the state; the instruction arm appends the scope instruction to Jev's scope question; scope at probability 0.5; included at the owner's request (2026-10-16)",
+  "execution": "one process per general model and one for Jev, in parallel (different hosts); each process has its own cap (3 USD) and the total stays below run_cap_usd by the estimate; spend reconciled from saved rows afterwards",
+  "instruction_text": "The labelled examples show only supported skills. A message that resembles them but asks for something none of the skills covers is out of scope: answer scope: no. (added to the first line of the system prompt)",
+  "tests_note": "M3-M5 one-sided p-values are half the two-sided sign-flip p in the predicted direction (symmetric null); Holm within each family over the general models; Jev reported beside them, outside the families"
+}

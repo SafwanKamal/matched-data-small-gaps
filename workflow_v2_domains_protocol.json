@@ -1,0 +1,21 @@
+{
+  "protocol_id": "workflow-v2-orchestrator-other-domains-2026-10-14",
+  "role": "replication: does the local 9B orchestrator over the specialist hold up on MASSIVE and CLINC150?",
+  "claim": "On Banking77 the local 4-bit Qwen3.5 9B orchestrator, routing each turn while seeing the retrained encoder's top three guesses with probabilities, reached 78.0% of sessions with no API call (section 3.31), level with a hosted 31B model using full-data retrieval. That result rests on one domain, and on the sessions the orchestrator prompt was written for. This protocol runs the same orchestrator, readout, variants and action set on the MASSIVE and CLINC150 workflows, with the prompt changed only where it names the domain. Written before the orchestrator saw any turn of these two workflows.",
+  "orchestrator": "as workflow_v2_protocol.json: Qwen3.5-9B, 4-bit, thinking off, answer prefilled with 'Action: [', argmax over the next-token probabilities of the digits 1 to 4, current message only",
+  "variants": ["orchestrator_with_confidence", "orchestrator_labels_only", "orchestrator_message_only"],
+  "prompts": {
+    "massive": "You route requests for a voice assistant for home and personal tasks. A fast classifier has already read the message.\n\nMessage:\n{text}\n\n{guesses}Choose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that the assistant does not cover.\n[4] Mark the message as not something this assistant covers.\n\nPick the cheapest action that will give the right result.",
+    "clinc150": "You route requests for a general-purpose assistant with 150 skills across banking, credit cards, kitchen and dining, home, cars and commuting, travel, utilities, work, small talk and questions about the assistant itself. A fast classifier has already read the message.\n\nMessage:\n{text}\n\n{guesses}Choose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the second classifier, trained to recognise unsupported requests.\n[3] Send to the external decision service. Costs money. Best at recognising messages that the assistant does not cover.\n[4] Mark the message as not something this assistant covers.\n\nPick the cheapest action that will give the right result."
+  },
+  "prompt_note": "Corrected before any run: the first committed version of the CLINC150 prompt lacked the final sentence that the other prompts have.",
+  "actions": {
+    "1": "in scope, the threshold encoder's top intent (learning rate 1e-4)",
+    "2": "MASSIVE: the fine-tuned Ettin decoder's typed-state answer with its own scope threshold. CLINC150 has no decoder; action 2 is the encoder trained with an out-of-scope class (section 3.27)",
+    "3": "Jev: the listed-form scope answer and the intent answer from section 3.28 (jev-1.13.0), no new request",
+    "4": "out of scope"
+  },
+  "comparators": "from earlier sections, on the same sessions: the encoder alone with the softmax threshold and with the dev-selected distance detector (section 3.30); hosted Gemma 4 31B as scope gate; Gemma with full-data retrieval alone (section 3.29); and a derived row with the orchestrator used only as a gate (actions 2 and 3 treated as 1)",
+  "metrics": "as workflow_v2_protocol.json, and session success with intervals for every row",
+  "limits": "Same orchestrator weights and prompt design as on Banking77; no tuning on these domains."
+}

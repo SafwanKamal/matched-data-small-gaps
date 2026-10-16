@@ -1,0 +1,46 @@
+% Figure 1: study design. Included from main.tex.
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+  font=\scriptsize,
+  every node/.style={align=center},
+  box/.style={draw=black!55, rounded corners=2pt, inner sep=2.5pt, text width=24mm, minimum height=12mm},
+  frozen/.style={box, fill=blue!7},
+  audit/.style={box, fill=orange!12, dashed},
+  plain/.style={box},
+  lane/.style={font=\scriptsize\bfseries, text=black!70, text width=14mm, align=left},
+  arr/.style={-{Stealth[length=1.8mm]}, draw=black!60}]
+
+\def\dx{27.5mm}
+% Lane labels
+\node[lane] at (-20mm, 0) {Which\\system?};
+\node[lane] at (-20mm, -19mm) {What sets\\scope?};
+
+% Upper lane
+\node[plain]  (expl)  at (0*\dx, 0) {Exploratory record\\20+ protocols,\\earlier sessions};
+\node[audit]  (rev)   at (1*\dx, 0) {Internal review\\threshold, casing,\\rows in the pool};
+\node[frozen] (conf)  at (2*\dx, 0) {\textbf{Confirmatory run}\\3 sets, 4 systems,\\Holm over 6};
+\node[frozen] (front) at (3*\dx, 0) {\textbf{+ Jev, frontier}\\Jev re-run (frozen);\\Kimi K3, Opus 5};
+\node[audit]  (fresh) at (4*\dx, 0) {Audit: reused items\\$\to$ never-seen\\sensitivity};
+
+% Lower lane
+\node[frozen] (rd)    at (0*\dx, -19mm) {\textbf{Run D}\\4 models, 2 same-\\domain splits, 4 arms};
+\node[audit]  (leak)  at (1*\dx, -19mm) {Audit: label leak\\in BANKING77-OOS\\(366 rows)};
+\node[frozen] (d2)    at (2*\dx, -19mm) {\textbf{Run D2}\\fresh items, clean pool;\\random / rule / options};
+\node[frozen] (mr)    at (3*\dx, -19mm) {\textbf{MASSIVE draws}\\3 new draws; rows from\\tested / other domains};
+\node[frozen] (gh)    at (4*\dx, -19mm) {\textbf{G, H}\\example order;\\contamination probe};
+
+\foreach \a/\b in {expl/rev, rev/conf, conf/front, front/fresh, rd/leak, leak/d2, d2/mr, mr/gh}
+  \draw[arr] (\a) -- (\b);
+\draw[arr, dashed] (expl) -- (rd);
+\draw[arr, dashed] (conf) -- (mr);
+
+% Key
+\node[frozen, text width=15mm, minimum height=4mm] (k1) at (0*\dx, -32mm) {frozen protocol};
+\node[audit, text width=15mm, minimum height=4mm, right=2mm of k1] (k2) {audit};
+\node[plain, text width=15mm, minimum height=4mm, right=2mm of k2] (k3) {other};
+\node[right=3mm of k3, text width=72mm, align=left, text=black!65] {Each protocol: items frozen with a hash, code committed, plumbing check, run, analysis; every amendment dated.};
+\end{tikzpicture}
+\caption{Study design. The upper lane compares systems that are given the same labelled data; the lower lane asks what sets a prompted model's out-of-scope decision. Dashed arrows mark where an observation in one study motivated another: the exploratory drop in same-domain rejection led to run D, and Gemma's 23\% rejection on MASSIVE led to the MASSIVE draws. Filled boxes are protocols frozen before any of their requests; dashed boxes are audits recorded as dated errata.}
+\label{fig:design}
+\end{figure*}

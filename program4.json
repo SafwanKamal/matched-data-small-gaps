@@ -1,0 +1,17 @@
+{
+  "protocol_id": "program-4-shared-encode-2026-10-07",
+  "trunk": "artifacts/program2/sst2-log_loss",
+  "trunk_frozen": true,
+  "dataset": "sst2",
+  "choice_head": "the Program 2 SST-2 log-loss softmax, not retrained",
+  "noul_heads": "two independent sigmoids, one per SST-2 label, trained on the frozen trunk",
+  "noul_loss": "mean binary cross-entropy",
+  "renormalize": "the two sigmoid probabilities are divided by their sum to make a simplex",
+  "learning_rate": 2e-5,
+  "weight_decay": 0.01,
+  "epochs": 3,
+  "batch_size": 256,
+  "seed": 20261007,
+  "dev_used_only_for_temperature": true,
+  "latency": "one pooled forward versus two separate forwards, Program 1 warmup and percentiles"
+}

@@ -1,0 +1,10 @@
+{"id": "dev-in-0", "error": null, "scope": 0.98, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 429, "usage": {"input_tokens": 429, "output_tokens": 116}}
+{"id": "dev-in-1", "error": null, "scope": 0.84, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 428, "usage": {"input_tokens": 428, "output_tokens": 116}}
+{"id": "dev-in-2", "error": null, "scope": 0.75, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 428, "usage": {"input_tokens": 428, "output_tokens": 116}}
+{"id": "dev-in-3", "error": null, "scope": 0.93, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 430, "usage": {"input_tokens": 430, "output_tokens": 116}}
+{"id": "dev-in-4", "error": null, "scope": 0.94, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 428, "usage": {"input_tokens": 428, "output_tokens": 116}}
+{"id": "dev-out-0", "error": null, "scope": 0.84, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 432, "usage": {"input_tokens": 432, "output_tokens": 116}}
+{"id": "dev-out-1", "error": null, "scope": 0.89, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 432, "usage": {"input_tokens": 432, "output_tokens": 116}}
+{"id": "dev-out-2", "error": null, "scope": 0.91, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 428, "usage": {"input_tokens": 428, "output_tokens": 116}}
+{"id": "dev-out-3", "error": null, "scope": 0.9, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 429, "usage": {"input_tokens": 429, "output_tokens": 116}}
+{"id": "dev-out-4", "error": null, "scope": 0.96, "intent_probs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0], "model": "jev-1.13.0", "input_tokens": 433, "usage": {"input_tokens": 433, "output_tokens": 116}}

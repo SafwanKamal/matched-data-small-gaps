@@ -1,0 +1,10 @@
+{"error": null, "latency_ms": 1116.3403000100516, "text": "scope: yes\nintent: 10", "provider": "Parasail", "prompt_tokens": 806, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.0003079, "id": "dev-in-0"}
+{"error": null, "latency_ms": 5625.524599978235, "text": "scope: yes\nintent: 10", "provider": "Parasail", "prompt_tokens": 1068, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.0004258, "id": "dev-in-1"}
+{"error": null, "latency_ms": 3038.009799987776, "text": "scope: yes\nintent: 10", "provider": "Parasail", "prompt_tokens": 757, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.00028585, "id": "dev-in-2"}
+{"error": null, "latency_ms": 5490.03640000592, "text": "scope: yes\nintent: 10", "provider": "Parasail", "prompt_tokens": 845, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.00032545, "id": "dev-in-3"}
+{"error": null, "latency_ms": 18943.705700017745, "text": "scope: yes\nintent: 10", "provider": "Parasail", "prompt_tokens": 874, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.0003385, "id": "dev-in-4"}
+{"error": null, "latency_ms": 5051.664200000232, "text": "scope: yes\nintent: 25", "provider": "Parasail", "prompt_tokens": 781, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.00029665, "id": "dev-out-0"}
+{"error": null, "latency_ms": 2742.3056000261568, "text": "scope: yes\nintent: 14", "provider": "Parasail", "prompt_tokens": 834, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.0003205, "id": "dev-out-1"}
+{"error": null, "latency_ms": 5885.084399982588, "text": "scope: yes\nintent: 14", "provider": "Parasail", "prompt_tokens": 835, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.00032095, "id": "dev-out-2"}
+{"error": null, "latency_ms": 2858.059599995613, "text": "scope: yes\nintent: 25", "provider": "Parasail", "prompt_tokens": 781, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.00029665, "id": "dev-out-3"}
+{"error": null, "latency_ms": 17755.154299986316, "text": "scope: no\nintent: 00", "provider": "Parasail", "prompt_tokens": 806, "cached_tokens": 256, "completion_tokens": 10, "cost": 0.0003079, "id": "dev-out-4"}

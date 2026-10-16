@@ -1,0 +1,51 @@
+{
+  "protocol_id": "context-handoff-2026-10-12",
+  "role": "exploratory: what is lost when one model compacts a conversation into notes and a model of a different size has to decide from the notes alone",
+  "claim": "Workflow v4 part C passed running notes between a 9B and a 122B model and found no effect of who wrote them, but its only context-dependent decision needed one fact (the last banking request), so the notes were never stressed. This test separates the writer from the reader and makes the reader depend entirely on the notes. A writer model reads a whole conversation and compacts it into handoff notes under a word budget. A reader model that never sees the conversation answers typed questions whose gold answers come from the conversation's labels. Every writer is crossed with every reader, at three conversation lengths and three note budgets, with the uncompacted conversation as each reader's reference. Two effects are looked for by name: degradation, when a smaller reader gets less out of a larger writer's notes than the larger model would; and inadequacy, when a smaller writer's notes leave out what a larger reader needs. Written before any request in this file was sent.",
+  "endpoint_rules": "api_protocol.json (project cap raised to $30 by the project owner on 2026-10-12) and the pinned hosts of workflow_v4_protocol.json; temperature 0, reasoning off",
+  "run_cap_usd": 5.0,
+  "seed": 20261012,
+  "models": ["qwen3.5-9b", "qwen3.5-27b", "gemma-4-31b", "qwen3.5-122b-a10b"],
+  "model_note": "three sizes of one generation and one model of another family near the middle size. Each is both a writer and a reader.",
+  "jev_reader": "Jev also reads every writer's notes and the uncompacted conversation, as a typed-decision reader: one request per conversation with the choice questions and the notes as state. It is not a writer. The counting question is not sent to it.",
+  "conversations": {
+    "source": "the 2000 workflow v1 turns, in session order",
+    "sets": {"10_turns": "the first 100 groups of two sessions", "20_turns": "the 100 groups of four sessions", "40_turns": "the 50 groups of eight sessions"},
+    "note": "The three sets reuse the same turns, so they are not independent samples. A conversation is the customer's messages only, numbered."
+  },
+  "note_budgets_words": [25, 75, 200],
+  "writer": {
+    "system_prompt": "You are handing a retail bank customer-support conversation over to a colleague. Below are the customer's messages in order. Write handoff notes of at most {budget} words. Your colleague will see only your notes, not the messages, and will be asked what the customer raised and in what order. Reply with the notes only.",
+    "user": "the numbered messages",
+    "budget_rule": "notes longer than the budget are cut to the first {budget} words before any reader sees them; the share of notes cut is reported per writer",
+    "max_tokens": "3 tokens per budget word plus 40"
+  },
+  "questions": {
+    "gold": "from the turn labels: each in-scope turn's Banking77 intent, in order, and the number of out-of-scope turns. Issue names shown to the reader are the Banking77 label strings.",
+    "types": {
+      "first": "Which of these was the first banking issue the customer raised? Options: the first issue and up to three other raised issues, filled with issues not raised when fewer were raised.",
+      "last": "Which of these was the most recent banking issue the customer raised? Options built the same way.",
+      "present": "Which of these issues did the customer raise? One raised issue and three not raised. Asked twice with different draws.",
+      "absent": "Which of these issues did the customer NOT raise? Three raised and one not raised. Asked twice; needs three distinct raised issues.",
+      "order": "Which of these two issues did the customer raise first? Two distinct raised issues, by first mention. Asked twice.",
+      "repeated": "Which of these issues did the customer raise more than once? One issue raised at least twice and up to three raised exactly once, filled with issues not raised. Asked when such an issue exists.",
+      "count_other": "How many of the customer's messages were not banking requests? A number; exact match, and the mean absolute error is also reported."
+    },
+    "construction": "options are drawn and shuffled with a generator seeded by 20261012 and the conversation's index; the same questions go to every reader and every source for that conversation",
+    "format": "all questions for a conversation in one request; the reader replies one line per question, the question number then a letter or a number. An unparsable line is scored wrong and counted."
+  },
+  "reader": {
+    "system_prompt": "You are taking over a retail bank customer-support conversation. You have {source}. Issues are named by short labels. Answer every question. Reply with one line per question in the form '1: B' (a number where the question asks for a number) and nothing else.",
+    "source_text": {"notes": "a colleague's handoff notes and not the customer's messages", "raw": "the customer's messages in order"}
+  },
+  "cells": "for each conversation set: 4 writers x 3 budgets x (4 readers + Jev), and each reader on the uncompacted conversation",
+  "metrics": [
+    "accuracy over the choice questions per cell, with 95% bootstrap intervals over conversations; and per question type",
+    "writing loss: a reader's accuracy on the uncompacted conversation minus its accuracy on a writer's notes",
+    "inadequacy: for the largest reader, notes written by each smaller writer against notes written by itself",
+    "degradation: for the smallest reader, its accuracy on the largest writer's notes against the largest reader's accuracy on those same notes, and against its own notes",
+    "all of the above by conversation length and by note budget",
+    "notes: words written, share cut at the budget, and cost per conversation for writing and for reading"
+  ],
+  "limits_stated_in_advance": "Synthetic conversations of unrelated customer messages, so there is no discourse to summarise, only a list of requests. Gold depends on Banking77 labels, which have known errors; the uncompacted row shows what a reader can reach. The writer is told what kind of question will follow, which favours every writer equally."
+}

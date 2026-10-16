@@ -1,0 +1,77 @@
+{
+  "protocol_id": "workflow-v1-support-desk-2026-10-09",
+  "role": "first scripted-orchestrator workflow; the graph is fixed in code and only the leaf decisions use models",
+  "claim": "Typed-decision models are sold as the decision layer of agent workflows, but they are benchmarked one isolated decision at a time. This workflow chains three decisions per customer turn over a five-turn session, with a gold answer at every node, and compares ways of assigning the nodes to models and of passing context between them. Written before any session was scored. The Banking77 test items inside the sessions have been scored before as isolated items by every system used here.",
+  "seed": 20261009,
+  "sessions": {
+    "n": 400,
+    "turns": 5,
+    "in_scope_source": "the 3080 official Banking77 test items",
+    "out_of_scope_source": "the 1000 CLINC150 out-of-scope test queries",
+    "construction": "Each turn is out of scope with probability 0.2. An in-scope turn that has an earlier in-scope turn in its session repeats that turn's intent with probability 0.3, using a different test utterance of the same intent; otherwise it draws an utterance of a different intent. No utterance is used twice."
+  },
+  "nodes": {
+    "scope": {
+      "type": "noul",
+      "question": "Is the current message a request that a retail bank's customer support can handle?",
+      "gold": "true for Banking77 turns, false for CLINC150 out-of-scope turns",
+      "asked": "every turn"
+    },
+    "intent": {
+      "type": "choice",
+      "options": "the 77 frozen Banking77 labels",
+      "gold": "the utterance's label",
+      "asked": "in-scope turns"
+    },
+    "repeat": {
+      "type": "noul",
+      "question": "Is the current message about the same issue as the most recent earlier banking request in this conversation?",
+      "gold": "true when the intents match",
+      "asked": "in-scope turns that have an earlier in-scope turn"
+    }
+  },
+  "success": {
+    "turn": "every node asked on that turn is right; a turn judged out of scope by the policy is not asked the later nodes, so a wrong scope decision fails the turn",
+    "session": "all five turns succeed"
+  },
+  "context_forms": {
+    "current_only": "{current}",
+    "raw_history": "Previous messages in this conversation:\n1. {t1}\n2. {t2}\n...\nCurrent message: {current}",
+    "typed_state": "no text is passed back; the repeat node compares the policy's own intent decision for this turn with its intent decision for the most recent earlier turn it judged in scope"
+  },
+  "policies": {
+    "jev_raw_history": "one Jev request per turn with all three questions and the raw history as state",
+    "jev_typed_state": "one Jev request per turn with the scope and intent questions and only the current message as state; repeat from typed state",
+    "encoder_typed_state": "Ettin encoder (float32 Banking77 checkpoint, seed 20261007) on the current message for intent; scope is its top probability against a threshold; repeat from typed state",
+    "encoder_then_jev": "encoder_typed_state, except that when the encoder's top probability is below the escalation threshold the turn's scope and intent come from the jev_typed_state answer for that turn",
+    "gliclass_typed_state": "the same construction as encoder_typed_state with GLiClass base",
+    "decoder_typed_state": "added 2026-10-10 before it was scored on any session: the same construction as encoder_typed_state with the float32 Banking77 Ettin decoder (seed 20261007) on the GPU",
+    "decoder_then_jev": "added 2026-10-10: decoder_typed_state with the same escalation rule as encoder_then_jev, using the decoder's own 25% dev quantile",
+    "qwen4b_typed_state": "added 2026-10-10 before it was scored on any session: the same construction with the suite's zero-shot Qwen3-4B readout and its Banking77 prior and temperature",
+    "deepseek_typed_state": "added 2026-10-11 before it was scored on any session: the typed-state construction with hosted DeepSeek v4.1 Flash, read by the api_protocol.json top-k tree readout with its Banking77 temperature",
+    "qwen37_typed_state": "added 2026-10-11 before it was scored on any session: the same with hosted Qwen3.7 Flash",
+    "encoder_then_decoder": "added 2026-10-11 before it was scored on any session: the encoder, escalating its low-confidence turns to the Ettin decoder's typed-state answer; no API call",
+    "encoder_then_deepseek": "added 2026-10-11 before it was scored on any session: the encoder, escalating its low-confidence turns to hosted DeepSeek v4.1 Flash's typed-state answer"
+  },
+  "thresholds": {
+    "split": "the 400 Program 1 Banking77 dev items as in-scope and the 100 CLINC150 out-of-scope validation queries as out-of-scope; no session item is used",
+    "scope": "the top-probability threshold with the best balanced accuracy on that split, for each local model",
+    "escalation": "the encoder top-probability value below which 25% of the in-scope dev items fall",
+    "jev_noul": "0.5"
+  },
+  "jev_request": {
+    "model": "jev-1.13.0",
+    "intent_instructions": "Which label best describes the customer's current message?",
+    "criteria": "option strings only, null descriptions",
+    "retry": "429, 503 and 529 and connection errors with backoff; a request still failing after 6 tries stops the run"
+  },
+  "metrics": [
+    "accuracy at each node, on the turns where it is asked",
+    "turn success and session success with 95% bootstrap intervals over sessions",
+    "for typed-state repeat decisions: accuracy split by whether both intent decisions it depends on were right",
+    "Jev requests and input tokens per session; share of turns escalated",
+    "local latency is not timed here because local models run on the processor"
+  ],
+  "not_in_v1": "a model as orchestrator, Score nodes, and grounding nodes",
+  "hosted_note": "Hosted workers see only the current message. Their scope threshold and escalation quantile come from the same dev split as the local workers. Their cost is recorded in artifacts/api/spend.json under the $20 project cap."
+}

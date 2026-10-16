@@ -1,0 +1,38 @@
+{
+  "protocol_id": "workflow-v2-model-orchestrator-2026-10-11",
+  "role": "exploratory: does a local language model routing each turn do better than a fixed confidence threshold?",
+  "claim": "Workflow v1 used a script: the encoder answers, and turns below a confidence threshold go to a stronger worker. Here a local model reads each turn and the encoder's guesses and picks the action. Same sessions, same three decisions per turn, same workers and the same success rule as workflow_protocol.json, so the two are directly comparable. Written before the orchestrator was run on any session.",
+  "sessions": "artifacts/workflow-v1/sessions.json, unchanged",
+  "orchestrator": {
+    "model": "suite_protocol.json systems.qwen3.5-9b-4bit-index_prior (Qwen3.5-9B, 4-bit, text only)",
+    "readout": "the chat prompt below with thinking off and the answer turn prefilled with 'Action: ['; the action is the argmax over the next-token probabilities of the digits 1 to 4; nothing is generated",
+    "runs_after": "the encoder, which always runs first on the current message",
+    "sees": "the current message only, never the conversation history"
+  },
+  "actions": {
+    "1": "accept the encoder: in scope, with the encoder's top intent",
+    "2": "ask the Ettin decoder: its typed-state answer and its own scope threshold from workflow v1",
+    "3": "send to Jev: its scope and intent answers from the workflow v1 typed-state request",
+    "4": "mark the turn as out of scope"
+  },
+  "repeat_decision": "from typed state as in workflow v1: the turn's intent is compared with the intent of the most recent earlier turn the policy judged in scope",
+  "variants": {
+    "orchestrator_with_confidence": "the prompt shows the encoder's top three intents with their probabilities as percentages",
+    "orchestrator_labels_only": "the same prompt with the three intents and no probabilities",
+    "orchestrator_message_only": "the same prompt without the encoder's guesses"
+  },
+  "prompt": "You route customer messages for a bank's support desk. A fast classifier has already read the message.\n\nMessage:\n{text}\n\n{guesses}Choose one action:\n[1] Accept the fast classifier's top guess. Free and instant.\n[2] Ask the slower, more accurate classifier. About 15 times slower.\n[3] Send to the external decision service. Costs money. Best at recognising messages that are not banking requests.\n[4] Mark the message as not a banking request.\n\nPick the cheapest action that will give the right result.",
+  "guesses_block": "Fast classifier's top guesses:\n{lines}\n\n",
+  "comparators": {
+    "from_workflow_v1": ["encoder_typed_state", "decoder_typed_state", "encoder_then_decoder", "encoder_then_jev", "decoder_then_jev", "jev_typed_state"],
+    "matched_threshold": "for each orchestrator variant, a threshold policy that sends the same number of turns to the decoder and to Jev as that variant did: the encoder's least confident turns go to Jev, the next least confident to the decoder, and the rest are accepted. Scope for accepted turns uses the encoder's workflow v1 threshold. It uses test-set confidences only to rank, not labels."
+  },
+  "metrics": [
+    "share of turns given each action",
+    "node accuracy, turn success and session success with 95% bootstrap intervals over sessions, as in workflow v1",
+    "Jev requests and decoder calls per session",
+    "for action 4: precision and recall against the out-of-scope gold",
+    "for action 1: the share of accepted turns where the encoder was in fact right"
+  ],
+  "not_tested": "thinking mode for the orchestrator, a full-precision orchestrator, and any training of the orchestrator"
+}

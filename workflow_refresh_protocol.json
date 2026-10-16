@@ -1,0 +1,13 @@
+{
+  "protocol_id": "workflow-v1-v3-refresh-2026-10-13",
+  "role": "rerun of the frozen workflow v1, v2 and v3 protocols with the two fine-tuned specialists replaced by the models trained at the dev-selected learning rate",
+  "claim": "Workflows v1 to v3 used the Banking77 encoder and decoder trained at 2e-5. The size sweep (section 3.24) showed that rate undertrains the encoder; dev selects 1e-4 for both (dev negative log-likelihood 0.190 against 0.287 for the encoder, 0.219 against 0.250 for the decoder). This rerun changes nothing else: same sessions, same Jev and hosted replies (reused from disk, no API call), same policies, thresholds rule and metrics, same local 9B orchestrator and prompts. The orchestrator is run again because its prompt shows the encoder's guesses, which change. Written before the rerun was scored. Section 3.23 has already reported the 1e-4 encoder alone and as the first stage of an escalation on these sessions.",
+  "specialists": {
+    "encoder": "artifacts/size-sweep/encoder-150m/lr-0.0001/banking77",
+    "decoder": "artifacts/size-sweep/decoder-150m/lr-0.0001/banking77",
+    "temperature": "fit on the 400 Program 1 dev items from each model's own dev scores",
+    "thresholds": "the workflow v1 rule, recomputed for the new models"
+  },
+  "outputs": "artifacts/refresh/workflow-v1, workflow-v2 and workflow-v3; the original results stay where they are",
+  "reporting": "old and new side by side for every policy; the statements in sections 3.11, 3.16, 3.17 and 3.20 that depend on the encoder-below-decoder ordering are marked with what changed"
+}

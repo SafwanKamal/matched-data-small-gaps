@@ -1,0 +1,332 @@
+{
+  "protocol_id": "encoder-side-oos-detectors-2026-10-13",
+  "domains": {
+    "banking77": {
+      "temperature": 1.0179427620494739,
+      "detectors": {
+        "msp": {
+          "session_success": 0.66,
+          "session_success_ci": [
+            0.6125,
+            0.7025
+          ],
+          "scope_accuracy": 0.9415,
+          "in_scope_kept": 0.9448966812773951,
+          "out_of_scope_caught": 0.9280397022332506,
+          "auroc": 0.9857642508984743,
+          "dev_balanced_accuracy": 0.94875
+        },
+        "max_logit": {
+          "session_success": 0.705,
+          "session_success_ci": [
+            0.66,
+            0.745
+          ],
+          "scope_accuracy": 0.9535,
+          "in_scope_kept": 0.9467752035065748,
+          "out_of_scope_caught": 0.9801488833746899,
+          "auroc": 0.9941453500748146,
+          "dev_balanced_accuracy": 0.975
+        },
+        "energy": {
+          "session_success": 0.7175,
+          "session_success_ci": [
+            0.6725,
+            0.76
+          ],
+          "scope_accuracy": 0.96,
+          "in_scope_kept": 0.9542892924232936,
+          "out_of_scope_caught": 0.9826302729528535,
+          "auroc": 0.9951755074263002,
+          "dev_balanced_accuracy": 0.98
+        },
+        "neg_entropy": {
+          "session_success": 0.7275,
+          "session_success_ci": [
+            0.685,
+            0.77
+          ],
+          "scope_accuracy": 0.969,
+          "in_scope_kept": 0.976205385097057,
+          "out_of_scope_caught": 0.9404466501240695,
+          "auroc": 0.9911216906389306,
+          "dev_balanced_accuracy": 0.95875
+        },
+        "mahalanobis": {
+          "session_success": 0.7425,
+          "session_success_ci": [
+            0.7,
+            0.7825
+          ],
+          "scope_accuracy": 0.9745,
+          "in_scope_kept": 0.9743268628678773,
+          "out_of_scope_caught": 0.9751861042183623,
+          "auroc": 0.9968722371816884,
+          "dev_balanced_accuracy": 0.985
+        },
+        "knn": {
+          "session_success": 0.715,
+          "session_success_ci": [
+            0.67,
+            0.7575
+          ],
+          "scope_accuracy": 0.961,
+          "in_scope_kept": 0.9561678146524734,
+          "out_of_scope_caught": 0.9801488833746899,
+          "auroc": 0.9939588962555411,
+          "dev_balanced_accuracy": 0.96875
+        }
+      },
+      "reference": {
+        "gemma-4-31b_gate": {
+          "session_success": 0.755,
+          "session_success_ci": [
+            0.7125,
+            0.795
+          ],
+          "scope_accuracy": 0.988,
+          "in_scope_kept": 0.9881026925485284,
+          "out_of_scope_caught": 0.9875930521091811
+        },
+        "qwen3.5-9b_gate": {
+          "session_success": 0.7325,
+          "session_success_ci": [
+            0.6875,
+            0.7725
+          ],
+          "scope_accuracy": 0.98,
+          "in_scope_kept": 0.976205385097057,
+          "out_of_scope_caught": 0.9950372208436724
+        },
+        "jev_listed_gate": {
+          "session_success": 0.65,
+          "session_success_ci": [
+            0.6025,
+            0.695
+          ],
+          "scope_accuracy": 0.954,
+          "in_scope_kept": 0.9436443331246086,
+          "out_of_scope_caught": 0.9950372208436724
+        }
+      }
+    },
+    "massive": {
+      "temperature": 1.1189299058608504,
+      "detectors": {
+        "msp": {
+          "session_success": 0.19,
+          "session_success_ci": [
+            0.1525,
+            0.2275
+          ],
+          "scope_accuracy": 0.7045,
+          "in_scope_kept": 0.6466916354556804,
+          "out_of_scope_caught": 0.9371859296482412,
+          "auroc": 0.8547105063394375,
+          "dev_balanced_accuracy": 0.8325
+        },
+        "max_logit": {
+          "session_success": 0.255,
+          "session_success_ci": [
+            0.2125,
+            0.3
+          ],
+          "scope_accuracy": 0.754,
+          "in_scope_kept": 0.7066167290886392,
+          "out_of_scope_caught": 0.9447236180904522,
+          "auroc": 0.8946197905883977,
+          "dev_balanced_accuracy": 0.87125
+        },
+        "energy": {
+          "session_success": 0.26,
+          "session_success_ci": [
+            0.2175,
+            0.305
+          ],
+          "scope_accuracy": 0.7595,
+          "in_scope_kept": 0.7134831460674157,
+          "out_of_scope_caught": 0.9447236180904522,
+          "auroc": 0.8990285384475436,
+          "dev_balanced_accuracy": 0.8725
+        },
+        "neg_entropy": {
+          "session_success": 0.1825,
+          "session_success_ci": [
+            0.145,
+            0.22
+          ],
+          "scope_accuracy": 0.6975,
+          "in_scope_kept": 0.6348314606741573,
+          "out_of_scope_caught": 0.949748743718593,
+          "auroc": 0.8703269782119085,
+          "dev_balanced_accuracy": 0.8374999999999999
+        },
+        "mahalanobis": {
+          "session_success": 0.4825,
+          "session_success_ci": [
+            0.435,
+            0.53
+          ],
+          "scope_accuracy": 0.9095,
+          "in_scope_kept": 0.9051186017478152,
+          "out_of_scope_caught": 0.9271356783919598,
+          "auroc": 0.9602412813129317,
+          "dev_balanced_accuracy": 0.9325000000000001
+        },
+        "knn": {
+          "session_success": 0.4975,
+          "session_success_ci": [
+            0.45,
+            0.545
+          ],
+          "scope_accuracy": 0.914,
+          "in_scope_kept": 0.9038701622971286,
+          "out_of_scope_caught": 0.9547738693467337,
+          "auroc": 0.9700986204430392,
+          "dev_balanced_accuracy": 0.94375
+        }
+      },
+      "reference": {
+        "gemma-4-31b_gate": {
+          "session_success": 0.5175,
+          "session_success_ci": [
+            0.4725,
+            0.565
+          ],
+          "scope_accuracy": 0.9435,
+          "in_scope_kept": 0.9413233458177278,
+          "out_of_scope_caught": 0.9522613065326633
+        },
+        "qwen3.5-9b_gate": {
+          "session_success": 0.37,
+          "session_success_ci": [
+            0.325,
+            0.4175
+          ],
+          "scope_accuracy": 0.8735,
+          "in_scope_kept": 0.8495630461922596,
+          "out_of_scope_caught": 0.9698492462311558
+        },
+        "jev_listed_gate": {
+          "session_success": 0.4,
+          "session_success_ci": [
+            0.355,
+            0.445
+          ],
+          "scope_accuracy": 0.8795,
+          "in_scope_kept": 0.8670411985018727,
+          "out_of_scope_caught": 0.9296482412060302
+        }
+      }
+    },
+    "clinc150": {
+      "temperature": 1.1149211737090872,
+      "detectors": {
+        "msp": {
+          "session_success": 0.6225,
+          "session_success_ci": [
+            0.575,
+            0.6675
+          ],
+          "scope_accuracy": 0.9115,
+          "in_scope_kept": 0.9067164179104478,
+          "out_of_scope_caught": 0.9311224489795918,
+          "auroc": 0.9726542669306528,
+          "dev_balanced_accuracy": 0.94625
+        },
+        "max_logit": {
+          "session_success": 0.6525,
+          "session_success_ci": [
+            0.6075,
+            0.6975
+          ],
+          "scope_accuracy": 0.925,
+          "in_scope_kept": 0.9247512437810945,
+          "out_of_scope_caught": 0.9260204081632653,
+          "auroc": 0.9778514950756422,
+          "dev_balanced_accuracy": 0.955
+        },
+        "energy": {
+          "session_success": 0.6525,
+          "session_success_ci": [
+            0.6075,
+            0.6975
+          ],
+          "scope_accuracy": 0.925,
+          "in_scope_kept": 0.9247512437810945,
+          "out_of_scope_caught": 0.9260204081632653,
+          "auroc": 0.9784543481571734,
+          "dev_balanced_accuracy": 0.955
+        },
+        "neg_entropy": {
+          "session_success": 0.6275,
+          "session_success_ci": [
+            0.58,
+            0.6725
+          ],
+          "scope_accuracy": 0.914,
+          "in_scope_kept": 0.9104477611940298,
+          "out_of_scope_caught": 0.9285714285714286,
+          "auroc": 0.9761777845466545,
+          "dev_balanced_accuracy": 0.95
+        },
+        "mahalanobis": {
+          "session_success": 0.7525,
+          "session_success_ci": [
+            0.71,
+            0.7925624999999996
+          ],
+          "scope_accuracy": 0.9525,
+          "in_scope_kept": 0.9645522388059702,
+          "out_of_scope_caught": 0.9030612244897959,
+          "auroc": 0.9858329525840187,
+          "dev_balanced_accuracy": 0.95875
+        },
+        "knn": {
+          "session_success": 0.7325,
+          "session_success_ci": [
+            0.6899375,
+            0.775
+          ],
+          "scope_accuracy": 0.949,
+          "in_scope_kept": 0.9651741293532339,
+          "out_of_scope_caught": 0.8826530612244898,
+          "auroc": 0.9821412706873794,
+          "dev_balanced_accuracy": 0.96375
+        }
+      },
+      "reference": {
+        "gemma-4-31b_gate": {
+          "session_success": 0.7225,
+          "session_success_ci": [
+            0.675,
+            0.765
+          ],
+          "scope_accuracy": 0.9545,
+          "in_scope_kept": 0.9720149253731343,
+          "out_of_scope_caught": 0.8826530612244898
+        },
+        "qwen3.5-9b_gate": {
+          "session_success": 0.4525,
+          "session_success_ci": [
+            0.405,
+            0.505
+          ],
+          "scope_accuracy": 0.856,
+          "in_scope_kept": 0.8445273631840796,
+          "out_of_scope_caught": 0.9030612244897959
+        },
+        "jev_listed_gate": {
+          "session_success": 0.605,
+          "session_success_ci": [
+            0.555,
+            0.655
+          ],
+          "scope_accuracy": 0.9165,
+          "in_scope_kept": 0.9396766169154229,
+          "out_of_scope_caught": 0.8214285714285714
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "protocol_id": "wrapped-varied-position-pilot-2026-10-10",
+  "role": "exploratory follow-up to the wrapped fine-tune",
+  "claim": "The wrapped-trained encoder held 87% to 88% under context when the target came last and scored 0.6% when it came first: it had learned that the last message is the current one. Every training wrapper had put the target last. This run trains with the target first or last and asks whether the model then follows the 'Current message:' marker, by testing a position it never saw (the middle) and a marker wording it never saw. Written before any model trained this way was scored.",
+  "base_recipe": "wrapped_protocol.json: program2.json encoder recipe, log loss, seed 20261007, 512-token cap, GPU",
+  "out": "wrapped-varied",
+  "seed": 20261010,
+  "training_inputs": {
+    "clean": 0.2,
+    "one_earlier_target_last": 0.2,
+    "one_earlier_target_first": 0.2,
+    "history_target_last": 0.2,
+    "history_target_first": 0.2,
+    "history_length": "2 to 8 earlier messages, uniform",
+    "templates": {
+      "one_earlier_target_last": "Earlier message (already resolved): {d1}\nCurrent message: {target}",
+      "one_earlier_target_first": "Current message: {target}\nEarlier message (already resolved): {d1}",
+      "history_target_last": "Earlier messages (already resolved):\n{earlier}\nCurrent message: {target}",
+      "history_target_first": "Current message: {target}\nEarlier messages (already resolved):\n{earlier}"
+    },
+    "never_in_training": "the target in the middle of the history; any marker wording other than 'Current message:'; small talk; typed summaries"
+  },
+  "test": {
+    "items": "the context pilot's Banking77 test items and distractor draws, unchanged, in its six conditions plus the three below",
+    "extra_conditions": {
+      "long_history_target_middle": "Earlier messages (already resolved):\n- {d1}\n- {d2}\n- {d3}\n- {d4}\nCurrent message: {target}\nOther earlier messages (already resolved):\n- {d5}\n- {d6}\n- {d7}\n- {d8}",
+      "new_wording_target_last": "Older requests, all closed:\n- {d1}\n- {d2}\n- {d3}\n- {d4}\n- {d5}\n- {d6}\n- {d7}\n- {d8}\nLatest request: {target}",
+      "new_wording_target_first": "Latest request: {target}\nOlder requests, all closed:\n- {d1}\n- {d2}\n- {d3}\n- {d4}\n- {d5}\n- {d6}\n- {d7}\n- {d8}"
+    },
+    "seen_layouts": ["clean", "related_prior", "long_history", "long_history_target_first"],
+    "unseen": ["chatter", "typed_summary", "long_history_target_middle", "new_wording_target_last", "new_wording_target_first"],
+    "temperature": "one scalar fit on the 400 clean Program 1 dev items"
+  },
+  "comparison": "the target-last wrapped model from wrapped_protocol.json is rescored on the three extra conditions so both models are read on all nine"
+}

@@ -1,0 +1,1236 @@
+{
+  "protocol_id": "program-5-hybrid-cascade-2026-10-07",
+  "role": "measurement",
+  "datasets": {
+    "banking77": {
+      "role": "primary",
+      "n": 500,
+      "strong": {
+        "n": 500,
+        "accuracy": 0.642,
+        "brier": 0.4626860782095241,
+        "log_loss": 1.2654508271183476,
+        "ece": 0.05174660517396935,
+        "coverage_at_5pct_error": 0.35,
+        "aurc": 0.13028683574884053
+      },
+      "gates": {
+        "ettin-encoder-log_loss": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.154,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 377,
+                "agreement": 0.11936339522546419
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 106,
+                "agreement": 0.2358490566037736
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 14,
+                "agreement": 0.35714285714285715
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 3,
+                "agreement": 0.6666666666666666
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 0,
+                "agreement": null
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.154,
+              "brier": 0.9395057462698464,
+              "log_loss": 3.5897300018555147,
+              "ece": 0.04136228913778064,
+              "coverage_at_5pct_error": 0.004,
+              "aurc": 0.7598869549064674,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.4768196680603223
+            },
+            {
+              "n": 500,
+              "accuracy": 0.226,
+              "brier": 0.8745961801606815,
+              "log_loss": 3.2202747172483095,
+              "ece": 0.05186692896493288,
+              "coverage_at_5pct_error": 0.046,
+              "aurc": 0.5864015720395871,
+              "rate": 0.1,
+              "tau": 0.08297422025496311,
+              "mode": "leq",
+              "strong_calls": 59,
+              "strong_call_fraction": 0.118,
+              "strong_calls_saved": 0.882,
+              "score_drop": 0.4119101019511574
+            },
+            {
+              "n": 500,
+              "accuracy": 0.352,
+              "brier": 0.7606010184696418,
+              "log_loss": 2.6006221372490073,
+              "ece": 0.04973026201187575,
+              "coverage_at_5pct_error": 0.124,
+              "aurc": 0.39031055019165894,
+              "rate": 0.25,
+              "tau": 0.11191398940480306,
+              "mode": "leq",
+              "strong_calls": 181,
+              "strong_call_fraction": 0.362,
+              "strong_calls_saved": 0.638,
+              "score_drop": 0.29791494026011767
+            },
+            {
+              "n": 500,
+              "accuracy": 0.436,
+              "brier": 0.6704571302688903,
+              "log_loss": 2.1793428260121,
+              "ece": 0.04802626032926735,
+              "coverage_at_5pct_error": 0.214,
+              "aurc": 0.287377600490834,
+              "rate": 0.5,
+              "tau": 0.1406634399074584,
+              "mode": "leq",
+              "strong_calls": 275,
+              "strong_call_fraction": 0.55,
+              "strong_calls_saved": 0.44999999999999996,
+              "score_drop": 0.2077710520593662
+            },
+            {
+              "n": 500,
+              "accuracy": 0.642,
+              "brier": 0.4626860782095241,
+              "log_loss": 1.2654508271183476,
+              "ece": 0.05174660517396935,
+              "coverage_at_5pct_error": 0.35,
+              "aurc": 0.13028683574884053,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        },
+        "ettin-encoder-brier": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.158,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 413,
+                "agreement": 0.10653753026634383
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 72,
+                "agreement": 0.3333333333333333
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 13,
+                "agreement": 0.6923076923076923
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 2,
+                "agreement": 1.0
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 0,
+                "agreement": null
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.174,
+              "brier": 0.9323483902462377,
+              "log_loss": 3.7762625968832655,
+              "ece": 0.03619235129790907,
+              "coverage_at_5pct_error": 0.008,
+              "aurc": 0.6795903805238525,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.4696623120367136
+            },
+            {
+              "n": 500,
+              "accuracy": 0.252,
+              "brier": 0.8672146049916813,
+              "log_loss": 3.415506316377847,
+              "ece": 0.0426822426446154,
+              "coverage_at_5pct_error": 0.048,
+              "aurc": 0.5284500233708522,
+              "rate": 0.1,
+              "tau": 0.07097069370577437,
+              "mode": "leq",
+              "strong_calls": 60,
+              "strong_call_fraction": 0.12,
+              "strong_calls_saved": 0.88,
+              "score_drop": 0.4045285267821572
+            },
+            {
+              "n": 500,
+              "accuracy": 0.338,
+              "brier": 0.7921120652471239,
+              "log_loss": 2.9536529103890965,
+              "ece": 0.043807072634090345,
+              "coverage_at_5pct_error": 0.094,
+              "aurc": 0.40924732712417566,
+              "rate": 0.25,
+              "tau": 0.08871988966253108,
+              "mode": "leq",
+              "strong_calls": 150,
+              "strong_call_fraction": 0.3,
+              "strong_calls_saved": 0.7,
+              "score_drop": 0.32942598703759973
+            },
+            {
+              "n": 500,
+              "accuracy": 0.478,
+              "brier": 0.6504710610959483,
+              "log_loss": 2.219048511279937,
+              "ece": 0.041917907342690644,
+              "coverage_at_5pct_error": 0.21,
+              "aurc": 0.25549359674212657,
+              "rate": 0.5,
+              "tau": 0.12375955865257449,
+              "mode": "leq",
+              "strong_calls": 288,
+              "strong_call_fraction": 0.576,
+              "strong_calls_saved": 0.42400000000000004,
+              "score_drop": 0.1877849828864242
+            },
+            {
+              "n": 500,
+              "accuracy": 0.642,
+              "brier": 0.4626860782095241,
+              "log_loss": 1.2654508271183476,
+              "ece": 0.05174660517396935,
+              "coverage_at_5pct_error": 0.35,
+              "aurc": 0.13028683574884053,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        },
+        "deberta-v3-large-zeroshot-v2.0-c": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.502,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 89,
+                "agreement": 0.16853932584269662
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 177,
+                "agreement": 0.3898305084745763
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 133,
+                "agreement": 0.6015037593984962
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 70,
+                "agreement": 0.8285714285714286
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 31,
+                "agreement": 0.9354838709677419
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.49,
+              "brier": 0.689133191191522,
+              "log_loss": 2.3577464464190516,
+              "ece": 0.08738633710476615,
+              "coverage_at_5pct_error": 0.054,
+              "aurc": 0.2966423822071047,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.22644711298199793
+            },
+            {
+              "n": 500,
+              "accuracy": 0.542,
+              "brier": 0.6444666042578484,
+              "log_loss": 2.039008142847794,
+              "ece": 0.08710588396740891,
+              "coverage_at_5pct_error": 0.01,
+              "aurc": 0.27418996846025323,
+              "rate": 0.1,
+              "tau": 0.17739329520984218,
+              "mode": "leq",
+              "strong_calls": 68,
+              "strong_call_fraction": 0.136,
+              "strong_calls_saved": 0.864,
+              "score_drop": 0.1817805260483243
+            },
+            {
+              "n": 500,
+              "accuracy": 0.572,
+              "brier": 0.6087517769563561,
+              "log_loss": 1.864832282353266,
+              "ece": 0.09182010559403427,
+              "coverage_at_5pct_error": 0.022,
+              "aurc": 0.2445320368607371,
+              "rate": 0.25,
+              "tau": 0.24010625834812244,
+              "mode": "leq",
+              "strong_calls": 123,
+              "strong_call_fraction": 0.246,
+              "strong_calls_saved": 0.754,
+              "score_drop": 0.14606569874683195
+            },
+            {
+              "n": 500,
+              "accuracy": 0.618,
+              "brier": 0.5453900713130377,
+              "log_loss": 1.6213448829497912,
+              "ece": 0.06457582661444414,
+              "coverage_at_5pct_error": 0.096,
+              "aurc": 0.1982738687721947,
+              "rate": 0.5,
+              "tau": 0.38540492187629455,
+              "mode": "leq",
+              "strong_calls": 250,
+              "strong_call_fraction": 0.5,
+              "strong_calls_saved": 0.5,
+              "score_drop": 0.08270399310351362
+            },
+            {
+              "n": 500,
+              "accuracy": 0.642,
+              "brier": 0.4626860782095241,
+              "log_loss": 1.2654508271183476,
+              "ece": 0.05174660517396935,
+              "coverage_at_5pct_error": 0.35,
+              "aurc": 0.13028683574884053,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        },
+        "gliclass-base-v3.0": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.52,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 42,
+                "agreement": 0.09523809523809523
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 229,
+                "agreement": 0.4366812227074236
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 183,
+                "agreement": 0.6557377049180327
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 46,
+                "agreement": 0.782608695652174
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 0,
+                "agreement": null
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.504,
+              "brier": 0.7068485034655289,
+              "log_loss": 2.287724967821739,
+              "ece": 0.13295851065670336,
+              "coverage_at_5pct_error": 0.002,
+              "aurc": 0.3654744358741919,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.24416242525600473
+            },
+            {
+              "n": 500,
+              "accuracy": 0.54,
+              "brier": 0.6800086802662817,
+              "log_loss": 2.1349274945945065,
+              "ece": 0.1268314407125839,
+              "coverage_at_5pct_error": 0.01,
+              "aurc": 0.3430994066420283,
+              "rate": 0.1,
+              "tau": 0.21564415893520641,
+              "mode": "leq",
+              "strong_calls": 52,
+              "strong_call_fraction": 0.104,
+              "strong_calls_saved": 0.896,
+              "score_drop": 0.21732260205675757
+            },
+            {
+              "n": 500,
+              "accuracy": 0.562,
+              "brier": 0.6580913387822699,
+              "log_loss": 1.9933853667132622,
+              "ece": 0.13596637437591721,
+              "coverage_at_5pct_error": 0.024,
+              "aurc": 0.33671916197134155,
+              "rate": 0.25,
+              "tau": 0.27097968109390663,
+              "mode": "leq",
+              "strong_calls": 103,
+              "strong_call_fraction": 0.206,
+              "strong_calls_saved": 0.794,
+              "score_drop": 0.19540526057274576
+            },
+            {
+              "n": 500,
+              "accuracy": 0.606,
+              "brier": 0.5808552295187944,
+              "log_loss": 1.7566667626797594,
+              "ece": 0.10769282605443528,
+              "coverage_at_5pct_error": 0.116,
+              "aurc": 0.23805056646032247,
+              "rate": 0.5,
+              "tau": 0.36670821251543445,
+              "mode": "leq",
+              "strong_calls": 233,
+              "strong_call_fraction": 0.466,
+              "strong_calls_saved": 0.534,
+              "score_drop": 0.1181691513092703
+            },
+            {
+              "n": 500,
+              "accuracy": 0.642,
+              "brier": 0.4626860782095241,
+              "log_loss": 1.2654508271183476,
+              "ece": 0.05174660517396935,
+              "coverage_at_5pct_error": 0.35,
+              "aurc": 0.13028683574884053,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        },
+        "qwen3-0.6b": {
+          "agreement": {
+            "n": 500,
+            "agreement": 0.076,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 500,
+                "agreement": 0.076
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 0,
+                "agreement": null
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 500,
+              "accuracy": 0.09,
+              "brier": 0.9723517461355675,
+              "log_loss": 4.018974991519361,
+              "ece": 0.029756847635636956,
+              "coverage_at_5pct_error": 0.01,
+              "aurc": 0.8354526547543553,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.5096656679260434
+            },
+            {
+              "n": 500,
+              "accuracy": 0.132,
+              "brier": 0.941384977551633,
+              "log_loss": 3.7980842687766927,
+              "ece": 0.04918897009786186,
+              "coverage_at_5pct_error": 0.008,
+              "aurc": 0.7279534621226413,
+              "rate": 0.1,
+              "tau": 0.0458701716787671,
+              "mode": "leq",
+              "strong_calls": 48,
+              "strong_call_fraction": 0.096,
+              "strong_calls_saved": 0.904,
+              "score_drop": 0.47869889934210885
+            },
+            {
+              "n": 500,
+              "accuracy": 0.22,
+              "brier": 0.8703054832081829,
+              "log_loss": 3.3368644355764427,
+              "ece": 0.06571875905330782,
+              "coverage_at_5pct_error": 0.022,
+              "aurc": 0.5437720079952906,
+              "rate": 0.25,
+              "tau": 0.050526801794482414,
+              "mode": "leq",
+              "strong_calls": 132,
+              "strong_call_fraction": 0.264,
+              "strong_calls_saved": 0.736,
+              "score_drop": 0.4076194049986588
+            },
+            {
+              "n": 500,
+              "accuracy": 0.34,
+              "brier": 0.7660094218288782,
+              "log_loss": 2.7854722589345737,
+              "ece": 0.06637737992712552,
+              "coverage_at_5pct_error": 0.082,
+              "aurc": 0.3736601883349744,
+              "rate": 0.5,
+              "tau": 0.05692681309805083,
+              "mode": "leq",
+              "strong_calls": 233,
+              "strong_call_fraction": 0.466,
+              "strong_calls_saved": 0.534,
+              "score_drop": 0.3033233436193541
+            },
+            {
+              "n": 500,
+              "accuracy": 0.642,
+              "brier": 0.4626860782095241,
+              "log_loss": 1.2654508271183476,
+              "ece": 0.05174660517396935,
+              "coverage_at_5pct_error": 0.35,
+              "aurc": 0.13028683574884053,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 500,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "sst2": {
+      "role": "sanity",
+      "n": 872,
+      "strong": {
+        "n": 872,
+        "accuracy": 0.9105504587155964,
+        "brier": 0.14335707654067126,
+        "log_loss": 0.24974981136584656,
+        "ece": 0.026242419761019566,
+        "coverage_at_5pct_error": 0.8176605504587156,
+        "aurc": 0.027740130318500072
+      },
+      "gates": {
+        "ettin-encoder-log_loss": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.911697247706422,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 25,
+                "agreement": 0.6
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 103,
+                "agreement": 0.6504854368932039
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 744,
+                "agreement": 0.9583333333333334
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.8864678899082569,
+              "brier": 0.17292700367521344,
+              "log_loss": 0.29620139465395356,
+              "ece": 0.01945283566592081,
+              "coverage_at_5pct_error": 0.7155963302752294,
+              "aurc": 0.044053855132328075,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.02956992713454218
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9048165137614679,
+              "brier": 0.15949750946772603,
+              "log_loss": 0.2815389604524541,
+              "ece": 0.021687496011814116,
+              "coverage_at_5pct_error": 0.7362385321100917,
+              "aurc": 0.04232732212148393,
+              "rate": 0.1,
+              "tau": 0.6964922336727338,
+              "mode": "leq",
+              "strong_calls": 65,
+              "strong_call_fraction": 0.07454128440366972,
+              "strong_calls_saved": 0.9254587155963303,
+              "score_drop": 0.016140432927054776
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9105504587155964,
+              "brier": 0.15075273452306312,
+              "log_loss": 0.2713317313758912,
+              "ece": 0.02189773318134918,
+              "coverage_at_5pct_error": 0.7488532110091743,
+              "aurc": 0.041031021852392505,
+              "rate": 0.25,
+              "tau": 0.8561962537283355,
+              "mode": "leq",
+              "strong_calls": 188,
+              "strong_call_fraction": 0.21559633027522937,
+              "strong_calls_saved": 0.7844036697247706,
+              "score_drop": 0.007395657982391862
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9162844036697247,
+              "brier": 0.14093002958391557,
+              "log_loss": 0.2545151434877285,
+              "ece": 0.020737695139323234,
+              "coverage_at_5pct_error": 0.8325688073394495,
+              "aurc": 0.03754040091013023,
+              "rate": 0.5,
+              "tau": 0.93821673693876,
+              "mode": "leq",
+              "strong_calls": 412,
+              "strong_call_fraction": 0.4724770642201835,
+              "strong_calls_saved": 0.5275229357798166,
+              "score_drop": -0.0024270469567556907
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9105504587155964,
+              "brier": 0.14335707654067126,
+              "log_loss": 0.24974981136584656,
+              "ece": 0.026242419761019566,
+              "coverage_at_5pct_error": 0.8176605504587156,
+              "aurc": 0.027740130318500072,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        },
+        "ettin-encoder-brier": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.908256880733945,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 35,
+                "agreement": 0.4857142857142857
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 113,
+                "agreement": 0.7345132743362832
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 724,
+                "agreement": 0.9558011049723757
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.8899082568807339,
+              "brier": 0.17114272329312652,
+              "log_loss": 0.29473240307054316,
+              "ece": 0.0230819019318793,
+              "coverage_at_5pct_error": 0.7385321100917431,
+              "aurc": 0.04568178354402298,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.027785646752455262
+            },
+            {
+              "n": 872,
+              "accuracy": 0.908256880733945,
+              "brier": 0.15702538029113355,
+              "log_loss": 0.2781676001569024,
+              "ece": 0.017661096149887767,
+              "coverage_at_5pct_error": 0.7190366972477065,
+              "aurc": 0.04331032633426424,
+              "rate": 0.1,
+              "tau": 0.6880366388926331,
+              "mode": "leq",
+              "strong_calls": 76,
+              "strong_call_fraction": 0.0871559633027523,
+              "strong_calls_saved": 0.9128440366972477,
+              "score_drop": 0.013668303750462296
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9151376146788991,
+              "brier": 0.14400777204747486,
+              "log_loss": 0.2632113306333656,
+              "ece": 0.011982018034218096,
+              "coverage_at_5pct_error": 0.7740825688073395,
+              "aurc": 0.045694324067879835,
+              "rate": 0.25,
+              "tau": 0.8649966762015338,
+              "mode": "leq",
+              "strong_calls": 239,
+              "strong_call_fraction": 0.27408256880733944,
+              "strong_calls_saved": 0.7259174311926606,
+              "score_drop": 0.0006506955068036058
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9162844036697247,
+              "brier": 0.14134582273525084,
+              "log_loss": 0.25491477934698237,
+              "ece": 0.017533846716855143,
+              "coverage_at_5pct_error": 0.838302752293578,
+              "aurc": 0.04004179523879173,
+              "rate": 0.5,
+              "tau": 0.9340819303867961,
+              "mode": "leq",
+              "strong_calls": 468,
+              "strong_call_fraction": 0.536697247706422,
+              "strong_calls_saved": 0.463302752293578,
+              "score_drop": -0.0020112538054204154
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9105504587155964,
+              "brier": 0.14335707654067126,
+              "log_loss": 0.24974981136584656,
+              "ece": 0.026242419761019566,
+              "coverage_at_5pct_error": 0.8176605504587156,
+              "aurc": 0.027740130318500072,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        },
+        "deberta-v3-large-zeroshot-v2.0-c": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.8635321100917431,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 52,
+                "agreement": 0.6153846153846154
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 168,
+                "agreement": 0.7202380952380952
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 652,
+                "agreement": 0.9202453987730062
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.8864678899082569,
+              "brier": 0.17483775472247584,
+              "log_loss": 0.29941968947947045,
+              "ece": 0.036584344092871104,
+              "coverage_at_5pct_error": 0.7144495412844036,
+              "aurc": 0.03976976657148999,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.03148067818180458
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9002293577981652,
+              "brier": 0.16263019646288873,
+              "log_loss": 0.2852523364908076,
+              "ece": 0.025821206906836237,
+              "coverage_at_5pct_error": 0.7511467889908257,
+              "aurc": 0.039410346607470614,
+              "rate": 0.1,
+              "tau": 0.6181563112348709,
+              "mode": "leq",
+              "strong_calls": 61,
+              "strong_call_fraction": 0.06995412844036697,
+              "strong_calls_saved": 0.930045871559633,
+              "score_drop": 0.019273119922217474
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9139908256880734,
+              "brier": 0.1437788826825268,
+              "log_loss": 0.2621851574120311,
+              "ece": 0.0237068115192401,
+              "coverage_at_5pct_error": 0.7821100917431193,
+              "aurc": 0.0403701986869779,
+              "rate": 0.25,
+              "tau": 0.7886619517291883,
+              "mode": "leq",
+              "strong_calls": 202,
+              "strong_call_fraction": 0.231651376146789,
+              "strong_calls_saved": 0.768348623853211,
+              "score_drop": 0.0004218061418555519
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9197247706422018,
+              "brier": 0.13452051154175795,
+              "log_loss": 0.2427445939014111,
+              "ece": 0.009866127591827476,
+              "coverage_at_5pct_error": 0.8623853211009175,
+              "aurc": 0.030831664432326475,
+              "rate": 0.5,
+              "tau": 0.916024342905812,
+              "mode": "leq",
+              "strong_calls": 478,
+              "strong_call_fraction": 0.5481651376146789,
+              "strong_calls_saved": 0.4518348623853211,
+              "score_drop": -0.008836564998913304
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9105504587155964,
+              "brier": 0.14335707654067126,
+              "log_loss": 0.24974981136584656,
+              "ece": 0.026242419761019566,
+              "coverage_at_5pct_error": 0.8176605504587156,
+              "aurc": 0.027740130318500072,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        },
+        "gliclass-base-v3.0": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.8784403669724771,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 46,
+                "agreement": 0.45652173913043476
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 127,
+                "agreement": 0.6850393700787402
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 699,
+                "agreement": 0.9413447782546495
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.8899082568807339,
+              "brier": 0.16791574099396045,
+              "log_loss": 0.2868987941348701,
+              "ece": 0.025137080565213424,
+              "coverage_at_5pct_error": 0.786697247706422,
+              "aurc": 0.03797576894960312,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.024558664453289192
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9036697247706422,
+              "brier": 0.1547112134303113,
+              "log_loss": 0.2708180776388,
+              "ece": 0.024063920745145524,
+              "coverage_at_5pct_error": 0.7740825688073395,
+              "aurc": 0.03370720149732581,
+              "rate": 0.1,
+              "tau": 0.621049027737237,
+              "mode": "leq",
+              "strong_calls": 55,
+              "strong_call_fraction": 0.06307339449541284,
+              "strong_calls_saved": 0.9369266055045872,
+              "score_drop": 0.011354136889640043
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9105504587155964,
+              "brier": 0.14806061038086818,
+              "log_loss": 0.26894491767703854,
+              "ece": 0.015747904188247626,
+              "coverage_at_5pct_error": 0.7649082568807339,
+              "aurc": 0.04925508503360158,
+              "rate": 0.25,
+              "tau": 0.80068002611068,
+              "mode": "leq",
+              "strong_calls": 174,
+              "strong_call_fraction": 0.19954128440366972,
+              "strong_calls_saved": 0.8004587155963303,
+              "score_drop": 0.004703533840196922
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9139908256880734,
+              "brier": 0.13954073837047654,
+              "log_loss": 0.2513772736857469,
+              "ece": 0.02557796275341765,
+              "coverage_at_5pct_error": 0.8577981651376146,
+              "aurc": 0.03978583329040785,
+              "rate": 0.5,
+              "tau": 0.92060645330771,
+              "mode": "leq",
+              "strong_calls": 398,
+              "strong_call_fraction": 0.45642201834862384,
+              "strong_calls_saved": 0.5435779816513762,
+              "score_drop": -0.003816338170194722
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9105504587155964,
+              "brier": 0.14335707654067126,
+              "log_loss": 0.24974981136584656,
+              "ece": 0.026242419761019566,
+              "coverage_at_5pct_error": 0.8176605504587156,
+              "aurc": 0.027740130318500072,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        },
+        "qwen3-0.6b": {
+          "agreement": {
+            "n": 872,
+            "agreement": 0.5951834862385321,
+            "bins": [
+              {
+                "lo": 0.0,
+                "hi": 0.2,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.2,
+                "hi": 0.4,
+                "n": 0,
+                "agreement": null
+              },
+              {
+                "lo": 0.4,
+                "hi": 0.6,
+                "n": 664,
+                "agreement": 0.4954819277108434
+              },
+              {
+                "lo": 0.6,
+                "hi": 0.8,
+                "n": 208,
+                "agreement": 0.9134615384615384
+              },
+              {
+                "lo": 0.8,
+                "hi": 1.0,
+                "n": 0,
+                "agreement": null
+              }
+            ]
+          },
+          "rates": [
+            {
+              "n": 872,
+              "accuracy": 0.6043577981651376,
+              "brier": 0.4467380703702184,
+              "log_loss": 0.6388882764806822,
+              "ece": 0.14524719158497756,
+              "coverage_at_5pct_error": 0.1731651376146789,
+              "aurc": 0.19404366052727093,
+              "rate": 0.0,
+              "tau": null,
+              "mode": "none",
+              "strong_calls": 0,
+              "strong_call_fraction": 0.0,
+              "strong_calls_saved": 1.0,
+              "score_drop": 0.30338099382954714
+            },
+            {
+              "n": 872,
+              "accuracy": 0.7373853211009175,
+              "brier": 0.3512558240413669,
+              "log_loss": 0.5189789325853804,
+              "ece": 0.11388141530972616,
+              "coverage_at_5pct_error": 0.4048165137614679,
+              "aurc": 0.09611385544983249,
+              "rate": 0.1,
+              "tau": 0.5185703721047665,
+              "mode": "leq",
+              "strong_calls": 193,
+              "strong_call_fraction": 0.2213302752293578,
+              "strong_calls_saved": 0.7786697247706422,
+              "score_drop": 0.20789874750069565
+            },
+            {
+              "n": 872,
+              "accuracy": 0.8405963302752294,
+              "brier": 0.2759962869863714,
+              "log_loss": 0.4246101633275047,
+              "ece": 0.11193020528741825,
+              "coverage_at_5pct_error": 0.573394495412844,
+              "aurc": 0.05805586007296892,
+              "rate": 0.25,
+              "tau": 0.5463141505226492,
+              "mode": "leq",
+              "strong_calls": 365,
+              "strong_call_fraction": 0.41857798165137616,
+              "strong_calls_saved": 0.5814220183486238,
+              "score_drop": 0.13263921044570015
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9002293577981652,
+              "brier": 0.21095957568859472,
+              "log_loss": 0.3454348356608321,
+              "ece": 0.09884206287486774,
+              "coverage_at_5pct_error": 0.5596330275229358,
+              "aurc": 0.04538287230728764,
+              "rate": 0.5,
+              "tau": 0.5828345683081336,
+              "mode": "leq",
+              "strong_calls": 604,
+              "strong_call_fraction": 0.6926605504587156,
+              "strong_calls_saved": 0.30733944954128445,
+              "score_drop": 0.06760249914792346
+            },
+            {
+              "n": 872,
+              "accuracy": 0.9105504587155964,
+              "brier": 0.14335707654067126,
+              "log_loss": 0.24974981136584656,
+              "ece": 0.026242419761019566,
+              "coverage_at_5pct_error": 0.8176605504587156,
+              "aurc": 0.027740130318500072,
+              "rate": 1.0,
+              "tau": null,
+              "mode": "all",
+              "strong_calls": 872,
+              "strong_call_fraction": 1.0,
+              "strong_calls_saved": 0.0,
+              "score_drop": 0.0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

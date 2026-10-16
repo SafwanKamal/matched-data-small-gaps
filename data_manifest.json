@@ -1,0 +1,156 @@
+{
+  "models": {
+    "Qwen/Qwen3-4B": {
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+    },
+    "Qwen/Qwen3.5-9B": {
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+    },
+    "Qwen/Qwen3.5-4B": {
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+    },
+    "jhu-clsp/ettin-encoder-17m": {
+      "revision": "987607455c61e7a5bbc85f7758e0512ea6d0ae4c"
+    },
+    "jhu-clsp/ettin-decoder-17m": {
+      "revision": "728fb5b6b3dc5916aa20829c027143ae8eca4eeb"
+    },
+    "jhu-clsp/ettin-encoder-32m": {
+      "revision": "1b8ba06455dd44f80fc9c1ca9e22806157a57379"
+    },
+    "jhu-clsp/ettin-decoder-32m": {
+      "revision": "a6ba5b89e2d8a5b71c819ac6c47ba81423019d3e"
+    },
+    "jhu-clsp/ettin-encoder-68m": {
+      "revision": "ac19ae4bc51093b31c475665ac872a936d056cc2"
+    },
+    "jhu-clsp/ettin-decoder-68m": {
+      "revision": "5d704138dd3e12a32ca7a357d25b09c618a9fb02"
+    },
+    "sentence-transformers/all-mpnet-base-v2": {
+      "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130"
+    }
+  },
+  "datasets": {
+    "clinc/clinc_oos": {
+      "config": "plus",
+      "revision": "155b9c710419136e17307b80d0a13e68cd46b4ec",
+      "splits": {
+        "train": 15250,
+        "validation": 3100,
+        "test": 5500
+      },
+      "features": {
+        "text": "Value('string')",
+        "intent": "ClassLabel(names=['restaurant_reviews', 'nutrition_info', 'account_blocked', 'oil_change_how', 'time', 'weather', 'redeem_rewards', 'interest_rate', 'gas_type',"
+      },
+      "loads": true
+    },
+    "dair-ai/emotion": {
+      "config": "split",
+      "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+      "splits": {
+        "train": 16000,
+        "validation": 2000,
+        "test": 2000
+      },
+      "features": {
+        "text": "Value('string')",
+        "label": "ClassLabel(names=['sadness', 'joy', 'love', 'anger', 'fear', 'surprise'])"
+      },
+      "loads": true
+    },
+    "community-datasets/yahoo_answers_topics": {
+      "config": null,
+      "revision": "6652a1e7c94f7260a0bfd0c9092dd48e2d536ea1",
+      "splits": {
+        "train": 1400000,
+        "test": 60000
+      },
+      "features": {
+        "id": "Value('int32')",
+        "topic": "ClassLabel(names=['Society & Culture', 'Science & Mathematics', 'Health', 'Education & Reference', 'Computers & Internet', 'Sports', 'Business & Finance', 'Ente",
+        "question_title": "Value('string')",
+        "question_content": "Value('string')",
+        "best_answer": "Value('string')"
+      },
+      "loads": true
+    },
+    "takala/financial_phrasebank": {
+      "config": "sentences_allagree",
+      "revision": "8d3fe0c36d5feec6b3cc5e455b0fcb4820fb9964",
+      "loads": false,
+      "error": "RuntimeError: Dataset scripts are no longer supported, but found financial_phrasebank.py"
+    },
+    "facebook/anli": {
+      "config": null,
+      "revision": "8e4813d81f46d313dac7892e1c28076917cfcdf9",
+      "splits": {
+        "train_r1": 16946,
+        "dev_r1": 1000,
+        "test_r1": 1000,
+        "train_r2": 45460,
+        "dev_r2": 1000,
+        "test_r2": 1000,
+        "train_r3": 100459,
+        "dev_r3": 1200,
+        "test_r3": 1200
+      },
+      "features": {
+        "uid": "Value('string')",
+        "premise": "Value('string')",
+        "hypothesis": "Value('string')",
+        "label": "ClassLabel(names=['entailment', 'neutral', 'contradiction'])",
+        "reason": "Value('string')"
+      },
+      "loads": true
+    },
+    "google/boolq": {
+      "config": null,
+      "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+      "splits": {
+        "train": 9427,
+        "validation": 3270
+      },
+      "features": {
+        "question": "Value('string')",
+        "answer": "Value('bool')",
+        "passage": "Value('string')"
+      },
+      "loads": true
+    },
+    "allenai/ai2_arc": {
+      "config": "ARC-Challenge",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "splits": {
+        "train": 1119,
+        "test": 1172,
+        "validation": 299
+      },
+      "features": {
+        "id": "Value('string')",
+        "question": "Value('string')",
+        "choices": "{'text': List(Value('string')), 'label': List(Value('string'))}",
+        "answerKey": "Value('string')"
+      },
+      "loads": true
+    },
+    "cais/mmlu": {
+      "config": "all",
+      "revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+      "splits": {
+        "test": 14042,
+        "validation": 1531,
+        "dev": 285,
+        "auxiliary_train": 99842
+      },
+      "features": {
+        "question": "Value('string')",
+        "subject": "Value('string')",
+        "choices": "List(Value('string'))",
+        "answer": "ClassLabel(names=['A', 'B', 'C', 'D'])"
+      },
+      "loads": true
+    }
+  }
+}

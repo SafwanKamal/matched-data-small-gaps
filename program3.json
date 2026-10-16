@@ -1,0 +1,50 @@
+{
+  "protocol_id": "program-3-ordinal-score-2026-10-07-fp32",
+  "model": "jhu-clsp/ettin-encoder-150m",
+  "revision": "45d08642849e5c5701b162671ac811b7654bfd9f",
+  "architecture": "ModernBertModel",
+  "pooling": "mean",
+  "max_length": 128,
+  "dtype": "float32",
+  "autocast_dtype": "bfloat16",
+  "dtype_note": "Revised 2026-10-08. The first runs stored the trained weights in bfloat16, which rounded most AdamW updates at this learning rate to zero. Those results are kept under artifacts/superseded-bf16/.",
+  "head_dtype": "float32",
+  "dataset": {
+    "hf_id": "SetFit/sst5",
+    "revision": "e51bdcd8cd3a30da231967c1a249ba59361279a3",
+    "text_field": "text",
+    "label_field": "label",
+    "train_split": "train",
+    "dev_split": "validation",
+    "test_split": "test",
+    "exclude_train_texts_in_dev_or_test": true,
+    "labels": [
+      "very negative",
+      "negative",
+      "neutral",
+      "positive",
+      "very positive"
+    ]
+  },
+  "heads": ["softmax_log_loss", "coral"],
+  "coral": {
+    "shared_weight": true,
+    "bias_init": "logit of the training-split frequency of gold > k",
+    "bias_learning_rate": 1e-3,
+    "bias_weight_decay": 0.0,
+    "bias_note": "Revised 2026-10-08. With zero-initialised thresholds at the encoder learning rate, the four trained biases stayed within 0.009 of zero, the thresholds coincided, and the head put 99.7% of its mass on the two end levels. That run is kept under artifacts/superseded-coral-zero-bias/.",
+    "loss": "mean binary cross-entropy on the indicators gold > k",
+    "class_probability": "difference of consecutive sigmoids; negative mass clipped to 0 and renormalized",
+    "ranked_probability_score": "mean over items of the sum over k = 0..K-2 of (CDF(k) - 1[gold <= k])^2"
+  },
+  "learning_rate": 2e-5,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.06,
+  "epochs": 3,
+  "batch_size": 32,
+  "eval_batch_size": 64,
+  "max_grad_norm": 1.0,
+  "seed": 20261007,
+  "dev_used_only_for_temperature": true,
+  "oom_batch_fallback": 16
+}
