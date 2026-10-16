@@ -2,7 +2,7 @@
 
 ## Sources
 
-- **Protocol:** `retrieval_suppression_protocol.json`, frozen at `1538cbb`. The DeepSeek host amendment is at `467b523`.
+- **Protocol:** `retrieval_suppression_protocol.json`, frozen before any request, with a dated DeepSeek host amendment; see `release/FREEZE_TABLE.md` for its freeze time, frozen text and item-list hash.
 - **Analysis:** `src/bakeoff/retrieval_suppression.py analyze`, writing `artifacts/retrieval-suppression/analysis.json`.
 
 ## Setup

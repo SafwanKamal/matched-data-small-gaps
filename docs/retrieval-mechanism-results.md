@@ -2,7 +2,7 @@
 
 ## Sources
 
-- **Protocol:** `retrieval_mechanism_protocol.json`, frozen at `a5802f7` before any request. The execution note on parallel processes is at `f9c6c1b`.
+- **Protocol:** `retrieval_mechanism_protocol.json`, frozen before any request, with a dated execution note on parallel processes; see `release/FREEZE_TABLE.md` for its freeze time, frozen text and item-list hash.
 - **Code:** `src/bakeoff/retrieval_mechanism.py`.
 - **Numbers:** `artifacts/retrieval-mechanism/analysis.json`.
 

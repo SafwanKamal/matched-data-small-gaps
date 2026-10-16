@@ -2,7 +2,7 @@
 
 ## Sources and execution
 
-- **Protocol:** `gh_protocol.json`, frozen at `03f0963` before any request.
+- **Protocol:** `gh_protocol.json`, frozen before any request; see `release/FREEZE_TABLE.md` for its freeze time, frozen text and item-list hash.
 - **Code:** `src/bakeoff/gh_runs.py`.
 - **Numbers:** `artifacts/gh/analysis.json`.
 - **Status:** sensitivity and descriptive analyses, outside every confirmatory family.

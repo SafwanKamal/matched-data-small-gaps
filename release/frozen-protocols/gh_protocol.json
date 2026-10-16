@@ -1,0 +1,35 @@
+{
+  "protocol_id": "gh-ordering-contamination-2026-10-16",
+  "status": "FROZEN before any request; the owner approved running G and H on 2026-10-16",
+  "role": "runs G (restricted) and H of docs/reviews/round3/synthesis.md section 6: the general model's sensitivity to the order of retrieved examples, and a contamination probe",
+  "status_of_results": "sensitivity and descriptive analyses; not part of any confirmatory family",
+
+  "part_G_ordering": {
+    "question": "How much does Gemma 4 31B's weighted turn accuracy move when only the order of its 20 retrieved examples changes?",
+    "items": "the confirmatory CLINC150 (1,850) and MASSIVE (1,216) turns of artifacts/confirmatory/items.json, unchanged",
+    "model": "gemma-4-31b on Novita, temperature 0, reasoning off, the run A prompt and pool (in-scope rows only)",
+    "orders": {
+      "A (as run)": "least similar first (existing run A replies, not re-requested)",
+      "G1": "most similar first (the reverse of A)",
+      "G2": "a random permutation of the same 20 examples, seeded by sha256 of the turn id with seed 20261019"
+    },
+    "measures": "per set and order: weighted turn accuracy, in-scope kept, out-of-scope rejected; share of turns whose (scope, intent) answer differs from A; the range and SD of weighted accuracy over the three orders; specialist minus Gemma under each order (weighted sign-flip clustered by intent, as confirmatory_protocol.json); all also on never-seen turns",
+    "readout_stated_in_advance": "if the range of Gemma's weighted accuracy over orders is at least 1 point on a set, differences between systems of that size on that set are reported as within the general model's ordering variance"
+  },
+
+  "part_H_contamination": {
+    "question": "Do the general models complete public test utterances of CLINC150 and Banking77 verbatim more often than chance similarity predicts?",
+    "items": "200 CLINC150 and 200 Banking77 test utterances with at least 8 words, drawn with seed 20261019 from the respective test splits (any earlier use allowed; this part scores no system on the task)",
+    "prompt": "system: 'You complete text exactly as it appears in its source. Reply with the rest of the text only.' user: 'Complete this customer message: {first half of the words}'",
+    "models": "gemma-4-31b (Novita) and qwen3.5-27b (Alibaba), temperature 0, max_tokens 40, reasoning off",
+    "measures": {
+      "exact": "share of completions whose normalised text equals the true second half",
+      "own_vs_sibling": "token F1 of the completion with its own true second half, minus the mean token F1 with the second halves of up to 20 other test utterances of the same intent; paired sign-flip test clustered by intent, two-sided",
+      "readout_stated_in_advance": "memorisation is indicated if the own-minus-sibling F1 difference is significantly positive and exact matches exceed 5%; otherwise the probe finds no evidence of verbatim memorisation (which does not rule out contamination)"
+    }
+  },
+
+  "cost": {"G_estimate_usd": 1.02, "H_estimate_usd": 0.05, "check_usd": 0.01, "run_cap_usd": 1.5, "budget": "spent before 72.08 of 80"},
+  "code": "src/bakeoff/gh_runs.py (stages check, G, H, analyze); runner scripts/run_gh.sh",
+  "limits": "Three orders only; Gemma only for G. H cannot separate memorisation from the predictability of short service requests, and a negative result does not rule out contamination."
+}

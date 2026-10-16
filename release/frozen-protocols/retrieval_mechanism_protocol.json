@@ -1,0 +1,124 @@
+{
+  "protocol_id": "retrieval-mechanism-d2-2026-10-16",
+  "status": "FROZEN before any request; approved by the owner on 2026-10-16",
+  "role": "run D2 of docs/reviews/round3/synthesis.md section 6: replicate the retrieval acceptance shift on fresh, label-clean BANKING77-OOS items with a clean pool, and test three candidate causes of the difference between BANKING77-OOS and CLINC single-domain",
+  "what_was_seen_before_writing": "All results of run D and the Jev re-run, including the post hoc leak-free analyses (docs/posthoc-round3b.md): retrieval lowers held-out rejection on BANKING77-OOS for five models (14-38 points on leak-free items) but not on CLINC single-domain; with the leak removed, retrieval closeness no longer distinguishes the splits (dense AUROC 0.90 vs 0.91). Counts of fresh label-clean validation items were computed while writing; no system has been run on them.",
+  "seed": 20261017,
+  "items": {
+    "rule": "only validation-split items whose normalised text appears in no earlier session, no earlier dev set and no earlier experiment's items, and whose label agrees with the original dataset (BANKING77-OOS against legacy-datasets/banking77, CLINC single-domain against clinc_oos); checked at build time and frozen with a hash",
+    "banking77_oos": {
+      "in_scope": "500 drawn with the seed from the 1,063 fresh label-clean in-scope validation utterances (50 intents)",
+      "held_out": "all 406 fresh label-clean id-oos validation utterances (23 held-out intents)",
+      "pool": "the 5,905 training rows minus every row whose label disagrees with the original Banking77 label (366 rows; artifacts/posthoc/b77oos_label_audit.json), so no held-out intent is in the pool"
+    },
+    "clinc_single_domain": {
+      "in_scope": "the 500 validation utterances of each domain (banking, credit_cards)",
+      "held_out": "the 300 id-oos validation utterances of each domain after the first 100 (the first 100 served as specialist dev items in run D); 4 held-out intents per domain",
+      "pool": "each domain's 500 training utterances; for the pooled prompt, both domains' 1,000"
+    },
+    "items_total": {
+      "banking77_oos": 888,
+      "clinc_single_domain": 1575
+    },
+    "frozen_lists": "artifacts/retrieval-mechanism/items.json, SHA-256 04c55578a64298780ae31bc9e0685358c90262b84cd760ba42bbdab62bf2c1b5. Built: banking77_oos 500 in-scope / 388 held-out (23 intents; fewer than 406 because the freshness rule also excludes earlier dev items), pool 5,539 rows; clinc_banking 500 / 286 and clinc_credit_cards 500 / 289 (4 held-out intents each).",
+    "change_before_freeze": "2026-10-16, before freezing and before any request: no CLINC single-domain in-scope validation item is unused, because all 1,000 served as run D's specialist development data (temperature and threshold; never sent to a model, never part of a reported result). They are allowed as in-scope items here. H4 is scored on held-out items only; the in-scope items enter the acceptance and discrimination measures."
+  },
+  "arms": {
+    "banking77_oos": {
+      "zero_shot": "as run D",
+      "retrieval": "as run D, from the clean pool",
+      "random_examples": "20 in-scope rows drawn at random from the clean pool for each item (seeded per item), in the same format and position as retrieval",
+      "rule_after_examples": "the retrieval prompt with the system prompt's scope sentence ('The desk handles only the request types listed below; anything else, including other banking questions, must be passed on.') repeated after the examples, immediately before the current message"
+    },
+    "clinc_single_domain": {
+      "zero_shot_10": "the domain's own 10 options (as run D)",
+      "retrieval_10": "the domain's own 10 options, retrieval from that domain's pool (as run D)",
+      "zero_shot_20": "one prompt for both domains: the 20 options of banking and credit_cards, desk described as 'a bank's customer-support desk for banking and credit cards'",
+      "retrieval_20": "the 20-option prompt with retrieval from the pooled 1,000 rows"
+    }
+  },
+  "models": {
+    "gemma-4-31b": {
+      "model": "google/gemma-4-31b-it",
+      "provider": "Novita",
+      "reasoning_off": true
+    },
+    "qwen3.5-27b": {
+      "model": "qwen/qwen3.5-27b",
+      "provider": "Alibaba",
+      "reasoning_off": true
+    },
+    "llama-3.3-70b": {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "reasoning_off": false,
+      "precision": "fp8"
+    },
+    "deepseek-v4-pro": {
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "StreamLake",
+      "reasoning_off": true,
+      "precision": "fp8 (StreamLake); originally Parasail fp8, see amendment_2026-10-16_deepseek_host"
+    }
+  },
+  "hypotheses": {
+    "H1_replication": {
+      "statement": "on fresh label-clean BANKING77-OOS items with a clean pool, held-out rejection is lower with retrieval than zero-shot",
+      "family": "5 models, Holm, one-sided",
+      "replicates_if": "significant for at least 4 of 5 models, all in the same direction"
+    },
+    "H2_relevance": {
+      "statement": "random in-scope examples change held-out rejection differently from retrieved ones (rejection(random) - rejection(retrieval) != 0)",
+      "prediction_stated_in_advance": "if the acceptance shift comes from the presence of in-domain examples, the difference is near 0; if it comes from their relevance, random examples leave rejection higher. Both outcomes are reported with the fixed sentences below.",
+      "family": "5 models, Holm, two-sided"
+    },
+    "H3_rule_position": {
+      "statement": "repeating the scope rule after the examples raises held-out rejection relative to retrieval",
+      "family": "5 models, Holm, one-sided"
+    },
+    "H4_option_count": {
+      "statement": "on CLINC single-domain, the retrieval-minus-zero-shot change in held-out rejection differs between the 20-option and the 10-option prompts (difference of differences, paired on items)",
+      "prediction_stated_in_advance": "if option count drives the BANKING77-OOS effect, the 20-option change is more negative than the 10-option change",
+      "family": "5 models, Holm, two-sided"
+    },
+    "tests": "paired sign-flip tests of per-item differences, clustered by held-out intent for rejection and by in-scope intent for in-scope measures, 10,000 draws; 95% cluster-bootstrap intervals",
+    "mechanism_measures": "for every arm and model: held-out rejected, in-scope kept, in-scope right; for the general models d' and c (equal-variance signal detection, labelled as such, with the zROC-slope sensitivity of R1); for Jev AUROC of the scope probability and mean probability on held-out and in-scope items"
+  },
+  "outcome_sentences": {
+    "H1 replicates": "On fresh label-clean BANKING77-OOS items with a clean pool, retrieval lowers rejection of unsupported same-domain requests for {k} of 5 models by {range} points.",
+    "H1 fails": "On fresh label-clean items with a clean pool the acceptance shift replicates for only {k} of 5 models; the run D result on BANKING77-OOS depended on its items or pool.",
+    "H2 near zero": "Random in-scope examples shift the models as much as retrieved ones: the presence of in-domain examples, not their relevance, moves the decision towards acceptance.",
+    "H2 random higher": "Random examples shift the models less than retrieved ones: relevant examples drive the acceptance shift.",
+    "H3 significant": "Restating the scope rule after the examples recovers {d} points of rejection: part of the shift comes from separating the rule from the query.",
+    "H3 not significant": "Restating the scope rule after the examples does not restore rejection.",
+    "H4 significant as predicted": "Doubling the options on CLINC single-domain makes retrieval lower rejection: option count contributes to the difference between the splits.",
+    "H4 not significant": "Doubling the options does not change retrieval's effect on CLINC single-domain; option count up to 20 does not explain the difference between the splits."
+  },
+  "cost": {
+    "general_models_estimate_usd": {
+      "banking77_oos": 2.1,
+      "clinc_single_domain": 2.4,
+      "check": 0.1,
+      "total": 4.6
+    },
+    "basis": "run D's measured per-call cost per model and split, scaled to item and arm counts; DeepSeek with StreamLake's observed caching",
+    "run_cap_usd": 6.0,
+    "jev_estimate": "about 10,000 requests, roughly 0.3 to 1.5 USD on the TypeSafe key (tokens only reported)",
+    "budget": "spent before 65.19 of the 80 USD cap; remaining after D2 about 10.2",
+    "check_cap_usd": 0.15
+  },
+  "code": "src/bakeoff/retrieval_mechanism.py (stages build, check, hosted, jev_check, jev, analyze); runner scripts/run_retrieval_mechanism.sh",
+  "limits": "Option count is varied only from 10 to 20 on CLINC single-domain, not to BANKING77-OOS's 50. Random-example draws are one per item. The validation splits are smaller than the test splits and the BANKING77-OOS held-out set covers 23 of 27 intents.",
+  "jev": {
+    "model": "jev-1.13.0",
+    "note": "same arms through Jev's interface as jev_rerun_protocol.json (scope probability at 0.5, label names in the examples); the rule_after_examples arm places the scope sentence in the state after the examples; billed to the TypeSafe key"
+  },
+  "request": "temperature 0, max_tokens 24, reasoning off where switchable, pinned hosts, fallbacks off; parsing and failure rules as run D",
+  "model_order": [
+    "llama-3.3-70b",
+    "gemma-4-31b",
+    "qwen3.5-27b",
+    "deepseek-v4-pro"
+  ],
+  "check": "plumbing only: per model, split and arm, five training rows of the split and five fixed off-topic sentences (no frozen item); confirms host, parsing and cost; not reported"
+}

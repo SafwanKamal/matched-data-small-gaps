@@ -4,6 +4,7 @@ Code, frozen protocols, saved model replies and analyses for the paper *Matched 
 
 - **Paper:** [`paper/main.pdf`](paper/main.pdf), source in [`paper/main.tex`](paper/main.tex).
 - **Reproducing the numbers:** [`release/README.md`](release/README.md). Every analysis reruns on a CPU from the saved replies; no API calls are needed.
+- **Pre-registration:** [`release/FREEZE_TABLE.md`](release/FREEZE_TABLE.md) gives each protocol's freeze time, its text as frozen (`release/frozen-protocols/`), its item-list hash, and when its replies and analysis were first committed.
 - **File hashes:** [`release/SHA256SUMS`](release/SHA256SUMS) covers the data, every protocol, frozen item list, saved reply and analysis output, and the specialist weights and features.
 
 ## Layout

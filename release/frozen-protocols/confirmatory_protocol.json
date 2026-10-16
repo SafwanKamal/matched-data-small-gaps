@@ -1,0 +1,178 @@
+{
+  "protocol_id": "confirmatory-2026-10-15",
+  "status": "FROZEN before any request or scoring; approved by the owner on 2026-10-15 ('acceptable for now')",
+  "role": "the confirmatory run agreed in the simulated review (docs/reviews/round2/synthesis.md, 'Confirmatory protocol'; docs/HANDOFF.md section 4). Fresh sessions built from test items that no earlier session used, scored once, with the systems, endpoint, tests and the sentence the paper prints for each outcome all fixed here before any request is sent or any session turn is scored by any system.",
+  "claim_under_test": "Once both sides are equipped, the fine-tuned specialist and the retrieval-prompted general model tie on intent, and the difference between them lies in the out-of-scope decision; a combination (general-model scope, specialist intent when confident) is at least as good as the general model alone.",
+  "what_was_seen_before_writing": "Exploratory results on the old 400-session sets (artifacts/revision/analysis.json). Counts of unused items per source and the seeded draw of MASSIVE held-out domains below were computed while writing this file; no system was run on any item listed here.",
+  "seed": 20261016,
+  "text_normalisation": {
+    "rule": "lower-case; every character that is not a letter, digit, whitespace or apostrophe becomes a space; runs of whitespace collapse to one space; strip",
+    "applies_to": "session turns, specialist training/dev rows, retrieval-pool rows and dev out-of-scope rows, on all three sets",
+    "why": "Banking77 in-scope text is 95% cased with '?' and '.', CLINC out-of-scope text is lower-case without them; MASSIVE is the reverse. Normalising both sides removes casing and punctuation as scope cues.",
+    "original_case_arm": "secondary: one specialist (seed 20261007, same recipe) trained and thresholded on the original, un-normalised text and scored on the original text of the same turns, compared with the normalised seed-20261007 specialist, so the effect of normalising can be attributed"
+  },
+  "sets": {
+    "banking77": {
+      "labels": "the 77 frozen Banking77 labels",
+      "in_scope_turns": "all 1295 Banking77 test utterances that appear in no earlier session (not in workflow-v1 sessions, not used as MASSIVE out-of-scope turns)",
+      "out_of_scope_turns": "184 of the 369 CLINC150 out-of-scope test queries that appear in no earlier session (seeded split of the 369 with the CLINC150 set below)",
+      "dev_in": "the 400 Program 1 Banking77 dev items",
+      "dev_out": "the 100 CLINC150 out-of-scope validation queries",
+      "train": "Banking77 train excluding the Program 1 dev rows"
+    },
+    "clinc150": {
+      "labels": "the 150 CLINC150 in-scope intents",
+      "in_scope_turns": "1665 drawn with the seed from the 2892 CLINC150 in-scope test utterances that appear in no earlier session",
+      "out_of_scope_turns": "the other 185 of the 369 unused CLINC150 out-of-scope test queries (native)",
+      "dev_in": "the 400 CLINC150 validation items of workflow_clinc_protocol.json",
+      "dev_out": "the 100 CLINC150 out-of-scope validation queries",
+      "train": "CLINC150 in-scope train"
+    },
+    "massive": {
+      "held_out_domains": [
+        "email",
+        "iot",
+        "play"
+      ],
+      "held_out_rule": "three domains drawn with numpy default_rng(20261016).choice(eligible, 3, replace=False), eligible = the 16 MASSIVE domains other than 'general' and 'qa' (catch-all domains whose requests overlap every other domain). The draw removes 18 of the 60 labels.",
+      "labels": "the 42 MASSIVE labels of the remaining 15 domains, in frozen alphabetical order",
+      "in_scope_turns": "all 973 MASSIVE test utterances of the remaining domains that appear in no earlier session",
+      "out_of_scope_turns": "243 utterances of the held-out domains (native out-of-scope), drawn with the seed from their 398 test utterances that appear in no earlier session",
+      "dev_in": "the first 400 MASSIVE dev items of the remaining domains",
+      "dev_out": "100 held-out-domain dev items drawn with the seed",
+      "train": "MASSIVE train of the remaining domains",
+      "note": "A new 42-label task: its numbers are not comparable with the 60-label MASSIVE results of earlier sections."
+    },
+    "frozen_lists": "artifacts/confirmatory/items.json holds every turn (normalised and original text, source id, gold), the train, dev and out-of-scope-row pools of each set. SHA-256 73a968d6d81b247116df73f3376a7714a3585ded4cf772a2979c3c37e91b6829. Built: banking77 296 sessions / 1479 turns (184 out of scope); massive 244 / 1216 (243); clinc150 370 / 1850 (185).",
+    "known_overlap": "Checked after the build, before any scoring: after normalisation, 16 banking77, 10 clinc150 and 4 massive session turns are identical to a training row (duplicates inside the source datasets). They are kept, as in every earlier section, and stated."
+  },
+  "sessions": {
+    "construction": "workflow v1 builder (five turns; an in-scope turn repeats the previous intent with probability 0.3), with the out-of-scope probability per turn set to the set's share n_out / (n_in + n_out) so that both pools are used up: banking77 0.124 (1479 turns, about 296 sessions), clinc150 0.100 (1850 turns, 370 sessions), massive 0.200 (1216 turns, about 243 sessions). A last incomplete session is kept and scored at turn level only.",
+    "why_rates_differ": "the native out-of-scope supply is the binding limit (369 unused CLINC queries for two sets). The primary endpoint weights in-scope and out-of-scope turns 0.8/0.2 separately, so it does not depend on the share in the sessions; session success (secondary) does, and is reported with each set's rate."
+  },
+  "specialist": {
+    "model": "150M Ettin encoder, Program 2 recipe, retrained on the normalised training rows of each set",
+    "learning_rate_epochs": {
+      "banking77": "1e-4, 6 epochs",
+      "clinc150": "5e-5, 3 epochs",
+      "massive": "2e-4, 6 epochs (selected on the 60-label set in revision part G; not re-swept for 42 labels)"
+    },
+    "seeds": [
+      20261007,
+      20261015,
+      20261016
+    ],
+    "temperature": "fit on dev_in per seed",
+    "scope": "dev-selected detector (oos_detectors_protocol.json candidates) with the prior-weighted threshold: maximise 0.8 x dev in-scope kept + 0.2 x dev out-of-scope caught",
+    "sensitivity": "the same rule at out-of-scope rates 0.1 and 0.3",
+    "per_turn": "each system containing the specialist is scored per seed; per-turn correctness is the mean over the three seeds; one specialist number per table",
+    "asymmetry_stated": "the specialist uses 400 dev in-scope and 100 dev out-of-scope items for temperature and threshold; the general model uses none"
+  },
+  "general_models": {
+    "primary": {
+      "name": "gemma-4-31b",
+      "model": "google/gemma-4-31b-it",
+      "provider": "Novita",
+      "reasoning_off": true
+    },
+    "secondary": {
+      "name": "qwen3.5-27b",
+      "model": "qwen/qwen3.5-27b",
+      "provider": "Alibaba",
+      "reasoning_off": true
+    },
+    "frontier": {
+      "name": "qwen3.8-2.4t-a95b",
+      "model": "qwen/qwen3.8-2.4t-a95b",
+      "provider": "Alibaba",
+      "reasoning_off": true,
+      "params": "2.4T total, 95B active (mixture of experts), open weights",
+      "why": "the owner's choice (2026-10-15) among the frontier models priced on OpenRouter that day: answers 'would trillion-parameter models crush this?' with a model whose size is stated. Price $2 / $6 per million input / output tokens.",
+      "host_rule": "Alibaba (first-party host); if it fails the plumbing check, Novita, recorded here before any session turn is sent"
+    },
+    "prompt": "the zero-shot system prompt of each set's earlier protocol (workflow_v4 for banking77, workflow_massive, workflow_clinc), with the set's labels; user message: 'Similar labelled examples (message => code):' + 20 BM25 neighbours least similar first + blank line + 'Current message: {text}'",
+    "retrieval_primary": "BM25 (k1 1.5, b 0.75), top 20 from the normalised in-scope training rows only (no out-of-scope rows)",
+    "retrieval_with_rows": "secondary (run C): the same pool plus out-of-scope rows with the out-of-scope code: banking77 and clinc150 the 250 CLINC150 out-of-scope train queries; massive 250 held-out-domain train utterances drawn with the seed",
+    "request": "temperature 0, max_tokens 24, one call per turn, pinned host, fallbacks off",
+    "failures": "retries as workflow_v4._call (three passes). A turn with no successful reply is scored wrong: scope opposite to gold, no intent. Replies are parsed by the workflow_v4 rule (a missing scope line is taken from the intent code; a missing or out-of-range intent is wrong on a turn judged in scope); failed requests and parse failures are counted per run and set.",
+    "logged_per_call": "prompt_tokens, cached_tokens, completion_tokens, provider-returned cost, latency_ms, provider"
+  },
+  "systems": {
+    "specialist_alone": "specialist scope and intent",
+    "model_alone": "general model scope and intent",
+    "combination": "general-model scope; intent from the specialist when its temperature-scaled top probability is at least 0.9, otherwise from the general model",
+    "cascade_0.4": "the 40% of turns with the lowest specialist top probability take the general model's scope and intent; the rest the specialist's (rate fixed by rule because no general-model answers exist on dev)"
+  },
+  "endpoint": {
+    "primary": "weighted turn accuracy = 0.8 x (share of in-scope turns with scope yes and the right intent) + 0.2 x (share of out-of-scope turns with scope no)",
+    "also_reported": "scope accuracy, in-scope kept, out-of-scope caught, intent accuracy on in-scope turns, unweighted turn accuracy, session success (secondary), length AUROC of in- vs out-of-scope turns per set (the residual length cue)"
+  },
+  "tests": {
+    "statistic": "paired difference in the weighted endpoint; each turn carries weight 0.8/n_in or 0.2/n_out",
+    "sign_flip": "10,000 sign flips of per-cluster weighted sums, clusters = gold intent for in-scope turns and one cluster per out-of-scope turn; two-sided; seed 20261016; 95% interval by cluster bootstrap (2,000 draws)",
+    "primary_family_holm": [
+      "banking77: specialist vs gemma",
+      "massive: specialist vs gemma",
+      "clinc150: specialist vs gemma",
+      "banking77: combination vs gemma",
+      "massive: combination vs gemma",
+      "clinc150: combination vs gemma"
+    ],
+    "alpha": 0.05,
+    "equivalence_banking77": "TOST at margin +/- 2.5 points on specialist minus gemma: equivalent when the 90% cluster-bootstrap interval lies inside (-2.5, +2.5)",
+    "secondary_unadjusted_labelled": "the same comparisons for qwen3.5-27b; cascade vs specialist and vs model; with-rows minus without-rows for gemma (run C) and for the specialist (kNN vote, revision part E rule); frontier vs gemma on its session subset; threshold sensitivity; original-case specialist",
+    "power_stated": "approximate minimum detectable difference (80% power, two-sided 0.05, before clustering, assuming 8% discordant in-scope and 20% discordant out-of-scope turns): banking77 about 2.5 points, clinc150 about 2.4, massive about 2.6. Lower than the review's 1,850-turn figure (1.5-1.8) because the native out-of-scope supply limits the sets. MASSIVE's exploratory gap (-5.3) is within reach; banking77 is read through the equivalence test.",
+    "decomposition": "specialist minus model = [specialist - (model scope + specialist intent)] (scope part) + [(model scope + specialist intent) - model] (intent part), in weighted points; used by outcome_sentences.headline_rule"
+  },
+  "outcome_sentences": {
+    "specialist_vs_gemma": {
+      "significant, specialist ahead": "On fresh sessions with normalised text and native out-of-scope data, the fine-tuned specialist beats the retrieval-prompted general model on {set} by {d} points [{lo}, {hi}].",
+      "significant, gemma ahead": "On fresh sessions, the retrieval-prompted general model beats the fine-tuned specialist on {set} by {d} points [{lo}, {hi}]; the gap comes from {scope or intent, whichever component carries most of it}.",
+      "not significant, banking77 equivalent": "On Banking77 the two are equivalent within 2.5 points ({d} [{lo90}, {hi90}], 90% interval).",
+      "not significant, not equivalent": "On {set} the difference ({d} [{lo}, {hi}]) is not significant and equivalence within 2.5 points is not shown; we cannot rank the two."
+    },
+    "combination_vs_gemma": {
+      "significant, combination ahead": "The pre-registered combination improves on the general model alone on {set} by {d} points [{lo}, {hi}].",
+      "significant, combination behind": "The combination is worse than the general model alone on {set} ({d} [{lo}, {hi}]); the post hoc finding does not replicate there.",
+      "not significant": "On {set} the combination is level with the general model alone ({d} [{lo}, {hi}])."
+    },
+    "headline_rule": "The abstract states 'the difference lies in the out-of-scope decision' only if, on every set where specialist vs gemma is significant, the scope component accounts for more than half of the weighted gap; otherwise it reports the components as found."
+  },
+  "frozen_before_run": "src/bakeoff/confirmatory.py (stages build, train, features, check, hosted, analyze) and artifacts/confirmatory/items.json, with SHA-256 below, are committed before the first paid request. The abstract is rewritten only after the run.",
+  "runs": {
+    "check": {
+      "what": "8 dev in-scope and 2 dev out-of-scope items per model and set, primary pool, to confirm host, reasoning off, parsing and the cost field; not reported",
+      "run_cap_usd": 0.1,
+      "estimate_usd": 0.02
+    },
+    "A": {
+      "what": "gemma-4-31b, primary pool, all confirmatory turns",
+      "run_cap_usd": 1.5,
+      "estimate_usd": 0.75
+    },
+    "B": {
+      "what": "qwen3.5-27b, primary pool, all confirmatory turns",
+      "run_cap_usd": 2.0,
+      "estimate_usd": 1.1
+    },
+    "C": {
+      "what": "gemma-4-31b, pool with out-of-scope rows, all confirmatory turns",
+      "run_cap_usd": 1.5,
+      "estimate_usd": 0.75
+    },
+    "I": {
+      "what": "qwen3.8-2.4t-a95b, primary pool, the first 100 sessions of each set; compared with gemma (run A) and the specialist on the same turns (secondary)",
+      "sessions_per_set": 100,
+      "run_cap_usd": 6.0,
+      "estimate_usd": 4.0
+    },
+    "order": "check, A, B, C, I; if a cap is reached, the finished runs are reported and the rest listed as not run"
+  },
+  "budget": {
+    "spent_before_usd": 45.9,
+    "project_cap_usd": 80.0,
+    "note": "cap recorded in api_protocol.json in commit 0e4fcbf before any request"
+  },
+  "not_in_this_protocol": "D (retrieval-suppression replication), E, F, G, H each get their own protocol, committed before their requests.",
+  "cost_metrics": "for every hosted system and set: mean prompt and completion tokens, cached share, USD per turn, USD per 1,000 sessions (at the set's mean turns per session), USD per correct session, latency p50/p95/p99 per call, providers. Combination costs a model call on every turn; the cascade on 40% of turns. The specialist's API cost is 0; its latency comes from artifacts/encoder_latency. Figure: weighted accuracy against USD per 1,000 sessions (log axis) per set, with the frontier drawn."
+}

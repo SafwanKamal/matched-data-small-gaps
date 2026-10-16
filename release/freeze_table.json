@@ -1,0 +1,145 @@
+[
+ {
+  "run": "Confirmatory runs A, B, C and I",
+  "protocol": "confirmatory_protocol.json",
+  "frozen_at": "2026-10-16 03:50:57 UTC",
+  "frozen_sha256": "778dad6cf9a1c9ac6592b42e7be73d924df31a9de7899f85358dd1534f31a25b",
+  "current_sha256": "674313b6a0983e751dd10fbfa96eda04a3d7394be17a4b86a21adcc9ab17fb5a",
+  "later_amendment_commits": [
+   "2026-10-16 04:19:02 UTC",
+   "2026-10-16 04:22:33 UTC",
+   "2026-10-16 05:42:47 UTC",
+   "2026-10-16 12:50:26 UTC"
+  ],
+  "items": [
+   {
+    "path": "artifacts/confirmatory/items.json",
+    "recorded_sha256": "73a968d6d81b247116df73f3376a7714a3585ded4cf772a2979c3c37e91b6829",
+    "file_sha256": "73a968d6d81b247116df73f3376a7714a3585ded4cf772a2979c3c37e91b6829",
+    "match": true,
+    "added": "2026-10-16 03:50:57 UTC"
+   }
+  ],
+  "reply_files": 31,
+  "first_reply_at": "2026-10-16 04:15:25 UTC",
+  "last_reply_at": "2026-10-16 05:42:47 UTC",
+  "analysis_first_at": "2026-10-16 05:42:47 UTC",
+  "order_holds": true
+ },
+ {
+  "run": "Run D (retrieval suppression)",
+  "protocol": "retrieval_suppression_protocol.json",
+  "frozen_at": "2026-10-16 06:14:14 UTC",
+  "frozen_sha256": "df1365e27dcf03e00282f633cd485c45f8861c3d1fe376194e96697273c8a854",
+  "current_sha256": "24906b74d28e36acffe3f64e0a5e65a9d07b49f782cccf5bd71ceba25879a729",
+  "later_amendment_commits": [
+   "2026-10-16 08:43:56 UTC",
+   "2026-10-16 12:50:26 UTC"
+  ],
+  "items": [
+   {
+    "path": "artifacts/retrieval-suppression/items.json",
+    "recorded_sha256": "85410e0888994b8a9b53e26718246e98abde336c02e11ee1518f5e1444778aeb",
+    "file_sha256": "85410e0888994b8a9b53e26718246e98abde336c02e11ee1518f5e1444778aeb",
+    "match": true,
+    "added": "2026-10-16 06:14:14 UTC"
+   }
+  ],
+  "reply_files": 109,
+  "first_reply_at": "2026-10-16 09:39:59 UTC",
+  "last_reply_at": "2026-10-16 09:39:59 UTC",
+  "analysis_first_at": "2026-10-16 09:39:59 UTC",
+  "order_holds": true
+ },
+ {
+  "run": "Jev re-run (J1, J2)",
+  "protocol": "jev_rerun_protocol.json",
+  "frozen_at": "2026-10-16 10:07:34 UTC",
+  "frozen_sha256": "188fab524831b912361beec99cfb9a081c554e86a6d26baf228c56c758150a60",
+  "current_sha256": "3b1632fd7ccf77ea4c37f143cb49f1695e5f20901561f7314e623427574039fc",
+  "later_amendment_commits": [
+   "2026-10-16 12:50:26 UTC"
+  ],
+  "items": [
+   {
+    "path": "artifacts/retrieval-suppression/items.json",
+    "recorded_sha256": "85410e08",
+    "file_sha256": "85410e0888994b8a9b53e26718246e98abde336c02e11ee1518f5e1444778aeb",
+    "match": true,
+    "added": "2026-10-16 06:14:14 UTC"
+   },
+   {
+    "path": "artifacts/confirmatory/items.json",
+    "recorded_sha256": "73a968d6",
+    "file_sha256": "73a968d6d81b247116df73f3376a7714a3585ded4cf772a2979c3c37e91b6829",
+    "match": true,
+    "added": "2026-10-16 03:50:57 UTC"
+   }
+  ],
+  "reply_files": 30,
+  "first_reply_at": "2026-10-16 10:15:43 UTC",
+  "last_reply_at": "2026-10-16 10:15:43 UTC",
+  "analysis_first_at": "2026-10-16 10:15:43 UTC",
+  "order_holds": true
+ },
+ {
+  "run": "Run D2 (retrieval mechanism)",
+  "protocol": "retrieval_mechanism_protocol.json",
+  "frozen_at": "2026-10-16 12:59:22 UTC",
+  "frozen_sha256": "a37c24807954bf5a7ca7cf956a9b1df491db83e62b69ec7f9c3cfa5f7a2f4a2e",
+  "current_sha256": "6866889a872a98d84ed2e98db1bd4064e759604797c7bc0eec5ab38c2e69d0ad",
+  "later_amendment_commits": [
+   "2026-10-16 14:00:25 UTC"
+  ],
+  "items": [
+   {
+    "path": "artifacts/retrieval-mechanism/items.json",
+    "recorded_sha256": "04c55578a64298780ae31bc9e0685358c90262b84cd760ba42bbdab62bf2c1b5",
+    "file_sha256": "04c55578a64298780ae31bc9e0685358c90262b84cd760ba42bbdab62bf2c1b5",
+    "match": true,
+    "added": "2026-10-16 12:59:22 UTC"
+   }
+  ],
+  "reply_files": 120,
+  "first_reply_at": "2026-10-16 14:49:29 UTC",
+  "last_reply_at": "2026-10-16 14:49:29 UTC",
+  "analysis_first_at": "2026-10-16 14:49:29 UTC",
+  "order_holds": true
+ },
+ {
+  "run": "MASSIVE robustness",
+  "protocol": "massive_robustness_protocol.json",
+  "frozen_at": "2026-10-16 15:10:13 UTC",
+  "frozen_sha256": "c3f7b945f95030d0187ab9d94b890b08b4c8b1e343f6ca10464774960d69e68d",
+  "current_sha256": "c3f7b945f95030d0187ab9d94b890b08b4c8b1e343f6ca10464774960d69e68d",
+  "later_amendment_commits": [],
+  "items": [
+   {
+    "path": "artifacts/massive-robustness/items.json",
+    "recorded_sha256": "88e6051264a41e8a19782cb16331aec27642076c76714c3fcb36e65b4f06611c",
+    "file_sha256": "88e6051264a41e8a19782cb16331aec27642076c76714c3fcb36e65b4f06611c",
+    "match": true,
+    "added": "2026-10-16 15:10:13 UTC"
+   }
+  ],
+  "reply_files": 78,
+  "first_reply_at": "2026-10-16 15:59:42 UTC",
+  "last_reply_at": "2026-10-16 15:59:42 UTC",
+  "analysis_first_at": "2026-10-16 15:59:42 UTC",
+  "order_holds": true
+ },
+ {
+  "run": "Runs G and H",
+  "protocol": "gh_protocol.json",
+  "frozen_at": "2026-10-16 16:30:12 UTC",
+  "frozen_sha256": "a75932c8cf455f5032ceff1eaeb42c409f3b344bf7966f13b5956ca64db0c560",
+  "current_sha256": "a75932c8cf455f5032ceff1eaeb42c409f3b344bf7966f13b5956ca64db0c560",
+  "later_amendment_commits": [],
+  "items": [],
+  "reply_files": 12,
+  "first_reply_at": "2026-10-16 16:56:21 UTC",
+  "last_reply_at": "2026-10-16 16:56:21 UTC",
+  "analysis_first_at": "2026-10-16 16:56:21 UTC",
+  "order_holds": true
+ }
+]

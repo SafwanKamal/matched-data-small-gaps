@@ -2,7 +2,7 @@
 
 ## Sources and execution
 
-- **Protocol:** `massive_robustness_protocol.json`, frozen at `65f5979` before any training or request.
+- **Protocol:** `massive_robustness_protocol.json`, frozen before any training or request; see `release/FREEZE_TABLE.md` for its freeze time, frozen text and item-list hash.
 - **Code:** `src/bakeoff/massive_robustness.py`.
 - **Numbers:** `artifacts/massive-robustness/analysis.json`.
 - **Status:** a **sensitivity analysis**. Items reuse MASSIVE test utterances, so these results are not part of the confirmatory family.

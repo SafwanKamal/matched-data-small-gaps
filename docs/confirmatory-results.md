@@ -1,6 +1,6 @@
 # Confirmatory run: results (2026-10-16)
 
-Protocol: `confirmatory_protocol.json` (frozen in `c4d91a6`; frontier amendment `262dfc9`). Analysis: `src/bakeoff/confirmatory.py analyze` → `artifacts/confirmatory/analysis.json`. Figure: `docs/figures/f5_cost_frontier.{pdf,png}`.
+Protocol: `confirmatory_protocol.json` (frozen before any request, with a dated frontier amendment; see `release/FREEZE_TABLE.md` for its freeze time, frozen text and item-list hash). Analysis: `src/bakeoff/confirmatory.py analyze` → `artifacts/confirmatory/analysis.json`. Figure: `docs/figures/f5_cost_frontier.{pdf,png}`.
 
 Fresh sessions built from test items no earlier session used; text lower-cased with punctuation stripped; native out-of-scope data. Banking77 uses 184 CLINC out-of-scope queries. MASSIVE holds out the email, iot and play domains, leaving 42 labels. CLINC150 uses 185 native out-of-scope queries.
 

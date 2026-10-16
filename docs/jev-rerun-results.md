@@ -2,7 +2,7 @@
 
 ## Sources
 
-- **Protocol:** `jev_rerun_protocol.json`, frozen at `7221619` before any Jev request.
+- **Protocol:** `jev_rerun_protocol.json`, frozen before any Jev request; see `release/FREEZE_TABLE.md` for its freeze time, frozen text and item-list hash.
 - **Code:** `src/bakeoff/jev_rerun.py`.
 - **Numbers:** `artifacts/jev-rerun/analysis.json`. Replies are in `artifacts/jev-rerun/J1/`, `artifacts/jev-rerun/J2/` and `artifacts/jev-rerun/check/`.
 

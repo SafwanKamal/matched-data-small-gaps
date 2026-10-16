@@ -27,6 +27,7 @@ The specialist weights and features (about 22 GB) are **not yet published**; the
 - **Saved replies** from every hosted model, one JSON line per request with text, tokens, cost, latency and provider: `artifacts/<run>/hosted/`, `jev/` and `replies/`.
 - **Analyses:** `artifacts/<run>/analysis.json` and `artifacts/posthoc/*.json`.
 - **Code:** `src/bakeoff/`, with one module per protocol.
+- **Freeze table:** `release/FREEZE_TABLE.md` lists, for each protocol, its freeze time, its SHA-256 as frozen, its item-list hash and when its replies and analysis were first committed; `release/frozen-protocols/` holds each protocol as first committed. The order can be checked from these files without the git history.
 
 ## Regenerating the numbers from saved replies (CPU only, no API)
 
@@ -45,7 +46,7 @@ python -m bakeoff.posthoc_round3b
 python -m bakeoff.paper_number_check
 ```
 
-In round 3, an independent reviewer regenerated `confirmatory/analysis.json`, `retrieval-suppression/analysis.json` and `posthoc/round3.json` bit for bit.
+In round 3, a separate check regenerated `confirmatory/analysis.json`, `retrieval-suppression/analysis.json` and `posthoc/round3.json` bit for bit.
 
 The analyses need the specialist features (`artifacts/*/features/*.npz`), which are in the archive. Rebuilding them needs the weights and a GPU:
 

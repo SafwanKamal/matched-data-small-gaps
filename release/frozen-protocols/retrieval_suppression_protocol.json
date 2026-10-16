@@ -1,0 +1,132 @@
+{
+  "protocol_id": "retrieval-suppression-2026-10-16",
+  "status": "FROZEN before any request or scoring; approved by the owner on 2026-10-16",
+  "role": "run D of docs/HANDOFF.md: replicate, on more models and a second same-domain split, the finding that retrieving in-scope examples suppresses a general model's rejection of same-domain unsupported requests, and test two mitigations",
+  "claim_under_test": "Adding retrieved in-scope examples to the prompt lowers the share of held-out-intent (same-domain, unsupported) requests the general model rejects, compared with the same model zero-shot.",
+  "prior_evidence": "Exploratory, on the old 400 BANKING77-OOS 'id' sessions: Gemma 4 31B rejected 69.6% of held-out-intent turns zero-shot and 37.7% with retrieval; Qwen3.5 27B 88.4% and 66.6%. The confirmatory run (docs/confirmatory-results.md) showed the same pattern for whole held-out MASSIVE domains: Gemma with in-scope retrieval caught 23.0% of them, and 90.5% when labelled out-of-scope rows were in the pool. Written after seeing those numbers, before any request below.",
+  "seed": 20261016,
+  "splits": {
+    "banking77_oos": {
+      "source": "data/banking77-oos (Zhang et al. 2022)",
+      "labels": "the 50 in-scope Banking77 intents",
+      "in_scope_items": "the 398 in-scope test utterances not used in the earlier 'id' sessions (45 of 50 intents)",
+      "held_out_items": "the 679 id-oos test utterances (27 held-out Banking77 intents) not used in the earlier 'id' sessions",
+      "pool": "the 5,905 in-scope training utterances",
+      "held_out_intent_names": "data/banking77-oos/id-oos/test/label_original, downloaded 2026-10-16 with the owner's permission from the same repository and commit (fa955331); its seq.in matches the local file byte for byte"
+    },
+    "clinc_single_domain": {
+      "source": "data/clinc-single-domain-oos, commit fa955331 (downloaded 2026-10-15 with the owner's permission)",
+      "domains": {
+        "banking": "10 in-scope intents; 500 in-scope test and 350 id-oos test utterances (5 held-out banking intents)",
+        "credit_cards": "10 in-scope intents; 500 in-scope test and 350 id-oos test utterances (5 held-out credit-card intents)"
+      },
+      "pool": "each domain's 500 in-scope training utterances",
+      "analysis": "the two domains are pooled for the tests (1,000 in-scope, 700 held-out items, 10 held-out-intent clusters) and also reported separately"
+    },
+    "items_total": 2777,
+    "frozen_lists": "artifacts/retrieval-suppression/items.json, SHA-256 85410e0888994b8a9b53e26718246e98abde336c02e11ee1518f5e1444778aeb (banking77_oos 398 in-scope / 679 held-out, 27 held-out intents; clinc_banking and clinc_credit_cards 500 / 350 each, 5 held-out intents each)"
+  },
+  "arms": {
+    "zero_shot": "system prompt with the option list; user message 'Current message: {text}'",
+    "retrieval": "the same system prompt; user message holds the 20 BM25 nearest in-scope training utterances ('message => code', least similar first), then the current message. No out-of-scope rows.",
+    "mitigation_instruction": "the retrieval arm with one sentence added to the system prompt after the first paragraph: 'The labelled examples show only supported request types. A message that resembles them but asks for something none of the options covers is out of scope: answer scope: no.'",
+    "mitigation_rows": "the retrieval arm with four fixed out-of-scope examples always listed first, before the 20 retrieved examples, with the out-of-scope code: the first four CLINC150 out-of-scope training queries ('how much is an overdraft fee for bank', and three off-topic queries). A deployment has no examples of the intents it does not know; the first row happens to be banking-related."
+  },
+  "prompts": {
+    "banking77_oos": "workflow_near_oos_protocol.json hosted.system_prompt, unchanged (it already says 'anything else, including other banking questions, must be passed on')",
+    "clinc_single_domain": "the same text with 'a retail bank's customer-support desk' replaced by 'a bank's customer-support desk' (banking) or 'a credit-card support desk' (credit_cards), and 'other banking questions' by 'other banking or credit-card questions'",
+    "codes": "two digits, option position from 1 in alphabetical label order; 00 = out of scope",
+    "request": "temperature 0, max_tokens 24, reasoning disabled where the model has a reasoning switch, pinned host, fallbacks off; parsing by workflow_v4.parse; a failed request counts as wrong (an in-scope item rejected, a held-out item accepted)"
+  },
+  "models": {
+    "gemma-4-31b": {
+      "model": "google/gemma-4-31b-it",
+      "provider": "Novita",
+      "reasoning_off": true,
+      "role": "replication of the exploratory result on fresh items"
+    },
+    "qwen3.5-27b": {
+      "model": "qwen/qwen3.5-27b",
+      "provider": "Alibaba",
+      "reasoning_off": true,
+      "role": "replication of the exploratory result on fresh items"
+    },
+    "llama-3.3-70b": {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "reasoning_off": false,
+      "role": "new: dense 70B, another family; no reasoning mode",
+      "precision": "fp8"
+    },
+    "deepseek-v4-pro": {
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "Parasail",
+      "reasoning_off": true,
+      "role": "new: 1.6T-parameter mixture of experts (49B active), another family",
+      "precision": "fp8; no first-party host on OpenRouter"
+    }
+  },
+  "specialist_reference": {
+    "banking77_oos": "the three existing 150M Ettin specialists (revision features), prior-weighted threshold on 400 in-scope validation and 100 id-oos validation utterances, scored on the same items",
+    "clinc_single_domain": "three new specialists per domain (seeds 20261007, 20261015, 20261016), Program 2 recipe, learning rate 1e-4, 3 epochs, trained on the 500 in-scope training utterances; temperature and prior-weighted threshold on the 500 in-scope validation and the first 100 id-oos validation utterances",
+    "note": "reference only, no test against the models. The specialist's threshold sees 100 held-out-intent validation items; the general models see none. Stated as an asymmetry."
+  },
+  "endpoints": {
+    "held_out_rejected": "share of held-out-intent items answered scope: no (primary)",
+    "in_scope_right": "share of in-scope items answered scope: yes with the right intent",
+    "also": "in-scope kept, intent accuracy on kept items, parse failures, tokens, USD and latency per call"
+  },
+  "tests": {
+    "primary_H1": {
+      "hypothesis": "held_out_rejected(zero_shot) > held_out_rejected(retrieval)",
+      "family": "4 models x 2 splits = 8 tests, Holm, one-sided alpha 0.05",
+      "statistic": "paired difference in held-out rejection over the same items; sign-flip test with 10,000 draws clustered by held-out intent (27 clusters on banking77_oos, 10 on clinc_single_domain); 95% cluster-bootstrap interval",
+      "replicates_if": "on a split, the drop is significant after Holm for at least three of the four models and has the same sign for all four"
+    },
+    "secondary_H2_mitigation": {
+      "hypothesis": "held_out_rejected(mitigation) > held_out_rejected(retrieval), for each mitigation arm",
+      "family": "4 models x 2 splits x 2 arms = 16 tests, Holm, one-sided",
+      "works_if": "for a model and split, the mitigation recovers at least half of the suppression (rejection >= retrieval + 0.5 x (zero_shot - retrieval)) and in_scope_right falls by no more than 2 points against retrieval (cluster-bootstrap 95% interval of the in-scope change above -2 points)"
+    },
+    "also_reported": "in-scope right per arm with intervals; the specialist reference; each CLINC domain separately"
+  },
+  "outcome_sentences": {
+    "replicates": "Retrieving in-scope examples lowers the rejection of same-domain unsupported requests for {k} of 4 general models on {split} (by {range} points).",
+    "does_not_replicate": "On {split}, retrieval lowers the rejection of same-domain unsupported requests for only {k} of 4 models; the suppression is not general.",
+    "mitigation_works": "{arm} recovers {share}% of the lost rejections for {model} on {split} at a cost of {d} points of in-scope accuracy.",
+    "mitigation_fails": "Neither mitigation recovers half of the suppression without costing more than 2 points of in-scope accuracy."
+  },
+  "runs": {
+    "check": {
+      "what": "5 in-scope and 5 held-out validation items per model, split and arm; not reported",
+      "estimate_usd": 0.05,
+      "run_cap_usd": 0.15
+    },
+    "D": {
+      "what": "4 models x 4 arms x 2,777 items = 44,432 calls",
+      "estimate_usd": {
+        "gemma-4-31b": 1.05,
+        "qwen3.5-27b": 1.5,
+        "llama-3.3-70b": 0.75,
+        "deepseek-v4-pro": 3.4,
+        "total": 6.7
+      },
+      "run_cap_usd": 9.0
+    },
+    "estimate_basis": "measured per-call cost of the earlier BANKING77-OOS zero-shot and retrieval runs (Gemma 0.078e-3 and 0.131e-3 USD; Qwen 0.116e-3 and 0.189e-3) scaled by each model's input price and each split's prompt length (CLINC single-domain prompts list 10 options, so they are about half as long)",
+    "order": "check; then models cheapest first (llama, gemma, qwen, deepseek); within a model all arms of a split together",
+    "model_order": [
+      "llama-3.3-70b",
+      "gemma-4-31b",
+      "qwen3.5-27b",
+      "deepseek-v4-pro"
+    ]
+  },
+  "budget": {
+    "spent_before_usd": 60.12,
+    "project_cap_usd": 80.0
+  },
+  "limits": "Two benchmarks built by one group; held-out intents are chosen by the benchmark authors. Fixed seeds, temperature 0, one run per model. The mitigation rows are off-topic examples.",
+  "code": "src/bakeoff/retrieval_suppression.py (stages build, train, check, hosted, analyze); runner scripts/run_retrieval_suppression.sh",
+  "notes": "CLINC single-domain test utterances are used exactly as released, including stray quote characters in a few of them."
+}
