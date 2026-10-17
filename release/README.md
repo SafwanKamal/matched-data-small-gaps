@@ -10,6 +10,8 @@ This folder accompanies `paper/main.tex`.
 
 `src/bakeoff/release_manifest.py` regenerates all three.
 
+To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 418 entries resolve; the other 369 are the data sets (not redistributed) and the weights-and-features archive, which report as unreadable until they are in place.
+
 ## Status of the archive
 
 The specialist weights and features (about 22 GB) are **not yet published**; their hashes are in `SHA256SUMS`. Until the archive ships, the analyses that need specialist features cannot be rerun by a third party; the hosted-model analyses can, from the saved replies in git. The loaders check data hashes only for MASSIVE (`primary_protocol.json`); the other data sets are listed in `SHA256SUMS` and must be checked by hand.
