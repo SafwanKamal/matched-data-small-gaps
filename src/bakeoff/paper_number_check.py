@@ -81,16 +81,16 @@ def checks():
     c.append(("CLINC OOS never seen", "The change comes from the out-of-scope turns", "$+4.0$", fc["out-of-scope, never seen"]["difference_points"], 1))
     c.append(("CLINC OOS seen", "The change comes from the out-of-scope turns", "$-7.3$", fc["out-of-scope, seen before"]["difference_points"], 1))
     be = r4["cascade_break_even"]
-    c.append(("cascade break-even low", "so it pays for its hosting only above about", "79,000", be["clinc150"]["host $50/month"], -3))
-    c.append(("cascade break-even high", "so it pays for its hosting only above about", "177,000", be["massive"]["host $50/month"], -3))
-    c.append(("specialist break-even low", "Hosting the specialist alone", "47,000", be["clinc150"]["specialist_alone_host_$50"], -3))
+    c.append(("cascade break-even low", "pays for hosting the specialist only above about", "79,000", be["clinc150"]["host $50/month"], -3))
+    c.append(("cascade break-even high", "pays for hosting the specialist only above about", "177,000", be["massive"]["host $50/month"], -3))
+    c.append(("specialist break-even low", "hosting it costs less than calling Gemma on every turn", "47,000", be["clinc150"]["specialist_alone_host_$50"], -3))
     lat = r4["latency"]
-    c.append(("latency Qwen p50", "median call latency is", "2.3", lat["qwen3.5-27b"]["p50_ms"] / 1000, 1))
-    c.append(("latency Kimi p50", "median call latency is", "2.8", lat["kimi-k3"]["p50_ms"] / 1000, 1))
-    c.append(("latency Opus p50", "median call latency is", "1.2", lat["claude-opus-5"]["p50_ms"] / 1000, 1))
+    c.append(("latency Qwen p50", "(p50 / p95 / p99, seconds)", "2.3 / 10.7", lat["qwen3.5-27b"]["p50_ms"] / 1000, 1))
+    c.append(("latency Kimi p50", "(p50 / p95 / p99, seconds)", "2.8 / 5.3", lat["kimi-k3"]["p50_ms"] / 1000, 1))
+    c.append(("latency Opus p50", "(p50 / p95 / p99, seconds)", "1.2 / 2.0", lat["claude-opus-5"]["p50_ms"] / 1000, 1))
     cost = b3["cost"]["sets"]
-    c.append(("Kimi multiple low", "frontier models add little at", "17", cost["clinc150"]["kimi-k3"]["multiple_of_gemma_uncached"], 0))
-    c.append(("Opus multiple high", "frontier models add little at", "44", cost["banking77"]["claude-opus-5"]["multiple_of_gemma_uncached"], 0))
+    c.append(("Kimi multiple low", "were not significantly more accurate on 100 sessions per set, at", "17", cost["clinc150"]["kimi-k3"]["multiple_of_gemma_uncached"], 0))
+    c.append(("Opus multiple high", "were not significantly more accurate on 100 sessions per set, at", "44", cost["banking77"]["claude-opus-5"]["multiple_of_gemma_uncached"], 0))
     # Section 5.
     for model, row in (("gemma-4-31b", "Gemma 4 31B & 59.5"), ("qwen3.5-27b", "Qwen3.5 27B & 82.2"), ("llama-3.3-70b", "Llama 3.3 70B & 50.7"), ("deepseek-v4-pro", "DeepSeek V4 Pro & 60.8")):
         arms = rd["banking77_oos"]["models"][model]
@@ -104,8 +104,8 @@ def checks():
     c.append(("sibling among retrieved low", "the chosen label is among the 20 retrieved labels for", "92", 100 * min(v["chosen_label_among_retrieved"] for v in sa.values()), 0))
     c.append(("sibling among retrieved high", "the chosen label is among the 20 retrieved labels for", "99", 100 * max(v["chosen_label_among_retrieved"] for v in sa.values()), 0))
     qc = sa["qwen3.5-27b"]
-    c.append(("Qwen concentrated drop", "concentrate on one label", "29 points", 100 * (qc["drop_concentrated"][0] - qc["drop_concentrated"][1]), 0))
-    c.append(("Qwen diffuse drop", "concentrate on one label", "against 8", 100 * (qc["drop_diffuse"][0] - qc["drop_diffuse"][1]), 0))
+    c.append(("Qwen concentrated drop", "concentrate on one label (for Qwen", "29 points", 100 * (qc["drop_concentrated"][0] - qc["drop_concentrated"][1]), 0))
+    c.append(("Qwen diffuse drop", "concentrate on one label (for Qwen", "against 8", 100 * (qc["drop_diffuse"][0] - qc["drop_diffuse"][1]), 0))
     c.append(("Jev AUROC as run", "AUROC unchanged", "$+0.003$", jev["J1"]["banking77_oos"]["tests"]["HJ2 retrieval minus zero-shot"]["auroc_change"], 3))
     c.append(("closeness leak removed", "Retrieval closeness does not explain", "0.90", b3["leak"]["closeness_dense_auroc"]["leaked rows removed"], 2))
     for model, row in (("gemma-4-31b", "Gemma 4 31B & 74.0"), ("qwen3.5-27b", "Qwen3.5 27B & 91.5"), ("llama-3.3-70b", "Llama 3.3 70B & 59.8"), ("deepseek-v4-pro", "DeepSeek V4 Pro & 68.0"), ("jev-1.13.0", "Jev 1.13.0 & 78.4")):
@@ -124,6 +124,36 @@ def checks():
     c.append(("cross rows rejection low", "but raised rejection in all 6 cells", "$+2.4$", min(gains), 1))
     c.append(("cross rows rejection high", "but raised rejection in all 6 cells", "$+8.8$", max(gains), 1))
     c.append(("run D overlap", "462 of its 1,077 items", "462", r4["run_d_overlap"]["run_D_banking77_oos_items_in_confirmatory_turns"], 0))
+    # round 5 (post hoc values from artifacts/posthoc/round5.json; pre-registered values from the analysis files)
+    cfa = j("confirmatory", "analysis.json")["sets"]
+    c.append(("TOST bound, fixed seed", r"pre-registered 90\% interval's lower bound is", "$-2.53$", cfa["banking77"]["tests"]["specialist vs gemma-4-31b"]["ci90"][0], 2))
+    jg = j("jev-rerun", "analysis.json")["J2"]
+    gate = "secondary: jev gate (retrieval) vs specialist"
+    c.append(("Jev gate Banking77", "The Jev protocol's gate", "1.1 points", jg["banking77"]["tests"][gate]["difference_points"], 1))
+    c.append(("Jev gate CLINC150", "The Jev protocol's gate", "$+0.9$", jg["clinc150"]["tests"][gate]["difference_points"], 1))
+    c.append(("Jev gate MASSIVE", "The Jev protocol's gate", "$-0.7$", jg["massive"]["tests"][gate]["difference_points"], 1))
+    r5 = j("posthoc", "round5.json")
+    alt = [v for k, v in r5["massive_inscope_only_threshold"]["massive"].items() if "in-scope-only" in k]
+    c.append(("MASSIVE in-scope-only rejection low", "set from in-scope development data alone, it rejects", "24 to", min(v["rejected"] for v in alt), 0))
+    c.append(("MASSIVE in-scope-only rejection high", "set from in-scope development data alone, it rejects", r"54\%", max(v["rejected"] for v in alt), 0))
+    c.append(("MASSIVE in-scope-only weighted low", "set from in-scope development data alone, it rejects", "73.9", min(v["weighted"] for v in alt), 1))
+    c.append(("MASSIVE in-scope-only weighted high", "set from in-scope development data alone, it rejects", "79.3", max(v["weighted"] for v in alt), 1))
+    sp = r5["run_d_specialist"]
+    c.append(("run D specialist leak-free", "Specialist (reference) &", "68.2", sp["mean"]["leak_free_rejected"], 1))
+    c.append(("run D specialist as run", "Specialist (reference) &", "49.6", sp["mean"]["as_run_rejected"], 1))
+    c.append(("run D specialist seed low", "Specialist: mean of three seeds (", "35 to", min(v["as_run_rejected"] for v in sp["seeds"].values()), 0))
+    c.append(("run D specialist seed high", "Specialist: mean of three seeds (", r"63\%", max(v["as_run_rejected"] for v in sp["seeds"].values()), 0))
+    c.append(("run D specialist in-scope as run", "its in-scope accuracy is", "85.8", sp["mean"]["as_run_inscope_right"], 1))
+    c.append(("run D specialist in-scope leak-free", "its in-scope accuracy is", "91.8", sp["mean"]["leak_free_inscope_right"], 1))
+    jm = r5["jev_matched_point"]["banking77_oos"]
+    c.append(("Jev matched zero-shot", r"with 95\% of in-scope requests kept, retrieval raises it from", r"61\%", jm["zero_shot"]["kept_95"]["rejected"], 0))
+    c.append(("Jev matched retrieval", r"with 95\% of in-scope requests kept, retrieval raises it from", r"82\%", jm["retrieval"]["kept_95"]["rejected"], 0))
+    sb = [v["zero_shot"]["share_in_retrieved_labels"] for v in r5["sibling_baseline"].values()]
+    c.append(("sibling baseline low", "of accepted held-out requests; zero-shot,", "83 to", min(sb), 0))
+    c.append(("sibling baseline high", "of accepted held-out requests; zero-shot,", r"94\%", max(sb), 0))
+    ov = r5["run_d_overlap"]
+    c.append(("run D overlap BANKING77-OOS", "items not used in the exploratory sessions (", "462", ov["banking77_oos"]["were_confirmatory_turns"], 0))
+    c.append(("run D overlap CLINC", "items not used in the exploratory sessions (", "332", ov["clinc_banking"]["were_confirmatory_turns"] + ov["clinc_credit_cards"]["were_confirmatory_turns"], 0))
     return c
 
 

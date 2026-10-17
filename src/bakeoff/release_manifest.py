@@ -46,11 +46,11 @@ def main() -> None:
                 seen.add(key)
                 lines.append(f"{sha256(f)}  {key}")
         print(f"{group}: done", flush=True)
-    (REL / "SHA256SUMS").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (REL / "SHA256SUMS").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
     freeze = subprocess.run([sys.executable, "-m", "pip", "freeze"], capture_output=True, text=True).stdout
     if not freeze.strip():
         freeze = subprocess.run(["uv", "pip", "freeze", "--python", sys.executable], capture_output=True, text=True).stdout
-    (REL / "requirements-lock.txt").write_text(freeze, encoding="utf-8")
+    (REL / "requirements-lock.txt").write_text(freeze, encoding="utf-8", newline="\n")
     try:
         import torch
 
@@ -59,7 +59,7 @@ def main() -> None:
     except Exception:  # noqa: BLE001
         gpu, torch_v = "unknown", "unknown"
     env = [f"python {platform.python_version()}", f"platform {platform.platform()}", f"torch {torch_v}", f"gpu {gpu}", f"files hashed {len(seen)}"]
-    (REL / "ENVIRONMENT.txt").write_text("\n".join(env) + "\n", encoding="utf-8")
+    (REL / "ENVIRONMENT.txt").write_text("\n".join(env) + "\n", encoding="utf-8", newline="\n")
     print("\n".join(env))
 
 

@@ -1,0 +1,425 @@
+{
+ "label": "POST HOC (round 5 internal review); not pre-registered",
+ "massive_inscope_only_threshold": {
+  "banking77": {
+   "pre-registered rule": {
+    "weighted": 92.69190308320744,
+    "kept": 98.94465894465895,
+    "rejected": 92.39130434782608
+   },
+   "msp, in-scope-only q=0.05": {
+    "weighted": 91.05783112304852,
+    "kept": 95.36679536679537,
+    "rejected": 90.39855072463767
+   },
+   "msp, in-scope-only q=0.03": {
+    "weighted": 91.05808292764816,
+    "kept": 97.55469755469755,
+    "rejected": 85.8695652173913
+   },
+   "energy, in-scope-only q=0.05": {
+    "weighted": 91.64067483632702,
+    "kept": 95.16087516087516,
+    "rejected": 96.19565217391305
+   },
+   "energy, in-scope-only q=0.03": {
+    "weighted": 92.42655699177438,
+    "kept": 97.34877734877735,
+    "rejected": 94.56521739130436
+   },
+   "mahalanobis, in-scope-only q=0.05": {
+    "weighted": 92.03270661966314,
+    "kept": 96.03603603603604,
+    "rejected": 96.92028985507245
+   },
+   "mahalanobis, in-scope-only q=0.03": {
+    "weighted": 93.05083655083655,
+    "kept": 98.24967824967825,
+    "rejected": 95.83333333333333
+   },
+   "knn, in-scope-only q=0.05": {
+    "weighted": 91.53693134127917,
+    "kept": 95.4954954954955,
+    "rejected": 95.47101449275362
+   },
+   "knn, in-scope-only q=0.03": {
+    "weighted": 92.30639024117285,
+    "kept": 97.81209781209782,
+    "rejected": 92.93478260869567
+   }
+  },
+  "massive": {
+   "pre-registered rule": {
+    "weighted": 78.26255397798163,
+    "kept": 82.28845495032546,
+    "rejected": 80.65843621399176
+   },
+   "msp, in-scope-only q=0.05": {
+    "weighted": 79.27118622562269,
+    "kept": 93.04556354916069,
+    "rejected": 54.32098765432099
+   },
+   "msp, in-scope-only q=0.03": {
+    "weighted": 77.56963388724648,
+    "kept": 94.55292908530318,
+    "rejected": 42.93552812071331
+   },
+   "energy, in-scope-only q=0.05": {
+    "weighted": 78.09176997026718,
+    "kept": 93.04556354916066,
+    "rejected": 49.79423868312758
+   },
+   "energy, in-scope-only q=0.03": {
+    "weighted": 76.1153052866349,
+    "kept": 95.58067831449125,
+    "rejected": 34.29355281207133
+   },
+   "mahalanobis, in-scope-only q=0.05": {
+    "weighted": 76.30943569659264,
+    "kept": 91.77800616649536,
+    "rejected": 45.40466392318245
+   },
+   "mahalanobis, in-scope-only q=0.03": {
+    "weighted": 73.92071527962815,
+    "kept": 96.26584446728333,
+    "rejected": 24.279835390946502
+   },
+   "knn, in-scope-only q=0.05": {
+    "weighted": 75.4044806482856,
+    "kept": 91.09284001370332,
+    "rejected": 42.79835390946502
+   },
+   "knn, in-scope-only q=0.03": {
+    "weighted": 74.36023667838218,
+    "kept": 94.55292908530318,
+    "rejected": 29.21810699588477
+   }
+  },
+  "clinc150": {
+   "pre-registered rule": {
+    "weighted": 93.13713713713715,
+    "kept": 97.73773773773773,
+    "rejected": 83.06306306306305
+   },
+   "msp, in-scope-only q=0.05": {
+    "weighted": 92.58058058058059,
+    "kept": 94.71471471471472,
+    "rejected": 88.2882882882883
+   },
+   "msp, in-scope-only q=0.03": {
+    "weighted": 92.39639639639638,
+    "kept": 96.41641641641642,
+    "rejected": 82.16216216216216
+   },
+   "energy, in-scope-only q=0.05": {
+    "weighted": 92.76076076076076,
+    "kept": 94.37437437437438,
+    "rejected": 91.35135135135135
+   },
+   "energy, in-scope-only q=0.03": {
+    "weighted": 93.17317317317317,
+    "kept": 95.69569569569569,
+    "rejected": 89.00900900900903
+   },
+   "mahalanobis, in-scope-only q=0.05": {
+    "weighted": 93.18918918918921,
+    "kept": 94.93493493493493,
+    "rejected": 91.89189189189189
+   },
+   "mahalanobis, in-scope-only q=0.03": {
+    "weighted": 93.3813813813814,
+    "kept": 96.17617617617618,
+    "rejected": 89.00900900900903
+   },
+   "knn, in-scope-only q=0.05": {
+    "weighted": 92.54854854854854,
+    "kept": 94.07407407407408,
+    "rejected": 91.17117117117118
+   },
+   "knn, in-scope-only q=0.03": {
+    "weighted": 93.001001001001,
+    "kept": 95.53553553553553,
+    "rejected": 89.18918918918921
+   }
+  }
+ },
+ "run_d_specialist": {
+  "seeds": {
+   "20261007": {
+    "detector": "msp",
+    "as_run_rejected": 51.104565537555224,
+    "as_run_inscope_right": 85.678391959799,
+    "leak_free_rejected": 73.33333333333333,
+    "leak_free_inscope_right": 91.2568306010929
+   },
+   "20261015": {
+    "detector": "mahalanobis",
+    "as_run_rejected": 62.88659793814433,
+    "as_run_inscope_right": 82.66331658291458,
+    "leak_free_rejected": 78.33333333333333,
+    "leak_free_inscope_right": 89.07103825136612
+   },
+   "20261016": {
+    "detector": "energy",
+    "as_run_rejected": 34.75699558173785,
+    "as_run_inscope_right": 89.19597989949749,
+    "leak_free_rejected": 52.916666666666664,
+    "leak_free_inscope_right": 95.08196721311475
+   }
+  },
+  "mean": {
+   "as_run_rejected": 49.582719685812464,
+   "as_run_inscope_right": 85.84589614740368,
+   "leak_free_rejected": 68.19444444444444,
+   "leak_free_inscope_right": 91.80327868852459
+  }
+ },
+ "jev_matched_point": {
+  "banking77_oos": {
+   "zero_shot": {
+    "rejected_at_0.5": 78.35051546391753,
+    "kept_at_0.5": 91.4,
+    "kept_90": {
+     "threshold": 0.55,
+     "kept": 90.4,
+     "rejected": 83.76288659793815
+    },
+    "kept_95": {
+     "threshold": 0.35,
+     "kept": 95.19999999999999,
+     "rejected": 61.34020618556701
+    }
+   },
+   "retrieval": {
+    "rejected_at_0.5": 48.71134020618557,
+    "kept_at_0.5": 99.8,
+    "kept_90": {
+     "threshold": 0.9,
+     "kept": 91.2,
+     "rejected": 88.14432989690721
+    },
+    "kept_95": {
+     "threshold": 0.81,
+     "kept": 95.0,
+     "rejected": 81.70103092783505
+    }
+   },
+   "random_examples": {
+    "rejected_at_0.5": 67.5257731958763,
+    "kept_at_0.5": 97.39999999999999,
+    "kept_90": {
+     "threshold": 0.69,
+     "kept": 90.4,
+     "rejected": 80.6701030927835
+    },
+    "kept_95": {
+     "threshold": 0.59,
+     "kept": 95.19999999999999,
+     "rejected": 72.9381443298969
+    }
+   },
+   "rule_after_examples": {
+    "rejected_at_0.5": 57.47422680412371,
+    "kept_at_0.5": 98.6,
+    "kept_90": {
+     "threshold": 0.89,
+     "kept": 90.8,
+     "rejected": 89.17525773195877
+    },
+    "kept_95": {
+     "threshold": 0.79,
+     "kept": 95.0,
+     "rejected": 81.70103092783505
+    }
+   }
+  },
+  "clinc_banking": {
+   "zero_shot_10": {
+    "rejected_at_0.5": 47.9020979020979,
+    "kept_at_0.5": 94.0,
+    "kept_90": {
+     "threshold": 0.68,
+     "kept": 90.2,
+     "rejected": 65.38461538461539
+    },
+    "kept_95": {
+     "threshold": 0.44,
+     "kept": 95.19999999999999,
+     "rejected": 39.16083916083916
+    }
+   },
+   "retrieval_10": {
+    "rejected_at_0.5": 40.909090909090914,
+    "kept_at_0.5": 99.2,
+    "kept_90": {
+     "threshold": 0.95,
+     "kept": 92.0,
+     "rejected": 98.25174825174825
+    },
+    "kept_95": {
+     "threshold": 0.91,
+     "kept": 95.6,
+     "rejected": 95.1048951048951
+    }
+   },
+   "zero_shot_20": {
+    "rejected_at_0.5": 52.44755244755245,
+    "kept_at_0.5": 92.2,
+    "kept_90": {
+     "threshold": 0.59,
+     "kept": 90.2,
+     "rejected": 60.13986013986013
+    },
+    "kept_95": {
+     "threshold": 0.41,
+     "kept": 95.19999999999999,
+     "rejected": 40.55944055944056
+    }
+   },
+   "retrieval_20": {
+    "rejected_at_0.5": 39.86013986013986,
+    "kept_at_0.5": 99.0,
+    "kept_90": {
+     "threshold": 0.95,
+     "kept": 92.4,
+     "rejected": 98.25174825174825
+    },
+    "kept_95": {
+     "threshold": 0.93,
+     "kept": 95.0,
+     "rejected": 96.5034965034965
+    }
+   }
+  },
+  "clinc_credit_cards": {
+   "zero_shot_10": {
+    "rejected_at_0.5": 59.86159169550172,
+    "kept_at_0.5": 90.2,
+    "kept_90": {
+     "threshold": 0.5,
+     "kept": 90.2,
+     "rejected": 59.86159169550172
+    },
+    "kept_95": {
+     "threshold": 0.28,
+     "kept": 95.0,
+     "rejected": 47.40484429065744
+    }
+   },
+   "retrieval_10": {
+    "rejected_at_0.5": 65.7439446366782,
+    "kept_at_0.5": 99.2,
+    "kept_90": {
+     "threshold": 0.94,
+     "kept": 91.2,
+     "rejected": 99.65397923875432
+    },
+    "kept_95": {
+     "threshold": 0.85,
+     "kept": 95.0,
+     "rejected": 97.92387543252595
+    }
+   },
+   "zero_shot_20": {
+    "rejected_at_0.5": 51.21107266435986,
+    "kept_at_0.5": 91.2,
+    "kept_90": {
+     "threshold": 0.53,
+     "kept": 90.4,
+     "rejected": 55.70934256055363
+    },
+    "kept_95": {
+     "threshold": 0.26,
+     "kept": 95.0,
+     "rejected": 28.373702422145332
+    }
+   },
+   "retrieval_20": {
+    "rejected_at_0.5": 53.63321799307958,
+    "kept_at_0.5": 99.2,
+    "kept_90": {
+     "threshold": 0.95,
+     "kept": 90.2,
+     "rejected": 97.57785467128028
+    },
+    "kept_95": {
+     "threshold": 0.87,
+     "kept": 95.0,
+     "rejected": 88.23529411764706
+    }
+   }
+  }
+ },
+ "sibling_baseline": {
+  "gemma-4-31b": {
+   "zero_shot": {
+    "accepted": 101,
+    "share_in_retrieved_labels": 86.13861386138613
+   },
+   "random_examples": {
+    "accepted": 120,
+    "share_in_retrieved_labels": 85.83333333333333
+   },
+   "retrieval": {
+    "accepted": 194,
+    "share_in_retrieved_labels": 92.26804123711341
+   }
+  },
+  "qwen3.5-27b": {
+   "zero_shot": {
+    "accepted": 33,
+    "share_in_retrieved_labels": 87.87878787878788
+   },
+   "random_examples": {
+    "accepted": 38,
+    "share_in_retrieved_labels": 89.47368421052632
+   },
+   "retrieval": {
+    "accepted": 106,
+    "share_in_retrieved_labels": 99.05660377358491
+   }
+  },
+  "llama-3.3-70b": {
+   "zero_shot": {
+    "accepted": 156,
+    "share_in_retrieved_labels": 82.6923076923077
+   },
+   "random_examples": {
+    "accepted": 196,
+    "share_in_retrieved_labels": 80.10204081632652
+   },
+   "retrieval": {
+    "accepted": 248,
+    "share_in_retrieved_labels": 96.37096774193549
+   }
+  },
+  "deepseek-v4-pro": {
+   "zero_shot": {
+    "accepted": 124,
+    "share_in_retrieved_labels": 93.54838709677419
+   },
+   "random_examples": {
+    "accepted": 145,
+    "share_in_retrieved_labels": 87.58620689655172
+   },
+   "retrieval": {
+    "accepted": 226,
+    "share_in_retrieved_labels": 93.80530973451327
+   }
+  }
+ },
+ "run_d_overlap": {
+  "banking77_oos": {
+   "items": 1077,
+   "were_confirmatory_turns": 462
+  },
+  "clinc_banking": {
+   "items": 850,
+   "were_confirmatory_turns": 162
+  },
+  "clinc_credit_cards": {
+   "items": 850,
+   "were_confirmatory_turns": 170
+  }
+ }
+}

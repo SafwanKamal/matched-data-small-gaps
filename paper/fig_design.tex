@@ -30,10 +30,11 @@
 \node[frozen] (mr)    at (3*\dx, -19mm) {\textbf{MASSIVE draws}\\3 new draws; rows from\\tested / other domains};
 \node[frozen] (gh)    at (4*\dx, -19mm) {\textbf{G, H}\\example order;\\contamination probe};
 
-\foreach \a/\b in {expl/rev, rev/conf, conf/front, front/fresh, rd/leak, leak/d2, d2/mr, mr/gh}
+\foreach \a/\b in {expl/rev, rev/conf, conf/front, front/fresh, rd/leak, leak/d2, d2/mr}
   \draw[arr] (\a) -- (\b);
 \draw[arr, dashed] (expl) -- (rd);
 \draw[arr, dashed] (conf) -- (mr);
+\draw[arr] (fresh) -- (gh);
 
 % Key
 \node[frozen, text width=15mm, minimum height=4mm] (k1) at (0*\dx, -32mm) {frozen protocol};
@@ -41,6 +42,6 @@
 \node[plain, text width=15mm, minimum height=4mm, right=2mm of k2] (k3) {other};
 \node[right=3mm of k3, text width=72mm, align=left, text=black!65] {Each protocol: items frozen with a hash, code committed, plumbing check, run, analysis; every amendment dated.};
 \end{tikzpicture}
-\caption{Study design. The upper lane compares systems that are given the same labelled data; the lower lane asks what sets a prompted model's out-of-scope decision. Dashed arrows mark where an observation in one study motivated another: the exploratory drop in same-domain rejection led to run D, and Gemma's 23\% rejection on MASSIVE led to the MASSIVE draws. Filled boxes are protocols frozen before any of their requests; dashed boxes are audits recorded as dated errata.}
+\caption{Study design. The upper lane compares systems that are given the same labelled data; the lower lane asks what sets a prompted model's out-of-scope decision. Dashed arrows mark where an observation in one study motivated another: the exploratory drop in same-domain rejection led to run D, and Gemma's 23\% rejection on MASSIVE led to the MASSIVE draws. Runs G and H check the confirmatory comparison. Filled boxes are protocols frozen before any of their requests; dashed boxes are audits recorded as dated errata.}
 \label{fig:design}
 \end{figure*}

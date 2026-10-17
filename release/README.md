@@ -1,6 +1,6 @@
 # Release package: reproducing the paper
 
-This folder accompanies `paper/main.tex` (draft 3).
+This folder accompanies `paper/main.tex`.
 
 | File | What it holds |
 |---|---|
@@ -43,6 +43,8 @@ python -m bakeoff.massive_robustness analyze
 python -m bakeoff.gh_runs analyze
 python -m bakeoff.posthoc_round3
 python -m bakeoff.posthoc_round3b
+python -m bakeoff.posthoc_round4
+python -m bakeoff.posthoc_round5
 python -m bakeoff.paper_number_check
 ```
 
@@ -54,12 +56,16 @@ The analyses need the specialist features (`artifacts/*/features/*.npz`), which 
 python -m bakeoff.<module> features
 ```
 
+**Extra cached data.** Modules that load Banking77 through `bakeoff.data` (including `gh_runs analyze`) fetch SST-2 (`nyu-mll/glue`, subset `sst2`, revision `bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c`) and AG News (`fancyzhx/ag_news`, revision `eb185aade064a813bc0b7f42de02595523103ca4`) with it, so both must be in the Hugging Face cache for offline runs.
+
+**References to working notes.** Some protocols name internal working notes (for example `docs/HANDOFF.md` or files under `docs/reviews/`) in their `role` or `found_by` fields. Those notes are not part of this release; each protocol's rules, items and amendments are complete without them.
+
 ## Re-running from scratch (costs money)
 
 Each protocol's module has `build`, `train`, `check` and `hosted` stages:
 
 - **Pinned hosts, models and prices** are in each protocol and in the paper's Appendix B.
-- **Spend** was $72.08 on OpenRouter before runs G and H. Jev was billed separately by TypeSafe: $4.27 in total for all Jev use in the project (prepaid balance), which cannot be split per call.
+- **Spend** was $73.13 on OpenRouter in total. Jev was billed separately by TypeSafe: $4.27 in total for all Jev use in the project (prepaid balance), which cannot be split per call.
 - **Variance:** hosted models change over time, and moving one model between two hosts changed 9.5% of its answers. Expect answers to differ somewhat even at temperature 0.
 
 ## Data provenance
