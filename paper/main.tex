@@ -1,4 +1,3 @@
-% Draft 3, 2026-10-16.
 % ACL template (acl.sty), preprint mode.
 % Source of truth for every number:
 %   confirmatory run          -> artifacts/confirmatory/analysis.json, docs/confirmatory-results.md
@@ -26,7 +25,7 @@
 \usetikzlibrary{arrows.meta,positioning,calc}
 \usepackage{cleveref}
 
-\graphicspath{{../docs/figures/}}
+\graphicspath{{figures/}{../docs/figures/}}
 \setlength{\tabcolsep}{4pt}
 
 \title{Matched data, small gaps: a pre-registered comparison of fine-tuned classifiers, retrieval-prompted language models and a typed-decision model for intent and out-of-scope decisions}
@@ -35,7 +34,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We compare a fine-tuned 150M classifier and retrieval-prompted 27--31B language models on intent and out-of-scope decisions, each given the same labelled data, in protocols frozen before any request; a hosted typed-decision model is a secondary system. On Banking77 the classifier is 1.4 points behind the primary general model, not significant after correction, and equivalence within 2.5 points is not shown. The one significant pre-registered difference (CLINC150, $-1.9$ points, Holm $p=.007$) splits about equally between scope and intent, and its in-scope part holds on items the authors had never inspected (post hoc). MASSIVE cannot be ranked: its result depends on which domains are held out. A post hoc combination does not replicate, and two frontier models run with reasoning off were not significantly more accurate on 100 sessions per set, at 17 to 44 times the uncached API cost. For prompted models, the out-of-scope decision moves with what the prompt shows. On BANKING77-OOS, retrieving in-scope examples lowered five models' rejection of unsupported same-domain requests by 19 to 30 points on fresh label-clean items, after we removed a label leak we found in that dataset; for the typed-decision model the drop is at its fixed threshold. Random examples move it much less (1 to 11 points). Labelled out-of-scope examples raise rejection for the requests that retrieve them. No mitigation met its pre-registered criterion for most models.
+We compare a fine-tuned 150M classifier and retrieval-prompted 27--31B language models on intent and out-of-scope decisions, each given the same labelled data, in protocols frozen before any request; a hosted typed-decision model is a secondary system. On Banking77 the classifier is 1.4 points behind the primary general model, not significant after correction, and equivalence within 2.5 points is not shown. The one significant pre-registered difference (CLINC150, $-1.9$ points, Holm $p=.007$) splits about equally between scope and intent, and its in-scope part holds on items we had never inspected (post hoc). MASSIVE cannot be ranked: its result depends on which domains are held out. A post hoc combination does not replicate, and two frontier models run with reasoning off were not significantly more accurate on 100 sessions per set, at 17 to 44 times the uncached API cost. For prompted models, the out-of-scope decision moves with what the prompt shows. On BANKING77-OOS, retrieving in-scope examples lowered five models' rejection of unsupported same-domain requests by 19 to 30 points on fresh label-clean items, after we removed a label leak we found in that dataset; for the typed-decision model the drop is at its fixed threshold. Random examples move it much less (1 to 11 points). Labelled out-of-scope examples raise rejection for the requests that retrieve them. No mitigation met its pre-registered criterion for most models.
 \end{abstract}
 
 % ---------------------------------------------------------------------------------------------------------------
@@ -96,7 +95,7 @@ CLINC150 & 150 & 1,850 & 185 & 1,766 \\
 \begin{itemize}
   \item \textbf{Specialist:} an Ettin 150M encoder \citep{weller2026ettin} with a mean-pooled classification head, retrained on the normalised data. It uses three seeds and a learning rate chosen on development data (for MASSIVE, on the earlier 60-label task, not re-swept). Scope comes from a development-selected detector, with a threshold weighted by the 20\% prior. The development out-of-scope items are 100 CLINC150 out-of-scope validation queries for Banking77 and CLINC150, and 100 development items from the held-out domains for MASSIVE.
   \item \textbf{General models:} Gemma 4 31B (primary) and Qwen3.5 27B (secondary). Each answers scope and intent at temperature 0 with reasoning off, after 20 BM25-nearest \citep{robertson2009bm25} in-scope training examples. The pool contains no out-of-scope rows, and labels are shown by name only, without descriptions.
-  \item \textbf{Jev 1.13.0} \citep{deusser2026jev}: a hosted ``typed-decision'' model from TypeSafe, pinned to one version, that answers a yes/no question as a probability and a choice question as a distribution over the given labels in one call. Its weights and architecture are not public, and its API bills 395 to 1,254 output tokens per call in our runs. It receives the same 20 neighbours, labelled with intent names, and its scope decision uses a fixed 0.5 threshold; its interface therefore differs from the general models' prompt, and comparisons with them are secondary.
+  \item \textbf{Jev 1.13.0} \citep{deusser2026jev}: a hosted ``typed-decision'' model from TypeSafe, pinned to one version, that answers a yes/no question as a probability and a choice question as a distribution over the given labels in one call. Its weights and architecture are not public, and its API bills 113 to 1,259 output tokens per call in our runs. It receives the same 20 neighbours, labelled with intent names, and its scope decision uses a fixed 0.5 threshold; its interface therefore differs from the general models' prompt, and comparisons with them are secondary.
   \item \textbf{Combination} (pre-registered): Gemma's scope, with the specialist's intent when its probability is at least 0.9.
   \item \textbf{Cascade} (pre-registered): the 40\% of turns with the lowest specialist confidence go to Gemma.
 \end{itemize}
@@ -190,7 +189,7 @@ On CLINC single-domain the shift is smaller (the interval excludes zero for two 
 \label{fig:operating}
 \end{figure*}
 
-\paragraph{Replication and causes (pre-registered, run D2).} A third frozen protocol used fresh, label-clean validation items. On BANKING77-OOS there were 500 in-scope and 388 held-out items, from 23 intents, with all 366 mislabelled rows removed from the pool. On CLINC single-domain there were 1,000 in-scope and 575 held-out items. The protocol added three arms (\cref{tab:d2,fig:operating}).
+\paragraph{Replication and causes (pre-registered, run D2).} A third frozen protocol used validation items. On BANKING77-OOS they were fresh and label-clean: 500 in-scope and 388 held-out items, from 23 intents, with all 366 mislabelled rows removed from the pool. On CLINC single-domain there were 1,000 in-scope items, which had served as run D's specialist development data (never sent to a model; \cref{app:record}), and 575 held-out items. The protocol added three arms (\cref{tab:d2,fig:operating}).
 \begin{itemize}
   \item \textbf{The drop replicates} for all five models, by 19 to 30 points (Holm $p\le.0006$).
   \item \textbf{Relevance drives it.} Twenty random in-scope examples leave rejection 13 to 21 points higher than the 20 retrieved ones (Holm $p\le.004$ for all five), within 1 to 11 points of zero-shot.

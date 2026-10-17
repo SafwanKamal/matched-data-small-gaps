@@ -28,6 +28,20 @@ def num(printed: str) -> float:
     return float(m.group(0))
 
 
+def jev_output_tokens() -> list[int]:
+    """Billed output tokens of every answered Jev call in the frozen runs (last row per id; plumbing checks excluded)."""
+    out = []
+    for run in ("jev-rerun/J1", "jev-rerun/J2", "retrieval-mechanism/jev", "massive-robustness/jev"):
+        for f in sorted(A.joinpath(run).glob("*.jsonl")):
+            last = {}
+            for line in f.read_text(encoding="utf-8").splitlines():
+                r = json.loads(line)
+                if r.get("error") is None and (r.get("usage") or {}).get("output_tokens") is not None:
+                    last[r["id"]] = r["usage"]["output_tokens"]
+            out.extend(last.values())
+    return out
+
+
 def checks():
     conf = j("confirmatory", "analysis.json")["sets"]
     b3 = j("posthoc", "round3b.json")
@@ -96,6 +110,9 @@ def checks():
                 places = 1 if v >= 10 else 2
                 printed = f"{v:.{places}f}"
                 c.append((f"latency {key} {s} p{q}", row, ("& " if q == 50 else "/ ") + printed, v, places))
+    jt = jev_output_tokens()
+    c.append(("Jev output tokens low", "its API bills", "113", min(jt), 0))
+    c.append(("Jev output tokens high", "its API bills", "1,259", max(jt), 0))
     cost = b3["cost"]["sets"]
     c.append(("Kimi multiple low", "were not significantly more accurate on 100 sessions per set, at", "17", cost["clinc150"]["kimi-k3"]["multiple_of_gemma_uncached"], 0))
     c.append(("Opus multiple high", "were not significantly more accurate on 100 sessions per set, at", "44", cost["banking77"]["claude-opus-5"]["multiple_of_gemma_uncached"], 0))

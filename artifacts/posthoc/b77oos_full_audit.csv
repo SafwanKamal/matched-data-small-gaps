@@ -1,0 +1,639 @@
+file,line,text,given_label,banking77_label,problem
+data/banking77-oos/train/seq.in,814,when i was in a restaurant today my card was declined and payment wouldn't go through and i need help. can you fix this?,exchange_via_app,card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,815,"my netflix subscription says that there is an issue with my card information, but i thought everything was fine. why would it be declined?",exchange_via_app,card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,816,can you tell me whats going on with my card it seems to be not working?,exchange_via_app,card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,817,"i don't know what's wrong with my card, but it has not worked at multiple places today.",exchange_via_app,card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,908,how much do i need to pay for a transfer?,pending_top_up,top_up_by_bank_transfer_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,909,how much would i be charged for a transfer?,pending_top_up,top_up_by_bank_transfer_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,910,"for sepa transfers, what kind of charge will be applied?",pending_top_up,top_up_by_bank_transfer_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,911,will i be charged for receiving money?,pending_top_up,top_up_by_bank_transfer_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,912,are you aware of any charges for receiving money?,pending_top_up,top_up_by_bank_transfer_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,913,is there a cost to receive money?,pending_top_up,top_up_by_bank_transfer_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1027,how long does it take for a top up to be approved?,cancel_transfer,pending_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,1028,i just made a top-up but it shows as pending! i use your service all the time and have never had a problem before. why does it keep showing up as pending?,cancel_transfer,pending_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,1029,"i tried to top up, but the funds show up as pending. i thought it was instant?",cancel_transfer,pending_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,1030,"my top up has been pending for an hour already, and i really need this to go through as soon as possible.  can you help?",cancel_transfer,pending_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,1031,i made a top up yesterday but it's still pending.,cancel_transfer,pending_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,1032,what happened to my top-up? it's not reflected.,cancel_transfer,pending_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,1152,is there any amount in which i would get cut off from topping up?,wrong_amount_of_cash_received,top_up_limits,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1153,what is the max top-up?,wrong_amount_of_cash_received,top_up_limits,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1154,is there a limit on top ups,wrong_amount_of_cash_received,top_up_limits,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1155,please tell me the limit to topping-up.,wrong_amount_of_cash_received,top_up_limits,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1156,can someone please tell me how much i can top-up?,wrong_amount_of_cash_received,top_up_limits,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1157,is there a limit for top ups?,wrong_amount_of_cash_received,top_up_limits,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1296,the app is showing that i received alot more money than i actually received from the atm. this occurred earlier today.,card_payment_fee_charged,wrong_amount_of_cash_received,wrong in-scope label
+data/banking77-oos/train/seq.in,1297,i tried to withdraw 40 pounds but only 20 came out. did you steal my money?,card_payment_fee_charged,wrong_amount_of_cash_received,wrong in-scope label
+data/banking77-oos/train/seq.in,1298,the amount of cash i received was not the full amount,card_payment_fee_charged,wrong_amount_of_cash_received,wrong in-scope label
+data/banking77-oos/train/seq.in,1299,i was not distributed all of cash that i requested,card_payment_fee_charged,wrong_amount_of_cash_received,wrong in-scope label
+data/banking77-oos/train/seq.in,1300,i got the incorrect amount of money given to me from my account,card_payment_fee_charged,wrong_amount_of_cash_received,wrong in-scope label
+data/banking77-oos/train/seq.in,1301,i couldn't get the money i needed.,card_payment_fee_charged,wrong_amount_of_cash_received,wrong in-scope label
+data/banking77-oos/train/seq.in,1445,i have been charged a fee that i didn't know about. why have you charged me extra for card payments?,transfer_not_received_by_recipient,card_payment_fee_charged,wrong in-scope label
+data/banking77-oos/train/seq.in,1446,"my card is showing a fee from when i used it, but i thought this card was supposed to be fee free?",transfer_not_received_by_recipient,card_payment_fee_charged,wrong in-scope label
+data/banking77-oos/train/seq.in,1447,"i have been charged a fee, i didn't know about this fee before! when do you charge extra for card payments?",transfer_not_received_by_recipient,card_payment_fee_charged,wrong in-scope label
+data/banking77-oos/train/seq.in,1448,why are you charging me fees for using my card?,transfer_not_received_by_recipient,card_payment_fee_charged,wrong in-scope label
+data/banking77-oos/train/seq.in,1449,am i getting charged for making a payment?,transfer_not_received_by_recipient,card_payment_fee_charged,wrong in-scope label
+data/banking77-oos/train/seq.in,1450,what is this extra charge with my purchase?,transfer_not_received_by_recipient,card_payment_fee_charged,wrong in-scope label
+data/banking77-oos/train/seq.in,1581,i'm still waiting for my transaction.,supported_cards_and_currencies,transfer_not_received_by_recipient,wrong in-scope label
+data/banking77-oos/train/seq.in,1582,how long do money transfers take? my friend really needs the money i sent a couple of hours ago but it's not there yet.,supported_cards_and_currencies,transfer_not_received_by_recipient,wrong in-scope label
+data/banking77-oos/train/seq.in,1583,how long does it take for a transfer to arrive,supported_cards_and_currencies,transfer_not_received_by_recipient,wrong in-scope label
+data/banking77-oos/train/seq.in,1584,how long will it take for my transfer to arrive?,supported_cards_and_currencies,transfer_not_received_by_recipient,wrong in-scope label
+data/banking77-oos/train/seq.in,1585,how long should it take for a transfer to go through? i have been waiting a while.,supported_cards_and_currencies,transfer_not_received_by_recipient,wrong in-scope label
+data/banking77-oos/train/seq.in,1586,when will my transfer arrive,supported_cards_and_currencies,transfer_not_received_by_recipient,wrong in-scope label
+data/banking77-oos/train/seq.in,1684,in what places can i use my card?,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1685,what businesses accept my card?,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1686,how do i know where i can use my card?,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1687,are there limits to businesses that will accept this card?,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1688,you can use it anywhere that accepts mastercard.,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1689,is the card welcomed by everybody?,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1690,can i use my card while on vacation overseas?,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,1800,what caused my top-up to be returned?,balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/train/seq.in,1801,explain why my top up would be reverted.,balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/train/seq.in,1802,what happened to the money that i deposited?,balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/train/seq.in,1803,"i tried to make a top-up and it was canceled, why is that?",balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/train/seq.in,1804,"something is wrong, my top-up is gone and i don't know what happened to my money.",balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/train/seq.in,1805,why have my top ups been canceled?,balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/train/seq.in,1806,"my money is gone. i had topped up recently and saw it was there and went through, but now it's disappeared, what is happening?",balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/train/seq.in,1944,"my balance has not changed, despite depositing a cheque",card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/train/seq.in,1945,why is my check still not showing up on my account? it's been a week already,card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/train/seq.in,1946,i've deposited a check in my account but the cash isn't showing as available.,card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/train/seq.in,1947,why am i not seeing the check i deposited this morning in my account?,card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/train/seq.in,1948,why is my deposit still pending?,card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/train/seq.in,1949,i made a cash deposit going to my account but it is not there,card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/train/seq.in,1950,why hasn't my account updated?,card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/train/seq.in,2078,i did not charge my account for that transaction.  that's an error.,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,2079,the app shows a fraudulent payment made on my account.,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,2080,my app shows a payment i didn't make,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,2081,i'm checking the app and i see a payment that's not mine.,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,2082,is there any way to know how the transaction got on my account?,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,2083,i have a confusing payment appear on my statement and i don't recognise it!,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,2084,i have a charge i did not make.,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,2174,how can i change my account details?,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/train/seq.in,2175,i would like to alter my personal details.,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/train/seq.in,2176,can i edit my details?,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/train/seq.in,2177,how do i input a new address?,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/train/seq.in,2178,can i update my details?,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/train/seq.in,2179,how would i be able to make changes to my personal details?,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/train/seq.in,2180,how do i go about changing my address?,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/train/seq.in,2270,how do i find my new pin?,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2271,when will i have access to my pin number?,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2272,do you deliver the pin separately?,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2273,do i have to wait for a physical card before i get my pin,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2274,how do i get my card pin?,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2275,i can't find the card pin.,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2276,will my pin number be sent with my card?,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2378,what steps do i do to transfer money using my credit card?,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2379,how do i top up by card?,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2380,how does someone else top up my account,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2381,how do i to up by card?,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2382,something is wrong with my top up and i can't see it. how do i find it?,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2383,who can have access to top up my account?,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2384,top up with credit card,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2474,is there a list of atms that take this card?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2475,can i use a different bank atm than my own?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2476,"atms, which ones will accept this card?",direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2477,am i limited to what atm i can use my card?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2478,can i withdraw from any atm?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2479,the card can be used at which atms?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2480,where should i withdraw money from?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2481,tell me what atms use this card.,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2619,i don't have a password.,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2620,i don't know my password,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2621,the app passcode has completely slipped my mind.,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2622,can i reset the passcode?,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2623,how do i reset my passcode?,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2624,what should i do if my passcode won't work?,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2625,i need to reset my passcode. where do i go to do that?,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2626,"disaster, i've totally forgotten my passcode, can you help me?",declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,2757,why was my withdrawal declined,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/train/seq.in,2758,i cannot withdraw money from the atm,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/train/seq.in,2759,can you please tell me why i cant get money from the atm?,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/train/seq.in,2760,my card didn't work at the atm in notting hill.  is my card working?,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/train/seq.in,2761,"the atm would not give me cash,why?",pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/train/seq.in,2762,why would the atm machine fail to give me the cash withdrawal i requested?,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/train/seq.in,2763,i might need a new card because it's not working at any of the atms. i don't think ive used all my money. why is it doing this?,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/train/seq.in,2764,why did the atm cancel my transaction,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/train/seq.in,2884,why is my payment still pending?,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,2885,"hi,  one of payment is still coming as pending for which i have already paid by card. i guess it did not processed, could you please check and update me.",lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,2886,why haven't i gotten my payment yet?,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,2887,why hasn't my payment shown up yet?,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,2888,it looks like a payment i've made hasn't made it through yet.,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,2889,i made a card payment which is showing me pending.,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,2890,why hasn't my card payment cleared yet?,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,2891,why is the payment showing as pending from things i bought this morning?,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,2980,my phone has been stolen.  how can i make sure no one uses my account from it?,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/train/seq.in,2981,help!  what should i do?  my phone was stolen yesterday.,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/train/seq.in,2982,my cards were stolen,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/train/seq.in,2983,"my phone is lost i don't want someone to use my account, what can i do?",request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/train/seq.in,2984,i accidentally left my phone at the hotel so now i'm not able to use the app.,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/train/seq.in,2985,what do i do to lock my phone after losing it so my account isn't accessed,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/train/seq.in,2986,i have lost my phone or it has been stolen.,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/train/seq.in,2987,"if my phone was stolen, do i need to do anything?",request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/train/seq.in,3115,hello. how do i go about getting a refund of an item i bought ? i want to cancel the payment since i have not received the item yet.,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/train/seq.in,3116,how do i reverse a transaction on my account?,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/train/seq.in,3117,i would like to cancel my purchase.,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/train/seq.in,3118,i ordered online weeks ago and i never received my package in the mail and i don't want to wait any more. so if i could get my money back now that would be great.,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/train/seq.in,3119,i made a purchase recently but i have decided that i'm not buying it and i need to receive my money back. can you please give me a refund asap. it's extremely urgent.,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/train/seq.in,3120,am i able to return an item for a refund?,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/train/seq.in,3121,hello i changed my mind and want a refund on one of things i bought recently. can you please cancel the transaction and get me my money back. please it's urgent.,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/train/seq.in,3122,i'm cancelling this charge. i still have not received what i bought from these people a while ago.,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/train/seq.in,3221,"transfer unable to be completed, states 'declined'",refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,3222,"declined, transfer not completed.",refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,3223,why are my transfers getting declined?  i havent had a problem in the past.,refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,3224,i saw that my transfer was declined.,refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,3225,please explain why my transfer attempt was declined. thank you.,refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,3226,"i can't make any transfers, they won't go through, the details are correct as i checked them.  can you look in to this please?",refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,3227,"i have tried everything to complete a transfer but can't, what should i do next",refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,3228,"unable to complete transfer, states 'declined'",refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,3350,i requested a refund directly from the seller but i still don't have it. i just want you to send me my money back. i did what you said to do and i still don't have it.,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/train/seq.in,3351,i've been waiting for a refund to show up and i don't see it on my statement yet.,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/train/seq.in,3352,i'm due a refund and it is not on my statement.,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/train/seq.in,3353,i cannot see a refund in my account,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/train/seq.in,3354,"i requested a refund from a merchant a while ago, and upon repeatedly checking my statement, the merchant has yet to refund me my money.  i don't know what's going on, or why the money is getting into my account--could you please help?",declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/train/seq.in,3355,my refund has not hit my account yet,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/train/seq.in,3356,can you tell me if a credit/refund is coming from a seller? i asked for refund directly from them and am still waiting. it's been a week now and i still havn't seen my refund yet.,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/train/seq.in,3357,im not sure if a seller is giving me my money back! i asked them to refund my money for the item but it's been a week now and still nothing has been given back to me. can you resolve this for me?,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/train/seq.in,3472,i tried to make a purchase in the store but my card was declined.,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,3473,"i received my new card and tried using it today, just to have it show declined over and over again.  why is this happening?",pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,3474,my card payment wasn't accepted.,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,3475,why has my card been declined?,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,3476,explain the payment that was declined!,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,3477,the card payment i attempted to make failed.,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,3478,i went to use my new card today and the card was repeatedly declined. i would really like to use this card and need to know what to do about it.,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,3479,why was my card declined?,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/train/seq.in,3590,the atm ate my card; how do i get a new one?,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3591,how can i get my card out of the stupid atm that ate it?,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3592,how to get new card after atm eats it,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3593,what are the steps i should take to recover my swallowed card?,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3594,an atm machine didn't give me back my card.,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3595,why did the atm eat my card?,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3596,the bank machine didn't give my card back how do i get a new one fast?,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3597,my card got stuck in an atm.,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3730,is there a way to tell where the money came from?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3731,i'd like to know where my funds come from.,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3732,how do i find out where my funds came from?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3733,where can i check out the source of available funds in my account?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3734,i require verification of my source of funds.,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3735,where can i find information about where my money came from?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3736,i must verify the source of my funds,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3737,how do i know where the funds come from?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,3832,how long does it take for the money to show up in my account?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/train/seq.in,3833,i need quickly transfer something from china. about how long will it take?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/train/seq.in,3834,transfers from the us how long will the wait be?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/train/seq.in,3835,what is the time period for money to be transferred?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/train/seq.in,3836,"if i get a transfer from europe, how long until it is in my account?",reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/train/seq.in,3837,there is an urgent transfer i need to make from china.  how long will it take to get it processed?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/train/seq.in,3838,when can i expect my transfer to reach my account?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/train/seq.in,3839,help! i need to transfer something to china.,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/train/seq.in,3960,the card payment didn't work,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/train/seq.in,3961,why is a payment i made reverted back to my account?,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/train/seq.in,3962,what reasons would cause my card payment to be cancelled?,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/train/seq.in,3963,what happens if a merchant doesn't accept  you payment?,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/train/seq.in,3964,is my card payment reverted?,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/train/seq.in,3965,is it on purpose that my payment has been returned to my account?,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/train/seq.in,3966,my money is back in my account after a seller contacted me stating they never received payment. i am positive it was deducted out of my account. please get this sorted out right away.,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/train/seq.in,3967,"i think a card payment i made was cancelled, can you check?",change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/train/seq.in,4057,please tell me how to change my pin.,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4058,what atms will allow me to change my pin?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4059,is it possible to change my pin?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4060,can i change my pin on holiday?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4061,where can i change my pin?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4062,do i have to go to an actual bank to change my pin?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4063,how can i change my old pin to a new one?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4064,may i change my pin?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4065,can i get a new pin number at any atm using my card?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4066,is there a way yo change my pin?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/train/seq.in,4181,i cant transfer money into my account,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4182,please tell me why i am having problems transferring to a beneficiary.,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4183,"this is frustrating, i'm at work and my transfers are not going through. i keep getting an error message, i do not have time for this.",transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4184,my account transfer was not cleared.,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4185,why  am i being told this  transfer will not  go thru,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4186,"i am getting an error stating my transfer is not possible while transferring money. let me know the issue as its the first time i am getting error, earlier it used to work.",transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4187,why is my beneficiary not allowed?,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4188,why is a transfer to beneficiary not possible?,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4189,my transfer to an account failed.,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4190,for some reason i am unable to preform a transfer to a beneficiary.,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/train/seq.in,4318,i want to get my salary deposited as pesos?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4319,can my salary be received here?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4320,my salary is in gbp. do i need to configure this somewhere?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4321,i use gbp for my salary deposits. must i set this up somewhere?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4322,"if my salary is in gbp, do i need to do something?",failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4323,can i transfer my salary onto here?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4324,do i need to do anything special for my friend to send money to my account?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4325,how do i find out about transfers,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4326,how would my friend be able to send me money?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4327,how can my friend pay me?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4427,i want to transfer money. how do i do that for my account?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4428,can you please explain how bank transfers work?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4429,i want to transfer some money from my other bank account into this one.,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4430,can i add money to top up my account via a bank transfer?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4431,what steps are taken to transfer money into my account?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4432,"i need to transfer money into my account, how?",verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4433,i would like to move money from one account to another to top off my account. can you explain how i can do that?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4434,how can i top up my account by bank transfer?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4435,what do you do to transfer money to my account?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4436,what are the steps for  making a transfer for topping up?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4437,my account is depleted. can i transfer funds from another bank?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4527,do i need to verify my top-up card?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4528,do you know how i can verify that i did a top-up to my card?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4529,i need help finding the verification code on the top up card.,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4530,what can i do to verify my card?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4531,can you tell me where to find the top-up verification code?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4532,help my find the verification code on a top-up.,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4533,the top-up verification code is not visible.,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4534,why do i need top-up to be verified?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4535,can i verify my top-up card?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4536,can you tell me where to find my top-up verification code?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4537,why should i verify the top-up?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/train/seq.in,4630,"help me please, i need to top up cash.",order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4631,i can't find out how to top-up my account using cash.,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4632,are cheques accepted for a top up?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4633,how do i deposit cash?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4634,what is your check-cashing policy?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4635,i wish to top up using a cheque.,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4636,how do you top-up using cash?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4637,i want to use a cheque to pay.,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4638,how can i add physical money to my card?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4639,is there an option to top up with a cheque?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4640,what form of payments can i use for topping up?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4726,can i use my virtual card for recurring monthly payments?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4727,what do i do if my disposable virtual card doesn't work?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4728,why can't i make multiple payments with my virtual card?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4729,this disposable virtual card is not working.,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4730,i can't use my virtual disposable card,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4731,i have a disposable card but it does not work?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4732,my disposable virtual card won't work.,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4733,why won't my virtual card work?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4734,why isn't my disposable virtual card working?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4735,i can't make purchases with my virtual card.,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4736,i can't do any business with this virtual card.,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4856,am i able to order a disposable virtual card?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4857,how do i get a disposable virtual card?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4858,what do you use disposable cards on?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4859,what are the benefits of a disposable card?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4860,where do i order a disposable virtual card?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4861,i need a single use card for shopping online,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4862,are there any disposable virtual cards?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4863,can you tell me where to go to get a disposable virtual card?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4864,what are these disposable virtual cards all about?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4865,what are the uses for disposable cards?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4866,how do i use the disposable cards?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,4972,why did my credit card get declined for top up?,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4973,my top-up never worked,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4974,my credit card was declined for top-up. can you see if there is enough funds in my account?,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4975,"hello, there was an error while attempting top-up with my card this morning. i was able to use the card two days ago with no issues. could you please assist?",balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4976,problems with my top up,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4977,what was the issue with my topping up?,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4978,looks like my top up failed.,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4979,i tried using my credit card with top up but it didn't work! i thought it was supposed to?,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4980,why has my top-up been denied?,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4981,the app rejected my top up,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,4982,i think the top up failed,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/train/seq.in,5108,"bank transfer to account did not show up, please help?",cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5109,i made a transfer a couple hours ago but my balance has not been updated. why is this? shouldnt this be instant?,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5110,what's the time frame normally for a uk account transfer? i just made one and it's not showing up anywhere. i want to be sure that everything is good.,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5111,why hasn't the money i transferred into my account shown up yet?,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5112,"hi, i am unable to see transaction in my account which i made couples of hours ago from my uk account. please help me in this.",cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5113,why hasn't my money transfer shown up yet?,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5114,"how long do transfers from a uk bank account usually take for you? i just made a transfer and i'm not seeing anything, wondering if it worked",cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5115,"although i transferred some money, it has not as of yet, arrived.",cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5116,my transfer into my account isn't showing up.,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5117,i made a bank transfer but it doesn't seem to have gone through?,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5118,how long do bank transfers usually take?,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/train/seq.in,5236,my identity has been stolen. i still have my physical card but there are charges i didn't make on my account. how do i cancel this card or dispute the charges?,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5237,why do i see a random withdrawal in my app?,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5238,help!  the app says i took out cash but i didn't!,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5239,what is this cash withdrawal i don't recognize?,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5240,"according to the app, i got cash from an atm but i haven't made any transactions.",exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5241,the app is saying i made a withdrawl but i didn't.,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5242,"someone has access to my card info.  i still have the card, but someone just withdrew cash.  how do i get this corrected/stopped?!",exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5243,i see cash in my app but i did not get it.,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5244,my wallet was taken and i see that someone is using my card!   please help me!,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5245,my card shows a cash withdrawal i don't recognize.,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5246,i have a cash withdrawal that i don't recognize.,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/train/seq.in,5332,what is the charge for using a top up card in the us?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5333,will there be any fees for top ups?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5334,are there fees for adding money with an international card?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5335,will i be charged any fees if i want to add money with an international card?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5336,will you assess me more fees if i top up with an international card?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5337,are there fees for using an international card to top up?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5338,are there any fees if i want to add money using an international card?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5339,where can i top my card for free?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5340,are there any charges for using a bank card to top up,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5341,do you charge a fee for topping up a card?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5342,can i be charged for topping up by card,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5459,what are the steps that i need to take to activate a new card?,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5460,how do i activate my card,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5461,where do i activate my card?,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5462,how do i get my card active?,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5463,my card activation is failing.,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5464,what is the process to activate a card,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5465,could you please tell me how to activate my new card?,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5466,"hi, would you please activate my card?",cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5467,"i just got my new card, how do i activate it?",cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5468,i need my card activated.,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5469,do i need a photo id to activate a my new card?,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/train/seq.in,5600,why am i being charge a fee when using an atm?,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5601,"so, i was just charged for my recent atm withdrawal and any withdrawal prior to this has been free. what is the issue here?",card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5602,why do i see extra charges for withdrawing my money?,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5603,i was charged for getting cash.,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5604,i got charged a fee that shouldn't be there from my cash,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5605,today i noticed a charge for an atm withdrawal on my account. can you please fix this? it's supposed to be no charge.,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5606,tell me why there is an extra charge when i used an atm?,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5607,why did using an atm cause me to have an extra fee charged?,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5608,i was under the impression atm cash withdrawals were free. why was i suddenly charged for my most recent atm transaction?,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5609,"that fee should not be there, you charged my cash for an unnecessary thing.",card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5610,why was i charged a fee for withdrawing money off my card?,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/train/seq.in,5703,will i be sent a new card before mine expires?,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5704,are there any express fees if i want my new card faster?,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5705,can i get a new card even though i am in china?,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5706,my card is almost expired.  how fast will i get a new one and what is the cost?,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5707,"my card will expire next month, will i need to order a new one?",apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5708,can you give me info about what to do when my card expires?,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5709,i need to order a new card as my old one will expire soon. can you tell me how to order a new one?,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5710,my card expires soon,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5711,how do i go about ordering a new bank card?,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5712,"i want to get a new card before my current one expires, how much will it cost me and how long will it take to get here.",apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5713,"if my card expires next month, will i need to order a new one?",apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/train/seq.in,5803,how can i verify my identity?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5804,what do you require for identity verification?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5805,what is needed for the identity verification?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5806,what documentation do i need for the identity check?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5807,what documents do i need for the identity check?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5808,what needs to be provided for identity verification?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5809,what forms of id should i use for verification?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5810,what do you need for the identity verification,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5811,how do i validate my identity.,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5812,where in the app do i go to verify my identity?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/train/seq.in,5813,what can i use to verify my identity?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,633,what atms accept my card?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,634,how can i tell if an amt will take this card?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,670,the passcode isn't working for me.,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,671,for some reason i forgot the passcode i have.,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,705,why did i get declined when trying to get cash?,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/valid/seq.in,706,how come the atm won't give me my money?,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/valid/seq.in,737,why does my payment appear as pending?,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/valid/seq.in,738,how come my card payment is still pending?,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/valid/seq.in,762,i lost my phone! will my card still work?,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/valid/seq.in,763,"i no longer have my phone with the app, what should i do?",request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/valid/seq.in,796,are refunds allowed for certain items.,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/valid/seq.in,797,can i have a refund for one of your products?,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/valid/seq.in,823,"why do you keep declining my transfers? it's been working well so far, but when i just tried to buy something, the card got declined. i tried it a few times, but same thing happened every try.",refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/valid/seq.in,824,i noticed my transfer was declined.,refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/valid/seq.in,856,i need my refund,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/valid/seq.in,857,"my refund has not arrived, and i am unsure why. who do i contact?",declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/valid/seq.in,887,i'm not sure why the card payment didn't work.,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/valid/seq.in,888,why are all my card payments being declined?,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/valid/seq.in,917,"i can't get my card out of the atm, what should i do now?",transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,918,the atm kept my card?,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,952,what is my source of funds?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,953,i need to verify my funds.,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,978,when will the money reach my  account?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/valid/seq.in,979,how long do i wait for a transfer from the united states?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/valid/seq.in,1011,i didn't cancel my card payment.,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/valid/seq.in,1012,i was refunded the money for something i bought already.,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/valid/seq.in,1036,can i pick a new pin?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/valid/seq.in,1037,i want to create a new pin.,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/valid/seq.in,1068,i got a message that my transfer is not possible.  what is happening?  i need this to go through please.,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/valid/seq.in,1069,i need to transfer to my account and cant.,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/valid/seq.in,1103,what are the steps for getting money from a friend?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1104,"i have obtained the salary in gbp, will it need to be configured?",failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1131,how simple is it to transfer money into my account?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1132,help! my account doesn't show any funds. is transferring funds an option i can use?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1157,why do the top-ups need to be verified?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/valid/seq.in,1158,do i need to verify the top-up?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/valid/seq.in,1183,can i top up using cash?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1184,am i able to top up with this cheque i received?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1207,why was my virtual card rejected?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1208,my virtual card was rejected for a car rental. why?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1240,who can purchase a disposable virtual card?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1241,i'm not sure how disposable virtual cards work. please help.,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1269,i can't add any more money.,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/valid/seq.in,1270,i urgently need to top-up my card but its getting declined. please help me in this or advise with other options if any.,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/valid/seq.in,1304,it is common for an international transfer to take 2 days or longer? i made a transfer from france 2 days ago and i have not seen it yet.,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/valid/seq.in,1305,why wasn't my bank balance updated?,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/valid/seq.in,1336,"hello, please look into this matter urgently. as i have lost my wallet and i can see one withdrawal, now i do not want to loose more money.",exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/valid/seq.in,1337,i was checking my account when i saw a $500 cash withdraw that i know i didn't do.  i have my card so i don't understand how this happened.  please help me.,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/valid/seq.in,1361,how much does it cost to add money,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1362,what are the top-up fees for my card?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1393,can someone assist me with activating my card?,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/valid/seq.in,1394,what would ii do if i wanted to activate my new card,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/valid/seq.in,1429,why have i been charged for pulling cash out of my own account?,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/valid/seq.in,1430,why was there an extra charge with the withdrawal of my money?,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/valid/seq.in,1455,"i need a new card to replace an expired one. will it cost anything, and how soon?",apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/valid/seq.in,1456,i'm in china and need a new card. please help.,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/valid/seq.in,1481,can you tell me what i need to do for the identity check process?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/valid/seq.in,1482,tell me what the steps for the identity checks are,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,321,can i do a transfer with swift,pending_top_up,top_up_by_bank_transfer_charge,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,361,"i tried topping up but my funds seem to be pending. i want to buy something right now, what do i do?",cancel_transfer,pending_top_up,wrong in-scope label
+data/banking77-oos/test/seq.in,401,what are the top-up limits?,wrong_amount_of_cash_received,top_up_limits,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,441,will declined funds i tried to withdraw be returned to me?,card_payment_fee_charged,wrong_amount_of_cash_received,wrong in-scope label
+data/banking77-oos/test/seq.in,481,they charged me for paying with my card.,transfer_not_received_by_recipient,card_payment_fee_charged,wrong in-scope label
+data/banking77-oos/test/seq.in,521,i transferred some money but the recipient is having trouble withdrawing.,supported_cards_and_currencies,transfer_not_received_by_recipient,wrong in-scope label
+data/banking77-oos/test/seq.in,561,where am i able to use the card?,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,562,what can i use my card to pay for?,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,563,who accepts my card?,top_up_reverted,card_acceptance,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,601,my top-up has been cancelled.,balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/test/seq.in,602,on my last transaction it seem that my top-up was not successful.,balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/test/seq.in,603,i'd like to know why my top-up was canceled please.,balance_not_updated_after_cheque_or_cash_deposit,top_up_reverted,wrong in-scope label
+data/banking77-oos/test/seq.in,641,balance hasn't been updated following a cheque or cash deposit,card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/test/seq.in,642,i tired to deposit some cash into my account but it's not there,card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/test/seq.in,643,"i sent you a cheque couple days ago, nothing happened to my account yet! this is unacceptable, where is my money??",card_payment_not_recognised,balance_not_updated_after_cheque_or_cash_deposit,wrong in-scope label
+data/banking77-oos/test/seq.in,681,there is a fraudulent charge on my statement.,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/test/seq.in,682,what is the payment in my account that i did not do?,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/test/seq.in,683,in my statement there is a payment that is i do not recognize,edit_personal_details,card_payment_not_recognised,wrong in-scope label
+data/banking77-oos/test/seq.in,721,how can i edit my personal details?,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/test/seq.in,722,how do i change my address?,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/test/seq.in,723,what do i need to do to change the address on my account?,why_verify_identity,edit_personal_details,wrong in-scope label
+data/banking77-oos/test/seq.in,761,where is the card pin?,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,762,what is my card's pin?,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,763,where can user find pin?,visa_or_mastercard,get_physical_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,801,why don't i see my top up in my wallet?,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,802,why can't i see the top-up amount i just added to my account?,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,803,are my friends able to top up my account?,disposable_card_limits,topping_up_by_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,841,do you know the closest atm?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,842,can i use this card at an atm?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,843,is there places where i can't withdraw money?,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,844,locations to withdraw money,direct_debit_payment_not_recognised,atm_support,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,881,i need a new passcode.,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,882,i don't have my access code for the app.,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,883,can you tell me what to do to reset my passcode?,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,884,what is the code i need to get into the app?,declined_cash_withdrawal,passcode_forgotten,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,921,my cash withdrawl was declined why?,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/test/seq.in,922,is there a reason that the atm declined my transaction?,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/test/seq.in,923,the cash i tried to draw from the atm was not approved.,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/test/seq.in,924,atm would not give me cash,pending_card_payment,declined_cash_withdrawal,wrong in-scope label
+data/banking77-oos/test/seq.in,961,what does a pending transaction mean?,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/test/seq.in,962,i have paid by my card but payment is still its coming as pending. i think there is some issue please check and let me know when the status will complete.,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/test/seq.in,963,i have a pending payment in my account that i paid a while back ago and it still hasnt gone through. why would it show pending for so long?,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/test/seq.in,964,i have a pending payment from stuff i bought this morning.,lost_or_stolen_phone,pending_card_payment,wrong in-scope label
+data/banking77-oos/test/seq.in,1001,i can't find my phone but it has all my credit card information.,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/test/seq.in,1002,how do i use the app if i don't have my phone with me?,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/test/seq.in,1003,i got mugged yesterday and can't use the app.,request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/test/seq.in,1004,"my things were stolen yesterday and i can't use any apps or anything, so i am going to need some help.",request_refund,lost_or_stolen_phone,wrong in-scope label
+data/banking77-oos/test/seq.in,1041,i want a refund for my purchase,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/test/seq.in,1042,how can i process a refund for something i purchased?,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/test/seq.in,1043,i want to get an item refunded,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/test/seq.in,1044,i need to cancel a purchase i made.,declined_transfer,request_refund,wrong in-scope label
+data/banking77-oos/test/seq.in,1081,my card is being declined online. could you tell me what might be broken or wrong with the account?,refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/test/seq.in,1082,are there any restrictions causing my transfer to be declined?,refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/test/seq.in,1083,"i was attempting to purchase a golf club off ebay yesterday, but my credit card was declined. i tried multiple times, and again this morning. can you check into my card please?",refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/test/seq.in,1084,"i think my transfer was declined, but why?",refund_not_showing_up,declined_transfer,wrong in-scope label
+data/banking77-oos/test/seq.in,1121,"i am waiting patiently for a week now for the seller to get back to me and there has been no response, could you please help me further with getting my money back.  thank you.",declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/test/seq.in,1122,i would like some help getting a refund back from a seller. it still isn't showing up on my statement and i requested this a long time ago. i'm not sure why it's not returned yet. can you assist me in getting this money back?,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/test/seq.in,1123,how long will it take to get my refund,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/test/seq.in,1124,i should have received a refund however it is not showing on my statement,declined_card_payment,refund_not_showing_up,wrong in-scope label
+data/banking77-oos/test/seq.in,1161,card payment declined?,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/test/seq.in,1162,"i tried using my card and it kept getting declined, why?",pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/test/seq.in,1163,how do you fix  my card payment?,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/test/seq.in,1164,why do you keep declining my payment? i tried several times already with this card and it's just not working,pending_transfer,declined_card_payment,wrong in-scope label
+data/banking77-oos/test/seq.in,1201,the atm won't give back my card,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1202,i was at an atm and it swallowed my card.,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1203,wtf??? i tried to withdraw some money at a metro bank on high st. kensington and without any notice it disappeared in the machine. the bank was already closed so i couldn't do anything. how do i get it back?,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1204,what happens if my card is stuck in the atm?,transaction_charged_twice,card_swallowed,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1241,how can i see my source of funds?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1242,how do i become aware of where my funds come from?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1243,where does all this money come from though?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1244,what do i need to do to verify the source of my funds?,transfer_timing,verify_source_of_funds,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1281,if my transfer is from europe how long will it take?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/test/seq.in,1282,there is an important thing from china that i need to transfer. approximately how long will this take?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/test/seq.in,1283,how long does a transfer take from china?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/test/seq.in,1284,when will money be available in my account?,reverted_card_payment?,transfer_timing,wrong in-scope label
+data/banking77-oos/test/seq.in,1321,my transaction to pay for an item was returned to my account.,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/test/seq.in,1322,someone stopped my payment,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/test/seq.in,1323,"if my card payment is cancelled, what should i do?",change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/test/seq.in,1324,why has payment been returned?,change_pin,reverted_card_payment?,wrong in-scope label
+data/banking77-oos/test/seq.in,1361,please tell me which cash machines will allow me to change my pin.,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/test/seq.in,1362,what steps do i need to take to change my card pin?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/test/seq.in,1363,how to change the pin on my card?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/test/seq.in,1364,how can i change the pin?  do i have to go to a real bank?,beneficiary_not_allowed,change_pin,wrong in-scope label
+data/banking77-oos/test/seq.in,1401,why isnt my account allowing transfers,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/test/seq.in,1402,"i want to buy cryptocurrency, but your app doesn't let me. why?",transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/test/seq.in,1403,i tried to make a transfer to a beneficiary and it didn't go through,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/test/seq.in,1404,why was a transfer to an account not allowed?,transfer_fee_charged,beneficiary_not_allowed,wrong in-scope label
+data/banking77-oos/test/seq.in,1441,is my salary eligible for this?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1442,my salary is in gbp; how can i note this in the app?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1443,can i get paid in another currency?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1444,can i get my paycheck through here?,failed_transfer,receiving_money,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1481,i would like to transfer funds from one account to another.,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1482,i'm trying to transfer money into my account.,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1483,i would like to transfer money from my other bank account into this one.,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1484,can i use a bank transfer to refill my account?,verify_top_up,transfer_into_account,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1521,how can i find the top-up verification code?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/test/seq.in,1522,i need help finding the verification code for my top-up card.,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/test/seq.in,1523,is there a verification code for top-ups?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/test/seq.in,1524,what is the necessity of verifying the top up?,getting_spare_card,verify_top_up,wrong in-scope label
+data/banking77-oos/test/seq.in,1561,i want to top-up using cash,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1562,how can i top-up my card?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1563,can i submit a check or cash payment?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1564,do you accept checks?,order_physical_card,top_up_by_cash_or_cheque,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1601,i need help getting the virtual card to work.,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1602,i was trying to use my virtual card at a merchant and it was rejected. how can i fix this?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1603,how do i make my virtual card work?,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1604,virtual card is not working for me,wrong_exchange_rate_for_cash_withdrawal,virtual_card_not_working,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1641,can i get a throw away card,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1642,how many transactions can i make with a disposable card,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1643,what are disposable cards?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1644,what's the process for getting a disposable virtual card?,top_up_failed,get_disposable_virtual_card,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1681,how do i know if my top up was unsuccessful?,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/test/seq.in,1682,i'm pretty sure my top up failed. how do i fix this?,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/test/seq.in,1683,why isnt top up working,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/test/seq.in,1684,can you tell me why my top up didn't work?,balance_not_updated_after_bank_transfer,top_up_failed,wrong in-scope label
+data/banking77-oos/test/seq.in,1721,i need to know the time frame that is typical for a transfer from a uk account. i just made a transfer and it doesn't appear. i want to make sure everything is okay.,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/test/seq.in,1722,why doesn't my balance reflect my transfer,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/test/seq.in,1723,my account balance has not gone up even though i just transferred money into it,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/test/seq.in,1724,when will i see my new balance after making my bank transfer?,cash_withdrawal_not_recognised,balance_not_updated_after_bank_transfer,wrong in-scope label
+data/banking77-oos/test/seq.in,1761,there is a problem with my card. somebody has removed money from my account in a town i haven't been to. can you please freeze my account immediately?,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/test/seq.in,1762,there is an atm withdrawl in the app i don't recognize.,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/test/seq.in,1763,a cash withdrawal is showing up that i didn't do.,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/test/seq.in,1764,the app made a mistake and said i made a cash withdrawal.,exchange_charge,cash_withdrawal_not_recognised,wrong in-scope label
+data/banking77-oos/test/seq.in,1801,what will happen if i want to add money using an international card? will i run into any fees?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1802,are there any extra fees for adding money into the international card?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1803,what are the fees for top ups?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1804,what are the top up charges for us cards?,activate_my_card,top_up_by_card_charge,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1841,how do i activate a new card?,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/test/seq.in,1842,i just got this card & i don't know how to activate it.,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/test/seq.in,1843,i got my new card. how do i activate it?,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/test/seq.in,1844,what do i need to do to activate my card?,cash_withdrawal_charge,activate_my_card,wrong in-scope label
+data/banking77-oos/test/seq.in,1881,i had a wrong fee charged at this atm.,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/test/seq.in,1882,"when i got cash, i'm pretty sure there was a glitch that overcharged me.",card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/test/seq.in,1883,"my account got charged for taking out cash, why did this happen?",card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/test/seq.in,1884,why is there a fee for withdrawing?,card_about_to_expire,cash_withdrawal_charge,wrong in-scope label
+data/banking77-oos/test/seq.in,1921,"in china, need new card",apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/test/seq.in,1922,"if my card is about to expire, do i need to order a new one?",apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/test/seq.in,1923,my card is about to expire. how do i get a new one?,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/test/seq.in,1924,i need to know the cost and when i will receive a new card to replace an old one.,apple_pay_or_google_pay,card_about_to_expire,wrong in-scope label
+data/banking77-oos/test/seq.in,1961,is there any documentation needed for the identity check?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1962,what all am i required to show for the identity check?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1963,what do i do for the identity check?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/test/seq.in,1964,what do i need to do to verify my identity?,country_support,verify_my_identity,held-out intent under an in-scope label
+data/banking77-oos/id-oos/valid/seq.in,314,i was just going over my transactions for the past couple of months and noticed a large type charge that i know i did not make. even though it's been a while can i please still dispute this?,oos,direct_debit_payment_not_recognised,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,315,there was a direct debit transaction i have don't think should be there.,oos,direct_debit_payment_not_recognised,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,335,how long does it take for a money transfer to show up?,oos,pending_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,336,"how long do eu transfers actually take? i recently bought something online a few days ago, sent the money immediately online but the seller says it's still not there yet.",oos,pending_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,370,what happens with the duplicate charge in my account?,oos,transaction_charged_twice,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,371,i was charged too many times for one transaction.,oos,transaction_charged_twice,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,393,i did a transfer.  what is the extra fee?,oos,transfer_fee_charged,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,394,i noticed a charge for a transfer.  why is this?  is it because i did an international transfer?,oos,transfer_fee_charged,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,412,i tried to make a transfer like five different times. why won't your system let me? is it broke?,oos,failed_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,413,my transfer failed when i tried.,oos,failed_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,435,is it possible to get a second card for my daughter?,oos,getting_spare_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,436,can i get a second card for free?,oos,getting_spare_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,458,"i would like to get a physical card, but i don't know how. can you help me?",oos,order_physical_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,459,where do we mail the card?,oos,order_physical_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,467,"over the holiday i withdrew cash from the atm and it seems that i was severely overcharged. had i known that i would be charged those fees, i would not have used the atm!",oos,wrong_exchange_rate_for_cash_withdrawal,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,468,"do any of your machines provide cash from my home country? i don't have any money on me and i'm on holiday so i'm concerned. also, will i be charged anything to do this?",oos,wrong_exchange_rate_for_cash_withdrawal,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,487,what's the exchange fee?,oos,exchange_charge,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,488,is there a fee for exchanging currency?,oos,exchange_charge,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,510,is top-up possible with apple pay?,oos,apple_pay_or_google_pay,in-scope intent labelled oos
+data/banking77-oos/id-oos/valid/seq.in,511,can i top up an apple pay?,oos,apple_pay_or_google_pay,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,321,please help me!  i need to cancel a transaction.,oos,cancel_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,361,which cards and currencies do you support?,oos,supported_cards_and_currencies,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,441,do i have to verify my identity?,oos,why_verify_identity,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,442,why do you need to know so much about me,oos,why_verify_identity,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,443,why did i need to verfiy my identity?,oos,why_verify_identity,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,521,can you let me know if visa is among the card scheme assignments?,oos,visa_or_mastercard,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,522,do you use mastercard or visa?,oos,visa_or_mastercard,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,523,is it possible to get a visa here?,oos,visa_or_mastercard,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,561,what are the limits to using disposable virtual cards?,oos,disposable_card_limits,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,562,how many transactions can i do with one disposable card?,oos,disposable_card_limits,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,563,how many times can i use the disposable virtual card i have?,oos,disposable_card_limits,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,641,someone has taken my money and i don't know who,oos,direct_debit_payment_not_recognised,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,642,i was charged on my account that shouldn't be there.,oos,direct_debit_payment_not_recognised,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,643,there's a direct debit i wish to dispute,oos,direct_debit_payment_not_recognised,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,644,why was my account deducted from a seller when i didn't approve of it?,oos,direct_debit_payment_not_recognised,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,681,i am still waiting for a money transfer to show,oos,pending_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,682,my transfer hasn't gone through yet.,oos,pending_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,683,i am confused as to why my transfer could still be pending.,oos,pending_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,684,how long does it take for a money transfer to show?,oos,pending_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,761,there is more than one of the same transaction on my account.,oos,transaction_charged_twice,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,762,i have a duplicate payment showing,oos,transaction_charged_twice,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,763,i made a payment that got charged twice instead of once.,oos,transaction_charged_twice,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,764,what are my remedies if i think i was charged twice for the same expense?,oos,transaction_charged_twice,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,801,i was charged for something i didn't expect,oos,transfer_fee_charged,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,802,"i purchased some makeup through a site in china, and i was under the impression that when i make transfers there is no fee.  why am i seeing this fee now?  i am not happy about this at all.",oos,transfer_fee_charged,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,803,i got charged and extra fee when i transferred money so why was i charged?,oos,transfer_fee_charged,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,804,can you explain the transfer fee to me?,oos,transfer_fee_charged,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,841,why didn't my transfer go through?,oos,failed_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,842,i've attempted to do a very standard transfer and have tried 5 times at this point. can you tell me what the issue is? is the system down?,oos,failed_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,843,can you provide a reason as to why my transfer did not work?,oos,failed_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,844,i tried to transfer money and it did not work.,oos,failed_transfer,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,881,is it possible to give a second card for this account to my daughter?,oos,getting_spare_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,882,my daughter needs a card. can i give her one of mine that's linked to my account?,oos,getting_spare_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,883,"my child needs a card, how can i add them to the account i currently have?",oos,getting_spare_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,884,"my daughter needs a card, how do i add her?",oos,getting_spare_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,921,i need a physical card.,oos,order_physical_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,922,what are the fees for a physical card?,oos,order_physical_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,923,how do i get an actual card?,oos,order_physical_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,924,can i get a real card?,oos,order_physical_card,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,961,how do you determine your exchange rates because one of yours was off when i got cash,oos,wrong_exchange_rate_for_cash_withdrawal,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,962,i used the atm machine to get money out for holiday shopping and saw the outrageous charges. why is that? i would not have used the atm if i had known!,oos,wrong_exchange_rate_for_cash_withdrawal,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,963,the cash withdrawal exchange rate is not correct.,oos,wrong_exchange_rate_for_cash_withdrawal,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,964,"is there a local atm that will provide british pounds, i have no money for my homeward journey and do not feel comfortable waiting until  i arrive in britain. will a withdrawal involve extra charges?",oos,wrong_exchange_rate_for_cash_withdrawal,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,1001,"i would like to exchange currencies, but is there an extra charge to do so?",oos,exchange_charge,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,1002,does it cost anything for exchanges?,oos,exchange_charge,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,1003,can i exchange money from abroad without additional costs?,oos,exchange_charge,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,1004,does it cost to exchange currencies?,oos,exchange_charge,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,1041,how do i top up with apple pay?,oos,apple_pay_or_google_pay,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,1042,why isn't my top up working using my saved american express in applepay?,oos,apple_pay_or_google_pay,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,1043,how do i use the top up app with my apple watch?,oos,apple_pay_or_google_pay,in-scope intent labelled oos
+data/banking77-oos/id-oos/test/seq.in,1044,"google pay and top up, i want it, can i get it?",oos,apple_pay_or_google_pay,in-scope intent labelled oos

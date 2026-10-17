@@ -1,0 +1,68 @@
+{
+ "status": "POST HOC: label audit of all BANKING77-OOS files for the notification to the data set's authors; not pre-registered",
+ "source": "github.com/jianguoz/Few-Shot-Intent-Detection commit fa955331, data/banking77-oos; matched to legacy-datasets/banking77 after lower-casing and stripping",
+ "held_out_intents": [
+  "age_limit",
+  "atm_support",
+  "card_acceptance",
+  "card_delivery_estimate",
+  "card_not_working",
+  "card_swallowed",
+  "compromised_card",
+  "contactless_not_working",
+  "exchange_rate",
+  "get_disposable_virtual_card",
+  "get_physical_card",
+  "getting_virtual_card",
+  "lost_or_stolen_card",
+  "passcode_forgotten",
+  "pin_blocked",
+  "receiving_money",
+  "terminate_account",
+  "top_up_by_bank_transfer_charge",
+  "top_up_by_card_charge",
+  "top_up_by_cash_or_cheque",
+  "top_up_limits",
+  "topping_up_by_card",
+  "transfer_into_account",
+  "unable_to_verify_identity",
+  "verify_my_identity",
+  "verify_source_of_funds",
+  "virtual_card_not_working"
+ ],
+ "files": {
+  "train": {
+   "lines": 5905,
+   "matched": 5903,
+   "flagged": 366,
+   "held-out intent under an in-scope label": 145,
+   "wrong in-scope label": 221
+  },
+  "valid": {
+   "lines": 1506,
+   "matched": 1506,
+   "flagged": 58,
+   "held-out intent under an in-scope label": 22,
+   "wrong in-scope label": 36
+  },
+  "test": {
+   "lines": 2000,
+   "matched": 2000,
+   "flagged": 143,
+   "held-out intent under an in-scope label": 55,
+   "wrong in-scope label": 88
+  },
+  "id-oos/valid": {
+   "lines": 530,
+   "matched": 528,
+   "flagged": 20,
+   "in-scope intent labelled oos": 20
+  },
+  "id-oos/test": {
+   "lines": 1080,
+   "matched": 1076,
+   "flagged": 51,
+   "in-scope intent labelled oos": 51
+  }
+ }
+}

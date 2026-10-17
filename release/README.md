@@ -10,7 +10,7 @@ This folder accompanies `paper/main.tex`.
 
 `src/bakeoff/release_manifest.py` regenerates all three.
 
-To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 422 entries resolve; the other 369 are the data set files (not redistributed) and the weights and features, which report as unreadable until they are in place; after the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
+To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 424 entries resolve; the other 369 are the data set files (not redistributed) and the weights and features, which report as unreadable until they are in place; after the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
 
 ## Specialist weights and features
 
@@ -77,7 +77,7 @@ Each protocol's module has `build`, `train`, `check` and `hosted` stages:
 
 ## Data provenance
 
-The data set files are not redistributed. The frozen item lists and session files (`artifacts/*/items.json`, `artifacts/*/sessions*.json`) do contain the utterances that were used, and every one of them was checked against the original sets. Each is verbatim, up to case and punctuation, from Banking77, CLINC150 or MASSIVE, including the BANKING77-OOS and CLINC single-domain items. They are redistributed under those sets' licences, with attribution below. Each source with its licence:
+The data set files are not redistributed. The frozen item lists and session files (`artifacts/*/items.json`, `artifacts/*/sessions*.json`) and the BANKING77-OOS label audit (`artifacts/posthoc/b77oos_full_audit.csv`) do contain the utterances that were used, and every one of them was checked against the original sets. Each is verbatim, up to case and punctuation, from Banking77, CLINC150 or MASSIVE, including the BANKING77-OOS and CLINC single-domain items. They are redistributed under those sets' licences, with attribution below. Each source with its licence:
 
 | Data | Source | Licence |
 |---|---|---|
