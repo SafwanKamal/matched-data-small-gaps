@@ -48,6 +48,8 @@ Change from zero-shot to retrieval:
 
 ## Q2. Why do the two splits disagree?
 
+*Correction, 2026-10-17, round 5 review:* the closeness explanation below is withdrawn. It is an artefact of the BANKING77-OOS label leak: 145 training rows of held-out intents carry in-scope codes, so they sit in the retrieval pool. Without the leaked rows the closeness AUROC is 0.90, level with CLINC single-domain (`erratum_2026-10-16_banking77_oos_labels` in `retrieval_suppression_protocol.json`; audit in `artifacts/posthoc/b77oos_label_audit.json`). Run D's items were fresh only with respect to the exploratory BANKING77-OOS sessions (see the correction in `docs/retrieval-suppression-results.md`). In the restated contribution at the end, the instruction mitigation later met the mitigation criterion for one of five models only (paper, Appendix A).
+
 **1. The held-out requests are much closer to the supported ones on BANKING77-OOS.** Closeness is measured by the top-1 cosine similarity to the retrieval pool, using all-mpnet-base-v2:
 
 | Split | In-scope | Held-out | AUROC, in-scope vs held-out |

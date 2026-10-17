@@ -22,6 +22,8 @@
   - **BANKING77-OOS:** 398 in-scope items and 679 held-out-intent items, from 27 held-out intents.
   - **CLINC single-domain:** banking and credit cards, 1,000 in-scope and 700 held-out items, from 10 held-out intents.
 
+  *Correction, 2026-10-17, round 5 review:* "fresh" holds only with respect to the exploratory BANKING77-OOS sessions. 462 of the 1,077 BANKING77-OOS items had appeared as confirmatory Banking77 turns (`artifacts/posthoc/round4.json`, `run_d_overlap`), and 332 of the 1,700 CLINC single-domain items as confirmatory CLINC150 turns. The BANKING77-OOS training split also leaks held-out intents into the retrieval pool; see `erratum_2026-10-16_banking77_oos_labels` in `retrieval_suppression_protocol.json`.
+
 ## Primary test (H1): does retrieval lower the rejection of held-out-intent requests?
 
 The test is one-sided and Holm-corrected over 8 tests. The table shows the share of held-out requests rejected zero-shot, then with retrieval. The difference is zero-shot minus retrieval, in points.

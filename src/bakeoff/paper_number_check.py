@@ -88,6 +88,14 @@ def checks():
     c.append(("latency Qwen p50", "(p50 / p95 / p99, seconds)", "2.3 / 10.7", lat["qwen3.5-27b"]["p50_ms"] / 1000, 1))
     c.append(("latency Kimi p50", "(p50 / p95 / p99, seconds)", "2.8 / 5.3", lat["kimi-k3"]["p50_ms"] / 1000, 1))
     c.append(("latency Opus p50", "(p50 / p95 / p99, seconds)", "1.2 / 2.0", lat["claude-opus-5"]["p50_ms"] / 1000, 1))
+    # Appendix B per-set latency table (anchor: row label).
+    for key, row in ((g, "Gemma 4 31B, no rows (run A)"), (f"{g} with rows", "Gemma 4 31B, with rows (run C)"), ("qwen3.5-27b", "Qwen3.5 27B (run B)"), ("kimi-k3", "Kimi K3 (first 100 sessions) &"), ("claude-opus-5", "Claude Opus 5 (first 100 sessions) &")):
+        for s in ("banking77", "massive", "clinc150"):
+            for q in (50, 95):
+                v = conf[s]["costs"][key][f"latency_ms_p{q}"] / 1000
+                places = 1 if v >= 10 else 2
+                printed = f"{v:.{places}f}"
+                c.append((f"latency {key} {s} p{q}", row, ("& " if q == 50 else "/ ") + printed, v, places))
     cost = b3["cost"]["sets"]
     c.append(("Kimi multiple low", "were not significantly more accurate on 100 sessions per set, at", "17", cost["clinc150"]["kimi-k3"]["multiple_of_gemma_uncached"], 0))
     c.append(("Opus multiple high", "were not significantly more accurate on 100 sessions per set, at", "44", cost["banking77"]["claude-opus-5"]["multiple_of_gemma_uncached"], 0))
@@ -102,6 +110,9 @@ def checks():
     c.append(("CLINC dev-unseen specialist", "Specialist (reference)", "37.9", 100 * b3["mitigations_unseen"]["clinc_single_domain"]["specialist"]["rejected_unseen"], 1))
     sa = r4["sibling_absorption"]["models"]
     c.append(("sibling among retrieved low", "the chosen label is among the 20 retrieved labels for", "92", 100 * min(v["chosen_label_among_retrieved"] for v in sa.values()), 0))
+    ident = [(label, n) for intent, label, n in sa["gemma-4-31b"]["all_mappings"] if "identity" in intent]
+    c.append(("Gemma identity requests accepted", "Gemma, for example, maps all", "33", sum(n for _, n in ident), 0))
+    c.append(("Gemma identity requests to why verify identity", "Gemma, for example, maps all", "33", sum(n for label, n in ident if label == "why verify identity"), 0))
     c.append(("sibling among retrieved high", "the chosen label is among the 20 retrieved labels for", "99", 100 * max(v["chosen_label_among_retrieved"] for v in sa.values()), 0))
     qc = sa["qwen3.5-27b"]
     c.append(("Qwen concentrated drop", "concentrate on one label (for Qwen", "29 points", 100 * (qc["drop_concentrated"][0] - qc["drop_concentrated"][1]), 0))

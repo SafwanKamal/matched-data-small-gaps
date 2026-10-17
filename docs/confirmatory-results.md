@@ -4,6 +4,8 @@ Protocol: `confirmatory_protocol.json` (frozen before any request, with a dated 
 
 Fresh sessions built from test items no earlier session used; text lower-cased with punctuation stripped; native out-of-scope data. Banking77 uses 184 CLINC out-of-scope queries. MASSIVE holds out the email, iot and play domains, leaving 42 labels. CLINC150 uses 185 native out-of-scope queries.
 
+*Correction, 2026-10-17, round 5 review:* "no earlier session used" is wrong. The freshness rule missed the exploratory BANKING77-OOS sessions: 832 of 1,295 Banking77 in-scope turns, 65 of its 184 out-of-scope turns and 78 of CLINC150's 185 out-of-scope turns had appeared there; MASSIVE is unaffected (1,215 of 1,216 turns never seen). The run was executed and analysed as frozen. See the dated erratum `erratum_2026-10-16_freshness` in `confirmatory_protocol.json` and the never-seen sensitivity analysis in `docs/posthoc-round3b.md` (D).
+
 - **Specialist:** Ettin 150M, retrained on the normalised text; 3 seeds averaged; prior-weighted threshold.
 - **General models:** Gemma 4 31B (primary) and Qwen3.5 27B, each given 20 BM25 examples from in-scope training rows only.
 - **Endpoint:** weighted turn accuracy, 0.8 × in-scope + 0.2 × out-of-scope.

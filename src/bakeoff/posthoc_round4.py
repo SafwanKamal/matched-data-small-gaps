@@ -66,6 +66,7 @@ def sibling_absorption() -> dict:
             "chosen_label_among_retrieved": float(in_neigh),
             "chosen_label_is_top1_retrieved": float(top1),
             "top_mappings": [(a, b, n) for (a, b), n in mapping.most_common(8)],
+            "all_mappings": [(a, b, n) for (a, b), n in sorted(mapping.items(), key=lambda kv: (kv[0][0], -kv[1], kv[0][1]))],
             "drop_concentrated": (rej(p_zs, hi), rej(p_ret, hi)),
             "drop_diffuse": (rej(p_zs, lo), rej(p_ret, lo)),
             "per_intent_zero_shot_to_retrieval": per_intent,

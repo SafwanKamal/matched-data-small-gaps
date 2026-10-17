@@ -343,6 +343,25 @@ Claude Opus 5 & Anthropic & not stated & 5 / 25 \\
 Jev 1.13.0 & TypeSafe & not stated & not reported per call \\
 \bottomrule
 \end{tabular}}
+\caption{Hosted systems: the pinned host, the precision it reports and its OpenRouter list price, 15--16 October 2026 (Jev is billed by TypeSafe directly).}
+\label{tab:hosts}
+\end{table*}
+
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Latency per call, p50 / p95 (s) & Banking77 & MASSIVE & CLINC150 \\
+\midrule
+Gemma 4 31B, no rows (run A) & 1.01 / 28.9 & 0.88 / 1.79 & 1.01 / 2.29 \\
+Gemma 4 31B, with rows (run C) & 1.11 / 53.5 & 0.83 / 1.81 & 0.89 / 1.56 \\
+Qwen3.5 27B (run B) & 3.64 / 12.5 & 1.33 / 10.3 & 2.25 / 4.83 \\
+Kimi K3 (first 100 sessions) & 2.83 / 6.10 & 2.96 / 5.28 & 2.81 / 4.79 \\
+Claude Opus 5 (first 100 sessions) & 1.16 / 2.56 & 1.52 / 1.95 & 1.08 / 1.58 \\
+\bottomrule
+\end{tabular}
+\caption{Latency per call by set on the confirmatory runs. Each figure times the final attempt only; back-off after rate-limit replies is excluded. Gemma's Banking77 tail reflects a host slowdown during those runs.}
+\label{tab:latency}
 \end{table*}
 
 \paragraph{Settings.}
@@ -353,7 +372,7 @@ Jev 1.13.0 & TypeSafe & not stated & not reported per call \\
   \item \textbf{Specialist scope detectors:} softmax, energy, Mahalanobis and tenth-nearest neighbour.
   \item \textbf{Specialist development data:} 400 in-scope and 100 out-of-scope items.
   \item \textbf{Prompts:} reproduced verbatim in the protocol files, together with the session sampler and its seeds.
-  \item \textbf{Latency per call} on the confirmatory runs (p50 / p95 / p99, seconds): Gemma 1.0 / 8.8 / 40.0 (including a host slowdown), Qwen 2.3 / 10.7 / 13.3, Kimi K3 2.8 / 5.3 / 7.7, Claude Opus 5 1.2 / 2.0 / 4.2; the specialist 0.011 / 0.013 at batch size 1 on one RTX 5070, for an earlier Banking77 specialist without the scope detector. Saved latencies time the final attempt only: the outer back-off of 3 to 45\,s after rate-limit replies is excluded, and retries were not logged. Gemma's 95th percentile was 29\,s on Banking77 and at most 2.3\,s on the other sets. Jev's latency was not recorded in the frozen runs.
+  \item \textbf{Latency per call} on the confirmatory runs (p50 / p95 / p99, seconds): Gemma 1.0 / 8.8 / 40.0 (including a host slowdown), Qwen 2.3 / 10.7 / 13.3, Kimi K3 2.8 / 5.3 / 7.7, Claude Opus 5 1.2 / 2.0 / 4.2; the specialist 0.011 / 0.013 at batch size 1 on one RTX 5070, for an earlier Banking77 specialist without the scope detector. Saved latencies time the final attempt only: the outer back-off of 3 to 45\,s after rate-limit replies is excluded, and retries were not logged. Gemma's 95th percentile was 29\,s on Banking77 and at most 2.3\,s on the other sets (per set in \cref{tab:latency}). Jev's latency was not recorded in the frozen runs.
 \end{itemize}
 
 \section{Frontier models and cost}
@@ -373,12 +392,15 @@ MASSIVE & 80.4 & 78.5 & 79.0 & 77.2 & 21.3 / 43.0 \\
 CLINC150 & 93.2 & 95.9 & 95.1 & 97.6 & 17.4 / 36.1 \\
 \bottomrule
 \end{tabular}}
+\caption{Frontier models on the first 100 sessions of each set: weighted turn accuracy (\%) of each system on the same turns, and API cost as a multiple of Gemma's. Cost multiples use the mean uncached list-price cost per call (the frontier models on the first 100 sessions, Gemma on its full run A), times the set's mean turns per session.}
+\label{tab:frontier}
 \end{table*}
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{f5_cost_frontier.pdf}
 \caption{Weighted turn accuracy against API cost per 1,000 sessions at uncached list prices; the dashed line is the frontier of systems with an API cost. The specialist has no API cost and is drawn in the shaded off-scale band; its hosting cost is not shown. Jev is not shown because its API does not report a per-call price.}
+\label{fig:frontier}
 \end{figure*}
 
 \section{Post hoc analyses}
@@ -432,6 +454,8 @@ Qwen 27B, no rows & 86.5 / 82.8 & 85.3 / 72.8 & 84.2 / 81.6 & 80.8 / 68.3 \\
 Jev, no rows & 84.6 / 70.4 & 83.9 / 56.4 & 78.5 / 47.6 & 77.8 / 44.0 \\
 \bottomrule
 \end{tabular}}
+\caption{MASSIVE robustness: weighted turn accuracy and the share of held-out-domain requests rejected (\%) for three further draws of held-out domains and the original confirmatory draw. The specialist was retrained per draw; ``rows'' are labelled out-of-scope rows in Gemma's retrieval pool.}
+\label{tab:massive}
 \end{table*}
 
 \section{Example order and contamination (runs G and H)}
