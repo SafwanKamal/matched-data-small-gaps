@@ -15,7 +15,7 @@ REL = ROOT / "release"
 GROUPS = {
     "data": ["data/banking77-oos", "data/clinc-single-domain-oos", "data/1.1", "data/multidogo"],
     "protocols": ["confirmatory_protocol.json", "retrieval_suppression_protocol.json", "jev_rerun_protocol.json", "retrieval_mechanism_protocol.json", "massive_robustness_protocol.json", "gh_protocol.json", "api_protocol.json", "revision_free_protocol.json"],
-    "items_and_replies": ["artifacts/confirmatory", "artifacts/retrieval-suppression", "artifacts/jev-rerun", "artifacts/retrieval-mechanism", "artifacts/massive-robustness", "artifacts/gh", "artifacts/posthoc"],
+    "items_and_replies": ["artifacts/confirmatory", "artifacts/retrieval-suppression", "artifacts/jev-rerun", "artifacts/retrieval-mechanism", "artifacts/massive-robustness", "artifacts/gh", "artifacts/posthoc", "artifacts/provider-log", "artifacts/jev-cost"],
     "specialist_weights_and_features (not in git)": ["artifacts/confirmatory/specialists", "artifacts/confirmatory/features", "artifacts/retrieval-suppression/specialists", "artifacts/retrieval-suppression/features", "artifacts/massive-robustness/specialists", "artifacts/massive-robustness/features", "artifacts/revision/features", "artifacts/robustness"],
 }
 

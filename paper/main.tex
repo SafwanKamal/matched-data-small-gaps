@@ -262,7 +262,7 @@ On our opening question, the pre-registered tests do not separate classifiers fr
   \item Moving one model between two fp8 hosts changed 9.5\% of its answers, which is the size of several reported differences.
   \item The two frontier models were chosen by the author among those accepting reasoning disabled; reasoning-on use was not tested.
   \item Jev's scope threshold was fixed at 0.5 and not tuned; a threshold set from in-scope data changes its out-of-scope results.
-  \item Jev's per-call price is not reported by its API; all Jev use in the project, including exploratory calls before the frozen runs, cost \$4.27 from a prepaid balance (as read by the author from the provider's account), so a per-call price cannot be separated. Its interface (a fixed probability threshold, label names) differs from the general models' prompt.
+  \item Jev's per-call price is not reported by its API; all Jev use in the project, including exploratory calls before the frozen runs, cost \$4.27 (one \$5.00 credit with \$0.73 left; billing record in \texttt{artifacts/jev-cost/}), so a per-call price cannot be separated. Its interface (a fixed probability threshold, label names) differs from the general models' prompt.
 \end{itemize}
 
 \paragraph{Analyses.}
@@ -288,7 +288,7 @@ Banking77 is CC BY 4.0, CLINC150 CC BY 3.0 and MASSIVE CC BY 4.0. BANKING77-OOS 
 \section{Protocols, amendments and withdrawn conclusions}
 \label{app:record}
 
-The confirmatory questions were chosen after more than twenty exploratory protocols on the same label sets. Six protocols govern this paper; each was committed before any of its requests, and each carries dated amendments. Their freeze times, their text as frozen and their item-list hashes are listed in \texttt{release/FREEZE\_TABLE.md}; the times are the author's git commit timestamps:
+The confirmatory questions were chosen after more than twenty exploratory protocols on the same label sets. Six protocols govern this paper; each was committed before any of its requests, and each carries dated amendments. Their freeze times, their text as frozen and their item-list hashes are listed in \texttt{release/FREEZE\_TABLE.md}; the times are the author's git commit timestamps. OpenRouter's own request log, exported by the author, dates the first hosted request after each freeze 4 to 17 seconds after it:
 \begin{itemize}
   \item \texttt{confirmatory\_protocol.json}
   \item \texttt{retrieval\_suppression\_protocol.json}

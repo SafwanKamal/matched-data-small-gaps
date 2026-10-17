@@ -2,7 +2,7 @@
 
 For each protocol behind the paper: when it was frozen, what it froze, and when its saved replies and its analysis first appeared.
 
-- **Times** are the author's git commit timestamps in UTC. They are self-reported: git does not certify them, and the saved replies carry no server-side timestamps.
+- **Times** in the first table are the author's git commit timestamps in UTC, which git does not certify. The second table checks them against OpenRouter's own request log, which dates every hosted-model request with the provider's clock.
 - **What can be checked without git:**
   - `frozen-protocols/` holds each protocol exactly as first committed, and its SHA-256 is listed below. The protocol in the repository root is the same text plus dated amendments and errata.
   - Each frozen protocol records the SHA-256 of its item list, and the item list in the release matches it.
@@ -18,6 +18,23 @@ For each protocol behind the paper: when it was frozen, what it froze, and when 
 | Run D2 (retrieval mechanism) | `retrieval_mechanism_protocol.json` | 2026-10-16 12:59:22 UTC | `artifacts/retrieval-mechanism/items.json` `04c55578a642…` (match) | 2026-10-16 14:49:29 UTC | 2026-10-16 14:49:29 UTC | 2026-10-16 14:49:29 UTC | 1 | holds |
 | MASSIVE robustness | `massive_robustness_protocol.json` | 2026-10-16 15:10:13 UTC | `artifacts/massive-robustness/items.json` `88e6051264a4…` (match) | 2026-10-16 15:59:42 UTC | 2026-10-16 15:59:42 UTC | 2026-10-16 15:59:42 UTC | 0 | holds |
 | Runs G and H | `gh_protocol.json` | 2026-10-16 16:30:12 UTC | reuses earlier item lists (see protocol) | 2026-10-16 16:56:21 UTC | 2026-10-16 16:56:21 UTC | 2026-10-16 16:56:21 UTC | 0 | holds |
+
+## Requests in OpenRouter's own log
+
+OpenRouter's request log for the project's key (`artifacts/provider-log/`, exported by the owner) dates every hosted-model request with the provider's own clock. For each protocol: the last request of any kind before its freeze commit, and the first request after it. Jev is not served through OpenRouter, so the Jev re-run has no entry.
+
+| Run | Frozen (UTC) | Last logged request before | First logged request after | Seconds after freeze |
+|---|---|---|---|---|
+| Confirmatory runs A, B, C and I | 2026-10-16 03:50:57 UTC | 2026-10-15 07:16:31 UTC | 2026-10-16 03:51:14 UTC | 17 |
+| Run D (retrieval suppression) | 2026-10-16 06:14:14 UTC | 2026-10-16 05:39:12 UTC | 2026-10-16 06:14:25 UTC | 11 |
+| Jev re-run (J1, J2) | 2026-10-16 10:07:34 UTC | not on OpenRouter | | |
+| Run D2 (retrieval mechanism) | 2026-10-16 12:59:22 UTC | 2026-10-16 09:37:38 UTC | 2026-10-16 12:59:26 UTC | 4 |
+| MASSIVE robustness | 2026-10-16 15:10:13 UTC | 2026-10-16 14:47:58 UTC | 2026-10-16 15:10:23 UTC | 11 |
+| Runs G and H | 2026-10-16 16:30:12 UTC | 2026-10-16 15:57:47 UTC | 2026-10-16 16:30:17 UTC | 5 |
+
+Amendments made during a run, checked against the same log:
+- **Run I (confirmatory):** the amendment naming Kimi K3 and Claude Opus 5 was committed at 04:19:02 UTC. Before it, the log shows one probe request to each candidate model (04:14:46 to 04:15:13) and the 30-call plumbing check on development items for each of the two models (04:18:19 to 04:18:53), as the amendment itself records. The first session turn for either model was sent at 05:24:44 UTC.
+- **Run D (DeepSeek host):** the last Parasail request was at 08:43:32 UTC, the host amendment was committed at 08:43:56, and the first StreamLake request was at 08:44:07.
 
 ## Frozen protocol hashes
 

@@ -10,7 +10,7 @@ This folder accompanies `paper/main.tex`.
 
 `src/bakeoff/release_manifest.py` regenerates all three.
 
-To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 418 entries resolve; the other 369 are the data sets (not redistributed) and the weights-and-features archive, which report as unreadable until they are in place.
+To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 422 entries resolve; the other 369 are the data sets (not redistributed) and the weights-and-features archive, which report as unreadable until they are in place.
 
 ## Status of the archive
 
@@ -28,6 +28,7 @@ The specialist weights and features (about 22 GB) are **not yet published**; the
 - **Frozen items:** `artifacts/<run>/items.json`. Each item list's SHA-256 is recorded inside its protocol.
 - **Saved replies** from every hosted model, one JSON line per request with text, tokens, cost, latency and provider: `artifacts/<run>/hosted/`, `jev/` and `replies/`.
 - **Analyses:** `artifacts/<run>/analysis.json` and `artifacts/posthoc/*.json`.
+- **Provider records:** `artifacts/provider-log/` is OpenRouter's own request log for the project's key (server timestamps, model, provider, tokens, cost; imported with `python -m bakeoff.provider_log`), and `artifacts/jev-cost/` the TypeSafe billing record.
 - **Code:** `src/bakeoff/`, with one module per protocol.
 - **Freeze table:** `release/FREEZE_TABLE.md` lists, for each protocol, its freeze time, its SHA-256 as frozen, its item-list hash and when its replies and analysis were first committed; `release/frozen-protocols/` holds each protocol as first committed. The order can be checked from these files without the git history.
 
@@ -67,7 +68,7 @@ python -m bakeoff.<module> features
 Each protocol's module has `build`, `train`, `check` and `hosted` stages:
 
 - **Pinned hosts, models and prices** are in each protocol and in the paper's Appendix B.
-- **Spend** was $73.13 on OpenRouter in total. Jev was billed separately by TypeSafe: $4.27 in total for all Jev use in the project (prepaid balance), which cannot be split per call.
+- **Spend** on OpenRouter was $72.90 by OpenRouter's own log (`artifacts/provider-log/`; $73.13 reconstructed from the saved rows). Jev was billed separately by TypeSafe: $4.27 in total for all Jev use in the project (one $5.00 credit with $0.73 left; `artifacts/jev-cost/`), which cannot be split per call.
 - **Variance:** hosted models change over time, and moving one model between two hosts changed 9.5% of its answers. Expect answers to differ somewhat even at temperature 0.
 
 ## Data provenance

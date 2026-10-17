@@ -154,6 +154,9 @@ def checks():
     ov = r5["run_d_overlap"]
     c.append(("run D overlap BANKING77-OOS", "items not used in the exploratory sessions (", "462", ov["banking77_oos"]["were_confirmatory_turns"], 0))
     c.append(("run D overlap CLINC", "items not used in the exploratory sessions (", "332", ov["clinc_banking"]["were_confirmatory_turns"] + ov["clinc_credit_cards"]["were_confirmatory_turns"], 0))
+    ft = [r["openrouter_log"]["seconds_after_freeze"] for r in json.loads((ROOT / "release" / "freeze_table.json").read_text(encoding="utf-8")) if r["openrouter_log"]]
+    c.append(("freeze to first logged request, low", "dates the first hosted request after each freeze", "4 to", min(ft), 0))
+    c.append(("freeze to first logged request, high", "dates the first hosted request after each freeze", "17 seconds", max(ft), 0))
     return c
 
 

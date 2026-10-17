@@ -1,0 +1,226 @@
+{
+ "source": "OpenRouter activity export of the project's API key, exported by the owner on 2026-10-17; timestamps are OpenRouter's (UTC)",
+ "source_sha256": "d33770b5bdf322b74335badd65d36355c2121c4ce6e1dea9f306f8515248901a",
+ "requests": 495119,
+ "first": "2026-10-09 09:14:52.630",
+ "last": "2026-10-16 16:53:46.869",
+ "cost_usd": 72.903463,
+ "by_day_and_model": {
+  "2026-10-09 anthropic/claude-haiku-5.5-20261007": {
+   "requests": 20,
+   "cost_usd": 0.002125
+  },
+  "2026-10-09 deepseek/deepseek-v4.1-flash-20260910": {
+   "requests": 80,
+   "cost_usd": 0.009862
+  },
+  "2026-10-09 google/gemini-3.1-pro-preview-20260219": {
+   "requests": 20,
+   "cost_usd": 0.065258
+  },
+  "2026-10-09 google/gemini-3.5-flash-lite-20260721": {
+   "requests": 20,
+   "cost_usd": 0.004685
+  },
+  "2026-10-09 openai/gpt-5.6-luna-20260709": {
+   "requests": 20,
+   "cost_usd": 0.002695
+  },
+  "2026-10-09 qwen/qwen3.7-flash-20260727": {
+   "requests": 40,
+   "cost_usd": 0.000815
+  },
+  "2026-10-09 qwen/qwen3.7-plus-20260602": {
+   "requests": 40,
+   "cost_usd": 0.008385
+  },
+  "2026-10-09 stepfun/step-3.7-flash-20260528": {
+   "requests": 40,
+   "cost_usd": 0.044304
+  },
+  "2026-10-10 anthropic/claude-haiku-5.5-20261007": {
+   "requests": 4606,
+   "cost_usd": 0.356814
+  },
+  "2026-10-10 deepseek/deepseek-v4.1-flash-20260910": {
+   "requests": 29790,
+   "cost_usd": 3.885433
+  },
+  "2026-10-10 google/gemini-3.5-flash-lite-20260721": {
+   "requests": 4606,
+   "cost_usd": 1.070639
+  },
+  "2026-10-10 openai/gpt-5.6-luna-20260709": {
+   "requests": 4606,
+   "cost_usd": 0.439324
+  },
+  "2026-10-10 qwen/qwen3.7-flash-20260727": {
+   "requests": 29792,
+   "cost_usd": 0.478515
+  },
+  "2026-10-11 deepseek/deepseek-v4.1-flash-20260910": {
+   "requests": 2500,
+   "cost_usd": 0.399653
+  },
+  "2026-10-11 google/gemini-3.1-pro-preview-20260219": {
+   "requests": 1400,
+   "cost_usd": 3.620484
+  },
+  "2026-10-11 google/gemma-4-31b-it-20260402": {
+   "requests": 2020,
+   "cost_usd": 0.203773
+  },
+  "2026-10-11 meta-llama/llama-3.3-70b-instruct": {
+   "requests": 2020,
+   "cost_usd": 0.171352
+  },
+  "2026-10-11 nvidia/nemotron-3-super-120b-a12b-20230311": {
+   "requests": 2017,
+   "cost_usd": 0.119299
+  },
+  "2026-10-11 qwen/qwen3-next-80b-a3b-instruct-2509": {
+   "requests": 2020,
+   "cost_usd": 0.125723
+  },
+  "2026-10-11 qwen/qwen3.5-122b-a10b-20260224": {
+   "requests": 2020,
+   "cost_usd": 0.400368
+  },
+  "2026-10-11 qwen/qwen3.5-27b-20260224": {
+   "requests": 3981,
+   "cost_usd": 0.372328
+  },
+  "2026-10-11 qwen/qwen3.5-35b-a3b-20260224": {
+   "requests": 2020,
+   "cost_usd": 0.249794
+  },
+  "2026-10-11 qwen/qwen3.5-9b-20260310": {
+   "requests": 29803,
+   "cost_usd": 1.295496
+  },
+  "2026-10-11 qwen/qwen3.7-flash-20260727": {
+   "requests": 2500,
+   "cost_usd": 0.045264
+  },
+  "2026-10-12 google/gemma-4-31b-it-20260402": {
+   "requests": 9500,
+   "cost_usd": 1.511719
+  },
+  "2026-10-12 meta-llama/llama-3.3-70b-instruct": {
+   "requests": 6032,
+   "cost_usd": 0.186834
+  },
+  "2026-10-12 nvidia/nemotron-3-super-120b-a12b-20230311": {
+   "requests": 2000,
+   "cost_usd": 0.092191
+  },
+  "2026-10-12 qwen/qwen3-next-80b-a3b-instruct-2509": {
+   "requests": 2000,
+   "cost_usd": 0.123598
+  },
+  "2026-10-12 qwen/qwen3.5-122b-a10b-20260224": {
+   "requests": 16366,
+   "cost_usd": 3.555614
+  },
+  "2026-10-12 qwen/qwen3.5-27b-20260224": {
+   "requests": 8039,
+   "cost_usd": 1.103111
+  },
+  "2026-10-12 qwen/qwen3.5-35b-a3b-20260224": {
+   "requests": 2000,
+   "cost_usd": 0.192588
+  },
+  "2026-10-12 qwen/qwen3.5-9b-20260310": {
+   "requests": 15494,
+   "cost_usd": 1.556056
+  },
+  "2026-10-13 google/gemma-4-31b-it-20260402": {
+   "requests": 54747,
+   "cost_usd": 11.938104
+  },
+  "2026-10-13 qwen/qwen3.5-122b-a10b-20260224": {
+   "requests": 2384,
+   "cost_usd": 0.713973
+  },
+  "2026-10-13 qwen/qwen3.5-27b-20260224": {
+   "requests": 9998,
+   "cost_usd": 0.837449
+  },
+  "2026-10-13 qwen/qwen3.5-9b-20260310": {
+   "requests": 34000,
+   "cost_usd": 3.438455
+  },
+  "2026-10-14 google/gemma-4-31b-it-20260402": {
+   "requests": 31326,
+   "cost_usd": 2.833988
+  },
+  "2026-10-14 qwen/qwen3.5-27b-20260224": {
+   "requests": 11998,
+   "cost_usd": 2.217107
+  },
+  "2026-10-14 qwen/qwen3.5-9b-20260310": {
+   "requests": 8664,
+   "cost_usd": 0.306261
+  },
+  "2026-10-15 google/gemma-4-31b-it-20260402": {
+   "requests": 6000,
+   "cost_usd": 0.953591
+  },
+  "2026-10-15 qwen/qwen3.5-27b-20260224": {
+   "requests": 6333,
+   "cost_usd": 0.796036
+  },
+  "2026-10-16 anthropic/claude-4.8-opus-20260528": {
+   "requests": 1,
+   "cost_usd": 0.00679
+  },
+  "2026-10-16 anthropic/claude-opus-5-20260723": {
+   "requests": 1531,
+   "cost_usd": 9.296795
+  },
+  "2026-10-16 deepseek/deepseek-v4-pro-20260423": {
+   "requests": 22045,
+   "cost_usd": 2.561177
+  },
+  "2026-10-16 deepseek/deepseek-v4-pro-20260813": {
+   "requests": 1,
+   "cost_usd": 0.000282
+  },
+  "2026-10-16 google/gemma-4-31b-it-20260402": {
+   "requests": 53223,
+   "cost_usd": 5.762464
+  },
+  "2026-10-16 meta-llama/llama-3.3-70b-instruct": {
+   "requests": 21294,
+   "cost_usd": 1.166103
+  },
+  "2026-10-16 mistralai/mistral-medium-3.5-20260430": {
+   "requests": 1,
+   "cost_usd": 0.001638
+  },
+  "2026-10-16 moonshotai/kimi-k3-20260715": {
+   "requests": 1531,
+   "cost_usd": 2.393812
+  },
+  "2026-10-16 openai/gpt-5.4-20260305": {
+   "requests": 1,
+   "cost_usd": 0.002487
+  },
+  "2026-10-16 openai/gpt-5.5-20260423": {
+   "requests": 1,
+   "cost_usd": 0.004975
+  },
+  "2026-10-16 qwen/qwen3.5-27b-20260224": {
+   "requests": 42626,
+   "cost_usd": 5.975036
+  },
+  "2026-10-16 qwen/qwen3.7-max-20260520": {
+   "requests": 1,
+   "cost_usd": 0.001582
+  },
+  "2026-10-16 x-ai/grok-4.3-20260430": {
+   "requests": 1,
+   "cost_usd": 0.001259
+  }
+ }
+}

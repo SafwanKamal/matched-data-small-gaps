@@ -1,6 +1,11 @@
 [
  {
   "run": "Confirmatory runs A, B, C and I",
+  "openrouter_log": {
+   "last_request_before_freeze": "2026-10-15 07:16:31 UTC",
+   "first_request_after_freeze": "2026-10-16 03:51:14 UTC",
+   "seconds_after_freeze": 17
+  },
   "protocol": "confirmatory_protocol.json",
   "frozen_at": "2026-10-16 03:50:57 UTC",
   "frozen_sha256": "778dad6cf9a1c9ac6592b42e7be73d924df31a9de7899f85358dd1534f31a25b",
@@ -28,6 +33,11 @@
  },
  {
   "run": "Run D (retrieval suppression)",
+  "openrouter_log": {
+   "last_request_before_freeze": "2026-10-16 05:39:12 UTC",
+   "first_request_after_freeze": "2026-10-16 06:14:25 UTC",
+   "seconds_after_freeze": 11
+  },
   "protocol": "retrieval_suppression_protocol.json",
   "frozen_at": "2026-10-16 06:14:14 UTC",
   "frozen_sha256": "df1365e27dcf03e00282f633cd485c45f8861c3d1fe376194e96697273c8a854",
@@ -53,6 +63,7 @@
  },
  {
   "run": "Jev re-run (J1, J2)",
+  "openrouter_log": null,
   "protocol": "jev_rerun_protocol.json",
   "frozen_at": "2026-10-16 10:07:34 UTC",
   "frozen_sha256": "188fab524831b912361beec99cfb9a081c554e86a6d26baf228c56c758150a60",
@@ -84,6 +95,11 @@
  },
  {
   "run": "Run D2 (retrieval mechanism)",
+  "openrouter_log": {
+   "last_request_before_freeze": "2026-10-16 09:37:38 UTC",
+   "first_request_after_freeze": "2026-10-16 12:59:26 UTC",
+   "seconds_after_freeze": 4
+  },
   "protocol": "retrieval_mechanism_protocol.json",
   "frozen_at": "2026-10-16 12:59:22 UTC",
   "frozen_sha256": "a37c24807954bf5a7ca7cf956a9b1df491db83e62b69ec7f9c3cfa5f7a2f4a2e",
@@ -108,6 +124,11 @@
  },
  {
   "run": "MASSIVE robustness",
+  "openrouter_log": {
+   "last_request_before_freeze": "2026-10-16 14:47:58 UTC",
+   "first_request_after_freeze": "2026-10-16 15:10:23 UTC",
+   "seconds_after_freeze": 11
+  },
   "protocol": "massive_robustness_protocol.json",
   "frozen_at": "2026-10-16 15:10:13 UTC",
   "frozen_sha256": "c3f7b945f95030d0187ab9d94b890b08b4c8b1e343f6ca10464774960d69e68d",
@@ -130,6 +151,11 @@
  },
  {
   "run": "Runs G and H",
+  "openrouter_log": {
+   "last_request_before_freeze": "2026-10-16 15:57:47 UTC",
+   "first_request_after_freeze": "2026-10-16 16:30:17 UTC",
+   "seconds_after_freeze": 5
+  },
   "protocol": "gh_protocol.json",
   "frozen_at": "2026-10-16 16:30:12 UTC",
   "frozen_sha256": "a75932c8cf455f5032ceff1eaeb42c409f3b344bf7966f13b5956ca64db0c560",
