@@ -10,11 +10,15 @@ This folder accompanies `paper/main.tex`.
 
 `src/bakeoff/release_manifest.py` regenerates all three.
 
-To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 422 entries resolve; the other 369 are the data sets (not redistributed) and the weights-and-features archive, which report as unreadable until they are in place.
+To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 422 entries resolve; the other 369 are the data sets (not redistributed) and the weights and features, which report as unreadable until they are in place; after the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
 
-## Status of the archive
+## Specialist weights and features
 
-The specialist weights and features (about 22 GB) are **not yet published**; their hashes are in `SHA256SUMS`. Until the archive ships, the analyses that need specialist features cannot be rerun by a third party; the hosted-model analyses can, from the saved replies in git. The loaders check data hashes only for MASSIVE (`primary_protocol.json`); the other data sets are listed in `SHA256SUMS` and must be checked by hand.
+The specialist weights and cached features for Banking77, CLINC150 and MASSIVE (222 files, 17.9 GB) are on the Hugging Face Hub at https://huggingface.co/Safka532/matched-data-small-gaps-specialists, with the same paths as in this repository and the same SHA-256 values as `SHA256SUMS`. Copy them into a clone (for example with `hf download Safka532/matched-data-small-gaps-specialists --local-dir .`) and every analysis reruns on a CPU.
+
+Run D's specialists and features, and the exploratory BANKING77-OOS and MultiDoGO runs, are not published, because those data sets state no licence. Their hashes remain in `SHA256SUMS`; the `train` and `features` stages rebuild them from the frozen item lists, and until then the analyses that read them can be checked only through the saved outputs. `python -m bakeoff.hf_archive` stages, uploads and verifies the archive.
+
+The loaders check data hashes only for MASSIVE (`primary_protocol.json`); the other data sets are listed in `SHA256SUMS` and must be checked by hand.
 
 ## What is in git
 

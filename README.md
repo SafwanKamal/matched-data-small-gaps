@@ -3,7 +3,7 @@
 Code, frozen protocols, saved model replies and analyses for the paper *Matched data, small gaps: a pre-registered comparison of fine-tuned classifiers, retrieval-prompted language models and a typed-decision model for intent and out-of-scope decisions* (Safwan Kamal).
 
 - **Paper:** [`paper/main.pdf`](paper/main.pdf), source in [`paper/main.tex`](paper/main.tex).
-- **Reproducing the numbers:** [`release/README.md`](release/README.md). The hosted-model analyses rerun on a CPU from the saved replies, with no API calls; analyses that use the specialist also need its weights-and-features archive.
+- **Reproducing the numbers:** [`release/README.md`](release/README.md). The hosted-model analyses rerun on a CPU from the saved replies, with no API calls; analyses that use the specialist also need its weights and features, which are on the Hugging Face Hub at https://huggingface.co/Safka532/matched-data-small-gaps-specialists (see release/README.md).
 - **Pre-registration:** [`release/FREEZE_TABLE.md`](release/FREEZE_TABLE.md) gives each protocol's freeze time, its text as frozen (`release/frozen-protocols/`), its item-list hash, and when its replies and analysis were first committed.
 - **File hashes:** [`release/SHA256SUMS`](release/SHA256SUMS) covers the data, every protocol, frozen item list, saved reply and analysis output, and the specialist weights and features.
 
