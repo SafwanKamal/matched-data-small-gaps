@@ -114,6 +114,32 @@ def checks():
                 places = 1 if v >= 10 else 2
                 printed = f"{v:.{places}f}"
                 c.append((f"latency {key} {s} p{q}", row, ("& " if q == 50 else "/ ") + printed, v, places))
+    # External-review additions (2026-10-17): threshold-rule sensitivity, detectable differences, round 6 appendix.
+    bt = conf["banking77"]["tests"]
+    c.append(("threshold sensitivity Banking77 10%", "the Banking77 gap is", "$-1.78$", bt["prior_0.1 | specialist vs gemma-4-31b"]["difference_points"], 2))
+    c.append(("threshold sensitivity Banking77 10% p", "the Banking77 gap is", "$p=.008$", bt["prior_0.1 | specialist vs gemma-4-31b"]["p"], 3))
+    c.append(("threshold sensitivity Banking77 30%", "the Banking77 gap is", "or $-1.25$", bt["prior_0.3 | specialist vs gemma-4-31b"]["difference_points"], 2))
+    for s, printed in (("banking77", "1.9"), ("massive", "8.8"), ("clinc150", "1.7")):
+        c.append((f"MDD {s}", "detectable with 80", printed, b3["mdd"][s]["mdd_80pct_points"], 1))
+    r6 = j("posthoc", "round6.json")["sets"]
+    shares = [100 * r6[s]["cascade_cost"]["actual_share_of_gemma_cost"] for s in r6]
+    c.append(("cascade actual cost low", "escalated turns cost", "39.6", min(shares), 1))
+    c.append(("cascade actual cost high", "escalated turns cost", "39.9", max(shares), 1))
+    for s, n_in, n_out in (("banking77", "77", "184"), ("massive", "21", "243"), ("clinc150", "150", "185")):
+        c.append((f"in-scope clusters {s}", "The primary test has", n_in, r6[s]["clusters"]["in_scope_intent_clusters"], 0))
+        c.append((f"out-of-scope clusters {s}", "The primary test has", n_out, r6[s]["clusters"]["out_of_scope_turns"], 0))
+    fmt = lambda v: f"${v:+.2f}$"
+    for s in ("banking77", "massive", "clinc150"):
+        thr = r6[s]["threshold_rule_sensitivity_preregistered"]
+        for rule in ("prior_0.1", "prior_0.2", "prior_0.3"):
+            v = thr[rule]["minus_gemma"]["difference_points"]
+            c.append((f"tab:sensitivity (a) {s} {rule}", "(a) Pre-registered", fmt(v), v, 2))
+        for seed, row in r6[s]["per_seed"].items():
+            v = row["minus_gemma"]["difference_points"]
+            c.append((f"tab:sensitivity (b) {s} {seed}", "(b) Post hoc: each specialist seed", fmt(v), v, 2))
+        for pi, row in r6[s]["endpoint_prior"]["by_pi"].items():
+            v = row["specialist_minus_gemma"]["difference_points"]
+            c.append((f"tab:sensitivity (c) {s} pi={pi}", "(c) Post hoc: out-of-scope weight", fmt(v), v, 2))
     jt = jev_output_tokens()
     c.append(("Jev output tokens low", "its API bills", "113", min(jt), 0))
     c.append(("Jev output tokens high", "its API bills", "1,259", max(jt), 0))

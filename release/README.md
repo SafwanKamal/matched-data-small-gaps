@@ -10,7 +10,7 @@ This folder accompanies `paper/main.tex`.
 
 `src/bakeoff/release_manifest.py` regenerates all three.
 
-To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 424 entries resolve; the other 369 are the data set files (not redistributed) and the weights and features, which report as unreadable until they are in place; after the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
+To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 425 entries resolve; the other 369 are the data set files (not redistributed) and the weights and features, which report as unreadable until they are in place; after the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
 
 ## Specialist weights and features
 
@@ -52,6 +52,8 @@ python -m bakeoff.posthoc_round3
 python -m bakeoff.posthoc_round3b
 python -m bakeoff.posthoc_round4
 python -m bakeoff.posthoc_round5
+python -m bakeoff.posthoc_round6
+python -m bakeoff.b77oos_full_audit
 python -m bakeoff.paper_number_check
 ```
 
