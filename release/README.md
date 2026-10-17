@@ -10,13 +10,13 @@ This folder accompanies `paper/main.tex`.
 
 `src/bakeoff/release_manifest.py` regenerates all three.
 
-To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 422 entries resolve; the other 369 are the data sets (not redistributed) and the weights and features, which report as unreadable until they are in place; after the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
+To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 422 entries resolve; the other 369 are the data set files (not redistributed) and the weights and features, which report as unreadable until they are in place; after the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
 
 ## Specialist weights and features
 
 The specialist weights and cached features for Banking77, CLINC150 and MASSIVE (222 files, 17.9 GB) are on the Hugging Face Hub at https://huggingface.co/Safka532/matched-data-small-gaps-specialists, with the same paths as in this repository and the same SHA-256 values as `SHA256SUMS`. Copy them into a clone (for example with `hf download Safka532/matched-data-small-gaps-specialists --local-dir .`) and every analysis reruns on a CPU.
 
-Run D's specialists and features, and the exploratory BANKING77-OOS and MultiDoGO runs, are not published, because those data sets state no licence. Their hashes remain in `SHA256SUMS`; the `train` and `features` stages rebuild them from the frozen item lists, and until then the analyses that read them can be checked only through the saved outputs. `python -m bakeoff.hf_archive` stages, uploads and verifies the archive.
+Run D's specialists and features, and the exploratory BANKING77-OOS and MultiDoGO runs, are not in the archive: BANKING77-OOS states no licence for its split, and the MultiDoGO runs (CDLA-Permissive-1.0) are exploratory. Their hashes remain in `SHA256SUMS`; the `train` and `features` stages rebuild them from the frozen item lists, and until then the analyses that read them can be checked only through the saved outputs. `python -m bakeoff.hf_archive` stages, uploads and verifies the archive.
 
 The loaders check data hashes only for MASSIVE (`primary_protocol.json`); the other data sets are listed in `SHA256SUMS` and must be checked by hand.
 
@@ -77,14 +77,19 @@ Each protocol's module has `build`, `train`, `check` and `hosted` stages:
 
 ## Data provenance
 
-The data is not redistributed. Each source with its licence:
+The data set files are not redistributed. The frozen item lists and session files (`artifacts/*/items.json`, `artifacts/*/sessions*.json`) do contain the utterances that were used, and every one of them was checked against the original sets. Each is verbatim, up to case and punctuation, from Banking77, CLINC150 or MASSIVE, including the BANKING77-OOS and CLINC single-domain items. They are redistributed under those sets' licences, with attribution below. Each source with its licence:
 
 | Data | Source | Licence |
 |---|---|---|
 | Banking77 | `legacy-datasets/banking77` | CC BY 4.0 |
 | CLINC150 | `clinc/clinc_oos` (plus, revision 155b9c71) | CC BY 3.0 |
 | MASSIVE | `data/1.1/en-US.jsonl`, checked against the hash in `primary_protocol.json` | CC BY 4.0 |
-| BANKING77-OOS | `github.com/jianguoz/Few-Shot-Intent-Detection`, commit fa955331 | no licence stated |
-| CLINC single-domain out-of-scope | `github.com/jianguoz/Few-Shot-Intent-Detection`, commit fa955331 | no licence stated |
+| BANKING77-OOS | `github.com/jianguoz/Few-Shot-Intent-Detection`, commit fa955331 | no licence stated for the split; its utterances are Banking77's |
+| CLINC single-domain out-of-scope | `github.com/jianguoz/Few-Shot-Intent-Detection`, commit fa955331 | no licence stated for the split; its utterances are CLINC150's |
+| MultiDoGO (exploratory only) | `github.com/awslabs/multi-domain-goal-oriented-dialogues-dataset` | CDLA-Permissive-1.0; only model replies and scores are released, no utterances |
+
+## Licence
+
+The code and the other files written for this project are released under the MIT License (`LICENSE` at the repository root). Data-derived content stays under its source's licence, as listed above.
 
 **Known data issue:** the published BANKING77-OOS training split mislabels 366 of 5,905 rows. 145 of them are held-out intents. The audit is in `artifacts/posthoc/b77oos_label_audit.json`.

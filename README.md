@@ -22,7 +22,11 @@ Experiments named in the paper map to protocols as follows: confirmatory runs A,
 
 ## Data
 
-The data sets are not redistributed. `release/README.md` lists each source, revision and licence.
+The data set files are not redistributed. The frozen item lists contain the utterances used, all verbatim from Banking77 (CC BY 4.0), CLINC150 (CC BY 3.0) or MASSIVE (CC BY 4.0); `release/README.md` lists each source, revision and licence.
+
+## Licence
+
+Code and project files: MIT License (`LICENSE`). Data-derived content stays under its source's licence (see `release/README.md`). The specialist weights on the Hugging Face Hub are also MIT.
 
 ## Setup
 
