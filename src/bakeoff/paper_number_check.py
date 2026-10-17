@@ -89,7 +89,11 @@ def checks():
     for k, dr in enumerate(("draw_1", "draw_2", "draw_3")):
         t = mr[dr]["tests"]["M1 specialist vs gemma-4-31b no_rows"]
         c.append((f"M1 {dr}", "specialist minus Gemma is", f"${t['difference_points']:+.1f}$".replace("+", "-" if t["difference_points"] < 0 else "+"), t["difference_points"], 1))
-    c.append(("MASSIVE source clustering", "Clustering out-of-scope turns by their source label", "$p=.55$", r4["massive_source_clustering"]["specialist_minus_gemma"]["p"], 2))
+    c.append(("MASSIVE source clustering (Section 4)", "clustering its out-of-scope turns by source label", "$p=.55$", r4["massive_source_clustering"]["specialist_minus_gemma"]["p"], 2))
+    dense = [v["dense_minus_bm25"]["difference_points"] for v in j("workflow-retrieval", "summary_dense.json")["domains"].values()]
+    c.append(("dense minus BM25 low", "a dense retriever (all-mpnet-base-v2)", "$-2.2$", min(dense), 1))
+    c.append(("dense minus BM25 high", "a dense retriever (all-mpnet-base-v2)", "$+2.5$", max(dense), 1))
+    c.append(("MASSIVE source clustering","Clustering out-of-scope turns by their source label", "$p=.55$", r4["massive_source_clustering"]["specialist_minus_gemma"]["p"], 2))
     fc = r4["freshness_components"]["clinc150"]
     c.append(("CLINC in-scope never seen", "Split by component", "$-2.19$", fc["in-scope, never seen"]["difference_points"], 2))
     c.append(("CLINC OOS never seen", "The change comes from the out-of-scope turns", "$+4.0$", fc["out-of-scope, never seen"]["difference_points"], 1))

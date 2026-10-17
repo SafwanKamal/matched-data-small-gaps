@@ -125,7 +125,7 @@ CLINC150 & 93.1 & 95.0 & 95.0 & 95.1 & 95.1 & 95.0 & $-1.89$ (\textbf{.007}) & $
 \label{tab:primary}
 \end{table*}
 
-\Cref{tab:primary} and \cref{fig:confirmatory} give the results. As pre-registered, the general model is ahead on CLINC150 by 1.9 points (Holm $p=.007$). On Banking77 the 1.4-point gap is not significant after correction. Equivalence within 2.5 points is not shown: the pre-registered 90\% interval's lower bound is $-2.53$ (mean over 40 bootstrap seeds $-2.51$, standard deviation 0.03). On MASSIVE the specialist is 4.4 points ahead, but the test cannot detect differences below about 9 points there, and Qwen is 2.6 points ahead of the specialist here and 1.9 to 3.4 points ahead on all three further draws (\cref{app:massive}), so the ranking depends on the model. The combination that looked better on our earlier data is level with Gemma on every set. The cascade is within 0.4 points of Gemma alone at 40\% of its API cost. Jev given the same retrieved examples is level with Gemma on Banking77 and CLINC150 (90\% intervals within $\pm0.9$ points) and 4.0 points ahead on the confirmatory MASSIVE draw ($p=.0001$, secondary), but not on the three further draws ($+0.5$, $-0.8$, $-3.5$). The Jev protocol's gate, Jev's scope with the specialist's intent, is 1.1 points ahead of the specialist on Banking77 ($p=.0005$) and not significantly different on CLINC150 ($+0.9$, $p=.12$) or MASSIVE ($-0.7$, $p=.95$; secondary, unadjusted). These gaps are not artefacts of example order: two further orderings of Gemma's 20 retrieved examples changed its weighted accuracy by at most 0.16 points on CLINC150 and 0.41 on MASSIVE, and left the CLINC150 gap between $-1.75$ and $-1.90$ (\cref{app:gh}).
+\Cref{tab:primary} and \cref{fig:confirmatory} give the results. As pre-registered, the general model is ahead on CLINC150 by 1.9 points (Holm $p=.007$). On Banking77 the 1.4-point gap is not significant after correction. Equivalence within 2.5 points is not shown: the pre-registered 90\% interval's lower bound is $-2.53$ (mean over 40 bootstrap seeds $-2.51$, standard deviation 0.03). On MASSIVE the specialist is 4.4 points ahead, but the test cannot detect differences below about 9 points there (clustering its out-of-scope turns by source label, $p=.55$), and Qwen is 2.6 points ahead of the specialist here and 1.9 to 3.4 points ahead on all three further draws (\cref{app:massive}), so the ranking depends on the model. The combination that looked better on our earlier data is level with Gemma on every set. The cascade is within 0.4 points of Gemma alone at 40\% of its API cost. Jev given the same retrieved examples is level with Gemma on Banking77 and CLINC150 (90\% intervals within $\pm0.9$ points) and 4.0 points ahead on the confirmatory MASSIVE draw ($p=.0001$, secondary), but not on the three further draws ($+0.5$, $-0.8$, $-3.5$). The Jev protocol's gate, Jev's scope with the specialist's intent, is 1.1 points ahead of the specialist on Banking77 ($p=.0005$) and not significantly different on CLINC150 ($+0.9$, $p=.12$) or MASSIVE ($-0.7$, $p=.95$; secondary, unadjusted). These gaps are not artefacts of example order: two further orderings of Gemma's 20 retrieved examples changed its weighted accuracy by at most 0.16 points on CLINC150 and 0.41 on MASSIVE, and left the CLINC150 gap between $-1.75$ and $-1.90$ (\cref{app:gh}).
 
 
 \begin{figure*}[t]
@@ -169,7 +169,7 @@ Specialist (reference) & 49.6 (44.5 dev-unseen) & 68.2 & & & 53.7 (37.9 dev-unse
 \label{tab:suppression}
 \end{table*}
 
-On our exploratory BANKING77-OOS sessions, Gemma rejected 70\% of requests for held-out Banking77 intents zero-shot and 38\% with retrieved in-scope examples. A second frozen protocol tested this on items not used in the exploratory sessions (462 BANKING77-OOS and 332 CLINC single-domain items had been confirmatory turns; \cref{app:record}), with four general models from four families and two same-domain splits: BANKING77-OOS \citep{zhang2022oos}, and CLINC single-domain out-of-scope for banking and for credit cards. There were four arms: zero-shot, retrieval, retrieval with a scope instruction, and retrieval with four fixed off-topic out-of-scope examples. The Jev protocol repeated the first three arms.
+On our exploratory BANKING77-OOS sessions, Gemma rejected 70\% of requests for held-out Banking77 intents zero-shot and 38\% with retrieved in-scope examples. A second frozen protocol (run D) tested this on items not used in the exploratory sessions (462 BANKING77-OOS and 332 CLINC single-domain items had been confirmatory turns; \cref{app:record}), with four general models from four families and two same-domain splits: BANKING77-OOS \citep{zhang2022oos}, and CLINC single-domain out-of-scope for banking and for credit cards. There were four arms: zero-shot, retrieval, retrieval with a scope instruction, and retrieval with four fixed off-topic out-of-scope examples. The Jev protocol repeated the first three arms.
 
 \paragraph{Retrieval moves models towards acceptance on one split.} On BANKING77-OOS, retrieval lowered rejection of held-out requests for all four general models, by 24 to 40 points (Holm $p\le.0008$ each), and for Jev by 45 points (Holm $p=.0002$; \cref{tab:suppression}). It also raised in-scope acceptance from 81--92\% to 95--99\%. On CLINC single-domain, with each domain's own 10 options, it lowered rejection for no model; with 20 options it did for three (below).
 
@@ -189,7 +189,7 @@ On CLINC single-domain the shift is smaller (the interval excludes zero for two 
 \label{fig:operating}
 \end{figure*}
 
-\paragraph{Replication and causes (pre-registered, run D2).} A third frozen protocol used validation items. On BANKING77-OOS they were fresh and label-clean: 500 in-scope and 388 held-out items, from 23 intents, with all 366 mislabelled rows removed from the pool. On CLINC single-domain there were 1,000 in-scope items, which had served as run D's specialist development data (never sent to a model; \cref{app:record}), and 575 held-out items. The protocol added three arms (\cref{tab:d2,fig:operating}).
+\paragraph{Replication and causes (pre-registered, run D2).} A third frozen protocol (run D2) used validation items. On BANKING77-OOS they were fresh and label-clean: 500 in-scope and 388 held-out items, from 23 intents, with all 366 mislabelled rows removed from the pool. On CLINC single-domain there were 1,000 in-scope items, which had served as run D's specialist development data (never sent to a model; \cref{app:record}), and 575 held-out items. The protocol added three arms (\cref{tab:d2,fig:operating}).
 \begin{itemize}
   \item \textbf{The drop replicates} for all five models, by 19 to 30 points (Holm $p\le.0006$).
   \item \textbf{Relevance drives it.} Twenty random in-scope examples leave rejection 13 to 21 points higher than the 20 retrieved ones (Holm $p\le.004$ for all five), within 1 to 11 points of zero-shot.
@@ -247,7 +247,7 @@ On our opening question, the pre-registered tests do not separate classifiers fr
   \item The supply of native out-of-scope data limits their size: the smallest detectable differences are 1.7, 1.9 and 8.8 points.
   \item Banking77 and CLINC150 items overlap our exploratory sessions, and run D's items overlap the confirmatory turns.
   \item The confirmatory MASSIVE draw held out sibling domains, and three further draws reuse its test text. Its in-scope turns cover half of its labels.
-  \item Run C's rows come from the test domains.
+  \item In the confirmatory run, the labelled out-of-scope rows added to Gemma's pool come from the test domains.
   \item The two same-domain splits come from one benchmark family. One of them has a label leak, and they differ in option count.
   \item The base BANKING77-OOS prompt already contains a scope sentence.
   \item Labels are shown by name only; label descriptions might reduce sibling absorption.
@@ -258,6 +258,7 @@ On our opening question, the pre-registered tests do not separate classifiers fr
 \paragraph{Models.}
 \begin{itemize}
   \item General models ran once per prompt at temperature 0 with one retriever; other orders of the retrieved examples changed accuracy by at most 0.4 points.
+  \item Retrieval was BM25 only, which needs no trained component. In an exploratory paired comparison on 400 earlier sessions per set, a dense retriever (all-mpnet-base-v2) changed Gemma's session success by $-2.2$ to $+2.5$ points, none significantly; its effect on the out-of-scope findings, such as how strongly the retrieved labels concentrate on one sibling, is untested.
   \item Moving one model between two fp8 hosts changed 9.5\% of its answers, which is the size of several reported differences.
   \item The two frontier models were chosen by the author among those accepting reasoning disabled; reasoning-on use was not tested.
   \item Jev's scope threshold was fixed at 0.5 and not tuned; a threshold set from in-scope data changes its out-of-scope results.
@@ -296,7 +297,7 @@ The confirmatory questions were chosen after more than twenty exploratory protoc
   \item \texttt{massive\_robustness\_protocol.json}
   \item \texttt{gh\_protocol.json}
 \end{itemize}
-The amendments are:
+Within the confirmatory protocol, run A is Gemma, run B Qwen, run C Gemma with labelled out-of-scope rows in its pool, and run I the frontier models; run D is the retrieval-suppression protocol and run D2 the mechanism protocol. The amendments are:
 \begin{itemize}
   \item the frontier model was changed after Qwen3.8 2.4T refused requests with reasoning disabled;
   \item a plumbing-check cap was raised;

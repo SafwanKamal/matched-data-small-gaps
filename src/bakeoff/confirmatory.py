@@ -651,7 +651,7 @@ def figure() -> None:
         "kimi-k3": ("Kimi K3 (2.8T), retrieval", INK, "s"),
         "claude-opus-5": ("Claude Opus 5, retrieval", INK, "*"),
     }
-    fig, axes = plt.subplots(2, 3, figsize=(11.5, 7.4), facecolor=SURFACE)
+    fig, axes = plt.subplots(2, 3, figsize=(9.5, 7.0), facecolor=SURFACE)  # printed at text width: fonts sized for about 7 pt in print
     titles = {"banking77": "Banking77", "massive": "MASSIVE (42 skills)", "clinc150": "CLINC150"}
     seen = {}
 
@@ -665,12 +665,15 @@ def figure() -> None:
         ax.plot([p[1] for p in frontier], [100 * p[2] for p in frontier], color=MUTED, linewidth=1.2, linestyle=(0, (3, 2)), zorder=1)
         for key, x, y in points:
             label, colour, marker = style[key]
-            seen[key] = ax.scatter([x], [100 * y], s=150 if marker == "*" else 58, marker=marker, color=colour, edgecolor=SURFACE, linewidth=1.5, zorder=3, label=label)
+            seen[key] = ax.scatter([x], [100 * y], s=190 if marker == "*" else 75, marker=marker, color=colour, edgecolor=SURFACE, linewidth=1.5, zorder=3, label=label)
         ax.set_xscale("log")
         ax.set_xlim(floor / 2, max(p[1] for p in points) * 3)
         ax.axvspan(floor / 2, floor * 1.8, color=GRID, alpha=0.5, zorder=0)
-        ax.annotate("$0 API\n(off scale)", (floor, ax.get_ylim()[0]), xytext=(0, 4), textcoords="offset points", ha="center", fontsize=6.5, color=MUTED)
+        # The specialist sits at the floor tick, labelled $0 (off the log scale) instead of 10^-2.
+        sci = matplotlib.ticker.LogFormatterSciNotation()
+        ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, pos: "$0" if abs(v - floor) < 1e-12 else sci(v, pos)))
         _style(ax)
+        ax.tick_params(labelsize=10.5)
         ax.grid(color=GRID, linewidth=0.7)
 
     for col, name in enumerate(SETS):
@@ -679,18 +682,17 @@ def figure() -> None:
         top = [("specialist", floor, systems["specialist"]["weighted"])]
         top += [(key, costs[key]["usd_per_1000_sessions"], systems[key]["weighted"]) for key in style if key != "specialist" and key in systems and costs.get(key)]
         draw(axes[0, col], top)
-        axes[0, col].set_title(f"{titles[name]}: all systems, {r['n_sessions']} sessions", color=INK, fontsize=9.5, loc="left")
+        axes[0, col].set_title(f"{titles[name]}\nall systems, {r['n_sessions']} sessions", color=INK, fontsize=11.5, loc="left")
         fr = r.get("frontier", {})
         sub = [("specialist", floor, fr["specialist_same_turns"]["weighted"]), ("gemma-4-31b", costs["gemma-4-31b (frontier subset)"]["usd_per_1000_sessions"], fr["gemma_same_turns"]["weighted"])]
         uncached = json.loads((ROOT / "artifacts" / "posthoc" / "round3b.json").read_text(encoding="utf-8"))["cost"]["sets"][name]
         sub += [(key, uncached[key]["usd_per_1000_sessions_uncached_list"], fr[key]["weighted"]) for key in ("kimi-k3", "claude-opus-5") if key in fr]
         draw(axes[1, col], sub)
-        axes[1, col].set_title(f"{titles[name]}: frontier models, first {fr['n_sessions']} sessions", color=INK, fontsize=9.5, loc="left")
-        axes[1, col].set_xlabel("API USD per 1,000 sessions, uncached list price (log)", color=MUTED, fontsize=8)
+        axes[1, col].set_title(f"{titles[name]}\nfrontier, first {fr['n_sessions']} sessions", color=INK, fontsize=11.5, loc="left")
+        axes[1, col].set_xlabel("API USD per 1,000 sessions (log)", color=MUTED, fontsize=10.5)
     for row in range(2):
-        axes[row, 0].set_ylabel("weighted turn accuracy (%)\n0.8 in-scope + 0.2 out-of-scope", color=MUTED, fontsize=8.5)
-    fig.suptitle("Accuracy against API cost on the confirmatory sessions (dashed line: frontier of systems with an API cost)", color=INK, fontsize=10.5, x=0.01, ha="left")
-    fig.legend([seen[k] for k in style if k in seen], [style[k][0] for k in style if k in seen], loc="lower center", bbox_to_anchor=(0.5, -0.07), ncol=4, frameon=False, fontsize=8, labelcolor=INK, handletextpad=0.3, columnspacing=1.4)
+        axes[row, 0].set_ylabel("weighted turn accuracy (%)", color=MUTED, fontsize=10.5)
+    fig.legend([seen[k] for k in style if k in seen], [style[k][0] for k in style if k in seen], loc="lower center", bbox_to_anchor=(0.5, -0.13), ncol=3, frameon=False, fontsize=10.5, labelcolor=INK, handletextpad=0.3, columnspacing=1.4)
     fig.tight_layout()
     for suffix in ("pdf", "png"):
         fig.savefig(ROOT / "docs" / "figures" / f"f5_cost_frontier.{suffix}", dpi=200, facecolor=SURFACE, bbox_inches="tight", pad_inches=0.05)
