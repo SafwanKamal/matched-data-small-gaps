@@ -41,8 +41,9 @@ tags:
 # Specialist classifiers and cached features for "Matched data, small gaps"
 
 Fine-tuned Ettin 150M encoders (the paper's *specialist*) and the cached features its analyses read, for Banking77, CLINC150 and MASSIVE.
-The code, frozen protocols, item lists, saved model replies and analyses are in the paper's release repository; this repository holds the
-files too large for git. Every file here is listed with its SHA-256 in `SHA256SUMS` (and in the release's `release/SHA256SUMS`).
+The code, frozen protocols, item lists, saved model replies and analyses are in the paper's release repository
+(https://github.com/SafwanKamal/matched-data-small-gaps); this repository holds the files too large for git.
+Paper (preprint): https://doi.org/10.5281/zenodo.23448302. Every file here is listed with its SHA-256 in `SHA256SUMS` (and in the release's `release/SHA256SUMS`).
 
 ## Layout
 
@@ -74,6 +75,22 @@ Their hashes are in the release's `release/SHA256SUMS`, and the code rebuilds th
 
 The weights are released under MIT, like the base model. The training data carry their own licences: Banking77 CC BY 4.0, CLINC150 CC BY 3.0,
 MASSIVE CC BY 4.0. Attribute them when you use these files.
+
+## Citation
+
+```bibtex
+@misc{kamal2026matched,
+  title     = {Matched data, small gaps: a pre-registered comparison of fine-tuned classifiers, retrieval-prompted language models and a typed-decision model for intent and out-of-scope decisions},
+  author    = {Kamal, Safwan},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23448302},
+  url       = {https://doi.org/10.5281/zenodo.23448302},
+  note      = {Preprint}
+}
+```
+
+The DOI above always resolves to the latest version; version 1 is https://doi.org/10.5281/zenodo.23448303.
 """
 
 

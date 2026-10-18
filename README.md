@@ -2,7 +2,8 @@
 
 Code, frozen protocols, saved model replies and analyses for the paper *Matched data, small gaps: a pre-registered comparison of fine-tuned classifiers, retrieval-prompted language models and a typed-decision model for intent and out-of-scope decisions* (Safwan Kamal).
 
-- **Paper:** [`paper/main.pdf`](paper/main.pdf), source in [`paper/main.tex`](paper/main.tex).
+- **Preprint:** [doi.org/10.5281/zenodo.23448302](https://doi.org/10.5281/zenodo.23448302) (Zenodo; version 1 is [10.5281/zenodo.23448303](https://doi.org/10.5281/zenodo.23448303)).
+- **Paper in this repository:** [`paper/main.pdf`](paper/main.pdf), source in [`paper/main.tex`](paper/main.tex). This is the ACL-format version of the same study; the Zenodo preprint is the later, revised text. Both draw every number from the same saved analyses.
 - **Reproducing the numbers:** [`release/README.md`](release/README.md). The hosted-model analyses rerun on a CPU from the saved replies, with no API calls; analyses that use the specialist also need its weights and features, which are on the Hugging Face Hub at https://huggingface.co/Safka532/matched-data-small-gaps-specialists (see release/README.md).
 - **Pre-registration:** [`release/FREEZE_TABLE.md`](release/FREEZE_TABLE.md) gives each protocol's freeze time, its text as frozen (`release/frozen-protocols/`), its item-list hash, and when its replies and analysis were first committed.
 - **File hashes:** [`release/SHA256SUMS`](release/SHA256SUMS) covers the data, every protocol, frozen item list, saved reply and analysis output, and the specialist weights and features.
@@ -31,3 +32,19 @@ Code and project files: MIT License (`LICENSE`). Data-derived content stays unde
 ## Setup
 
 Python 3.12. `release/requirements-lock.txt` is the frozen environment and `release/ENVIRONMENT.txt` records the platform and GPU. API keys, if you rerun paid stages, are read from a local `.env` file that is never committed.
+
+## Citation
+
+```bibtex
+@misc{kamal2026matched,
+  title     = {Matched data, small gaps: a pre-registered comparison of fine-tuned classifiers, retrieval-prompted language models and a typed-decision model for intent and out-of-scope decisions},
+  author    = {Kamal, Safwan},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23448302},
+  url       = {https://doi.org/10.5281/zenodo.23448302},
+  note      = {Preprint}
+}
+```
+
+The DOI above always resolves to the latest version of the preprint.
