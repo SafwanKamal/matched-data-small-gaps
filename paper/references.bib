@@ -1,5 +1,7 @@
 % Bibliography for main.tex. Every entry was checked against the paper it cites.
 % Titles and author lists checked against the arXiv API on 2026-10-15 (MultiDoGO from the ACL Anthology).
+% Re-checked 2026-10-17 (arXiv API, Crossref, ACL Anthology): added Zettlemoyer (min2022) and Neubig (bertsch2024),
+% full current title (rao2026jev), published venues (castillo2025oos at SIGDIAL 2025, bertsch2024longicl at NAACL 2025).
 
 @inproceedings{chen2025fcslm,
   title     = {On Collaborating Small and Large Models For Few-shot Intent Detection},
@@ -35,11 +37,13 @@
   year    = {2026}
 }
 
-@article{castillo2025oos,
-  title   = {Intent Recognition and Out-of-Scope Detection using {LLMs} in Multi-party Conversations},
-  author  = {Castillo-L{\'o}pez, Galo and de Chalendar, Ga{\"e}l and Semmar, Nasredine},
-  journal = {arXiv preprint arXiv:2507.22289},
-  year    = {2025}
+@inproceedings{castillo2025oos,
+  title     = {Intent Recognition and Out-of-Scope Detection using {LLMs} in Multi-party Conversations},
+  author    = {Castillo-L{\'o}pez, Galo and de Chalendar, Ga{\"e}l and Semmar, Nasredine},
+  booktitle = {Proceedings of the 26th Annual Meeting of the Special Interest Group on Discourse and Dialogue},
+  pages     = {504--512},
+  year      = {2025},
+  doi       = {10.18653/v1/2025.sigdial-1.41}
 }
 
 @inproceedings{pecher2025breakeven,
@@ -99,7 +103,7 @@
 }
 
 @article{rao2026jev,
-  title   = {Decision Models vs. {LLMs} as Rubric Judges},
+  title   = {Decision Models vs. {LLMs} as Rubric Judges: Cheaper, Faster, and Wrong in the Same Places},
   author  = {Rao, Delip and Callison-Burch, Chris},
   journal = {arXiv preprint arXiv:2609.29769},
   year    = {2026},
@@ -339,17 +343,19 @@
 }
 @inproceedings{min2022demonstrations,
   title = {Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?},
-  author = {Min, Sewon and Lyu, Xinxi and Holtzman, Ari and Artetxe, Mikel and Lewis, Mike and Hajishirzi, Hannaneh},
-  booktitle = {Proceedings of EMNLP},
+  author = {Min, Sewon and Lyu, Xinxi and Holtzman, Ari and Artetxe, Mikel and Lewis, Mike and Hajishirzi, Hannaneh and Zettlemoyer, Luke},
+  booktitle = {Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing},
+  pages = {11048--11064},
   year = {2022},
   note = {arXiv:2202.12837}
 }
-@misc{bertsch2024longicl,
+@inproceedings{bertsch2024longicl,
   title = {In-Context Learning with Long-Context Models: An In-Depth Exploration},
-  author = {Bertsch, Amanda and Ivgi, Maor and Xiao, Emily and Alon, Uri and Berant, Jonathan and Gormley, Matthew R.},
-  year = {2024},
-  eprint = {2405.00200},
-  archivePrefix = {arXiv}
+  author = {Bertsch, Amanda and Ivgi, Maor and Xiao, Emily and Alon, Uri and Berant, Jonathan and Gormley, Matthew R. and Neubig, Graham},
+  booktitle = {Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics},
+  pages = {12119--12149},
+  year = {2025},
+  note = {arXiv:2405.00200}
 }
 
 @inproceedings{hendrycks2019oe,
