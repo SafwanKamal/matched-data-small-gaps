@@ -32,7 +32,7 @@ OpenRouter's request log for the project's key (`artifacts/provider-log/`, expor
 | Run D2 (retrieval mechanism) | 2026-10-16 12:59:22 UTC | 2026-10-16 09:37:38 UTC | 2026-10-16 12:59:26 UTC | 4 |
 | MASSIVE robustness | 2026-10-16 15:10:13 UTC | 2026-10-16 14:47:58 UTC | 2026-10-16 15:10:23 UTC | 11 |
 | Runs G and H | 2026-10-16 16:30:12 UTC | 2026-10-16 15:57:47 UTC | 2026-10-16 16:30:17 UTC | 5 |
-| Run E (option count) | 2026-10-19 07:49:27 UTC | the exported log predates this run | awaits the next export | |
+| Run E (option count) | 2026-10-19 07:49:27 UTC | 2026-10-16 16:53:46 UTC | 2026-10-19 07:49:38 UTC | 11 |
 
 Amendments made during a run, checked against the same log:
 - **Run I (confirmatory):** the amendment naming Kimi K3 and Claude Opus 5 was committed at 04:19:02 UTC. Before it, the log shows one probe request to each candidate model (04:14:46 to 04:15:13) and the 30-call plumbing check on development items for each of the two models (04:18:19 to 04:18:53), as the amendment itself records. The first session turn for either model was sent at 05:24:44 UTC.

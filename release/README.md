@@ -74,7 +74,7 @@ python -m bakeoff.<module> features
 Each protocol's module has `build`, `train`, `check` and `hosted` stages:
 
 - **Pinned hosts, models and prices** are in each protocol and in the paper's Appendix B.
-- **Spend** on OpenRouter was $72.90 by OpenRouter's own log (`artifacts/provider-log/`; $73.13 reconstructed from the saved rows). Jev was billed separately by TypeSafe: $4.27 in total for all Jev use in the project (one $5.00 credit with $0.73 left; `artifacts/jev-cost/`), which cannot be split per call.
+- **Spend** on OpenRouter was $74.27 by OpenRouter's own log (`artifacts/provider-log/`; $74.50 reconstructed from the saved rows). Jev was billed separately by TypeSafe: $4.27 in total for all Jev use in the project (one $5.00 credit with $0.73 left; `artifacts/jev-cost/`), which cannot be split per call.
 - **Variance:** hosted models change over time, and moving one model between two hosts changed 9.5% of its answers. Expect answers to differ somewhat even at temperature 0.
 
 ## Data provenance

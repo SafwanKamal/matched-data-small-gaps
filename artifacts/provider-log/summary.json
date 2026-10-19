@@ -1,10 +1,21 @@
 {
- "source": "OpenRouter activity export of the project's API key, exported by the owner on 2026-10-17; timestamps are OpenRouter's (UTC)",
- "source_sha256": "d33770b5bdf322b74335badd65d36355c2121c4ce6e1dea9f306f8515248901a",
- "requests": 495119,
+ "source": "OpenRouter activity exports of the project's API key, exported by the owner; timestamps are OpenRouter's (UTC)",
+ "sources": [
+  {
+   "file": "openrouter_activity_2026-10-17.csv",
+   "sha256": "d33770b5bdf322b74335badd65d36355c2121c4ce6e1dea9f306f8515248901a",
+   "requests": 495119
+  },
+  {
+   "file": "openrouter_activity_2026-10-19.csv",
+   "sha256": "d1b7935a526d420c4997a4e465b2319c61fbbce7bd672b1842d977352b050bde",
+   "requests": 19680
+  }
+ ],
+ "requests": 514799,
  "first": "2026-10-09 09:14:52.630",
- "last": "2026-10-16 16:53:46.869",
- "cost_usd": 72.903463,
+ "last": "2026-10-19 08:52:55.010",
+ "cost_usd": 74.268132,
  "by_day_and_model": {
   "2026-10-09 anthropic/claude-haiku-5.5-20261007": {
    "requests": 20,
@@ -221,6 +232,18 @@
   "2026-10-16 x-ai/grok-4.3-20260430": {
    "requests": 1,
    "cost_usd": 0.001259
+  },
+  "2026-10-19 google/gemma-4-31b-it-20260402": {
+   "requests": 6560,
+   "cost_usd": 0.433068
+  },
+  "2026-10-19 meta-llama/llama-3.3-70b-instruct": {
+   "requests": 6560,
+   "cost_usd": 0.275386
+  },
+  "2026-10-19 qwen/qwen3.5-27b-20260224": {
+   "requests": 6560,
+   "cost_usd": 0.656215
   }
  }
 }
