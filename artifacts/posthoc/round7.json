@@ -1,0 +1,78 @@
+{
+ "status": "POST HOC: requested after the 2026-10-18 reading of the freshness paragraph; not pre-registered; p unadjusted",
+ "n_out_of_scope": 185,
+ "n_seen": 78,
+ "n_never_seen": 107,
+ "draws": 20000,
+ "interaction_specialist_minus_gemma_rejection": {
+  "seen": -7.264957264957267,
+  "never_seen": 4.049844236760124,
+  "seen_minus_never_seen": -11.31480150171739,
+  "p": 0.015549222538873057
+ },
+ "rejection_percent": {
+  "specialist seed 20261007": {
+   "seen": 75.64102564102564,
+   "never_seen": 85.98130841121495,
+   "seen_minus_never_seen": -10.340282770189313,
+   "p": 0.08574571271436428
+  },
+  "specialist seed 20261015": {
+   "seen": 76.92307692307693,
+   "never_seen": 83.17757009345794,
+   "seen_minus_never_seen": -6.254493170381014,
+   "p": 0.34513274336283184
+  },
+  "specialist seed 20261016": {
+   "seen": 83.33333333333334,
+   "never_seen": 89.7196261682243,
+   "seen_minus_never_seen": -6.386292834890961,
+   "p": 0.2691865406729664
+  },
+  "specialist (mean of seeds)": {
+   "seen": 78.63247863247864,
+   "never_seen": 86.29283489096574,
+   "seen_minus_never_seen": -7.6603562584871,
+   "p": 0.1303934803259837
+  },
+  "gemma-4-31b (run A)": {
+   "seen": 85.8974358974359,
+   "never_seen": 82.2429906542056,
+   "seen_minus_never_seen": 3.6544452432302865,
+   "p": 0.5477226138693065
+  },
+  "qwen3.5-27b (run B)": {
+   "seen": 83.33333333333334,
+   "never_seen": 88.78504672897196,
+   "seen_minus_never_seen": -5.451713395638624,
+   "p": 0.38768061596920156
+  },
+  "gemma-4-31b with rows (run C)": {
+   "seen": 89.74358974358975,
+   "never_seen": 86.91588785046729,
+   "seen_minus_never_seen": 2.8277018931224585,
+   "p": 0.6493675316234189
+  }
+ },
+ "content": {
+  "words": {
+   "seen": 8.653846153846153,
+   "never_seen": 8.794392523364486,
+   "seen_minus_never_seen": -0.14054636951833288,
+   "p": 0.7418629068546573
+  },
+  "bm25_top1_vs_in_scope_training_rows": {
+   "seen": 13.39606378212533,
+   "never_seen": 13.196203511339883,
+   "seen_minus_never_seen": 0.19986027078544666,
+   "p": 0.6752662366881655
+  },
+  "specialist_detector_score_seed_20261007 (mahalanobis)": {
+   "seen": -4764.696697352631,
+   "never_seen": -4913.063764844433,
+   "seen_minus_never_seen": 148.3670674918012,
+   "p": 0.4843257837108145
+  }
+ },
+ "min_p_single_system_or_content": 0.08574571271436428
+}
