@@ -4,13 +4,13 @@ This folder accompanies `paper/main.tex`.
 
 | File | What it holds |
 |---|---|
-| `SHA256SUMS` | Hashes of the data, every protocol, every frozen item list and saved model reply, every analysis output, and the specialist weights and features. The weights and features are **not in git** (about 22 GB) and will ship as a separate archive checked against these hashes. |
+| `SHA256SUMS` | Hashes of the data, the nine protocols that govern the paper's runs, every frozen item list and saved model reply, every analysis output, and the specialist weights and features. The weights and features are **not in git** (about 22 GB) and will ship as a separate archive checked against these hashes. |
 | `requirements-lock.txt` | The Python environment, as frozen. |
 | `ENVIRONMENT.txt` | Python, platform, torch and GPU. |
 
 `src/bakeoff/release_manifest.py` regenerates all three.
 
-To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 425 entries resolve; the other 369 are the data set files (not redistributed) and the weights and features, which report as unreadable until they are in place; after the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
+To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 605 of the 977 entries resolve; the other 372 are the data set files (not redistributed) and the weights and features, which report as unreadable until they are in place; after the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
 
 ## Specialist weights and features
 
