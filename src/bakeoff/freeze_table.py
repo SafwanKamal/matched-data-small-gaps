@@ -22,6 +22,7 @@ RUNS = [
     ("Run D2 (retrieval mechanism)", "retrieval_mechanism_protocol.json", "artifacts/retrieval-mechanism"),
     ("MASSIVE robustness", "massive_robustness_protocol.json", "artifacts/massive-robustness"),
     ("Runs G and H", "gh_protocol.json", "artifacts/gh"),
+    ("Run E (option count)", "option_count_protocol.json", "artifacts/option-count"),
 ]
 OUT = ROOT / "release"
 PROVIDER_LOG = ROOT / "artifacts" / "provider-log" / "openrouter_requests.csv.gz"
@@ -77,7 +78,7 @@ def build() -> list[dict]:
             items.append({"path": path, "recorded_sha256": recorded, "file_sha256": actual,
                           "match": actual.startswith(recorded), "added": utc(first_added(path)[1])})
         if not items:  # the confirmatory set is described without its path next to the hash
-            m = re.search(r"SHA-256 ([0-9a-f]{64})", frozen_text.decode("utf-8"))
+            m = re.search(r"(?:SHA-256 |\"items_sha256\": \")([0-9a-f]{64})", frozen_text.decode("utf-8"))
             if m:
                 path = f"{run_dir}/items.json"
                 actual = sha(blob("HEAD", path))
@@ -143,7 +144,9 @@ def write(rows: list[dict]) -> None:
               "| Run | Frozen (UTC) | Last logged request before | First logged request after | Seconds after freeze |", "|---|---|---|---|---|"]
     for r in rows:
         o = r["openrouter_log"]
-        if o:
+        if o and o["first_request_after_freeze"] is None:
+            lines.append(f"| {r['run']} | {r['frozen_at']} | the exported log predates this run | awaits the next export | |")
+        elif o:
             lines.append(f"| {r['run']} | {r['frozen_at']} | {o['last_request_before_freeze']} | {o['first_request_after_freeze']} | {o['seconds_after_freeze']} |")
         else:
             lines.append(f"| {r['run']} | {r['frozen_at']} | not on OpenRouter | | |")

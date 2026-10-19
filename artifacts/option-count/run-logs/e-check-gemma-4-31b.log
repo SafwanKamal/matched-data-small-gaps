@@ -1,0 +1,10 @@
+check gemma-4-31b      kitchen_and_dining   zero_shot_o10        10/10 parse_failed 0 providers ['Novita'] run $0.000 project $74.067
+check gemma-4-31b      kitchen_and_dining   retrieval_o10        10/10 parse_failed 0 providers ['Novita'] run $0.001 project $74.067
+check gemma-4-31b      kitchen_and_dining   zero_shot_o20_far    10/10 parse_failed 0 providers ['Novita'] run $0.001 project $74.068
+check gemma-4-31b      kitchen_and_dining   retrieval_o20_far    10/10 parse_failed 0 providers ['Novita'] run $0.002 project $74.069
+check gemma-4-31b      kitchen_and_dining   zero_shot_o20_near   10/10 parse_failed 0 providers ['Novita'] run $0.003 project $74.069
+check gemma-4-31b      kitchen_and_dining   retrieval_o20_near   10/10 parse_failed 0 providers ['Novita'] run $0.004 project $74.070
+check gemma-4-31b      kitchen_and_dining   zero_shot_o50_far    10/10 parse_failed 0 providers ['Novita'] run $0.004 project $74.070
+check gemma-4-31b      kitchen_and_dining   retrieval_o50_far    10/10 parse_failed 0 providers ['Novita'] run $0.005 project $74.071
+E_CHECK_DONE run $0.005 project $74.071
+E_check_EXIT_0

@@ -18,6 +18,7 @@ For each protocol behind the paper: when it was frozen, what it froze, and when 
 | Run D2 (retrieval mechanism) | `retrieval_mechanism_protocol.json` | 2026-10-16 12:59:22 UTC | `artifacts/retrieval-mechanism/items.json` `04c55578a642…` (match) | 2026-10-16 14:49:29 UTC | 2026-10-16 14:49:29 UTC | 2026-10-16 14:49:29 UTC | 1 | holds |
 | MASSIVE robustness | `massive_robustness_protocol.json` | 2026-10-16 15:10:13 UTC | `artifacts/massive-robustness/items.json` `88e6051264a4…` (match) | 2026-10-16 15:59:42 UTC | 2026-10-16 15:59:42 UTC | 2026-10-16 15:59:42 UTC | 0 | holds |
 | Runs G and H | `gh_protocol.json` | 2026-10-16 16:30:12 UTC | reuses earlier item lists (see protocol) | 2026-10-16 16:56:21 UTC | 2026-10-16 16:56:21 UTC | 2026-10-16 16:56:21 UTC | 0 | holds |
+| Run E (option count) | `option_count_protocol.json` | 2026-10-19 07:49:27 UTC | `artifacts/option-count/items.json` `53d7ffa2a033…` (match) | 2026-10-19 09:00:21 UTC | 2026-10-19 09:00:21 UTC | 2026-10-19 09:00:21 UTC | 0 | holds |
 
 ## Requests in OpenRouter's own log
 
@@ -31,6 +32,7 @@ OpenRouter's request log for the project's key (`artifacts/provider-log/`, expor
 | Run D2 (retrieval mechanism) | 2026-10-16 12:59:22 UTC | 2026-10-16 09:37:38 UTC | 2026-10-16 12:59:26 UTC | 4 |
 | MASSIVE robustness | 2026-10-16 15:10:13 UTC | 2026-10-16 14:47:58 UTC | 2026-10-16 15:10:23 UTC | 11 |
 | Runs G and H | 2026-10-16 16:30:12 UTC | 2026-10-16 15:57:47 UTC | 2026-10-16 16:30:17 UTC | 5 |
+| Run E (option count) | 2026-10-19 07:49:27 UTC | the exported log predates this run | awaits the next export | |
 
 Amendments made during a run, checked against the same log:
 - **Run I (confirmatory):** the amendment naming Kimi K3 and Claude Opus 5 was committed at 04:19:02 UTC. Before it, the log shows one probe request to each candidate model (04:14:46 to 04:15:13) and the 30-call plumbing check on development items for each of the two models (04:18:19 to 04:18:53), as the amendment itself records. The first session turn for either model was sent at 05:24:44 UTC.
@@ -46,3 +48,4 @@ Amendments made during a run, checked against the same log:
 | `retrieval_mechanism_protocol.json` | `a37c24807954bf5a7ca7cf956a9b1df491db83e62b69ec7f9c3cfa5f7a2f4a2e` | `6866889a872a98d84ed2e98db1bd4064e759604797c7bc0eec5ab38c2e69d0ad` | 2026-10-16 14:00 |
 | `massive_robustness_protocol.json` | `c3f7b945f95030d0187ab9d94b890b08b4c8b1e343f6ca10464774960d69e68d` | `c3f7b945f95030d0187ab9d94b890b08b4c8b1e343f6ca10464774960d69e68d` | none |
 | `gh_protocol.json` | `a75932c8cf455f5032ceff1eaeb42c409f3b344bf7966f13b5956ca64db0c560` | `a75932c8cf455f5032ceff1eaeb42c409f3b344bf7966f13b5956ca64db0c560` | none |
+| `option_count_protocol.json` | `b6570b3eaee40a3488c843653630804efdb96d19cd00a64768a7c841cc288a5a` | `b6570b3eaee40a3488c843653630804efdb96d19cd00a64768a7c841cc288a5a` | none |

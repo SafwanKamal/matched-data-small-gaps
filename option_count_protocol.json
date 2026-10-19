@@ -1,0 +1,115 @@
+{
+  "protocol_id": "option-count-e-2026-10-19",
+  "status": "FROZEN before any request; design and cost (estimate 1.27 USD, run cap 2.00 USD) approved by the owner on 2026-10-19. Frozen by the commit that adds this file with artifacts/option-count/items.json, src/bakeoff/option_count.py and scripts/run_option_count.sh.",
+  "role": "run E: test why the retrieval acceptance shift appears on BANKING77-OOS (50 options) but not on CLINC single-domain (10 options). Run D2's pooled 20-option arm changed the option count together with sibling labels, the retrieval pool and the desk description, and had 8 held-out-intent clusters. Here only the option list changes, on 30 held-out intents.",
+  "what_was_seen_before_writing": "All results of runs D and D2, including D2's pooled 20-option arm (retrieval lowers rejection by 14 to 25 points for Gemma, Llama and DeepSeek; Holm-significant against 10 options for Llama only, p = .04, the smallest attainable) and the post hoc sibling-label analysis (accepted held-out requests go to retrieved, related labels). Fresh-item counts per CLINC150 intent and the selected option lists were computed while writing; no system has been run on these items.",
+  "seed": 20261019,
+  "data": {
+    "clinc150": "clinc/clinc_oos, config plus, revision 155b9c710419136e17307b80d0a13e68cd46b4ec (as the confirmatory run); out-of-scope rows not used",
+    "domains": "data/clinc-domains/domains.json from github.com/clinc/oos-eval commit 976178879e5afa9952f60a1f8d3c834f47a25cee, sha256 b947b579d3b8e74b06f93b01083d8efaff2888b43a3e362533bd88a6e1211b3a",
+    "text": "lower-cased, punctuation other than apostrophes removed (confirmatory normalise), for items and pool"
+  },
+  "items": {
+    "test_domains": "kitchen_and_dining, home, auto_and_commute, travel, utility, work. small_talk and meta are excluded as catch-alls; every validation and test utterance of banking and credit_cards was already used by runs D and D2, so those two supply added labels only",
+    "split": "per test domain, 5 of its 15 intents held out, drawn with the seed; the other 10 are in scope",
+    "rule": "items come only from the CLINC150 validation and test splits, and only if their normalised text appears in no earlier session, dev set or experiment's items (runs A to D2, G, H and the MASSIVE draws); 6 per in-scope intent and 15 per held-out intent, drawn with the seed",
+    "counts": "810 items: 360 in scope, 450 held out, 30 held-out-intent clusters (5 per domain)",
+    "pool": "the CLINC150 training rows of the domain's 10 in-scope intents (1,000 per domain); no held-out intent is in any pool, and no item text is in any pool",
+    "items_sha256": "53d7ffa2a033eded9aa355a13210e7a19045f9e4be181570ddd96e7530b9f098"
+  },
+  "option_lists": {
+    "candidates": "the 105 intents of the other seven task domains (banking and credit_cards included)",
+    "relatedness": "for each candidate, the highest cosine similarity between its mean training-row embedding and any held-out intent's mean training-row embedding (all-mpnet-base-v2, as the exploratory dense-retrieval arm)",
+    "o10": "the domain's own 10 in-scope labels",
+    "o20_far": "own 10 plus the 10 least related candidates",
+    "o20_near": "own 10 plus the 10 most related candidates",
+    "o50_far": "own 10 plus the 40 least related candidates (o20_far's 10 are the first 10 of these)",
+    "order": "every option list sorted alphabetically, then coded 01, 02, ..."
+  },
+  "arms": {
+    "zero_shot_{o}": "the option list o, no examples",
+    "retrieval_{o}": "the option list o with the 20 BM25-nearest pool rows (least similar first, 'message => code'), the same rows in every option list",
+    "prompt": "run D2's system prompt with the bank-desk wording made domain-neutral: 'a retail bank's customer-support desk' -> 'an assistant', 'The desk handles' -> 'The assistant handles', 'including other banking questions' -> 'including related requests'. The desk description, the pool and the requests are identical across arms; only the option list differs."
+  },
+  "models": {
+    "gemma-4-31b": {
+      "model": "google/gemma-4-31b-it",
+      "provider": "Novita",
+      "reasoning_off": true,
+      "price_usd_per_million": [
+        0.14,
+        0.4
+      ]
+    },
+    "llama-3.3-70b": {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "reasoning_off": false,
+      "precision": "fp8",
+      "price_usd_per_million": [
+        0.1,
+        0.32
+      ]
+    },
+    "qwen3.5-27b": {
+      "model": "qwen/qwen3.5-27b",
+      "provider": "Alibaba",
+      "reasoning_off": true,
+      "price_usd_per_million": [
+        0.195,
+        1.56
+      ]
+    }
+  },
+  "model_order": [
+    "llama-3.3-70b",
+    "gemma-4-31b",
+    "qwen3.5-27b"
+  ],
+  "excluded_systems": "DeepSeek V4 Pro (its cost depends on prompt caching; uncached it would take most of the remaining budget) and Jev (0.73 USD of credit left)",
+  "hypotheses": {
+    "H1_count": {
+      "statement": "the retrieval-induced drop in held-out rejection, drop(o) = rejection(zero_shot_o) - rejection(retrieval_o), is larger with 50 options than with 10: drop(o50_far) - drop(o10) > 0",
+      "test": "sign flips of held-out-intent cluster sums, one-sided; Holm across the models",
+      "supported_if": "Holm-significant for at least 2 of the 3 models (both, if two models run), all differences positive"
+    },
+    "H2_relatedness": {
+      "statement": "ten related added options raise the drop more than ten unrelated ones: drop(o20_near) - drop(o20_far) > 0",
+      "test": "as H1",
+      "supported_if": "as H1"
+    },
+    "prediction_stated_in_advance": "the post hoc sibling-label analysis of D2 (accepted held-out requests go to retrieved, related labels) predicts H2 more strongly than H1. If neither is supported, option count and label relatedness do not explain where the effect appears, at least in these domains."
+  },
+  "secondary": {
+    "S1": "drop(o10), two-sided: does the original 10-option null hold on six other domains?",
+    "S2": "drop(o20_far) - drop(o10), two-sided: count from 10 to 20 with unrelated labels",
+    "S3": "drop(o50_far) and drop(o20_near) on their own, two-sided",
+    "S4": "in-scope acceptance, d' and criterion per arm (descriptive)",
+    "note": "all secondary tests unadjusted"
+  },
+  "outcome_sentences": {
+    "H1 supported": "Adding 40 unrelated options increases the retrieval-induced drop in rejection by {range} points for {k} of {n} models: the number of options alone moves the effect.",
+    "H1 not supported": "Adding 40 unrelated options does not reliably change the retrieval-induced drop ({range} points): the number of options alone does not explain where the effect appears.",
+    "H2 supported": "Ten related added options raise the drop by {range} points more than ten unrelated ones for {k} of {n} models: the effect depends on nearby labels that out-of-scope requests can be absorbed into.",
+    "H2 not supported": "Ten related added options change the drop no more than ten unrelated ones ({range} points): the relatedness of the added labels does not explain the effect in this design.",
+    "S1": "With the domain's own 10 options, retrieval changes held-out rejection by {range} points on six further CLINC150 domains."
+  },
+  "cost": {
+    "estimate_usd": {
+      "llama-3.3-70b": 0.26,
+      "gemma-4-31b": 0.402,
+      "qwen3.5-27b": 0.61,
+      "total": 1.272
+    },
+    "basis": "python -m bakeoff.option_count estimate: run D2's measured prompt tokens per character for each model, applied to the exact prompts of all 6,480 calls per model; run D2's mean output tokens; uncached OpenRouter list prices checked 2026-10-19 (unchanged from the paper's table)",
+    "run_cap_usd": 2.0,
+    "check_cap_usd": 0.1,
+    "per_model_process_cap_usd": 1.0,
+    "budget": "73.13 USD spent of the 80 USD project cap by the project's own log (OpenRouter's log: 72.90); the run cap keeps the project at or below 75.23 USD"
+  },
+  "request": "temperature 0, max_tokens 24, reasoning off where switchable, pinned hosts, fallbacks off; parsing and failure rules as runs D and D2",
+  "check": "plumbing only: per model, one domain, every arm, five pool rows and five fixed off-topic sentences (no frozen item); confirms host, parsing and cost; not reported",
+  "code": "src/bakeoff/option_count.py (stages build, estimate, check, hosted, analyze); runner scripts/run_option_count.sh",
+  "limits": "Six CLINC150 domains, not BANKING77-OOS itself and not the two banking domains of runs D and D2. Relatedness is defined by one embedding model. The domain-neutral desk description differs from the bank-desk wording of runs D and D2, so absolute rates are not directly comparable with them. Items are single utterances; one retriever (BM25); temperature 0, one run per prompt.",
+  "execution_plan": "plumbing check for Llama and Qwen, then one process per model (per-model cap 1.00 USD): Llama, Qwen, then Gemma once its pinned host (Novita, degraded on 2026-10-19 with 50% uptime) recovers; the host is not switched."
+}

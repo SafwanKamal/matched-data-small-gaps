@@ -1,0 +1,10 @@
+check llama-3.3-70b    kitchen_and_dining   zero_shot_o10        10/10 parse_failed 0 providers ['DeepInfra'] run $0.000 project $73.128
+check llama-3.3-70b    kitchen_and_dining   retrieval_o10        10/10 parse_failed 0 providers ['DeepInfra'] run $0.001 project $73.129
+check llama-3.3-70b    kitchen_and_dining   zero_shot_o20_far    10/10 parse_failed 0 providers ['DeepInfra'] run $0.001 project $73.129
+check llama-3.3-70b    kitchen_and_dining   retrieval_o20_far    10/10 parse_failed 0 providers ['DeepInfra'] run $0.001 project $73.129
+check llama-3.3-70b    kitchen_and_dining   zero_shot_o20_near   10/10 parse_failed 0 providers ['DeepInfra'] run $0.002 project $73.130
+check llama-3.3-70b    kitchen_and_dining   retrieval_o20_near   10/10 parse_failed 0 providers ['DeepInfra'] run $0.002 project $73.130
+check llama-3.3-70b    kitchen_and_dining   zero_shot_o50_far    10/10 parse_failed 0 providers ['DeepInfra'] run $0.003 project $73.131
+check llama-3.3-70b    kitchen_and_dining   retrieval_o50_far    10/10 parse_failed 0 providers ['DeepInfra'] run $0.003 project $73.131
+E_CHECK_DONE run $0.003 project $73.131
+E_check_EXIT_0

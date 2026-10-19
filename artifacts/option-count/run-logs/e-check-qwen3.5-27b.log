@@ -1,0 +1,10 @@
+check qwen3.5-27b      kitchen_and_dining   zero_shot_o10        10/10 parse_failed 0 providers ['Alibaba'] run $0.001 project $73.132
+check qwen3.5-27b      kitchen_and_dining   retrieval_o10        10/10 parse_failed 0 providers ['Alibaba'] run $0.002 project $73.133
+check qwen3.5-27b      kitchen_and_dining   zero_shot_o20_far    10/10 parse_failed 0 providers ['Alibaba'] run $0.002 project $73.134
+check qwen3.5-27b      kitchen_and_dining   retrieval_o20_far    10/10 parse_failed 0 providers ['Alibaba'] run $0.004 project $73.135
+check qwen3.5-27b      kitchen_and_dining   zero_shot_o20_near   10/10 parse_failed 0 providers ['Alibaba'] run $0.004 project $73.135
+check qwen3.5-27b      kitchen_and_dining   retrieval_o20_near   10/10 parse_failed 0 providers ['Alibaba'] run $0.005 project $73.137
+check qwen3.5-27b      kitchen_and_dining   zero_shot_o50_far    10/10 parse_failed 0 providers ['Alibaba'] run $0.006 project $73.138
+check qwen3.5-27b      kitchen_and_dining   retrieval_o50_far    10/10 parse_failed 0 providers ['Alibaba'] run $0.008 project $73.139
+E_CHECK_DONE run $0.008 project $73.139
+E_check_EXIT_0

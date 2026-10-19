@@ -1,0 +1,26 @@
+{
+ "items": 810,
+ "arms": 8,
+ "calls_per_model": 6480,
+ "models": {
+  "llama-3.3-70b": {
+   "tokens_per_char": 0.25366103352363206,
+   "prompt_tokens_total": 2414315.2777539073,
+   "mean_output_tokens": 9.0,
+   "usd_uncached": 0.26009392777539075
+  },
+  "gemma-4-31b": {
+   "tokens_per_char": 0.28259918238575743,
+   "prompt_tokens_total": 2689745.1060457528,
+   "mean_output_tokens": 10.0,
+   "usd_uncached": 0.4024843148464054
+  },
+  "qwen3.5-27b": {
+   "tokens_per_char": 0.2795397810400256,
+   "prompt_tokens_total": 2660626.0911652385,
+   "mean_output_tokens": 9.0,
+   "usd_uncached": 0.6098012877772215
+  }
+ },
+ "usd_uncached_total": 1.2723795303990175
+}
