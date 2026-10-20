@@ -72,7 +72,7 @@ Rebuilding the specialist features (`artifacts/*/features/*.npz`) needs the weig
 python -m bakeoff.<module> features
 ```
 
-**What runs from this repository alone.** Offline, with an empty Hugging Face cache, eleven of the fifteen commands above run from this repository alone: `confirmatory`, `retrieval_suppression`, `jev_rerun`, `retrieval_mechanism`, `massive_robustness`, `option_count` and `reasoning_on` (all `analyze`), and `posthoc_round5`, `posthoc_round6`, `posthoc_round7` and `paper_number_check`. The other four need external data, which we do not redistribute. Fetch it once with network access, into the cache that `HF_HOME` points to:
+**What runs from this repository alone.** Offline, with an empty Hugging Face cache, eleven of the sixteen commands above run from this repository alone: `confirmatory`, `retrieval_suppression`, `jev_rerun`, `retrieval_mechanism`, `massive_robustness`, `option_count` and `reasoning_on` (all `analyze`), and `posthoc_round5`, `posthoc_round6`, `posthoc_round7` and `paper_number_check`. The other five need external data, which we do not redistribute. Fetch it once with network access, into the cache that `HF_HOME` points to:
 
 | Data | Source and revision | Needed by |
 |---|---|---|
@@ -80,9 +80,10 @@ python -m bakeoff.<module> features
 | SST-2 | `nyu-mll/glue`, subset `sst2`, revision `bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c` | `gh_runs analyze` (loaded with Banking77 by `bakeoff.data`) |
 | AG News | `fancyzhx/ag_news`, revision `eb185aade064a813bc0b7f42de02595523103ca4` | `gh_runs analyze` (loaded with Banking77 by `bakeoff.data`) |
 | all-mpnet-base-v2 | `sentence-transformers/all-mpnet-base-v2`, revision `e8c3b32edf5434bc2275fc9bab85f82640a19130` | `posthoc_round3`, and run E's `build` stage |
-| MASSIVE 1.1 | `amazon-massive-dataset-1.1.tar.gz` from amazon-massive-nlu-dataset.s3.amazonaws.com, unpacked so that `data/1.1/data/en-US.jsonl` exists (hash in `primary_protocol.json`) | `posthoc_round4` |
-| BANKING77-OOS | github.com/jianguoz/Few-Shot-Intent-Detection, commit fa955331, `data/banking77-oos` | `b77oos_full_audit`, and run D's `build` and `train` stages |
-| CLINC150 | `clinc/clinc_oos`, config `plus`, revision `155b9c710419136e17307b80d0a13e68cd46b4ec` | the `build` stages of runs D2 and E |
+| MASSIVE 1.1 | `amazon-massive-dataset-1.1.tar.gz` from amazon-massive-nlu-dataset.s3.amazonaws.com, unpacked so that `data/1.1/data/en-US.jsonl` exists (hash in `primary_protocol.json`) | `posthoc_round3b`, `posthoc_round4` |
+| BANKING77-OOS | github.com/jianguoz/Few-Shot-Intent-Detection, commit fa955331, `data/banking77-oos` | `b77oos_full_audit`, `posthoc_round3b` (the `label_original` files), and run D's `build` and `train` stages |
+| CLINC150 | `clinc/clinc_oos`, config `plus`, revision `155b9c710419136e17307b80d0a13e68cd46b4ec` | `gh_runs analyze`, and the `build` stages of runs D2 and E |
+| CLINC single-domain OOS | github.com/jianguoz/Few-Shot-Intent-Detection, commit fa955331, `data/clinc-single-domain-oos` | `posthoc_round3b` (the `label_original` files), and run D's `build` and `train` stages |
 
 The `build`, `train` and `hosted` stages also need these. The analyses above do not need them, unless the table says so.
 
