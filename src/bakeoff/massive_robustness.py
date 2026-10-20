@@ -115,6 +115,9 @@ def features(draw: str, seed: int) -> dict:
     cache = OUT / "features" / f"{draw}__seed-{seed}.npz"
     if cache.exists():
         return dict(np.load(cache))
+    scores = OUT / "specialist-scores" / cache.name
+    if scores.exists():  # per-turn specialist scores, shipped with the release (bakeoff.specialist_scores)
+        return dict(np.load(scores))
     from bakeoff import revision_free as rf
 
     d = load()[draw]

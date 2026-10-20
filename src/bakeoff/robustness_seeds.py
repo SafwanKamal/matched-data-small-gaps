@@ -66,9 +66,11 @@ def _features(folder, train, dev_in, dev_out, texts, labels) -> dict:
     return out
 
 
-def _detector_scores(features: dict, temperature: float) -> dict:
-    from bakeoff.oos_detectors import _logsumexp
-
+def embedding_scores(features: dict) -> dict:
+    """The two detector scores that need the embeddings (Mahalanobis, kNN), per part. bakeoff.specialist_scores saves
+    them, so the analyses can rerun from the per-turn scores when the features are not available."""
+    if "train_emb" not in features:
+        return {part: {"mahalanobis": features[f"mahalanobis_{part}"], "knn": features[f"knn_{part}"]} for part in ("dev_in", "dev_out", "turns")}
     train, gold = features["train_emb"], features["train_gold"]
     classes = np.unique(gold)
     means = np.stack([train[gold == c].mean(axis=0) for c in classes])
@@ -77,13 +79,24 @@ def _detector_scores(features: dict, temperature: float) -> dict:
     unit = train / np.linalg.norm(train, axis=1, keepdims=True)
     out = {}
     for part in ("dev_in", "dev_out", "turns"):
-        logits, emb = features[f"{part}_logits"], features[f"{part}_emb"]
+        emb = features[f"{part}_emb"]
         maha = np.full(len(emb), np.inf)
         for mean in means:
             diff = emb - mean
             maha = np.minimum(maha, ((diff @ precision) * diff).sum(axis=1))
         sims = (emb / np.linalg.norm(emb, axis=1, keepdims=True)) @ unit.T
-        out[part] = {"msp": apply_temperature(logits, temperature).max(axis=1), "energy": _logsumexp(logits), "mahalanobis": -maha, "knn": np.sort(sims, axis=1)[:, -10]}
+        out[part] = {"mahalanobis": -maha, "knn": np.sort(sims, axis=1)[:, -10]}
+    return out
+
+
+def _detector_scores(features: dict, temperature: float) -> dict:
+    from bakeoff.oos_detectors import _logsumexp
+
+    emb = embedding_scores(features)
+    out = {}
+    for part in ("dev_in", "dev_out", "turns"):
+        logits = features[f"{part}_logits"]
+        out[part] = {"msp": apply_temperature(logits, temperature).max(axis=1), "energy": _logsumexp(logits), "mahalanobis": emb[part]["mahalanobis"], "knn": emb[part]["knn"]}
     return out
 
 

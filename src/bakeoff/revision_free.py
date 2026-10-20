@@ -367,6 +367,8 @@ def specialist(f: dict, rate: float | None) -> dict:
 
 def knn_vote(f: dict, part: str, k: int = 10) -> np.ndarray:
     """True (in scope) unless at least half of the k nearest rows among training plus out-of-scope pool rows are pool rows."""
+    if "train_emb" not in f:  # per-turn scores only (bakeoff.specialist_scores)
+        return f[f"knn_vote_{part}"]
     bank = np.concatenate([f["train_emb"], f["pool_emb"]])
     bank = bank / np.linalg.norm(bank, axis=1, keepdims=True)
     is_pool = np.r_[np.zeros(len(f["train_emb"]), bool), np.ones(len(f["pool_emb"]), bool)]

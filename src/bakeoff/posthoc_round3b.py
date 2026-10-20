@@ -32,7 +32,7 @@ NEWLINE = "\n"
 def original_labels() -> dict[str, set[str]]:
     from datasets import load_dataset
 
-    ds = load_dataset("legacy-datasets/banking77")
+    ds = load_dataset("legacy-datasets/banking77", revision="f54121560de48f2852f90be299010d1d6dc612ec")  # as protocol.json pins; the only cached snapshot
     names = ds["train"].features["label"].names
     out: dict[str, set[str]] = {}
     for split in ds:
