@@ -30,6 +30,17 @@ PROVIDER_LOG = ROOT / "artifacts" / "provider-log" / "openrouter_requests.csv.gz
 NOT_ON_OPENROUTER = {"jev_rerun_protocol.json"}
 
 
+def logs_pages() -> list[dict]:
+    """Saved OpenRouter Logs pages (bakeoff.provider_logs_page): a window of the key's requests, with its oldest one."""
+    out = []
+    for path in sorted(PROVIDER_LOG.parent.glob("logs-page-*.json")):
+        d = json.loads(path.read_text(encoding="utf-8"))
+        if d.get("oldest_request"):
+            utc = lambda t: datetime.fromisoformat(t.replace("Z", "+00:00"))
+            out.append({"file": path.name, "from": utc(d["window_from"]), "to": utc(d["window_to"]), "oldest": utc(d["oldest_request"])})
+    return out
+
+
 def provider_times() -> list[datetime]:
     """OpenRouter's server timestamps (UTC) for every request of the project's key."""
     if not PROVIDER_LOG.exists():
@@ -64,6 +75,7 @@ def sha(data: bytes) -> str:
 def build() -> list[dict]:
     rows = []
     logged = provider_times()
+    pages = logs_pages()
     for name, proto, run_dir in RUNS:
         rev, frozen_at = first_added(proto)
         frozen_text = blob(rev, proto)
@@ -98,6 +110,15 @@ def build() -> list[dict]:
             provider = {"last_request_before_freeze": before[-1].strftime("%Y-%m-%d %H:%M:%S UTC") if before else None,
                         "first_request_after_freeze": after[0].strftime("%Y-%m-%d %H:%M:%S UTC") if after else None,
                         "seconds_after_freeze": round((after[0] - frozen_dt).total_seconds()) if after else None}
+            if not after:
+                # The export predates the run: use a saved Logs page whose window opens before the freeze and whose
+                # oldest request comes after it (no request of the key between the window's start and that request).
+                page = next((p for p in pages if p["from"] < frozen_dt <= p["oldest"] <= p["to"]), None)
+                if page:
+                    provider.update({"last_request_before_freeze": f"none since {page['from'].strftime('%Y-%m-%d %H:%M:%S UTC')} (Logs page window)",
+                                     "first_request_after_freeze": page["oldest"].strftime("%Y-%m-%d %H:%M:%S UTC"),
+                                     "seconds_after_freeze": round((page["oldest"] - frozen_dt).total_seconds()),
+                                     "source": f"artifacts/provider-log/{page['file']}"})
         rows.append({
             "run": name,
             "openrouter_log": provider,
@@ -141,14 +162,16 @@ def write(rows: list[dict]) -> None:
                      f"| {r['analysis_first_at']} | {len(r['later_amendment_commits'])} | {'holds' if r['order_holds'] else 'FAILS'} |")
     lines += ["", "## Requests in OpenRouter's own log", "",
               "OpenRouter's request log for the project's key (`artifacts/provider-log/`, exported by the owner) dates every hosted-model request with the provider's own clock. "
-              "For each protocol: the last request of any kind before its freeze commit, and the first request after it. Jev is not served through OpenRouter, so the Jev re-run has no entry.", "",
+              "For each protocol: the last request of any kind before its freeze commit, and the first request after it. Jev is not served through OpenRouter, so the Jev re-run has no entry. "
+              "Where the export does not yet include a run, a saved copy of OpenRouter's Logs page stands in (`artifacts/provider-log/logs-page-*.json`). It lists every request of the key in a window, dated to the millisecond, so it shows the first request after the freeze and that none came earlier in the window.", "",
               "| Run | Frozen (UTC) | Last logged request before | First logged request after | Seconds after freeze |", "|---|---|---|---|---|"]
     for r in rows:
         o = r["openrouter_log"]
         if o and o["first_request_after_freeze"] is None:
             lines.append(f"| {r['run']} | {r['frozen_at']} | the exported log predates this run | awaits the next export | |")
         elif o:
-            lines.append(f"| {r['run']} | {r['frozen_at']} | {o['last_request_before_freeze']} | {o['first_request_after_freeze']} | {o['seconds_after_freeze']} |")
+            source = " (saved Logs page)" if o.get("source") else ""
+            lines.append(f"| {r['run']} | {r['frozen_at']} | {o['last_request_before_freeze']} | {o['first_request_after_freeze']}{source} | {o['seconds_after_freeze']} |")
         else:
             lines.append(f"| {r['run']} | {r['frozen_at']} | not on OpenRouter | | |")
     lines += ["", "Amendments made during a run, checked against the same log:",

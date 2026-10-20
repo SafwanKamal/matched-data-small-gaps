@@ -23,7 +23,7 @@ For each protocol behind the paper: when it was frozen, what it froze, and when 
 
 ## Requests in OpenRouter's own log
 
-OpenRouter's request log for the project's key (`artifacts/provider-log/`, exported by the owner) dates every hosted-model request with the provider's own clock. For each protocol: the last request of any kind before its freeze commit, and the first request after it. Jev is not served through OpenRouter, so the Jev re-run has no entry.
+OpenRouter's request log for the project's key (`artifacts/provider-log/`, exported by the owner) dates every hosted-model request with the provider's own clock. For each protocol: the last request of any kind before its freeze commit, and the first request after it. Jev is not served through OpenRouter, so the Jev re-run has no entry. Where the export does not yet include a run, a saved copy of OpenRouter's Logs page stands in (`artifacts/provider-log/logs-page-*.json`). It lists every request of the key in a window, dated to the millisecond, so it shows the first request after the freeze and that none came earlier in the window.
 
 | Run | Frozen (UTC) | Last logged request before | First logged request after | Seconds after freeze |
 |---|---|---|---|---|
@@ -34,7 +34,7 @@ OpenRouter's request log for the project's key (`artifacts/provider-log/`, expor
 | MASSIVE robustness | 2026-10-16 15:10:13 UTC | 2026-10-16 14:47:58 UTC | 2026-10-16 15:10:23 UTC | 11 |
 | Runs G and H | 2026-10-16 16:30:12 UTC | 2026-10-16 15:57:47 UTC | 2026-10-16 16:30:17 UTC | 5 |
 | Run E (option count) | 2026-10-19 07:49:27 UTC | 2026-10-16 16:53:46 UTC | 2026-10-19 07:49:38 UTC | 11 |
-| Run R (reasoning on) | 2026-10-20 04:12:26 UTC | the exported log predates this run | awaits the next export | |
+| Run R (reasoning on) | 2026-10-20 04:12:26 UTC | none since 2026-10-20 03:16:29 UTC (Logs page window) | 2026-10-20 04:12:36 UTC (saved Logs page) | 11 |
 
 Amendments made during a run, checked against the same log:
 - **Run I (confirmatory):** the amendment naming Kimi K3 and Claude Opus 5 was committed at 04:19:02 UTC. Before it, the log shows one probe request to each candidate model (04:14:46 to 04:15:13) and the 30-call plumbing check on development items for each of the two models (04:18:19 to 04:18:53), as the amendment itself records. The first session turn for either model was sent at 05:24:44 UTC.

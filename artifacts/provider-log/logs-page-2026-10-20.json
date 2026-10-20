@@ -1,0 +1,425 @@
+{
+ "source": "OpenRouter Logs page of the project's API key, saved from the browser by the authors; timestamps are OpenRouter's (UTC, data-created-at)",
+ "source_sha256": "0560277bd9248240eb06f2209c2b04440798842275105e45999280d4618ffab2",
+ "window_from": "2026-10-20T03:16:29.857Z",
+ "window_to": "2026-10-20T06:16:29.857Z",
+ "rows_in_window": 1923,
+ "last_row_index": 1922,
+ "oldest_request": "2026-10-20T04:12:36.595Z",
+ "rendered_rows": [
+  {
+   "index": 1922,
+   "created_at": "2026-10-20T04:12:36.595Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 525,
+   "tokens_completion": 274,
+   "cost_usd": 0.000183
+  },
+  {
+   "index": 1921,
+   "created_at": "2026-10-20T04:12:37.966Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 519,
+   "tokens_completion": 133,
+   "cost_usd": 0.000126
+  },
+  {
+   "index": 1920,
+   "created_at": "2026-10-20T04:12:38.203Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 521,
+   "tokens_completion": 236,
+   "cost_usd": 0.000167
+  },
+  {
+   "index": 1919,
+   "created_at": "2026-10-20T04:12:42.907Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 520,
+   "tokens_completion": 120,
+   "cost_usd": 0.000121
+  },
+  {
+   "index": 1918,
+   "created_at": "2026-10-20T04:12:43.554Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 522,
+   "tokens_completion": 171,
+   "cost_usd": 0.000141
+  },
+  {
+   "index": 1917,
+   "created_at": "2026-10-20T04:12:43.695Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 519,
+   "tokens_completion": 106,
+   "cost_usd": 0.000115
+  },
+  {
+   "index": 1916,
+   "created_at": "2026-10-20T04:12:44.074Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 520,
+   "tokens_completion": 639,
+   "cost_usd": 0.000328
+  },
+  {
+   "index": 1915,
+   "created_at": "2026-10-20T04:12:44.342Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 523,
+   "tokens_completion": 660,
+   "cost_usd": 0.000337
+  },
+  {
+   "index": 1914,
+   "created_at": "2026-10-20T04:12:50.035Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 520,
+   "tokens_completion": 136,
+   "cost_usd": 0.000127
+  },
+  {
+   "index": 1913,
+   "created_at": "2026-10-20T04:12:56.674Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 516,
+   "tokens_completion": 126,
+   "cost_usd": 0.000123
+  },
+  {
+   "index": 1912,
+   "created_at": "2026-10-20T04:13:00.978Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 889,
+   "tokens_completion": 313,
+   "cost_usd": 0.00025
+  },
+  {
+   "index": 1911,
+   "created_at": "2026-10-20T04:13:00.988Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 893,
+   "tokens_completion": 205,
+   "cost_usd": 0.000207
+  },
+  {
+   "index": 1910,
+   "created_at": "2026-10-20T04:13:01.215Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 923,
+   "tokens_completion": 247,
+   "cost_usd": 0.000228
+  },
+  {
+   "index": 1909,
+   "created_at": "2026-10-20T04:13:01.317Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 899,
+   "tokens_completion": 473,
+   "cost_usd": 0.000315
+  },
+  {
+   "index": 1908,
+   "created_at": "2026-10-20T04:13:07.550Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 849,
+   "tokens_completion": 382,
+   "cost_usd": 0.000272
+  },
+  {
+   "index": 1907,
+   "created_at": "2026-10-20T04:13:07.981Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 945,
+   "tokens_completion": 196,
+   "cost_usd": 0.000211
+  },
+  {
+   "index": 1906,
+   "created_at": "2026-10-20T04:13:07.985Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 855,
+   "tokens_completion": 350,
+   "cost_usd": 0.00026
+  },
+  {
+   "index": 1905,
+   "created_at": "2026-10-20T04:13:08.667Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 838,
+   "tokens_completion": 195,
+   "cost_usd": 0.000195
+  },
+  {
+   "index": 1904,
+   "created_at": "2026-10-20T04:13:08.851Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 862,
+   "tokens_completion": 222,
+   "cost_usd": 0.000209
+  },
+  {
+   "index": 1903,
+   "created_at": "2026-10-20T04:13:09.047Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 834,
+   "tokens_completion": 151,
+   "cost_usd": 0.000177
+  },
+  {
+   "index": 1902,
+   "created_at": "2026-10-20T04:13:11.671Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 518,
+   "tokens_completion": 1224,
+   "cost_usd": 0.00201
+  },
+  {
+   "index": 1901,
+   "created_at": "2026-10-20T04:13:11.674Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 519,
+   "tokens_completion": 1222,
+   "cost_usd": 0.00201
+  },
+  {
+   "index": 1900,
+   "created_at": "2026-10-20T04:13:11.675Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 520,
+   "tokens_completion": 1227,
+   "cost_usd": 0.00202
+  },
+  {
+   "index": 1899,
+   "created_at": "2026-10-20T04:13:11.676Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 516,
+   "tokens_completion": 1248,
+   "cost_usd": 0.00205
+  },
+  {
+   "index": 1898,
+   "created_at": "2026-10-20T04:13:11.677Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 515,
+   "tokens_completion": 342,
+   "cost_usd": 0.000634
+  },
+  {
+   "index": 1897,
+   "created_at": "2026-10-20T04:13:11.678Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 516,
+   "tokens_completion": 1385,
+   "cost_usd": 0.00226
+  },
+  {
+   "index": 1896,
+   "created_at": "2026-10-20T04:13:11.732Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 515,
+   "tokens_completion": 402,
+   "cost_usd": 0.000728
+  },
+  {
+   "index": 1895,
+   "created_at": "2026-10-20T04:13:11.733Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 512,
+   "tokens_completion": 431,
+   "cost_usd": 0.000772
+  },
+  {
+   "index": 1894,
+   "created_at": "2026-10-20T04:13:16.104Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 515,
+   "tokens_completion": 416,
+   "cost_usd": 0.000749
+  },
+  {
+   "index": 1893,
+   "created_at": "2026-10-20T04:13:17.555Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 516,
+   "tokens_completion": 457,
+   "cost_usd": 0.000814
+  },
+  {
+   "index": 1892,
+   "created_at": "2026-10-20T04:13:27.227Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 840,
+   "tokens_completion": 722,
+   "cost_usd": 0.00129
+  },
+  {
+   "index": 1891,
+   "created_at": "2026-10-20T04:13:27.230Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 891,
+   "tokens_completion": 594,
+   "cost_usd": 0.0011
+  },
+  {
+   "index": 1888,
+   "created_at": "2026-10-20T04:13:27.231Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 899,
+   "tokens_completion": 479,
+   "cost_usd": 0.000923
+  },
+  {
+   "index": 1889,
+   "created_at": "2026-10-20T04:13:27.231Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 919,
+   "tokens_completion": 448,
+   "cost_usd": 0.000878
+  },
+  {
+   "index": 1890,
+   "created_at": "2026-10-20T04:13:27.231Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 865,
+   "tokens_completion": 732,
+   "cost_usd": 0.00131
+  },
+  {
+   "index": 1887,
+   "created_at": "2026-10-20T04:13:27.232Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 849,
+   "tokens_completion": 495,
+   "cost_usd": 0.000938
+  },
+  {
+   "index": 1886,
+   "created_at": "2026-10-20T04:13:27.269Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 888,
+   "tokens_completion": 477,
+   "cost_usd": 0.000917
+  },
+  {
+   "index": 1885,
+   "created_at": "2026-10-20T04:13:27.277Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 852,
+   "tokens_completion": 468,
+   "cost_usd": 0.000896
+  },
+  {
+   "index": 1884,
+   "created_at": "2026-10-20T04:13:32.914Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 831,
+   "tokens_completion": 465,
+   "cost_usd": 0.000887
+  },
+  {
+   "index": 1883,
+   "created_at": "2026-10-20T04:13:34.099Z",
+   "model": "Qwen3.5-27B",
+   "provider": "Alibaba Cloud Int.",
+   "tokens_prompt": 822,
+   "tokens_completion": 561,
+   "cost_usd": 0.00104
+  },
+  {
+   "index": 1882,
+   "created_at": "2026-10-20T04:13:50.654Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 530,
+   "tokens_completion": 251,
+   "cost_usd": 0.000175
+  },
+  {
+   "index": 1881,
+   "created_at": "2026-10-20T04:13:50.661Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 526,
+   "tokens_completion": 237,
+   "cost_usd": 0.000168
+  },
+  {
+   "index": 1880,
+   "created_at": "2026-10-20T04:13:50.668Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 526,
+   "tokens_completion": 156,
+   "cost_usd": 0.000136
+  },
+  {
+   "index": 1879,
+   "created_at": "2026-10-20T04:13:50.669Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 521,
+   "tokens_completion": 236,
+   "cost_usd": 0.000167
+  },
+  {
+   "index": 1878,
+   "created_at": "2026-10-20T04:13:50.671Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 525,
+   "tokens_completion": 158,
+   "cost_usd": 0.000137
+  },
+  {
+   "index": 1877,
+   "created_at": "2026-10-20T04:13:50.674Z",
+   "model": "Gemma 4 31B",
+   "provider": "NovitaAI",
+   "tokens_prompt": 530,
+   "tokens_completion": 232,
+   "cost_usd": 0.000167
+  }
+ ]
+}

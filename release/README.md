@@ -10,7 +10,7 @@ This folder accompanies `paper/main.tex`.
 
 `src/bakeoff/release_manifest.py` regenerates all three.
 
-To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 647 of the 1,019 entries resolve. The other 372 are the data set files (not redistributed) and the weights and features. They report as unreadable until they are in place. After the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
+To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 649 of the 1,021 entries resolve. The other 372 are the data set files (not redistributed) and the weights and features. They report as unreadable until they are in place. After the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
 
 ## Specialist weights and features
 
@@ -93,7 +93,7 @@ The `build`, `train` and `hosted` stages also need these. The analyses above do 
 Each protocol's module has `build`, `train`, `check` and `hosted` stages:
 
 - **Pinned hosts, models and prices** are in each protocol and in the paper's Appendix B.
-- **Spend** on OpenRouter was $74.27 by OpenRouter's own log (`artifacts/provider-log/`; $74.50 reconstructed from the saved rows). Jev was billed separately by TypeSafe: $4.27 in total for all Jev use in the project (one $5.00 credit with $0.73 left; `artifacts/jev-cost/`), which cannot be split per call.
+- **Spend** on OpenRouter was $75.15 by OpenRouter's own records: the request log through 19 October and the daily usage totals through 20 October (`artifacts/provider-log/`). Run R cost $0.86, of which $0.28 was Qwen's 127 requests before it was stopped. Jev was billed separately by TypeSafe: $4.27 in total for all Jev use in the project (one $5.00 credit with $0.73 left; `artifacts/jev-cost/`), which cannot be split per call.
 - **Variance:** hosted models change over time, and moving one model between two hosts changed 9.5% of its answers. Expect answers to differ somewhat even at temperature 0.
 
 ## Data provenance

@@ -198,9 +198,10 @@
  {
   "run": "Run R (reasoning on)",
   "openrouter_log": {
-   "last_request_before_freeze": "2026-10-19 08:52:55 UTC",
-   "first_request_after_freeze": null,
-   "seconds_after_freeze": null
+   "last_request_before_freeze": "none since 2026-10-20 03:16:29 UTC (Logs page window)",
+   "first_request_after_freeze": "2026-10-20 04:12:36 UTC",
+   "seconds_after_freeze": 11,
+   "source": "artifacts/provider-log/logs-page-2026-10-20.json"
   },
   "protocol": "reasoning_on_protocol.json",
   "frozen_at": "2026-10-20 04:12:26 UTC",
