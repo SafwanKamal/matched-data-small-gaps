@@ -19,6 +19,7 @@ For each protocol behind the paper: when it was frozen, what it froze, and when 
 | MASSIVE robustness | `massive_robustness_protocol.json` | 2026-10-16 15:10:13 UTC | `artifacts/massive-robustness/items.json` `88e6051264a4…` (match) | 2026-10-16 15:59:42 UTC | 2026-10-16 15:59:42 UTC | 2026-10-16 15:59:42 UTC | 0 | holds |
 | Runs G and H | `gh_protocol.json` | 2026-10-16 16:30:12 UTC | reuses earlier item lists (see protocol) | 2026-10-16 16:56:21 UTC | 2026-10-16 16:56:21 UTC | 2026-10-16 16:56:21 UTC | 0 | holds |
 | Run E (option count) | `option_count_protocol.json` | 2026-10-19 07:49:27 UTC | `artifacts/option-count/items.json` `53d7ffa2a033…` (match) | 2026-10-19 09:00:21 UTC | 2026-10-19 09:00:21 UTC | 2026-10-19 09:00:21 UTC | 0 | holds |
+| Run R (reasoning on) | `reasoning_on_protocol.json` | 2026-10-20 04:12:26 UTC | `artifacts/retrieval-mechanism/items.json` `04c55578a642…` (match) | 2026-10-20 05:13:57 UTC | 2026-10-20 05:13:57 UTC | 2026-10-20 05:13:57 UTC | 3 | holds |
 
 ## Requests in OpenRouter's own log
 
@@ -33,6 +34,7 @@ OpenRouter's request log for the project's key (`artifacts/provider-log/`, expor
 | MASSIVE robustness | 2026-10-16 15:10:13 UTC | 2026-10-16 14:47:58 UTC | 2026-10-16 15:10:23 UTC | 11 |
 | Runs G and H | 2026-10-16 16:30:12 UTC | 2026-10-16 15:57:47 UTC | 2026-10-16 16:30:17 UTC | 5 |
 | Run E (option count) | 2026-10-19 07:49:27 UTC | 2026-10-16 16:53:46 UTC | 2026-10-19 07:49:38 UTC | 11 |
+| Run R (reasoning on) | 2026-10-20 04:12:26 UTC | the exported log predates this run | awaits the next export | |
 
 Amendments made during a run, checked against the same log:
 - **Run I (confirmatory):** the amendment naming Kimi K3 and Claude Opus 5 was committed at 04:19:02 UTC. Before it, the log shows one probe request to each candidate model (04:14:46 to 04:15:13) and the 30-call plumbing check on development items for each of the two models (04:18:19 to 04:18:53), as the amendment itself records. The first session turn for either model was sent at 05:24:44 UTC.
@@ -49,3 +51,4 @@ Amendments made during a run, checked against the same log:
 | `massive_robustness_protocol.json` | `c3f7b945f95030d0187ab9d94b890b08b4c8b1e343f6ca10464774960d69e68d` | `c3f7b945f95030d0187ab9d94b890b08b4c8b1e343f6ca10464774960d69e68d` | none |
 | `gh_protocol.json` | `a75932c8cf455f5032ceff1eaeb42c409f3b344bf7966f13b5956ca64db0c560` | `a75932c8cf455f5032ceff1eaeb42c409f3b344bf7966f13b5956ca64db0c560` | none |
 | `option_count_protocol.json` | `b6570b3eaee40a3488c843653630804efdb96d19cd00a64768a7c841cc288a5a` | `b6570b3eaee40a3488c843653630804efdb96d19cd00a64768a7c841cc288a5a` | none |
+| `reasoning_on_protocol.json` | `fe7c905203894acb5d075341e2f4767b12eb44b49276a4a0cc14dade5652f8e7` | `b5f4a471647b36872389f9a7ee3b19d15bbec295bc30b9477678fab6e270065b` | 2026-10-20 04:45, 2026-10-20 05:01, 2026-10-20 05:13 |

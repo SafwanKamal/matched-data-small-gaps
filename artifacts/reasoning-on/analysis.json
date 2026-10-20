@@ -1,0 +1,129 @@
+{
+ "protocol_id": "reasoning-on-2026-10-19",
+ "models": {
+  "gemma-4-31b": {
+   "on": {
+    "zero_shot": {
+     "held_out_rejected": 0.7783505154639175,
+     "in_scope_kept": 0.944,
+     "in_scope_right": 0.808,
+     "d_prime": 2.355901868918302,
+     "criterion": 0.411316622592241,
+     "parse_failed": 4,
+     "replies": 888,
+     "mean_reasoning_tokens": 459.77927927927925,
+     "mean_completion_tokens": 471.72972972972974,
+     "mean_cost_usd": 0.0002623719369369369,
+     "median_latency_ms": 7094.83684998122
+    },
+    "retrieval": {
+     "held_out_rejected": 0.4639175257731959,
+     "in_scope_kept": 0.992,
+     "in_scope_right": 0.922,
+     "d_prime": 2.318346528779974,
+     "criterion": 1.2497422814254742,
+     "parse_failed": 18,
+     "replies": 888,
+     "mean_reasoning_tokens": 647.5394144144144,
+     "mean_completion_tokens": 659.3164414414415,
+     "mean_cost_usd": 0.0003907940765765766,
+     "median_latency_ms": 9379.277200001525
+    }
+   },
+   "off": {
+    "zero_shot": {
+     "held_out_rejected": 0.7396907216494846,
+     "in_scope_kept": 0.94,
+     "in_scope_right": 0.796,
+     "d_prime": 2.1971658041417665,
+     "criterion": 0.45619069252597033,
+     "parse_failed": 0,
+     "replies": 888,
+     "mean_reasoning_tokens": 0.0,
+     "mean_completion_tokens": 10.0,
+     "mean_cost_usd": 7.796004504504505e-05,
+     "median_latency_ms": 949.1821499977959
+    },
+    "retrieval": {
+     "held_out_rejected": 0.5,
+     "in_scope_kept": 0.986,
+     "in_scope_right": 0.922,
+     "d_prime": 2.197286376641052,
+     "criterion": 1.098643188320526,
+     "parse_failed": 0,
+     "replies": 888,
+     "mean_reasoning_tokens": 0.0,
+     "mean_completion_tokens": 10.0,
+     "mean_cost_usd": 0.00013134749999999998,
+     "median_latency_ms": 900.2382000035141
+    }
+   }
+  }
+ },
+ "tests": {
+  "R1 gemma-4-31b": {
+   "difference_points": 31.443298969072163,
+   "ci95": [
+    21.065276700946477,
+    42.13105326876513
+   ],
+   "p": 9.999000099990002e-05,
+   "clusters": 23,
+   "holm_p": 9.999000099990002e-05
+  },
+  "S1 gemma-4-31b zero_shot: rejection on minus off": {
+   "difference_points": 3.865979381443299,
+   "ci95": [
+    -2.910997732426304,
+    11.653351893320421
+   ],
+   "p": 0.36376362363763626,
+   "clusters": 23
+  },
+  "S3 gemma-4-31b zero_shot: in-scope right on minus off": {
+   "difference_points": 1.2,
+   "ci95": [
+    -0.6628951016825404,
+    3.168631773714149
+   ],
+   "p": 0.35176482351764826,
+   "clusters": 50
+  },
+  "S1 gemma-4-31b retrieval: rejection on minus off": {
+   "difference_points": -3.608247422680412,
+   "ci95": [
+    -9.204377050915635,
+    2.0425663669161502
+   ],
+   "p": 0.29157084291570845,
+   "clusters": 23
+  },
+  "S3 gemma-4-31b retrieval: in-scope right on minus off": {
+   "difference_points": 0.0,
+   "ci95": [
+    -1.6194331983805668,
+    1.5655577299412915
+   ],
+   "p": 1.0,
+   "clusters": 50
+  },
+  "S2 gemma-4-31b: drop on minus drop off": {
+   "difference_points": 7.474226804123711,
+   "ci95": [
+    1.8968907932322567,
+    13.333333333333334
+   ],
+   "p": 0.023897610238976102,
+   "clusters": 23
+  }
+ },
+ "R1": {
+  "models_run": [
+   "gemma-4-31b"
+  ],
+  "significant": [
+   "gemma-4-31b"
+  ],
+  "holds": true
+ }
+}

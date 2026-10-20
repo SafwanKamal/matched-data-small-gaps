@@ -1,0 +1,54 @@
+{
+  "protocol_id": "reasoning-on-2026-10-19",
+  "status": "FROZEN before any request; the owner asked for this run on 2026-10-19 ('run the bigger fix') and asked for the results before any of them goes into the paper",
+  "role": "test whether the paper's clearest finding (retrieved in-scope examples lower a prompted model's rejection of same-domain held-out requests on BANKING77-OOS) holds with reasoning on, and how reasoning changes the scope decision. Review round 6 (reviewer 3) asked for one small reasoning-on arm, because every general model in the paper ran with reasoning off.",
+  "what_was_seen_before_writing": "run D2's saved replies and analysis (retrieval_mechanism_protocol.json), with reasoning off: retrieval lowered held-out rejection on these items by 19 to 30 points for the general models. No reply with reasoning on has been requested or seen for these items.",
+  "seed": 20261019,
+  "items": "artifacts/retrieval-mechanism/items.json, split banking77_oos, unchanged (SHA-256 04c55578a64298780ae31bc9e0685358c90262b84cd760ba42bbdab62bf2c1b5): 500 in-scope and 388 held-out items, 23 held-out-intent clusters",
+  "arms": {
+    "zero_shot": "run D2's zero_shot prompt, built by retrieval_mechanism.jobs, unchanged",
+    "retrieval": "run D2's retrieval prompt (20 BM25-nearest in-scope examples), built by retrieval_mechanism.jobs, unchanged"
+  },
+  "reasoning": "OpenRouter's unified reasoning parameter {\"effort\": \"low\"}, the lowest effort level offered for both models; max_tokens 4000 (reasoning plus answer); temperature 0. The answer is parsed from the message content exactly as in run D2. A reply cut off before an answer counts as a parse failure, and a parse failure is scored as in run D2 (accept, intent -1).",
+  "models": {
+    "gemma-4-31b": {"model": "google/gemma-4-31b-it", "provider": "Novita", "reasoning_off": false, "reasoning": {"effort": "low"}},
+    "qwen3.5-27b": {"model": "qwen/qwen3.5-27b", "provider": "Alibaba", "reasoning_off": false, "reasoning": {"effort": "low"}}
+  },
+  "model_order": ["gemma-4-31b", "qwen3.5-27b"],
+  "reference": "the same models, hosts, items and prompts with reasoning off: run D2's saved replies (artifacts/retrieval-mechanism/hosted/, collected 2026-10-16). Not re-requested. The three days between the runs are a confound for the on-minus-off comparisons, labelled as such.",
+  "hypotheses": {
+    "R1_retrieval_drop_with_reasoning": {
+      "statement": "with reasoning on, held-out rejection is lower with retrieval than zero-shot",
+      "test": "paired sign flips of cluster sums by held-out intent, one-sided, 10,000 draws (retrieval_suppression.flip_test); 95% cluster-bootstrap interval",
+      "family": "2 models, Holm, alpha 0.05",
+      "holds_if": "Holm-significant for both models"
+    }
+  },
+  "secondary_unadjusted_labelled": {
+    "S1_reasoning_effect_on_rejection": "per model and arm: held-out rejection with reasoning on minus off, two-sided, clustered by held-out intent",
+    "S2_reasoning_effect_on_drop": "per model: (zero-shot minus retrieval rejection, on) minus (the same, off), two-sided, clustered by held-out intent",
+    "S3_in_scope": "per model and arm: in-scope right with reasoning on minus off, two-sided, clustered by in-scope intent",
+    "descriptive": "per arm: held-out rejected, in-scope kept, in-scope right, signal-detection d' and c (equal-variance, as run D2), parse failures, mean reasoning and completion tokens, mean cost and latency per call, against reasoning off"
+  },
+  "outcome_sentences": {
+    "R1_holds": "With reasoning on (low effort), retrieval still lowered held-out rejection on BANKING77-OOS for both models, by {lo} to {hi} points (Holm p <= {p}).",
+    "R1_partial": "With reasoning on (low effort), retrieval lowered held-out rejection significantly for {model} only ({d} points, Holm p = {p}).",
+    "R1_fails": "With reasoning on (low effort), retrieval did not significantly lower held-out rejection on BANKING77-OOS for either model ({lo} to {hi} points)."
+  },
+  "cost": {
+    "estimate_usd": "about 0.6 for Gemma and 1.0 to 2.5 for Qwen, depending on reasoning length (list prices 0.20/0.40 and 0.27/2.16 USD per million input/output tokens; run D2's prompts are 524 to 910 tokens); the plumbing check measures it",
+    "check_cap_usd": 0.1,
+    "run_cap_usd": 3.0,
+    "per_model_cap_usd": {"gemma-4-31b": 1.0, "qwen3.5-27b": 2.0},
+    "rule": "if the check implies more than a model's cap for its full run, that model is not run, and the analysis reports only the models that ran",
+    "budget": "project spend 74.50 USD by the saved rows (74.27 by OpenRouter's log) of the 80 USD cap"
+  },
+  "check": "plumbing only: run D2's check items (five banking77_oos training rows not among the frozen items, five fixed off-topic sentences), both arms, both models; no frozen item is sent",
+  "code": "src/bakeoff/reasoning_on.py (stages: check, hosted, analyze); scripts/run_reasoning_on.sh",
+  "limits": [
+    "one effort level (low); higher effort is untested",
+    "BANKING77-OOS only; CLINC150 and the confirmatory sets are untested with reasoning on",
+    "two of the paper's four general models",
+    "the reasoning-off reference was collected three days earlier on the same hosts"
+  ]
+}

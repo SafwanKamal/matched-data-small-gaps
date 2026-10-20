@@ -23,6 +23,7 @@ RUNS = [
     ("MASSIVE robustness", "massive_robustness_protocol.json", "artifacts/massive-robustness"),
     ("Runs G and H", "gh_protocol.json", "artifacts/gh"),
     ("Run E (option count)", "option_count_protocol.json", "artifacts/option-count"),
+    ("Run R (reasoning on)", "reasoning_on_protocol.json", "artifacts/reasoning-on"),
 ]
 OUT = ROOT / "release"
 PROVIDER_LOG = ROOT / "artifacts" / "provider-log" / "openrouter_requests.csv.gz"

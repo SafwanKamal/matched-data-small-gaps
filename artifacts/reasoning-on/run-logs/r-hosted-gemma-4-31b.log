@@ -1,0 +1,6 @@
+    gemma-4-31b__banking77_oos__zero_shot 500/888 run $0.113 total $74.644
+hosted gemma-4-31b    zero_shot  888/888 parse_failed 4 reasoning_tokens mean 460 max 3999 providers ['Novita'] run $0.2330 project $74.764
+    gemma-4-31b__banking77_oos__retrieval 500/888 run $0.373 total $74.904
+hosted gemma-4-31b    retrieval  888/888 parse_failed 18 reasoning_tokens mean 648 max 3999 providers ['Novita'] run $0.5800 project $75.111
+R_HOSTED_DONE
+R_hosted_EXIT_0

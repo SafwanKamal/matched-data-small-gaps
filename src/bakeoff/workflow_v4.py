@@ -55,6 +55,8 @@ def _call(client, model: dict, system: str, user: str, max_tokens: int, budget: 
     }
     if model["reasoning_off"]:
         body["reasoning"] = {"enabled": False}
+    elif "reasoning" in model:  # reasoning_on_protocol.json: an explicit effort level
+        body["reasoning"] = model["reasoning"]
     if logprobs:
         body["logprobs"] = True
         body["provider"]["require_parameters"] = True
@@ -83,6 +85,9 @@ def _call(client, model: dict, system: str, user: str, max_tokens: int, budget: 
             "cost": cost,
         }
     )
+    if "reasoning" in model:  # reasoning on: keep the reasoning token count and why the reply ended
+        row["reasoning_tokens"] = (usage.get("completion_tokens_details") or {}).get("reasoning_tokens")
+        row["finish_reason"] = payload["choices"][0].get("finish_reason")
     if logprobs:
         content = (payload["choices"][0].get("logprobs") or {}).get("content") or []
         row["token_logprobs"] = [[step["token"], step["logprob"]] for step in content]

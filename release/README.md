@@ -4,13 +4,13 @@ This folder accompanies `paper/main.tex`.
 
 | File | What it holds |
 |---|---|
-| `SHA256SUMS` | Hashes of the data, the nine protocols that govern the paper's runs, every frozen item list and saved model reply, every analysis output, and the specialist weights and features. The weights and features are **not in git** (about 22 GB) and will ship as a separate archive checked against these hashes. |
+| `SHA256SUMS` | Hashes of the data, the ten protocols that govern the paper's runs, every frozen item list and saved model reply, every analysis output, and the specialist weights and features. The weights and features are **not in git** (about 22 GB) and will ship as a separate archive checked against these hashes. |
 | `requirements-lock.txt` | The Python environment, as frozen. |
 | `ENVIRONMENT.txt` | Python, platform, torch and GPU. |
 
 `src/bakeoff/release_manifest.py` regenerates all three.
 
-To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 635 of the 1,007 entries resolve. The other 372 are the data set files (not redistributed) and the weights and features. They report as unreadable until they are in place. After the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
+To check the files: `grep -v '^#' release/SHA256SUMS | sha256sum -c`. In the git repository alone, 647 of the 1,019 entries resolve. The other 372 are the data set files (not redistributed) and the weights and features. They report as unreadable until they are in place. After the Hugging Face download, only the data sets and the unpublished run D and BANKING77-OOS/MultiDoGO files remain.
 
 ## Specialist weights and features
 
@@ -31,6 +31,8 @@ The loaders check data hashes only for MASSIVE (`primary_protocol.json`); the ot
   - `retrieval_mechanism_protocol.json` (run D2)
   - `massive_robustness_protocol.json`
   - `gh_protocol.json` (runs G and H)
+  - `option_count_protocol.json` (run E)
+  - `reasoning_on_protocol.json` (run R)
 - **Frozen items:** `artifacts/<run>/items.json`. Each item list's SHA-256 is recorded inside its protocol.
 - **Saved replies** from every hosted model, one JSON line per request with text, tokens, cost, latency and provider: `artifacts/<run>/hosted/`, `jev/` and `replies/`.
 - **Analyses:** `artifacts/<run>/analysis.json` and `artifacts/posthoc/*.json`.
@@ -57,6 +59,7 @@ python -m bakeoff.posthoc_round5
 python -m bakeoff.posthoc_round6
 python -m bakeoff.posthoc_round7
 python -m bakeoff.option_count analyze
+python -m bakeoff.reasoning_on analyze
 python -m bakeoff.b77oos_full_audit
 python -m bakeoff.paper_number_check
 ```
@@ -69,7 +72,7 @@ Rebuilding the specialist features (`artifacts/*/features/*.npz`) needs the weig
 python -m bakeoff.<module> features
 ```
 
-**What runs from this repository alone.** Offline, with an empty Hugging Face cache, ten of the fourteen commands above run from this repository alone: `confirmatory`, `retrieval_suppression`, `jev_rerun`, `retrieval_mechanism`, `massive_robustness` and `option_count` (all `analyze`), and `posthoc_round5`, `posthoc_round6`, `posthoc_round7` and `paper_number_check`. The other four need external data, which we do not redistribute. Fetch it once with network access, into the cache that `HF_HOME` points to:
+**What runs from this repository alone.** Offline, with an empty Hugging Face cache, eleven of the fifteen commands above run from this repository alone: `confirmatory`, `retrieval_suppression`, `jev_rerun`, `retrieval_mechanism`, `massive_robustness`, `option_count` and `reasoning_on` (all `analyze`), and `posthoc_round5`, `posthoc_round6`, `posthoc_round7` and `paper_number_check`. The other four need external data, which we do not redistribute. Fetch it once with network access, into the cache that `HF_HOME` points to:
 
 | Data | Source and revision | Needed by |
 |---|---|---|

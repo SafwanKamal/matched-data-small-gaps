@@ -1,0 +1,6 @@
+check gemma-4-31b    zero_shot  10/10 parse_failed 0 reasoning_tokens mean 248 max 648 providers ['Novita'] run $0.0018 project $74.504
+check gemma-4-31b    retrieval  10/10 parse_failed 0 reasoning_tokens mean 261 max 461 providers ['Novita'] run $0.0041 project $74.507
+check qwen3.5-27b    zero_shot  10/10 parse_failed 0 reasoning_tokens mean 821 max 1371 providers ['Alibaba'] run $0.0140 project $74.521
+check qwen3.5-27b    retrieval  10/10 parse_failed 0 reasoning_tokens mean 530 max 718 providers ['Alibaba'] run $0.0242 project $74.531
+R_CHECK_DONE
+R_check_EXIT_0
